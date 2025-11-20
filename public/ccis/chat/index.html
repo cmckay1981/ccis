@@ -10,9 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
 
 <!-- Stylesheets -->
-<link rel="stylesheet" href="/claymoreandcolt/assets/css/global.css">
-<link rel="stylesheet" href="/claymoreandcolt/assets/css/components.css">
-<link rel="stylesheet" href="/claymoreandcolt/assets/css/ccis-themes.css">
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<link rel="stylesheet" href="/assets/css/ccis-themes.css">
 
 </head>
 
@@ -33,11 +33,11 @@
         </div>
 
         <nav class="sidebar-nav">
-            <a href="/claymoreandcolt/ccis/" class="sidebar-link">
+            <a href="/ccis/" class="sidebar-link">
                 <span class="link-icon">◆</span>
                 <span>Intelligence Hub</span>
             </a>
-            <a href="/claymoreandcolt/" class="sidebar-link">
+            <a href="/" class="sidebar-link">
                 <span class="link-icon">←</span>
                 <span>Main Site</span>
             </a>
@@ -45,12 +45,12 @@
 
         <div class="sidebar-section">
             <div class="sidebar-section-title">Active Agents</div>
-            <a href="/claymoreandcolt/ccis/chat/?agent=kabaakh" class="sidebar-link">KA.BA.AKH</a>
-            <a href="/claymoreandcolt/ccis/chat/?agent=leadership-intelligence" class="sidebar-link">Leadership Intelligence</a>
-            <a href="/claymoreandcolt/ccis/chat/?agent=situational-awareness" class="sidebar-link">Situational Awareness</a>
-            <a href="/claymoreandcolt/ccis/chat/?agent=well-control-intelligence" class="sidebar-link">Well Control Intelligence</a>
-            <a href="/claymoreandcolt/ccis/chat/?agent=cyber-security" class="sidebar-link">Cyber Security</a>
-            <a href="/claymoreandcolt/ccis/chat/?agent=hospitality-concierge" class="sidebar-link">Hospitality Concierge</a>
+            <a href="/ccis/chat/?agent=kabaakh" class="sidebar-link">KA.BA.AKH</a>
+            <a href="/ccis/chat/?agent=leadership-intelligence" class="sidebar-link">Leadership Intelligence</a>
+            <a href="/ccis/chat/?agent=situational-awareness" class="sidebar-link">Situational Awareness</a>
+            <a href="/ccis/chat/?agent=well-control-intelligence" class="sidebar-link">Well Control Intelligence</a>
+            <a href="/ccis/chat/?agent=cyber-security" class="sidebar-link">Cyber Security</a>
+            <a href="/ccis/chat/?agent=hospitality-concierge" class="sidebar-link">Hospitality Concierge</a>
         </div>
 
         <div class="sidebar-section">
@@ -224,7 +224,7 @@ async function sendMessage() {
     messagesEl.scrollTop = messagesEl.scrollHeight;
 
     try {
-        const res = await fetch("/claymoreandcolt/ccis/api/proxy.php", {
+        const res = await fetch("/api/ccis", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -291,7 +291,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     messagesEl.appendChild(loading);
 
     try {
-        const res = await fetch("/claymoreandcolt/ccis/api/proxy.php", {
+        const res = await fetch("/api/ccis", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
