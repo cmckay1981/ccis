@@ -67,3 +67,10 @@ node_modules/
 
 # dataconnect generated files
 .dataconnect
+
+# macOS system files
+.DS_Store
+**/.DS_Store
+
+# PDFs and documentation that shouldn't be in repo
+*.pdf
