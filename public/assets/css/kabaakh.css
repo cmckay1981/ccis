@@ -1,0 +1,91 @@
+/* -------------------------------------------------
+   KA.BA.AKH — GOLD THEME OVERRIDES
+   Applies only when <body class="intel-kabaakh"> 
+   or <body class="kabaakh-ui">
+--------------------------------------------------- */
+
+body.intel-kabaakh,
+body.kabaakh-ui {
+  --accent: #d8b979;
+  --accent-soft: #e8d19b;
+
+  --text-main: #f5f2eb;
+  --text-muted: #c8c3d0;
+
+  --hero-border: rgba(216,185,121,0.35);
+  --hero-glow: rgba(216,185,121,0.25);
+}
+
+/* Avatar / Hero Image */
+body.intel-kabaakh .avatar-wrap,
+body.kabaakh-ui .avatar-wrap {
+  border: 1px solid var(--hero-border);
+  box-shadow:
+    0 0 80px rgba(0,0,0,0.7),
+    0 0 50px var(--hero-glow);
+}
+
+/* Section Headings Override */
+body.intel-kabaakh .section-heading {
+  color: var(--accent-soft);
+  text-shadow: 0 0 16px rgba(216,185,121,0.25);
+}
+
+/* Divider (triad) */
+body.intel-kabaakh .triad span {
+  border-color: var(--accent-soft) !important;
+}
+
+/* Button */
+body.intel-kabaakh .cta-btn {
+  background: var(--accent);
+}
+body.intel-kabaakh .cta-btn:hover {
+  background: var(--accent-soft);
+}
+
+/* Grid Items */
+body.intel-kabaakh .grid-item {
+  border-color: rgba(216,185,121,0.22);
+}
+body.intel-kabaakh .grid-item h3 {
+  color: var(--accent-soft);
+}
+
+/* Journal Cards */
+body.intel-kabaakh .journal-card {
+  border-color: rgba(216,185,121,0.28);
+}
+body.intel-kabaakh .journal-card h3 {
+  color: var(--accent-soft);
+}
+
+/* Hero Tag */
+body.intel-kabaakh .hero-tag {
+  color: var(--accent-soft);
+}
+
+/* Footer */
+body.intel-kabaakh footer {
+  color: #a8a0b3;
+}
+
+/* -----------------------------------------------
+   CHAT-SPECIFIC OVERRIDES (optional)
+----------------------------------------------- */
+body.kabaakh-ui .msg.user {
+  background: var(--accent);
+  color: #111;
+}
+
+body.kabaakh-ui .msg.bot {
+  border-color: rgba(255,255,255,0.08);
+}
+
+body.kabaakh-ui button#sendBtn {
+  background: var(--accent);
+  color: #111;
+}
+body.kabaakh-ui button#sendBtn:hover {
+  opacity: 0.85;
+}

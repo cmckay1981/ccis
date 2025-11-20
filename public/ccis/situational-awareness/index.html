@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Situational Awareness - Tactical observation, threat assessment, and environmental awareness training for operators in complex environments.">
+<title>Situational Awareness | CCIS</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+
+<style>
+/* Situational Awareness green accent */
+:root {
+  --color-accent: #2a5a3c;
+  --color-accent-dark: #1a4a2c;
+  --color-accent-light: #3a6a4c;
+}
+
+.cc-btn-primary {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: white;
+}
+
+.cc-btn-primary:hover {
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+}
+
+.sa-hero {
+  background: linear-gradient(135deg, #1a2520 0%, #0f1510 100%);
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.sa-hero h1 {
+  color: var(--color-accent-light);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.triad {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 2rem auto;
+}
+
+.triad span {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--color-accent-light);
+  transform: rotate(45deg);
+  opacity: 0.8;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navigation Drawer Overlay -->
+<div class="cc-nav-drawer-overlay" id="navDrawerOverlay"></div>
+
+<!-- Navigation Drawer -->
+<nav class="cc-nav-drawer" id="navDrawer">
+  <div class="cc-nav-drawer-header">
+    <a href="/" class="cc-logo">Claymore & Colt</a>
+    <button class="cc-nav-drawer-close" id="navDrawerClose" aria-label="Close menu">&times;</button>
+  </div>
+  <div class="cc-nav-drawer-content">
+    <a href="/" class="cc-nav-drawer-link">Home</a>
+    <a href="/about/" class="cc-nav-drawer-link">About</a>
+    <a href="/energy/" class="cc-nav-drawer-link">Energy</a>
+    <a href="/decom/" class="cc-nav-drawer-link">Decommissioning</a>
+    <a href="/trading/" class="cc-nav-drawer-link">Trading</a>
+    <a href="/trading/qualification.html" class="cc-nav-drawer-link">Qualification</a>
+    <a href="/well-intelligence/" class="cc-nav-drawer-link">Well Intelligence</a>
+    <a href="/redcell/" class="cc-nav-drawer-link">REDCELL</a>
+
+    <div class="cc-nav-drawer-section">
+      <div class="cc-nav-drawer-section-title">Intelligence Suite</div>
+      <a href="/ccis/" class="cc-nav-drawer-link">CCIS Dashboard</a>
+      <a href="/ccis/kabaakh/" class="cc-nav-drawer-link">KA.BA.AKH</a>
+      <a href="/ccis/leadership-intelligence/" class="cc-nav-drawer-link">Leadership Intelligence</a>
+      <a href="/ccis/chat/?agent=situational-awareness" class="cc-nav-drawer-link active">Situational Awareness</a>
+      <a href="/ccis/well-control-intelligence/" class="cc-nav-drawer-link">Well Control Intelligence</a>
+      <a href="/ccis/cyber-security/" class="cc-nav-drawer-link">Cyber Security</a>
+      <a href="/ccis/hospitality-concierge/" class="cc-nav-drawer-link">Hospitality Concierge</a>
+      <a href="/experiential-house/" class="cc-nav-drawer-link">Experiential House</a>
+    </div>
+
+    <div class="cc-nav-drawer-section">
+      <div class="cc-nav-drawer-section-title">Connect</div>
+      <a href="/contact/" class="cc-nav-drawer-link">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="cc-header">
+  <div class="cc-header-inner">
+    <a href="/" class="cc-logo">Claymore & Colt</a>
+
+    <nav class="cc-nav">
+      <a href="/" class="cc-nav-link">Home</a>
+      <a href="/about/" class="cc-nav-link">About</a>
+      <a href="/energy/" class="cc-nav-link">Energy</a>
+      <a href="/trading/" class="cc-nav-link">Trading</a>
+      <a href="/ccis/" class="cc-nav-link">CCIS</a>
+      <a href="/contact/" class="cc-nav-link">Contact</a>
+    </nav>
+
+    <button class="cc-mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main>
+
+  <!-- Hero -->
+  <section class="sa-hero">
+    <div class="cc-container-narrow">
+      <p class="cc-text-sm cc-text-light cc-mb-md" style="letter-spacing: 0.2em; text-transform: uppercase;">Observe · Orient · Decide · Act</p>
+      <h1>Situational Awareness</h1>
+      <p class="cc-text-xl cc-text-light cc-mb-2xl">
+        Tactical observation, threat assessment, and environmental awareness training for operators in complex, dynamic environments.
+      </p>
+      <a href="/ccis/chat/?agent=situational-awareness" class="cc-btn cc-btn-primary cc-btn-lg">Start Session</a>
+    </div>
+  </section>
+
+  <!-- What It Helps With -->
+  <section class="cc-section">
+    <div class="cc-container">
+      <h2 class="cc-text-center cc-mb-2xl">What This Agent Helps You With</h2>
+      <div class="triad"><span></span><span></span><span></span></div>
+
+      <p class="cc-text-center cc-mb-2xl">
+        Situational Awareness training develops your ability to read environments, recognize patterns, assess threats, and maintain operational awareness under pressure.
+      </p>
+
+      <div class="cc-grid cc-grid-3">
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">Environmental Scanning</h3>
+          <p class="cc-text-light">
+            Systematic observation techniques, baseline establishment, and anomaly detection in complex environments.
+          </p>
+        </div>
+
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">Threat Assessment</h3>
+          <p class="cc-text-light">
+            Risk evaluation, pattern recognition, and early warning indicators for security and safety contexts.
+          </p>
+        </div>
+
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">OODA Loop Training</h3>
+          <p class="cc-text-light">
+            Observe, Orient, Decide, Act cycle for rapid decision-making in dynamic tactical situations.
+          </p>
+        </div>
+
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">Cognitive Load Management</h3>
+          <p class="cc-text-light">
+            Information filtering, priority setting, and attention management when inputs exceed processing capacity.
+          </p>
+        </div>
+
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">Team Coordination</h3>
+          <p class="cc-text-light">
+            Shared awareness protocols, communication loops, and distributed observation techniques for teams.
+          </p>
+        </div>
+
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">Scenario Training</h3>
+          <p class="cc-text-light">
+            Realistic scenario walk-throughs, decision drills, and mental rehearsal for high-stakes environments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Try Saying -->
+  <section class="cc-section cc-bg-alt">
+    <div class="cc-container">
+      <h2 class="cc-text-center cc-mb-2xl">Try Saying</h2>
+      <div class="triad"><span></span><span></span><span></span></div>
+
+      <div class="cc-grid cc-grid-3">
+        <div class="cc-card">
+          <h4 class="cc-mb-sm" style="color: var(--color-accent-light);">Observation Skills</h4>
+          <p class="cc-text-light cc-mb-sm">"Teach me how to baseline an environment."</p>
+          <p class="cc-text-light cc-mb-sm">"What should I look for in a crowded space?"</p>
+          <p class="cc-text-light">"How do I spot behavioral anomalies?"</p>
+        </div>
+
+        <div class="cc-card">
+          <h4 class="cc-mb-sm" style="color: var(--color-accent-light);">Decision Making</h4>
+          <p class="cc-text-light cc-mb-sm">"Walk me through the OODA loop."</p>
+          <p class="cc-text-light cc-mb-sm">"How do I decide faster under stress?"</p>
+          <p class="cc-text-light">"Give me a threat assessment framework."</p>
+        </div>
+
+        <div class="cc-card">
+          <h4 class="cc-mb-sm" style="color: var(--color-accent-light);">Scenario Training</h4>
+          <p class="cc-text-light cc-mb-sm">"Run me through an active shooter scenario."</p>
+          <p class="cc-text-light cc-mb-sm">"Practice escape route identification."</p>
+          <p class="cc-text-light">"Test my observation skills with a drill."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cc-section cc-bg-dark">
+    <div class="cc-container-narrow cc-text-center">
+      <h2 class="cc-text-white cc-mb-lg">Sharpen Your Awareness</h2>
+      <p class="cc-text-lg cc-text-white cc-mb-2xl" style="opacity: 0.8;">
+        Start training your observation skills and tactical awareness today.
+      </p>
+      <a href="/ccis/chat/?agent=situational-awareness" class="cc-btn cc-btn-secondary cc-btn-lg">Launch Situational Awareness</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="cc-footer">
+  <div class="cc-footer-content">
+    <p>&copy; 2026 Claymore & Colt Holdings LLC. All rights reserved.</p>
+    <div class="cc-footer-links">
+      <a href="mailto:info@claymoreandcolt.com">info@claymoreandcolt.com</a>
+      <span>|</span>
+      <a href="tel:+17028449872">+1 (702) 844-9872</a>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="/assets/js/global.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,355 @@
+/* -------------------------------------------------
+   LANDING PAGE — KA.BA.AKH + LEADERSHIP
+--------------------------------------------------- */
+
+:root {
+  --bg: #303030;
+  --bg-soft: #3a3a3a;
+  --bg-card: #2a2a2a;
+
+  --gold: #d8b979;
+  --gold-soft: #e8d19b;
+
+  --crimson: #ba3b3b;
+  --crimson-soft: #d65a5a;
+
+  --text-main: #f5f2eb;
+  --text-muted: #c8c3d0;
+
+  --radius: 18px;
+  --font-serif: "Libre Baskerville", serif;
+  --font-gara: "EB Garamond", serif;
+  --transition: 0.3s ease;
+}
+
+/* -------------------------------------------------
+   RESET
+--------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.landing {
+  background: var(--bg);
+  color: var(--text-main);
+  font-family: var(--font-serif);
+  overflow-x: hidden;
+}
+
+/* -------------------------------------------------
+   BRAND BAR
+--------------------------------------------------- */
+.brand-bar {
+  padding: 14px 24px;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2a2a2a;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.brand-bar span:first-child {
+  font-family: var(--font-gara);
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  color: var(--gold-soft);
+}
+
+body.intel-leadership .brand-bar span:first-child {
+  color: var(--crimson-soft);
+}
+
+/* -------------------------------------------------
+   HERO SECTION
+--------------------------------------------------- */
+.hero {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px 20px 80px;
+  text-align: center;
+  background: linear-gradient(180deg, #303030 0%, #282828 100%);
+}
+
+body.intel-leadership .hero {
+  background: radial-gradient(circle at top, #3a3c40 0%, #242528 55%, #191a1d 100%);
+}
+
+/* -------------------------------------------------
+   KA.BA.AKH CAPSULE
+--------------------------------------------------- */
+.avatar-wrap {
+  max-width: 330px;
+  margin-bottom: 32px;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid rgba(216,185,121,0.28);
+  box-shadow:
+    0 0 80px rgba(0,0,0,0.7),
+    0 0 50px rgba(216,185,121,0.28);
+}
+
+.avatar-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* -------------------------------------------------
+   LEADERSHIP CAPSULE (Commander)
+--------------------------------------------------- */
+.commander-wrap {
+  width: 330px;
+  height: 500px;
+  margin-bottom: 40px;
+
+  border-radius: 999px;
+  overflow: hidden;
+
+  background-image: url('/assets/img/commander2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  border: 1px solid rgba(186,59,59,0.35);
+  box-shadow:
+    0 0 80px rgba(0,0,0,0.7),
+    0 0 50px rgba(186,59,59,0.35);
+}
+
+/* -------------------------------------------------
+   APPLE-STYLE HERO TEXT GROUP
+--------------------------------------------------- */
+.hero-text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -10px;
+  max-width: 760px;
+  text-align: center;
+}
+
+/* Soft glow under capsule */
+.hero-text-wrap::before {
+  content: "";
+  width: 260px;
+  height: 90px;
+  margin-bottom: 28px;
+  background: radial-gradient(
+    circle at top,
+    rgba(255,255,255,0.1) 0%,
+    rgba(255,255,255,0.0) 70%
+  );
+  display: block;
+}
+
+/* HERO TAG */
+.hero-tag {
+  font-size: 0.82rem;
+  letter-spacing: 0.32em;
+  font-weight: 400;
+  opacity: 0.85;
+  margin-bottom: 16px;
+}
+
+body.intel-leadership .hero-tag {
+  color: var(--crimson-soft);
+}
+
+/* HERO TITLE */
+.hero-title {
+  font-family: var(--font-gara);
+  font-size: clamp(2.6rem, 4vw, 3.4rem);
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+/* SUBTITLE */
+.hero-sub {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  opacity: 0.85;
+  max-width: 720px;
+  margin-bottom: 34px;
+}
+
+/* CTA BUTTON */
+.cta-btn {
+  padding: 16px 44px;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  border-radius: 999px;
+
+  background: var(--crimson);
+  color: #fff;
+
+  box-shadow:
+    0 8px 24px rgba(0,0,0,0.4),
+    0 0 14px rgba(186,59,59,0.35);
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  box-shadow:
+    0 12px 34px rgba(0,0,0,0.55),
+    0 0 18px rgba(214,90,90,0.45);
+  transform: translateY(-2px);
+}
+
+/* HERO NOTE */
+.hero-note {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  opacity: 0.75;
+}
+
+/* -------------------------------------------------
+   SECTIONS & CONTENT
+--------------------------------------------------- */
+.section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 70px 20px 50px;
+  text-align: center;
+}
+
+.section-heading {
+  font-family: var(--font-gara);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 12px;
+  color: var(--gold-soft);
+  text-shadow: 0 0 18px rgba(216,185,121,0.25);
+}
+
+body.intel-leadership .section-heading {
+  color: var(--crimson-soft);
+  text-shadow: 0 0 18px rgba(186,59,59,0.25);
+}
+
+.section p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin: 0 auto 28px;
+  max-width: 720px;
+  line-height: 1.6;
+}
+
+/* -------------------------------------------------
+   CARDS
+--------------------------------------------------- */
+.grid-three {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+}
+
+.grid-item {
+  background: var(--bg-card);
+  padding: 22px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(216,185,121,0.22);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+
+.grid-item h3 {
+  color: var(--gold-soft);
+  font-family: var(--font-gara);
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+}
+
+body.intel-leadership .grid-item {
+  border: 1px solid rgba(186,59,59,0.35);
+}
+
+body.intel-leadership .grid-item h3 {
+  color: var(--crimson-soft);
+}
+
+/* -------------------------------------------------
+   TRIAD DIVIDER
+--------------------------------------------------- */
+.triad {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px auto 28px;
+}
+
+.triad span {
+  width: 12px;
+  height: 12px;
+  border: 1.6px solid var(--gold-soft);
+  transform: rotate(45deg);
+  opacity: 0.9;
+}
+
+body.intel-leadership .triad span {
+  border-color: var(--crimson-soft);
+}
+
+/* -------------------------------------------------
+   BOTTOM CTA — FINAL ALIGNMENT FIX
+--------------------------------------------------- */
+.bottom-cta {
+  width: 100%;
+  max-width: 960px;               /* same width as sections */
+  margin: 0 auto;                 /* center the whole block */
+  padding: 80px 20px 120px;
+  text-align: center;
+  position: relative;             /* safety positioning */
+}
+
+.bottom-cta p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  opacity: 0.9;
+  margin-bottom: 26px;
+  line-height: 1.6;
+}
+
+/* CENTER THE CTA BUTTON PERFECTLY */
+.bottom-cta .cta-btn {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 16px 44px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+
+  background: var(--crimson);
+  color: #fff;
+
+  box-shadow:
+    0 8px 24px rgba(0,0,0,0.4),
+    0 0 14px rgba(186,59,59,0.35);
+
+  transition: 0.3s ease;
+}
+
+.bottom-cta .cta-btn:hover {
+  box-shadow:
+    0 12px 34px rgba(0,0,0,0.55),
+    0 0 18px rgba(214,90,90,0.45);
+  transform: translateY(-2px);
+}
+
+/* Prevent weird partial width issues on ultra-wide screens */
+.bottom-cta .cta-btn,
+.bottom-cta p {
+  max-width: 100%;
+}

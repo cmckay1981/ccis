@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Well Control Intelligence - Tactical engineering mentor for drilling, MPD, and well control operations.">
+<title>Well Control Intelligence | CCIS</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+
+<style>
+/* Well Control Intelligence steel blue accent */
+:root {
+  --color-accent: #1a3a52;
+  --color-accent-dark: #0a2a42;
+  --color-accent-light: #6f93c9;
+}
+
+.cc-btn-primary {
+  background: var(--color-accent-light);
+  border-color: var(--color-accent-light);
+  color: white;
+}
+
+.cc-btn-primary:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.wellcontrol-hero {
+  background: linear-gradient(135deg, #1a2530 0%, #0f1520 100%);
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.wellcontrol-hero h1 {
+  color: var(--color-accent-light);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: var(--color-accent-light);
+}
+
+.triad {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 2rem auto;
+}
+
+.triad span {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--color-accent-light);
+  transform: rotate(45deg);
+  opacity: 0.8;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navigation Drawer Overlay -->
+<div class="cc-nav-drawer-overlay" id="navDrawerOverlay"></div>
+
+<!-- Navigation Drawer -->
+<nav class="cc-nav-drawer" id="navDrawer">
+  <div class="cc-nav-drawer-header">
+    <a href="/" class="cc-logo">Claymore & Colt</a>
+    <button class="cc-nav-drawer-close" id="navDrawerClose" aria-label="Close menu">&times;</button>
+  </div>
+  <div class="cc-nav-drawer-content">
+    <a href="/" class="cc-nav-drawer-link">Home</a>
+    <a href="/about/" class="cc-nav-drawer-link">About</a>
+    <a href="/energy/" class="cc-nav-drawer-link">Energy</a>
+    <a href="/decom/" class="cc-nav-drawer-link">Decommissioning</a>
+    <a href="/trading/" class="cc-nav-drawer-link">Trading</a>
+    <a href="/trading/qualification.html" class="cc-nav-drawer-link">Qualification</a>
+    <a href="/well-intelligence/" class="cc-nav-drawer-link">Well Intelligence</a>
+    <a href="/redcell/" class="cc-nav-drawer-link">REDCELL</a>
+
+    <div class="cc-nav-drawer-section">
+      <div class="cc-nav-drawer-section-title">Intelligence Suite</div>
+      <a href="/ccis/" class="cc-nav-drawer-link">CCIS Dashboard</a>
+      <a href="/ccis/kabaakh/" class="cc-nav-drawer-link">KA.BA.AKH</a>
+      <a href="/ccis/leadership-intelligence/" class="cc-nav-drawer-link">Leadership Intelligence</a>
+      <a href="/ccis/situational-awareness/" class="cc-nav-drawer-link">Situational Awareness</a>
+      <a href="/ccis/chat/?agent=well-control-intelligence" class="cc-nav-drawer-link active">Well Control Intelligence</a>
+      <a href="/ccis/cyber-security/" class="cc-nav-drawer-link">Cyber Security</a>
+      <a href="/ccis/hospitality-concierge/" class="cc-nav-drawer-link">Hospitality Concierge</a>
+      <a href="/experiential-house/" class="cc-nav-drawer-link">Experiential House</a>
+    </div>
+
+    <div class="cc-nav-drawer-section">
+      <div class="cc-nav-drawer-section-title">Connect</div>
+      <a href="/contact/" class="cc-nav-drawer-link">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="cc-header">
+  <div class="cc-header-inner">
+    <a href="/" class="cc-logo">Claymore & Colt</a>
+
+    <nav class="cc-nav">
+      <a href="/" class="cc-nav-link">Home</a>
+      <a href="/about/" class="cc-nav-link">About</a>
+      <a href="/energy/" class="cc-nav-link">Energy</a>
+      <a href="/trading/" class="cc-nav-link">Trading</a>
+      <a href="/ccis/" class="cc-nav-link">CCIS</a>
+      <a href="/contact/" class="cc-nav-link">Contact</a>
+    </nav>
+
+    <button class="cc-mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main>
+
+  <!-- Hero -->
+  <section class="wellcontrol-hero">
+    <div class="cc-container-narrow">
+      <div class="hero-icon">⛯</div>
+      <p class="cc-text-sm cc-text-light cc-mb-md" style="letter-spacing: 0.2em; text-transform: uppercase;">Pressure · Clarity · Control</p>
+      <h1>Well Control Intelligence</h1>
+      <p class="cc-text-xl cc-text-light cc-mb-2xl">
+        A tactical engineering mentor for drilling, MPD, and well control. Designed to support your thinking when BHP, barriers, and time all matter at once.
+      </p>
+      <a href="/ccis/chat/?agent=well-control-intelligence" class="cc-btn cc-btn-primary cc-btn-lg">Start Session</a>
+    </div>
+  </section>
+
+  <!-- What It Helps With -->
+  <section class="cc-section">
+    <div class="cc-container">
+      <h2 class="cc-text-center cc-mb-2xl">What This Agent Helps You With</h2>
+      <div class="triad"><span></span><span></span><span></span></div>
+
+      <p class="cc-text-center cc-mb-2xl">
+        Well Control Intelligence provides conceptual guidance for drilling teams, MPD operators, and well control specialists working in high-pressure environments.
+      </p>
+
+      <div class="cc-grid cc-grid-3">
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">Kick Detection & Shut-In Logic</h3>
+          <p class="cc-text-light">
+            Flow checks, trends, early warning signs, and when to shut in — explained in simple, calm language.
+          </p>
+        </div>
+
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">MPD & BHP Stability</h3>
+          <p class="cc-text-light">
+            Pressure ramps, choke behavior, equivalent circulating density, and how to stabilize BHP when things move.
+          </p>
+        </div>
+
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">IWCF & IADC Support</h3>
+          <p class="cc-text-light">
+            Concepts, scenario walk-throughs, and mental models that help you remember, not just memorize.
+          </p>
+        </div>
+
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">Well Control Theory</h3>
+          <p class="cc-text-light">
+            Hydrostatics, MAASP, LOT/FIT meaning, gas migration, trapped pressure and choke line friction — made clear.
+          </p>
+        </div>
+
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">Scenario Training</h3>
+          <p class="cc-text-light">
+            Stripping, volumetric, dynamic kills, MPD shut-in logic, and crew drills you can rehearse in your head.
+          </p>
+        </div>
+
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">Human Reliability</h3>
+          <p class="cc-text-light">
+            Brief structure, communication loops, decision pacing, and how to reduce silence when it matters most.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Try Saying -->
+  <section class="cc-section cc-bg-alt">
+    <div class="cc-container">
+      <h2 class="cc-text-center cc-mb-2xl">Try Saying</h2>
+      <div class="triad"><span></span><span></span><span></span></div>
+
+      <div class="cc-grid cc-grid-3">
+        <div class="cc-card">
+          <h4 class="cc-mb-sm" style="color: var(--color-accent-light);">Kick & Pressure</h4>
+          <p class="cc-text-light cc-mb-sm">"Walk me through a surface well shut-in."</p>
+          <p class="cc-text-light cc-mb-sm">"Explain choke line friction in simple terms."</p>
+          <p class="cc-text-light">"What are early signs of a kick?"</p>
+        </div>
+
+        <div class="cc-card">
+          <h4 class="cc-mb-sm" style="color: var(--color-accent-light);">MPD Operations</h4>
+          <p class="cc-text-light cc-mb-sm">"Why is my choke hunting?"</p>
+          <p class="cc-text-light cc-mb-sm">"Help me design a pressure ramp."</p>
+          <p class="cc-text-light">"Talk me through MPD transition-in logic."</p>
+        </div>
+
+        <div class="cc-card">
+          <h4 class="cc-mb-sm" style="color: var(--color-accent-light);">Leadership & Training</h4>
+          <p class="cc-text-light cc-mb-sm">"How do I brief the crew before a kill?"</p>
+          <p class="cc-text-light cc-mb-sm">"Crew is quiet — how do I pull input?"</p>
+          <p class="cc-text-light">"Give me a drill to practice tonight."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cc-section cc-bg-dark">
+    <div class="cc-container-narrow cc-text-center">
+      <h2 class="cc-text-white cc-mb-lg">Your Second Brain on Pressure</h2>
+      <p class="cc-text-lg cc-text-white cc-mb-2xl" style="opacity: 0.8;">
+        When you want a calm second brain on pressure and barriers — open the system.
+      </p>
+      <a href="/ccis/chat/?agent=well-control-intelligence" class="cc-btn cc-btn-secondary cc-btn-lg">Launch Well Control Intelligence</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="cc-footer">
+  <div class="cc-footer-content">
+    <p>&copy; 2026 Claymore & Colt Holdings LLC. All rights reserved.</p>
+    <div class="cc-footer-links">
+      <a href="mailto:info@claymoreandcolt.com">info@claymoreandcolt.com</a>
+      <span>|</span>
+      <a href="tel:+17028449872">+1 (702) 844-9872</a>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="/assets/js/global.js"></script>
+
+</body>
+</html>

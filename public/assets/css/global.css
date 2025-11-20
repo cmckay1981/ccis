@@ -1,0 +1,421 @@
+/**
+ * Claymore & Colt Holdings - Global Design System
+ * Version 1.0
+ * © 2026 Claymore & Colt Holdings LLC
+ */
+
+/* ================================
+   CSS VARIABLES (Design Tokens)
+   ================================ */
+
+:root {
+  /* Colors - Primary */
+  --color-primary: #000000;
+  --color-accent: #c9a46c;
+  --color-white: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-light: #666666;
+  --color-border: #e0e0e0;
+
+  /* Colors - Backgrounds */
+  --color-bg: #ffffff;
+  --color-bg-alt: #f9f9f9;
+  --color-bg-dark: #1a1a1a;
+
+  /* Typography */
+  --font-primary: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-display: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Libre Baskerville', serif;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+  --text-5xl: 3rem;       /* 48px */
+
+  /* Spacing Scale */
+  --space-xs: 0.25rem;    /* 4px */
+  --space-sm: 0.5rem;     /* 8px */
+  --space-md: 1rem;       /* 16px */
+  --space-lg: 1.5rem;     /* 24px */
+  --space-xl: 2rem;       /* 32px */
+  --space-2xl: 3rem;      /* 48px */
+  --space-3xl: 4rem;      /* 64px */
+  --space-4xl: 6rem;      /* 96px */
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-padding: 1.5rem;
+  --border-radius: 20px;
+  --border-radius-sm: 12px;
+  --border-radius-lg: 32px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Z-index Scale */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+}
+
+/* ================================
+   RESET & BASE STYLES
+   ================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  min-height: 100vh;
+}
+
+/* ================================
+   TYPOGRAPHY
+   ================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: var(--space-md);
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: var(--text-5xl);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--text-4xl);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+}
+
+h4 {
+  font-size: var(--text-xl);
+  font-weight: 600;
+}
+
+h5 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+h6 {
+  font-size: var(--text-base);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p {
+  margin-bottom: var(--space-md);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+em, i {
+  font-style: italic;
+}
+
+/* ================================
+   LAYOUT UTILITIES
+   ================================ */
+
+.cc-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  width: 100%;
+}
+
+.cc-container-wide {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.cc-container-narrow {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.cc-section {
+  padding: var(--space-4xl) 0;
+}
+
+.cc-section-sm {
+  padding: var(--space-2xl) 0;
+}
+
+/* ================================
+   GRID SYSTEM
+   ================================ */
+
+.cc-grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.cc-grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.cc-grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.cc-grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* ================================
+   FLEX UTILITIES
+   ================================ */
+
+.cc-flex {
+  display: flex;
+}
+
+.cc-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cc-flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cc-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.cc-gap-xs { gap: var(--space-xs); }
+.cc-gap-sm { gap: var(--space-sm); }
+.cc-gap-md { gap: var(--space-md); }
+.cc-gap-lg { gap: var(--space-lg); }
+.cc-gap-xl { gap: var(--space-xl); }
+
+/* ================================
+   SPACING UTILITIES
+   ================================ */
+
+.cc-mt-xs { margin-top: var(--space-xs); }
+.cc-mt-sm { margin-top: var(--space-sm); }
+.cc-mt-md { margin-top: var(--space-md); }
+.cc-mt-lg { margin-top: var(--space-lg); }
+.cc-mt-xl { margin-top: var(--space-xl); }
+.cc-mt-2xl { margin-top: var(--space-2xl); }
+.cc-mt-3xl { margin-top: var(--space-3xl); }
+
+.cc-mb-xs { margin-bottom: var(--space-xs); }
+.cc-mb-sm { margin-bottom: var(--space-sm); }
+.cc-mb-md { margin-bottom: var(--space-md); }
+.cc-mb-lg { margin-bottom: var(--space-lg); }
+.cc-mb-xl { margin-bottom: var(--space-xl); }
+.cc-mb-2xl { margin-bottom: var(--space-2xl); }
+.cc-mb-3xl { margin-bottom: var(--space-3xl); }
+
+.cc-pt-xs { padding-top: var(--space-xs); }
+.cc-pt-sm { padding-top: var(--space-sm); }
+.cc-pt-md { padding-top: var(--space-md); }
+.cc-pt-lg { padding-top: var(--space-lg); }
+.cc-pt-xl { padding-top: var(--space-xl); }
+
+.cc-pb-xs { padding-bottom: var(--space-xs); }
+.cc-pb-sm { padding-bottom: var(--space-sm); }
+.cc-pb-md { padding-bottom: var(--space-md); }
+.cc-pb-lg { padding-bottom: var(--space-lg); }
+.cc-pb-xl { padding-bottom: var(--space-xl); }
+
+/* ================================
+   TEXT UTILITIES
+   ================================ */
+
+.cc-text-center { text-align: center; }
+.cc-text-left { text-align: left; }
+.cc-text-right { text-align: right; }
+
+.cc-text-primary { color: var(--color-primary); }
+.cc-text-accent { color: var(--color-accent); }
+.cc-text-light { color: var(--color-text-light); }
+.cc-text-white { color: var(--color-white); }
+
+.cc-text-xs { font-size: var(--text-xs); }
+.cc-text-sm { font-size: var(--text-sm); }
+.cc-text-base { font-size: var(--text-base); }
+.cc-text-lg { font-size: var(--text-lg); }
+.cc-text-xl { font-size: var(--text-xl); }
+.cc-text-2xl { font-size: var(--text-2xl); }
+
+.cc-font-normal { font-weight: 400; }
+.cc-font-medium { font-weight: 500; }
+.cc-font-semibold { font-weight: 600; }
+.cc-font-bold { font-weight: 700; }
+
+.cc-uppercase { text-transform: uppercase; }
+.cc-lowercase { text-transform: lowercase; }
+.cc-capitalize { text-transform: capitalize; }
+
+/* ================================
+   RESPONSIVE UTILITIES
+   ================================ */
+
+.cc-hide-mobile {
+  display: block;
+}
+
+.cc-hide-desktop {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --text-5xl: 2.25rem;  /* 36px on mobile */
+    --text-4xl: 1.875rem; /* 30px on mobile */
+    --text-3xl: 1.5rem;   /* 24px on mobile */
+    --container-padding: 1rem;
+  }
+
+  h1 {
+    font-size: var(--text-4xl);
+  }
+
+  h2 {
+    font-size: var(--text-3xl);
+  }
+
+  .cc-section {
+    padding: var(--space-3xl) 0;
+  }
+
+  .cc-hide-mobile {
+    display: none;
+  }
+
+  .cc-hide-desktop {
+    display: block;
+  }
+}
+
+/* ================================
+   ACCESSIBILITY
+   ================================ */
+
+.cc-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ================================
+   PRINT STYLES
+   ================================ */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

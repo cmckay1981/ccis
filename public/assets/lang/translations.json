@@ -1,0 +1,193 @@
+{
+  "en": {
+    "nav": {
+      "home": "Home",
+      "energy": "Energy",
+      "trading": "Trading",
+      "decom": "Decom",
+      "wellq": "WellQ",
+      "about": "About",
+      "contact": "Contact",
+      "login": "Login"
+    },
+    "footer": {
+      "tagline": "WellQ by Metamorphic Holdings | Built for real-world performance"
+    },
+    "wellq": {
+      "hero": {
+        "title": "Train Like You Drill. Real Wells. Real Data.",
+        "subtitle": "Don’t wait for an annual course. Build well control instinctively — on every well, in every section.",
+        "button": "Launch Demo"
+      },
+      "features": {
+        "offline": "Built for remote operations with full offline access and automatic sync when online.",
+        "iwcf": "Fully aligned with 2023 IWCF EX-0035 standards — intuitive, accurate, and field-tested.",
+        "trusted": "WellQ is the go-to platform for Metamorphic Energy and Decom teams worldwide.",
+        "users": "Supports individuals, organizations, instructors, and admin dashboards."
+      },
+      "screenshots": {
+        "title": "Platform Preview",
+        "subtitle": "Modern, mobile-friendly UI with real-time learning feedback and tracking."
+      },
+      "q1": {
+        "header": "Try an Example Question",
+        "instructions": "Select your answer and click 'Check Answer'.",
+        "question": "What is the hydrostatic pressure at 10,000 ft with a mud weight of 12.5 ppg?",
+        "a": "6,400 psi",
+        "b": "6,250 psi",
+        "c": "5,200 psi",
+        "d": "7,000 psi"
+      },
+      "buttons": {
+        "check": "Check Answer",
+        "hint": "Hint",
+        "explain": "Why?"
+      },
+      "modal": {
+        "correct": "✅ Correct!",
+        "incorrect": "❌ Incorrect.",
+        "formula": "Formula: P = 0.052 × MW × TVD",
+        "working": "Working: P = 0.052 × 12.5 × 10,000 = 6,500 psi",
+        "response": {
+          "correct": "Answer B) is the closest accurate value.",
+          "incorrect": "The correct answer is B) 6,250 psi."
+        }
+      },
+      "celebration": {
+        "msg1": "Boom. That’s why you lead.",
+        "msg2": "Knowledge is pressure control.",
+        "msg3": "Crew would be proud.",
+        "msg4": "Formation stays sealed. You nailed it.",
+        "msg5": "Smart. Fast. Safe."
+      }
+    }
+  },
+
+  "es-mx": {
+    "nav": {
+      "home": "Inicio",
+      "energy": "Energía",
+      "trading": "Comercio",
+      "decom": "Desmantelamiento",
+      "wellq": "WellQ",
+      "about": "Acerca de",
+      "contact": "Contacto",
+      "login": "Ingresar"
+    },
+    "footer": {
+      "tagline": "WellQ por Metamorphic Holdings | Diseñado para el rendimiento real"
+    },
+    "wellq": {
+      "hero": {
+        "title": "Plataforma de Entrenamiento WellQ",
+        "subtitle": "Diseñada para el campo. Precisa. Potenciada por Metamorphic.",
+        "button": "Lanzar Demo"
+      },
+      "features": {
+        "offline": "Diseñada para operaciones remotas con acceso completo sin conexión.",
+        "iwcf": "Totalmente alineada con IWCF EX-0035 de 2023 — intuitiva y comprobada.",
+        "trusted": "WellQ es la plataforma preferida para los equipos de Metamorphic Energy y Decom.",
+        "users": "Soporta individuos, organizaciones, instructores y paneles administrativos."
+      },
+      "screenshots": {
+        "title": "Vista de Plataforma",
+        "subtitle": "Interfaz móvil moderna con retroalimentación en tiempo real."
+      },
+      "q1": {
+        "header": "Prueba una Pregunta de Ejemplo",
+        "instructions": "Selecciona tu respuesta y haz clic en 'Verificar respuesta'.",
+        "question": "¿Cuál es la presión hidrostática a 10,000 pies con un peso de lodo de 12.5 ppg?",
+        "a": "6,400 psi",
+        "b": "6,250 psi",
+        "c": "5,200 psi",
+        "d": "7,000 psi"
+      },
+      "buttons": {
+        "check": "Verificar respuesta",
+        "hint": "Pista",
+        "explain": "¿Qué es la presión hidrostática?"
+      },
+      "modal": {
+        "correct": "✅ ¡Correcto!",
+        "incorrect": "❌ Incorrecto.",
+        "formula": "Fórmula: P = 0.052 × MW × TVD",
+        "working": "Cálculo: P = 0.052 × 12.5 × 10,000 = 6,500 psi",
+        "response": {
+          "correct": "La opción B) es la más precisa.",
+          "incorrect": "La respuesta correcta es B) 6,250 psi."
+        }
+      },
+      "celebration": {
+        "msg1": "¡Boom! Por eso eres el líder.",
+        "msg2": "El conocimiento es control de presión.",
+        "msg3": "Tu equipo estaría orgulloso.",
+        "msg4": "La formación se mantiene sellada. Lo lograste.",
+        "msg5": "Rápido. Inteligente. Seguro."
+      }
+    }
+  },
+
+  "pt-br": {
+    "nav": {
+      "home": "Início",
+      "energy": "Energia",
+      "trading": "Comércio",
+      "decom": "Descomissionamento",
+      "wellq": "WellQ",
+      "about": "Sobre",
+      "contact": "Contato",
+      "login": "Entrar"
+    },
+    "footer": {
+      "tagline": "WellQ da Metamorphic Holdings | Feito para desempenho real"
+    },
+    "wellq": {
+      "hero": {
+        "title": "Plataforma de Treinamento WellQ",
+        "subtitle": "Feita para o campo. Precisa. Impulsionada pela Metamorphic.",
+        "button": "Iniciar Demo"
+      },
+      "features": {
+        "offline": "Projetada para operações remotas com acesso completo offline.",
+        "iwcf": "Totalmente alinhada com IWCF EX-0035 2023 — intuitiva e validada.",
+        "trusted": "WellQ é a plataforma confiável das equipes Metamorphic Energy e Decom.",
+        "users": "Suporta indivíduos, organizações, instrutores e painéis administrativos."
+      },
+      "screenshots": {
+        "title": "Visualização da Plataforma",
+        "subtitle": "UI moderna e responsiva com feedback em tempo real."
+      },
+      "q1": {
+        "header": "Experimente uma Pergunta de Exemplo",
+        "instructions": "Selecione sua resposta e clique em 'Verificar resposta'.",
+        "question": "Qual é a pressão hidrostática a 10.000 pés com peso de lama de 12,5 ppg?",
+        "a": "6.400 psi",
+        "b": "6.250 psi",
+        "c": "5.200 psi",
+        "d": "7.000 psi"
+      },
+      "buttons": {
+        "check": "Verificar resposta",
+        "hint": "Dica",
+        "explain": "O que é Pressão Hidrostática?"
+      },
+      "modal": {
+        "correct": "✅ Correto!",
+        "incorrect": "❌ Incorreto.",
+        "formula": "Fórmula: P = 0.052 × MW × TVD",
+        "working": "Cálculo: P = 0.052 × 12,5 × 10.000 = 6.500 psi",
+        "response": {
+          "correct": "A resposta B) é a mais precisa.",
+          "incorrect": "A resposta correta é B) 6.250 psi."
+        }
+      },
+      "celebration": {
+        "msg1": "Boom. É por isso que você lidera.",
+        "msg2": "Conhecimento é controle de pressão.",
+        "msg3": "A equipe teria orgulho.",
+        "msg4": "A formação ficou estável. Você mandou bem.",
+        "msg5": "Esperto. Rápido. Seguro."
+      }
+    }
+  }
+}

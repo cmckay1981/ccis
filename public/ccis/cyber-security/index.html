@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cyber Security Intelligence - Threat analysis, incident response, security architecture, and defensive strategies for critical systems.">
+<title>Cyber Security Intelligence | CCIS</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+
+<style>
+/* Cyber Security purple accent */
+:root {
+  --color-accent: #6a3a7c;
+  --color-accent-dark: #5a2a6c;
+  --color-accent-light: #7a4a8c;
+}
+
+.cc-btn-primary {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: white;
+}
+
+.cc-btn-primary:hover {
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+}
+
+.cyber-hero {
+  background: linear-gradient(135deg, #251a2a 0%, #150f1a 100%);
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.cyber-hero h1 {
+  color: var(--color-accent-light);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.triad {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 2rem auto;
+}
+
+.triad span {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--color-accent-light);
+  transform: rotate(45deg);
+  opacity: 0.8;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navigation Drawer Overlay -->
+<div class="cc-nav-drawer-overlay" id="navDrawerOverlay"></div>
+
+<!-- Navigation Drawer -->
+<nav class="cc-nav-drawer" id="navDrawer">
+  <div class="cc-nav-drawer-header">
+    <a href="/" class="cc-logo">Claymore & Colt</a>
+    <button class="cc-nav-drawer-close" id="navDrawerClose" aria-label="Close menu">&times;</button>
+  </div>
+  <div class="cc-nav-drawer-content">
+    <a href="/" class="cc-nav-drawer-link">Home</a>
+    <a href="/about/" class="cc-nav-drawer-link">About</a>
+    <a href="/energy/" class="cc-nav-drawer-link">Energy</a>
+    <a href="/decom/" class="cc-nav-drawer-link">Decommissioning</a>
+    <a href="/trading/" class="cc-nav-drawer-link">Trading</a>
+    <a href="/trading/qualification.html" class="cc-nav-drawer-link">Qualification</a>
+    <a href="/well-intelligence/" class="cc-nav-drawer-link">Well Intelligence</a>
+    <a href="/redcell/" class="cc-nav-drawer-link">REDCELL</a>
+
+    <div class="cc-nav-drawer-section">
+      <div class="cc-nav-drawer-section-title">Intelligence Suite</div>
+      <a href="/ccis/" class="cc-nav-drawer-link">CCIS Dashboard</a>
+      <a href="/ccis/kabaakh/" class="cc-nav-drawer-link">KA.BA.AKH</a>
+      <a href="/ccis/leadership-intelligence/" class="cc-nav-drawer-link">Leadership Intelligence</a>
+      <a href="/ccis/situational-awareness/" class="cc-nav-drawer-link">Situational Awareness</a>
+      <a href="/ccis/well-control-intelligence/" class="cc-nav-drawer-link">Well Control Intelligence</a>
+      <a href="/ccis/chat/?agent=cyber-security" class="cc-nav-drawer-link active">Cyber Security</a>
+      <a href="/ccis/hospitality-concierge/" class="cc-nav-drawer-link">Hospitality Concierge</a>
+      <a href="/experiential-house/" class="cc-nav-drawer-link">Experiential House</a>
+    </div>
+
+    <div class="cc-nav-drawer-section">
+      <div class="cc-nav-drawer-section-title">Connect</div>
+      <a href="/contact/" class="cc-nav-drawer-link">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="cc-header">
+  <div class="cc-header-inner">
+    <a href="/" class="cc-logo">Claymore & Colt</a>
+
+    <nav class="cc-nav">
+      <a href="/" class="cc-nav-link">Home</a>
+      <a href="/about/" class="cc-nav-link">About</a>
+      <a href="/energy/" class="cc-nav-link">Energy</a>
+      <a href="/trading/" class="cc-nav-link">Trading</a>
+      <a href="/ccis/" class="cc-nav-link">CCIS</a>
+      <a href="/contact/" class="cc-nav-link">Contact</a>
+    </nav>
+
+    <button class="cc-mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">0</button>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main>
+
+  <!-- Hero -->
+  <section class="cyber-hero">
+    <div class="cc-container-narrow">
+      <p class="cc-text-sm cc-text-light cc-mb-md" style="letter-spacing: 0.2em; text-transform: uppercase;">Defend · Detect · Respond</p>
+      <h1>Cyber Security Intelligence</h1>
+      <p class="cc-text-xl cc-text-light cc-mb-2xl">
+        Threat analysis, incident response, security architecture, and defensive strategies for protecting critical systems and data.
+      </p>
+      <a href="/ccis/chat/?agent=cyber-security" class="cc-btn cc-btn-primary cc-btn-lg">Start Session</a>
+    </div>
+  </section>
+
+  <!-- What It Helps With -->
+  <section class="cc-section">
+    <div class="cc-container">
+      <h2 class="cc-text-center cc-mb-2xl">What This Agent Helps You With</h2>
+      <div class="triad"><span></span><span></span><span></span></div>
+
+      <p class="cc-text-center cc-mb-2xl">
+        Cyber Security Intelligence provides tactical guidance for security professionals, IT teams, and operational technology environments where system integrity is critical.
+      </p>
+
+      <div class="cc-grid cc-grid-3">
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">Threat Intelligence</h3>
+          <p class="cc-text-light">
+            Attack vectors, threat actor profiles, vulnerability analysis, and emerging threat landscape monitoring.
+          </p>
+        </div>
+
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">Incident Response</h3>
+          <p class="cc-text-light">
+            Detection, containment, eradication, and recovery protocols for security incidents and breaches.
+          </p>
+        </div>
+
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">Security Architecture</h3>
+          <p class="cc-text-light">
+            Defense-in-depth strategies, zero trust models, network segmentation, and secure system design.
+          </p>
+        </div>
+
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">OT/ICS Security</h3>
+          <p class="cc-text-light">
+            Industrial control system protection, SCADA security, and operational technology risk management.
+          </p>
+        </div>
+
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">Compliance & Frameworks</h3>
+          <p class="cc-text-light">
+            NIST, ISO 27001, CIS Controls, and regulatory compliance guidance for security operations.
+          </p>
+        </div>
+
+        <div class="cc-card">
+          <h3 class="cc-mb-md" style="color: var(--color-accent-light);">Security Awareness</h3>
+          <p class="cc-text-light">
+            Social engineering defense, phishing awareness, and human-centered security training.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Try Saying -->
+  <section class="cc-section cc-bg-alt">
+    <div class="cc-container">
+      <h2 class="cc-text-center cc-mb-2xl">Try Saying</h2>
+      <div class="triad"><span></span><span></span><span></span></div>
+
+      <div class="cc-grid cc-grid-3">
+        <div class="cc-card">
+          <h4 class="cc-mb-sm" style="color: var(--color-accent-light);">Threat Analysis</h4>
+          <p class="cc-text-light cc-mb-sm">"Walk me through ransomware attack patterns."</p>
+          <p class="cc-text-light cc-mb-sm">"What are current APT trends?"</p>
+          <p class="cc-text-light">"Help me assess this vulnerability."</p>
+        </div>
+
+        <div class="cc-card">
+          <h4 class="cc-mb-sm" style="color: var(--color-accent-light);">Incident Response</h4>
+          <p class="cc-text-light cc-mb-sm">"Guide me through breach containment."</p>
+          <p class="cc-text-light cc-mb-sm">"How do I handle this security alert?"</p>
+          <p class="cc-text-light">"Create an incident response plan."</p>
+        </div>
+
+        <div class="cc-card">
+          <h4 class="cc-mb-sm" style="color: var(--color-accent-light);">Security Architecture</h4>
+          <p class="cc-text-light cc-mb-sm">"Design a zero-trust network."</p>
+          <p class="cc-text-light cc-mb-sm">"How do I secure OT systems?"</p>
+          <p class="cc-text-light">"Review my security architecture."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cc-section cc-bg-dark">
+    <div class="cc-container-narrow cc-text-center">
+      <h2 class="cc-text-white cc-mb-lg">Strengthen Your Defenses</h2>
+      <p class="cc-text-lg cc-text-white cc-mb-2xl" style="opacity: 0.8;">
+        Access tactical cyber security intelligence for your critical systems.
+      </p>
+      <a href="/ccis/chat/?agent=cyber-security" class="cc-btn cc-btn-secondary cc-btn-lg">Launch Cyber Security Intelligence</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="cc-footer">
+  <div class="cc-footer-content">
+    <p>&copy; 2026 Claymore & Colt Holdings LLC. All rights reserved.</p>
+    <div class="cc-footer-links">
+      <a href="mailto:info@claymoreandcolt.com">info@claymoreandcolt.com</a>
+      <span>|</span>
+      <a href="tel:+17028449872">+1 (702) 844-9872</a>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="/assets/js/global.js"></script>
+
+</body>
+</html>

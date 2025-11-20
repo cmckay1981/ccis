@@ -1,0 +1,123 @@
+/* -------------------------------------------------
+   LEADERSHIP INTELLIGENCE — CRIMSON THEME OVERRIDES
+   Applies only when:
+   <body class="intel-leadership">
+   or
+   <body class="leadership-ui">
+--------------------------------------------------- */
+
+body.intel-leadership,
+body.leadership-ui {
+  --accent: #ba3b3b;         /* Primary crimson */
+  --accent-soft: #d65a5a;    /* Soft crimson glow */
+
+  --text-main: #f5f2eb;
+  --text-muted: #b8b0a3;
+
+  --hero-border: rgba(186,59,59,0.35);
+  --hero-glow: rgba(186,59,59,0.28);
+}
+
+/* -------------------------------------------------
+   HERO AVATAR / IMAGE WRAP
+--------------------------------------------------- */
+body.intel-leadership .avatar-wrap,
+body.leadership-ui .avatar-wrap,
+body.intel-leadership .commander-wrap,
+body.leadership-ui .commander-wrap {
+  border: 1px solid var(--hero-border);
+  box-shadow:
+    0 0 80px rgba(0,0,0,0.7),
+    0 0 50px var(--hero-glow);
+}
+
+/* -------------------------------------------------
+   SECTION HEADINGS
+--------------------------------------------------- */
+body.intel-leadership .section-heading {
+  color: var(--accent-soft);
+  text-shadow: 0 0 16px rgba(186,59,59,0.25);
+}
+
+/* -------------------------------------------------
+   DIVIDER (Triad)
+--------------------------------------------------- */
+body.intel-leadership .triad span {
+  border-color: var(--accent-soft) !important;
+}
+
+/* -------------------------------------------------
+   CTA BUTTON
+--------------------------------------------------- */
+body.intel-leadership .cta-btn {
+  background: var(--accent);
+  color: #111;
+}
+
+body.intel-leadership .cta-btn:hover {
+  background: var(--accent-soft);
+}
+
+/* -------------------------------------------------
+   GRID ITEMS
+--------------------------------------------------- */
+body.intel-leadership .grid-item {
+  border-color: rgba(186,59,59,0.35);
+}
+
+body.intel-leadership .grid-item h3 {
+  color: var(--accent-soft);
+}
+
+/* -------------------------------------------------
+   HERO TAG
+--------------------------------------------------- */
+body.intel-leadership .hero-tag {
+  color: var(--accent-soft);
+}
+
+/* -------------------------------------------------
+   FOOTER
+--------------------------------------------------- */
+body.intel-leadership footer {
+  color: #9b96a5;
+}
+
+/* -------------------------------------------------
+   OPTIONAL: CHAT UI OVERRIDES
+   Applies when chat is loaded with:
+   <body class="leadership-ui">
+--------------------------------------------------- */
+
+/* User bubble (right side) */
+body.leadership-ui .msg.user {
+  background: var(--accent);
+  color: #0b0506;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+}
+
+/* Bot bubble (left side) */
+body.leadership-ui .msg.bot {
+  background: #27252b;
+  border: 1px solid rgba(255,255,255,0.06);
+  color: var(--text-main);
+}
+
+/* Send Button */
+body.leadership-ui #sendBtn,
+body.intel-leadership #sendBtn {
+  background: var(--accent);
+  color: #fff;
+}
+body.leadership-ui #sendBtn:hover,
+body.intel-leadership #sendBtn:hover {
+  background: var(--accent-soft);
+}
+
+/* Header Bar */
+body.leadership-ui .kabaakh-header,
+body.intel-leadership .kabaakh-header {
+  background: #0f0f11;
+  border-bottom: 1px solid rgba(186,59,59,0.35);
+  color: var(--accent);
+}

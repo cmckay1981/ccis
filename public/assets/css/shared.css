@@ -1,0 +1,177 @@
+/* ============================================================================
+   SHARED.css — Claymore & Colt Global Styles
+   Used by ALL pages (landing + chat)
+   Does NOT contain agent-specific colors.
+============================================================================ */
+
+
+/* -------------------------------------------------
+   GLOBAL RESET
+--------------------------------------------------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* -------------------------------------------------
+   GLOBAL TYPOGRAPHY
+--------------------------------------------------- */
+
+body {
+  font-family: "Libre Baskerville", serif;
+  color: #f5f2eb;
+}
+
+h1, h2, h3, h4 {
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+p, li, span {
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.65;
+}
+
+
+/* -------------------------------------------------
+   CLAYMORE & COLT BRAND BAR (universal)
+--------------------------------------------------- */
+
+.brand-bar {
+  padding: 14px 24px;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #c8c3d0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2a2a2a;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.brand-bar span:first-child {
+  font-family: "EB Garamond", serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  color: #e8d19b; /* Default Gold — overridden by leadership theme */
+}
+
+/* Leadership override (crimson) */
+.intel-leadership .brand-bar span:first-child {
+  color: #d65a5a;
+}
+
+
+/* -------------------------------------------------
+   UNIVERSAL HERO AVATAR WRAP
+--------------------------------------------------- */
+
+.avatar-wrap,
+.commander-wrap,
+.goddess-wrap {
+  max-width: 330px;
+  margin-bottom: 32px;
+
+  border-radius: 999px;
+  overflow: hidden;
+
+  /* Default gold border — overridden per theme */
+  border: 1px solid rgba(216, 185, 121, 0.28);
+  box-shadow:
+    0 0 80px rgba(0, 0, 0, 0.7),
+    0 0 50px rgba(216,185,121,0.28);
+}
+
+.avatar-wrap img,
+.commander-wrap img,
+.goddess-wrap img {
+  width: 100%;
+  display: block;
+}
+
+/* Crimson override */
+.intel-leadership .avatar-wrap,
+.intel-leadership .commander-wrap {
+  border: 1px solid rgba(186,59,59,0.35);
+  box-shadow:
+    0 0 80px rgba(0,0,0,0.7),
+    0 0 50px rgba(186,59,59,0.35);
+}
+
+
+/* -------------------------------------------------
+   BUTTON BASE (landing + chat)
+--------------------------------------------------- */
+
+.btn-base,
+.cta-btn {
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.55);
+}
+
+.intel-kabaakh .cta-btn {
+  background: #d8b979;
+  color: #000;
+}
+
+.intel-kabaakh .cta-btn:hover {
+  background: #e8d19b;
+}
+
+.intel-leadership .cta-btn {
+  background: #ba3b3b;
+  color: #fff;
+}
+
+.intel-leadership .cta-btn:hover {
+  background: #d65a5a;
+}
+
+
+/* -------------------------------------------------
+   LAYOUT UTILITIES
+--------------------------------------------------- */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center { text-align: center; }
+.flex-center { display: flex; justify-content: center; align-items: center; }
+
+.section-padding { padding: 70px 20px; }
+
+
+/* -------------------------------------------------
+   MOBILE SPACING
+--------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .brand-bar { padding: 12px 16px; }
+  .section-padding { padding: 50px 16px; }
+}

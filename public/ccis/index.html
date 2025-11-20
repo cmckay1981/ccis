@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Claymore & Colt Intelligence Suite (CCIS) - AI-powered agents for leadership, emotional clarity, situational awareness, and operational intelligence.">
+<title>Intelligence Suite | Claymore & Colt</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+
+<style>
+/* CCIS Dashboard specific styling */
+:root {
+  --ccis-gold: #d4b47a;
+  --ccis-gold-soft: #e6cfa0;
+}
+
+.ccis-hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.ccis-hero h1 {
+  color: var(--ccis-gold-soft);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.08em;
+}
+
+.ccis-hero .subtitle {
+  color: var(--color-light);
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Agent grid */
+.agent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.agent-card {
+  background: var(--color-bg-alt);
+  border-radius: 8px;
+  padding: 2rem;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.agent-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--agent-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.agent-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--agent-color);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.agent-card:hover::before {
+  opacity: 1;
+}
+
+.agent-kabaakh { --agent-color: #d8b979; }
+.agent-leadership { --agent-color: #ba3b3b; }
+.agent-sa { --agent-color: #2a5a3c; }
+.agent-wellcontrol { --agent-color: #1a3a52; }
+.agent-cyber { --agent-color: #6a3a7c; }
+.agent-hospitality { --agent-color: #c47a4a; }
+
+.agent-card h3 {
+  color: var(--agent-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.agent-card p {
+  color: var(--color-light);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.agent-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--agent-color);
+  color: white;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.agent-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .ccis-hero {
+    padding: 4rem 0;
+  }
+
+  .agent-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navigation Drawer Overlay -->
+<div class="cc-nav-drawer-overlay" id="navDrawerOverlay"></div>
+
+<!-- Navigation Drawer -->
+<nav class="cc-nav-drawer" id="navDrawer">
+  <div class="cc-nav-drawer-header">
+    <a href="/" class="cc-logo">Claymore & Colt</a>
+    <button class="cc-nav-drawer-close" id="navDrawerClose" aria-label="Close menu">&times;</button>
+  </div>
+  <div class="cc-nav-drawer-content">
+    <a href="/" class="cc-nav-drawer-link">Home</a>
+    <a href="/about/" class="cc-nav-drawer-link">About</a>
+    <a href="/energy/" class="cc-nav-drawer-link">Energy</a>
+    <a href="/decom/" class="cc-nav-drawer-link">Decommissioning</a>
+    <a href="/trading/" class="cc-nav-drawer-link">Trading</a>
+    <a href="/trading/qualification.html" class="cc-nav-drawer-link">Qualification</a>
+    <a href="/well-intelligence/" class="cc-nav-drawer-link">Well Intelligence</a>
+    <a href="/redcell/" class="cc-nav-drawer-link">REDCELL</a>
+
+    <div class="cc-nav-drawer-section">
+      <div class="cc-nav-drawer-section-title">Intelligence Suite</div>
+      <a href="/ccis/" class="cc-nav-drawer-link active">CCIS Dashboard</a>
+      <a href="/ccis/chat/?agent=kabaakh" class="cc-nav-drawer-link">KA.BA.AKH</a>
+      <a href="/ccis/chat/?agent=leadership-intelligence" class="cc-nav-drawer-link">Leadership Intelligence</a>
+      <a href="/ccis/chat/?agent=situational-awareness" class="cc-nav-drawer-link">Situational Awareness</a>
+      <a href="/ccis/chat/?agent=well-control-intelligence" class="cc-nav-drawer-link">Well Control Intelligence</a>
+      <a href="/ccis/cyber-security/" class="cc-nav-drawer-link">Cyber Security</a>
+      <a href="/ccis/hospitality-concierge/" class="cc-nav-drawer-link">Hospitality Concierge</a>
+      <a href="/experiential-house/" class="cc-nav-drawer-link">Experiential House</a>
+    </div>
+
+    <div class="cc-nav-drawer-section">
+      <div class="cc-nav-drawer-section-title">Connect</div>
+      <a href="/contact/" class="cc-nav-drawer-link">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="cc-header">
+  <div class="cc-header-inner">
+    <a href="/" class="cc-logo">Claymore & Colt</a>
+
+    <nav class="cc-nav">
+      <a href="/" class="cc-nav-link">Home</a>
+      <a href="/about/" class="cc-nav-link">About</a>
+      <a href="/energy/" class="cc-nav-link">Energy</a>
+      <a href="/trading/" class="cc-nav-link">Trading</a>
+      <a href="/ccis/" class="cc-nav-link active">CCIS</a>
+      <a href="/contact/" class="cc-nav-link">Contact</a>
+    </nav>
+
+    <button class="cc-mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main>
+
+  <!-- Hero -->
+  <section class="ccis-hero">
+    <div class="cc-container-narrow">
+      <h1>Claymore & Colt Intelligence Suite</h1>
+      <p class="subtitle">
+        Elite AI agents designed for clarity, leadership, operations, and high-reliability performance. Built for those who work at the edges of pressure.
+      </p>
+    </div>
+  </section>
+
+  <!-- Agent Grid -->
+  <section class="cc-section">
+    <div class="cc-container">
+      <h2 class="cc-text-center cc-mb-2xl">Choose Your Guide</h2>
+
+      <div class="agent-grid">
+
+        <!-- KA.BA.AKH -->
+        <div class="agent-card agent-kabaakh">
+          <h3>KA.BA.AKH</h3>
+          <p>
+            Emotional mastery, grounding, clarity, and internal truth work. A full ritual intelligence system rooted in ancient Egyptian structure.
+          </p>
+          <a href="/ccis/kabaakh/" class="agent-link">Learn More</a>
+          <a href="/ccis/chat/?agent=kabaakh" class="agent-link" style="margin-left: 0.5rem;">Start Session</a>
+        </div>
+
+        <!-- Leadership Intelligence -->
+        <div class="agent-card agent-leadership">
+          <h3>Leadership Intelligence</h3>
+          <p>
+            Executive clarity, decision strategy, human performance guidance, and REDCELL-grade leadership training for high-stakes environments.
+          </p>
+          <a href="/ccis/leadership-intelligence/" class="agent-link">Learn More</a>
+          <a href="/ccis/chat/?agent=leadership-intelligence" class="agent-link" style="margin-left: 0.5rem;">Start Session</a>
+        </div>
+
+        <!-- Situational Awareness -->
+        <div class="agent-card agent-sa">
+          <h3>Situational Awareness</h3>
+          <p>
+            Tactical observation, threat assessment, and environmental awareness training for operators in complex, dynamic environments.
+          </p>
+          <a href="/ccis/situational-awareness/" class="agent-link">Learn More</a>
+          <a href="/ccis/chat/?agent=situational-awareness" class="agent-link" style="margin-left: 0.5rem;">Start Session</a>
+        </div>
+
+        <!-- Well Control Intelligence -->
+        <div class="agent-card agent-wellcontrol">
+          <h3>Well Control Intelligence</h3>
+          <p>
+            IWCF & IADC concepts, MPD guidance, kick analysis, shut-in logic, safety drills, and scenario-based training for high-risk well operations.
+          </p>
+          <a href="/ccis/well-control-intelligence/" class="agent-link">Learn More</a>
+          <a href="/ccis/chat/?agent=well-control-intelligence" class="agent-link" style="margin-left: 0.5rem;">Start Session</a>
+        </div>
+
+        <!-- Cyber Security -->
+        <div class="agent-card agent-cyber">
+          <h3>Cyber Security Intelligence</h3>
+          <p>
+            Threat analysis, incident response, security architecture, and defensive strategies for protecting critical systems and data.
+          </p>
+          <a href="/ccis/cyber-security/" class="agent-link">Learn More</a>
+          <a href="/ccis/chat/?agent=cyber-security" class="agent-link" style="margin-left: 0.5rem;">Start Session</a>
+        </div>
+
+        <!-- Hospitality Concierge -->
+        <div class="agent-card agent-hospitality">
+          <h3>Hospitality Concierge</h3>
+          <p>
+            Guest experience optimization, service excellence, operational standards, and hospitality intelligence for luxury venues and brands.
+          </p>
+          <a href="/ccis/hospitality-concierge/" class="agent-link">Learn More</a>
+          <a href="/ccis/chat/?agent=hospitality-concierge" class="agent-link" style="margin-left: 0.5rem;">Start Session</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cc-section cc-bg-dark">
+    <div class="cc-container-narrow cc-text-center">
+      <h2 class="cc-text-white cc-mb-lg">Access the Intelligence Suite</h2>
+      <p class="cc-text-lg cc-text-white cc-mb-2xl" style="opacity: 0.8;">
+        Select the intelligence that meets your moment. Each agent is purpose-built for specific operational contexts.
+      </p>
+      <a href="/ccis/chat/" class="cc-btn cc-btn-secondary cc-btn-lg">Open Chat Interface</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="cc-footer">
+  <div class="cc-footer-content">
+    <p>&copy; 2026 Claymore & Colt Holdings LLC. All rights reserved.</p>
+    <div class="cc-footer-links">
+      <a href="mailto:info@claymoreandcolt.com">info@claymoreandcolt.com</a>
+      <span>|</span>
+      <a href="tel:+17028449872">+1 (702) 844-9872</a>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="/assets/js/global.js"></script>
+
+</body>
+</html>

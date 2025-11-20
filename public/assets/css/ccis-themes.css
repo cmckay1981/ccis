@@ -1,0 +1,347 @@
+/**
+ * Claymore & Colt Intelligence Suite - Agent Themes
+ * Version 1.0
+ * © 2026 Claymore & Colt Holdings LLC
+ */
+
+/* ================================
+   BASE CCIS THEME
+   ================================ */
+
+body[class*="theme-"] {
+  background: #000000;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'EB Garamond', serif;
+}
+
+body[class*="theme-"] h1,
+body[class*="theme-"] h2,
+body[class*="theme-"] h3,
+body[class*="theme-"] h4,
+body[class*="theme-"] h5,
+body[class*="theme-"] h6 {
+  font-family: 'Libre Baskerville', serif;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* ================================
+   KABAAKH THEME - GOLD
+   The Higher Witness
+   ================================ */
+
+.theme-kabaakh {
+  --ccis-accent: #d8b979;
+  --ccis-accent-rgb: 216, 185, 121;
+  --ccis-bg-main: #000000;
+  --ccis-bg-sidebar: #0a0a0a;
+  --ccis-bg-header: #0a0a0a;
+  --ccis-border: rgba(216, 185, 121, 0.2);
+  --ccis-text: rgba(255, 255, 255, 0.9);
+  --ccis-text-muted: rgba(255, 255, 255, 0.5);
+}
+
+.theme-kabaakh .sidebar-logo,
+.theme-kabaakh .chat-title {
+  color: #d8b979;
+}
+
+.theme-kabaakh .sidebar-link:hover,
+.theme-kabaakh .sidebar-link.active {
+  color: #d8b979;
+  border-left: 3px solid #d8b979;
+}
+
+.theme-kabaakh .msg-bot {
+  background: rgba(216, 185, 121, 0.1);
+  border: 1px solid rgba(216, 185, 121, 0.3);
+}
+
+.theme-kabaakh .agent-status.status-active {
+  color: #d8b979;
+  background: rgba(216, 185, 121, 0.1);
+}
+
+.theme-kabaakh .send-btn {
+  background: #d8b979;
+  color: #000000;
+}
+
+.theme-kabaakh .ccis-input-row input:focus {
+  border-color: #d8b979;
+  box-shadow: 0 0 0 3px rgba(216, 185, 121, 0.2);
+}
+
+/* ================================
+   LEADERSHIP INTELLIGENCE THEME - CRIMSON
+   RedCell Hybrid
+   ================================ */
+
+.theme-leadership {
+  --ccis-accent: #ba3b3b;
+  --ccis-accent-rgb: 186, 59, 59;
+  --ccis-bg-main: #000000;
+  --ccis-bg-sidebar: #0a0a0a;
+  --ccis-bg-header: #0a0a0a;
+  --ccis-border: rgba(186, 59, 59, 0.2);
+  --ccis-text: rgba(255, 255, 255, 0.9);
+  --ccis-text-muted: rgba(255, 255, 255, 0.5);
+}
+
+.theme-leadership .sidebar-logo,
+.theme-leadership .chat-title {
+  color: #ba3b3b;
+}
+
+.theme-leadership .sidebar-link:hover,
+.theme-leadership .sidebar-link.active {
+  color: #ba3b3b;
+  border-left: 3px solid #ba3b3b;
+}
+
+.theme-leadership .msg-bot {
+  background: rgba(186, 59, 59, 0.1);
+  border: 1px solid rgba(186, 59, 59, 0.3);
+}
+
+.theme-leadership .agent-status.status-active {
+  color: #ba3b3b;
+  background: rgba(186, 59, 59, 0.1);
+}
+
+.theme-leadership .send-btn {
+  background: #ba3b3b;
+  color: #ffffff;
+}
+
+.theme-leadership .ccis-input-row input:focus {
+  border-color: #ba3b3b;
+  box-shadow: 0 0 0 3px rgba(186, 59, 59, 0.2);
+}
+
+/* ================================
+   SITUATIONAL AWARENESS THEME - FOREST GREEN
+   SA Training
+   ================================ */
+
+.theme-sa {
+  --ccis-accent: #2a5a3c;
+  --ccis-accent-rgb: 42, 90, 60;
+  --ccis-bg-main: #000000;
+  --ccis-bg-sidebar: #0a0a0a;
+  --ccis-bg-header: #0a0a0a;
+  --ccis-border: rgba(42, 90, 60, 0.2);
+  --ccis-text: rgba(255, 255, 255, 0.9);
+  --ccis-text-muted: rgba(255, 255, 255, 0.5);
+}
+
+.theme-sa .sidebar-logo,
+.theme-sa .chat-title {
+  color: #2a5a3c;
+}
+
+.theme-sa .sidebar-link:hover,
+.theme-sa .sidebar-link.active {
+  color: #2a5a3c;
+  border-left: 3px solid #2a5a3c;
+}
+
+.theme-sa .msg-bot {
+  background: rgba(42, 90, 60, 0.1);
+  border: 1px solid rgba(42, 90, 60, 0.3);
+}
+
+.theme-sa .agent-status.status-active {
+  color: #2a5a3c;
+  background: rgba(42, 90, 60, 0.1);
+}
+
+.theme-sa .send-btn {
+  background: #2a5a3c;
+  color: #ffffff;
+}
+
+.theme-sa .ccis-input-row input:focus {
+  border-color: #2a5a3c;
+  box-shadow: 0 0 0 3px rgba(42, 90, 60, 0.2);
+}
+
+/* ================================
+   WELL CONTROL INTELLIGENCE THEME - NAVY
+   Well Control Operations
+   ================================ */
+
+.theme-wellcontrol {
+  --ccis-accent: #1a3a52;
+  --ccis-accent-rgb: 26, 58, 82;
+  --ccis-bg-main: #000000;
+  --ccis-bg-sidebar: #0a0a0a;
+  --ccis-bg-header: #0a0a0a;
+  --ccis-border: rgba(26, 58, 82, 0.2);
+  --ccis-text: rgba(255, 255, 255, 0.9);
+  --ccis-text-muted: rgba(255, 255, 255, 0.5);
+}
+
+.theme-wellcontrol .sidebar-logo,
+.theme-wellcontrol .chat-title {
+  color: #1a3a52;
+}
+
+.theme-wellcontrol .sidebar-link:hover,
+.theme-wellcontrol .sidebar-link.active {
+  color: #1a3a52;
+  border-left: 3px solid #1a3a52;
+}
+
+.theme-wellcontrol .msg-bot {
+  background: rgba(26, 58, 82, 0.1);
+  border: 1px solid rgba(26, 58, 82, 0.3);
+}
+
+.theme-wellcontrol .agent-status.status-active {
+  color: #1a3a52;
+  background: rgba(26, 58, 82, 0.1);
+}
+
+.theme-wellcontrol .send-btn {
+  background: #1a3a52;
+  color: #ffffff;
+}
+
+.theme-wellcontrol .ccis-input-row input:focus {
+  border-color: #1a3a52;
+  box-shadow: 0 0 0 3px rgba(26, 58, 82, 0.2);
+}
+
+/* ================================
+   ACCENT GLOW EFFECTS
+   ================================ */
+
+.theme-kabaakh .loading-dots {
+  color: #d8b979;
+  text-shadow: 0 0 10px rgba(216, 185, 121, 0.5);
+}
+
+.theme-leadership .loading-dots {
+  color: #ba3b3b;
+  text-shadow: 0 0 10px rgba(186, 59, 59, 0.5);
+}
+
+.theme-sa .loading-dots {
+  color: #2a5a3c;
+  text-shadow: 0 0 10px rgba(42, 90, 60, 0.5);
+}
+
+.theme-wellcontrol .loading-dots {
+  color: #1a3a52;
+  text-shadow: 0 0 10px rgba(26, 58, 82, 0.5);
+}
+
+/* ================================
+   RESPONSIVE THEME ADJUSTMENTS
+   ================================ */
+
+@media (max-width: 768px) {
+  body[class*="theme-"] {
+    font-size: var(--text-sm);
+  }
+
+  body[class*="theme-"] .chat-title {
+    font-size: var(--text-base);
+  }
+
+  body[class*="theme-"] .msg {
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+  }
+
+  body[class*="theme-"] .msg-user {
+    margin-left: var(--space-md);
+  }
+
+  body[class*="theme-"] .msg-bot {
+    margin-right: var(--space-md);
+  }
+
+  body[class*="theme-"] .ccis-input-row {
+    padding: var(--space-md);
+    gap: var(--space-sm);
+  }
+
+  body[class*="theme-"] .send-btn {
+    padding: var(--space-md);
+  }
+
+  body[class*="theme-"] .send-btn span {
+    display: none;
+  }
+
+  body[class*="theme-"] .send-btn::after {
+    content: "→";
+    font-size: var(--text-xl);
+  }
+}
+
+/* ================================
+   ACCESSIBILITY THEME FEATURES
+   ================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  body[class*="theme-"] * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  body[class*="theme-"] {
+    --ccis-border: rgba(255, 255, 255, 0.5);
+  }
+
+  .theme-kabaakh {
+    --ccis-accent: #f0d090;
+  }
+
+  .theme-leadership {
+    --ccis-accent: #d84545;
+  }
+
+  .theme-sa {
+    --ccis-accent: #3a7a4c;
+  }
+
+  .theme-wellcontrol {
+    --ccis-accent: #2a4a62;
+  }
+}
+
+/* ================================
+   PRINT STYLES FOR CCIS
+   ================================ */
+
+@media print {
+  body[class*="theme-"] {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .ccis-sidebar,
+  .ccis-chat-header,
+  .ccis-input-row,
+  .mobile-menu-btn,
+  .sidebar-overlay,
+  .send-btn {
+    display: none !important;
+  }
+
+  .ccis-main-area {
+    margin-left: 0 !important;
+  }
+
+  .msg {
+    border: 1px solid #000000 !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    break-inside: avoid;
+  }
+}

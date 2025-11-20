@@ -1,0 +1,40 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" width="1600" height="800">
+  <defs>
+    <radialGradient id="globeGradient" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#d6cfff" />
+      <stop offset="100%" stop-color="white" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background and globe -->
+  <rect width="100%" height="100%" fill="white"/>
+  <ellipse cx="800" cy="400" rx="700" ry="350" fill="url(#globeGradient)" />
+
+  <!-- Simplified continent silhouettes (abstract shapes) -->
+  <path d="M300,300 C400,250 500,300 600,280 C650,270 700,300 750,330 C800,360 850,370 900,350 C950,330 1000,340 1050,360 C1100,380 1150,400 1200,390 C1250,380 1300,370 1350,400"
+        fill="black" opacity="0.85"/>
+
+  <!-- Red pins -->
+  <g fill="#FF4C4C">
+    <circle cx="330" cy="430" r="10"/> <!-- USA -->
+    <circle cx="340" cy="470" r="10"/> <!-- Mexico -->
+    <circle cx="320" cy="370" r="10"/> <!-- Canada -->
+    <circle cx="580" cy="320" r="10"/> <!-- Scotland -->
+    <circle cx="610" cy="300" r="10"/> <!-- Norway -->
+    <circle cx="620" cy="320" r="10"/> <!-- Denmark -->
+    <circle cx="360" cy="510" r="10"/> <!-- Colombia -->
+    <circle cx="375" cy="530" r="10"/> <!-- Trinidad -->
+    <circle cx="390" cy="540" r="10"/> <!-- Guyana -->
+    <circle cx="420" cy="590" r="10"/> <!-- Brazil -->
+    <circle cx="980" cy="630" r="10"/> <!-- Mozambique -->
+    <circle cx="940" cy="610" r="10"/> <!-- Congo -->
+    <circle cx="910" cy="620" r="10"/> <!-- Angola -->
+    <circle cx="880" cy="550" r="10"/> <!-- Nigeria -->
+    <circle cx="860" cy="540" r="10"/> <!-- Ghana -->
+    <circle cx="820" cy="500" r="10"/> <!-- Mauritania -->
+    <circle cx="1020" cy="480" r="10"/> <!-- Egypt -->
+    <circle cx="1140" cy="440" r="10"/> <!-- Baku -->
+    <circle cx="1350" cy="700" r="10"/> <!-- Australia -->
+  </g>
+</svg>
