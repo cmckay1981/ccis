@@ -1,20 +1,13 @@
 const { onRequest } = require("firebase-functions/v2/https");
+const { defineSecret } = require("firebase-functions/v2/params");
 const admin = require("firebase-admin");
 const OpenAI = require("openai");
 
+// Define OpenAI secret using Firebase V2 API
+const OPENAI_KEY = defineSecret("OPENAI_API_KEY");
+
 // Initialize Firestore (admin.initializeApp() already called in agent.js)
 const db = admin.firestore();
-
-// Lazy load OpenAI so Firebase secrets resolve at runtime
-let openai;
-function getOpenAI() {
-  if (!openai) {
-    openai = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY,
-    });
-  }
-  return openai;
-}
 
 /* ============================================================================
    CCIS PROXY — FIREBASE CLOUD FUNCTION
@@ -73,7 +66,8 @@ exports.ccisProxy = onRequest(
   {
     cors: true,
     timeoutSeconds: 60,
-    memory: "512MiB"
+    memory: "512MiB",
+    secrets: [OPENAI_KEY]
   },
   async (req, res) => {
     if (req.method !== "POST") {
@@ -170,8 +164,13 @@ Which direction do you want to start with?`
         userMessage = `USER_MESSAGE: ${message}`;
       }
 
-      // FIXED OPENAI CALL
-      const completion = await getOpenAI().chat.completions.create({
+      // Initialize OpenAI client with V2 secret
+      const client = new OpenAI({
+        apiKey: OPENAI_KEY.value()
+      });
+
+      // Call OpenAI API
+      const completion = await client.chat.completions.create({
         model: "gpt-4o-mini",
         messages: [
           { role: "system", content: agentData.system_prompt },
