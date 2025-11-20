@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Claymore & Colt Intelligence Suite - AI-powered agents for leadership, emotional clarity, situational awareness, and well control intelligence.">
+<title id="pageTitle">Intelligence Suite | Claymore & Colt</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<link rel="stylesheet" href="/assets/css/ccis-themes.css">
+
+</head>
+
+<body class="theme-kabaakh">
+
+<!-- Sidebar overlay for mobile -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="ccis-app-container">
+
+    <!-- SIDEBAR -->
+    <aside class="ccis-sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="/ccis/" class="sidebar-logo">
+                <span class="logo-text">CCIS</span>
+            </a>
+            <button class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">×</button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="/ccis/" class="sidebar-link">
+                <span class="link-icon">◆</span>
+                <span>Intelligence Hub</span>
+            </a>
+            <a href="/" class="sidebar-link">
+                <span class="link-icon">←</span>
+                <span>Main Site</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-title">Active Agents</div>
+            <a href="/ccis/chat/?agent=kabaakh" class="sidebar-link">KA.BA.AKH</a>
+            <a href="/ccis/chat/?agent=leadership-intelligence" class="sidebar-link">Leadership Intelligence</a>
+            <a href="/ccis/chat/?agent=situational-awareness" class="sidebar-link">Situational Awareness</a>
+            <a href="/ccis/chat/?agent=well-control-intelligence" class="sidebar-link">Well Control Intelligence</a>
+            <a href="/ccis/chat/?agent=cyber-security" class="sidebar-link">Cyber Security</a>
+            <a href="/ccis/chat/?agent=hospitality-concierge" class="sidebar-link">Hospitality Concierge</a>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-title">Chat History</div>
+            <div class="chat-history" id="chatHistory">
+                <p class="sidebar-text-muted">No previous chats</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN AREA -->
+    <main class="ccis-main-area">
+
+        <!-- HEADER -->
+        <header class="ccis-chat-header">
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                ☰
+            </button>
+            <h1 class="chat-title" id="headerTitle">Intelligence Suite</h1>
+            <div class="header-actions">
+                <span class="agent-status" id="agentStatus">Ready</span>
+            </div>
+        </header>
+
+        <!-- MESSAGE STREAM -->
+        <div class="ccis-chat-wrapper">
+            <div id="messages" class="ccis-messages"></div>
+        </div>
+
+        <!-- INPUT BAR -->
+        <div class="ccis-input-row">
+            <input
+                id="userInput"
+                type="text"
+                placeholder="Type your message…"
+                autocomplete="off"
+                aria-label="Message input"
+            >
+            <button id="sendBtn" class="send-btn" aria-label="Send message">
+                <span>Send</span>
+            </button>
+        </div>
+
+    </main>
+
+</div>
+
+<!-- Footer -->
+<footer class="ccis-footer">
+    <div class="footer-content">
+        <p>© 2026 Claymore & Colt Holdings LLC. All rights reserved.</p>
+        <p class="footer-links">
+            <a href="mailto:info@claymoreandcolt.com">info@claymoreandcolt.com</a> |
+            <a href="tel:+17028449872">+1 (702) 844-9872</a>
+        </p>
+    </div>
+</footer>
+
+<script>
+/* ============================================================
+   CCIS Chat Interface — FIREBASE EDITION
+   Claymore & Colt Intelligence Suite
+   ============================================================ */
+
+// Parse agent from URL
+function getQueryParam(param) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(param);
+}
+
+let selectedAgent = getQueryParam("agent") || "kabaakh";
+
+// Agent configuration
+const agentConfig = {
+    "kabaakh": {
+        title: "KA.BA.AKH ✦ THE HIGHER WITNESS",
+        pageTitle: "KA.BA.AKH – The Higher Witness",
+        theme: "theme-kabaakh",
+        accent: "#d8b979"
+    },
+    "leadership-intelligence": {
+        title: "LEADERSHIP INTELLIGENCE ✦ REDCELL",
+        pageTitle: "Leadership Intelligence – CCIS",
+        theme: "theme-leadership",
+        accent: "#ba3b3b"
+    },
+    "situational-awareness": {
+        title: "SITUATIONAL AWARENESS",
+        pageTitle: "Situational Awareness – CCIS",
+        theme: "theme-sa",
+        accent: "#2a5a3c"
+    },
+    "well-control-intelligence": {
+        title: "WELL CONTROL INTELLIGENCE",
+        pageTitle: "Well Control Intelligence – CCIS",
+        theme: "theme-wellcontrol",
+        accent: "#1a3a52"
+    },
+    "cyber-security": {
+        title: "CYBER SECURITY INTELLIGENCE",
+        pageTitle: "Cyber Security – CCIS",
+        theme: "theme-cyber",
+        accent: "#6a3a7c"
+    },
+    "hospitality-concierge": {
+        title: "HOSPITALITY CONCIERGE",
+        pageTitle: "Hospitality Concierge – CCIS",
+        theme: "theme-hospitality",
+        accent: "#c47a4a"
+    }
+};
+
+// Apply theme
+function applyTheme(agent) {
+    const config = agentConfig[agent] || agentConfig["kabaakh"];
+
+    document.body.className = config.theme;
+    document.getElementById("headerTitle").textContent = config.title;
+    document.getElementById("pageTitle").textContent = config.pageTitle;
+
+    // Update sidebar active link
+    document.querySelectorAll('.sidebar-link').forEach(link => {
+        link.classList.remove('active');
+        if (link.href.includes(`agent=${agent}`)) {
+            link.classList.add('active');
+        }
+    });
+}
+
+applyTheme(selectedAgent);
+
+// DOM elements
+const messagesEl = document.getElementById("messages");
+const inputEl = document.getElementById("userInput");
+const sendBtn = document.getElementById("sendBtn");
+const agentStatusEl = document.getElementById("agentStatus");
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const sidebarClose = document.getElementById("sidebarClose");
+const sidebarOverlay = document.getElementById("sidebarOverlay");
+const sidebar = document.getElementById("sidebar");
+
+// Add message to chat
+function addMessage(role, text) {
+    const div = document.createElement("div");
+    div.className = `msg msg-${role}`;
+
+    // Parse markdown-style formatting
+    const formattedText = text
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\n/g, '<br>');
+
+    div.innerHTML = formattedText;
+    messagesEl.appendChild(div);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+}
+
+// Send message
+async function sendMessage() {
+    const text = inputEl.value.trim();
+    if (!text) return;
+
+    addMessage("user", text);
+    inputEl.value = "";
+    agentStatusEl.textContent = "Thinking...";
+    agentStatusEl.classList.add("status-active");
+
+    const loading = document.createElement("div");
+    loading.className = "msg msg-bot";
+    loading.innerHTML = '<span class="loading-dots">●●●</span>';
+    messagesEl.appendChild(loading);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+
+    try {
+        // FIREBASE CLOUD FUNCTION ENDPOINT
+        const res = await fetch("/api/ccis", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                agent: selectedAgent,
+                message: text
+            })
+        });
+
+        const data = await res.json();
+        messagesEl.removeChild(loading);
+
+        if (data.error) {
+            addMessage("bot", `Error: ${data.message || data.error}`);
+        } else {
+            addMessage("bot", data.reply || "No response.");
+        }
+
+        agentStatusEl.textContent = "Ready";
+        agentStatusEl.classList.remove("status-active");
+
+    } catch (err) {
+        messagesEl.removeChild(loading);
+        addMessage("bot", "Connection error. Please try again.");
+        agentStatusEl.textContent = "Error";
+        agentStatusEl.classList.remove("status-active");
+        console.error("CCIS Chat error:", err);
+    }
+}
+
+// Event listeners
+inputEl.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+    }
+});
+
+sendBtn.addEventListener("click", sendMessage);
+
+// Mobile menu
+mobileMenuBtn.addEventListener("click", () => {
+    sidebar.classList.add("sidebar-open");
+    sidebarOverlay.classList.add("overlay-active");
+    document.body.style.overflow = "hidden";
+});
+
+sidebarClose.addEventListener("click", closeSidebar);
+sidebarOverlay.addEventListener("click", closeSidebar);
+
+function closeSidebar() {
+    sidebar.classList.remove("sidebar-open");
+    sidebarOverlay.classList.remove("overlay-active");
+    document.body.style.overflow = "";
+}
+
+// Auto-welcome message
+window.addEventListener("DOMContentLoaded", async () => {
+    agentStatusEl.textContent = "Initializing...";
+    agentStatusEl.classList.add("status-active");
+
+    const loading = document.createElement("div");
+    loading.className = "msg msg-bot";
+    loading.innerHTML = '<span class="loading-dots">●●●</span>';
+    messagesEl.appendChild(loading);
+
+    try {
+        // FIREBASE CLOUD FUNCTION ENDPOINT
+        const res = await fetch("/api/ccis", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                agent: selectedAgent,
+                message: "__system_welcome__"
+            })
+        });
+
+        const data = await res.json();
+        messagesEl.removeChild(loading);
+
+        if (data.reply) {
+            addMessage("bot", data.reply);
+        }
+
+        agentStatusEl.textContent = "Ready";
+        agentStatusEl.classList.remove("status-active");
+
+        // Focus input
+        inputEl.focus();
+
+    } catch (err) {
+        messagesEl.removeChild(loading);
+        addMessage("bot", "Unable to initialize. Please refresh the page.");
+        agentStatusEl.textContent = "Error";
+        agentStatusEl.classList.remove("status-active");
+        console.error("CCIS initialization error:", err);
+    }
+});
+
+// Prevent form submission on enter
+inputEl.closest('form')?.addEventListener('submit', (e) => e.preventDefault());
+</script>
+
+</body>
+</html>
