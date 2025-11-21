@@ -1,0 +1,24 @@
+{
+  "lessonId": "LEAD-MC-106-05",
+  "moduleId": "LEAD-MC-106",
+  "courseId": "LEAD-MC",
+  "title": "Toxic Culture Identification and Intervention",
+  "type": "scenario",
+  "content": "Toxic cultures destroy performance, safety, and retention. They're characterized by fear-based compliance, information hoarding, blame assignment, tolerance of bullying, and silence about problems. Leaders sometimes inherit toxic cultures, sometimes create them unintentionally, but always own the responsibility to fix them. Intervention requires diagnosing root causes, making visible changes in behavior and consequences, and sustaining new patterns long enough to rebuild trust.",
+  "scenario": {
+    "story": "You've been promoted to lead a team with a reputation for high turnover and low morale. In your first month, you observe: people avoid speaking in meetings unless directly asked, information flows slowly and incompletely, several team members make dismissive or sarcastic comments to newer employees, mistakes are hidden rather than reported, and when you ask how things are going, everyone says 'fine.' Exit interview data shows people leave citing 'culture issues' but won't elaborate. You recognize this is systemic, not individual.",
+    "options": {
+      "A": "Replace the most problematic individuals to signal change",
+      "B": "Announce new expectations about collaboration and respect, then wait to see if behavior improves",
+      "C": "Conduct one-on-one conversations to understand what's happening, identify specific toxic patterns, address them visibly, and model different behavior consistently",
+      "D": "Bring in outside facilitation or team-building to reset culture"
+    },
+    "recommendedResponse": "C",
+    "explanation": "Toxic culture requires systematic intervention, not quick fixes. Option C starts with diagnosis—you can't fix what you don't understand—then addresses specific behaviors with visible consequences, and models the culture you want to build. Option A might remove symptoms but won't fix systemic issues and may create martyrs. Option B is announcement without action, which teams ignore. Option D outsources responsibility and rarely creates lasting change. Fixing toxic culture requires: understanding what created it, making visible changes in what's tolerated, protecting people who speak truth, consistently modeling new behavior, and sustaining the effort long enough that people believe it's real. This takes months, not days."
+  },
+  "openQuestions": [
+    "Have you ever worked in a toxic culture? What specific behaviors made it toxic, and what would have been required to fix it?",
+    "How do you know if your current team culture is healthy versus just politely dysfunctional?",
+    "What's one toxic pattern you might be tolerating without realizing its impact?"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-102-04",
+  "moduleId": "LEAD-MC-102",
+  "courseId": "LEAD-MC",
+  "title": "Integrity and Consistency Under Pressure",
+  "type": "lesson",
+  "content": "Leaders reveal their true values when conditions deteriorate. Integrity means your principles remain intact regardless of circumstances—you don't compromise standards when it's convenient or pressured to do so. Consistency means people can predict how you'll respond based on established patterns, not mood or external pressure. Teams watch how leaders behave during stress to determine what actually matters. If you abandon stated values when challenged, you teach your team that those values were performative.",
+  "mcq": {
+    "question": "A leader has consistently emphasized safety as the top priority. During a high-pressure deadline with senior leadership watching, a team member raises a safety concern that would require stopping work for several hours. The leader says, 'We'll address that after we hit this milestone—we can't afford delays right now.' What just happened?",
+    "options": {
+      "A": "The leader made a reasonable risk-based decision under time pressure",
+      "B": "The leader demonstrated that safety is negotiable when business pressure is high",
+      "C": "The team member should have raised the concern earlier",
+      "D": "The leader appropriately balanced competing priorities"
+    },
+    "correctOption": "B",
+    "explanation": "The leader just taught the entire team that safety is only a priority when convenient. Actions under pressure reveal true values more clearly than any stated policy. This moment created a lasting cultural lesson: when it matters most, production takes precedence over safety. The team will now filter future safety concerns based on perceived business impact. Leaders who maintain integrity under pressure reinforce stated values. Leaders who compromise principles when challenged destroy credibility."
+  },
+  "openQuestions": [
+    "Describe a time when you faced pressure to compromise a stated principle. What did you do?",
+    "What does your behavior under stress teach your team about your actual priorities?"
+  ]
+}

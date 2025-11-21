@@ -1,0 +1,18 @@
+{
+  "sectionId": "2.6",
+  "title": "Concurrent Method",
+  "content": {
+    "2.6.1": {
+      "title": "Overview",
+      "content": "The Concurrent (Continuous) Method is a modified approach combining elements of both Driller's and Wait & Weight methods.\n\n**Concept:**\n- Begin circulating immediately with original mud weight\n- Kill mud is prepared while circulating\n- When kill mud ready, switch to it without stopping\n- Single continuous operation\n\n**When Used:**\n- Kill mud preparation will take significant time\n- Gas migration is a concern (need to start circulation)\n- Shoe strength allows first circulation at original MW\n- Sufficient crew/resources to prepare mud while circulating\n\n**Advantages:**\n- Starts immediately (like Driller's Method)\n- Single circulation if timed correctly\n- Reduces gas migration risk\n\n**Disadvantages:**\n- More complex execution\n- Requires coordination of two activities\n- Risk of errors if transition poorly managed"
+    },
+    "2.6.2": {
+      "title": "Procedure",
+      "content": "**Phase 1 - Start Circulation:**\n1. Calculate ICP using original MW\n2. Start pumping, bring to kill rate\n3. Maintain constant drillpipe pressure (ICP)\n4. Circulate kick out using original mud\n\n**Phase 2 - Prepare Kill Mud:**\n- While circulating, prepare kill weight mud\n- Calculate transition point (when to switch)\n- Verify kill mud weight\n\n**Phase 3 - Transition to Kill Mud:**\n- When kill mud ready and timed appropriately\n- Switch suction to kill mud without stopping circulation\n- Note stroke count at switch\n- Begin following pressure schedule (ICP reducing to FCP)\n\n**Phase 4 - Complete Kill:**\n- Follow pressure schedule as kill mud fills drillstring\n- Once at bit, maintain FCP constant\n- Continue until kill mud at surface\n- Flow check to verify kill"
+    },
+    "2.6.3": {
+      "title": "Timing Considerations",
+      "content": "**Optimal Timing:**\n- Best case: Kill mud ready before kick reaches surface\n- Transition occurs smoothly, single effective circulation\n\n**If Kill Mud Not Ready When Kick Out:**\n- Continue circulating at original MW\n- Switch when ready\n- Becomes similar to Driller's with optimized timing\n\n**If Kill Mud Ready Before Starting:**\n- Use Wait & Weight instead\n- Concurrent method advantage is lost\n\n**Coordination:**\n- Communication between driller and mud engineer critical\n- Regular updates on mud preparation progress\n- Clear signal when ready to switch\n- Avoid rushing mud preparation"
+    }
+  }
+}

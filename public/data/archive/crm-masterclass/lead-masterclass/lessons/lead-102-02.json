@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-102-02",
+  "moduleId": "LEAD-102",
+  "courseId": "LEAD",
+  "title": "Trust as Operational Performance",
+  "type": "lesson",
+  "content": "Trust isn't a soft skill—it's a performance multiplier. High-trust teams make decisions faster, adapt to changing conditions more readily, and surface problems earlier because people aren't afraid of blame. Low-trust environments create defensive behavior: people cover mistakes, hoard information, avoid risk, and wait for permission. Leaders build trust through three mechanisms: being consistently trustworthy, trusting others with real responsibility, and maintaining transparency about decisions and constraints.",
+  "mcq": {
+    "question": "After a significant operational error, a leader gathers the team and says, 'I need to understand exactly what happened, and I need complete honesty. No one will be punished for telling the truth.' Three people provide carefully worded statements that avoid mentioning key details. What is the most likely issue?",
+    "options": {
+      "A": "The team doesn't understand what happened clearly enough to explain it",
+      "B": "Past experience has taught them that 'no punishment' doesn't actually mean no consequences",
+      "C": "The team is protecting someone who made the error",
+      "D": "The leader didn't ask specific enough questions"
+    },
+    "correctOption": "B",
+    "explanation": "Trust is built through consistent action over time, not single statements. If this team has previously seen people punished despite assurances, words won't override experience. Leaders who want honest reporting must demonstrate—repeatedly—that they respond to truth-telling with problem-solving, not blame. The team's defensive behavior is a trust indicator the leader needs to address."
+  },
+  "openQuestions": [
+    "Describe a time when someone on your team took a risk by being honest with you. How did you respond?",
+    "What is one decision you made recently that you could have been more transparent about?"
+  ]
+}

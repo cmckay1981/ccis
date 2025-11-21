@@ -1,0 +1,30 @@
+{
+  "sectionId": "1.9",
+  "title": "Well Control Management Process",
+  "content": {
+    "1.9.1": {
+      "title": "Overview",
+      "content": "Well control management is a systematic process that spans the entire well lifecycle. This section describes the key elements of the management process:\n\n1. Planning and preparation\n2. Risk assessment\n3. Procedure development\n4. Execution and monitoring\n5. Review and improvement\n\nEffective management requires coordination between all parties: operator, drilling contractor, and service companies."
+    },
+    "1.9.2": {
+      "title": "Planning Phase",
+      "content": "Well control planning begins in the well design phase:\n\n**Well Design:**\n- Pore pressure and fracture gradient prediction\n- Casing setting depth selection\n- Mud weight window determination\n- BOP rating selection\n- Contingency planning for narrow margins\n\n**Equipment Selection:**\n- BOP configuration for expected pressures\n- Choke and kill line sizing\n- Accumulator capacity\n- Pit monitoring system capability\n- Gas handling equipment\n\n**Documentation:**\n- Drilling program with well control contingencies\n- Kill sheets prepared for each hole section\n- Emergency response procedures\n- Contact lists and communication plans"
+    },
+    "1.9.3": {
+      "title": "Risk Assessment",
+      "content": "Well control risks shall be assessed before and during operations:\n\n**Pre-Spud Risk Assessment:**\n- Offset well data analysis\n- Shallow hazard identification\n- High pressure zone identification\n- H2S potential assessment\n- Lost circulation potential\n- Narrow margin identification\n\n**Ongoing Risk Assessment:**\n- Daily review of pore pressure indicators\n- Monitoring for unexpected conditions\n- Updating kill sheets as conditions change\n- Reassessment when plans change\n\n**Risk Factors to Consider:**\n- Hole section (surface, intermediate, production)\n- Proximity to known pressure transitions\n- Lost circulation history\n- Equipment condition\n- Crew experience and fatigue\n- Weather conditions (offshore)\n- Time pressure"
+    },
+    "1.9.4": {
+      "title": "Procedure Development",
+      "content": "Well control procedures shall be developed for each operation:\n\n**Standard Procedures:**\n- Shut-in procedures (drilling, tripping, connections)\n- Kill procedures (Driller's Method, Wait & Weight)\n- Stripping and snubbing procedures\n- Lost circulation response\n- Stuck pipe during well control\n\n**Operation-Specific Procedures:**\n- HPHT operations\n- MPD operations\n- Underbalanced operations\n- Deepwater/subsea operations\n- H2S operations\n\n**Procedure Requirements:**\n- Clear, step-by-step instructions\n- Decision points clearly identified\n- Responsibilities assigned\n- Equipment requirements stated\n- Reviewed and approved before use\n- Available at point of use"
+    },
+    "1.9.5": {
+      "title": "Execution and Monitoring",
+      "content": "During operations, well control management includes:\n\n**Continuous Monitoring:**\n- Pit volume tracking\n- Flow rate monitoring\n- Mud properties verification\n- BOP status verification\n- Drilling parameters\n\n**Regular Verification:**\n- Daily barrier status review\n- BOP testing per schedule\n- Kill sheet updates\n- Crew competency confirmation\n\n**Communication:**\n- Shift handovers with well status\n- Daily reports to shore base\n- Immediate reporting of anomalies\n- Pre-job briefings for critical operations\n\n**Documentation:**\n- Drilling reports\n- BOP test records\n- Training and drill records\n- Incident and near-miss reports"
+    },
+    "1.9.6": {
+      "title": "Review and Improvement",
+      "content": "Continuous improvement is essential to well control performance:\n\n**Regular Reviews:**\n- Post-well review of all well control events\n- Annual review of procedures and equipment\n- Trend analysis of kicks and near-misses\n- Benchmarking against industry performance\n\n**Incident Investigation:**\n- All Level 2 and 3 events investigated\n- Root cause analysis conducted\n- Corrective actions identified and tracked\n- Lessons learned shared\n\n**Management Review:**\n- Periodic review of well control performance\n- Resource adequacy assessment\n- Training effectiveness evaluation\n- Procedure update needs\n\n**Industry Learning:**\n- Participation in industry forums\n- Review of industry incident alerts\n- Adoption of best practices\n- Contribution to industry learning"
+    }
+  }
+}

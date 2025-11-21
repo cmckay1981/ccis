@@ -1,0 +1,202 @@
+{
+  "industryCode": "HSP",
+  "industryName": "Hospitality",
+  "description": "Comprehensive scenario pack for all hospitality operations",
+  "targetOrganizations": ["Luxury hotels", "Casino resorts", "Convention centers", "Cruise lines", "Restaurants", "Nightclubs"],
+
+  "departments": {
+    "FRONT_DESK": {
+      "name": "Front Desk / Guest Services",
+      "roles": ["Front Desk Agent", "Guest Services Manager", "Concierge", "Bell Staff", "Valet"],
+      "scenarios": {
+        "SA": "A front desk agent notices the lobby filling with guests but hasn't checked arriving group sizes or VIP alerts for the next hour.",
+        "DM": "A guest requests early check-in but their room type isn't ready; an upgrade is available but outside comp authority.",
+        "COMM": "Communicating a room change to housekeeping, bell services, and the guest simultaneously.",
+        "TW": "Coordinating between front desk, housekeeping, and maintenance for a quick room turn.",
+        "LEAD": "Shift supervisor managing a team during unexpected high-volume check-in.",
+        "HF": "Agent on hour 10 of a 12-hour shift during a sold-out weekend."
+      }
+    },
+
+    "HOUSEKEEPING": {
+      "name": "Housekeeping",
+      "roles": ["Room Attendant", "Housekeeping Supervisor", "Laundry Attendant", "Public Area Attendant", "Housekeeping Manager"],
+      "scenarios": {
+        "SA": "A room attendant notices unusual items in a guest room but doesn't connect it to potential safety concerns.",
+        "DM": "Deciding priority between a VIP arrival room, a complaint redo, and standard departures.",
+        "COMM": "Reporting a maintenance issue discovered during room cleaning through proper channels.",
+        "TW": "Coordinating room assignments between morning and evening housekeeping shifts.",
+        "LEAD": "Supervisor managing team morale when short-staffed during peak occupancy.",
+        "HF": "Physical fatigue effects on attention to detail after cleaning 15+ rooms."
+      }
+    },
+
+    "FOOD_BEVERAGE_FOH": {
+      "name": "Food & Beverage - Front of House",
+      "roles": ["Server", "Host/Hostess", "Bartender", "Food Runner", "Restaurant Manager", "Sommelier"],
+      "scenarios": {
+        "SA": "A server notices a guest's demeanor change but doesn't recognize signs of intoxication developing.",
+        "DM": "Handling a guest complaint about food quality while the kitchen is slammed.",
+        "COMM": "Communicating allergy information from guest to kitchen with verification.",
+        "TW": "Coordinating section coverage when a server is overwhelmed.",
+        "LEAD": "Floor manager balancing guest experience with staff breaks during rush.",
+        "HF": "Bartender multitasking effects on drink accuracy during peak hours."
+      }
+    },
+
+    "FOOD_BEVERAGE_BOH": {
+      "name": "Food & Beverage - Back of House",
+      "roles": ["Line Cook", "Prep Cook", "Sous Chef", "Executive Chef", "Dishwasher", "Kitchen Manager"],
+      "scenarios": {
+        "SA": "A cook notices temperature gauge readings but doesn't project impact on food safety hold times.",
+        "DM": "Deciding whether to 86 an item or modify preparation when ingredient quality is borderline.",
+        "COMM": "Calling out orders and modifications clearly during high-volume service.",
+        "TW": "Coordinating timing between stations for a large party's simultaneous delivery.",
+        "LEAD": "Chef managing kitchen team through equipment failure during service.",
+        "HF": "Heat stress and fatigue effects on a line cook during double shift."
+      }
+    },
+
+    "CASINO_GAMING": {
+      "name": "Casino / Gaming",
+      "roles": ["Dealer", "Pit Boss", "Slot Attendant", "Cage Cashier", "Surveillance Operator", "Gaming Manager"],
+      "scenarios": {
+        "SA": "A dealer notices unusual betting patterns but doesn't connect to potential advantage play.",
+        "DM": "Pit boss deciding whether to back off a suspected card counter vs. continue observation.",
+        "COMM": "Communicating a suspicious activity observation to surveillance without alerting the guest.",
+        "TW": "Coordinating table coverage during dealer breaks without disrupting play.",
+        "LEAD": "Shift manager balancing revenue goals with responsible gaming obligations.",
+        "HF": "Surveillance operator attention degradation after 6 hours of monitor watching."
+      }
+    },
+
+    "NIGHTLIFE_ENTERTAINMENT": {
+      "name": "Nightlife / Entertainment",
+      "roles": ["Bouncer/Door Staff", "Cocktail Server", "DJ/Entertainment", "Promoter", "Nightclub Manager", "VIP Host"],
+      "scenarios": {
+        "SA": "Door staff notices crowd density increasing but doesn't project capacity issues.",
+        "DM": "Deciding whether to refuse entry to an intoxicated VIP with significant spend history.",
+        "COMM": "Communicating an emerging situation to security team via radio in loud environment.",
+        "TW": "Coordinating bottle service delivery between bar, runners, and VIP hosts.",
+        "LEAD": "Manager de-escalating a VIP complaint without undermining door staff authority.",
+        "HF": "Decision-making impairment for staff working 2am-6am shifts regularly."
+      }
+    },
+
+    "SECURITY": {
+      "name": "Security",
+      "roles": ["Security Officer", "Security Supervisor", "Loss Prevention", "Emergency Response", "Security Director"],
+      "scenarios": {
+        "SA": "Security officer monitoring cameras notices individual behavior but misses accomplice activity.",
+        "DM": "Deciding response level for a verbal altercation that could escalate.",
+        "COMM": "Providing clear incident description to arriving law enforcement.",
+        "TW": "Coordinating multiple officers for a controlled guest removal.",
+        "LEAD": "Supervisor managing team during active emergency evacuation.",
+        "HF": "Vigilance decrement during overnight security patrols."
+      }
+    },
+
+    "MAINTENANCE_ENGINEERING": {
+      "name": "Maintenance / Engineering",
+      "roles": ["Maintenance Technician", "HVAC Technician", "Electrician", "Plumber", "Chief Engineer", "Groundskeeper"],
+      "scenarios": {
+        "SA": "Technician notices equipment running outside normal parameters but doesn't anticipate failure timeline.",
+        "DM": "Deciding whether to attempt repair vs. call vendor for critical system issue.",
+        "COMM": "Reporting a safety hazard discovered during routine maintenance.",
+        "TW": "Coordinating with housekeeping and front desk for guest room maintenance access.",
+        "LEAD": "Chief engineer prioritizing competing urgent requests from multiple departments.",
+        "HF": "Fatigue effects on a technician responding to overnight emergency calls."
+      }
+    },
+
+    "HR_ADMIN": {
+      "name": "Human Resources / Administration",
+      "roles": ["HR Generalist", "Recruiter", "Training Coordinator", "Payroll Specialist", "HR Director", "Executive Assistant"],
+      "scenarios": {
+        "SA": "HR notices turnover trends in one department but doesn't connect to supervisor behavior patterns.",
+        "DM": "Deciding how to handle an employee complaint that could have legal implications.",
+        "COMM": "Communicating sensitive policy changes to diverse workforce.",
+        "TW": "Coordinating between department managers for cross-training initiative.",
+        "LEAD": "HR director mediating conflict between two department heads.",
+        "HF": "Bias effects on hiring decisions after interviewing multiple candidates."
+      }
+    },
+
+    "PURCHASING_RECEIVING": {
+      "name": "Purchasing / Receiving",
+      "roles": ["Purchasing Agent", "Receiver", "Inventory Controller", "Storeroom Clerk", "Purchasing Director"],
+      "scenarios": {
+        "SA": "Receiver notices delivery discrepancy but doesn't connect to pattern of vendor issues.",
+        "DM": "Deciding whether to accept partial delivery or reject entire order.",
+        "COMM": "Communicating product shortage to affected departments with alternatives.",
+        "TW": "Coordinating with kitchen, housekeeping, and maintenance on bulk delivery day.",
+        "LEAD": "Purchasing director managing vendor relationship during quality dispute.",
+        "HF": "Verification accuracy when receiving large deliveries under time pressure."
+      }
+    },
+
+    "SPA_WELLNESS": {
+      "name": "Spa / Wellness",
+      "roles": ["Massage Therapist", "Esthetician", "Spa Receptionist", "Fitness Instructor", "Spa Director"],
+      "scenarios": {
+        "SA": "Therapist notices client discomfort but doesn't connect to contraindication in intake form.",
+        "DM": "Deciding whether to proceed with treatment when client presents unexpected condition.",
+        "COMM": "Communicating treatment modifications to client clearly and professionally.",
+        "TW": "Coordinating treatment room turnover between therapists.",
+        "LEAD": "Spa manager handling guest complaint about therapist without damaging team trust.",
+        "HF": "Physical strain effects on massage therapist quality after back-to-back sessions."
+      }
+    },
+
+    "EVENTS_BANQUETS": {
+      "name": "Events / Banquets",
+      "roles": ["Banquet Server", "Event Coordinator", "Banquet Captain", "AV Technician", "Catering Sales Manager"],
+      "scenarios": {
+        "SA": "Event coordinator notices timeline slipping but doesn't project impact on subsequent events.",
+        "DM": "Deciding how to handle a client's last-minute change request during setup.",
+        "COMM": "Communicating dietary requirements across kitchen, service, and client.",
+        "TW": "Coordinating room flip between back-to-back events.",
+        "LEAD": "Banquet captain managing temporary staff unfamiliar with property standards.",
+        "HF": "Attention to detail degradation during 16-hour event day."
+      }
+    }
+  },
+
+  "crossDepartmentScenarios": [
+    {
+      "title": "The VIP Arrival",
+      "departments": ["FRONT_DESK", "HOUSEKEEPING", "FOOD_BEVERAGE_FOH", "SECURITY"],
+      "scenario": "A high-profile guest arrives unannounced 3 hours early. Requires coordination across departments to deliver exceptional experience.",
+      "competencies": ["SA", "COMM", "TW"]
+    },
+    {
+      "title": "The System Outage",
+      "departments": ["FRONT_DESK", "CASINO_GAMING", "FOOD_BEVERAGE_FOH", "MAINTENANCE_ENGINEERING"],
+      "scenario": "Property management system goes down during peak check-in. All departments must coordinate manual workarounds.",
+      "competencies": ["DM", "COMM", "TW", "LEAD"]
+    },
+    {
+      "title": "The Medical Emergency",
+      "departments": ["SECURITY", "FRONT_DESK", "CASINO_GAMING", "NIGHTLIFE_ENTERTAINMENT"],
+      "scenario": "Guest medical emergency in public area. Requires immediate response, crowd management, and family communication.",
+      "competencies": ["SA", "DM", "COMM", "LEAD"]
+    },
+    {
+      "title": "The Staffing Crisis",
+      "departments": ["HR_ADMIN", "FOOD_BEVERAGE_BOH", "HOUSEKEEPING", "EVENTS_BANQUETS"],
+      "scenario": "Multiple call-outs on a sold-out night with major event. Cross-department resource sharing required.",
+      "competencies": ["DM", "TW", "LEAD", "HF"]
+    }
+  ],
+
+  "terminology": {
+    "operator": "team member",
+    "control room": "operations center / front desk",
+    "shift handover": "shift change",
+    "incident": "guest incident / situation",
+    "crew": "team",
+    "supervisor": "manager / supervisor",
+    "procedure": "standard / SOP",
+    "equipment failure": "system issue / equipment down"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "moduleId": "WC-SF-104",
+  "courseId": "WC-SF",
+  "title": "Kick Detection",
+  "description": "Recognizing kick indicators immediately - primary indicators (flow, pit gain, drilling break) and secondary indicators. Covers monitoring systems and alarm response.",
+  "order": 4,
+  "lessonIds": [
+    "WC-SF-104-01",
+    "WC-SF-104-02",
+    "WC-SF-104-03"
+  ],
+  "examWeight": "High",
+  "iwcfSyllabus": "PP-05",
+  "documentId": "WC-SF-104",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-104"
+  ]
+}

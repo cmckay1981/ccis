@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-105-02",
+  "moduleId": "LEAD-MC-105",
+  "courseId": "LEAD-MC",
+  "title": "Performance Conversations That Work",
+  "type": "lesson",
+  "content": "Delivering corrective feedback is a leadership fundamental that most people avoid until problems become severe. Effective performance conversations happen early, focus on specific observable behaviors rather than character judgments, and clarify the path to improvement. The structure is simple: describe what you observed, explain the impact or standard gap, ask for the person's perspective, and establish clear expectations going forward. Avoiding these conversations doesn't make problems disappear—it makes them worse and signals to the rest of the team that you tolerate substandard performance.",
+  "mcq": {
+    "question": "A team member's work quality has declined noticeably over the past month. The leader schedules a meeting and opens with, 'You've been making a lot of mistakes lately and your attitude seems off. What's going on with you?' The person becomes defensive and the conversation deteriorates. What did the leader do wrong?",
+    "options": {
+      "A": "The leader should have been more direct about potential consequences",
+      "B": "The leader made generalized character statements instead of citing specific performance gaps",
+      "C": "The leader shouldn't have asked an open-ended question",
+      "D": "Some people can't handle feedback and will always react defensively"
+    },
+    "correctOption": "B",
+    "explanation": "'A lot of mistakes' and 'attitude seems off' are vague judgments that put people on the defensive. Effective feedback is specific: 'In the past three weeks, I've observed four calculation errors in your reports, and you've been absent from the last two team meetings without notice. This is a change from your normal performance. Help me understand what's happening.' Specific observations are harder to argue with and open the door to genuine conversation. The leader's opening statement attacked the person's character rather than addressing observable performance."
+  },
+  "openQuestions": [
+    "Think of a performance conversation you've been avoiding. What's preventing you from addressing it?",
+    "When you receive critical feedback, what approach makes you most receptive versus most defensive?"
+  ]
+}

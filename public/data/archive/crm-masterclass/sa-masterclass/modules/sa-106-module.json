@@ -1,0 +1,8 @@
+{
+  "moduleId": "SA-106",
+  "courseId": "SA",
+  "title": "Team Situational Awareness",
+  "description": "Covers shared SA development, communication protocols for SA transfer, cross-monitoring, and maintaining SA during handovers and transitions.",
+  "order": 6,
+  "lessonIds": ["SA-106-01", "SA-106-02", "SA-106-03", "SA-106-04"]
+}

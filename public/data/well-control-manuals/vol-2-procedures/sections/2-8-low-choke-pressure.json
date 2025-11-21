@@ -1,0 +1,26 @@
+{
+  "sectionId": "2.8",
+  "title": "Low Choke Pressure Method",
+  "content": {
+    "2.8.1": {
+      "title": "Overview",
+      "content": "The Low Choke Pressure Method is used in subsea operations to account for choke line friction losses.\n\n**The Problem:**\nIn subsea operations, the choke line from the BOP to surface is very long. During circulation, friction in this line creates significant pressure loss. Standard methods would over-pressure the wellbore.\n\n**The Solution:**\nMaintain a lower-than-calculated casing pressure to account for choke line friction, preventing over-pressure at the BOP.\n\n**When Required:**\n- Subsea BOP operations\n- Long choke line (typically > 1000 ft water depth)\n- Significant choke line friction at kill rate\n\n**Key Concept:**\n- Surface casing pressure + Choke line friction = Actual pressure at BOP\n- To avoid over-pressure at BOP, reduce surface casing pressure by friction amount"
+    },
+    "2.8.2": {
+      "title": "Choke Line Friction Calculation",
+      "content": "**Determining Choke Line Friction:**\n\nMethod 1 - Measurement:\n1. Open well to choke line\n2. Circulate down drillpipe, up choke line\n3. Record standpipe pressure at slow circulating rate\n4. Subtract normal annulus friction = choke line friction\n\nMethod 2 - Calculation:\n- Use friction loss formulas based on:\n  - Choke line ID and length\n  - Mud weight and rheology\n  - Pump rate\n- Apply appropriate correlation\n\n**Typical Values:**\n- Can be 200-1000+ psi depending on:\n  - Water depth\n  - Line diameter\n  - Mud properties\n  - Pump rate\n\n**Document:**\n- Include in kill sheet\n- Update if pump rate changes\n- Account for mud weight changes"
+    },
+    "2.8.3": {
+      "title": "Modified Kill Procedure",
+      "content": "**Standard Kill with Correction:**\nFollow standard Driller's or Wait & Weight method with modification:\n\n**Drillpipe Pressure:**\n- Calculate ICP and FCP normally\n- Maintain as normal (these are unaffected)\n\n**Casing Pressure:**\n- During circulation, actual casing pressure at surface will be LOWER\n- Lower by amount of choke line friction\n- This is correct - do not try to increase it\n\n**Monitoring:**\n- Primary control is still drillpipe pressure\n- Casing pressure is reduced by friction amount\n- Normal behavior: CP(surface) = CP(expected) - Friction\n\n**Example:**\n- Expected SICP without friction: 500 psi\n- Choke line friction at kill rate: 300 psi\n- Actual surface casing pressure: 200 psi\n- This is correct - BOP sees 200 + 300 = 500 psi"
+    },
+    "2.8.4": {
+      "title": "Special Considerations",
+      "content": "**Rate Changes:**\n- If pump rate changes, friction changes\n- Must recalculate friction for new rate\n- Adjust expected casing pressure accordingly\n\n**Gas in Choke Line:**\n- As gas enters choke line, behavior changes\n- Friction may decrease (lighter fluid)\n- Hydrostatic in choke line decreases\n- Complex interactions - maintain DP pressure control\n\n**Choke Line Plugging:**\n- Long choke line prone to plugging\n- Monitor for increasing DP pressure without CP increase\n- May need to switch to alternate choke line\n- Have contingency plan\n\n**Kill Line Use:**\n- Kill line can be used for pumping if needed\n- Different friction characteristics\n- Must recalculate if switching"
+    },
+    "2.8.5": {
+      "title": "Procedure Summary",
+      "content": "**Before Kill:**\n1. Determine choke line friction at kill rate\n2. Include in kill sheet calculations\n3. Brief crew on expected pressure differences\n\n**During Kill:**\n1. Start circulation, establish ICP on drillpipe\n2. Observe casing pressure - will be LOWER than standard\n3. Maintain drillpipe pressure schedule\n4. Do not adjust choke to increase casing pressure to 'expected' values\n5. Monitor for plugging or unusual behavior\n\n**Key Reminders:**\n- Drillpipe pressure is primary control\n- Lower surface casing pressure is expected and correct\n- Changing pump rate changes friction correction\n- Document all pressures and observations"
+    }
+  }
+}

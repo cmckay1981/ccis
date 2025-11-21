@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claymore & Colt Well Intelligence</title>
+
+    <!-- React & ReactDOM via CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-functions-compat.js"></script>
+
+    <style>
+        :root {
+            --primary: #1a365d;
+            --primary-light: #2c5282;
+            --secondary: #2d3748;
+            --accent: #ed8936;
+            --success: #38a169;
+            --warning: #d69e2e;
+            --danger: #e53e3e;
+            --bg: #f7fafc;
+            --bg-dark: #edf2f7;
+            --card-bg: #ffffff;
+            --text: #2d3748;
+            --text-light: #718096;
+            --border: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        #root {
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+        }
+
+        .user-menu {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .user-avatar:hover {
+            transform: scale(1.05);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Welcome Section */
+        .welcome {
+            margin-bottom: 2rem;
+        }
+
+        .welcome h1 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .welcome p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        /* Card */
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 0.625rem 1.25rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-light);
+        }
+
+        .btn-success {
+            background: var(--success);
+            color: white;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-sm {
+            padding: 0.375rem 0.75rem;
+            font-size: 0.85rem;
+        }
+
+        /* Well Cards */
+        .wells-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .well-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            transition: all 0.2s;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+        }
+
+        .well-card:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .well-card-main {
+            flex: 1;
+        }
+
+        .well-card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .well-status-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .status-active {
+            background: var(--success);
+            box-shadow: 0 0 0 3px rgba(56, 161, 105, 0.2);
+        }
+
+        .status-completed {
+            background: var(--primary);
+        }
+
+        .status-suspended {
+            background: var(--warning);
+        }
+
+        .well-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .well-info {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .well-stats {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.75rem;
+        }
+
+        .well-stat {
+            font-size: 0.85rem;
+        }
+
+        .well-stat-label {
+            color: var(--text-light);
+        }
+
+        .well-stat-value {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .well-actions {
+            display: flex;
+            gap: 0.5rem;
+            flex-direction: column;
+        }
+
+        /* Stats Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .stat-card.success {
+            background: linear-gradient(135deg, var(--success), #48bb78);
+        }
+
+        .stat-card.warning {
+            background: linear-gradient(135deg, var(--warning), #ecc94b);
+        }
+
+        .stat-card.accent {
+            background: linear-gradient(135deg, var(--accent), #f6ad55);
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-label {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-light);
+        }
+
+        .empty-state-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        .empty-state h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .empty-state p {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 3rem;
+        }
+
+        .spinner {
+            border: 4px solid var(--border);
+            border-top: 4px solid var(--primary);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Badges */
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .badge-active {
+            background: rgba(56, 161, 105, 0.1);
+            color: var(--success);
+        }
+
+        .badge-drilling {
+            background: rgba(237, 137, 54, 0.1);
+            color: var(--accent);
+        }
+
+        .badge-completed {
+            background: rgba(44, 82, 130, 0.1);
+            color: var(--primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .header {
+                padding: 1rem;
+            }
+
+            .logo {
+                font-size: 1.25rem;
+            }
+
+            .welcome h1 {
+                font-size: 1.5rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .well-card {
+                flex-direction: column;
+            }
+
+            .well-actions {
+                flex-direction: row;
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+
+        /* Quick Actions */
+        .quick-actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .quick-action {
+            background: var(--card-bg);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .quick-action:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .quick-action-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .quick-action-label {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* Filters */
+        .filters {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            background: var(--card-bg);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover {
+            border-color: var(--primary);
+        }
+
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        // Firebase configuration (replace with your config)
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_AUTH_DOMAIN",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_STORAGE_BUCKET",
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        // Initialize Firebase (only if not already initialized)
+        if (!firebase.apps.length) {
+            firebase.initializeApp(firebaseConfig);
+        }
+
+        const db = firebase.firestore();
+        const auth = firebase.auth();
+
+        // Mock user data (replace with actual auth)
+        const mockUser = {
+            uid: 'user123',
+            name: 'McKay White',
+            email: 'mckay@metamorphic.energy',
+            initials: 'MW',
+            organisationId: 'org-metamorphic'
+        };
+
+        // Header Component
+        function Header({ user, onCreateWell }) {
+            return (
+                <div className="header">
+                    <div className="header-content">
+                        <div className="logo">
+                            <span className="logo-icon">🛢️</span>
+                            <span>Well Intelligence</span>
+                        </div>
+                        <div className="user-menu">
+                            <button className="btn btn-primary" onClick={onCreateWell}>
+                                + Create New Well
+                            </button>
+                            <div className="user-avatar" title={user.name}>
+                                {user.initials}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        // Stats Cards Component
+        function StatsCards({ wells }) {
+            const activeWells = wells.filter(w => w.status === 'drilling').length;
+            const completedWells = wells.filter(w => w.status === 'completed').length;
+            const totalVolume = wells.reduce((sum, w) => sum + (w.volumes?.totalSystemVolume || 0), 0);
+
+            return (
+                <div className="stats-grid">
+                    <div className="stat-card">
+                        <div className="stat-value">{wells.length}</div>
+                        <div className="stat-label">Total Wells</div>
+                    </div>
+                    <div className="stat-card success">
+                        <div className="stat-value">{activeWells}</div>
+                        <div className="stat-label">Active Wells</div>
+                    </div>
+                    <div className="stat-card accent">
+                        <div className="stat-value">{completedWells}</div>
+                        <div className="stat-label">Completed Wells</div>
+                    </div>
+                    <div className="stat-card warning">
+                        <div className="stat-value">{totalVolume.toFixed(0)}</div>
+                        <div className="stat-label">Total System Volume (bbl)</div>
+                    </div>
+                </div>
+            );
+        }
+
+        // Well Card Component
+        function WellCard({ well, onOpen, onVolumes, onKillSheet }) {
+            const statusClass = well.status === 'drilling' ? 'status-active' :
+                               well.status === 'completed' ? 'status-completed' : 'status-suspended';
+
+            const statusBadge = well.status === 'drilling' ? 'badge-drilling' :
+                               well.status === 'completed' ? 'badge-completed' : 'badge-active';
+
+            const timeAgo = well.currentOperations?.lastUpdate
+                ? getTimeAgo(well.currentOperations.lastUpdate)
+                : 'Unknown';
+
+            return (
+                <div className="well-card" onClick={() => onOpen(well)}>
+                    <div className="well-card-main">
+                        <div className="well-card-header">
+                            <div className={`well-status-indicator ${statusClass}`}></div>
+                            <div>
+                                <div className="well-name">📍 {well.wellName}</div>
+                                <span className={`badge ${statusBadge}`}>{well.status}</span>
+                            </div>
+                        </div>
+                        <div className="well-info">
+                            {well.location.field} | {well.location.country}
+                        </div>
+                        {well.currentOperations && (
+                            <div className="well-info">
+                                {well.currentOperations.phase} @ {well.currentOperations.currentDepth} ft / {well.trajectory.totalDepth} ft
+                            </div>
+                        )}
+                        <div className="well-stats">
+                            <div className="well-stat">
+                                <span className="well-stat-label">String Vol: </span>
+                                <span className="well-stat-value">{well.volumes?.stringVolume || 0} bbl</span>
+                            </div>
+                            <div className="well-stat">
+                                <span className="well-stat-label">Ann Vol: </span>
+                                <span className="well-stat-value">{well.volumes?.annularVolume || 0} bbl</span>
+                            </div>
+                        </div>
+                        <div className="well-info" style={{marginTop: '0.5rem', fontSize: '0.8rem'}}>
+                            Last Update: {timeAgo}
+                        </div>
+                    </div>
+                    <div className="well-actions" onClick={e => e.stopPropagation()}>
+                        <button className="btn btn-sm btn-primary" onClick={() => onVolumes(well)}>
+                            📊 Volumes
+                        </button>
+                        <button className="btn btn-sm btn-outline" onClick={() => onKillSheet(well)}>
+                            📋 Kill Sheet
+                        </button>
+                    </div>
+                </div>
+            );
+        }
+
+        // Helper function for time ago
+        function getTimeAgo(timestamp) {
+            if (!timestamp) return 'Unknown';
+            const now = new Date();
+            const then = timestamp.toDate ? timestamp.toDate() : new Date(timestamp);
+            const diffMs = now - then;
+            const diffMins = Math.floor(diffMs / 60000);
+
+            if (diffMins < 1) return 'Just now';
+            if (diffMins < 60) return `${diffMins} min ago`;
+            const diffHours = Math.floor(diffMins / 60);
+            if (diffHours < 24) return `${diffHours} hr ago`;
+            const diffDays = Math.floor(diffHours / 24);
+            return `${diffDays} day${diffDays > 1 ? 's' : ''} ago`;
+        }
+
+        // Empty State Component
+        function EmptyState({ onCreateWell }) {
+            return (
+                <div className="empty-state">
+                    <div className="empty-state-icon">🛢️</div>
+                    <h3>No Wells Yet</h3>
+                    <p>Create your first well to get started with well control calculations</p>
+                    <button className="btn btn-primary" onClick={onCreateWell}>
+                        + Create Your First Well
+                    </button>
+                </div>
+            );
+        }
+
+        // Quick Actions Component
+        function QuickActions() {
+            const actions = [
+                { icon: '📊', label: 'Volume Calculator', href: '/data/well-control-manuals/vol-4-calculations-quickref/worksheets/well-volumes-calculator.html' },
+                { icon: '📋', label: 'Create Kill Sheet', href: '#' },
+                { icon: '🔧', label: 'BOP Test Log', href: '#' },
+                { icon: '📈', label: 'Displacement Tracker', href: '#' },
+                { icon: '🤖', label: 'Ask Gabriella', href: '/ccis/chat/?agent=well-control-intelligence' },
+                { icon: '📄', label: 'Export Reports', href: '#' }
+            ];
+
+            return (
+                <div className="card">
+                    <div className="card-header">
+                        <h2 className="card-title">Quick Actions</h2>
+                    </div>
+                    <div className="quick-actions">
+                        {actions.map((action, idx) => (
+                            <a key={idx} href={action.href} className="quick-action">
+                                <div className="quick-action-icon">{action.icon}</div>
+                                <div className="quick-action-label">{action.label}</div>
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            );
+        }
+
+        // Filters Component
+        function Filters({ activeFilter, onFilterChange }) {
+            const filters = ['All Wells', 'Active', 'Drilling', 'Completed', 'Suspended'];
+
+            return (
+                <div className="filters">
+                    {filters.map(filter => (
+                        <button
+                            key={filter}
+                            className={`filter-btn ${activeFilter === filter ? 'active' : ''}`}
+                            onClick={() => onFilterChange(filter)}
+                        >
+                            {filter}
+                        </button>
+                    ))}
+                </div>
+            );
+        }
+
+        // Main Dashboard Component
+        function Dashboard() {
+            const [wells, setWells] = useState([]);
+            const [filteredWells, setFilteredWells] = useState([]);
+            const [loading, setLoading] = useState(true);
+            const [user] = useState(mockUser);
+            const [activeFilter, setActiveFilter] = useState('All Wells');
+
+            useEffect(() => {
+                loadWells();
+            }, []);
+
+            useEffect(() => {
+                filterWells();
+            }, [wells, activeFilter]);
+
+            async function loadWells() {
+                try {
+                    // TODO: Replace with actual Firebase query
+                    // For now, load mock data
+                    const mockWells = [
+                        {
+                            wellId: 'well-001',
+                            wellName: 'Maersk Voyager - Well A-12',
+                            wellNumber: 'A-12',
+                            rigName: 'Maersk Voyager',
+                            location: {
+                                field: 'North Sea Field',
+                                block: 'Block 14/19',
+                                country: 'United Kingdom'
+                            },
+                            status: 'drilling',
+                            trajectory: {
+                                totalDepth: 11000,
+                                tvd: 10500
+                            },
+                            currentOperations: {
+                                phase: 'Drilling',
+                                currentDepth: 8500,
+                                lastUpdate: new Date(Date.now() - 2 * 60000) // 2 min ago
+                            },
+                            volumes: {
+                                stringVolume: 185.01,
+                                annularVolume: 1841.66,
+                                totalSystemVolume: 2026.67
+                            }
+                        },
+                        {
+                            wellId: 'well-002',
+                            wellName: 'Platform Echo - Well B-05',
+                            wellNumber: 'B-05',
+                            rigName: 'Platform Echo',
+                            location: {
+                                field: 'Claymore Field',
+                                block: 'Block 16/21',
+                                country: 'United Kingdom'
+                            },
+                            status: 'completed',
+                            trajectory: {
+                                totalDepth: 9850,
+                                tvd: 9500
+                            },
+                            currentOperations: {
+                                phase: 'Completed',
+                                currentDepth: 9850,
+                                lastUpdate: new Date(Date.now() - 86400000) // 1 day ago
+                            },
+                            volumes: {
+                                stringVolume: 142.3,
+                                annularVolume: 1523.8,
+                                totalSystemVolume: 1666.1
+                            }
+                        }
+                    ];
+
+                    setWells(mockWells);
+                    setLoading(false);
+                } catch (error) {
+                    console.error('Error loading wells:', error);
+                    setLoading(false);
+                }
+            }
+
+            function filterWells() {
+                if (activeFilter === 'All Wells') {
+                    setFilteredWells(wells);
+                } else if (activeFilter === 'Active') {
+                    setFilteredWells(wells.filter(w => w.status === 'drilling' || w.status === 'tripping'));
+                } else {
+                    setFilteredWells(wells.filter(w => w.status.toLowerCase() === activeFilter.toLowerCase()));
+                }
+            }
+
+            function handleCreateWell() {
+                // TODO: Navigate to well creation wizard
+                alert('Well Creation Wizard will open here. Coming next!');
+            }
+
+            function handleOpenWell(well) {
+                // TODO: Navigate to well workspace
+                alert(`Opening workspace for ${well.wellName}. Coming next!`);
+            }
+
+            function handleOpenVolumes(well) {
+                // Open volume calculator with this well's data
+                const calculatorUrl = '/data/well-control-manuals/vol-4-calculations-quickref/worksheets/well-volumes-calculator.html';
+                window.open(calculatorUrl, '_blank');
+            }
+
+            function handleOpenKillSheet(well) {
+                // TODO: Generate kill sheet for this well
+                alert(`Generating kill sheet for ${well.wellName}`);
+            }
+
+            if (loading) {
+                return (
+                    <div>
+                        <Header user={user} onCreateWell={handleCreateWell} />
+                        <div className="container">
+                            <div className="loading">
+                                <div className="spinner"></div>
+                                <p>Loading wells...</p>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+
+            return (
+                <div>
+                    <Header user={user} onCreateWell={handleCreateWell} />
+                    <div className="container">
+                        <div className="welcome">
+                            <h1>Welcome back, {user.name.split(' ')[0]}!</h1>
+                            <p>Manage your wells, run calculations, and access well control tools</p>
+                        </div>
+
+                        <StatsCards wells={wells} />
+
+                        <div className="card">
+                            <div className="card-header">
+                                <h2 className="card-title">My Wells</h2>
+                                <button className="btn btn-primary" onClick={handleCreateWell}>
+                                    + Create New Well
+                                </button>
+                            </div>
+
+                            <Filters activeFilter={activeFilter} onFilterChange={setActiveFilter} />
+
+                            {filteredWells.length === 0 ? (
+                                <EmptyState onCreateWell={handleCreateWell} />
+                            ) : (
+                                <div className="wells-grid">
+                                    {filteredWells.map(well => (
+                                        <WellCard
+                                            key={well.wellId}
+                                            well={well}
+                                            onOpen={handleOpenWell}
+                                            onVolumes={handleOpenVolumes}
+                                            onKillSheet={handleOpenKillSheet}
+                                        />
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+
+                        <QuickActions />
+                    </div>
+                </div>
+            );
+        }
+
+        // Render the app
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<Dashboard />);
+    </script>
+</body>
+</html>

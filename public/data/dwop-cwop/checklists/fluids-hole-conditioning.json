@@ -1,0 +1,84 @@
+{
+  "checklistId": "DWOP-CL-005",
+  "title": "Fluids & Hole Conditioning Checklist",
+  "section": "Drilling Fluids Management",
+  "rigTypes": ["LAND", "JACKUP", "SEMISUBMERSIBLE", "DRILLSHIP"],
+  "bopType": "all",
+  "breakoutRoom": "B",
+  "participants": ["Mud Engineer", "Drilling Engineer", "Logistics Coordinator"],
+  "aiParticipant": true,
+  "categories": [
+    {
+      "category": "Mud System Design",
+      "items": [
+        {"item": "Mud type and weight confirmed for section", "critical": true},
+        {"item": "Mud properties specification reviewed"},
+        {"item": "Rheology targets established"},
+        {"item": "Filtration control requirements"},
+        {"item": "Inhibition requirements (shale sections)"},
+        {"item": "pH and alkalinity targets"}
+      ]
+    },
+    {
+      "category": "Materials & Inventory",
+      "items": [
+        {"item": "All mud materials on board", "critical": true},
+        {"item": "Barite inventory sufficient for weight-up"},
+        {"item": "LCM inventory and types confirmed"},
+        {"item": "Spot pill materials available"},
+        {"item": "Emergency materials identified"},
+        {"item": "Resupply schedule confirmed"}
+      ]
+    },
+    {
+      "category": "Solids Control",
+      "items": [
+        {"item": "Shaker screens selected"},
+        {"item": "Centrifuge operation plan"},
+        {"item": "Degasser ready (if gas expected)"},
+        {"item": "Mud cleaning capacity vs drilling rate"},
+        {"item": "Cuttings disposal plan"}
+      ]
+    },
+    {
+      "category": "ECD Management",
+      "items": [
+        {"item": "ECD limits for section defined", "critical": true},
+        {"item": "PWD tool in BHA"},
+        {"item": "ECD vs fracture gradient margin confirmed"},
+        {"item": "Surge/swab calculations reviewed"},
+        {"item": "Tripping speed limits established"}
+      ]
+    },
+    {
+      "category": "Hole Cleaning",
+      "items": [
+        {"item": "Hole cleaning parameters established"},
+        {"item": "Sweep frequency and volume planned"},
+        {"item": "Wiper trip criteria defined"},
+        {"item": "Cuttings loading monitoring plan"},
+        {"item": "Back-reaming policy"}
+      ]
+    },
+    {
+      "category": "Lost Circulation Contingency",
+      "items": [
+        {"item": "LCM pills pre-mixed and ready", "critical": true},
+        {"item": "LCM concentration and volume defined"},
+        {"item": "Cement squeeze contingency"},
+        {"item": "Loss rate trigger points established"}
+      ]
+    }
+  ],
+  "aiQuestions": [
+    "Barite inventory shows 200 tonnes - is this sufficient for a worst-case weight-up scenario?",
+    "What's your ECD margin to fracture gradient? The programme shows only 0.3 ppg - is this adequate?",
+    "If you lose returns completely, what's your maximum volume before converting to LCM cure?",
+    "Your inhibition plan uses KCl - have environmental discharge permits been confirmed?",
+    "Hole cleaning model shows marginal transport at planned flow rates - what's your contingency?"
+  ],
+  "actionItemTemplate": {
+    "fields": ["item", "owner", "dueDate", "status", "notes"]
+  },
+  "tags": ["dwop", "checklist", "fluids", "mud", "hole-cleaning"]
+}

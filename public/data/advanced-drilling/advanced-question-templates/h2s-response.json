@@ -1,0 +1,83 @@
+{
+  "templateId": "QT-H2S-001",
+  "category": "HAZARD_AWARENESS",
+  "title": "H2S in Well Control Situation",
+  "level": ["L3", "L4"],
+  "applicableTo": ["surface", "subsea"],
+  "triggeredBy": {
+    "hazardType": "h2s",
+    "severity": ["medium", "high", "critical"]
+  },
+  "question": "On {{wellProfile.wellName}}, you are drilling in the {{currentSection.section}} section where H2S is expected. You take a kick and H2S monitors alarm at {{scenario.h2sLevel}} ppm at the shaker. SIDPP is {{scenario.sidpp}} psi. What additional considerations must be factored into your well control response?",
+  "inputs": {
+    "wellProfile": {
+      "required": ["wellName"]
+    },
+    "currentSection": {
+      "from": "wellProfile.casingProgram[activeSection]",
+      "required": ["section"]
+    },
+    "hazard": {
+      "from": "wellProfile.hazards where hazardType = 'h2s'"
+    },
+    "scenario": {
+      "generated": true,
+      "h2sLevel": {
+        "options": [15, 50, 150, 500],
+        "description": "ppm at shakers"
+      },
+      "sidpp": {
+        "range": [300, 600],
+        "step": 50
+      }
+    }
+  },
+  "correctConsiderations": [
+    {
+      "consideration": "Personnel safety",
+      "action": "Muster non-essential personnel, all personnel don SCBA if levels exceed threshold, monitor wind direction"
+    },
+    {
+      "consideration": "H2S scavenger in mud",
+      "action": "Ensure zinc-based or iron-based scavenger is circulated, increase concentration if needed"
+    },
+    {
+      "consideration": "Equipment compatibility",
+      "action": "Verify BOP, wellhead, and tubulars are H2S-rated (NACE compliant)"
+    },
+    {
+      "consideration": "Slower gas migration",
+      "action": "H2S is denser than methane - may migrate slower but is more soluble in OBM, could break out suddenly"
+    },
+    {
+      "consideration": "Communication",
+      "action": "Notify medic, OIM, and shore-based emergency response. Have antidote available."
+    }
+  ],
+  "answerOptions": {
+    "A": "Proceed with standard well kill - H2S doesn't affect well control procedures",
+    "B": "Focus solely on personnel evacuation - well control is secondary to H2S safety",
+    "C": "Integrate personnel protection (SCBA, muster) with well control, ensure scavenger in mud, verify equipment ratings",
+    "D": "Immediately bullhead to push H2S back into formation"
+  },
+  "correctOption": "C",
+  "feedback": {
+    "correct": "Correct. H2S adds complexity but doesn't change fundamental well control. You must protect personnel (SCBA, muster non-essential) while continuing well control operations. Ensure H2S scavenger is in the mud and equipment is NACE-rated.",
+    "A_feedback": "Incorrect. H2S significantly affects personnel safety protocols during well control. You can't ignore it.",
+    "B_feedback": "Incomplete. While personnel safety is critical, abandoning well control could lead to an uncontrolled blowout releasing more H2S. Both must be managed simultaneously.",
+    "D_feedback": "Bullheading may be considered but isn't automatic. It could fracture formation or doesn't address the gas already in the wellbore. Controlled circulation with proper PPE is usually preferred."
+  },
+  "h2sThresholds": {
+    "alarm": 10,
+    "scba_required": 20,
+    "idlh": 100,
+    "unit": "ppm"
+  },
+  "contextualTip": "On {{wellProfile.wellName}}, H2S potential in the reservoir means all personnel must be H2S-trained and SCBA must be immediately accessible. During a kick, you're managing TWO emergencies simultaneously.",
+  "hazardContext": {
+    "description": "{{hazard.description}}",
+    "mitigation": "{{hazard.mitigation}}"
+  },
+  "relatedLesson": "WC-SF-109-01",
+  "tags": ["h2s", "hazard", "personnel-safety", "well-control", "dynamic"]
+}

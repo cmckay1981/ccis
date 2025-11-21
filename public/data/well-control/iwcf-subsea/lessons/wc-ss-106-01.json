@@ -1,0 +1,89 @@
+{
+  "lessonId": "WC-SS-106-01",
+  "moduleId": "WC-SS-106",
+  "courseId": "WC-SS",
+  "title": "Emergency Disconnect Sequence (EDS)",
+  "type": "lesson",
+  "level": [
+    "L4"
+  ],
+  "content": "Emergency Disconnect Sequence is the controlled separation of the LMRP from the subsea BOP stack. EDS is executed when the drilling unit must move off location urgently\u2014severe weather, vessel drive-off, ice, or uncontrolled well situation where maintaining connection is more dangerous than disconnecting. EDS must secure the well before separation.",
+  "multiSensoryExplanations": {
+    "visual": "EDS is like ejecting from a fighter jet\u2014you don't want to do it, but when you must, it happens fast and in a precise sequence. Seat belt releases, canopy blows, seat fires. In EDS: shear rams close, LMRP releases, riser comes up. Each step in order.",
+    "auditory": "E-D-S: Emergency Disconnect Sequence. Say each step: 'Shear-Seal-Separate.' The rams shear pipe, seal the well, then LMRP separates. Three actions, that order, no deviation.",
+    "kinesthetic": "Practice the sequence with hand motions. Fist (shear)\u2014slam hands together. Open palms facing (seal)\u2014press together tight. Pull hands apart (separate)\u2014LMRP away. Feel the urgency and finality of each step.",
+    "storyBased": "During Deepwater Horizon, EDS was initiated but failed to fully shear the drill pipe. The investigation found multiple factors\u2014pipe position, battery condition, maintenance issues. That failure became the world's largest oil spill. EDS must work every time, first time. There is no second chance."
+  },
+  "sequence": {
+    "automated": [
+      "1. Operator initiates EDS at control panel",
+      "2. System closes BSR (Blind Shear Rams)\u2014cuts drill pipe and seals well",
+      "3. System closes CSO (Casing Shear) if pipe is larger than BSR capacity",
+      "4. System unlocks LMRP connector",
+      "5. Accumulator pressure drives separation",
+      "6. LMRP rises with riser as rig moves off"
+    ],
+    "manual": {
+      "description": "If automated fails, ROV intervention or acoustic backup may be used",
+      "options": [
+        "ROV stab into intervention panel",
+        "Acoustic backup signal",
+        "Deadman/autoshear activation"
+      ]
+    }
+  },
+  "prerequisites": {
+    "beforeEDS": [
+      "Confirm all personnel clear of moonpool",
+      "Riser tensioner set to disconnect mode",
+      "Diverter open or overboard line configured",
+      "All drillstring connections above rotary",
+      "Rig positioned for clean disconnect (if possible)"
+    ]
+  },
+  "mcq": {
+    "question": "What is the PRIMARY function of the Blind Shear Rams during EDS?",
+    "options": {
+      "A": "To release the LMRP connector",
+      "B": "To shear the drill pipe and seal the wellbore",
+      "C": "To pump kill mud into the well",
+      "D": "To release riser tension"
+    },
+    "correctOption": "B",
+    "explanation": "Blind Shear Rams cut through drill pipe and seal the wellbore in one action. This is the critical well-securing step before the LMRP can safely disconnect."
+  },
+  "advancedQuestion": {
+    "question": "Your vessel is experiencing drive-off toward an adjacent platform. You have 15 minutes before riser angle exceeds safe limits. The tool joint is positioned across the BSR. What are your options?",
+    "answer": "Options: (1) Attempt to move pipe to position connection away from BSR (if time allows and pumps/drawworks available); (2) Execute EDS anyway\u2014some BSR designs can shear tool joints, verify your BOP specs; (3) If BSR cannot shear tool joint, use Casing Shear Rams first (designed for larger diameters), then seal with BSR; (4) Accept partial shear and immediate disconnect, understanding well may not be fully sealed\u2014requires post-incident intervention. This decision weighs certain rig damage from over-angle against uncertain well control outcome. Time pressure makes this a critical L4 judgment call.",
+    "l4Focus": "Supervisors must understand BOP limitations and make real-time decisions about EDS execution."
+  },
+  "backupSystems": {
+    "deadman": "Automatically triggers EDS if communication and power are lost to BOP for specified time",
+    "autoshear": "Triggers EDS if LMRP physically separates from BOP stack",
+    "acoustic": "Independent acoustic signal can trigger EDS remotely",
+    "rov": "ROV can manually operate intervention panel to trigger EDS"
+  },
+  "commonMisconception": {
+    "wrong": "EDS is automatic\u2014just push a button and walk away.",
+    "correct": "EDS is semi-automatic. The driller initiates, but must verify sequencing, monitor execution, and be prepared to intervene if something fails. Post-EDS, the well is secured but not killed\u2014further intervention will be required."
+  },
+  "testingRequirements": {
+    "frequency": "Per API RP 53 and company policy",
+    "includes": [
+      "BSR function test",
+      "LMRP connector function test",
+      "Deadman/autoshear system test",
+      "Acoustic backup test",
+      "Full EDS drill (simulated)"
+    ]
+  },
+  "documentId": "WC-SS-106-01",
+  "tags": [
+    "well-control",
+    "subsea",
+    "deepwater",
+    "IWCF",
+    "WC-SS-106",
+    "WC-SS-106-01"
+  ]
+}

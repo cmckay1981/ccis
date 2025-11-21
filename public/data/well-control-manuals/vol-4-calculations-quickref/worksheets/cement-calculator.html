@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cement Calculations - Digital Worksheet</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2c5282;
+            --accent: #ed8936;
+            --success: #38a169;
+            --warning: #d69e2e;
+            --danger: #e53e3e;
+            --bg: #f7fafc;
+            --card-bg: #ffffff;
+            --text: #2d3748;
+            --border: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        header h1 { font-size: 1.5rem; margin-bottom: 5px; }
+        header p { opacity: 0.8; font-size: 0.9rem; }
+
+        .tabs {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .tab {
+            padding: 10px 20px;
+            background: var(--card-bg);
+            border: 2px solid var(--border);
+            border-radius: 8px 8px 0 0;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .tab:hover { border-color: var(--secondary); }
+        .tab.active {
+            background: var(--secondary);
+            color: white;
+            border-color: var(--secondary);
+        }
+
+        .section {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent);
+        }
+        .section h3 {
+            color: var(--secondary);
+            font-size: 0.95rem;
+            margin: 15px 0 10px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .form-group { display: flex; flex-direction: column; }
+        .form-group label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            color: var(--secondary);
+        }
+        .form-group input, .form-group select {
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(237, 137, 54, 0.1);
+        }
+        .form-group .unit {
+            font-size: 0.8rem;
+            color: #718096;
+            margin-top: 2px;
+        }
+
+        .calc-result {
+            background: #edf2f7;
+            padding: 12px 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            border-left: 4px solid var(--accent);
+        }
+        .calc-result .label { font-size: 0.85rem; color: #4a5568; }
+        .calc-result .value {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .calc-result .formula {
+            font-size: 0.75rem;
+            color: #718096;
+            font-family: monospace;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .btn-primary {
+            background: var(--secondary);
+            color: white;
+        }
+        .btn-primary:hover { background: var(--primary); }
+        .btn-success {
+            background: var(--success);
+            color: white;
+        }
+        .btn-warning {
+            background: var(--warning);
+            color: white;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .warning-box {
+            background: #fffaf0;
+            border: 1px solid var(--warning);
+            border-radius: 4px;
+            padding: 10px 15px;
+            margin: 10px 0;
+        }
+        .warning-box.danger {
+            background: #fff5f5;
+            border-color: var(--danger);
+        }
+        .warning-box.success {
+            background: #f0fff4;
+            border-color: var(--success);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        th { background: #edf2f7; font-weight: 600; }
+        input.table-input {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid var(--border);
+            border-radius: 3px;
+        }
+
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        @media print {
+            .no-print { display: none; }
+            .section { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛢️ Cement Calculations - Digital Worksheet</h1>
+            <p>Primary Cementing • Balanced Plugs • Squeeze Jobs</p>
+        </header>
+
+        <div class="tabs no-print">
+            <div class="tab active" onclick="showTab('primary')">Primary Cement</div>
+            <div class="tab" onclick="showTab('plug')">Balanced Plug</div>
+            <div class="tab" onclick="showTab('squeeze')">Squeeze Job</div>
+            <div class="tab" onclick="showTab('summary')">Job Summary</div>
+        </div>
+
+        <!-- PRIMARY CEMENTING TAB -->
+        <div id="primary" class="tab-content active">
+            <div class="section">
+                <h2>1. Well Data</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Well Name</label>
+                        <input type="text" id="wellName" placeholder="e.g., WELL-1">
+                    </div>
+                    <div class="form-group">
+                        <label>Casing Size</label>
+                        <input type="number" id="casingOD" step="0.001" placeholder="9.625">
+                        <span class="unit">inch OD</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Casing ID</label>
+                        <input type="number" id="casingID" step="0.001" placeholder="8.835">
+                        <span class="unit">inch</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Casing Shoe Depth (TVD)</label>
+                        <input type="number" id="shoeTVD" placeholder="10000">
+                        <span class="unit">ft</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Top of Cement (TVD)</label>
+                        <input type="number" id="tocTVD" placeholder="5000">
+                        <span class="unit">ft</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Float Collar Depth</label>
+                        <input type="number" id="floatDepth" placeholder="9950">
+                        <span class="unit">ft</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Open Hole Size</label>
+                        <input type="number" id="holeSize" step="0.001" placeholder="12.25">
+                        <span class="unit">inch</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Open Hole Top (Previous Shoe)</label>
+                        <input type="number" id="ohTop" placeholder="6000">
+                        <span class="unit">ft</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Previous Casing ID</label>
+                        <input type="number" id="prevCsgID" step="0.001" placeholder="12.415">
+                        <span class="unit">inch</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>2. Hole Conditions</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Excess Factor</label>
+                        <input type="number" id="excess" value="30" placeholder="30">
+                        <span class="unit">% (includes washout)</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Current Mud Weight</label>
+                        <input type="number" id="mudWt" step="0.1" placeholder="12.0">
+                        <span class="unit">ppg</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Fracture Gradient at Shoe</label>
+                        <input type="number" id="fracGrad" step="0.1" placeholder="14.5">
+                        <span class="unit">ppg EMW</span>
+                    </div>
+                    <div class="form-group">
+                        <label>BHCT</label>
+                        <input type="number" id="bhct" placeholder="180">
+                        <span class="unit">°F</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>3. Slurry Design</h2>
+                <h3>Lead Slurry</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Lead Density</label>
+                        <input type="number" id="leadDensity" step="0.1" placeholder="13.5">
+                        <span class="unit">ppg</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Lead Yield</label>
+                        <input type="number" id="leadYield" step="0.01" placeholder="1.50">
+                        <span class="unit">ft³/sk</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Lead Thickening Time</label>
+                        <input type="text" id="leadTT" placeholder="4:00">
+                        <span class="unit">hr:min</span>
+                    </div>
+                </div>
+
+                <h3>Tail Slurry</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Tail Density</label>
+                        <input type="number" id="tailDensity" step="0.1" placeholder="16.0">
+                        <span class="unit">ppg</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Tail Yield</label>
+                        <input type="number" id="tailYield" step="0.01" placeholder="1.15">
+                        <span class="unit">ft³/sk</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Tail Thickening Time</label>
+                        <input type="text" id="tailTT" placeholder="3:30">
+                        <span class="unit">hr:min</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>4. Pump Schedule</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Pump Rate</label>
+                        <input type="number" id="pumpRate" step="0.1" placeholder="6">
+                        <span class="unit">bpm</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Pump Output</label>
+                        <input type="number" id="pumpOutput" step="0.001" placeholder="0.117">
+                        <span class="unit">bbl/stk</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Spacer Volume</label>
+                        <input type="number" id="spacerVol" placeholder="50">
+                        <span class="unit">bbl</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section no-print">
+                <button class="btn btn-primary" onclick="calculatePrimary()">Calculate All</button>
+                <button class="btn btn-warning" onclick="clearForm()">Clear</button>
+                <button class="btn btn-success" onclick="window.print()">Print Results</button>
+            </div>
+
+            <div class="section" id="primaryResults" style="display:none;">
+                <h2>📊 Calculation Results</h2>
+
+                <h3>Annular Volumes</h3>
+                <div class="results-grid">
+                    <div class="calc-result">
+                        <div class="label">Open Hole Annular Volume (gauge)</div>
+                        <div class="value" id="ohAnnVol">-</div>
+                        <div class="formula">[(OH² - CsgOD²) / 1029.4] × Length</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">Open Hole Volume + Excess</div>
+                        <div class="value" id="ohAnnVolEx">-</div>
+                        <div class="formula">Gauge × (1 + Excess%)</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">Cased Hole Annular Volume</div>
+                        <div class="value" id="casedAnnVol">-</div>
+                        <div class="formula">[(PrevCsgID² - CsgOD²) / 1029.4] × Length</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">TOTAL Annular Volume</div>
+                        <div class="value" id="totalAnnVol">-</div>
+                    </div>
+                </div>
+
+                <h3>Cement Requirements</h3>
+                <div class="results-grid">
+                    <div class="calc-result">
+                        <div class="label">Shoe Track Volume</div>
+                        <div class="value" id="shoeTrackVol">-</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">Lead Cement Volume</div>
+                        <div class="value" id="leadVol">-</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">Tail Cement Volume</div>
+                        <div class="value" id="tailVol">-</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">TOTAL Cement Volume</div>
+                        <div class="value" id="totalCementVol">-</div>
+                    </div>
+                </div>
+
+                <h3>Sacks Required</h3>
+                <div class="results-grid">
+                    <div class="calc-result">
+                        <div class="label">Lead Cement Sacks</div>
+                        <div class="value" id="leadSacks">-</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">Tail Cement Sacks</div>
+                        <div class="value" id="tailSacks">-</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">TOTAL Sacks</div>
+                        <div class="value" id="totalSacks">-</div>
+                    </div>
+                </div>
+
+                <h3>Displacement</h3>
+                <div class="results-grid">
+                    <div class="calc-result">
+                        <div class="label">Casing Capacity</div>
+                        <div class="value" id="casingCap">-</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">Displacement Volume</div>
+                        <div class="value" id="dispVol">-</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">Displacement Strokes</div>
+                        <div class="value" id="dispStrokes">-</div>
+                    </div>
+                </div>
+
+                <h3>ECD Check</h3>
+                <div id="ecdCheck"></div>
+
+                <h3>Timing Check</h3>
+                <div id="timingCheck"></div>
+            </div>
+        </div>
+
+        <!-- BALANCED PLUG TAB -->
+        <div id="plug" class="tab-content">
+            <div class="section">
+                <h2>Balanced Plug Calculator</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Plug Top Depth</label>
+                        <input type="number" id="plugTop" placeholder="8000">
+                        <span class="unit">ft</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Plug Bottom Depth</label>
+                        <input type="number" id="plugBottom" placeholder="8200">
+                        <span class="unit">ft</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Hole/Casing ID</label>
+                        <input type="number" id="plugHoleID" step="0.001" placeholder="8.5">
+                        <span class="unit">inch</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Pipe OD</label>
+                        <input type="number" id="plugPipeOD" step="0.001" placeholder="5.0">
+                        <span class="unit">inch</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Pipe ID</label>
+                        <input type="number" id="plugPipeID" step="0.001" placeholder="4.276">
+                        <span class="unit">inch</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Slurry Yield</label>
+                        <input type="number" id="plugYield" step="0.01" placeholder="1.15">
+                        <span class="unit">ft³/sk</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="calculatePlug()">Calculate Balanced Plug</button>
+            </div>
+
+            <div class="section" id="plugResults" style="display:none;">
+                <h2>📊 Balanced Plug Results</h2>
+                <div class="results-grid">
+                    <div class="calc-result">
+                        <div class="label">Plug Length</div>
+                        <div class="value" id="plugLength">-</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">Hole Capacity</div>
+                        <div class="value" id="plugHoleCap">-</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">Annular Capacity</div>
+                        <div class="value" id="plugAnnCap">-</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">Pipe Capacity</div>
+                        <div class="value" id="plugPipeCap">-</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">Cement Volume Required</div>
+                        <div class="value" id="plugCementVol">-</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">Sacks Required</div>
+                        <div class="value" id="plugSacks">-</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">Pipe End Depth (for balance)</div>
+                        <div class="value" id="plugPipeEnd">-</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">Displacement Volume</div>
+                        <div class="value" id="plugDispVol">-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SQUEEZE TAB -->
+        <div id="squeeze" class="tab-content">
+            <div class="section">
+                <h2>Squeeze Cement Calculator</h2>
+                <p>For squeeze job calculations, the key factors are:</p>
+                <ul style="margin: 15px 0; padding-left: 20px;">
+                    <li>Slurry volume based on formation acceptance</li>
+                    <li>Maximum squeeze pressure (formation breakdown)</li>
+                    <li>Hesitation schedule for proper squeeze</li>
+                </ul>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Squeeze Depth (TVD)</label>
+                        <input type="number" id="squeezeDepth" placeholder="10000">
+                        <span class="unit">ft</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Slurry Density</label>
+                        <input type="number" id="squeezeDensity" step="0.1" placeholder="15.8">
+                        <span class="unit">ppg</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Formation Pressure</label>
+                        <input type="number" id="formPressure" placeholder="5000">
+                        <span class="unit">psi</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Breakdown Pressure</label>
+                        <input type="number" id="breakdownPressure" placeholder="7500">
+                        <span class="unit">psi</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="calculateSqueeze()">Calculate Squeeze Parameters</button>
+            </div>
+
+            <div class="section" id="squeezeResults" style="display:none;">
+                <h2>📊 Squeeze Calculation Results</h2>
+                <div class="results-grid">
+                    <div class="calc-result">
+                        <div class="label">Hydrostatic Pressure (slurry)</div>
+                        <div class="value" id="squeezeHP">-</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">Max Surface Squeeze Pressure</div>
+                        <div class="value" id="maxSqueezeSurf">-</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="label">Initial Surface Pressure</div>
+                        <div class="value" id="initSqueezeSurf">-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUMMARY TAB -->
+        <div id="summary" class="tab-content">
+            <div class="section">
+                <h2>Job Summary</h2>
+                <p>Complete the calculations in the other tabs first. This summary will compile all results.</p>
+                <button class="btn btn-primary" onclick="generateSummary()">Generate Summary</button>
+                <button class="btn btn-success" onclick="window.print()">Print Summary</button>
+            </div>
+            <div id="summaryContent"></div>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function getVal(id) { return parseFloat(document.getElementById(id).value) || 0; }
+        function setResult(id, value, unit = '') {
+            document.getElementById(id).textContent = value.toFixed(2) + (unit ? ' ' + unit : '');
+        }
+
+        function calculatePrimary() {
+            // Get inputs
+            const casingOD = getVal('casingOD');
+            const casingID = getVal('casingID');
+            const shoeTVD = getVal('shoeTVD');
+            const tocTVD = getVal('tocTVD');
+            const floatDepth = getVal('floatDepth');
+            const holeSize = getVal('holeSize');
+            const ohTop = getVal('ohTop');
+            const prevCsgID = getVal('prevCsgID');
+            const excess = getVal('excess') / 100;
+            const mudWt = getVal('mudWt');
+            const fracGrad = getVal('fracGrad');
+            const leadDensity = getVal('leadDensity');
+            const leadYield = getVal('leadYield');
+            const tailDensity = getVal('tailDensity');
+            const tailYield = getVal('tailYield');
+            const pumpRate = getVal('pumpRate');
+            const pumpOutput = getVal('pumpOutput');
+            const spacerVol = getVal('spacerVol');
+
+            // Capacities
+            const ohAnnCap = (Math.pow(holeSize, 2) - Math.pow(casingOD, 2)) / 1029.4;
+            const casedAnnCap = (Math.pow(prevCsgID, 2) - Math.pow(casingOD, 2)) / 1029.4;
+            const casingCap = Math.pow(casingID, 2) / 1029.4;
+
+            // Lengths
+            const ohLength = shoeTVD - ohTop;
+            const casedLength = ohTop - tocTVD;
+            const shoeTrackLength = shoeTVD - floatDepth;
+
+            // Volumes
+            const ohAnnVol = ohAnnCap * ohLength;
+            const ohAnnVolEx = ohAnnVol * (1 + excess);
+            const casedAnnVol = casedAnnCap * casedLength;
+            const totalAnnVol = ohAnnVolEx + casedAnnVol;
+            const shoeTrackVol = casingCap * shoeTrackLength;
+
+            // Cement volumes (simplified: tail for shoe track + 500ft above, rest lead)
+            const tailLength = shoeTrackLength + 500;
+            const tailVol = (ohAnnCap * tailLength * (1 + excess)) + shoeTrackVol;
+            const leadVol = totalAnnVol - (ohAnnCap * tailLength * (1 + excess));
+            const totalCementVol = leadVol + tailVol;
+
+            // Sacks
+            const leadSacks = Math.ceil((leadVol * 5.615) / leadYield);
+            const tailSacks = Math.ceil((tailVol * 5.615) / tailYield);
+            const totalSacks = leadSacks + tailSacks;
+
+            // Displacement
+            const dispVol = casingCap * floatDepth;
+            const dispStrokes = Math.ceil(dispVol / pumpOutput);
+
+            // Display results
+            document.getElementById('primaryResults').style.display = 'block';
+            setResult('ohAnnVol', ohAnnVol, 'bbl');
+            setResult('ohAnnVolEx', ohAnnVolEx, 'bbl');
+            setResult('casedAnnVol', casedAnnVol, 'bbl');
+            setResult('totalAnnVol', totalAnnVol, 'bbl');
+            setResult('shoeTrackVol', shoeTrackVol, 'bbl');
+            setResult('leadVol', leadVol, 'bbl');
+            setResult('tailVol', tailVol, 'bbl');
+            setResult('totalCementVol', totalCementVol, 'bbl');
+            setResult('leadSacks', leadSacks, 'sacks');
+            setResult('tailSacks', tailSacks, 'sacks');
+            setResult('totalSacks', totalSacks, 'sacks');
+            setResult('casingCap', casingCap, 'bbl/ft');
+            setResult('dispVol', dispVol, 'bbl');
+            document.getElementById('dispStrokes').textContent = dispStrokes + ' strokes';
+
+            // ECD Check
+            const maxECD = tailDensity; // Simplified - full column of tail
+            const ecdMargin = fracGrad - maxECD;
+            let ecdHtml = '';
+            if (ecdMargin < 0.5) {
+                ecdHtml = `<div class="warning-box danger">⚠️ WARNING: ECD margin is only ${ecdMargin.toFixed(2)} ppg. Risk of losses!</div>`;
+            } else {
+                ecdHtml = `<div class="warning-box success">✓ ECD margin: ${ecdMargin.toFixed(2)} ppg (Max ECD: ${maxECD.toFixed(1)} ppg vs Frac: ${fracGrad.toFixed(1)} ppg)</div>`;
+            }
+            document.getElementById('ecdCheck').innerHTML = ecdHtml;
+
+            // Timing check
+            const totalVol = spacerVol + totalCementVol + dispVol;
+            const jobTime = totalVol / pumpRate / 60; // hours
+            document.getElementById('timingCheck').innerHTML = `
+                <div class="warning-box">
+                    <strong>Estimated Job Time:</strong> ${jobTime.toFixed(1)} hours<br>
+                    <strong>Total Volume:</strong> ${totalVol.toFixed(0)} bbl<br>
+                    <em>Verify against thickening time with 30 min buffer</em>
+                </div>
+            `;
+        }
+
+        function calculatePlug() {
+            const plugTop = getVal('plugTop');
+            const plugBottom = getVal('plugBottom');
+            const holeID = getVal('plugHoleID');
+            const pipeOD = getVal('plugPipeOD');
+            const pipeID = getVal('plugPipeID');
+            const yield = getVal('plugYield');
+
+            const plugLength = plugBottom - plugTop;
+            const holeCap = Math.pow(holeID, 2) / 1029.4;
+            const annCap = (Math.pow(holeID, 2) - Math.pow(pipeOD, 2)) / 1029.4;
+            const pipeCap = Math.pow(pipeID, 2) / 1029.4;
+
+            const plugVol = holeCap * plugLength;
+            const sacks = Math.ceil((plugVol * 5.615) / yield);
+
+            // Balance point calculation
+            const pipeEnd = plugBottom + (plugVol * annCap / (annCap + pipeCap));
+            const dispVol = pipeCap * pipeEnd - (plugVol * pipeCap / (annCap + pipeCap));
+
+            document.getElementById('plugResults').style.display = 'block';
+            setResult('plugLength', plugLength, 'ft');
+            setResult('plugHoleCap', holeCap, 'bbl/ft');
+            setResult('plugAnnCap', annCap, 'bbl/ft');
+            setResult('plugPipeCap', pipeCap, 'bbl/ft');
+            setResult('plugCementVol', plugVol, 'bbl');
+            document.getElementById('plugSacks').textContent = sacks + ' sacks';
+            setResult('plugPipeEnd', pipeEnd, 'ft');
+            setResult('plugDispVol', dispVol, 'bbl');
+        }
+
+        function calculateSqueeze() {
+            const depth = getVal('squeezeDepth');
+            const density = getVal('squeezeDensity');
+            const formPressure = getVal('formPressure');
+            const breakdown = getVal('breakdownPressure');
+
+            const hp = density * 0.052 * depth;
+            const maxSurf = breakdown - hp;
+            const initSurf = formPressure - hp;
+
+            document.getElementById('squeezeResults').style.display = 'block';
+            setResult('squeezeHP', hp, 'psi');
+            setResult('maxSqueezeSurf', maxSurf, 'psi');
+            setResult('initSqueezeSurf', Math.max(0, initSurf), 'psi');
+        }
+
+        function clearForm() {
+            document.querySelectorAll('input').forEach(i => i.value = '');
+            document.querySelectorAll('[id$="Results"]').forEach(r => r.style.display = 'none');
+        }
+
+        function generateSummary() {
+            const wellName = document.getElementById('wellName').value || 'Not specified';
+            document.getElementById('summaryContent').innerHTML = `
+                <div class="section">
+                    <h2>Well: ${wellName}</h2>
+                    <p>Date: ${new Date().toLocaleDateString()}</p>
+                    <hr style="margin: 15px 0;">
+                    <p><em>Complete the calculation tabs to populate this summary.</em></p>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

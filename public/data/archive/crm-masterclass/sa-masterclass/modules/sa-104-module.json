@@ -1,0 +1,8 @@
+{
+  "moduleId": "SA-104",
+  "courseId": "SA",
+  "title": "Projection and Anticipation",
+  "description": "Teaches forward-thinking skills: predicting future system states, recognizing trends, mental simulation, and establishing decision triggers.",
+  "order": 4,
+  "lessonIds": ["SA-104-01", "SA-104-02", "SA-104-03", "SA-104-04"]
+}

@@ -1,0 +1,22 @@
+{
+  "moduleId": "WC-SF-102",
+  "courseId": "WC-SF",
+  "title": "Formation Strength",
+  "description": "Understanding and calculating formation limits through LOT and FIT testing. Covers Maximum Allowable MW calculation and MAASP - critical for preventing underground blowouts.",
+  "order": 2,
+  "lessonIds": [
+    "WC-SF-102-01",
+    "WC-SF-102-02",
+    "WC-SF-102-03",
+    "WC-SF-102-04"
+  ],
+  "examWeight": "High",
+  "iwcfSyllabus": "PP-03",
+  "documentId": "WC-SF-102",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-102"
+  ]
+}

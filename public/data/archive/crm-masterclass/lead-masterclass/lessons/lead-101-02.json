@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-101-02",
+  "moduleId": "LEAD-101",
+  "courseId": "LEAD",
+  "title": "The Leadership Scan",
+  "type": "lesson",
+  "content": "Effective leaders develop a consistent scan pattern similar to hazard awareness. You're looking for: shifts in morale or engagement, emerging friction between team members, early signs of process breakdown, and resource constraints before they become critical. This scan changes as you move up in responsibility—frontline supervisors monitor individual behavior, while senior leaders watch cultural patterns and systemic risks.",
+  "mcq": {
+    "question": "A mid-level manager notices that two departments have stopped communicating directly and are now routing everything through formal channels. No one has reported a problem. What should the manager do first?",
+    "options": {
+      "A": "Wait to see if the issue resolves itself",
+      "B": "Send a memo reinforcing collaboration expectations",
+      "C": "Talk individually with key people in both departments to understand what changed",
+      "D": "Escalate to senior leadership for intervention"
+    },
+    "correctOption": "C",
+    "explanation": "Behavioral changes often signal unresolved conflict or breakdown in trust. Direct conversation uncovers root causes that formal processes miss. Waiting allows the problem to calcify, while memos don't address underlying issues. This is a scan indicator worth investigating early."
+  },
+  "openQuestions": [
+    "What patterns do you currently monitor in your daily leadership scan?",
+    "Identify one early warning sign you've missed in the past. What made it hard to see?"
+  ]
+}

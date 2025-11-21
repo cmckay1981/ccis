@@ -1,0 +1,267 @@
+{
+  "volumeId": "vol-4",
+  "title": "Volume 4: Calculations & Quick Reference",
+  "description": "All well control formulas, kill sheets, worksheets, decision trees, and quick reference cards. Designed for rig floor use.",
+  "sections": [
+    {
+      "sectionId": "4.1",
+      "title": "Pressure Calculations",
+      "file": "sections/4-1-pressure-calcs.json",
+      "topics": [
+        "Hydrostatic pressure",
+        "Pressure gradient",
+        "Bottomhole pressure",
+        "ECD calculation",
+        "Formation pressure from shut-in data"
+      ]
+    },
+    {
+      "sectionId": "4.2",
+      "title": "MAASP Calculations",
+      "file": "sections/4-2-maasp.json",
+      "topics": [
+        "MAASP formula",
+        "MAASP from LOT",
+        "MAASP from FIT",
+        "MAASP adjustments",
+        "MAASP examples"
+      ]
+    },
+    {
+      "sectionId": "4.3",
+      "title": "Kill Mud Weight",
+      "file": "sections/4-3-kill-mud.json",
+      "topics": [
+        "Kill mud weight formula",
+        "Formation pressure calculation",
+        "Safety margin considerations",
+        "Kill mud weight examples"
+      ]
+    },
+    {
+      "sectionId": "4.4",
+      "title": "Circulating Pressures",
+      "file": "sections/4-4-circulating-pressures.json",
+      "topics": [
+        "Slow circulating rate (SCR)",
+        "Initial circulating pressure (ICP)",
+        "Final circulating pressure (FCP)",
+        "Pressure schedule calculation",
+        "Strokes to bit calculation"
+      ]
+    },
+    {
+      "sectionId": "4.5",
+      "title": "Subsea Calculations",
+      "file": "sections/4-5-subsea-calcs.json",
+      "topics": [
+        "Choke line friction loss (CLFL)",
+        "Riser margin",
+        "ICP correction for CLFL",
+        "FCP correction for CLFL",
+        "Subsea examples"
+      ]
+    },
+    {
+      "sectionId": "4.6",
+      "title": "Kick Analysis",
+      "file": "sections/4-6-kick-analysis.json",
+      "topics": [
+        "Kick volume calculation",
+        "Kick type identification",
+        "Kick intensity",
+        "Kick tolerance",
+        "Gas migration rate"
+      ]
+    },
+    {
+      "sectionId": "4.7",
+      "title": "Volumetric Method Calculations",
+      "file": "sections/4-7-volumetric.json",
+      "topics": [
+        "Pressure buildup allowance",
+        "Bleed volume calculation",
+        "Annular capacity factors",
+        "Step-by-step volumetric worksheet"
+      ]
+    },
+    {
+      "sectionId": "4.8",
+      "title": "Stripping Calculations",
+      "file": "sections/4-8-stripping-calcs.json",
+      "topics": [
+        "Pipe displacement",
+        "Volume to bleed per stand",
+        "Pressure adjustments"
+      ]
+    },
+    {
+      "sectionId": "4.9",
+      "title": "Trip Calculations",
+      "file": "sections/4-9-trip-calcs.json",
+      "topics": [
+        "Hole fill volume",
+        "Pipe displacement",
+        "Swab/surge pressure",
+        "Trip margin"
+      ]
+    }
+  ],
+  "killSheets": [
+    {
+      "sheetId": "standard-kill-sheet",
+      "title": "Standard Kill Sheet",
+      "file": "kill-sheets/standard-kill-sheet.json",
+      "description": "Primary kill sheet for Driller's and W&W methods"
+    },
+    {
+      "sheetId": "subsea-kill-sheet",
+      "title": "Subsea Kill Sheet",
+      "file": "kill-sheets/subsea-kill-sheet.json",
+      "description": "Kill sheet with CLFL corrections"
+    },
+    {
+      "sheetId": "hpht-kill-sheet",
+      "title": "HPHT Kill Sheet",
+      "file": "kill-sheets/hpht-kill-sheet.json",
+      "description": "Enhanced kill sheet for HPHT operations"
+    }
+  ],
+  "worksheets": [
+    {
+      "worksheetId": "volumetric-worksheet",
+      "title": "Volumetric Method Worksheet",
+      "file": "worksheets/volumetric-worksheet.json"
+    },
+    {
+      "worksheetId": "stripping-worksheet",
+      "title": "Stripping Worksheet",
+      "file": "worksheets/stripping-worksheet.json"
+    },
+    {
+      "worksheetId": "horizontal-worksheet",
+      "title": "Horizontal Well Worksheet",
+      "file": "worksheets/horizontal-worksheet.json"
+    },
+    {
+      "worksheetId": "trip-sheet",
+      "title": "Trip Sheet",
+      "file": "worksheets/trip-sheet.json"
+    },
+    {
+      "worksheetId": "scr-clfl-worksheet",
+      "title": "SCR/CLFL Recording Sheet",
+      "file": "worksheets/scr-clfl-worksheet.json"
+    }
+  ],
+  "decisionTrees": [
+    {
+      "treeId": "kill-method-selection",
+      "title": "Kill Method Selection",
+      "file": "decision-trees/kill-method-selection.json"
+    },
+    {
+      "treeId": "shut-in-selection",
+      "title": "Shut-In Method Selection",
+      "file": "decision-trees/shut-in-selection.json"
+    },
+    {
+      "treeId": "losses-decision",
+      "title": "Losses While Drilling",
+      "file": "decision-trees/losses-decision.json"
+    },
+    {
+      "treeId": "kick-response",
+      "title": "Kick Response Flowchart",
+      "file": "decision-trees/kick-response.json"
+    },
+    {
+      "treeId": "eds-decision",
+      "title": "EDS Decision Tree",
+      "file": "decision-trees/eds-decision.json"
+    }
+  ],
+  "quickReferenceCards": [
+    {
+      "cardId": "qrc-shut-in-surface",
+      "title": "Shut-In Procedure (Surface BOP)",
+      "file": "quick-ref/qrc-shut-in-surface.json"
+    },
+    {
+      "cardId": "qrc-shut-in-subsea",
+      "title": "Shut-In Procedure (Subsea BOP)",
+      "file": "quick-ref/qrc-shut-in-subsea.json"
+    },
+    {
+      "cardId": "qrc-drillers-method",
+      "title": "Driller's Method Summary",
+      "file": "quick-ref/qrc-drillers-method.json"
+    },
+    {
+      "cardId": "qrc-wait-weight",
+      "title": "Wait & Weight Summary",
+      "file": "quick-ref/qrc-wait-weight.json"
+    },
+    {
+      "cardId": "qrc-volumetric",
+      "title": "Volumetric Method Summary",
+      "file": "quick-ref/qrc-volumetric.json"
+    },
+    {
+      "cardId": "qrc-stripping",
+      "title": "Stripping Summary",
+      "file": "quick-ref/qrc-stripping.json"
+    },
+    {
+      "cardId": "qrc-h2s",
+      "title": "H2S Emergency Response",
+      "file": "quick-ref/qrc-h2s.json"
+    },
+    {
+      "cardId": "qrc-shallow-gas",
+      "title": "Shallow Gas Response",
+      "file": "quick-ref/qrc-shallow-gas.json"
+    },
+    {
+      "cardId": "qrc-formulas",
+      "title": "Key Formulas Card",
+      "file": "quick-ref/qrc-formulas.json"
+    },
+    {
+      "cardId": "qrc-kick-indicators",
+      "title": "Kick Indicators",
+      "file": "quick-ref/qrc-kick-indicators.json"
+    }
+  ],
+  "formulaReference": {
+    "file": "formula-reference.json",
+    "description": "Complete formula reference with all equations, units, and examples"
+  },
+  "appendices": [
+    {
+      "appendixId": "A",
+      "title": "Unit Conversions",
+      "file": "appendices/a-conversions.json"
+    },
+    {
+      "appendixId": "B",
+      "title": "Annular Capacity Tables",
+      "file": "appendices/b-annular-capacity.json"
+    },
+    {
+      "appendixId": "C",
+      "title": "Pipe Displacement Tables",
+      "file": "appendices/c-pipe-displacement.json"
+    },
+    {
+      "appendixId": "D",
+      "title": "Horner Plot Guide",
+      "file": "appendices/d-horner-plots.json"
+    }
+  ],
+  "wellSpecificGeneration": {
+    "note": "Kill sheets and worksheets can be pre-populated from well profile data",
+    "dataSource": "well-profiles collection",
+    "generatedFields": ["TVD", "MD", "Casing depths", "Mud weight", "LOT/FIT values", "Annular capacities"]
+  }
+}

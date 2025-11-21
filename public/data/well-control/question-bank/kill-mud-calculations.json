@@ -1,0 +1,48 @@
+{
+  "documentId": "KILL_MUD_CALCULATIONS",
+  "collectionId": "questionBank",
+  "categoryKey": "KILL_MUD_CALCULATIONS",
+  "title": "Kill Mud Weight Calculations",
+  "moduleAlignment": [
+    "WC-SF-107"
+  ],
+  "questionCount": 3,
+  "l3Count": 1,
+  "l4Count": 2,
+  "questions": [
+    {
+      "id": "Q38",
+      "level": "L3",
+      "question": "7800 ft TVD hole, 500 psi SIDPP, 680 psi SICP, 11 ppg mud. Kill mud weight?",
+      "correctAnswer": "12.24-12.3 ppg",
+      "explanation": "Kill MW = 11 + (500 / (7800 \u00d7 0.052)) = 11 + 1.23 = 12.23 ppg",
+      "type": "calculation"
+    },
+    {
+      "id": "Q43",
+      "level": "L4",
+      "question": "15,000 ft MD/10,000 ft TVD, 16 ppg mud. SIDPP 0, SICP 300. Kill mud?",
+      "options": {
+        "A": "16.4 ppg",
+        "B": "16 ppg",
+        "C": "16.6 ppg"
+      },
+      "correctAnswer": "B",
+      "explanation": "SIDPP = 0 means current mud already balances formation. Kill mud = current mud = 16 ppg."
+    },
+    {
+      "id": "Q70",
+      "level": "L4",
+      "question": "8200 ft MD/7200 ft TVD, 5100 ft shoe, 6700 ft at kick, SIDPP 650, SICP 800, 12 ppg. Kill weight?",
+      "options": {
+        "A": "13.8 ppg",
+        "B": "14.2 ppg",
+        "C": "14.5 ppg",
+        "D": "13.9 ppg",
+        "E": "13.6 ppg"
+      },
+      "correctAnswer": "D",
+      "explanation": "Kill MW = 12 + (650/(7200\u00d70.052)) = 12 + 1.74 = 13.74, round to 13.9 ppg"
+    }
+  ]
+}

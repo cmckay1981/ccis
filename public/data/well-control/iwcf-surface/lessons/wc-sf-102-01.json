@@ -1,0 +1,70 @@
+{
+  "lessonId": "WC-SF-102-01",
+  "moduleId": "WC-SF-102",
+  "courseId": "WC-SF",
+  "title": "Leak Off Test (LOT)",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "A Leak Off Test determines the maximum pressure the formation at the casing shoe can withstand before it starts to break down (fracture). After drilling out of casing, we pump slowly while watching pressure. When pressure stops rising or falls back, we've reached the leak-off point. This tells us our MAASP limit for the next hole section.",
+  "multiSensoryExplanations": {
+    "visual": "Picture inflating a tire until it starts to bulge or leak at the weakest point. The LOT finds that 'bulge point' in your formation. You pump pressure up, watching the gauge climb. The moment it stops climbing and starts to fall, you've found the formation's limit.",
+    "auditory": "LOT rhythm: 'Pump slow, watch close, stop when it SHOWS.' The pressure curve tells the story\u2014linear rise, then deviation. The deviation is your answer.",
+    "kinesthetic": "Blow up a balloon slowly. Feel the resistance increase steadily as it expands. At some point, you sense it's about to give\u2014resistance stops increasing. That's your leak-off point. In the well, the pressure gauge tells you what your lungs feel with the balloon.",
+    "storyBased": "A senior drilling engineer told me: 'I've seen guys rush LOT and miss the true leak-off. They pumped too fast, overshot the formation breakdown, and got a false high reading. Then they set MAASP too high and fractured the shoe during a kick. Slow and steady wins the LOT race.'"
+  },
+  "procedure": [
+    "1. Drill out of casing shoe, drill 10-20 ft of new formation",
+    "2. Pull back into casing, circulate bottoms up",
+    "3. Close BOP, line up to pump down casing",
+    "4. Pump at SLOW rate (typically 0.25-0.5 bpm)",
+    "5. Record pressure vs volume pumped",
+    "6. Watch for deviation from straight line (leak-off point)",
+    "7. Stop pumping, record maximum pressure",
+    "8. Bleed pressure, open BOP",
+    "9. Calculate maximum allowable MW"
+  ],
+  "interpretation": {
+    "linearPortion": "Pressure rising steadily\u2014formation and mud compressing",
+    "deviationPoint": "Curve bends\u2014formation starting to accept fluid",
+    "leakOffPressure": "The pressure at deviation = LOT result",
+    "breakdown": "If you continue past leak-off, formation fractures fully"
+  },
+  "formula": {
+    "equation": "Max Allowable MW (ppg) = Test MW (ppg) + (LOT Surface Pressure (psi) \u00f7 (Shoe TVD (ft) \u00d7 0.052))",
+    "example": {
+      "given": "Test MW = 10.5 ppg, LOT pressure = 1,200 psi, Shoe TVD = 5,000 ft",
+      "calculation": "Max MW = 10.5 + (1,200 \u00f7 (5,000 \u00d7 0.052)) = 10.5 + (1,200 \u00f7 260) = 10.5 + 4.6 = 15.1 ppg"
+    }
+  },
+  "mcq": {
+    "question": "During a Leak Off Test, what indicates you've reached the leak-off point?",
+    "options": {
+      "A": "Pressure rises rapidly",
+      "B": "Pressure deviates from the linear trend and levels off or drops",
+      "C": "Pump rate increases automatically",
+      "D": "Mud returns to surface"
+    },
+    "correctOption": "B",
+    "explanation": "Leak-off occurs when the formation starts accepting fluid. The pressure curve, which was rising steadily, deviates\u2014levels off, curves over, or drops. This deviation marks the formation's pressure limit."
+  },
+  "advancedQuestion": {
+    "question": "Your LOT shows leak-off at 1,500 psi with 11.0 ppg test mud at a shoe TVD of 6,000 ft. What is the maximum allowable mud weight for the next section?",
+    "answer": "Max MW = 11.0 + (1,500 \u00f7 (6,000 \u00d7 0.052)) = 11.0 + (1,500 \u00f7 312) = 11.0 + 4.8 = 15.8 ppg equivalent.",
+    "l4Focus": "This calculation determines operational limits for the entire next hole section."
+  },
+  "commonMisconception": {
+    "wrong": "LOT and FIT are the same test.",
+    "correct": "LOT finds the actual leak-off point (formation limit). FIT (Formation Integrity Test) only confirms the formation can withstand a predetermined pressure\u2014it stops before reaching true leak-off. FIT is less invasive but gives less information."
+  },
+  "documentId": "WC-SF-102-01",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-102",
+    "WC-SF-102-01"
+  ]
+}

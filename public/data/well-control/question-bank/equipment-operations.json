@@ -1,0 +1,961 @@
+{
+  "documentId": "EQUIPMENT_OPERATIONS",
+  "collectionId": "questionBank",
+  "categoryKey": "EQUIPMENT_OPERATIONS",
+  "title": "BOP Equipment Operations (IWCF Combined Supervisor)",
+  "moduleAlignment": [
+    "WC-SF-102",
+    "WC-SS-103",
+    "WC-SS-104",
+    "WC-SS-106"
+  ],
+  "questionCount": 70,
+  "l3Count": 18,
+  "l4Count": 52,
+  "questions": [
+    {
+      "id": "CC-EQ-01",
+      "level": "L4",
+      "question": "Given the volumes below, how much hydraulic fluid will be required to carry out the following operations? Operations: Close then open. Equipment: One annular preventer, Two pipe rams, One blind/shear ram. Volumes: Annular Preventer: 20 gallons to close, 17 gallons to open. Pipe ram: 8 gallons to close, 7 gallons to open. Shear/blind ram: 8 gallons to close, 7 gallons to open.",
+      "options": {
+        "A": "82 gallons",
+        "B": "67 gallons",
+        "C": "74 gallons"
+      },
+      "correctAnswer": "A",
+      "explanation": "Close: 20 + 8 + 8 + 8 = 44 gal. Open: 17 + 7 + 7 + 7 = 38 gal. Total = 82 gallons.",
+      "type": "calculation"
+    },
+    {
+      "id": "CC-EQ-02",
+      "level": "L3",
+      "question": "On a surface BOP stack, in which position must the valves on the kill line and choke line be placed during drilling?",
+      "options": {
+        "A": "Manual valves closed and hydraulic valves open",
+        "B": "All valves must be closed",
+        "C": "Hydraulic valves closed and manual valves open",
+        "D": "Both types closed on kill line and open on choke line",
+        "E": "All valves must be open"
+      },
+      "correctAnswer": "C",
+      "explanation": "HCR (hydraulic) valves stay closed for quick automatic closure; manual valves stay open for flow path."
+    },
+    {
+      "id": "CC-EQ-03",
+      "level": "L4",
+      "question": "There is only one inside BOP with NC38 pin/box connections. Drill string: 3-1/2\" drill pipe (NC38), 4-3/4\" drill collars (NC35). Which crossover must be on the rig floor while tripping?",
+      "options": {
+        "A": "NC35 box x NC38 pin",
+        "B": "NC38 box x NC35 pin",
+        "C": "NC38 box x NC35 box",
+        "D": "NC35 pin x NC35 pin"
+      },
+      "correctAnswer": "B",
+      "explanation": "IBOP has NC38 connections. To install on drill collars (NC35), need crossover from NC38 box to NC35 pin."
+    },
+    {
+      "id": "CC-EQ-04",
+      "level": "L3",
+      "question": "Which statement about an Inside Blowout Preventer is correct?",
+      "options": {
+        "A": "It can be opened or closed using a wrench",
+        "B": "It requires a double box sub to be installed",
+        "C": "It allows reverse circulation when installed",
+        "D": "It is opened by pumping drilling fluid down the drill string"
+      },
+      "correctAnswer": "D",
+      "explanation": "IBOP is opened by pump pressure\u2014a check valve that allows flow down but not up."
+    },
+    {
+      "id": "CC-EQ-05",
+      "level": "L3",
+      "question": "If a float valve is installed in the string, is it possible to reverse circulate?",
+      "options": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "correctAnswer": "B",
+      "explanation": "Float valves are one-way check valves allowing flow DOWN only."
+    },
+    {
+      "id": "CC-EQ-06",
+      "level": "L4",
+      "question": "While drilling, BOP control panel shows: Accumulator 2900 psi falling, Manifold 1200 psi falling, Annular 1000 psi static. BOP not operated, pumps not running. What is the most likely cause?",
+      "options": {
+        "A": "Leaking bypass valve",
+        "B": "Faulty regulator",
+        "C": "Faulty pressure switch",
+        "D": "A leak in the manifold system",
+        "E": "A leak in the annular system"
+      },
+      "correctAnswer": "D",
+      "explanation": "Accumulator and manifold both falling but annular static = leak in manifold system downstream of accumulator."
+    },
+    {
+      "id": "CC-EQ-07",
+      "level": "L3",
+      "question": "Is it true that some annular preventers used as diverters only have a closing line and no opening line?",
+      "options": {
+        "A": "Yes",
+        "B": "No"
+      },
+      "correctAnswer": "A",
+      "explanation": "Diverter annulars are designed to close and stay closed. Opening is by venting hydraulic pressure."
+    },
+    {
+      "id": "CC-EQ-08",
+      "level": "L3",
+      "question": "When annular preventers are pressure tested, test pressure may need to be pumped up several times before a good test. Why?",
+      "options": {
+        "A": "Hydraulic fluid is compressible",
+        "B": "Annular BOPs always leak at first",
+        "C": "The elastomer is flowing into a new shape",
+        "D": "Thermal expansion"
+      },
+      "correctAnswer": "C",
+      "explanation": "Annular packing element (elastomer) deforms under pressure to create seal."
+    },
+    {
+      "id": "CC-EQ-09",
+      "level": "L4",
+      "question": "Which 3-position/4-way valves should be in the OPEN position while drilling? (FIVE ANSWERS)",
+      "options": {
+        "A": "Blind/Shear ram",
+        "B": "Annular preventer",
+        "C": "Upper pipe ram",
+        "D": "Hydraulic kill line valve",
+        "E": "Middle pipe ram",
+        "F": "Hydraulic choke line valve",
+        "G": "Lower pipe ram"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "G"
+      ],
+      "explanation": "All rams and annular should be OPEN while drilling. HCR valves (kill and choke) stay CLOSED.",
+      "multiSelect": true
+    },
+    {
+      "id": "CC-EQ-10",
+      "level": "L3",
+      "question": "According to API STD 53, accumulator pump systems should charge the system from precharge to RWP within:",
+      "options": {
+        "A": "2 minutes",
+        "B": "30 minutes",
+        "C": "5 minutes",
+        "D": "15 minutes"
+      },
+      "correctAnswer": "D",
+      "explanation": "API STD 53 requires pumps to recharge accumulators in 15 minutes maximum."
+    },
+    {
+      "id": "CC-EQ-11",
+      "level": "L3",
+      "question": "Which BOP functions use hydraulic pressure regulated by the annular pressure regulator?",
+      "options": {
+        "A": "Annular preventer only",
+        "B": "No functions",
+        "C": "Rams and HCR valves",
+        "D": "Annular preventer and HCR valves",
+        "E": "All functions"
+      },
+      "correctAnswer": "A",
+      "explanation": "Annular regulator controls ONLY annular preventer pressure. Rams use manifold pressure directly."
+    },
+    {
+      "id": "CC-EQ-12",
+      "level": "L3",
+      "question": "If air pressure gauge on an air-operated remote BOP control panel reads zero, which is true?",
+      "options": {
+        "A": "No stack function can be operated",
+        "B": "Annular can be operated from remote",
+        "C": "Choke/kill valves can be operated from remote",
+        "D": "No stack function can be operated from remote panel"
+      },
+      "correctAnswer": "D",
+      "explanation": "No air = no remote operation. Main unit can still be operated manually."
+    },
+    {
+      "id": "CC-EQ-13",
+      "level": "L4",
+      "question": "Which statements about 3-position/4-way valves on the hydraulic control unit are true? (TWO ANSWERS)",
+      "options": {
+        "A": "Cannot be operated from remote panel",
+        "B": "Have four active hydraulic connections",
+        "C": "Can be placed in 4 positions",
+        "D": "Can be manually operated"
+      },
+      "correctAnswers": [
+        "B",
+        "D"
+      ],
+      "explanation": "3-position valves have 4 hydraulic ports (P, T, A, B). They CAN be operated remotely and manually.",
+      "multiSelect": true
+    },
+    {
+      "id": "CC-EQ-14",
+      "level": "L3",
+      "question": "What operates the remotely operated valves on the choke line?",
+      "options": {
+        "A": "Wires",
+        "B": "Hydraulic fluid",
+        "C": "Nitrogen",
+        "D": "Air"
+      },
+      "correctAnswer": "B",
+      "explanation": "HCR valves are operated by hydraulic fluid from the BOP control unit."
+    },
+    {
+      "id": "CC-EQ-15",
+      "level": "L4",
+      "question": "While circulating out a gas kick, what determines actual pressure inside the MGS? (TWO ANSWERS)",
+      "options": {
+        "A": "Height of liquid seal",
+        "B": "Density of fluid in liquid seal",
+        "C": "Height and diameter of vent",
+        "D": "Pump rate"
+      },
+      "correctAnswers": [
+        "C",
+        "D"
+      ],
+      "explanation": "MGS internal pressure = backpressure from vent line dimensions + flow rate effects.",
+      "multiSelect": true
+    },
+    {
+      "id": "CC-EQ-16",
+      "level": "L3",
+      "question": "Where should the vacuum degasser suction line be located per best practice?",
+      "options": {
+        "A": "Inside the MGS",
+        "B": "From the MGS vent line",
+        "C": "Downstream of the MGS",
+        "D": "Upstream of the MGS"
+      },
+      "correctAnswer": "C",
+      "explanation": "Vacuum degasser handles residual gas AFTER MGS has removed bulk gas."
+    },
+    {
+      "id": "CC-EQ-17",
+      "level": "L4",
+      "question": "In an MGS diagram, which dimensions determine back pressure? D3=Vent diameter, H3=Vent height, H1=Vessel height, D4=Inlet diameter, H2=Dip tube height.",
+      "options": {
+        "A": "A & B (D3 & H3)",
+        "B": "G",
+        "C": "E",
+        "D": "C & D",
+        "E": "F"
+      },
+      "correctAnswer": "A",
+      "explanation": "Backpressure is determined by vent line dimensions\u2014both height and diameter affect friction."
+    },
+    {
+      "id": "CC-EQ-18",
+      "level": "L4",
+      "question": "Which factors could limit success of a diverter operation during shallow gas? (THREE ANSWERS)",
+      "options": {
+        "A": "Rig air pressure of zero psi",
+        "B": "Mud pumps running",
+        "C": "Diverter lockdown dogs locked",
+        "D": "Rig air pressure of 125 psi",
+        "E": "Diverter lockdown dogs unlocked",
+        "F": "Formation strength at shoe"
+      },
+      "correctAnswers": [
+        "A",
+        "E",
+        "F"
+      ],
+      "explanation": "Zero air = can't close diverter. Unlocked dogs = diverter can lift. Weak formation = may fracture.",
+      "multiSelect": true
+    },
+    {
+      "id": "CC-EQ-19",
+      "level": "L4",
+      "question": "Preparing to run wireline logs on a well with limited overbalance. Safest action?",
+      "options": {
+        "A": "Have correct rams for riser/lubricator installed and tested",
+        "B": "Replace blind/shear rams with pipe rams",
+        "C": "No particular equipment required"
+      },
+      "correctAnswer": "A",
+      "explanation": "Wireline operations with marginal overbalance require wireline-compatible rams installed and tested."
+    },
+    {
+      "id": "CC-EQ-20",
+      "level": "L4",
+      "question": "Per API STD-53, if manual valve is inside (closest to stack) and HCR valve outside on chokeline, what's the advantage?",
+      "options": {
+        "A": "Enables repairs to hydraulic valve",
+        "B": "Enables repairs to manual valve",
+        "C": "HCR should always be inside",
+        "D": "Shorter section exposed to wellbore"
+      },
+      "correctAnswer": "A",
+      "explanation": "With manual valve inside, you can close it to isolate wellbore pressure, then safely repair the HCR valve."
+    },
+    {
+      "id": "CC-EQ-21",
+      "level": "L4",
+      "question": "On a Surface BOP space out diagram, which measurement is most important?",
+      "options": {
+        "A": "Rotary Table (RKB) to Shear Rams",
+        "B": "Wellhead to Shear Rams",
+        "C": "Flowline to Wellhead",
+        "D": "Overshot to Rotary Table"
+      },
+      "correctAnswer": "A",
+      "explanation": "RKB to shear rams determines where to position pipe body (not tool joint) for successful shearing."
+    },
+    {
+      "id": "CC-EQ-22",
+      "level": "L3",
+      "question": "To verify operability, adjustable chokes shall be operated:",
+      "options": {
+        "A": "Daily",
+        "B": "Weekly",
+        "C": "At intervals not exceeding 21 days",
+        "D": "Per rig owner PM routines"
+      },
+      "correctAnswer": "A",
+      "explanation": "API STD 53 requires daily operation of adjustable chokes."
+    },
+    {
+      "id": "CC-EQ-23",
+      "level": "L3",
+      "question": "Per API STD-53, which is true concerning remote adjustable chokes?",
+      "options": {
+        "A": "Only main system shall be checked",
+        "B": "Only backup system shall be checked",
+        "C": "Both main and backup systems shall be checked",
+        "D": "Main system functioned every 21 days"
+      },
+      "correctAnswer": "C",
+      "explanation": "Both primary and backup choke actuation systems must be verified operational."
+    },
+    {
+      "id": "CC-EQ-24",
+      "level": "L4",
+      "question": "Per RP-64, which statement about diverter systems is true?",
+      "options": {
+        "A": "Must have capability to vent downwind",
+        "B": "Should include high pressure sealing element",
+        "C": "Vent lines should be small diameter",
+        "D": "Packing should close before vent opens"
+      },
+      "correctAnswer": "A",
+      "explanation": "Diverters must vent downwind to keep gas away from rig. They're LOW pressure devices with LARGE vent lines."
+    },
+    {
+      "id": "CC-EQ-25",
+      "level": "L4",
+      "question": "Ram preventer with 5\" pipe rams closed. Lights changed, pressures fell/recovered. Volume to close should be 18 gal but flowmeter shows 12 gal. Safest decision?",
+      "options": {
+        "A": "Ram closed, flowmeter problem",
+        "B": "Ram has not fully closed on 5\" pipe",
+        "C": "Ram has not moved",
+        "D": "4-way valve has not moved"
+      },
+      "correctAnswer": "B",
+      "explanation": "6 gallons short means rams didn't fully close. Never assume flowmeter wrong in safety-critical situations."
+    },
+    {
+      "id": "CC-EQ-26",
+      "level": "L4",
+      "question": "When could it be necessary to use the kill line on a surface BOP stack? (TWO ANSWERS)",
+      "options": {
+        "A": "Volumetric operations",
+        "B": "Bullheading operations",
+        "C": "Lubricate and Bleed",
+        "D": "Driller's method",
+        "E": "Wait and Weight method"
+      },
+      "correctAnswers": [
+        "B",
+        "C"
+      ],
+      "explanation": "Bullheading and Lubricate & Bleed pump down kill line. Normal circulation methods use drillstring.",
+      "multiSelect": true
+    },
+    {
+      "id": "CC-EQ-27",
+      "level": "L4",
+      "question": "BOP stack with various RWP ratings: Annular 5000 psi, others 10000 psi except rotary hose (7500 psi) and downstream chokes (5000 psi). MASP is 7900 psi. What changes needed?",
+      "options": {
+        "A": "Replace 5000 psi annular with 10000 psi",
+        "B": "Replace 7500 psi rotary hose with 10000 psi",
+        "C": "No changes required",
+        "D": "Upgrade downstream choke manifold to 10000 psi"
+      },
+      "correctAnswer": "C",
+      "explanation": "Annular protected by rams. Rotary hose isolated by safety valves. Downstream of choke sees controlled pressure."
+    },
+    {
+      "id": "CC-EQ-28",
+      "level": "L3",
+      "question": "When should the diverter be pressure tested?",
+      "options": {
+        "A": "Weekly",
+        "B": "Annually or after packer/seal replacement",
+        "C": "Daily",
+        "D": "Every 21 days"
+      },
+      "correctAnswer": "B",
+      "explanation": "Diverters are low-pressure devices. Pressure test annually and after any seal/packer work."
+    },
+    {
+      "id": "CC-EQ-29",
+      "level": "L3",
+      "question": "When should the diverter be function tested when in use?",
+      "options": {
+        "A": "Upon installation and weekly thereafter",
+        "B": "Upon installation",
+        "C": "Daily",
+        "D": "Every 21 days"
+      },
+      "correctAnswer": "A",
+      "explanation": "Function test diverter at installation and weekly while in use."
+    },
+    {
+      "id": "CC-EQ-30",
+      "level": "L4",
+      "question": "If the well starts to flow while running/pulling casing, what could shut the well in?",
+      "options": {
+        "A": "Install DPSV and IBOP on casing, close annular",
+        "B": "Install correct size water bushing/swage and valve on casing, close valve then annular or casing rams",
+        "C": "Drop the string and close pipe rams",
+        "D": "Install DPSV on casing and close casing rams"
+      },
+      "correctAnswer": "B",
+      "explanation": "Casing needs a swage/valve assembly to seal internally. DPSV/IBOP are drillpipe tools."
+    },
+    {
+      "id": "CC-EQ-31",
+      "level": "L3",
+      "question": "Which statement about Shear Rams is true?",
+      "options": {
+        "A": "Larger diameter pistons increase shearing force",
+        "B": "Longer piston strokes increase shearing force",
+        "C": "Thicker flanges increase shearing force",
+        "D": "Larger pistons decrease shearing force"
+      },
+      "correctAnswer": "A",
+      "explanation": "Force = Pressure \u00d7 Area. Larger piston diameter = larger area = more force."
+    },
+    {
+      "id": "CC-EQ-32",
+      "level": "L3",
+      "question": "What makes shear ram closing force greater than pipe ram closing force?",
+      "options": {
+        "A": "Opening ratio and closing pressure",
+        "B": "Closing ratio and closing pressure",
+        "C": "Ram rod diameter and closing pressure",
+        "D": "Ram rod length and closing pressure"
+      },
+      "correctAnswer": "B",
+      "explanation": "Shear rams have higher closing ratio than pipe rams. Combined with closing pressure, this generates greater force."
+    },
+    {
+      "id": "CC-EQ-33",
+      "level": "L4",
+      "question": "While killing a well, MGS liquid seal is blown and gas venting to shaker area. What to do?",
+      "options": {
+        "A": "Shut down, shut in well, pump mud into seal, restart at lower rate",
+        "B": "Decrease pump rate",
+        "C": "Continue, everything OK",
+        "D": "Increase pump rate"
+      },
+      "correctAnswer": "A",
+      "explanation": "Blown seal = hazardous situation. Must stop, restore seal, restart at lower rate."
+    },
+    {
+      "id": "CC-EQ-34",
+      "level": "L4",
+      "question": "Using Hydril 13-5/8\", 5000 psi annular closing pressure graph, which actions are possible? (TWO ANSWERS)",
+      "options": {
+        "A": "Seal 5\" pipe at 250 psi well/500 psi closing",
+        "B": "Seal 2-7/8\" pipe at 500 psi well/600 psi closing",
+        "C": "Seal 8\" DC at 1000 psi well/1000 psi closing",
+        "D": "Seal open hole at 1000 psi well/1150 psi closing",
+        "E": "Seal 2-3/8\" pipe at 1000 psi well/700 psi closing"
+      },
+      "correctAnswers": [
+        "C",
+        "D"
+      ],
+      "explanation": "Per closing pressure graph: 8\" DC and open hole at those pressures are within acceptable ranges.",
+      "multiSelect": true
+    },
+    {
+      "id": "CC-EQ-35",
+      "level": "L4",
+      "question": "BOP: Three 13-5/8\" 10000 psi ram preventers, one 13-5/8\" 5000 psi annular. Shut in on 5\" pipe, SICP 1000 psi. What annular closing pressure is required?",
+      "options": {
+        "A": "300-500 psi",
+        "B": "500-700 psi",
+        "C": "700-900 psi",
+        "D": "900-1100 psi"
+      },
+      "correctAnswer": "C",
+      "explanation": "Per stripping operations chart: 5\" pipe at 1000 psi well pressure requires approximately 700-900 psi closing pressure."
+    },
+    {
+      "id": "CC-EQ-36",
+      "level": "L4",
+      "question": "Subsea BOP: Well shut in but choke line plugged due to barite sag. How to circulate and kill?",
+      "options": {
+        "A": "Bullhead down choke line",
+        "B": "Pump down drillstring up choke line",
+        "C": "Pump down drillstring up kill line",
+        "D": "Pump down kill line up drillstring"
+      },
+      "correctAnswer": "C",
+      "explanation": "If choke line plugged, use kill line as return path. Pump down drillstring and return up kill line."
+    },
+    {
+      "id": "CC-EQ-37",
+      "level": "L4",
+      "question": "Subsea BOP with blue pod and yellow pod. How many SPM valves operate to close and open a ram preventer?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correctAnswer": "D",
+      "explanation": "Each pod has 2 SPM valves per function (close and open). With redundant pods: 2 SPM valves \u00d7 2 functions = 4 total."
+    },
+    {
+      "id": "CC-EQ-38",
+      "level": "L4",
+      "question": "Closing a wellbore pressure assisted annular on subsea BOP, which is true?",
+      "options": {
+        "A": "Closing pressure greater with 14 ppg mud in riser",
+        "B": "Closing pressure greater with 8.6 ppg seawater in riser"
+      },
+      "correctAnswer": "A",
+      "explanation": "Heavier mud exerts more hydrostatic on piston, requiring more hydraulic closing pressure."
+    },
+    {
+      "id": "CC-EQ-39",
+      "level": "L4",
+      "question": "Upper annular close activated from driller's panel on subsea MUX system. Lights change but pressures don't. Cause?",
+      "options": {
+        "A": "Leaking shuttle valve",
+        "B": "A leak",
+        "C": "Upper annular solenoid malfunction",
+        "D": "Manipulator valve not functioned"
+      },
+      "correctAnswer": "C",
+      "explanation": "Lights change (signal received) but pressures don't (no hydraulic action) = solenoid malfunction."
+    },
+    {
+      "id": "CC-EQ-40",
+      "level": "L4",
+      "question": "Pipe ram close failed on yellow pod. Switched to blue pod, closed successfully. Problem?",
+      "options": {
+        "A": "Incorrect pilot pressure",
+        "B": "A shuttle valve stuck",
+        "C": "Yellow pod always takes longer",
+        "D": "Leak on ram preventer"
+      },
+      "correctAnswer": "B",
+      "explanation": "Shuttle valve stuck in position favoring other pod. When switched to blue pod, shuttle moved and function worked."
+    },
+    {
+      "id": "CC-EQ-41",
+      "level": "L4",
+      "question": "Main purpose of ram locking devices on subsea BOP?",
+      "options": {
+        "A": "Additional force closing pipe rams",
+        "B": "Additional force closing shear rams",
+        "C": "Lock BOP to wellhead and LMRP to BOP",
+        "D": "Lock rams closed during disconnect or hydraulic failure"
+      },
+      "correctAnswer": "D",
+      "explanation": "Ram locks mechanically secure rams closed independent of hydraulics. Critical for EDS or hydraulic loss."
+    },
+    {
+      "id": "CC-EQ-42",
+      "level": "L4",
+      "question": "Which statement about 'Memory Function' on subsea BOP panel is true?",
+      "options": {
+        "A": "Indicates malfunction with permanent alarm light",
+        "B": "Indicates previous position before Block was selected",
+        "C": "Reminds to engage wedge locks",
+        "D": "Reminds to add anti-freeze"
+      },
+      "correctAnswer": "B",
+      "explanation": "Memory function stores last commanded position before Block was selected."
+    },
+    {
+      "id": "CC-EQ-43",
+      "level": "L4",
+      "question": "Surface accumulator precharge is 1200 psi. Water depth 1100 ft, seawater 8.6 ppg. Minimum subsea accumulator precharge?",
+      "options": {
+        "A": "492 psi",
+        "B": "1200 psi",
+        "C": "1692 psi",
+        "D": "1492 psi",
+        "E": "1000 psi"
+      },
+      "correctAnswer": "C",
+      "explanation": "Subsea precharge = Surface + Hydrostatic. 1100 \u00d7 8.6 \u00d7 0.052 = 492 psi. Total = 1200 + 492 = 1692 psi.",
+      "type": "calculation"
+    },
+    {
+      "id": "CC-EQ-44",
+      "level": "L4",
+      "question": "Which statement about shuttle valves on subsea BOP is correct?",
+      "options": {
+        "A": "Are 3-position/4-way valves",
+        "B": "Isolate pilot from control system",
+        "C": "Isolate control fluid between active and redundant pods",
+        "D": "Directly controlled by pilot fluid",
+        "E": "Require 3000 psi to operate"
+      },
+      "correctAnswer": "C",
+      "explanation": "Shuttle valves allow either pod to operate functions while preventing backflow between pods."
+    },
+    {
+      "id": "CC-EQ-45",
+      "level": "L4",
+      "question": "Subsea well shut in on upper annular. Both choke lines plugged. How to proceed with kill?",
+      "options": {
+        "A": "Hang-off on lower rams, open annular, circulate up lower kill",
+        "B": "Shear pipe and bullhead using upper kill",
+        "C": "With upper annular closed, circulate up lower kill",
+        "D": "With upper annular closed, circulate up upper kill"
+      },
+      "correctAnswer": "D",
+      "explanation": "Upper kill line exits above upper annular. With annular closed, can circulate up upper kill line."
+    },
+    {
+      "id": "CC-EQ-46",
+      "level": "L4",
+      "question": "Limitation of using inverted test rams to pressure test subsea BOP?",
+      "options": {
+        "A": "Annular cannot be tested",
+        "B": "Test pressure must be reduced 15%",
+        "C": "String tension will reduce drillpipe collapse pressure",
+        "D": "String tension will increase collapse pressure"
+      },
+      "correctAnswer": "C",
+      "explanation": "With inverted test rams, pressure on inside of drillpipe combined with string tension reduces collapse resistance."
+    },
+    {
+      "id": "CC-EQ-47",
+      "level": "L4",
+      "question": "Subsea MUX BOP on drillship. While drilling, low accumulator alarm and flowmeter counting rapidly. No functions activated. Cause?",
+      "options": {
+        "A": "Manifold regulator malfunction",
+        "B": "Shuttle valve in LMRP leaking",
+        "C": "Main power fluid line to BOP leaking"
+      },
+      "correctAnswer": "C",
+      "explanation": "Rapid fluid loss without function activation = leak in supply line."
+    },
+    {
+      "id": "CC-EQ-48",
+      "level": "L4",
+      "question": "Class 4 BOP stack, annular won't seal. Upper pipe ram activated, manifold drops to 0 psi immediately. Accumulator decreasing, pumps running. Quickest action to shut in?",
+      "options": {
+        "A": "Activate bypass function",
+        "B": "Close ram manually with lock screws",
+        "C": "Return upper to open, close lower pipe ram",
+        "D": "Send AD to manually operate stuck selector valve"
+      },
+      "correctAnswer": "C",
+      "explanation": "Manifold to 0 = selector valve stuck open/bypassing. Return upper to open (stop leak), close lower rams instead."
+    },
+    {
+      "id": "CC-EQ-49",
+      "level": "L4",
+      "question": "Driller shut in on annular, SICP approaching annular RWP. Tried to close upper pipe ram. Accumulator static 3000 psi, Annular static 1200 psi, Manifold immediately to 0 psi. What problem?",
+      "options": {
+        "A": "Leak in hydraulic line to upper pipe ram",
+        "B": "4-way valve stuck in open position",
+        "C": "Annular pressure regulator malfunction",
+        "D": "Hydraulic line to upper pipe ram blocked",
+        "E": "Manifold pressure regulator malfunctioning"
+      },
+      "correctAnswer": "E",
+      "explanation": "Manifold immediately to 0 while accumulator holds 3000 = manifold regulator failed open."
+    },
+    {
+      "id": "CC-EQ-50",
+      "level": "L4",
+      "question": "Same situation as Q49. What action could driller take next?",
+      "options": {
+        "A": "Send AD to operate 3-position valve manually",
+        "B": "Activate bypass function (place bypass valve in high)",
+        "C": "Shear drillpipe",
+        "D": "Send AD to tap manifold regulator with hammer",
+        "E": "Close another pipe ram"
+      },
+      "correctAnswer": "B",
+      "explanation": "Bypass function routes accumulator pressure directly to rams, bypassing the failed manifold regulator."
+    },
+    {
+      "id": "CC-EQ-51",
+      "level": "L4",
+      "question": "Off bottom kick shut in on middle pipe rams. SICP = 5000 psi. Cameron U Type 13-5/8\" 15000 psi rams. Closing ratio 8.7:1, Opening ratio 2.3:1. Stripping back, tool joint just above closed rams. Next action?",
+      "options": {
+        "A": "Close upper rams, pump 5000 psi between rams, open middle rams",
+        "B": "Close upper rams, activate bypass, open middle rams",
+        "C": "Close upper rams, open middle rams"
+      },
+      "correctAnswer": "A",
+      "explanation": "At 5000 psi with 2.3:1 opening ratio, wellbore pressure holds rams closed. Must equalize pressure above rams before opening."
+    },
+    {
+      "id": "CC-EQ-52",
+      "level": "L4",
+      "question": "Need to repair chokeline hydraulic valve while monitoring well on trip tank. Which 2 barriers in place?",
+      "options": {
+        "A": "Lower pipe rams & manual valve",
+        "B": "Lower pipe rams & drilling mud",
+        "C": "Manual valve & drilling mud",
+        "D": "Upper pipe rams & drilling mud"
+      },
+      "correctAnswer": "C",
+      "explanation": "To monitor on trip tank need open flow path (no rams). Manual valve isolates repair zone. Mud is primary barrier."
+    },
+    {
+      "id": "CC-EQ-53",
+      "level": "L4",
+      "question": "While repairing chokeline HCR valve, well flows and is shut in. Which 2 barriers in place?",
+      "options": {
+        "A": "Blind shear rams & manual valve",
+        "B": "Lower pipe rams & manual valve",
+        "C": "Lower pipe rams & mud HP",
+        "D": "Blind shear rams & mud HP"
+      },
+      "correctAnswer": "B",
+      "explanation": "Well flowing with pipe in hole = close pipe rams. Manual valve already closed for repair. Two barriers: lower pipe rams + manual valve."
+    },
+    {
+      "id": "CC-EQ-54",
+      "level": "L4",
+      "question": "15K BOP stack. After POOH, HCR valve found leaking. Which 2 barriers for repair?",
+      "options": {
+        "A": "Retrievable packer and chokeline manual valve",
+        "B": "Drilling mud and chokeline manual valve",
+        "C": "Retrievable packer and lower pipe rams",
+        "D": "Drilling mud and lower pipe rams"
+      },
+      "correctAnswer": "C",
+      "explanation": "Out of hole = need mechanical barriers. Retrievable packer provides internal barrier. Lower rams close off annular space."
+    },
+    {
+      "id": "CC-EQ-55",
+      "level": "L4",
+      "question": "Well shut in with wellbore pressure assisted annular. When should hydraulic closing pressure be reduced per manufacturer recommendations?",
+      "options": {
+        "A": "When first shut in",
+        "B": "After shut in and pressures have stabilised",
+        "C": "After pump brought to kill rate",
+        "D": "Before shut in"
+      },
+      "correctAnswer": "B",
+      "explanation": "Wait for pressures to stabilize to know actual wellbore pressure. Then reduce closing pressure proportionally."
+    },
+    {
+      "id": "CC-EQ-56",
+      "level": "L4",
+      "question": "During pressure test, annular closing pressure had to be increased to make seal. Problem?",
+      "options": {
+        "A": "Packing damaged, change immediately",
+        "B": "Packing starting to deteriorate",
+        "C": "Packing good, no problem",
+        "D": "Annulars always leak at first"
+      },
+      "correctAnswer": "B",
+      "explanation": "Needing higher pressure to seal indicates elastomer losing resilience. Early sign of deterioration."
+    },
+    {
+      "id": "CC-EQ-57",
+      "level": "L4",
+      "question": "Why are some BOP stacks fitted with a kill line below the lower pipe rams?",
+      "options": {
+        "A": "To bullhead with lower rams closed",
+        "B": "To use Wait & Weight method",
+        "C": "To use Driller's method",
+        "D": "To use Volumetric method"
+      },
+      "correctAnswer": "A",
+      "explanation": "Kill line below lower rams allows pumping into wellbore with all rams closed. Essential for bullheading after shearing."
+    },
+    {
+      "id": "CC-EQ-58",
+      "level": "L4",
+      "question": "BOP: Annular, 5\" pipe rams, blind shear rams, drilling spool with choke/kill outlets, variable bore rams. Which operation is possible?",
+      "options": {
+        "A": "Strip 5\" drill pipe ram to ram",
+        "B": "Strip 6-5/8\" drill pipe ram to ram",
+        "C": "Circulate down drillstring up choke line with 6-5/8\" pipe",
+        "D": "Bullhead down kill line with lower ram closed"
+      },
+      "correctAnswer": "C",
+      "explanation": "VBR can seal on 6-5/8\" pipe. Can circulate with VBR closed on 6-5/8\". Can't strip without matching rams."
+    },
+    {
+      "id": "CC-EQ-59",
+      "level": "L4",
+      "question": "Which is a recognised method to determine CLF?",
+      "options": {
+        "A": "Pump down kill line up choke line, pressure is half CLF",
+        "B": "Pump down kill line up choke line, pressure is double CLF",
+        "C": "Pump seawater down choke line up riser",
+        "D": "Pump mud down riser up choke line"
+      },
+      "correctAnswer": "B",
+      "explanation": "Pumping through both lines gives friction in BOTH. Total = 2\u00d7 single line friction. Divide by 2 for CLF."
+    },
+    {
+      "id": "CC-EQ-60",
+      "level": "L4",
+      "question": "On subsea BOP, what's the advantage of using kill line gauge vs casing pressure gauge during well kill?",
+      "options": {
+        "A": "Kill line gauge always more accurate",
+        "B": "CLFL effect reduced to quarter on kill line",
+        "C": "No advantage",
+        "D": "Maintaining constant KLP during pump changes compensates for CLFL"
+      },
+      "correctAnswer": "D",
+      "explanation": "Kill line gauge reads BOP pressure directly without CLFL effect. Holding constant KLP during pump rate changes automatically compensates for CLFL."
+    },
+    {
+      "id": "CC-EQ-61",
+      "level": "L4",
+      "question": "What makes a vacuum degasser efficient? (TWO ANSWERS)",
+      "options": {
+        "A": "Gas cut mud flows in thin sheet over baffles",
+        "B": "Gas cut mud flows in thick sheet over baffles",
+        "C": "Gas removed at atmospheric pressure",
+        "D": "Gas removed in a vacuum"
+      },
+      "correctAnswers": [
+        "A",
+        "D"
+      ],
+      "explanation": "Thin film maximizes surface area for gas release. Vacuum reduces pressure, causing dissolved gas to come out of solution.",
+      "multiSelect": true
+    },
+    {
+      "id": "CC-EQ-62",
+      "level": "L4",
+      "question": "MGS max pressure with 12 ppg mud is 7 psi. Influx is gas and oil (7 ppg). What happens to MGS max pressure when returning fluid is oil and gas?",
+      "options": {
+        "A": "Increase",
+        "B": "Decrease",
+        "C": "Stay same"
+      },
+      "correctAnswer": "B",
+      "explanation": "Lighter oil (7 ppg vs 12 ppg) creates less hydrostatic in dip tube/liquid seal. Maximum working pressure decreases."
+    },
+    {
+      "id": "CC-EQ-63",
+      "level": "L3",
+      "question": "What minimum pressure should annular pressure gauge be rated to?",
+      "options": {
+        "A": "1500 psi",
+        "B": "3000 psi",
+        "C": "6000 psi"
+      },
+      "correctAnswer": "B",
+      "explanation": "Annular regulators typically operate 0-1500 psi. Gauge should be rated 2\u00d7 maximum = 3000 psi minimum."
+    },
+    {
+      "id": "CC-EQ-64",
+      "level": "L3",
+      "question": "What pressure reading should be on annular pressure gauge while drilling?",
+      "options": {
+        "A": "1500 psi",
+        "B": "3000 psi",
+        "C": "6000 psi"
+      },
+      "correctAnswer": "A",
+      "explanation": "Annular is pre-set to closing pressure (typically 1500 psi max) ready for immediate closure."
+    },
+    {
+      "id": "CC-EQ-65",
+      "level": "L4",
+      "question": "Match subsea emergency systems: EDS, Autoshear, Deadman to functions: (1) Disconnects LMRP from lower stack, (2) Closes shear rams in LMRP disconnect, (3) Closes shear rams if hydraulic/control lost to both pods.",
+      "correctAnswer": "EDS=1, Deadman=3, Autoshear=2",
+      "explanation": "EDS separates LMRP. Deadman activates on loss of hydraulics AND communications. Autoshear triggers when LMRP physically separates."
+    },
+    {
+      "id": "CC-EQ-66",
+      "level": "L4",
+      "question": "Which statements about SPM valves are true? (TWO ANSWERS)",
+      "options": {
+        "A": "Opened by pilot fluid pressure",
+        "B": "Opened by control fluid pressure",
+        "C": "Opened by spring force and seawater hydrostatic",
+        "D": "Closed by pilot fluid pressure",
+        "E": "Closed by spring force and seawater hydrostatic"
+      },
+      "correctAnswers": [
+        "A",
+        "E"
+      ],
+      "explanation": "SPM valves: Pilot pressure OPENS them against spring. When pilot removed, spring + seawater hydrostatic CLOSES them (failsafe closed).",
+      "multiSelect": true
+    },
+    {
+      "id": "CC-EQ-67",
+      "level": "L4",
+      "question": "Minimum pressure rating for fittings/gauges when testing a 13-5/8\", 15000 psi BOP stack?",
+      "options": {
+        "A": "15000 psi",
+        "B": "17500 psi",
+        "C": "10000 psi",
+        "D": "20000 psi"
+      },
+      "correctAnswer": "D",
+      "explanation": "Test equipment should be rated higher than test pressure. For 15000 psi BOP, use 20000 psi rated equipment."
+    },
+    {
+      "id": "CC-EQ-68",
+      "level": "L4",
+      "question": "Rig with large surface line volume ignored while pumping kill mud to bit during W&W. Effect on BHP?",
+      "options": {
+        "A": "Increase",
+        "B": "Decrease",
+        "C": "Not affect"
+      },
+      "correctAnswer": "B",
+      "explanation": "If surface line volume ignored, kill mud reaches bit LATER than calculated. Lighter original mud stays in annulus longer = BHP lower than intended."
+    },
+    {
+      "id": "CC-EQ-69",
+      "level": "L4",
+      "question": "After drawdown test on 15K BOP stack, which describes correct procedure?",
+      "options": {
+        "A": "Accumulator reads 1040 psi - acceptable, continue",
+        "B": "Accumulator reads 1360 psi - use regulator to reduce to 1200 psi",
+        "C": "Accumulator reads 200 psi - acceptable, continue",
+        "D": "Accumulator reads 1360 psi - refer to manufacturer data book and continue"
+      },
+      "correctAnswer": "D",
+      "explanation": "Post-drawdown pressure depends on specific accumulator design. Must verify against manufacturer specs."
+    },
+    {
+      "id": "CC-EQ-70",
+      "level": "L4",
+      "question": "What's possible using inverted test rams in subsea BOP stack with blind/shear rams on top?",
+      "options": {
+        "A": "Pressure test BOP connector",
+        "B": "Pressure test all failsafe valves",
+        "C": "Pressure test LMRP connector",
+        "D": "Pressure test wellhead side outlet valves"
+      },
+      "correctAnswer": "C",
+      "explanation": "Inverted test rams seal from above. Closing test rams and blind/shears creates isolated section including LMRP connector."
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "sheetId": "cement-calc-remedial",
+  "title": "Remedial Cementing Calculations Worksheet",
+  "version": "1.0",
+  "description": "Calculations for squeeze jobs and cement plugs",
+  "sections": {
+    "balancedPlugCalculations": {
+      "title": "BALANCED PLUG CALCULATIONS",
+      "wellData": {
+        "subtitle": "Well Configuration",
+        "fields": [
+          {"id": "wellName", "label": "Well Name", "value": "", "unit": ""},
+          {"id": "plugTopDepth", "label": "Plug Top Depth (MD)", "value": "", "unit": "ft"},
+          {"id": "plugTopTVD", "label": "Plug Top Depth (TVD)", "value": "", "unit": "ft"},
+          {"id": "plugBottomDepth", "label": "Plug Bottom Depth (MD)", "value": "", "unit": "ft"},
+          {"id": "plugBottomTVD", "label": "Plug Bottom Depth (TVD)", "value": "", "unit": "ft"},
+          {"id": "plugLength", "label": "Plug Length", "value": "", "unit": "ft"},
+          {"id": "holeID", "label": "Hole/Casing ID", "value": "", "unit": "inch"},
+          {"id": "pipeOD", "label": "Pipe OD (drillpipe/tubing)", "value": "", "unit": "inch"},
+          {"id": "pipeID", "label": "Pipe ID", "value": "", "unit": "inch"},
+          {"id": "bhct", "label": "BHCT at Plug Depth", "value": "", "unit": "°F"}
+        ]
+      },
+      "slurryData": {
+        "subtitle": "Slurry Properties",
+        "fields": [
+          {"id": "slurryDensity", "label": "Slurry Density", "value": "", "unit": "ppg"},
+          {"id": "slurryYield", "label": "Slurry Yield", "value": "", "unit": "ft³/sk"},
+          {"id": "thickTime", "label": "Thickening Time", "value": "", "unit": "hr:min"},
+          {"id": "compStr12", "label": "Compressive Strength @12hr", "value": "", "unit": "psi"}
+        ]
+      },
+      "volumeCalculations": {
+        "subtitle": "Volume Calculations",
+        "calculations": [
+          {
+            "id": "holeCapacity",
+            "label": "Hole/Casing Capacity",
+            "formula": "ID² / 1029.4",
+            "calculation": "(___)² / 1029.4 = ___",
+            "unit": "bbl/ft"
+          },
+          {
+            "id": "annularCapacity",
+            "label": "Annular Capacity (around pipe)",
+            "formula": "(HoleID² - PipeOD²) / 1029.4",
+            "calculation": "[(___)² - (___)²] / 1029.4 = ___",
+            "unit": "bbl/ft"
+          },
+          {
+            "id": "pipeCapacity",
+            "label": "Pipe Capacity",
+            "formula": "PipeID² / 1029.4",
+            "calculation": "(___)² / 1029.4 = ___",
+            "unit": "bbl/ft"
+          },
+          {
+            "id": "plugVolume",
+            "label": "Plug Volume Required",
+            "formula": "Hole Capacity × Plug Length",
+            "calculation": "___ × ___ = ___",
+            "unit": "bbl"
+          },
+          {
+            "id": "sacksRequired",
+            "label": "Cement Sacks Required",
+            "formula": "Plug Vol (bbl) × 5.615 / Yield (ft³/sk)",
+            "calculation": "___ × 5.615 / ___ = ___",
+            "unit": "sacks"
+          }
+        ]
+      },
+      "balanceCalculations": {
+        "subtitle": "Balance Point Calculations",
+        "description": "For balanced plug, cement must be at same height inside pipe and in annulus",
+        "calculations": [
+          {
+            "id": "cementHeightPipe",
+            "label": "Cement Height Inside Pipe",
+            "formula": "Vol pumped / Pipe Capacity",
+            "unit": "ft"
+          },
+          {
+            "id": "cementHeightAnn",
+            "label": "Cement Height in Annulus",
+            "formula": "Vol pumped / Annular Capacity",
+            "unit": "ft"
+          },
+          {
+            "id": "pipeEndDepth",
+            "label": "Pipe End Depth for Balance",
+            "formula": "Calculated to balance heights",
+            "calculation": "Plug Bottom + [(Plug Vol × Ann Cap) / (Ann Cap + Pipe Cap)]",
+            "value": "",
+            "unit": "ft"
+          },
+          {
+            "id": "displacementVol",
+            "label": "Displacement Volume",
+            "formula": "Pipe Capacity × (Surface to Pipe End)",
+            "calculation": "___ × ___ = ___",
+            "unit": "bbl"
+          },
+          {
+            "id": "spotDisplacement",
+            "label": "Spot Displacement (to balance)",
+            "formula": "Displacement - (Cement in pipe height × Pipe cap)",
+            "value": "",
+            "unit": "bbl"
+          }
+        ]
+      },
+      "pumpSchedule": {
+        "subtitle": "Pump Schedule",
+        "table": [
+          {"stage": "Cement", "volume": "", "rate": "", "time": "", "cumVol": ""},
+          {"stage": "Spacer (if used)", "volume": "", "rate": "", "time": "", "cumVol": ""},
+          {"stage": "Displacement", "volume": "", "rate": "", "time": "", "cumVol": ""},
+          {"stage": "TOTAL", "volume": "", "rate": "-", "time": "", "cumVol": ""}
+        ]
+      },
+      "verification": {
+        "subtitle": "Plug Verification",
+        "methods": [
+          {"method": "Tag with Pipe", "description": "Lower pipe slowly - solid tag confirms top", "value": ""},
+          {"method": "Weight Test", "description": "Apply ___ klb on plug", "value": ""},
+          {"method": "Pressure Test", "description": "Test to ___ psi from above", "value": ""},
+          {"method": "Negative Test", "description": "Test with differential from below (if applicable)", "value": ""}
+        ]
+      }
+    },
+    "squeezeCalculations": {
+      "title": "SQUEEZE CEMENT CALCULATIONS",
+      "jobData": {
+        "subtitle": "Job Data",
+        "fields": [
+          {"id": "squeezeDepth", "label": "Squeeze Interval Depth", "value": "", "unit": "ft"},
+          {"id": "squeezeType", "label": "Squeeze Type", "value": "", "unit": "(hesitation/low pressure/high pressure)"},
+          {"id": "perfsTop", "label": "Perforations Top", "value": "", "unit": "ft"},
+          {"id": "perfsBottom", "label": "Perforations Bottom", "value": "", "unit": "ft"},
+          {"id": "perfsShots", "label": "Total Shots", "value": "", "unit": ""},
+          {"id": "casingID", "label": "Casing ID at Squeeze", "value": "", "unit": "inch"},
+          {"id": "tubingID", "label": "Tubing/DP ID", "value": "", "unit": "inch"},
+          {"id": "tubingOD", "label": "Tubing/DP OD", "value": "", "unit": "inch"},
+          {"id": "packerDepth", "label": "Packer/Retainer Depth", "value": "", "unit": "ft"}
+        ]
+      },
+      "slurryDesign": {
+        "subtitle": "Squeeze Slurry Design",
+        "fields": [
+          {"id": "slurryDensity", "label": "Slurry Density", "value": "", "unit": "ppg"},
+          {"id": "slurryYield", "label": "Slurry Yield", "value": "", "unit": "ft³/sk"},
+          {"id": "thickTime", "label": "Thickening Time", "value": "", "unit": "hr:min"},
+          {"id": "fluidLoss", "label": "Fluid Loss", "value": "", "unit": "ml/30min"},
+          {"id": "slurryVol", "label": "Slurry Volume (planned)", "value": "", "unit": "bbl"},
+          {"id": "sacksRequired", "label": "Cement Sacks", "value": "", "unit": "sacks"}
+        ]
+      },
+      "pressureCalculations": {
+        "subtitle": "Pressure Calculations",
+        "calculations": [
+          {
+            "id": "hydrostaticDiff",
+            "label": "Hydrostatic Differential",
+            "formula": "(Slurry density - Formation fluid density) × 0.052 × TVD",
+            "calculation": "(___ - ___) × 0.052 × ___ = ___",
+            "unit": "psi"
+          },
+          {
+            "id": "bhp",
+            "label": "Bottomhole Pressure during Squeeze",
+            "formula": "Surface Pressure + Hydrostatic",
+            "value": "",
+            "unit": "psi"
+          },
+          {
+            "id": "maxSqueezePressure",
+            "label": "Maximum Squeeze Pressure (surface)",
+            "formula": "Based on formation breakdown or procedure limits",
+            "value": "",
+            "unit": "psi"
+          },
+          {
+            "id": "finalSqueezePressure",
+            "label": "Final Squeeze Pressure Target",
+            "value": "",
+            "unit": "psi"
+          }
+        ]
+      },
+      "hesitationSchedule": {
+        "subtitle": "Hesitation Squeeze Schedule",
+        "description": "Pump, stop, wait for pressure decline, repeat",
+        "cycles": [
+          {"cycle": 1, "volume": "", "pressure": "", "holdTime": "", "notes": ""},
+          {"cycle": 2, "volume": "", "pressure": "", "holdTime": "", "notes": ""},
+          {"cycle": 3, "volume": "", "pressure": "", "holdTime": "", "notes": ""},
+          {"cycle": 4, "volume": "", "pressure": "", "holdTime": "", "notes": ""},
+          {"cycle": 5, "volume": "", "pressure": "", "holdTime": "", "notes": ""}
+        ]
+      },
+      "successCriteria": {
+        "subtitle": "Success Criteria",
+        "criteria": [
+          {"criterion": "Final squeeze pressure achieved", "target": "", "actual": ""},
+          {"criterion": "Pressure held for 10 minutes", "target": "Yes", "actual": ""},
+          {"criterion": "Positive pressure test", "target": "", "actual": ""},
+          {"criterion": "Negative pressure test (if req'd)", "target": "", "actual": ""},
+          {"criterion": "Injectivity test (if req'd)", "target": "", "actual": ""}
+        ]
+      }
+    },
+    "commonFormulas": {
+      "title": "COMMON CEMENT FORMULAS REFERENCE",
+      "formulas": [
+        {
+          "name": "Pipe/Hole Capacity",
+          "formula": "ID² / 1029.4 = bbl/ft",
+          "notes": "Use for casing, tubing, open hole"
+        },
+        {
+          "name": "Annular Capacity",
+          "formula": "(HoleID² - PipeOD²) / 1029.4 = bbl/ft",
+          "notes": "Space between pipe and hole/casing"
+        },
+        {
+          "name": "Volume (bbl to ft³)",
+          "formula": "bbl × 5.615 = ft³",
+          "notes": "Convert barrels to cubic feet"
+        },
+        {
+          "name": "Sacks Required",
+          "formula": "Volume (ft³) / Yield (ft³/sk) = sacks",
+          "notes": "Calculate cement sacks needed"
+        },
+        {
+          "name": "Hydrostatic Pressure",
+          "formula": "Density (ppg) × 0.052 × TVD (ft) = psi",
+          "notes": "Pressure from fluid column"
+        },
+        {
+          "name": "ECD",
+          "formula": "BHP / 0.052 / TVD = ppg",
+          "notes": "Equivalent circulating density"
+        },
+        {
+          "name": "Pump Time",
+          "formula": "Volume (bbl) / Rate (bpm) = minutes",
+          "notes": "Time to pump given volume"
+        },
+        {
+          "name": "Strokes",
+          "formula": "Volume (bbl) / Output (bbl/stk) = strokes",
+          "notes": "Pump strokes required"
+        }
+      ]
+    }
+  }
+}

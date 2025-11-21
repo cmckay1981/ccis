@@ -1,0 +1,228 @@
+{
+  "documentId": "dwop-wop",
+  "collectionId": "dwop-wop",
+  "title": "DWOP & WOP Digital Facilitation System",
+  "provider": "Claymore & Colt",
+  "description": "Drilling Well on Paper (DWOP) and Casing Well on Paper (WOP) digital facilitation platform. Replaces traditional fly-everyone-to-one-location model with live virtual collaboration. AI participants in each breakout room challenge assumptions and capture findings. Section-by-section review leaving no stone unturned.",
+  "rigTypes": {
+    "supported": ["LAND", "JACKUP", "SEMISUBMERSIBLE", "DRILLSHIP"],
+    "categories": {
+      "LAND": {
+        "description": "Land rigs - surface BOP, no marine operations",
+        "bopLocation": "surface",
+        "marineOps": false,
+        "waterDepth": "N/A"
+      },
+      "JACKUP": {
+        "description": "Jackup rigs - surface BOP, jacking/cantilever operations",
+        "bopLocation": "surface",
+        "marineOps": true,
+        "waterDepth": "<500ft"
+      },
+      "SEMISUBMERSIBLE": {
+        "description": "Semi-submersible - subsea BOP, riser, anchors or DP",
+        "bopLocation": "subsea",
+        "marineOps": true,
+        "waterDepth": "200-10,000ft"
+      },
+      "DRILLSHIP": {
+        "description": "Drillship - subsea BOP, riser, DP only",
+        "bopLocation": "subsea",
+        "marineOps": true,
+        "waterDepth": "200-12,000ft"
+      }
+    },
+    "groupings": {
+      "SURFACE_BOP": ["LAND", "JACKUP"],
+      "SUBSEA_BOP": ["SEMISUBMERSIBLE", "DRILLSHIP"],
+      "FLOATING": ["SEMISUBMERSIBLE", "DRILLSHIP"]
+    },
+    "currentContent": "FLOATING_SUBSEA",
+    "futureExpansion": "Content will be expanded to cover all rig types. Current content tagged for floating rigs with subsea BOP."
+  },
+  "sessionTypes": [
+    {
+      "sessionId": "DWOP",
+      "title": "Drilling Well on Paper",
+      "focus": "Complete well construction review - drilling operations",
+      "duration": "3-5 days depending on complexity",
+      "typicalDays": 4
+    },
+    {
+      "sessionId": "WOP-CASING",
+      "title": "Casing Well on Paper",
+      "focus": "Casing running and cementing operations",
+      "duration": "1-2 days",
+      "typicalDays": 2
+    },
+    {
+      "sessionId": "WOP-COMPLETIONS",
+      "title": "Completions Well on Paper",
+      "focus": "Upper and lower completions operations",
+      "duration": "1-2 days",
+      "typicalDays": 2
+    }
+  ],
+  "objectives": [
+    "Maximize readiness of all teams before operations begin",
+    "Identify and mitigate potential issues before they occur",
+    "Verify rig capability matches programme requirements",
+    "Confirm equipment availability and compatibility",
+    "Align all stakeholders on procedures and contingencies",
+    "Capture lessons learned and best practices",
+    "Reduce NPT through proactive problem identification"
+  ],
+  "iogpAlignment": [
+    "Well Planning and Design principles",
+    "Hazard Identification (offshore drilling hazard surveys)",
+    "Well Control training and equipment standards",
+    "Performance Improvement methodologies",
+    "Regulatory compliance and communication"
+  ],
+  "digitalAdvantages": [
+    "No travel costs - global participation",
+    "AI participant in each room challenges assumptions",
+    "Automatic capture of all discussions and action items",
+    "Real-time rig capability vs programme matching",
+    "Linked to training content when knowledge gaps identified",
+    "Searchable archive of past sessions",
+    "Asynchronous pre-work reduces meeting fatigue"
+  ],
+  "folders": {
+    "dwop-course": "Training on how to facilitate and participate in DWOP",
+    "session-templates": "Standard agenda and breakout room structures",
+    "checklists": "Section-specific review checklists",
+    "ai-question-bank": "Probing questions for AI participants organized by section"
+  },
+  "sessionTemplates": [
+    {
+      "templateId": "DWOP-4DAY-STANDARD",
+      "title": "4-Day DWOP Session Agenda",
+      "file": "session-templates/dwop-4day-agenda.json",
+      "wellComplexity": "High (HPHT, Deepwater, ERD)"
+    },
+    {
+      "templateId": "WOP-CASING-2DAY-STANDARD",
+      "title": "2-Day Casing WOP Agenda",
+      "file": "session-templates/wop-casing-2day-agenda.json"
+    },
+    {
+      "templateId": "WOP-COMPLETIONS-2DAY-STANDARD",
+      "title": "2-Day Completions WOP Agenda",
+      "file": "session-templates/wop-completions-2day-agenda.json"
+    }
+  ],
+  "checklists": [
+    {
+      "checklistId": "DWOP-CL-001",
+      "title": "Rig Move & Marine Operations",
+      "file": "checklists/rig-move-marine.json"
+    },
+    {
+      "checklistId": "DWOP-CL-002",
+      "title": "BOP & Riser Deployment",
+      "file": "checklists/bop-riser.json"
+    },
+    {
+      "checklistId": "DWOP-CL-003",
+      "title": "Jetting & Conductor Operations",
+      "file": "checklists/jetting-conductor.json"
+    },
+    {
+      "checklistId": "DWOP-CL-004",
+      "title": "Surface Hole Drilling",
+      "file": "checklists/surface-hole-drilling.json"
+    },
+    {
+      "checklistId": "DWOP-CL-005",
+      "title": "Fluids & Hole Conditioning",
+      "file": "checklists/fluids-hole-conditioning.json"
+    },
+    {
+      "checklistId": "DWOP-CL-006",
+      "title": "Intermediate Hole Drilling",
+      "file": "checklists/intermediate-hole-drilling.json"
+    },
+    {
+      "checklistId": "DWOP-CL-007",
+      "title": "Production Hole Drilling (HPHT)",
+      "file": "checklists/production-hole-drilling.json"
+    },
+    {
+      "checklistId": "DWOP-CL-008",
+      "title": "Casing Running",
+      "file": "checklists/casing-running.json"
+    },
+    {
+      "checklistId": "DWOP-CL-009",
+      "title": "Cementing Operations",
+      "file": "checklists/cementing.json"
+    },
+    {
+      "checklistId": "DWOP-CL-010",
+      "title": "Completions Operations",
+      "file": "checklists/completions.json"
+    },
+    {
+      "checklistId": "DWOP-CL-011",
+      "title": "BOP Pull & Xmas Tree Installation",
+      "file": "checklists/bop-pull-xmas-tree.json"
+    },
+    {
+      "checklistId": "DWOP-CL-101",
+      "title": "Land Rig Move & Setup",
+      "file": "checklists/land-rig-move.json",
+      "rigTypes": ["LAND"]
+    },
+    {
+      "checklistId": "DWOP-CL-102",
+      "title": "Land Conductor Driving",
+      "file": "checklists/land-conductor-drive.json",
+      "rigTypes": ["LAND"]
+    },
+    {
+      "checklistId": "DWOP-CL-103",
+      "title": "Surface BOP Testing & Installation",
+      "file": "checklists/surface-bop-testing.json",
+      "rigTypes": ["LAND", "JACKUP"]
+    }
+  ],
+  "aiQuestionBank": {
+    "folder": "ai-question-bank",
+    "totalQuestions": 167,
+    "categories": [
+      {"categoryId": "RIG_MOVE", "title": "Rig Move & Marine", "questions": 10, "rigTypes": ["SEMISUBMERSIBLE", "DRILLSHIP"]},
+      {"categoryId": "BOP_RISER", "title": "BOP & Riser", "questions": 12, "rigTypes": ["SEMISUBMERSIBLE", "DRILLSHIP"]},
+      {"categoryId": "JETTING", "title": "Jetting & Conductor", "questions": 10, "rigTypes": ["JACKUP", "SEMISUBMERSIBLE", "DRILLSHIP"]},
+      {"categoryId": "SURFACE_DRILLING", "title": "Surface Hole Drilling", "questions": 10, "rigTypes": "all"},
+      {"categoryId": "FLUIDS", "title": "Fluids & Hole Conditioning", "questions": 12, "rigTypes": "all"},
+      {"categoryId": "INTERMEDIATE_DRILLING", "title": "Intermediate Hole Drilling", "questions": 12, "rigTypes": "all"},
+      {"categoryId": "PRODUCTION_DRILLING", "title": "Production Hole (HPHT/MPD)", "questions": 15, "rigTypes": "all"},
+      {"categoryId": "CASING", "title": "Casing Running", "questions": 12, "rigTypes": "all"},
+      {"categoryId": "CEMENTING", "title": "Cementing Operations", "questions": 12, "rigTypes": "all"},
+      {"categoryId": "COMPLETIONS", "title": "Completions Operations", "questions": 12, "rigTypes": "all"},
+      {"categoryId": "BOP_PULL_TREE", "title": "BOP Pull & Xmas Tree", "questions": 12, "rigTypes": ["SEMISUBMERSIBLE", "DRILLSHIP"]},
+      {"categoryId": "WELL_CONTROL", "title": "Well Control (Cross-Cutting)", "questions": 15, "rigTypes": "all"},
+      {"categoryId": "CONTINGENCY", "title": "Contingency Planning", "questions": 15, "rigTypes": "all"},
+      {"categoryId": "LAND_RIG", "title": "Land Rig Operations", "questions": 20, "rigTypes": ["LAND"]}
+    ]
+  },
+  "wellProfiles": {
+    "folder": "well-profiles",
+    "profiles": [
+      {
+        "wellId": "CC-SANDSTONE-301",
+        "wellName": "Sandstone-301",
+        "rigType": "LAND",
+        "location": "Middle East Land",
+        "file": "well-profiles/land/sandstone-301.json"
+      }
+    ]
+  },
+  "relatedProducts": {
+    "training": "advanced-drilling",
+    "documentation": "digital-manuals",
+    "wellProfiles": "advanced-drilling/well-profiles"
+  },
+  "tags": ["dwop", "wop", "well-planning", "collaboration", "ai-facilitation"]
+}

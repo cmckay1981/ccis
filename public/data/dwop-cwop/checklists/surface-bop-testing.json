@@ -1,0 +1,95 @@
+{
+  "checklistId": "DWOP-CL-103",
+  "title": "Surface BOP Testing & Installation Checklist",
+  "section": "BOP Installation",
+  "rigTypes": ["LAND", "JACKUP"],
+  "bopType": "surface",
+  "note": "Surface BOP stack - different procedures from subsea BOP",
+  "breakoutRoom": "B",
+  "participants": ["Well Control Specialist", "Toolpusher", "Driller", "BOP Technician"],
+  "aiParticipant": true,
+  "categories": [
+    {
+      "category": "Pre-Installation",
+      "items": [
+        {"item": "BOP stack configuration confirmed vs programme", "critical": true},
+        {"item": "All rams correct size for casing/drill pipe"},
+        {"item": "Shear rams rated for pipe in hole", "critical": true},
+        {"item": "Accumulator capacity verified"},
+        {"item": "Control system tested"},
+        {"item": "All flanges and connections inspected"},
+        {"item": "Gaskets and seals available"}
+      ]
+    },
+    {
+      "category": "Stack Assembly",
+      "items": [
+        {"item": "Spool/adapter flange to casing head"},
+        {"item": "Annular preventer installed"},
+        {"item": "Ram preventers in correct sequence"},
+        {"item": "Choke and kill lines connected"},
+        {"item": "All bolts torqued to specification"},
+        {"item": "Lifting equipment certified"}
+      ]
+    },
+    {
+      "category": "Function Testing",
+      "items": [
+        {"item": "Annular close/open cycle", "critical": true},
+        {"item": "All ram preventers close/open", "critical": true},
+        {"item": "Choke line valves function"},
+        {"item": "Kill line valves function"},
+        {"item": "Accumulator pressure verified"},
+        {"item": "Remote panel functions tested"},
+        {"item": "Closing times within specification"}
+      ]
+    },
+    {
+      "category": "Pressure Testing",
+      "items": [
+        {"item": "Low pressure test (200-300 psi)", "critical": true},
+        {"item": "High pressure test to rated WP", "critical": true},
+        {"item": "Annular preventer test"},
+        {"item": "Ram preventer tests (each ram)"},
+        {"item": "Choke manifold test"},
+        {"item": "Kill line test"},
+        {"item": "Test duration per company standard"},
+        {"item": "Acceptable pressure decline criteria defined"}
+      ]
+    },
+    {
+      "category": "Choke Manifold",
+      "items": [
+        {"item": "Choke manifold pressure rating adequate", "critical": true},
+        {"item": "Manual choke operation verified"},
+        {"item": "Hydraulic choke operation verified"},
+        {"item": "Pressure gauges calibrated"},
+        {"item": "Flare/vent line connected"},
+        {"item": "Mud gas separator ready"}
+      ]
+    },
+    {
+      "category": "Documentation",
+      "items": [
+        {"item": "BOP test certificate prepared"},
+        {"item": "Test chart/recording retained"},
+        {"item": "Third-party witness (if required)"},
+        {"item": "Test results meet regulatory requirements"},
+        {"item": "Next test date scheduled"}
+      ]
+    }
+  ],
+  "aiQuestions": [
+    "BOP test frequency is 21 days but section estimate is 25 days - will you need mid-section test?",
+    "Shear rams are rated for 5\" DP but you're running 5-7/8\" HWDP - can you shear this?",
+    "Accumulator shows 3000 psi precharge - has this been adjusted for ambient temperature?",
+    "Your test pressure is 5000 psi but MAASP at TD is 4800 psi - confirm test pressure is adequate?",
+    "Closing time for annular is 45 seconds but your standard requires 30 seconds - is this acceptable?",
+    "Remote BOP panel is 50m from wellhead - confirm line of sight and communication?",
+    "If annular element fails test, do you have spare element on location?"
+  ],
+  "actionItemTemplate": {
+    "fields": ["item", "owner", "dueDate", "status", "notes"]
+  },
+  "tags": ["dwop", "checklist", "surface-bop", "land-rig", "jackup", "well-control", "pressure-test"]
+}

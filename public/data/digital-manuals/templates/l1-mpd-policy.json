@@ -1,0 +1,132 @@
+{
+  "templateId": "L1-MPD-POLICY-V1",
+  "level": 1,
+  "title": "MPD Corporate Policy Manual",
+  "version": "1.0",
+  "description": "Corporate-level policy manual establishing philosophy, authority, training requirements, and compliance standards for all MPD operations",
+  "audience": ["Management", "HSE", "Compliance", "All Personnel"],
+  "sections": [
+    {
+      "sectionId": "1",
+      "title": "Operating Philosophy",
+      "content": {
+        "1.01": {
+          "title": "Core Principles",
+          "content": "Work undertaken on any well shall be executed such that: 1) Loss of human life and injury shall be avoided, 2) Pollution of the environment shall be avoided, 3) Loss of the rig or damage to equipment shall be avoided."
+        },
+        "1.02": {
+          "title": "MPD Purpose",
+          "content": "MPD enables drilling in narrow windows where conventional methods fail by maintaining constant bottomhole pressure through applied surface back pressure, compensating for ECD variations during connections and operational changes."
+        }
+      }
+    },
+    {
+      "sectionId": "2",
+      "title": "Barrier Policy",
+      "content": {
+        "2.01": {
+          "title": "Two-Barrier Requirement",
+          "content": "At least two tested and independent safety barriers shall be present at all times. PRIMARY: MPD system (hydrostatic + AFL + SBP). SECONDARY: BOP system."
+        },
+        "2.02": {
+          "title": "MPD as Primary Barrier",
+          "content": "The MPD system shall be considered part of the primary well barrier during drilling operations."
+        },
+        "2.03": {
+          "title": "Transition Policy",
+          "content": "In the event of an unplanned influx or well control incident exceeding MPD limits, the MPD system shall be isolated and the rig's well control system shall take over."
+        },
+        "2.04": {
+          "title": "Deviation Requirements",
+          "content": "If two barriers cannot be obtained, access to the well requires formal risk assessment and deviation permit approval on a case-by-case basis."
+        }
+      }
+    },
+    {
+      "sectionId": "3",
+      "title": "Authority & Responsibility",
+      "content": {
+        "3.01": {
+          "title": "Driller Authority",
+          "content": "CRITICAL: The Driller has the authority to shut in the well without recourse to any supervisor if a suspected well control event is occurring or for any other reason deemed necessary. This authority is absolute.",
+          "highlight": true
+        },
+        "3.02": {
+          "title": "Role Definitions",
+          "content": "Driller: Primary well control responsibility. MPD Supervisor: Overall MPD operation. MPD Operators: Procedure execution and BHP maintenance. Mud Loggers: Initial kick detection and recording."
+        }
+      }
+    },
+    {
+      "sectionId": "4",
+      "title": "Training Requirements",
+      "content": {
+        "4.01": {
+          "title": "Prerequisite",
+          "content": "IWCF Level 3 or 4 well control certification required for all positions involved in MPD operations."
+        },
+        "4.02": {
+          "title": "MPD Training Levels",
+          "content": "Level 1: Rig/campaign induction (all personnel). Level 2: Advanced MPD training - control systems (Drillers, Toolpushers, MPD personnel). Level 3: Well-specific simulator training (key positions)."
+        },
+        "4.03": {
+          "title": "Competency Matrix",
+          "content": "Position-specific requirements defined in training matrix. All training must be documented and verified prior to MPD operations."
+        }
+      }
+    },
+    {
+      "sectionId": "5",
+      "title": "Well Control Drills",
+      "content": {
+        "5.01": {
+          "title": "Per-Well Drills",
+          "content": "Before MPD section: RCD pressure exceeded, NRV leak, RCD leak/element change, equipment leak, BOP connector leak, choke operation, H2S procedures, MPD well control transitions."
+        },
+        "5.02": {
+          "title": "Per-Crew Drills",
+          "content": "Each crew: Simulated influx detection, MPD-assisted shut-in with BOP, influx re-route to MGS."
+        }
+      }
+    },
+    {
+      "sectionId": "6",
+      "title": "Documentation Requirements",
+      "content": {
+        "6.01": {
+          "title": "Required Documents",
+          "content": "Level 2: Rig-Specific Equipment Manual. Level 3: Well-Specific JOM including operations matrix, PPFG, contingencies. Level 4: Quick Reference Cards for rig floor."
+        },
+        "6.02": {
+          "title": "Pre-Operations",
+          "content": "HAZID and HAZOP required. Pre-spud meeting covering roles, procedures, PPFG, contingencies. Daily Driller's action plan."
+        },
+        "6.03": {
+          "title": "Bridging Documents",
+          "content": "HSE well control bridging document required identifying which policies apply and defining roles in well control events."
+        }
+      }
+    },
+    {
+      "sectionId": "7",
+      "title": "Management of Change",
+      "content": {
+        "7.01": {
+          "title": "MoC Requirement",
+          "content": "Installation of MPD equipment impacts rig well control equipment and requires formal Management of Change process."
+        },
+        "7.02": {
+          "title": "Deviation Process",
+          "content": "Any deviation from this manual requires Deviation Permit approved by Asset Manager. All deviations shall be risk-assessed and logged."
+        }
+      }
+    }
+  ],
+  "linkedDocuments": {
+    "level2": ["L2-MPD-EQUIPMENT"],
+    "level3": ["L3-MPD-JOM"],
+    "level4": ["L4-MPD-CARDS", "L4-EMERGENCY-CARDS"]
+  },
+  "documentId": "L1-MPD-POLICY",
+  "tags": ["level-1", "policy", "mpd", "corporate"]
+}

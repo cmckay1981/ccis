@@ -1,0 +1,75 @@
+{
+  "checklistId": "DWOP-CL-006",
+  "title": "Intermediate Hole Drilling Checklist",
+  "section": "Intermediate Section Drilling",
+  "rigTypes": ["LAND", "JACKUP", "SEMISUBMERSIBLE", "DRILLSHIP"],
+  "bopType": "all",
+  "breakoutRoom": "A",
+  "participants": ["Drilling Engineer", "Driller", "Directional Driller", "MWD Engineer", "Well Control Specialist"],
+  "aiParticipant": true,
+  "categories": [
+    {
+      "category": "Pore Pressure & Fracture Gradient",
+      "items": [
+        {"item": "PPFG prognosis reviewed", "critical": true},
+        {"item": "Pore pressure increase zones identified"},
+        {"item": "Mud weight ramp-up schedule confirmed"},
+        {"item": "Fracture gradient margins verified", "critical": true},
+        {"item": "LOT/FIT requirements established"},
+        {"item": "Expected LOT values documented"}
+      ]
+    },
+    {
+      "category": "Well Control",
+      "items": [
+        {"item": "Kick tolerance at section TD calculated", "critical": true},
+        {"item": "MAASP at key depths calculated", "critical": true},
+        {"item": "Kill sheet prepared for section"},
+        {"item": "Slow circulating rate (SCR) documented"},
+        {"item": "Shut-in procedures reviewed"},
+        {"item": "Well control drills scheduled"}
+      ]
+    },
+    {
+      "category": "BHA & Drilling",
+      "items": [
+        {"item": "BHA design appropriate for angle/depth"},
+        {"item": "Motor output confirmed"},
+        {"item": "Survey program adequate for depth"},
+        {"item": "Depth correlation plan (tie-in to markers)"},
+        {"item": "Formation evaluation requirements"}
+      ]
+    },
+    {
+      "category": "Wellbore Stability",
+      "items": [
+        {"item": "Shale stability zones identified", "critical": true},
+        {"item": "Time-dependent stability limits"},
+        {"item": "Maximum exposure time before casing"},
+        {"item": "Inhibition requirements confirmed"},
+        {"item": "Stuck pipe risk zones flagged"}
+      ]
+    },
+    {
+      "category": "Tripping Operations",
+      "items": [
+        {"item": "Trip margin calculated"},
+        {"item": "Swab/surge limits established"},
+        {"item": "Short trip requirements defined"},
+        {"item": "Wiper trip procedures reviewed"},
+        {"item": "Overpull limits set"}
+      ]
+    }
+  ],
+  "aiQuestions": [
+    "Pore pressure increases from 10.5 to 13.2 ppg through this section - what are your kick detection protocols during weight-up?",
+    "Kick tolerance at TD is 25 bbls - is this acceptable given your influx detection capability?",
+    "The programme shows 15 ppg MW at 4,000m but fracture gradient is 15.8 ppg - what's your response if LOT comes in low?",
+    "Shale stability model shows 72-hour limit - your section time estimate is 96 hours. What's your mitigation?",
+    "If you encounter unexpected overpressure, what's your maximum safe weight-up rate without inducing losses?"
+  ],
+  "actionItemTemplate": {
+    "fields": ["item", "owner", "dueDate", "status", "notes"]
+  },
+  "tags": ["dwop", "checklist", "intermediate-hole", "drilling", "well-control"]
+}

@@ -1,0 +1,30 @@
+{
+  "sectionId": "3.11",
+  "title": "Drilling Fluid System",
+  "content": {
+    "3.11.1": {
+      "title": "Role in Well Control",
+      "content": "**Primary Barrier:**\nDrilling fluid (mud) provides the primary well control barrier:\n- Hydrostatic pressure balances formation pressure\n- Overbalance prevents influx\n- Proper weight essential\n\n**Well Control Functions:**\n- Maintain overbalance during drilling\n- Kill mud preparation\n- Hole cleaning during circulation\n- Cooling and lubrication"
+    },
+    "3.11.2": {
+      "title": "Mud Weight Requirements",
+      "content": "**Minimum Weight:**\n- Must exceed pore pressure (plus safety margin)\n- Provides overbalance\n- Prevents kicks\n\n**Maximum Weight:**\n- Must not exceed fracture gradient\n- Prevents lost circulation\n- Maintains wellbore stability\n\n**Safety Margins:**\n- Trip margin: Additional weight for swab effect\n- Typically 0.2-0.5 ppg above minimum\n- Varies with operation and conditions\n\n**Weight Control:**\n- Regular measurement\n- Accurate mixing\n- Avoid dilution\n- Weight-up capability"
+    },
+    "3.11.3": {
+      "title": "Volume Requirements",
+      "content": "**Active System:**\n- Sufficient volume for well volume\n- Circulation reserve\n- Processing losses\n\n**Reserve:**\n- Kill mud volume available\n- Materials for weight-up\n- Emergency supply\n\n**Typical Requirement:**\nActive volume = Well volume × 2-3 (or more for deep wells)"
+    },
+    "3.11.4": {
+      "title": "Weight-Up Capability",
+      "content": "**Materials:**\n- Barite (most common)\n- Hematite (for very high weights)\n- Other weighting agents\n\n**Inventory:**\n- Sufficient for kill mud\n- Buffer for unexpected needs\n- Track usage and reorder point\n\n**Mixing:**\n- Hopper and mixing system\n- Rate of weight increase achievable\n- Quality control on weight\n\n**Planning:**\n- Calculate kill mud volume and weight\n- Verify materials on hand\n- Estimate mixing time"
+    },
+    "3.11.5": {
+      "title": "Mud Properties Monitoring",
+      "content": "**Density (Weight):**\n- Measure regularly (typically every circulation)\n- Use accurate balance\n- Record and trend\n\n**Viscosity:**\n- Affects ECD and hole cleaning\n- Funnel viscosity for quick check\n- Rheology for detailed properties\n\n**Gas Content:**\n- Monitor for gas cutting\n- Affects density (apparent weight loss)\n- Use degasser to remove\n\n**Other Properties:**\n- pH, chlorides, solids content\n- Affect stability and performance\n- Mud engineer manages"
+    },
+    "3.11.6": {
+      "title": "Kill Mud Preparation",
+      "content": "**When Needed:**\n- After kick detected\n- Weight calculated from SIDPP\n\n**Calculation:**\nKWM = Current MW + (SIDPP / 0.052 / TVD)\n\n**Preparation:**\n1. Calculate required weight\n2. Calculate volume needed\n3. Add weighting material\n4. Mix thoroughly\n5. Verify weight (check and double-check)\n6. Have sufficient volume ready\n\n**Time:**\n- Estimate mixing time\n- Start immediately after kick\n- Volumetric method if delay unacceptable"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "cardId": "driller-checklist",
+  "title": "Driller's Pre-Kill Checklist",
+  "type": "checklist-card",
+  "content": {
+    "immediateAfterShutIn": {
+      "title": "IMMEDIATELY AFTER SHUT-IN",
+      "items": [
+        "□ SIDPP recorded (wait for stabilization)",
+        "□ SICP recorded (wait for stabilization)",
+        "□ Pit gain recorded",
+        "□ Time of shut-in recorded",
+        "□ Supervisor notified"
+      ]
+    },
+    "beforeCirculating": {
+      "title": "BEFORE STARTING CIRCULATION",
+      "items": [
+        "□ Kill sheet completed",
+        "□ Kill Weight Mud calculated",
+        "□ ICP calculated",
+        "□ FCP calculated",
+        "□ Strokes to bit calculated",
+        "□ Pressure schedule prepared (W&W)",
+        "□ MAASP calculated - pressures will stay below?",
+        "□ Kill mud ready (verified weight)",
+        "□ Sufficient mud volume available",
+        "□ Choke manifold lined up",
+        "□ Degasser/MGS ready",
+        "□ Choke operator briefed and ready",
+        "□ Crew briefed on procedure",
+        "□ Shore base notified",
+        "□ Recording system active"
+      ]
+    },
+    "duringKill": {
+      "title": "DURING KILL - MONITOR",
+      "items": [
+        "□ Drillpipe pressure vs schedule",
+        "□ Casing pressure vs MAASP",
+        "□ Pit volumes",
+        "□ Pump performance",
+        "□ Gas at surface indicators",
+        "□ Record pressures every 5 min minimum"
+      ]
+    },
+    "afterKill": {
+      "title": "AFTER KILL COMPLETE",
+      "items": [
+        "□ Pumps stopped",
+        "□ Choke closed",
+        "□ Observe pressures (min 5 minutes)",
+        "□ SIDPP = 0?",
+        "□ SICP = 0?",
+        "□ Flow check - no flow?",
+        "□ Well confirmed killed",
+        "□ Event documented",
+        "□ Debrief conducted"
+      ]
+    }
+  }
+}

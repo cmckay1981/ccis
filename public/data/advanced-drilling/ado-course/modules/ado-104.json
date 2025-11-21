@@ -1,0 +1,70 @@
+{
+  "moduleId": "ADO-104",
+  "courseId": "ADO",
+  "title": "Continuous Circulation Systems",
+  "description": "Continuous circulation systems maintain flow during connections, eliminating ECD fluctuations and pressure spikes that cause problems in tight-window drilling. This module covers system principles and operational procedures.",
+  "objectives": [
+    "Understand why continuous circulation matters in HPHT/ERD",
+    "Know the operational sequence for making connections with continuous circulation",
+    "Recognize system limitations and failure modes",
+    "Integrate continuous circulation with overall pressure management"
+  ],
+  "keyTopics": [
+    {
+      "topic": "The Connection Problem",
+      "content": "Every connection requires stopping the pumps. When pumps stop, ECD drops to static MW - potentially 0.5-1.0+ ppg reduction. In tight windows, this drop may go below pore pressure, risking a swab kick. Continuous circulation eliminates this."
+    },
+    {
+      "topic": "System Principles",
+      "content": "Continuous circulation systems use a specialized sub and surface equipment to maintain flow through the drillstring while adding a new stand. The system creates a sealed connection around the pipe, allowing the top drive to disconnect while flow continues."
+    },
+    {
+      "topic": "Operational Sequence",
+      "content": "1) Drill to connection depth with normal circulation. 2) Engage continuous circulation sub. 3) Continue pumping through sub. 4) Break connection at top drive. 5) Add new stand. 6) Make up connection. 7) Disengage sub and resume normal drilling."
+    },
+    {
+      "topic": "Benefits Beyond Pressure",
+      "content": "Continuous circulation also maintains hole cleaning (no settling during connections), maintains temperature (important for mud rheology), and eliminates gel strength breaks that cause pressure spikes on pump startup."
+    },
+    {
+      "topic": "Limitations",
+      "content": "Continuous circulation adds connection time. Equipment requires maintenance and can fail. Some systems limit circulation rate during the connection. Not suitable for all BHA configurations. Requires trained personnel."
+    }
+  ],
+  "referenceWellContext": {
+    "wellName": "Phoenix-702",
+    "application": "Critical in 6.125\" HPHT section where 8 bbl kick tolerance leaves no room for swab kicks",
+    "integration": "Used in conjunction with MPD for complete pressure stability"
+  },
+  "operationalPrinciples": [
+    "Continuous circulation is an ECD tool, not a well control tool",
+    "System failure during connection requires immediate MPD backup",
+    "Practice the procedure until it's routine - fumbling causes problems",
+    "Monitor ECD throughout - verify the system is working",
+    "Have contingency for equipment failure"
+  ],
+  "lessons": [
+    {
+      "lessonId": "ADO-104-01",
+      "title": "Why Continuous Circulation",
+      "file": "lessons/ado-104-01.json"
+    },
+    {
+      "lessonId": "ADO-104-02",
+      "title": "System Components & Operation",
+      "file": "lessons/ado-104-02.json"
+    },
+    {
+      "lessonId": "ADO-104-03",
+      "title": "Connection Procedures",
+      "file": "lessons/ado-104-03.json"
+    },
+    {
+      "lessonId": "ADO-104-04",
+      "title": "Troubleshooting & Contingencies",
+      "file": "lessons/ado-104-04.json"
+    }
+  ],
+  "documentId": "ADO-104",
+  "tags": ["continuous-circulation", "ecd", "connections", "hpht", "advanced-drilling"]
+}

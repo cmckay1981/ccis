@@ -1,0 +1,34 @@
+{
+  "sectionId": "2.13",
+  "title": "Shallow Gas",
+  "content": {
+    "2.13.1": {
+      "title": "Overview",
+      "content": "Shallow gas presents unique well control challenges:\n\n**Why It's Different:**\n- Occurs before BOP installed (conductor or surface hole)\n- Limited or no pressure containment equipment\n- High flow rates possible (low overburden)\n- Gas expansion rapid due to shallow depth\n- May be associated with shallow water flows\n\n**Risk Factors:**\n- Known shallow gas in area (offset data)\n- Seismic indicators\n- Biogenic gas zones\n- Prior drilling history\n\n**Consequences:**\n- Uncontrolled flow at surface\n- Rig damage\n- Fire/explosion risk\n- Personnel injury\n- Environmental impact"
+    },
+    "2.13.2": {
+      "title": "Prevention",
+      "content": "**Pre-Well Assessment:**\n- Review seismic data for shallow hazards\n- Study offset wells for shallow gas encounters\n- Identify biogenic gas potential zones\n- Plan mud weight and casing points accordingly\n\n**Equipment Preparation:**\n- Diverter system installed and tested\n- Adequately sized diverter lines\n- Remote diverter operation available\n- Rotating head if available\n\n**Drilling Practice:**\n- Monitor closely through suspect intervals\n- Use appropriate mud weight\n- Controlled drilling rates through gas sands\n- Flow check at any indication\n\n**Personnel Preparation:**\n- Crew briefed on shallow gas response\n- Muster stations known\n- Ignition sources controlled\n- Emergency shutdown understood"
+    },
+    "2.13.3": {
+      "title": "Detection",
+      "content": "**Indicators:**\n- Rapid ROP increase (drilling break)\n- Gas in returns (may be quick arrival due to shallow depth)\n- Flow increase\n- Pit gain\n- Bubbling at rotary or flow line\n- Pressure changes on PWD\n\n**Time Factor:**\n- Lag time is very short at shallow depth\n- Gas reaches surface quickly\n- Expansion is rapid near surface\n- Must respond immediately\n\n**No Time for:**\n- Extended flow checks\n- Committee decisions\n- Seeking approval\n- Response must be immediate"
+    },
+    "2.13.4": {
+      "title": "Diverter Operations",
+      "content": "**When to Divert (Not Shut-In):**\n- Before surface casing set\n- When formation cannot withstand shut-in pressure\n- When shoe would fracture before BOP pressure rating reached\n\n**Diverter Response:**\n1. Sound alarm\n2. Stop drilling\n3. Increase pump rate to maximum safe rate\n4. Open diverter line (downwind)\n5. Close diverter packer\n6. Maintain full circulation\n7. Evacuate non-essential personnel\n8. Control ignition sources\n\n**Key Principle:**\nDiverting directs flow away from rig floor while maintaining circulation to prevent bridging and maximize gas displacement.\n\n**Do NOT:**\n- Close in the well (no BOP rated for this)\n- Stop pumping (will lose circulation path)\n- Delay response\n- Allow personnel in danger zones"
+    },
+    "2.13.5": {
+      "title": "During Diverter Operations",
+      "content": "**Continue Circulating:**\n- Maximum safe pump rate\n- Keeps annulus open\n- Displaces gas with mud\n- Prevents bridging\n\n**Monitor:**\n- Flow rate (is it decreasing?)\n- Gas in returns (decreasing means success)\n- Rig floor and diverter line area\n- Personnel locations\n\n**Success Indicators:**\n- Gas rate decreasing\n- Returns becoming more normal\n- Stable circulation established\n\n**If Not Successful:**\n- Continue diverting - do not shut in\n- Consider increasing mud weight if practical\n- May need to abandon location\n- Prepare for extended operation or well kill"
+    },
+    "2.13.6": {
+      "title": "Post-Shallow Gas",
+      "content": "**After Flow Stops:**\n1. Continue circulating to clean hole\n2. Increase mud weight as needed\n3. Verify stability before resuming drilling\n4. Consider casing point adjustment\n\n**Assessment:**\n- Document the event thoroughly\n- Measure gas rate and volume if possible\n- Determine if sand depleted or still pressured\n- Plan for resumption or well modification\n\n**Lessons:**\n- Update shallow hazard maps\n- Revise offset predictions if needed\n- Share learnings with future wells\n\n**If Well Cannot Be Controlled:**\n- Full diverter until exhausted\n- Evacuation if necessary\n- May need to abandon location\n- Kill operations from safe distance"
+    },
+    "2.13.7": {
+      "title": "Shallow Water Flow",
+      "content": "**Similar Hazard:**\n- Water-bearing shallow sands\n- Can flow like gas (high permeability)\n- May occur with or without gas\n\n**Complications:**\n- May not be detected as readily as gas\n- Can cause washout and loss of returns\n- May compromise wellbore stability\n\n**Response:**\n- Same diverter response\n- Maintain circulation\n- May need weighted mud\n- Cement early if repeated flows"
+    }
+  }
+}

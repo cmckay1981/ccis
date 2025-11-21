@@ -1,0 +1,106 @@
+{
+  "documentId": "SUBSEA_OPERATIONS",
+  "collectionId": "questionBank",
+  "categoryKey": "SUBSEA_OPERATIONS",
+  "title": "Subsea/Floating Rig Operations",
+  "moduleAlignment": [
+    "WC-SS-103",
+    "WC-SS-104",
+    "WC-SS-105",
+    "WC-SS-106"
+  ],
+  "questionCount": 6,
+  "l3Count": 3,
+  "l4Count": 3,
+  "questions": [
+    {
+      "id": "Q31",
+      "level": "L3",
+      "question": "Slow circulating rates through riser then choke line. Main reason?",
+      "options": {
+        "A": "Determine choke line friction",
+        "B": "Flush choke line",
+        "C": "Lower circulating rate option",
+        "D": "Determine choke line friction"
+      },
+      "correctAnswer": "A",
+      "explanation": "SCR through both paths lets you calculate CLFL by comparing the pressures."
+    },
+    {
+      "id": "Q34",
+      "level": "L4",
+      "question": "Top hole with riser: 10 ppg mud, 8.6 ppg seawater, 1800 ft hole, 900 ft water. Minimum mud for disconnect?",
+      "options": {
+        "A": "10.8 ppg",
+        "B": "12.9 ppg",
+        "C": "11.3 ppg",
+        "D": "9.6 ppg"
+      },
+      "correctAnswer": "B",
+      "explanation": "Must maintain balance even if seawater replaces mud in riser. Calculate riser margin and add to formation balance requirement."
+    },
+    {
+      "id": "Q35",
+      "level": "L3",
+      "question": "Floating rig conditions affecting mud volume readings (SELECT THREE):",
+      "options": {
+        "A": "Riser tension",
+        "B": "Crane operations",
+        "C": "Rig heave",
+        "D": "Pump assignment",
+        "E": "Seawater temperature",
+        "F": "Rig pitch/roll"
+      },
+      "correctAnswers": [
+        "B",
+        "C",
+        "F"
+      ],
+      "explanation": "Crane ops change deck weight affecting draft. Heave moves riser volume. Pitch/roll affects riser geometry.",
+      "multiSelect": true
+    },
+    {
+      "id": "Q58",
+      "level": "L4",
+      "question": "Methods to determine CLF on subsea BOP (SELECT THREE):",
+      "options": {
+        "A": "Pump seawater down choke line",
+        "B": "Pump mud down drillstring up riser then chokeline, measure difference",
+        "C": "Pump mud down riser",
+        "D": "Pump mud down kill line up riser",
+        "E": "Pump kill line up chokeline, divide by 2"
+      },
+      "correctAnswers": [
+        "B",
+        "D",
+        "E"
+      ],
+      "explanation": "CLFL measured by comparing flow paths. Down DS up riser vs up choke gives difference.",
+      "multiSelect": true
+    },
+    {
+      "id": "Q60",
+      "level": "L3",
+      "question": "Gas enters choke line during subsea kill. Choke operator action?",
+      "options": {
+        "A": "Opening",
+        "B": "Closing",
+        "C": "No action"
+      },
+      "correctAnswer": "B",
+      "explanation": "Gas in choke line = lighter column = pressure drop. Must CLOSE choke to maintain backpressure."
+    },
+    {
+      "id": "Q72",
+      "level": "L4",
+      "question": "Subsea, first circulation, pump rate decreased holding casing constant. BHP?",
+      "options": {
+        "A": "Increased",
+        "B": "Decreased",
+        "C": "Stayed same"
+      },
+      "correctAnswer": "B",
+      "explanation": "Reduced pump rate = reduced CLFL. If casing constant at surface, actual BHP drops by the CLFL reduction."
+    }
+  ]
+}

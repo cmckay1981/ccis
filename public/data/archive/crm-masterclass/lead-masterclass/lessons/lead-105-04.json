@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-105-04",
+  "moduleId": "LEAD-105",
+  "courseId": "LEAD",
+  "title": "Progressive Accountability Frameworks",
+  "type": "lesson",
+  "content": "Progressive accountability means escalating response based on pattern and severity, not jumping to termination on first failure. The framework typically moves through: immediate feedback for first occurrence, documented conversation for repeated issues, formal performance plan with clear timeline and expectations, and separation if improvement doesn't occur. This protects the organization legally, gives people genuine opportunity to improve, and demonstrates fairness to the rest of the team. Skip steps only for severe violations that require immediate action.",
+  "mcq": {
+    "question": "A team member has been late to shift start three times in six weeks—each time by 10-15 minutes with different excuses. This violates attendance policy. The leader hasn't addressed it yet. What's the appropriate next step?",
+    "options": {
+      "A": "Document all three instances and initiate formal corrective action",
+      "B": "Have an immediate conversation about the pattern, understand what's happening, and set clear expectations",
+      "C": "Wait to see if it continues since three instances isn't enough to establish a real pattern",
+      "D": "Announce a reminder about attendance expectations to the entire team"
+    },
+    "correctOption": "B",
+    "explanation": "Three occurrences is a pattern worth addressing, but this is early-stage accountability. Direct conversation accomplishes multiple goals: makes clear you've noticed, understands if there's a solvable problem, and establishes expectations going forward. If it continues after this conversation, then documentation is appropriate. Option A skips the informal step and may be premature. Option C allows the problem to continue and teaches the person (and team) that you don't address policy violations. Option D is passive-aggressive and doesn't actually address the individual's behavior. Start with direct conversation. Escalate if the pattern continues."
+  },
+  "openQuestions": [
+    "What's your typical pattern when someone violates a standard? Do you address it immediately, wait to see if it repeats, or something else?",
+    "Think of your team's perception of accountability. Do they believe standards are enforced consistently and fairly?"
+  ]
+}

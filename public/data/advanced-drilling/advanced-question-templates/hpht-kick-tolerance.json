@@ -1,0 +1,66 @@
+{
+  "templateId": "QT-HPHT-002",
+  "category": "HAZARD_AWARENESS",
+  "title": "HPHT Limited Kick Tolerance Decision",
+  "level": ["L4"],
+  "applicableTo": ["surface", "subsea"],
+  "triggeredBy": {
+    "kickTolerance": "limitedKT",
+    "requiresHighestAlertness": true
+  },
+  "question": "On {{wellProfile.wellName}}, you are drilling the HPHT reservoir section at {{currentSection.settingDepth.tvd}} {{currentSection.settingDepth.unit}} TVD. Kick tolerance is only {{kickTolerance.ktValue}} bbls at {{kickTolerance.influxIntensity}} ppg influx intensity. You take a {{scenario.kickVolume}} bbl kick with SIDPP of {{scenario.sidpp}} psi. Given the limited kick tolerance, what is the PRIMARY concern and appropriate response?",
+  "inputs": {
+    "wellProfile": {
+      "required": ["classification.isHPHT", "wellName"]
+    },
+    "currentSection": {
+      "from": "wellProfile.casingProgram[activeSection]",
+      "required": ["settingDepth.tvd", "section"]
+    },
+    "kickTolerance": {
+      "from": "wellProfile.kickTolerance[current section]"
+    },
+    "scenario": {
+      "generated": true,
+      "kickVolume": {
+        "options": [5, 12, 20],
+        "description": "bbls"
+      },
+      "sidpp": {
+        "range": [400, 800],
+        "step": 50
+      }
+    }
+  },
+  "answerLogic": {
+    "conditions": [
+      {
+        "if": "scenario.kickVolume < kickTolerance.ktValue * 0.5",
+        "primaryConcern": "Gas expansion during circulation may still approach shoe limits",
+        "response": "Proceed with kill but closely monitor casing pressure vs MAASP. Consider Driller's Method to get influx out quickly.",
+        "severity": "manageable"
+      },
+      {
+        "if": "scenario.kickVolume >= kickTolerance.ktValue * 0.5 AND scenario.kickVolume < kickTolerance.ktValue",
+        "primaryConcern": "High risk of exceeding formation strength at shoe during circulation",
+        "response": "Proceed cautiously. May need to bullhead or use volumetric method if casing pressure approaches MAASP. Have contingencies ready.",
+        "severity": "critical"
+      },
+      {
+        "if": "scenario.kickVolume >= kickTolerance.ktValue",
+        "primaryConcern": "Kick volume already at or exceeds kick tolerance - conventional circulation may fracture shoe",
+        "response": "Conventional kill methods may not be viable. Consider bullheading, volumetric control, or other alternative methods. This is an emergency.",
+        "severity": "emergency"
+      }
+    ]
+  },
+  "feedback": {
+    "manageable": "With {{scenario.kickVolume}} bbls (less than half the {{kickTolerance.ktValue}} bbl kick tolerance), conventional kill should work but requires vigilant monitoring. Gas expansion is still significant in deep HPHT wells.",
+    "critical": "With {{scenario.kickVolume}} bbls approaching the {{kickTolerance.ktValue}} bbl limit, you have minimal margin. Prepare alternative kill methods and be ready to switch if casing pressure trends toward MAASP.",
+    "emergency": "At {{scenario.kickVolume}} bbls, you've met or exceeded kick tolerance. Circulating this out conventionally will likely fracture the shoe, causing underground blowout. This requires supervisor-level decision making and possibly alternative methods."
+  },
+  "contextualTip": "On {{wellProfile.wellName}}, the limited kick tolerance in the reservoir section is why the DOP mandates 'highest level well control alertness.' Prevention through early kick detection is far better than managing a kick that exceeds your tolerance.",
+  "advancedNote": "L4 supervisors must pre-plan responses for kicks at or near tolerance limits. Know your bullhead rates, volumetric procedures, and when to escalate to shore-based well control specialists.",
+  "relatedLesson": "WC-SF-107-01",
+  "tags": ["hpht", "kick-tolerance", "limited-kt", "hazard", "well-control", "L4", "dynamic"]
+}

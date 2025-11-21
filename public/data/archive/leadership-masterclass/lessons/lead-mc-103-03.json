@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-103-03",
+  "moduleId": "LEAD-MC-103",
+  "courseId": "LEAD-MC",
+  "title": "Communication During High-Tempo Operations",
+  "type": "lesson",
+  "content": "When the operational pace accelerates, communication becomes shorter but must remain clearer. Leaders often make two errors under time pressure: they stop communicating entirely, assuming everyone understands, or they over-communicate irrelevant details that create confusion. Effective high-tempo communication follows a pattern: state the current priority, confirm understanding, identify who needs what information, and establish the next decision point. Silence creates information voids that people fill with assumptions—usually wrong ones.",
+  "mcq": {
+    "question": "During a fast-moving operational problem, a team leader goes silent for 45 minutes while troubleshooting. The team continues working but begins making conflicting decisions because no one knows if priorities have changed. When the leader resurfaces with a solution, several people have duplicated effort or worked on the wrong things. What communication failure occurred?",
+    "options": {
+      "A": "The team should have asked for guidance instead of assuming",
+      "B": "The leader failed to provide directional updates even while problem-solving",
+      "C": "45 minutes isn't long enough to require a status update",
+      "D": "The team lacks the experience to operate independently"
+    },
+    "correctOption": "B",
+    "explanation": "Leaders don't get to disappear during high-tempo operations, even when they're personally focused on solving a critical problem. A 15-second update—'Still working the primary issue, hold current priorities unless you hear otherwise'—prevents the team from fragmenting. The leader's silence created an information vacuum that cost the team coordination and efficiency. High-tempo leadership requires communicating continuously, not just when you have answers."
+  },
+  "openQuestions": [
+    "During your last high-pressure situation, how frequently did you communicate with your team? Was it enough?",
+    "What's your default communication pattern when you're personally focused on solving a hard problem?"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "sectionId": "1.8",
+  "title": "Human Factors",
+  "sourceNote": "This section incorporates critical human factors content essential for well control decision-making",
+  "content": {
+    "1.8.1": {
+      "title": "Human Factors in Well Control",
+      "content": "Human factors play a critical role in well control outcomes. Many well control incidents involve human error or decision-making failures rather than pure equipment failure.\n\nUnderstanding human factors helps us:\n- Design better procedures and systems\n- Recognize when we may be vulnerable to error\n- Create an environment that supports good decisions\n- Learn effectively from incidents and near-misses\n\nEvery person involved in well operations should understand basic human factors principles."
+    },
+    "1.8.2": {
+      "title": "Performance Shaping Factors",
+      "content": "Performance Shaping Factors (PSFs) are conditions that influence human performance, either positively or negatively.\n\n**Internal Factors (Individual):**\n- Fatigue and alertness\n- Stress and workload\n- Training and experience\n- Physical health\n- Motivation and attitude\n\n**External Factors (Environment):**\n- Workplace design and ergonomics\n- Procedure quality and availability\n- Tool and equipment design\n- Environmental conditions (noise, lighting, temperature)\n- Time pressure\n- Team dynamics and communication\n- Organizational culture\n\n**Managing PSFs:**\n- Ensure adequate rest before critical operations\n- Manage workload to avoid overload or underload\n- Provide clear, usable procedures\n- Design workstations for the task\n- Allow adequate time for decisions\n- Foster open communication"
+    },
+    "1.8.3": {
+      "title": "Situational Awareness",
+      "content": "Situational Awareness (SA) is understanding what is happening around you and what it means for the near future.\n\n**Three Levels of SA:**\n\n**Level 1 - Perception**\nSeeing/hearing the relevant information. Knowing the current pit volume, pump pressure, flow rate.\n\n**Level 2 - Comprehension**\nUnderstanding what the information means. Recognizing that a 5 bbl gain with increased flow indicates a kick.\n\n**Level 3 - Projection**\nAnticipating what will happen next. Understanding that gas will expand as it rises and pressures will increase.\n\n**Threats to Situational Awareness:**\n- High workload / task saturation\n- Fatigue\n- Distractions\n- Complacency\n- Poor communication\n- Ambiguous information\n- Stress\n\n**Maintaining SA:**\n- Continuously scan all relevant parameters\n- Verbalize observations to team\n- Ask questions if something doesn't make sense\n- Take brief pauses to assess overall situation\n- Speak up if you see something others may have missed"
+    },
+    "1.8.4": {
+      "title": "Mental Traps",
+      "content": "Mental traps are cognitive biases that can lead to poor decisions. Recognizing them is the first step to avoiding them.\n\n**Common Mental Traps in Well Control:**"
+    },
+    "1.8.4.1": {
+      "title": "Confirmation Bias",
+      "content": "**What it is:** The tendency to seek, interpret, and remember information that confirms what we already believe.\n\n**In Well Control:**\n- Dismissing a pit gain as 'just thermal expansion'\n- Interpreting ambiguous data as normal because we expect normal\n- Ignoring warning signs because 'we've seen this before and it was nothing'\n\n**Countermeasures:**\n- Actively seek disconfirming evidence\n- Ask: 'What would I expect to see if this WAS a kick?'\n- Assign someone to play devil's advocate\n- Take flow checks seriously even when you expect them to be negative"
+    },
+    "1.8.4.2": {
+      "title": "Normalisation of Deviance",
+      "content": "**What it is:** The gradual acceptance of previously unacceptable conditions as normal because nothing bad has happened yet.\n\n**In Well Control:**\n- Accepting small chronic losses as 'normal for this well'\n- Skipping steps in procedures because 'we always do it this way'\n- Operating with equipment in marginal condition because 'it's always been like that'\n- Tolerating longer response times because incidents haven't occurred\n\n**Countermeasures:**\n- Compare current practices to written procedures\n- Fresh eyes from new crew members can spot drift\n- Regular audits against standards\n- Ask: 'Would I be comfortable if an auditor saw this?'"
+    },
+    "1.8.4.3": {
+      "title": "Groupthink",
+      "content": "**What it is:** The tendency for groups to reach consensus without critically evaluating alternatives, often suppressing dissenting views.\n\n**In Well Control:**\n- Everyone agreeing with the senior person's assessment without challenge\n- Reluctance to voice concerns that contradict the group view\n- Pressure to 'get on with it' suppressing careful analysis\n- Dismissing the junior person's observation\n\n**Countermeasures:**\n- Explicitly invite dissenting views\n- Ask junior personnel for their assessment first\n- Use structured decision-making processes\n- Create psychological safety for speaking up\n- Assign a devil's advocate role"
+    },
+    "1.8.4.4": {
+      "title": "Sunk Cost Fallacy / Loss Aversion",
+      "content": "**What it is:** Continuing a course of action because of already invested resources (time, money, effort) rather than future value.\n\n**In Well Control:**\n- Reluctance to abandon a kill attempt that isn't working\n- Continuing operations to avoid 'wasted' rig time\n- Hesitating to shut in because of the cost/delay\n- 'We've come this far, we can't stop now'\n\n**Countermeasures:**\n- Focus on future consequences, not past investment\n- Ask: 'If we were starting fresh, what would we do?'\n- Set clear decision points before starting operations\n- Remember: the cost of a blowout exceeds any rig time"
+    },
+    "1.8.5": {
+      "title": "Stress and Decision Making",
+      "content": "Well control events are inherently stressful. Stress affects decision-making in predictable ways:\n\n**Effects of Acute Stress:**\n- Narrowed attention (tunnel vision)\n- Reduced working memory\n- Faster but less accurate decisions\n- Regression to trained responses\n- Difficulty processing new information\n\n**Managing Stress in Well Control Events:**\n\n**Before Events:**\n- Thorough training and drills build automatic responses\n- Pre-planned procedures reduce cognitive load\n- Familiarity with equipment builds confidence\n\n**During Events:**\n- Follow procedures - they exist for this moment\n- Use checklists to ensure nothing is missed\n- Verbalize actions and intentions\n- Take brief pauses to assess before acting\n- Delegate tasks to spread workload\n\n**After Events:**\n- Allow time for recovery before resuming normal operations\n- Debrief to capture lessons while fresh\n- Recognize stress reactions in self and others"
+    },
+    "1.8.6": {
+      "title": "Communication",
+      "content": "Clear communication is essential for well control. Failures in communication contribute to many incidents.\n\n**Principles:**\n\n**Closed-Loop Communication**\n1. Sender gives clear instruction\n2. Receiver repeats back instruction\n3. Sender confirms or corrects\n\n**Example:**\n- Driller: 'Close the upper pipe rams'\n- Assistant: 'Closing upper pipe rams'\n- Driller: 'Correct'\n\n**Speaking Up:**\n- Anyone who sees a potential problem has the duty to speak up\n- Use clear, direct language\n- Persist if your concern is not acknowledged\n- 'I need you to stop - I see a problem'\n\n**Crew Resource Management:**\n- Share mental models - 'Here's what I think is happening...'\n- Invite input - 'What are you seeing?'\n- Challenge and respond - 'Are you sure about that?'\n- Assert position when safety is at stake"
+    },
+    "1.8.7": {
+      "title": "Fatigue Management",
+      "content": "Fatigue significantly impairs performance and is a factor in many incidents.\n\n**Effects of Fatigue:**\n- Slower reaction times\n- Impaired judgment\n- Reduced situational awareness\n- Increased risk-taking\n- Microsleeps\n- Mood changes\n\n**Managing Fatigue:**\n\n**Organizational:**\n- Comply with maximum work hour regulations\n- Schedule critical operations for alert periods where possible\n- Ensure adequate rest facilities\n- Monitor for signs of fatigue in crew\n\n**Individual:**\n- Use rest periods effectively\n- Maintain sleep hygiene\n- Recognize personal fatigue signs\n- Speak up if too fatigued to perform safely\n- Support colleagues who may be fatigued\n\n**During Critical Operations:**\n- Increase monitoring and cross-checks\n- Avoid sole reliance on fatigued individuals\n- Consider delaying non-urgent critical tasks"
+    }
+  }
+}

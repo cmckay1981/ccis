@@ -1,0 +1,2722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well Volumes Calculator - OGLMS Digital</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2c5282;
+            --accent: #ed8936;
+            --success: #38a169;
+            --warning: #d69e2e;
+            --danger: #e53e3e;
+            --bg: #f7fafc;
+            --card-bg: #ffffff;
+            --text: #2d3748;
+            --border: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        .container { max-width: 1600px; margin: 0 auto; padding: 15px; }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 { font-size: 1.4rem; }
+        .header-controls { display: flex; gap: 10px; align-items: center; }
+        .unit-toggle {
+            display: flex;
+            gap: 5px;
+            background: rgba(255,255,255,0.1);
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .unit-toggle button {
+            padding: 5px 12px;
+            border: none;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 0.85rem;
+        }
+        .unit-toggle button.active {
+            background: var(--accent);
+        }
+
+        .tabs {
+            display: flex;
+            gap: 3px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            background: var(--card-bg);
+            padding: 5px;
+            border-radius: 8px;
+        }
+        .tab {
+            padding: 8px 15px;
+            background: transparent;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+            color: var(--text);
+        }
+        .tab:hover { background: #edf2f7; }
+        .tab.active {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .section {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: var(--primary);
+            font-size: 1rem;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section h3 {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            margin: 12px 0 8px;
+        }
+
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 8px;
+        }
+        .form-group label {
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 3px;
+            color: var(--secondary);
+        }
+        .form-group input, .form-group select {
+            padding: 6px 10px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+        .form-group .unit {
+            font-size: 0.75rem;
+            color: #718096;
+        }
+        .input-row {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .input-row input { flex: 1; }
+        .input-row .unit-label {
+            font-size: 0.8rem;
+            color: #718096;
+            min-width: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+        th, td {
+            padding: 8px 10px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        th {
+            background: #edf2f7;
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: var(--secondary);
+        }
+        td input {
+            width: 100%;
+            padding: 5px 8px;
+            border: 1px solid var(--border);
+            border-radius: 3px;
+            font-size: 0.85rem;
+        }
+        td.result {
+            font-weight: 600;
+            color: var(--primary);
+            background: #f7fafc;
+        }
+        tr.total-row {
+            background: #edf2f7;
+            font-weight: 600;
+        }
+        tr.total-row td { border-top: 2px solid var(--secondary); }
+
+        .dashboard-card {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .dashboard-card .label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
+        .dashboard-card .value {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        .dashboard-card .sub {
+            font-size: 0.75rem;
+            opacity: 0.7;
+            margin-top: 3px;
+        }
+
+        .well-schematic {
+            background: #1a202c;
+            border-radius: 8px;
+            padding: 20px;
+            color: white;
+            min-height: 400px;
+            position: relative;
+        }
+        .well-schematic .well-bore {
+            width: 60px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .well-section {
+            border: 2px solid;
+            margin-bottom: -2px;
+            padding: 10px 5px;
+            text-align: center;
+            font-size: 0.75rem;
+            position: relative;
+        }
+        .well-section .depth-label {
+            position: absolute;
+            right: -80px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.7rem;
+            white-space: nowrap;
+        }
+        .well-section .vol-label {
+            position: absolute;
+            left: -90px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.7rem;
+            white-space: nowrap;
+            text-align: right;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .btn-primary { background: var(--secondary); color: white; }
+        .btn-primary:hover { background: var(--primary); }
+        .btn-success { background: var(--success); color: white; }
+        .btn-warning { background: var(--warning); color: white; }
+        .btn-sm { padding: 5px 10px; font-size: 0.8rem; }
+
+        .conversion-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .conversion-item {
+            background: #f7fafc;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+        .conversion-item .from { color: #718096; }
+        .conversion-item .to { font-weight: 600; color: var(--primary); }
+
+        .kill-sheet-step {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px;
+            background: #f7fafc;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            border-left: 4px solid var(--secondary);
+        }
+        .kill-sheet-step .step-num {
+            background: var(--secondary);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+        .kill-sheet-step .step-content { flex: 1; }
+        .kill-sheet-step .step-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        .sub-tab-content { display: none; }
+        .sub-tab-content.active { display: block; }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: help;
+            margin-left: 5px;
+            color: var(--accent);
+            font-weight: 600;
+        }
+        .tooltip:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2d3748;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            white-space: nowrap;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+        .tooltip:hover::before {
+            content: '';
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #2d3748;
+            z-index: 1000;
+        }
+
+        .reference-table-container {
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+        .reference-table-container::-webkit-scrollbar {
+            width: 8px;
+        }
+        .reference-table-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .reference-table-container::-webkit-scrollbar-thumb {
+            background: var(--secondary);
+            border-radius: 4px;
+        }
+
+        .bop-page {
+            background: white;
+            padding: 20px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .bop-page h3 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .save-load-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .formula-display {
+            background: #f8f9fa;
+            padding: 10px;
+            border-left: 4px solid var(--accent);
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            margin: 5px 0;
+        }
+
+        .pump-table-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .pump-table-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid var(--border);
+        }
+        .pump-table-card h4 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .density-table {
+            font-size: 0.85rem;
+        }
+        .density-table td {
+            padding: 6px 8px;
+        }
+
+        select.pipe-selector {
+            width: 100%;
+            padding: 6px 10px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-size: 0.9rem;
+            background-color: white;
+        }
+
+        .alert {
+            padding: 12px 16px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+        .alert-info {
+            background: #e6f7ff;
+            border-left: 4px solid #1890ff;
+            color: #096dd9;
+        }
+        .alert-warning {
+            background: #fffbe6;
+            border-left: 4px solid #faad14;
+            color: #ad6800;
+        }
+        .alert-success {
+            background: #f6ffed;
+            border-left: 4px solid #52c41a;
+            color: #389e0d;
+        }
+
+        .sub-tabs {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--border);
+        }
+        .sub-tab {
+            padding: 8px 16px;
+            background: transparent;
+            border: none;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+            color: var(--text);
+        }
+        .sub-tab:hover { color: var(--secondary); }
+        .sub-tab.active {
+            color: var(--secondary);
+            border-bottom-color: var(--accent);
+        }
+
+        .schematic-enhanced {
+            background: linear-gradient(to bottom, #0a1929, #1a2332);
+            border-radius: 8px;
+            padding: 30px;
+            color: white;
+            min-height: 500px;
+            position: relative;
+            overflow-x: auto;
+        }
+
+        .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+        .grid-6 { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+
+        @media (max-width: 768px) {
+            .grid-2, .grid-3, .grid-4, .grid-5, .grid-6 { grid-template-columns: 1fr; }
+            .header-controls { flex-direction: column; }
+        }
+        @media print {
+            .no-print { display: none; }
+            .section { break-inside: avoid; page-break-inside: avoid; }
+            .bop-page { page-break-after: always; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>🛢️ Well Volumes Calculator</h1>
+                <small>Digital OGLMS - Volume, Kill Sheet & Displacement Tracking</small>
+            </div>
+            <div class="header-controls no-print">
+                <div class="unit-toggle">
+                    <button id="btnImperial" class="active" onclick="setUnits('imperial')">Imperial</button>
+                    <button id="btnMetric" onclick="setUnits('metric')">Metric</button>
+                </div>
+                <button class="btn btn-primary btn-sm" onclick="saveConfiguration()">💾 Save</button>
+                <button class="btn btn-primary btn-sm" onclick="loadConfiguration()">📂 Load</button>
+                <button class="btn btn-success btn-sm" onclick="exportToPDF()">📄 Export PDF</button>
+                <button class="btn btn-success" onclick="window.print()">🖨️ Print</button>
+            </div>
+        </header>
+
+        <div class="tabs no-print">
+            <button class="tab active" onclick="showTab('dashboard')">📊 Dashboard</button>
+            <button class="tab" onclick="showTab('bopkillsheet')">🛡️ BOP Kill Sheet</button>
+            <button class="tab" onclick="showTab('units')">⚙️ Units</button>
+            <button class="tab" onclick="showTab('strings')">🔧 Strings</button>
+            <button class="tab" onclick="showTab('well')">🕳️ Well Sections</button>
+            <button class="tab" onclick="showTab('annular')">📏 Annular Volumes</button>
+            <button class="tab" onclick="showTab('pipereference')">📚 Pipe Reference</button>
+            <button class="tab" onclick="showTab('densitytables')">⚖️ Density Tables</button>
+            <button class="tab" onclick="showTab('killsheet')">📋 Kill Sheet</button>
+            <button class="tab" onclick="showTab('conversions')">🔄 Conversions</button>
+            <button class="tab" onclick="showTab('schematic')">🖼️ Well Schematic</button>
+            <button class="tab" onclick="showTab('stroketracker')">📍 Stroke Tracker</button>
+        </div>
+
+        <!-- DASHBOARD TAB -->
+        <div id="dashboard" class="tab-content active">
+            <div class="section">
+                <h2>Quick View Dashboard</h2>
+                <div class="grid-4" style="margin-bottom: 20px;">
+                    <div class="dashboard-card">
+                        <div class="label">Total String Volume</div>
+                        <div class="value" id="dashStringVol">0</div>
+                        <div class="sub"><span class="dash-unit-vol">bbl</span></div>
+                    </div>
+                    <div class="dashboard-card" style="background: linear-gradient(135deg, #2c5282, #4299e1);">
+                        <div class="label">Total Annular Volume</div>
+                        <div class="value" id="dashAnnVol">0</div>
+                        <div class="sub"><span class="dash-unit-vol">bbl</span></div>
+                    </div>
+                    <div class="dashboard-card" style="background: linear-gradient(135deg, #38a169, #68d391);">
+                        <div class="label">Displacement Strokes</div>
+                        <div class="value" id="dashStrokes">0</div>
+                        <div class="sub">strokes</div>
+                    </div>
+                    <div class="dashboard-card" style="background: linear-gradient(135deg, #d69e2e, #ecc94b);">
+                        <div class="label">Pump Time</div>
+                        <div class="value" id="dashTime">0</div>
+                        <div class="sub">minutes</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="section">
+                    <h2>String Volumes Summary</h2>
+                    <table>
+                        <thead>
+                            <tr><th>Component</th><th class="dash-unit-vol">Volume (bbl)</th><th>Strokes</th></tr>
+                        </thead>
+                        <tbody id="dashStringTable">
+                            <tr><td colspan="3" style="text-align:center; color:#718096;">Enter data in Strings tab</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section">
+                    <h2>Annular Volumes Summary</h2>
+                    <table>
+                        <thead>
+                            <tr><th>Section</th><th class="dash-unit-vol">Volume (bbl)</th><th>Strokes</th></tr>
+                        </thead>
+                        <tbody id="dashAnnTable">
+                            <tr><td colspan="3" style="text-align:center; color:#718096;">Enter data in Well Sections tab</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOP KILL SHEET TAB -->
+        <div id="bopkillsheet" class="tab-content">
+            <div class="alert alert-info">
+                <strong>Subsea BOP Well Control Kill Sheet</strong> - Complete well control calculations with barrier envelope analysis, pump output tables, and detailed kill procedures.
+            </div>
+
+            <div class="sub-tabs">
+                <button class="sub-tab active" onclick="showSubTab('bop-page1')">Page 1: Well Data</button>
+                <button class="sub-tab" onclick="showSubTab('bop-page2')">Page 2: Kill Calculations</button>
+                <button class="sub-tab" onclick="showSubTab('bop-page3')">Page 3: Pump Outputs</button>
+            </div>
+
+            <!-- BOP PAGE 1: WELL DATA -->
+            <div id="bop-page1" class="sub-tab-content active">
+                <div class="bop-page">
+                    <h3>Page 1: Well Configuration & Volumes</h3>
+
+                    <div class="section">
+                        <h2>Well Information</h2>
+                        <div class="grid-4">
+                            <div class="form-group">
+                                <label>Well Name</label>
+                                <input type="text" id="bopWellName" placeholder="Well-001">
+                            </div>
+                            <div class="form-group">
+                                <label>Rig Name</label>
+                                <input type="text" id="bopRigName" placeholder="Rig Name">
+                            </div>
+                            <div class="form-group">
+                                <label>Water Depth <span class="tooltip" data-tooltip="Depth from rig floor to mudline">?</span></label>
+                                <input type="number" id="bopWaterDepth" placeholder="5000" onchange="calcBOP()">
+                                <span class="unit unit-len">ft</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Date</label>
+                                <input type="date" id="bopDate">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Casing/Tubing Configuration</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>String</th>
+                                    <th>OD (<span class="unit-dia">in</span>)</th>
+                                    <th>ID (<span class="unit-dia">in</span>)</th>
+                                    <th>Depth (<span class="unit-len">ft</span>)</th>
+                                    <th>Shoe Depth (<span class="unit-len">ft</span>)</th>
+                                    <th class="no-print">Select From Library</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Surface Casing</td>
+                                    <td><input type="number" step="0.001" id="bopSurfOD" value="13.375" onchange="calcBOP()"></td>
+                                    <td><input type="number" step="0.001" id="bopSurfID" value="12.615" onchange="calcBOP()"></td>
+                                    <td><input type="number" id="bopSurfTop" value="0" onchange="calcBOP()"></td>
+                                    <td><input type="number" id="bopSurfShoe" value="3000" onchange="calcBOP()"></td>
+                                    <td class="no-print"><select class="pipe-selector" onchange="applyPipeData(this, 'bopSurf')"></select></td>
+                                </tr>
+                                <tr>
+                                    <td>Intermediate Casing</td>
+                                    <td><input type="number" step="0.001" id="bopIntOD" value="9.625" onchange="calcBOP()"></td>
+                                    <td><input type="number" step="0.001" id="bopIntID" value="8.921" onchange="calcBOP()"></td>
+                                    <td><input type="number" id="bopIntTop" value="3000" onchange="calcBOP()"></td>
+                                    <td><input type="number" id="bopIntShoe" value="8000" onchange="calcBOP()"></td>
+                                    <td class="no-print"><select class="pipe-selector" onchange="applyPipeData(this, 'bopInt')"></select></td>
+                                </tr>
+                                <tr>
+                                    <td>Production Casing</td>
+                                    <td><input type="number" step="0.001" id="bopProdOD" value="7.0" onchange="calcBOP()"></td>
+                                    <td><input type="number" step="0.001" id="bopProdID" value="6.366" onchange="calcBOP()"></td>
+                                    <td><input type="number" id="bopProdTop" value="8000" onchange="calcBOP()"></td>
+                                    <td><input type="number" id="bopProdShoe" value="12000" onchange="calcBOP()"></td>
+                                    <td class="no-print"><select class="pipe-selector" onchange="applyPipeData(this, 'bopProd')"></select></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="section">
+                        <h2>Drill String Configuration</h2>
+                        <div class="grid-3">
+                            <div class="form-group">
+                                <label>Drill Pipe Size</label>
+                                <select class="pipe-selector" id="bopDrillPipe" onchange="applyDrillPipeData()">
+                                    <option value="">Select size...</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>DP Length (<span class="unit-len">ft</span>)</label>
+                                <input type="number" id="bopDPLength" value="10000" onchange="calcBOP()">
+                            </div>
+                            <div class="form-group">
+                                <label>DC Length (<span class="unit-len">ft</span>)</label>
+                                <input type="number" id="bopDCLength" value="500" onchange="calcBOP()">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Calculated Volumes</h2>
+                        <div class="grid-4">
+                            <div class="dashboard-card">
+                                <div class="label">String Volume</div>
+                                <div class="value" id="bopStringVol">0</div>
+                                <div class="sub"><span class="unit-vol">bbl</span></div>
+                            </div>
+                            <div class="dashboard-card" style="background: linear-gradient(135deg, #2c5282, #4299e1);">
+                                <div class="label">Annular Volume</div>
+                                <div class="value" id="bopAnnVol">0</div>
+                                <div class="sub"><span class="unit-vol">bbl</span></div>
+                            </div>
+                            <div class="dashboard-card" style="background: linear-gradient(135deg, #38a169, #68d391);">
+                                <div class="label">Total System Volume</div>
+                                <div class="value" id="bopTotalVol">0</div>
+                                <div class="sub"><span class="unit-vol">bbl</span></div>
+                            </div>
+                            <div class="dashboard-card" style="background: linear-gradient(135deg, #d69e2e, #ecc94b);">
+                                <div class="label">Riser Volume</div>
+                                <div class="value" id="bopRiserVol">0</div>
+                                <div class="sub"><span class="unit-vol">bbl</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOP PAGE 2: KILL CALCULATIONS -->
+            <div id="bop-page2" class="sub-tab-content">
+                <div class="bop-page">
+                    <h3>Page 2: Kill Sheet Calculations & Barrier Envelope</h3>
+
+                    <div class="section">
+                        <h2>Kick Parameters</h2>
+                        <div class="grid-6">
+                            <div class="form-group">
+                                <label>Kick Volume <span class="tooltip" data-tooltip="Pit gain volume">?</span></label>
+                                <input type="number" id="bopKickVol" placeholder="20" onchange="calcBOP()">
+                                <span class="unit unit-vol">bbl</span>
+                            </div>
+                            <div class="form-group">
+                                <label>SIDPP <span class="tooltip" data-tooltip="Shut-in Drill Pipe Pressure">?</span></label>
+                                <input type="number" id="bopSIDPP" placeholder="500" onchange="calcBOP()">
+                                <span class="unit unit-press">psi</span>
+                            </div>
+                            <div class="form-group">
+                                <label>SICP <span class="tooltip" data-tooltip="Shut-in Casing Pressure">?</span></label>
+                                <input type="number" id="bopSICP" placeholder="650" onchange="calcBOP()">
+                                <span class="unit unit-press">psi</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Current MW</label>
+                                <input type="number" step="0.1" id="bopCurrentMW" placeholder="12.0" onchange="calcBOP()">
+                                <span class="unit unit-mw">ppg</span>
+                            </div>
+                            <div class="form-group">
+                                <label>TVD at Bit</label>
+                                <input type="number" id="bopTVD" placeholder="12000" onchange="calcBOP()">
+                                <span class="unit unit-len">ft</span>
+                            </div>
+                            <div class="form-group">
+                                <label>SCR Pressure <span class="tooltip" data-tooltip="Slow Circulating Rate pressure">?</span></label>
+                                <input type="number" id="bopSCR" placeholder="800" onchange="calcBOP()">
+                                <span class="unit unit-press">psi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Kill Mud Calculations</h2>
+                        <div class="grid-2">
+                            <div>
+                                <div class="kill-sheet-step">
+                                    <div class="step-num">1</div>
+                                    <div class="step-content">
+                                        <div>Formation Pressure</div>
+                                        <div class="formula-display">FP = SIDPP + (MW × 0.052 × TVD)</div>
+                                    </div>
+                                    <div class="step-value" id="bopFP">-</div>
+                                    <span class="unit-press">psi</span>
+                                </div>
+                                <div class="kill-sheet-step">
+                                    <div class="step-num">2</div>
+                                    <div class="step-content">
+                                        <div>Kill Weight Mud (KWM)</div>
+                                        <div class="formula-display">KWM = MW + (SIDPP ÷ 0.052 ÷ TVD)</div>
+                                    </div>
+                                    <div class="step-value" id="bopKWM">-</div>
+                                    <span class="unit-mw">ppg</span>
+                                </div>
+                                <div class="kill-sheet-step">
+                                    <div class="step-num">3</div>
+                                    <div class="step-content">
+                                        <div>ICP (Initial Circulating Pressure)</div>
+                                        <div class="formula-display">ICP = SCR + SIDPP</div>
+                                    </div>
+                                    <div class="step-value" id="bopICP">-</div>
+                                    <span class="unit-press">psi</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="kill-sheet-step">
+                                    <div class="step-num">4</div>
+                                    <div class="step-content">
+                                        <div>FCP (Final Circulating Pressure)</div>
+                                        <div class="formula-display">FCP = SCR × (KWM ÷ MW)</div>
+                                    </div>
+                                    <div class="step-value" id="bopFCP">-</div>
+                                    <span class="unit-press">psi</span>
+                                </div>
+                                <div class="kill-sheet-step">
+                                    <div class="step-num">5</div>
+                                    <div class="step-content">
+                                        <div>Strokes to Bit</div>
+                                        <div class="formula-display">STB = String Volume ÷ Pump Output</div>
+                                    </div>
+                                    <div class="step-value" id="bopSTB">-</div>
+                                    <span>strokes</span>
+                                </div>
+                                <div class="kill-sheet-step">
+                                    <div class="step-num">6</div>
+                                    <div class="step-content">
+                                        <div>Kick Gradient</div>
+                                        <div class="formula-display">KG = (SICP - SIDPP) ÷ 0.052 ÷ TVD</div>
+                                    </div>
+                                    <div class="step-value" id="bopKickGrad">-</div>
+                                    <span class="unit-mw">ppg</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Barrier Envelope Analysis</h2>
+                        <div class="grid-3">
+                            <div class="form-group">
+                                <label>Shoe TVD</label>
+                                <input type="number" id="bopBarrierShoeTVD" placeholder="8000" onchange="calcBOP()">
+                                <span class="unit unit-len">ft</span>
+                            </div>
+                            <div class="form-group">
+                                <label>LOT/FIT at Shoe <span class="tooltip" data-tooltip="Leak-off test equivalent mud weight">?</span></label>
+                                <input type="number" step="0.1" id="bopLOT" placeholder="14.5" onchange="calcBOP()">
+                                <span class="unit unit-mw">ppg</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Max Allowable Annular Pressure (MAASP)</label>
+                                <input type="text" id="bopMAASP" readonly style="background:#edf2f7; font-weight:600;">
+                                <span class="unit unit-press">psi</span>
+                            </div>
+                        </div>
+                        <div class="alert alert-warning" id="bopBarrierAlert" style="display:none;">
+                            <strong>Warning:</strong> Current annulus pressure exceeds MAASP. Risk of fracturing formation at shoe.
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Pressure Step Schedule (ICP to FCP)</h2>
+                        <div class="reference-table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Strokes</th>
+                                        <th>DP Pressure (<span class="unit-press">psi</span>)</th>
+                                        <th>% Complete</th>
+                                        <th>Cumulative Time (min)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="bopStepSchedule">
+                                    <tr><td colspan="4" style="text-align:center; color:#718096;">Enter kick data to generate schedule</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOP PAGE 3: PUMP OUTPUTS -->
+            <div id="bop-page3" class="sub-tab-content">
+                <div class="bop-page">
+                    <h3>Page 3: Pump Output Tables</h3>
+
+                    <div class="section">
+                        <h2>Configure Pump Parameters</h2>
+                        <div class="grid-6">
+                            <div class="form-group">
+                                <label>Pump 1 Liner Size</label>
+                                <select id="pump1Liner" onchange="calcPumpOutputs()">
+                                    <option value="5.0">5.0"</option>
+                                    <option value="5.5">5.5"</option>
+                                    <option value="6.0" selected>6.0"</option>
+                                    <option value="6.5">6.5"</option>
+                                    <option value="7.0">7.0"</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Pump 1 Efficiency (%)</label>
+                                <input type="number" id="pump1Eff" value="95" min="1" max="100" onchange="calcPumpOutputs()">
+                            </div>
+                            <div class="form-group">
+                                <label>Pump 2 Liner Size</label>
+                                <select id="pump2Liner" onchange="calcPumpOutputs()">
+                                    <option value="5.0">5.0"</option>
+                                    <option value="5.5">5.5"</option>
+                                    <option value="6.0" selected>6.0"</option>
+                                    <option value="6.5">6.5"</option>
+                                    <option value="7.0">7.0"</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Pump 2 Efficiency (%)</label>
+                                <input type="number" id="pump2Eff" value="95" min="1" max="100" onchange="calcPumpOutputs()">
+                            </div>
+                            <div class="form-group">
+                                <label>Stroke Length</label>
+                                <input type="number" step="0.1" id="strokeLength" value="12" onchange="calcPumpOutputs()">
+                                <span class="unit">inches</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Triplex/Duplex</label>
+                                <select id="pumpType" onchange="calcPumpOutputs()">
+                                    <option value="triplex" selected>Triplex</option>
+                                    <option value="duplex">Duplex</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pump-table-container">
+                        <div class="pump-table-card">
+                            <h4>Pump 1 Output Table</h4>
+                            <table class="density-table">
+                                <thead>
+                                    <tr>
+                                        <th>SPM</th>
+                                        <th>bbl/stk</th>
+                                        <th>bbl/min</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="pump1Table"></tbody>
+                            </table>
+                        </div>
+                        <div class="pump-table-card">
+                            <h4>Pump 2 Output Table</h4>
+                            <table class="density-table">
+                                <thead>
+                                    <tr>
+                                        <th>SPM</th>
+                                        <th>bbl/stk</th>
+                                        <th>bbl/min</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="pump2Table"></tbody>
+                            </table>
+                        </div>
+                        <div class="pump-table-card">
+                            <h4>Combined Pumps Output</h4>
+                            <table class="density-table">
+                                <thead>
+                                    <tr>
+                                        <th>SPM (each)</th>
+                                        <th>Total bbl/min</th>
+                                        <th>Time to Circulate</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="pumpCombinedTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="section" style="margin-top: 20px;">
+                        <h2>Slow Circulating Rate (SCR) Test Data</h2>
+                        <div class="grid-5">
+                            <div class="form-group">
+                                <label>Test Rate (SPM)</label>
+                                <input type="number" id="scrTestRate" placeholder="30" onchange="calcBOP()">
+                            </div>
+                            <div class="form-group">
+                                <label>SCR Pressure</label>
+                                <input type="number" id="scrTestPressure" placeholder="800" onchange="calcBOP()">
+                                <span class="unit unit-press">psi</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Test Date</label>
+                                <input type="date" id="scrTestDate">
+                            </div>
+                            <div class="form-group">
+                                <label>Mud Weight at Test</label>
+                                <input type="number" step="0.1" id="scrTestMW" placeholder="12.0">
+                                <span class="unit unit-mw">ppg</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Flow Rate</label>
+                                <input type="text" id="scrFlowRate" readonly style="background:#edf2f7;">
+                                <span class="unit">bbl/min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNITS TAB -->
+        <div id="units" class="tab-content">
+            <div class="section">
+                <h2>Unit System Selection</h2>
+                <p style="margin-bottom: 15px;">Select your preferred unit system. All calculations will update automatically.</p>
+
+                <div class="grid-3">
+                    <div class="form-group">
+                        <label>Length/Depth</label>
+                        <select id="unitLength" onchange="updateUnits()">
+                            <option value="ft">Feet (ft)</option>
+                            <option value="m">Meters (m)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Diameter</label>
+                        <select id="unitDiameter" onchange="updateUnits()">
+                            <option value="in">Inches (in)</option>
+                            <option value="mm">Millimeters (mm)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Volume</label>
+                        <select id="unitVolume" onchange="updateUnits()">
+                            <option value="bbl">Barrels (bbl)</option>
+                            <option value="m3">Cubic Meters (m³)</option>
+                            <option value="L">Liters (L)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Mud Weight</label>
+                        <select id="unitMW" onchange="updateUnits()">
+                            <option value="ppg">PPG (lb/gal)</option>
+                            <option value="sg">SG (Specific Gravity)</option>
+                            <option value="kgm3">kg/m³</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Pressure</label>
+                        <select id="unitPressure" onchange="updateUnits()">
+                            <option value="psi">PSI</option>
+                            <option value="bar">Bar</option>
+                            <option value="kPa">kPa</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Pump Output</label>
+                        <select id="unitPump" onchange="updateUnits()">
+                            <option value="bbl/stk">bbl/stroke</option>
+                            <option value="L/stk">L/stroke</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <button class="btn btn-primary" onclick="setUnits('imperial')">Set Imperial (US)</button>
+                    <button class="btn btn-primary" onclick="setUnits('metric')">Set Metric (SI)</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PIPE REFERENCE TAB -->
+        <div id="pipereference" class="tab-content">
+            <div class="alert alert-info">
+                <strong>Pipe Capacity Reference Library</strong> - Standard pipe sizes with internal capacities and displacements. Data loaded from pipe-capacities.json.
+            </div>
+
+            <div class="sub-tabs">
+                <button class="sub-tab active" onclick="showSubTab('ref-drillpipe')">Drill Pipe</button>
+                <button class="sub-tab" onclick="showSubTab('ref-drillcollars')">Drill Collars</button>
+                <button class="sub-tab" onclick="showSubTab('ref-hwdp')">HWDP</button>
+                <button class="sub-tab" onclick="showSubTab('ref-casing')">Casing</button>
+                <button class="sub-tab" onclick="showSubTab('ref-openhole')">Open Hole</button>
+                <button class="sub-tab" onclick="showSubTab('ref-annular')">Annular Capacities</button>
+            </div>
+
+            <div id="ref-drillpipe" class="sub-tab-content active">
+                <div class="section">
+                    <h2>Drill Pipe Capacity Reference</h2>
+                    <div class="reference-table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Size</th>
+                                    <th>OD (in)</th>
+                                    <th>ID (in)</th>
+                                    <th>Weight (lb/ft)</th>
+                                    <th>Capacity (bbl/ft)</th>
+                                    <th>Displacement (bbl/ft)</th>
+                                    <th>Capacity (L/m)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="refDrillPipeTable"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ref-drillcollars" class="sub-tab-content">
+                <div class="section">
+                    <h2>Drill Collar Capacity Reference</h2>
+                    <div class="reference-table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Size</th>
+                                    <th>OD (in)</th>
+                                    <th>ID (in)</th>
+                                    <th>Weight (lb/ft)</th>
+                                    <th>Capacity (bbl/ft)</th>
+                                    <th>Displacement (bbl/ft)</th>
+                                    <th>Capacity (L/m)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="refDrillCollarsTable"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ref-hwdp" class="sub-tab-content">
+                <div class="section">
+                    <h2>Heavy Weight Drill Pipe (HWDP) Reference</h2>
+                    <div class="reference-table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Size</th>
+                                    <th>OD (in)</th>
+                                    <th>ID (in)</th>
+                                    <th>Weight (lb/ft)</th>
+                                    <th>Capacity (bbl/ft)</th>
+                                    <th>Displacement (bbl/ft)</th>
+                                    <th>Capacity (L/m)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="refHWDPTable"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ref-casing" class="sub-tab-content">
+                <div class="section">
+                    <h2>Casing/Tubing Capacity Reference</h2>
+                    <div class="reference-table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Size</th>
+                                    <th>Weight (lb/ft)</th>
+                                    <th>OD (in)</th>
+                                    <th>ID (in)</th>
+                                    <th>Grade</th>
+                                    <th>Capacity (bbl/ft)</th>
+                                    <th>Displacement (bbl/ft)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="refCasingTable"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ref-openhole" class="sub-tab-content">
+                <div class="section">
+                    <h2>Open Hole Capacity Reference</h2>
+                    <div class="reference-table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Hole Size</th>
+                                    <th>Diameter (in)</th>
+                                    <th>Capacity (bbl/ft)</th>
+                                    <th>Capacity (L/m)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="refOpenHoleTable"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ref-annular" class="sub-tab-content">
+                <div class="section">
+                    <h2>Common Annular Capacities</h2>
+                    <div class="reference-table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Hole/Casing Size</th>
+                                    <th>Pipe Size</th>
+                                    <th>Hole ID (in)</th>
+                                    <th>Pipe OD (in)</th>
+                                    <th>Annular Cap (bbl/ft)</th>
+                                    <th>Annular Cap (L/m)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="refAnnularTable"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DENSITY TABLES TAB -->
+        <div id="densitytables" class="tab-content">
+            <div class="section">
+                <h2>Mud Weight / Density Conversion Tables</h2>
+
+                <div class="grid-2" style="gap: 20px;">
+                    <div>
+                        <h3>PPG to SG and kg/m³</h3>
+                        <div class="reference-table-container" style="max-height: 500px;">
+                            <table class="density-table">
+                                <thead>
+                                    <tr>
+                                        <th>PPG</th>
+                                        <th>SG</th>
+                                        <th>kg/m³</th>
+                                        <th>psi/ft</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="densityTablePPG"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>SG to PPG and kg/m³</h3>
+                        <div class="reference-table-container" style="max-height: 500px;">
+                            <table class="density-table">
+                                <thead>
+                                    <tr>
+                                        <th>SG</th>
+                                        <th>PPG</th>
+                                        <th>kg/m³</th>
+                                        <th>bar/m</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="densityTableSG"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section" style="margin-top: 20px;">
+                    <h3>Common Fluid Densities</h3>
+                    <table class="density-table">
+                        <thead>
+                            <tr>
+                                <th>Fluid Type</th>
+                                <th>PPG</th>
+                                <th>SG</th>
+                                <th>kg/m³</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Fresh Water</td><td>8.33</td><td>1.00</td><td>1000</td></tr>
+                            <tr><td>Seawater</td><td>8.60</td><td>1.03</td><td>1030</td></tr>
+                            <tr><td>Light OBM</td><td>7.50</td><td>0.90</td><td>900</td></tr>
+                            <tr><td>Diesel</td><td>7.00</td><td>0.84</td><td>840</td></tr>
+                            <tr><td>Typical OBM</td><td>9.50</td><td>1.14</td><td>1140</td></tr>
+                            <tr><td>Light WBM</td><td>9.00</td><td>1.08</td><td>1080</td></tr>
+                            <tr><td>Medium WBM</td><td>12.0</td><td>1.44</td><td>1440</td></tr>
+                            <tr><td>Heavy WBM</td><td>15.0</td><td>1.80</td><td>1800</td></tr>
+                            <tr><td>Very Heavy WBM</td><td>18.0</td><td>2.16</td><td>2160</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Hydrostatic Pressure Calculator</h2>
+                <div class="grid-5">
+                    <div class="form-group">
+                        <label>Mud Weight</label>
+                        <input type="number" step="0.1" id="hydroMW" placeholder="12.0" onchange="calcHydrostatic()">
+                        <span class="unit unit-mw">ppg</span>
+                    </div>
+                    <div class="form-group">
+                        <label>TVD</label>
+                        <input type="number" id="hydroTVD" placeholder="10000" onchange="calcHydrostatic()">
+                        <span class="unit unit-len">ft</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Hydrostatic Pressure</label>
+                        <input type="text" id="hydroResult" readonly style="background:#edf2f7; font-weight:600;">
+                        <span class="unit unit-press">psi</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Gradient</label>
+                        <input type="text" id="hydroGrad" readonly style="background:#edf2f7; font-weight:600;">
+                        <span class="unit unit-press">/ft</span>
+                    </div>
+                    <div class="form-group">
+                        <label>&nbsp;</label>
+                        <button class="btn btn-primary" onclick="calcHydrostatic()">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STRINGS TAB -->
+        <div id="strings" class="tab-content">
+            <div class="section">
+                <h2>Drill String Components
+                    <button class="btn btn-sm btn-primary no-print" onclick="addStringRow()">+ Add Row</button>
+                </h2>
+                <p style="margin-bottom: 10px; color: #718096;">
+                    <strong>Tip:</strong> Use the "Select From Library" dropdown to quickly populate pipe data from the reference library.
+                </p>
+                <table id="stringsTable">
+                    <thead>
+                        <tr>
+                            <th>Component</th>
+                            <th>OD (<span class="unit-dia">in</span>)</th>
+                            <th>ID (<span class="unit-dia">in</span>)</th>
+                            <th>Length (<span class="unit-len">ft</span>)</th>
+                            <th>Capacity (<span class="unit-cap">bbl/ft</span>)</th>
+                            <th>Volume (<span class="unit-vol">bbl</span>)</th>
+                            <th>Disp (<span class="unit-vol">bbl</span>)</th>
+                            <th class="no-print">Library</th>
+                            <th class="no-print"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="stringsBody">
+                        <!-- Rows added dynamically -->
+                    </tbody>
+                    <tfoot>
+                        <tr class="total-row">
+                            <td colspan="4"><strong>TOTALS</strong></td>
+                            <td>-</td>
+                            <td class="result" id="totalStringVol">0</td>
+                            <td class="result" id="totalStringDisp">0</td>
+                            <td class="no-print" colspan="2"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>Pump Data</h2>
+                <div class="grid-3">
+                    <div class="form-group">
+                        <label>Pump Output</label>
+                        <input type="number" id="pumpOutput" value="0.117" step="0.001" onchange="recalcAll()">
+                        <span class="unit unit-pump">bbl/stk</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Pump Rate (SPM)</label>
+                        <input type="number" id="pumpSPM" value="60" onchange="recalcAll()">
+                        <span class="unit">strokes/min</span>
+                    </div>
+                    <div class="form-group">
+                        <label>String Strokes</label>
+                        <input type="text" id="stringStrokes" readonly style="background:#edf2f7; font-weight:600;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WELL SECTIONS TAB -->
+        <div id="well" class="tab-content">
+            <div class="section">
+                <h2>Well Configuration
+                    <button class="btn btn-sm btn-primary no-print" onclick="addWellRow()">+ Add Section</button>
+                </h2>
+                <table id="wellTable">
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Hole/Casing ID (<span class="unit-dia">in</span>)</th>
+                            <th>String OD (<span class="unit-dia">in</span>)</th>
+                            <th>Top (<span class="unit-len">ft</span>)</th>
+                            <th>Bottom (<span class="unit-len">ft</span>)</th>
+                            <th>Length (<span class="unit-len">ft</span>)</th>
+                            <th>Ann Cap (<span class="unit-cap">bbl/ft</span>)</th>
+                            <th>Ann Vol (<span class="unit-vol">bbl</span>)</th>
+                            <th class="no-print"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="wellBody">
+                        <!-- Rows added dynamically -->
+                    </tbody>
+                    <tfoot>
+                        <tr class="total-row">
+                            <td colspan="6"><strong>TOTAL ANNULAR VOLUME</strong></td>
+                            <td>-</td>
+                            <td class="result" id="totalAnnVol">0</td>
+                            <td class="no-print"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <!-- ANNULAR VOLUMES TAB -->
+        <div id="annular" class="tab-content">
+            <div class="section">
+                <h2>Standard Pipe Annular Capacities</h2>
+                <p style="margin-bottom: 15px; color: #718096;">Reference table for common pipe-in-hole combinations</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hole/Casing</th>
+                            <th>Pipe OD</th>
+                            <th>Annular Capacity (bbl/ft)</th>
+                            <th>Annular Capacity (L/m)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>17.5" OH</td><td>5" DP</td><td>0.2733</td><td>143.1</td></tr>
+                        <tr><td>12.25" OH</td><td>5" DP</td><td>0.1215</td><td>63.6</td></tr>
+                        <tr><td>12.25" OH</td><td>6.5" DC</td><td>0.1049</td><td>54.9</td></tr>
+                        <tr><td>8.5" OH</td><td>5" DP</td><td>0.0459</td><td>24.0</td></tr>
+                        <tr><td>8.5" OH</td><td>4.75" DC</td><td>0.0482</td><td>25.2</td></tr>
+                        <tr><td>13-3/8" Csg</td><td>5" DP</td><td>0.1256</td><td>65.7</td></tr>
+                        <tr><td>9-5/8" Csg</td><td>5" DP</td><td>0.0515</td><td>27.0</td></tr>
+                        <tr><td>7" Csg</td><td>3.5" DP</td><td>0.0289</td><td>15.1</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>Quick Annular Calculator</h2>
+                <div class="grid-4">
+                    <div class="form-group">
+                        <label>Hole/Casing ID</label>
+                        <input type="number" id="quickHoleID" step="0.001" placeholder="12.25">
+                        <span class="unit unit-dia">in</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Pipe OD</label>
+                        <input type="number" id="quickPipeOD" step="0.001" placeholder="5.0">
+                        <span class="unit unit-dia">in</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Length</label>
+                        <input type="number" id="quickLength" placeholder="1000">
+                        <span class="unit unit-len">ft</span>
+                    </div>
+                    <div class="form-group">
+                        <label><button class="btn btn-sm btn-primary" onclick="quickAnnCalc()">Calculate</button></label>
+                    </div>
+                </div>
+                <div id="quickAnnResult" style="margin-top: 15px;"></div>
+            </div>
+        </div>
+
+        <!-- KILL SHEET TAB -->
+        <div id="killsheet" class="tab-content">
+            <div class="section">
+                <h2>Kill Sheet - Well Data</h2>
+                <div class="grid-4">
+                    <div class="form-group">
+                        <label>Current Mud Weight</label>
+                        <input type="number" id="killMW" step="0.1" placeholder="12.0" onchange="calcKillSheet()">
+                        <span class="unit unit-mw">ppg</span>
+                    </div>
+                    <div class="form-group">
+                        <label>TVD at Bit</label>
+                        <input type="number" id="killTVD" placeholder="10000" onchange="calcKillSheet()">
+                        <span class="unit unit-len">ft</span>
+                    </div>
+                    <div class="form-group">
+                        <label>SIDPP</label>
+                        <input type="number" id="killSIDPP" placeholder="500" onchange="calcKillSheet()">
+                        <span class="unit unit-press">psi</span>
+                    </div>
+                    <div class="form-group">
+                        <label>SICP</label>
+                        <input type="number" id="killSICP" placeholder="650" onchange="calcKillSheet()">
+                        <span class="unit unit-press">psi</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Pit Gain</label>
+                        <input type="number" id="killGain" placeholder="20" onchange="calcKillSheet()">
+                        <span class="unit unit-vol">bbl</span>
+                    </div>
+                    <div class="form-group">
+                        <label>SCR Pressure</label>
+                        <input type="number" id="killSCR" placeholder="800" onchange="calcKillSheet()">
+                        <span class="unit unit-press">psi</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Shoe TVD</label>
+                        <input type="number" id="killShoeTVD" placeholder="8000" onchange="calcKillSheet()">
+                        <span class="unit unit-len">ft</span>
+                    </div>
+                    <div class="form-group">
+                        <label>LOT EMW at Shoe</label>
+                        <input type="number" id="killLOT" step="0.1" placeholder="14.5" onchange="calcKillSheet()">
+                        <span class="unit unit-mw">ppg</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Kill Sheet Calculations</h2>
+                <div class="grid-2">
+                    <div>
+                        <div class="kill-sheet-step">
+                            <div class="step-num">1</div>
+                            <div class="step-content">
+                                <div>Formation Pressure</div>
+                                <small>SIDPP + (MW × 0.052 × TVD)</small>
+                            </div>
+                            <div class="step-value" id="killFP">-</div>
+                            <span class="unit-press">psi</span>
+                        </div>
+                        <div class="kill-sheet-step">
+                            <div class="step-num">2</div>
+                            <div class="step-content">
+                                <div>Kill Weight Mud</div>
+                                <small>MW + (SIDPP / 0.052 / TVD)</small>
+                            </div>
+                            <div class="step-value" id="killKWM">-</div>
+                            <span class="unit-mw">ppg</span>
+                        </div>
+                        <div class="kill-sheet-step">
+                            <div class="step-num">3</div>
+                            <div class="step-content">
+                                <div>ICP (Initial Circulating Pressure)</div>
+                                <small>SCR + SIDPP</small>
+                            </div>
+                            <div class="step-value" id="killICP">-</div>
+                            <span class="unit-press">psi</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="kill-sheet-step">
+                            <div class="step-num">4</div>
+                            <div class="step-content">
+                                <div>FCP (Final Circulating Pressure)</div>
+                                <small>SCR × (KWM / MW)</small>
+                            </div>
+                            <div class="step-value" id="killFCP">-</div>
+                            <span class="unit-press">psi</span>
+                        </div>
+                        <div class="kill-sheet-step">
+                            <div class="step-num">5</div>
+                            <div class="step-content">
+                                <div>MAASP</div>
+                                <small>(LOT - KWM) × 0.052 × Shoe TVD</small>
+                            </div>
+                            <div class="step-value" id="killMAASP">-</div>
+                            <span class="unit-press">psi</span>
+                        </div>
+                        <div class="kill-sheet-step">
+                            <div class="step-num">6</div>
+                            <div class="step-content">
+                                <div>Strokes to Bit</div>
+                                <small>String Volume / Pump Output</small>
+                            </div>
+                            <div class="step-value" id="killSTB">-</div>
+                            <span>stk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Pressure Step Chart (ICP → FCP)</h2>
+                <table id="stepChart">
+                    <thead>
+                        <tr>
+                            <th>Strokes</th>
+                            <th>DP Pressure (<span class="unit-press">psi</span>)</th>
+                            <th>% Complete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stepChartBody">
+                        <tr><td colspan="3" style="text-align:center; color:#718096;">Enter kill sheet data above</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- CONVERSIONS TAB -->
+        <div id="conversions" class="tab-content">
+            <div class="section">
+                <h2>Unit Conversions Reference</h2>
+
+                <h3>Length</h3>
+                <div class="conversion-grid">
+                    <div class="conversion-item"><span class="from">1 ft</span> = <span class="to">0.3048 m</span></div>
+                    <div class="conversion-item"><span class="from">1 m</span> = <span class="to">3.281 ft</span></div>
+                    <div class="conversion-item"><span class="from">1 inch</span> = <span class="to">25.4 mm</span></div>
+                    <div class="conversion-item"><span class="from">1 mm</span> = <span class="to">0.03937 in</span></div>
+                </div>
+
+                <h3>Volume</h3>
+                <div class="conversion-grid">
+                    <div class="conversion-item"><span class="from">1 bbl</span> = <span class="to">159 liters</span></div>
+                    <div class="conversion-item"><span class="from">1 bbl</span> = <span class="to">42 US gal</span></div>
+                    <div class="conversion-item"><span class="from">1 bbl</span> = <span class="to">5.615 ft³</span></div>
+                    <div class="conversion-item"><span class="from">1 m³</span> = <span class="to">6.29 bbl</span></div>
+                </div>
+
+                <h3>Pressure</h3>
+                <div class="conversion-grid">
+                    <div class="conversion-item"><span class="from">1 psi</span> = <span class="to">0.0689 bar</span></div>
+                    <div class="conversion-item"><span class="from">1 bar</span> = <span class="to">14.5 psi</span></div>
+                    <div class="conversion-item"><span class="from">1 psi</span> = <span class="to">6.895 kPa</span></div>
+                    <div class="conversion-item"><span class="from">1 MPa</span> = <span class="to">145 psi</span></div>
+                </div>
+
+                <h3>Density/Mud Weight</h3>
+                <div class="conversion-grid">
+                    <div class="conversion-item"><span class="from">1 ppg</span> = <span class="to">0.1198 sg</span></div>
+                    <div class="conversion-item"><span class="from">1 sg</span> = <span class="to">8.345 ppg</span></div>
+                    <div class="conversion-item"><span class="from">1 ppg</span> = <span class="to">119.8 kg/m³</span></div>
+                    <div class="conversion-item"><span class="from">Water (1.0 sg)</span> = <span class="to">8.33 ppg</span></div>
+                </div>
+
+                <h3>Capacity Constants</h3>
+                <div class="conversion-grid">
+                    <div class="conversion-item"><span class="from">Capacity (bbl/ft)</span> = <span class="to">ID² / 1029.4</span></div>
+                    <div class="conversion-item"><span class="from">Capacity (L/m)</span> = <span class="to">ID(mm)² × 0.000785</span></div>
+                    <div class="conversion-item"><span class="from">HP (psi)</span> = <span class="to">MW(ppg) × 0.052 × TVD(ft)</span></div>
+                    <div class="conversion-item"><span class="from">HP (bar)</span> = <span class="to">MW(sg) × 0.0981 × TVD(m)</span></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Quick Converter</h2>
+                <div class="grid-4">
+                    <div class="form-group">
+                        <label>Value</label>
+                        <input type="number" id="convValue" step="any" placeholder="Enter value">
+                    </div>
+                    <div class="form-group">
+                        <label>From</label>
+                        <select id="convFrom">
+                            <option value="ft">feet</option>
+                            <option value="m">meters</option>
+                            <option value="in">inches</option>
+                            <option value="mm">mm</option>
+                            <option value="bbl">barrels</option>
+                            <option value="L">liters</option>
+                            <option value="m3">m³</option>
+                            <option value="psi">psi</option>
+                            <option value="bar">bar</option>
+                            <option value="ppg">ppg</option>
+                            <option value="sg">sg</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>To</label>
+                        <select id="convTo">
+                            <option value="m">meters</option>
+                            <option value="ft">feet</option>
+                            <option value="mm">mm</option>
+                            <option value="in">inches</option>
+                            <option value="L">liters</option>
+                            <option value="bbl">barrels</option>
+                            <option value="m3">m³</option>
+                            <option value="bar">bar</option>
+                            <option value="psi">psi</option>
+                            <option value="sg">sg</option>
+                            <option value="ppg">ppg</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>&nbsp;</label>
+                        <button class="btn btn-primary" onclick="convert()">Convert</button>
+                    </div>
+                </div>
+                <div id="convResult" style="margin-top: 10px; font-size: 1.2rem; font-weight: 600;"></div>
+            </div>
+        </div>
+
+        <!-- SCHEMATIC TAB -->
+        <div id="schematic" class="tab-content">
+            <div class="section">
+                <h2>Well Schematic Diagram</h2>
+                <div class="schematic-enhanced" id="wellSchematic">
+                    <div style="text-align: center; padding: 50px; color: #718096;">
+                        Enter well data in the Well Sections tab to generate schematic
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STROKE TRACKER TAB -->
+        <div id="stroketracker" class="tab-content">
+            <div class="alert alert-info">
+                <strong>Real-Time Stroke Tracker</strong> - Track displacement position in real-time during pumping operations.
+            </div>
+
+            <div class="section">
+                <h2>Stroke Tracking Input</h2>
+                <div class="grid-4">
+                    <div class="form-group">
+                        <label>Current Strokes Pumped</label>
+                        <input type="number" id="currentStrokes" value="0" onchange="updateDisplacement()">
+                        <span class="unit">strokes</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Current Pump Rate</label>
+                        <input type="number" id="trackerSPM" value="60" onchange="updateDisplacement()">
+                        <span class="unit">SPM</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Elapsed Time</label>
+                        <input type="text" id="trackerTime" readonly style="background:#edf2f7; font-weight:600;">
+                        <span class="unit">minutes</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Volume Pumped</label>
+                        <input type="text" id="trackerVolPumped" readonly style="background:#edf2f7; font-weight:600;">
+                        <span class="unit unit-vol">bbl</span>
+                    </div>
+                </div>
+                <div class="save-load-controls">
+                    <button class="btn btn-success" onclick="resetTracker()">Reset Tracker</button>
+                    <button class="btn btn-primary" onclick="addStrokeIncrement(100)">+100 Strokes</button>
+                    <button class="btn btn-primary" onclick="addStrokeIncrement(50)">+50 Strokes</button>
+                    <button class="btn btn-primary" onclick="addStrokeIncrement(10)">+10 Strokes</button>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="section">
+                    <h2>Current Position</h2>
+                    <div id="displacementStatus">
+                        <p style="color: #718096;">Enter strokes to track fluid displacement position</p>
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <h3>Progress Indicators</h3>
+                        <div class="kill-sheet-step">
+                            <div class="step-num">1</div>
+                            <div class="step-content">
+                                <div>Through Drill String</div>
+                                <small>Progress to bit</small>
+                            </div>
+                            <div class="step-value" id="trackerStringPct">0%</div>
+                        </div>
+                        <div class="kill-sheet-step">
+                            <div class="step-num">2</div>
+                            <div class="step-content">
+                                <div>Through Annulus</div>
+                                <small>Progress to surface</small>
+                            </div>
+                            <div class="step-value" id="trackerAnnPct">0%</div>
+                        </div>
+                        <div class="kill-sheet-step">
+                            <div class="step-num">3</div>
+                            <div class="step-content">
+                                <div>Total System</div>
+                                <small>Complete circulation</small>
+                            </div>
+                            <div class="step-value" id="trackerTotalPct">0%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Depth Tracking</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Milestone</th>
+                                <th>Strokes Required</th>
+                                <th>Status</th>
+                                <th>Time Remaining</th>
+                            </tr>
+                        </thead>
+                        <tbody id="depthTrackingTable">
+                            <tr><td colspan="4" style="text-align:center; color:#718096;">Calculating...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Kill Sheet Progress (if applicable)</h2>
+                <div class="grid-3">
+                    <div class="dashboard-card">
+                        <div class="label">Strokes to Bit</div>
+                        <div class="value" id="trackerSTB">-</div>
+                        <div class="sub">strokes</div>
+                    </div>
+                    <div class="dashboard-card" style="background: linear-gradient(135deg, #2c5282, #4299e1);">
+                        <div class="label">Time to Bit</div>
+                        <div class="value" id="trackerTTB">-</div>
+                        <div class="sub">minutes</div>
+                    </div>
+                    <div class="dashboard-card" style="background: linear-gradient(135deg, #38a169, #68d391);">
+                        <div class="label">Remaining Strokes</div>
+                        <div class="value" id="trackerRemaining">-</div>
+                        <div class="sub">strokes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global state
+        let units = {
+            length: 'ft',
+            diameter: 'in',
+            volume: 'bbl',
+            mw: 'ppg',
+            pressure: 'psi',
+            pump: 'bbl/stk'
+        };
+
+        let stringData = [];
+        let wellData = [];
+        let pipeCapacityData = null;
+        let unitConversionData = null;
+
+        // Load JSON data files
+        async function loadReferenceData() {
+            try {
+                // Load pipe capacities
+                const pipeResponse = await fetch('../data/pipe-capacities.json');
+                pipeCapacityData = await pipeResponse.json();
+                console.log('Loaded pipe capacity data');
+                populateReferenceTablesFromJSON();
+                populatePipeSelectors();
+            } catch (error) {
+                console.warn('Could not load pipe-capacities.json:', error);
+                // Continue with default functionality
+            }
+
+            try {
+                // Load unit conversions
+                const unitResponse = await fetch('../data/unit-conversions.json');
+                unitConversionData = await unitResponse.json();
+                console.log('Loaded unit conversion data');
+            } catch (error) {
+                console.warn('Could not load unit-conversions.json:', error);
+            }
+
+            // Generate density tables
+            generateDensityTables();
+            calcPumpOutputs();
+        }
+
+        // Populate reference tables from loaded JSON data
+        function populateReferenceTablesFromJSON() {
+            if (!pipeCapacityData) return;
+
+            // Drill Pipe table
+            let html = '';
+            pipeCapacityData.drillPipe.forEach(pipe => {
+                html += `<tr>
+                    <td>${pipe.size}</td>
+                    <td>${pipe.od}</td>
+                    <td>${pipe.id}</td>
+                    <td>${pipe.weight_lbft}</td>
+                    <td>${pipe.capacity_bbl_ft.toFixed(5)}</td>
+                    <td>${pipe.displacement_bbl_ft.toFixed(5)}</td>
+                    <td>${pipe.capacity_L_m}</td>
+                </tr>`;
+            });
+            document.getElementById('refDrillPipeTable').innerHTML = html;
+
+            // Drill Collars table
+            html = '';
+            pipeCapacityData.drillCollars.forEach(pipe => {
+                html += `<tr>
+                    <td>${pipe.size}</td>
+                    <td>${pipe.od}</td>
+                    <td>${pipe.id}</td>
+                    <td>${pipe.weight_lbft}</td>
+                    <td>${pipe.capacity_bbl_ft.toFixed(5)}</td>
+                    <td>${pipe.displacement_bbl_ft.toFixed(5)}</td>
+                    <td>${pipe.capacity_L_m}</td>
+                </tr>`;
+            });
+            document.getElementById('refDrillCollarsTable').innerHTML = html;
+
+            // HWDP table
+            html = '';
+            pipeCapacityData.hwdp.forEach(pipe => {
+                html += `<tr>
+                    <td>${pipe.size}</td>
+                    <td>${pipe.od}</td>
+                    <td>${pipe.id}</td>
+                    <td>${pipe.weight_lbft}</td>
+                    <td>${pipe.capacity_bbl_ft.toFixed(5)}</td>
+                    <td>${pipe.displacement_bbl_ft.toFixed(5)}</td>
+                    <td>${pipe.capacity_L_m}</td>
+                </tr>`;
+            });
+            document.getElementById('refHWDPTable').innerHTML = html;
+
+            // Casing table
+            html = '';
+            pipeCapacityData.casing.forEach(pipe => {
+                html += `<tr>
+                    <td>${pipe.size}</td>
+                    <td>${pipe.weight_lbft}</td>
+                    <td>${pipe.od}</td>
+                    <td>${pipe.id}</td>
+                    <td>${pipe.grade || '-'}</td>
+                    <td>${pipe.capacity_bbl_ft.toFixed(5)}</td>
+                    <td>${pipe.displacement_bbl_ft.toFixed(5)}</td>
+                </tr>`;
+            });
+            document.getElementById('refCasingTable').innerHTML = html;
+
+            // Open Hole table
+            html = '';
+            pipeCapacityData.openHole.forEach(hole => {
+                html += `<tr>
+                    <td>${hole.size}</td>
+                    <td>${hole.diameter}</td>
+                    <td>${hole.capacity_bbl_ft.toFixed(5)}</td>
+                    <td>${hole.capacity_L_m}</td>
+                </tr>`;
+            });
+            document.getElementById('refOpenHoleTable').innerHTML = html;
+
+            // Annular Capacities table
+            html = '';
+            pipeCapacityData.annularCapacities.forEach(ann => {
+                html += `<tr>
+                    <td>${ann.holeSize}</td>
+                    <td>${ann.pipeSize}</td>
+                    <td>${ann.holeID}</td>
+                    <td>${ann.pipeOD}</td>
+                    <td>${ann.capacity_bbl_ft.toFixed(4)}</td>
+                    <td>${ann.capacity_L_m}</td>
+                </tr>`;
+            });
+            document.getElementById('refAnnularTable').innerHTML = html;
+        }
+
+        // Populate pipe selector dropdowns
+        function populatePipeSelectors() {
+            if (!pipeCapacityData) return;
+
+            // Populate drill pipe selectors
+            const drillPipeSelects = document.querySelectorAll('select.pipe-selector');
+            drillPipeSelects.forEach(select => {
+                let options = '<option value="">Select from library...</option>';
+                options += '<optgroup label="Drill Pipe">';
+                pipeCapacityData.drillPipe.forEach((pipe, idx) => {
+                    options += `<option value="dp-${idx}">${pipe.size} (OD: ${pipe.od}", ID: ${pipe.id}")</option>`;
+                });
+                options += '</optgroup>';
+                options += '<optgroup label="Drill Collars">';
+                pipeCapacityData.drillCollars.forEach((pipe, idx) => {
+                    options += `<option value="dc-${idx}">${pipe.size} (OD: ${pipe.od}", ID: ${pipe.id}")</option>`;
+                });
+                options += '</optgroup>';
+                options += '<optgroup label="HWDP">';
+                pipeCapacityData.hwdp.forEach((pipe, idx) => {
+                    options += `<option value="hwdp-${idx}">${pipe.size} (OD: ${pipe.od}", ID: ${pipe.id}")</option>`;
+                });
+                options += '</optgroup>';
+                options += '<optgroup label="Casing">';
+                pipeCapacityData.casing.forEach((pipe, idx) => {
+                    options += `<option value="casing-${idx}">${pipe.size} ${pipe.weight_lbft}# (ID: ${pipe.id}")</option>`;
+                });
+                options += '</optgroup>';
+                select.innerHTML = options;
+            });
+
+            // Populate BOP drill pipe selector
+            const bopDPSelect = document.getElementById('bopDrillPipe');
+            if (bopDPSelect) {
+                let options = '<option value="">Select size...</option>';
+                pipeCapacityData.drillPipe.forEach((pipe, idx) => {
+                    options += `<option value="${idx}" data-od="${pipe.od}" data-id="${pipe.id}">${pipe.size} (ID: ${pipe.id}")</option>`;
+                });
+                bopDPSelect.innerHTML = options;
+            }
+        }
+
+        // Generate density conversion tables
+        function generateDensityTables() {
+            // PPG table (8.0 to 20.0 in 0.5 increments)
+            let html = '';
+            for (let ppg = 8.0; ppg <= 20.0; ppg += 0.5) {
+                const sg = (ppg * 0.1198).toFixed(3);
+                const kgm3 = (ppg * 119.8).toFixed(0);
+                const psi_ft = (ppg * 0.052).toFixed(4);
+                html += `<tr>
+                    <td>${ppg.toFixed(1)}</td>
+                    <td>${sg}</td>
+                    <td>${kgm3}</td>
+                    <td>${psi_ft}</td>
+                </tr>`;
+            }
+            document.getElementById('densityTablePPG').innerHTML = html;
+
+            // SG table (0.80 to 2.40 in 0.05 increments)
+            html = '';
+            for (let sg = 0.80; sg <= 2.40; sg += 0.05) {
+                const ppg = (sg * 8.345).toFixed(2);
+                const kgm3 = (sg * 1000).toFixed(0);
+                const bar_m = (sg * 0.0981).toFixed(5);
+                html += `<tr>
+                    <td>${sg.toFixed(2)}</td>
+                    <td>${ppg}</td>
+                    <td>${kgm3}</td>
+                    <td>${bar_m}</td>
+                </tr>`;
+            }
+            document.getElementById('densityTableSG').innerHTML = html;
+        }
+
+        // Apply pipe data from selector to fields
+        function applyPipeDataToRow(selectElement, rowIndex) {
+            const value = selectElement.value;
+            if (!value || !pipeCapacityData) return;
+
+            const [type, idx] = value.split('-');
+            let pipe;
+
+            if (type === 'dp') pipe = pipeCapacityData.drillPipe[idx];
+            else if (type === 'dc') pipe = pipeCapacityData.drillCollars[idx];
+            else if (type === 'hwdp') pipe = pipeCapacityData.hwdp[idx];
+            else if (type === 'casing') pipe = pipeCapacityData.casing[idx];
+
+            if (pipe && stringData[rowIndex]) {
+                stringData[rowIndex].od = pipe.od;
+                stringData[rowIndex].id = pipe.id;
+                stringData[rowIndex].name = pipe.size;
+                rebuildStringsTable();
+            }
+        }
+
+        // Initialize with default rows
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load reference data
+            loadReferenceData();
+
+            // Set today's date for BOP
+            document.getElementById('bopDate').valueAsDate = new Date();
+
+            // Initialize default data
+            addStringRow('Drill Pipe', 5.0, 4.276, 10000);
+            addStringRow('HWDP', 5.0, 3.0, 500);
+            addStringRow('Drill Collars', 6.5, 2.25, 500);
+
+            addWellRow('Surface Casing', 12.415, 5.0, 0, 3000);
+            addWellRow('Open Hole', 8.5, 5.0, 3000, 10000);
+            addWellRow('Open Hole (DC)', 8.5, 6.5, 10000, 11000);
+
+            recalcAll();
+        });
+
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+            if (tabId === 'dashboard') updateDashboard();
+            if (tabId === 'schematic') updateSchematic();
+            if (tabId === 'bopkillsheet') calcBOP();
+            if (tabId === 'stroketracker') updateDisplacement();
+        }
+
+        function showSubTab(subTabId) {
+            // Get parent to find sub-tabs
+            const parent = document.getElementById(subTabId).parentElement.parentElement;
+            parent.querySelectorAll('.sub-tab-content').forEach(t => t.classList.remove('active'));
+            parent.querySelectorAll('.sub-tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(subTabId).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function setUnits(system) {
+            if (system === 'imperial') {
+                document.getElementById('unitLength').value = 'ft';
+                document.getElementById('unitDiameter').value = 'in';
+                document.getElementById('unitVolume').value = 'bbl';
+                document.getElementById('unitMW').value = 'ppg';
+                document.getElementById('unitPressure').value = 'psi';
+                document.getElementById('unitPump').value = 'bbl/stk';
+                document.getElementById('btnImperial').classList.add('active');
+                document.getElementById('btnMetric').classList.remove('active');
+            } else {
+                document.getElementById('unitLength').value = 'm';
+                document.getElementById('unitDiameter').value = 'mm';
+                document.getElementById('unitVolume').value = 'm3';
+                document.getElementById('unitMW').value = 'sg';
+                document.getElementById('unitPressure').value = 'bar';
+                document.getElementById('unitPump').value = 'L/stk';
+                document.getElementById('btnMetric').classList.add('active');
+                document.getElementById('btnImperial').classList.remove('active');
+            }
+            updateUnits();
+        }
+
+        function updateUnits() {
+            units.length = document.getElementById('unitLength').value;
+            units.diameter = document.getElementById('unitDiameter').value;
+            units.volume = document.getElementById('unitVolume').value;
+            units.mw = document.getElementById('unitMW').value;
+            units.pressure = document.getElementById('unitPressure').value;
+            units.pump = document.getElementById('unitPump').value;
+
+            // Update unit labels throughout
+            document.querySelectorAll('.unit-len').forEach(el => el.textContent = units.length);
+            document.querySelectorAll('.unit-dia').forEach(el => el.textContent = units.diameter);
+            document.querySelectorAll('.unit-vol').forEach(el => el.textContent = units.volume);
+            document.querySelectorAll('.unit-mw').forEach(el => el.textContent = units.mw);
+            document.querySelectorAll('.unit-press').forEach(el => el.textContent = units.pressure);
+            document.querySelectorAll('.unit-pump').forEach(el => el.textContent = units.pump);
+            document.querySelectorAll('.unit-cap').forEach(el => el.textContent = units.volume + '/' + units.length);
+            document.querySelectorAll('.dash-unit-vol').forEach(el => el.textContent = units.volume);
+        }
+
+        function addStringRow(name = '', od = '', id = '', length = '') {
+            const tbody = document.getElementById('stringsBody');
+            const row = document.createElement('tr');
+            const idx = stringData.length;
+            row.innerHTML = `
+                <td><input type="text" value="${name}" onchange="updateString(${idx}, 'name', this.value)"></td>
+                <td><input type="number" step="0.001" value="${od}" onchange="updateString(${idx}, 'od', this.value)"></td>
+                <td><input type="number" step="0.001" value="${id}" onchange="updateString(${idx}, 'id', this.value)"></td>
+                <td><input type="number" value="${length}" onchange="updateString(${idx}, 'length', this.value)"></td>
+                <td class="result" id="strCap${idx}">-</td>
+                <td class="result" id="strVol${idx}">-</td>
+                <td class="result" id="strDisp${idx}">-</td>
+                <td class="no-print"><select class="pipe-selector" onchange="applyPipeDataToRow(this, ${idx})"></select></td>
+                <td class="no-print"><button class="btn btn-sm btn-warning" onclick="removeStringRow(${idx})">×</button></td>
+            `;
+            tbody.appendChild(row);
+            stringData.push({ name, od: parseFloat(od) || 0, id: parseFloat(id) || 0, length: parseFloat(length) || 0 });
+
+            // Re-populate selectors if data is loaded
+            if (pipeCapacityData) {
+                populatePipeSelectors();
+            }
+
+            recalcStrings();
+        }
+
+        function updateString(idx, field, value) {
+            if (field === 'name') stringData[idx][field] = value;
+            else stringData[idx][field] = parseFloat(value) || 0;
+            recalcStrings();
+        }
+
+        function removeStringRow(idx) {
+            stringData.splice(idx, 1);
+            rebuildStringsTable();
+        }
+
+        function rebuildStringsTable() {
+            const tbody = document.getElementById('stringsBody');
+            tbody.innerHTML = '';
+            const temp = [...stringData];
+            stringData = [];
+            temp.forEach(s => addStringRow(s.name, s.od, s.id, s.length));
+        }
+
+        function recalcStrings() {
+            let totalVol = 0, totalDisp = 0;
+            stringData.forEach((s, idx) => {
+                const cap = (s.id * s.id) / 1029.4;
+                const vol = cap * s.length;
+                const disp = ((s.od * s.od) - (s.id * s.id)) / 1029.4 * s.length;
+                totalVol += vol;
+                totalDisp += disp;
+                document.getElementById(`strCap${idx}`).textContent = cap.toFixed(4);
+                document.getElementById(`strVol${idx}`).textContent = vol.toFixed(2);
+                document.getElementById(`strDisp${idx}`).textContent = disp.toFixed(2);
+            });
+            document.getElementById('totalStringVol').textContent = totalVol.toFixed(2);
+            document.getElementById('totalStringDisp').textContent = totalDisp.toFixed(2);
+
+            const pumpOut = parseFloat(document.getElementById('pumpOutput').value) || 0.117;
+            const strokes = Math.ceil(totalVol / pumpOut);
+            document.getElementById('stringStrokes').value = strokes;
+
+            recalcAll();
+        }
+
+        function addWellRow(name = '', holeID = '', pipeOD = '', top = '', bottom = '') {
+            const tbody = document.getElementById('wellBody');
+            const row = document.createElement('tr');
+            const idx = wellData.length;
+            row.innerHTML = `
+                <td><input type="text" value="${name}" onchange="updateWell(${idx}, 'name', this.value)"></td>
+                <td><input type="number" step="0.001" value="${holeID}" onchange="updateWell(${idx}, 'holeID', this.value)"></td>
+                <td><input type="number" step="0.001" value="${pipeOD}" onchange="updateWell(${idx}, 'pipeOD', this.value)"></td>
+                <td><input type="number" value="${top}" onchange="updateWell(${idx}, 'top', this.value)"></td>
+                <td><input type="number" value="${bottom}" onchange="updateWell(${idx}, 'bottom', this.value)"></td>
+                <td class="result" id="wellLen${idx}">-</td>
+                <td class="result" id="wellCap${idx}">-</td>
+                <td class="result" id="wellVol${idx}">-</td>
+                <td class="no-print"><button class="btn btn-sm btn-warning" onclick="removeWellRow(${idx})">×</button></td>
+            `;
+            tbody.appendChild(row);
+            wellData.push({
+                name,
+                holeID: parseFloat(holeID) || 0,
+                pipeOD: parseFloat(pipeOD) || 0,
+                top: parseFloat(top) || 0,
+                bottom: parseFloat(bottom) || 0
+            });
+            recalcWell();
+        }
+
+        function updateWell(idx, field, value) {
+            if (field === 'name') wellData[idx][field] = value;
+            else wellData[idx][field] = parseFloat(value) || 0;
+            recalcWell();
+        }
+
+        function removeWellRow(idx) {
+            wellData.splice(idx, 1);
+            rebuildWellTable();
+        }
+
+        function rebuildWellTable() {
+            const tbody = document.getElementById('wellBody');
+            tbody.innerHTML = '';
+            const temp = [...wellData];
+            wellData = [];
+            temp.forEach(w => addWellRow(w.name, w.holeID, w.pipeOD, w.top, w.bottom));
+        }
+
+        function recalcWell() {
+            let totalVol = 0;
+            wellData.forEach((w, idx) => {
+                const length = w.bottom - w.top;
+                const cap = ((w.holeID * w.holeID) - (w.pipeOD * w.pipeOD)) / 1029.4;
+                const vol = cap * length;
+                totalVol += vol;
+                document.getElementById(`wellLen${idx}`).textContent = length.toFixed(0);
+                document.getElementById(`wellCap${idx}`).textContent = cap.toFixed(4);
+                document.getElementById(`wellVol${idx}`).textContent = vol.toFixed(2);
+            });
+            document.getElementById('totalAnnVol').textContent = totalVol.toFixed(2);
+            recalcAll();
+        }
+
+        function recalcAll() {
+            updateDashboard();
+            calcKillSheet();
+        }
+
+        function updateDashboard() {
+            const pumpOut = parseFloat(document.getElementById('pumpOutput').value) || 0.117;
+            const spm = parseFloat(document.getElementById('pumpSPM').value) || 60;
+
+            let stringVol = 0;
+            stringData.forEach(s => {
+                stringVol += ((s.id * s.id) / 1029.4) * s.length;
+            });
+
+            let annVol = 0;
+            wellData.forEach(w => {
+                const length = w.bottom - w.top;
+                annVol += (((w.holeID * w.holeID) - (w.pipeOD * w.pipeOD)) / 1029.4) * length;
+            });
+
+            const totalStrokes = Math.ceil((stringVol + annVol) / pumpOut);
+            const totalTime = Math.ceil(totalStrokes / spm);
+
+            document.getElementById('dashStringVol').textContent = stringVol.toFixed(1);
+            document.getElementById('dashAnnVol').textContent = annVol.toFixed(1);
+            document.getElementById('dashStrokes').textContent = totalStrokes;
+            document.getElementById('dashTime').textContent = totalTime;
+
+            // Update tables
+            let stringHTML = '';
+            stringData.forEach(s => {
+                const vol = ((s.id * s.id) / 1029.4) * s.length;
+                const stk = Math.ceil(vol / pumpOut);
+                stringHTML += `<tr><td>${s.name}</td><td>${vol.toFixed(1)}</td><td>${stk}</td></tr>`;
+            });
+            if (stringHTML) {
+                stringHTML += `<tr class="total-row"><td><strong>Total</strong></td><td><strong>${stringVol.toFixed(1)}</strong></td><td><strong>${Math.ceil(stringVol/pumpOut)}</strong></td></tr>`;
+            }
+            document.getElementById('dashStringTable').innerHTML = stringHTML || '<tr><td colspan="3" style="text-align:center; color:#718096;">No data</td></tr>';
+
+            let annHTML = '';
+            wellData.forEach(w => {
+                const length = w.bottom - w.top;
+                const vol = (((w.holeID * w.holeID) - (w.pipeOD * w.pipeOD)) / 1029.4) * length;
+                const stk = Math.ceil(vol / pumpOut);
+                annHTML += `<tr><td>${w.name}</td><td>${vol.toFixed(1)}</td><td>${stk}</td></tr>`;
+            });
+            if (annHTML) {
+                annHTML += `<tr class="total-row"><td><strong>Total</strong></td><td><strong>${annVol.toFixed(1)}</strong></td><td><strong>${Math.ceil(annVol/pumpOut)}</strong></td></tr>`;
+            }
+            document.getElementById('dashAnnTable').innerHTML = annHTML || '<tr><td colspan="3" style="text-align:center; color:#718096;">No data</td></tr>';
+        }
+
+        function calcKillSheet() {
+            const mw = parseFloat(document.getElementById('killMW').value) || 0;
+            const tvd = parseFloat(document.getElementById('killTVD').value) || 0;
+            const sidpp = parseFloat(document.getElementById('killSIDPP').value) || 0;
+            const scr = parseFloat(document.getElementById('killSCR').value) || 0;
+            const shoeTVD = parseFloat(document.getElementById('killShoeTVD').value) || 0;
+            const lot = parseFloat(document.getElementById('killLOT').value) || 0;
+
+            if (!mw || !tvd) return;
+
+            const fp = sidpp + (mw * 0.052 * tvd);
+            const kwm = mw + (sidpp / 0.052 / tvd);
+            const icp = scr + sidpp;
+            const fcp = scr * (kwm / mw);
+            const maasp = (lot - kwm) * 0.052 * shoeTVD;
+
+            let stringVol = 0;
+            stringData.forEach(s => stringVol += ((s.id * s.id) / 1029.4) * s.length);
+            const pumpOut = parseFloat(document.getElementById('pumpOutput').value) || 0.117;
+            const stb = Math.ceil(stringVol / pumpOut);
+
+            document.getElementById('killFP').textContent = fp.toFixed(0);
+            document.getElementById('killKWM').textContent = kwm.toFixed(2);
+            document.getElementById('killICP').textContent = icp.toFixed(0);
+            document.getElementById('killFCP').textContent = fcp.toFixed(0);
+            document.getElementById('killMAASP').textContent = maasp.toFixed(0);
+            document.getElementById('killSTB').textContent = stb;
+
+            // Generate step chart
+            let chartHTML = '';
+            const steps = 10;
+            const strokeStep = Math.ceil(stb / steps);
+            const pressStep = (icp - fcp) / steps;
+            for (let i = 0; i <= steps; i++) {
+                const strokes = Math.min(i * strokeStep, stb);
+                const pressure = icp - (i * pressStep);
+                const pct = ((i / steps) * 100).toFixed(0);
+                chartHTML += `<tr><td>${strokes}</td><td>${pressure.toFixed(0)}</td><td>${pct}%</td></tr>`;
+            }
+            document.getElementById('stepChartBody').innerHTML = chartHTML;
+        }
+
+        function quickAnnCalc() {
+            const holeID = parseFloat(document.getElementById('quickHoleID').value) || 0;
+            const pipeOD = parseFloat(document.getElementById('quickPipeOD').value) || 0;
+            const length = parseFloat(document.getElementById('quickLength').value) || 0;
+
+            const cap = ((holeID * holeID) - (pipeOD * pipeOD)) / 1029.4;
+            const vol = cap * length;
+            const pumpOut = parseFloat(document.getElementById('pumpOutput').value) || 0.117;
+            const strokes = Math.ceil(vol / pumpOut);
+
+            document.getElementById('quickAnnResult').innerHTML = `
+                <div style="background:#edf2f7; padding:15px; border-radius:4px;">
+                    <strong>Annular Capacity:</strong> ${cap.toFixed(4)} bbl/ft<br>
+                    <strong>Annular Volume:</strong> ${vol.toFixed(2)} bbl<br>
+                    <strong>Strokes:</strong> ${strokes} strokes
+                </div>
+            `;
+        }
+
+        function convert() {
+            const value = parseFloat(document.getElementById('convValue').value) || 0;
+            const from = document.getElementById('convFrom').value;
+            const to = document.getElementById('convTo').value;
+
+            const factors = {
+                'ft_m': 0.3048, 'm_ft': 3.281,
+                'in_mm': 25.4, 'mm_in': 0.03937,
+                'bbl_L': 159, 'L_bbl': 1/159,
+                'bbl_m3': 0.159, 'm3_bbl': 6.29,
+                'L_m3': 0.001, 'm3_L': 1000,
+                'psi_bar': 0.0689, 'bar_psi': 14.5,
+                'ppg_sg': 0.1198, 'sg_ppg': 8.345
+            };
+
+            const key = `${from}_${to}`;
+            const factor = factors[key] || 1;
+            const result = value * factor;
+
+            document.getElementById('convResult').textContent = `${value} ${from} = ${result.toFixed(4)} ${to}`;
+        }
+
+        function updateSchematic() {
+            if (wellData.length === 0) return;
+
+            const colors = ['#4299e1', '#48bb78', '#ed8936', '#9f7aea', '#f56565'];
+            let html = '<div class="well-bore">';
+
+            wellData.forEach((w, idx) => {
+                const height = Math.max(30, (w.bottom - w.top) / 100);
+                const vol = (((w.holeID * w.holeID) - (w.pipeOD * w.pipeOD)) / 1029.4) * (w.bottom - w.top);
+                html += `
+                    <div class="well-section" style="height:${height}px; border-color:${colors[idx % colors.length]}; background:${colors[idx % colors.length]}22;">
+                        ${w.name}
+                        <div class="depth-label">${w.top}-${w.bottom} ft</div>
+                        <div class="vol-label">${vol.toFixed(1)} bbl</div>
+                    </div>
+                `;
+            });
+
+            html += '</div>';
+            document.getElementById('wellSchematic').innerHTML = html;
+        }
+
+        function updateDisplacement() {
+            const strokes = parseInt(document.getElementById('currentStrokes').value) || 0;
+            const pumpOut = parseFloat(document.getElementById('pumpOutput').value) || 0.117;
+            const spm = parseFloat(document.getElementById('trackerSPM').value) || 60;
+            const volPumped = strokes * pumpOut;
+
+            let stringVol = 0;
+            stringData.forEach(s => stringVol += ((s.id * s.id) / 1029.4) * s.length);
+
+            let status = '';
+            if (volPumped < stringVol) {
+                const pct = ((volPumped / stringVol) * 100).toFixed(1);
+                status = `<div style="background:#ebf8ff; padding:15px; border-radius:4px; border-left:4px solid #4299e1;">
+                    <strong>Fluid in String</strong><br>
+                    ${pct}% through string (${volPumped.toFixed(1)} of ${stringVol.toFixed(1)} bbl)
+                </div>`;
+                document.getElementById('trackerStringPct').textContent = pct + '%';
+                document.getElementById('trackerAnnPct').textContent = '0%';
+            } else {
+                const annVol = volPumped - stringVol;
+                let totalAnn = 0;
+                wellData.forEach(w => totalAnn += (((w.holeID * w.holeID) - (w.pipeOD * w.pipeOD)) / 1029.4) * (w.bottom - w.top));
+                const pct = ((annVol / totalAnn) * 100).toFixed(1);
+                status = `<div style="background:#f0fff4; padding:15px; border-radius:4px; border-left:4px solid #48bb78;">
+                    <strong>Fluid in Annulus</strong><br>
+                    String filled + ${pct}% through annulus (${annVol.toFixed(1)} of ${totalAnn.toFixed(1)} bbl)
+                </div>`;
+                document.getElementById('trackerStringPct').textContent = '100%';
+                document.getElementById('trackerAnnPct').textContent = pct + '%';
+            }
+            document.getElementById('displacementStatus').innerHTML = status;
+
+            // Update tracker values
+            const totalVol = stringVol + (wellData.reduce((sum, w) => sum + (((w.holeID * w.holeID) - (w.pipeOD * w.pipeOD)) / 1029.4) * (w.bottom - w.top), 0));
+            const totalPct = ((volPumped / totalVol) * 100).toFixed(1);
+            document.getElementById('trackerTotalPct').textContent = totalPct + '%';
+            document.getElementById('trackerTime').value = (strokes / spm).toFixed(1);
+            document.getElementById('trackerVolPumped').value = volPumped.toFixed(2);
+
+            // Strokes to bit
+            const strokesToBit = Math.ceil(stringVol / pumpOut);
+            const timeToBit = Math.ceil(strokesToBit / spm);
+            const remaining = Math.max(0, strokesToBit - strokes);
+            document.getElementById('trackerSTB').textContent = strokesToBit;
+            document.getElementById('trackerTTB').textContent = timeToBit;
+            document.getElementById('trackerRemaining').textContent = remaining;
+
+            // Build depth tracking table
+            let depthHTML = '';
+            const milestones = [
+                { name: 'Bit', strokes: strokesToBit },
+                { name: 'Start of Annulus', strokes: strokesToBit },
+                { name: 'Mid Annulus', strokes: Math.ceil(strokesToBit + (totalVol - stringVol) / pumpOut / 2) },
+                { name: 'Complete Circulation', strokes: Math.ceil(totalVol / pumpOut) }
+            ];
+
+            milestones.forEach(m => {
+                const status = strokes >= m.strokes ? '✓ Complete' : '⏳ In Progress';
+                const timeRemaining = Math.max(0, Math.ceil((m.strokes - strokes) / spm));
+                depthHTML += `<tr>
+                    <td>${m.name}</td>
+                    <td>${m.strokes}</td>
+                    <td>${status}</td>
+                    <td>${timeRemaining} min</td>
+                </tr>`;
+            });
+            document.getElementById('depthTrackingTable').innerHTML = depthHTML;
+        }
+
+        function resetTracker() {
+            document.getElementById('currentStrokes').value = 0;
+            updateDisplacement();
+        }
+
+        function addStrokeIncrement(increment) {
+            const current = parseInt(document.getElementById('currentStrokes').value) || 0;
+            document.getElementById('currentStrokes').value = current + increment;
+            updateDisplacement();
+        }
+
+        // BOP Kill Sheet Calculations
+        function calcBOP() {
+            // Calculate BOP volumes
+            const waterDepth = parseFloat(document.getElementById('bopWaterDepth').value) || 0;
+            const surfOD = parseFloat(document.getElementById('bopSurfOD').value) || 0;
+            const surfID = parseFloat(document.getElementById('bopSurfID').value) || 0;
+            const surfTop = parseFloat(document.getElementById('bopSurfTop').value) || 0;
+            const surfShoe = parseFloat(document.getElementById('bopSurfShoe').value) || 0;
+
+            // String volume calculation
+            let stringVol = 0;
+            stringData.forEach(s => stringVol += ((s.id * s.id) / 1029.4) * s.length);
+            document.getElementById('bopStringVol').textContent = stringVol.toFixed(1);
+
+            // Annular volume calculation
+            let annVol = 0;
+            wellData.forEach(w => {
+                const length = w.bottom - w.top;
+                annVol += (((w.holeID * w.holeID) - (w.pipeOD * w.pipeOD)) / 1029.4) * length;
+            });
+            document.getElementById('bopAnnVol').textContent = annVol.toFixed(1);
+
+            // Total system volume
+            const totalVol = stringVol + annVol;
+            document.getElementById('bopTotalVol').textContent = totalVol.toFixed(1);
+
+            // Riser volume (assume 19.5" ID riser)
+            const riserVol = waterDepth * ((19.5 * 19.5) / 1029.4);
+            document.getElementById('bopRiserVol').textContent = riserVol.toFixed(1);
+
+            // Kill calculations
+            const mw = parseFloat(document.getElementById('bopCurrentMW').value) || 0;
+            const tvd = parseFloat(document.getElementById('bopTVD').value) || 0;
+            const sidpp = parseFloat(document.getElementById('bopSIDPP').value) || 0;
+            const sicp = parseFloat(document.getElementById('bopSICP').value) || 0;
+            const scr = parseFloat(document.getElementById('bopSCR').value) || 0;
+            const shoeTVD = parseFloat(document.getElementById('bopBarrierShoeTVD').value) || 0;
+            const lot = parseFloat(document.getElementById('bopLOT').value) || 0;
+
+            if (mw && tvd && sidpp) {
+                const fp = sidpp + (mw * 0.052 * tvd);
+                const kwm = mw + (sidpp / 0.052 / tvd);
+                const icp = scr + sidpp;
+                const fcp = scr * (kwm / mw);
+                const kickGrad = (sicp - sidpp) / 0.052 / tvd;
+                const maasp = (lot - kwm) * 0.052 * shoeTVD;
+                const pumpOut = parseFloat(document.getElementById('pumpOutput').value) || 0.117;
+                const stb = Math.ceil(stringVol / pumpOut);
+
+                document.getElementById('bopFP').textContent = fp.toFixed(0);
+                document.getElementById('bopKWM').textContent = kwm.toFixed(2);
+                document.getElementById('bopICP').textContent = icp.toFixed(0);
+                document.getElementById('bopFCP').textContent = fcp.toFixed(0);
+                document.getElementById('bopKickGrad').textContent = kickGrad.toFixed(2);
+                document.getElementById('bopMAASP').value = maasp.toFixed(0);
+                document.getElementById('bopSTB').textContent = stb;
+
+                // Check MAASP warning
+                if (sicp > maasp) {
+                    document.getElementById('bopBarrierAlert').style.display = 'block';
+                } else {
+                    document.getElementById('bopBarrierAlert').style.display = 'none';
+                }
+
+                // Generate step schedule
+                const spm = parseFloat(document.getElementById('pumpSPM').value) || 60;
+                let scheduleHTML = '';
+                const steps = 20;
+                const strokeStep = Math.ceil(stb / steps);
+                const pressStep = (icp - fcp) / steps;
+
+                for (let i = 0; i <= steps; i++) {
+                    const strokes = Math.min(i * strokeStep, stb);
+                    const pressure = icp - (i * pressStep);
+                    const pct = ((i / steps) * 100).toFixed(0);
+                    const time = Math.ceil(strokes / spm);
+                    scheduleHTML += `<tr>
+                        <td>${strokes}</td>
+                        <td>${pressure.toFixed(0)}</td>
+                        <td>${pct}%</td>
+                        <td>${time}</td>
+                    </tr>`;
+                }
+                document.getElementById('bopStepSchedule').innerHTML = scheduleHTML;
+            }
+        }
+
+        // Pump Output Calculations
+        function calcPumpOutputs() {
+            const pump1Liner = parseFloat(document.getElementById('pump1Liner').value) || 6.0;
+            const pump1Eff = parseFloat(document.getElementById('pump1Eff').value) / 100 || 0.95;
+            const pump2Liner = parseFloat(document.getElementById('pump2Liner').value) || 6.0;
+            const pump2Eff = parseFloat(document.getElementById('pump2Eff').value) / 100 || 0.95;
+            const strokeLength = parseFloat(document.getElementById('strokeLength').value) || 12;
+            const pumpType = document.getElementById('pumpType').value;
+
+            // Calculate pump output (bbl/stk)
+            const multiplier = pumpType === 'triplex' ? 3 : 2;
+            const pump1Output = (multiplier * Math.PI * (pump1Liner / 2) * (pump1Liner / 2) * strokeLength / 231) * pump1Eff / 42;
+            const pump2Output = (multiplier * Math.PI * (pump2Liner / 2) * (pump2Liner / 2) * strokeLength / 231) * pump2Eff / 42;
+
+            // Generate tables
+            let pump1HTML = '';
+            let pump2HTML = '';
+            let combinedHTML = '';
+            const rates = [20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+            rates.forEach(spm => {
+                pump1HTML += `<tr>
+                    <td>${spm}</td>
+                    <td>${pump1Output.toFixed(4)}</td>
+                    <td>${(pump1Output * spm).toFixed(2)}</td>
+                </tr>`;
+                pump2HTML += `<tr>
+                    <td>${spm}</td>
+                    <td>${pump2Output.toFixed(4)}</td>
+                    <td>${(pump2Output * spm).toFixed(2)}</td>
+                </tr>`;
+
+                let stringVol = 0;
+                stringData.forEach(s => stringVol += ((s.id * s.id) / 1029.4) * s.length);
+                let annVol = 0;
+                wellData.forEach(w => {
+                    const length = w.bottom - w.top;
+                    annVol += (((w.holeID * w.holeID) - (w.pipeOD * w.pipeOD)) / 1029.4) * length;
+                });
+                const totalVol = stringVol + annVol;
+                const combinedBPM = (pump1Output + pump2Output) * spm;
+                const timeToCirc = totalVol / combinedBPM;
+
+                combinedHTML += `<tr>
+                    <td>${spm}</td>
+                    <td>${combinedBPM.toFixed(2)}</td>
+                    <td>${timeToCirc.toFixed(1)} min</td>
+                </tr>`;
+            });
+
+            document.getElementById('pump1Table').innerHTML = pump1HTML;
+            document.getElementById('pump2Table').innerHTML = pump2HTML;
+            document.getElementById('pumpCombinedTable').innerHTML = combinedHTML;
+
+            // Update SCR flow rate
+            const scrTestRate = parseFloat(document.getElementById('scrTestRate').value) || 0;
+            if (scrTestRate) {
+                const scrFlowRate = (pump1Output * scrTestRate).toFixed(2);
+                document.getElementById('scrFlowRate').value = scrFlowRate;
+            }
+        }
+
+        // Hydrostatic Pressure Calculator
+        function calcHydrostatic() {
+            const mw = parseFloat(document.getElementById('hydroMW').value) || 0;
+            const tvd = parseFloat(document.getElementById('hydroTVD').value) || 0;
+
+            if (mw && tvd) {
+                const pressure = mw * 0.052 * tvd;
+                const gradient = mw * 0.052;
+                document.getElementById('hydroResult').value = pressure.toFixed(0);
+                document.getElementById('hydroGrad').value = gradient.toFixed(4);
+            }
+        }
+
+        // Save/Load Configuration
+        function saveConfiguration() {
+            const config = {
+                units: units,
+                stringData: stringData,
+                wellData: wellData,
+                pumpOutput: document.getElementById('pumpOutput').value,
+                pumpSPM: document.getElementById('pumpSPM').value,
+                savedDate: new Date().toISOString()
+            };
+
+            try {
+                localStorage.setItem('wellVolumesConfig', JSON.stringify(config));
+                alert('Configuration saved successfully!');
+            } catch (error) {
+                console.error('Error saving configuration:', error);
+                alert('Error saving configuration. See console for details.');
+            }
+        }
+
+        function loadConfiguration() {
+            try {
+                const configStr = localStorage.getItem('wellVolumesConfig');
+                if (!configStr) {
+                    alert('No saved configuration found.');
+                    return;
+                }
+
+                const config = JSON.parse(configStr);
+
+                // Restore units
+                units = config.units;
+                updateUnits();
+
+                // Restore string data
+                stringData = [];
+                document.getElementById('stringsBody').innerHTML = '';
+                config.stringData.forEach(s => addStringRow(s.name, s.od, s.id, s.length));
+
+                // Restore well data
+                wellData = [];
+                document.getElementById('wellBody').innerHTML = '';
+                config.wellData.forEach(w => addWellRow(w.name, w.holeID, w.pipeOD, w.top, w.bottom));
+
+                // Restore pump data
+                if (config.pumpOutput) document.getElementById('pumpOutput').value = config.pumpOutput;
+                if (config.pumpSPM) document.getElementById('pumpSPM').value = config.pumpSPM;
+
+                recalcAll();
+                alert('Configuration loaded successfully!');
+            } catch (error) {
+                console.error('Error loading configuration:', error);
+                alert('Error loading configuration. See console for details.');
+            }
+        }
+
+        // Export to PDF (simplified - triggers print)
+        function exportToPDF() {
+            alert('Use your browser\'s Print function to save as PDF. The page is optimized for printing.');
+            window.print();
+        }
+
+        // Apply pipe data for BOP casing selectors
+        function applyPipeData(selectElement, prefix) {
+            const value = selectElement.value;
+            if (!value || !pipeCapacityData) return;
+
+            const [type, idx] = value.split('-');
+            let pipe;
+
+            if (type === 'casing') pipe = pipeCapacityData.casing[idx];
+
+            if (pipe) {
+                document.getElementById(prefix + 'OD').value = pipe.od;
+                document.getElementById(prefix + 'ID').value = pipe.id;
+                calcBOP();
+            }
+        }
+
+        function applyDrillPipeData() {
+            const select = document.getElementById('bopDrillPipe');
+            const idx = select.value;
+            if (!idx || !pipeCapacityData) return;
+
+            const pipe = pipeCapacityData.drillPipe[idx];
+            if (pipe) {
+                // Update the main drill string table
+                if (stringData.length > 0) {
+                    stringData[0].od = pipe.od;
+                    stringData[0].id = pipe.id;
+                    stringData[0].name = pipe.size;
+                    rebuildStringsTable();
+                }
+            }
+        }
+    </script>
+</body>
+</html>

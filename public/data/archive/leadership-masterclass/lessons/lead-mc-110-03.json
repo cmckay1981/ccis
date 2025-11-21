@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-110-03",
+  "moduleId": "LEAD-MC-110",
+  "courseId": "LEAD-MC",
+  "title": "Cross-Cultural and Multi-Generational Communication",
+  "type": "lesson",
+  "content": "Teams increasingly span cultures, generations, and communication preferences. What's direct in one culture is rude in another. What's respectful to one generation feels formal to another. Leaders who assume everyone communicates like they do create misunderstanding and exclusion. Effective communication across differences requires awareness of preferences, flexibility in approach, and focusing on clarity over comfort with your preferred style.",
+  "mcq": {
+    "question": "Your team includes: older workers who prefer face-to-face meetings and phone calls, younger workers who default to messaging apps, and international team members whose first language isn't English. Your current practice is sending detailed emails for all important communication. Several people seem to miss key information regularly. What's the issue?",
+    "options": {
+      "A": "People aren't reading emails carefully enough",
+      "B": "One communication method doesn't work for everyone—you need multiple channels",
+      "C": "The team needs training on email best practices",
+      "D": "Email is professional standard and people need to adapt"
+    },
+    "correctOption": "B",
+    "explanation": "Communication effectiveness beats communication preference. If people are missing information despite your effort, your method isn't working for them. Option B recognizes you need to meet people where they are: key messages might need face-to-face discussion for some, messaging app summaries for others, and simplified language for non-native speakers. Yes, it's more work. But leadership communication is about ensuring understanding, not broadcasting in your preferred format. Option A blames recipients. Option C misses that the issue is channel mismatch, not skill. Option D prioritizes your comfort over effectiveness. Leaders adapt communication style to audience needs."
+  },
+  "openQuestions": [
+    "What's your default communication style? Who on your team might not receive information effectively in that format?",
+    "Think of a miscommunication that occurred recently. Could communication style or cultural difference have contributed?"
+  ]
+}

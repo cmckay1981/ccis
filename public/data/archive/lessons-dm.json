@@ -1,0 +1,394 @@
+{
+  "course_id": "decision-making",
+  "course_name": "Decision Making",
+  "modules": [
+    {
+      "module_id": "dm-m1-fundamentals",
+      "module_name": "Decision Fundamentals",
+      "order": 1,
+      "lessons": [
+        {
+          "lesson_id": "dm-m1-l1",
+          "title": "Types of Decisions",
+          "order": 1,
+          "content": "Operational decisions fall into three categories: routine, tactical, and critical. Routine decisions follow procedures. Tactical decisions require judgment within known parameters. Critical decisions demand immediate action under pressure with incomplete information.",
+          "questions": [
+            "What type of decision do you make most frequently in your role?",
+            "Describe a recent critical decision you faced—what made it different from routine calls?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "dm-m1-l2",
+          "title": "Decision Speed vs Quality",
+          "order": 2,
+          "content": "Fast decisions aren't always bad decisions. The key is matching decision speed to available time and consequence severity. High-stakes decisions with time permit deeper analysis. Time-critical situations demand rapid assessment with acceptable risk tolerance.",
+          "questions": [
+            "When do you force yourself to slow down before deciding?",
+            "How do you avoid analysis paralysis when time is short?"
+          ],
+          "mcq": {
+            "question": "You have 30 seconds to decide whether to abort a procedure. What's your primary decision input?",
+            "options": {
+              "A": "Consensus from the team",
+              "B": "Current system state and safety margins",
+              "C": "What worked last time",
+              "D": "Wait for more data"
+            },
+            "correct": "B",
+            "explanation": "In time-critical situations, you assess current conditions and safety margins first. Consensus and historical data are secondary when seconds count."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "dm-m1-l3",
+          "title": "Decision Authority",
+          "order": 3,
+          "content": "Know who owns the decision before the crisis. Authority should be clear, published, and trained. When authority is unclear, decision paralysis or conflict occurs at the worst moment.",
+          "questions": [
+            "In your operation, who has final authority on safety-critical calls?",
+            "Have you ever seen two people think they were the decision-maker? What happened?"
+          ],
+          "mcq": null,
+          "scenario": "Two supervisors give conflicting orders during an emergency. The crew looks to you. What do you do?"
+        }
+      ]
+    },
+    {
+      "module_id": "dm-m2-models",
+      "module_name": "Decision Models",
+      "order": 2,
+      "lessons": [
+        {
+          "lesson_id": "dm-m2-l1",
+          "title": "OODA Loop Basics",
+          "order": 1,
+          "content": "OODA stands for Observe, Orient, Decide, Act. First, gather current facts. Second, interpret them within context. Third, choose a course of action. Fourth, execute and return to Observe. Speed comes from practice, not skipping steps.",
+          "questions": [
+            "Walk through a recent decision using OODA—where did you spend the most time?",
+            "Which step do you tend to rush?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "dm-m2-l2",
+          "title": "Recognition-Primed Decision Making",
+          "order": 2,
+          "content": "Experts rarely list options and compare them. Instead, they recognize patterns and mentally simulate the first workable option. If simulation shows failure, they move to the next option. This is faster and more reliable than formal analysis under pressure.",
+          "questions": [
+            "Describe a time you 'just knew' what to do—what pattern did you recognize?",
+            "How do you test your mental simulation before committing to action?"
+          ],
+          "mcq": {
+            "question": "You smell something unusual near a pressure vessel. What's happening in your brain?",
+            "options": {
+              "A": "Listing all possible causes in order",
+              "B": "Pattern-matching to previous incidents",
+              "C": "Waiting for instrument confirmation",
+              "D": "Running statistical probability"
+            },
+            "correct": "B",
+            "explanation": "Experienced operators immediately pattern-match sensory cues to past incidents. This recognition-primed response is faster than analytical reasoning."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "dm-m2-l3",
+          "title": "Decision Trees for Procedures",
+          "order": 3,
+          "content": "Procedural decisions follow if-then logic trees. Condition A leads to Action 1; Condition B leads to Action 2. These work best for routine and predictable scenarios where all branches can be pre-planned and trained.",
+          "questions": [
+            "What procedures in your work are structured as decision trees?",
+            "When has a procedure tree failed because the situation didn't match any branch?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "dm-m2-l4",
+          "title": "Naturalistic Decision Making",
+          "order": 4,
+          "content": "Naturalistic Decision Making describes how people actually decide in the field—not in classrooms. Real decisions involve time pressure, uncertain data, shifting goals, and organizational constraints. Training must reflect field conditions, not idealized scenarios.",
+          "questions": [
+            "How do real-world decisions differ from what you trained for?",
+            "What constraints affect your decisions that training didn't cover?"
+          ],
+          "mcq": null,
+          "scenario": "You're trained to follow a 12-step checklist, but the situation is evolving faster than you can read. How do you adapt?"
+        }
+      ]
+    },
+    {
+      "module_id": "dm-m3-biases",
+      "module_name": "Cognitive Biases",
+      "order": 3,
+      "lessons": [
+        {
+          "lesson_id": "dm-m3-l1",
+          "title": "Confirmation Bias",
+          "order": 1,
+          "content": "Confirmation bias is seeing what you expect to see. Once you form a hypothesis, you unconsciously seek data that supports it and ignore contradictory signals. This kills situational awareness and causes catastrophic misdiagnosis.",
+          "questions": [
+            "Describe a time you were convinced of one problem, then discovered it was something else entirely.",
+            "How do you force yourself to consider alternative explanations?"
+          ],
+          "mcq": {
+            "question": "Three gauges say normal, one says abnormal. What's the most dangerous assumption?",
+            "options": {
+              "A": "The abnormal gauge is broken",
+              "B": "All gauges could be right",
+              "C": "The system is failing in one area",
+              "D": "Ignore the outlier and monitor"
+            },
+            "correct": "A",
+            "explanation": "Assuming the outlier is broken (confirmation bias) can mask real system failures. Always validate the abnormal reading before dismissing it."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "dm-m3-l2",
+          "title": "Anchoring Effect",
+          "order": 2,
+          "content": "The first number or idea you hear becomes your anchor. Subsequent judgments are biased toward that initial reference point, even if it's wrong. Anchoring distorts risk assessment, cost estimates, and timeline predictions.",
+          "questions": [
+            "When someone gives you an initial estimate, do you challenge it or accept it?",
+            "How can you reset your mental anchor if the first input was misleading?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "dm-m3-l3",
+          "title": "Normalcy Bias",
+          "order": 3,
+          "content": "Normalcy bias is the belief that things will continue as normal, even when clear warning signs indicate otherwise. People underestimate threats and delay action because 'it's probably fine.' This bias is deadly in high-consequence environments.",
+          "questions": [
+            "Have you ever dismissed an early warning because it seemed unlikely?",
+            "What triggers you to override normalcy bias and take precautionary action?"
+          ],
+          "mcq": null,
+          "scenario": "Minor pressure fluctuations appear on your readout. They're within tolerance, but unusual. Do you investigate now or wait?"
+        },
+        {
+          "lesson_id": "dm-m3-l4",
+          "title": "Outcome Bias",
+          "order": 4,
+          "content": "Outcome bias judges decisions by results, not process. A bad decision with a lucky outcome looks good. A sound decision with unlucky results looks bad. This distorts learning—you repeat risky behavior that succeeded and abandon good practice that failed once.",
+          "questions": [
+            "Describe a time when 'it worked out' even though the decision process was flawed.",
+            "How do you separate decision quality from outcome luck in after-action reviews?"
+          ],
+          "mcq": {
+            "question": "A shortcut saved time and nothing went wrong. Should you repeat it?",
+            "options": {
+              "A": "Yes—it worked, so it's validated",
+              "B": "No—evaluate the risk, not just the outcome",
+              "C": "Yes, but only in similar conditions",
+              "D": "No—all shortcuts are inherently unsafe"
+            },
+            "correct": "B",
+            "explanation": "Outcome bias makes successful shortcuts look safe. Proper decision analysis evaluates the risk exposure, not whether you got lucky this time."
+          },
+          "scenario": null
+        }
+      ]
+    },
+    {
+      "module_id": "dm-m4-uncertainty",
+      "module_name": "Deciding Under Uncertainty",
+      "order": 4,
+      "lessons": [
+        {
+          "lesson_id": "dm-m4-l1",
+          "title": "Probabilistic Thinking",
+          "order": 1,
+          "content": "Most operational decisions involve incomplete information. Probabilistic thinking means estimating likelihood and acting on probabilities, not certainties. You'll never have perfect data—the skill is deciding with 'good enough' confidence.",
+          "questions": [
+            "How confident do you need to be before taking action—60%? 80%? 95%?",
+            "Describe a decision where you acted on incomplete information and it was the right call."
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "dm-m4-l2",
+          "title": "Worst-Case Analysis",
+          "order": 2,
+          "content": "Before committing to a decision, ask: 'What's the worst that could happen if I'm wrong?' If the worst case is catastrophic and irreversible, either get more data or choose a safer option. If the worst case is manageable, proceed with monitoring.",
+          "questions": [
+            "What's an example of a decision where the worst case was unacceptable?",
+            "How do you balance worst-case thinking with operational necessity?"
+          ],
+          "mcq": {
+            "question": "You're 70% sure the equipment is safe to restart. Worst case: complete system failure. What do you do?",
+            "options": {
+              "A": "Restart—70% is good enough",
+              "B": "Get more data before restarting",
+              "C": "Restart with backup systems active",
+              "D": "Defer the decision to someone else"
+            },
+            "correct": "B",
+            "explanation": "When worst case is catastrophic failure, 70% confidence isn't sufficient. Invest time to increase certainty or implement additional safeguards."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "dm-m4-l3",
+          "title": "Reversible vs Irreversible Decisions",
+          "order": 3,
+          "content": "Reversible decisions can be undone with low cost. Irreversible decisions cannot. You can afford to experiment with reversible decisions—test, learn, adjust. Irreversible decisions demand higher confidence and more thorough analysis before commitment.",
+          "questions": [
+            "What decisions in your work are irreversible once made?",
+            "How does reversibility change your decision speed and process?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "dm-m4-l4",
+          "title": "Decision Triggers",
+          "order": 4,
+          "content": "Pre-define decision triggers before the event. 'If X reaches Y threshold, we will do Z.' Triggers eliminate on-the-spot deliberation and reduce cognitive load during high-stress moments. Build triggers into your procedures and brief them to the team.",
+          "questions": [
+            "What decision triggers are already built into your procedures?",
+            "What recurring decisions could you pre-script with clear triggers?"
+          ],
+          "mcq": null,
+          "scenario": "You're monitoring a slow pressure rise. At what point do you pre-commit to shutting down?"
+        }
+      ]
+    },
+    {
+      "module_id": "dm-m5-team-decisions",
+      "module_name": "Team Decision Making",
+      "order": 5,
+      "lessons": [
+        {
+          "lesson_id": "dm-m5-l1",
+          "title": "Command vs Consensus",
+          "order": 1,
+          "content": "Command decisions are made by one person with authority. Consensus decisions require group agreement. Each has a place—command for time-critical safety decisions, consensus for planning and resource allocation. Mixing them causes confusion and delays.",
+          "questions": [
+            "When do you use command authority vs seeking input from the team?",
+            "Have you seen consensus slow down an urgent decision? What happened?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "dm-m5-l2",
+          "title": "Groupthink and Dissent",
+          "order": 2,
+          "content": "Groupthink occurs when team pressure suppresses dissent and alternative viewpoints. Everyone agrees because disagreement feels risky. This leads to poor decisions that go unchallenged. Effective teams actively solicit dissent and reward those who speak up.",
+          "questions": [
+            "When was the last time someone on your team challenged a decision? What was the result?",
+            "How do you signal that dissent is safe and expected?"
+          ],
+          "mcq": {
+            "question": "Everyone on the team nods in agreement with the plan. What should you do?",
+            "options": {
+              "A": "Proceed—consensus achieved",
+              "B": "Ask: 'Who sees a problem with this?'",
+              "C": "Assume silence means approval",
+              "D": "Move forward quickly before someone objects"
+            },
+            "correct": "B",
+            "explanation": "Silence isn't true consensus. Actively solicit dissent to surface concerns that people are hesitant to voice."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "dm-m5-l3",
+          "title": "Decision Ownership and Accountability",
+          "order": 3,
+          "content": "Every decision needs a clear owner. The owner gathers input, makes the call, and owns the outcome. Input providers are not decision-makers—they advise, but the owner decides. Shared ownership creates ambiguity and diffuses accountability.",
+          "questions": [
+            "In your team, how is decision ownership assigned?",
+            "Describe a situation where unclear ownership caused a decision delay or conflict."
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "dm-m5-l4",
+          "title": "Pre-Brief Decision Protocols",
+          "order": 4,
+          "content": "Before high-stakes operations, pre-brief decision authority and protocols. Clarify who decides what, under what conditions, and with what inputs. This prevents mid-operation confusion about who has authority to abort, proceed, or escalate.",
+          "questions": [
+            "What decision protocols do you brief before critical operations?",
+            "How do you ensure everyone understands their decision rights and limits?"
+          ],
+          "mcq": null,
+          "scenario": "You're about to start a complex evolution. What decision authorities should you clarify before beginning?"
+        }
+      ]
+    },
+    {
+      "module_id": "dm-m6-stress-fatigue",
+      "module_name": "Decisions Under Stress",
+      "order": 6,
+      "lessons": [
+        {
+          "lesson_id": "dm-m6-l1",
+          "title": "How Stress Degrades Decisions",
+          "order": 1,
+          "content": "Acute stress narrows attention, reduces working memory, and biases toward habitual responses. You miss peripheral cues, forget steps, and default to what you've done before—even if it's wrong. Recognizing stress symptoms in yourself is the first step to compensating.",
+          "questions": [
+            "What physical signs tell you that stress is affecting your thinking?",
+            "How do you slow yourself down when you feel rushed by stress?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "dm-m6-l2",
+          "title": "Fatigue and Decision Quality",
+          "order": 2,
+          "content": "Fatigue impairs judgment as much as alcohol. Tired operators take riskier shortcuts, miss warning signs, and overestimate their competence. If you're fatigued, either get rest or implement additional checks and safeguards before making critical decisions.",
+          "questions": [
+            "How many hours into your shift do you notice decision quality declining?",
+            "What strategies do you use to compensate for fatigue?"
+          ],
+          "mcq": {
+            "question": "You've been on shift for 14 hours. A non-urgent decision needs to be made. What do you do?",
+            "options": {
+              "A": "Make the decision now—you're experienced",
+              "B": "Defer to the next shift if possible",
+              "C": "Get a second opinion before deciding",
+              "D": "Rush the decision to go home sooner"
+            },
+            "correct": "B",
+            "explanation": "Fatigue degrades judgment. Defer non-urgent decisions to fresh personnel if possible, or get additional verification."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "dm-m6-l3",
+          "title": "Tactical Breathing and Reset",
+          "order": 3,
+          "content": "Tactical breathing (box breathing) reduces physiological stress response. Inhale for 4 counts, hold for 4, exhale for 4, hold for 4. Repeat three times. This activates your parasympathetic system and restores cognitive clarity before deciding.",
+          "questions": [
+            "Have you ever used a breathing technique to calm yourself mid-operation?",
+            "What other techniques help you reset your mental state under pressure?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "dm-m6-l4",
+          "title": "Recognizing Decision Fatigue",
+          "order": 4,
+          "content": "Decision fatigue is the deterioration of decision quality after making many consecutive decisions. Your willpower and judgment deplete like a battery. Symptoms: indecision, impulsivity, avoidance. Mitigation: reduce trivial decisions, take breaks, automate routine choices.",
+          "questions": [
+            "How many decisions do you typically make in a shift?",
+            "What trivial decisions could you eliminate or automate to preserve mental energy?"
+          ],
+          "mcq": null,
+          "scenario": "You've made 40 decisions today. Now you face a critical call. How do you ensure decision quality hasn't degraded?"
+        }
+      ]
+    }
+  ]
+}

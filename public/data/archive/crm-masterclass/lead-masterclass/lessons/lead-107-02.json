@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-107-02",
+  "moduleId": "LEAD-107",
+  "courseId": "LEAD",
+  "title": "Translating Strategy into Operational Action",
+  "type": "lesson",
+  "content": "The gap between strategy and execution kills most initiatives. Senior leaders set direction, but frontline teams execute. Leaders in the middle must translate strategic intent into operational reality: what changes in our daily work, what stops, what starts, and how do we measure progress. This requires understanding both strategic intent and operational constraints, then bridging the two with clear action plans and resource commitment.",
+  "mcq": {
+    "question": "Senior leadership announces a strategic pivot toward customer responsiveness. A mid-level leader's team currently optimizes for efficiency and standardization. The leader must now translate the strategy for their team. What's the most effective approach?",
+    "options": {
+      "A": "Share the announcement and tell the team to start being more responsive",
+      "B": "Identify specific processes that need to change, explain the trade-offs, and establish new success metrics aligned with responsiveness",
+      "C": "Wait for senior leadership to provide detailed implementation guidance",
+      "D": "Continue optimizing for efficiency since that's what the team knows how to do well"
+    },
+    "correctOption": "B",
+    "explanation": "Option B demonstrates strategic translation. The leader understands that shifting from efficiency to responsiveness requires changing specific workflows, accepting different trade-offs (speed over standardization), and measuring different outcomes. Simply announcing the change (A) doesn't help people understand what to actually do differently. Waiting for detailed guidance (C) abdicates leadership responsibility for translation. Ignoring the strategic shift (D) creates misalignment. Mid-level leaders earn value by making strategy actionable for their specific context."
+  },
+  "openQuestions": [
+    "Think of a recent strategic initiative from senior leadership. How effectively did you translate it into action for your team?",
+    "What's the biggest gap between strategic intent and operational reality in your organization right now?"
+  ]
+}

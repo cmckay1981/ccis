@@ -1,0 +1,14 @@
+{
+  "moduleId": "LEAD-107",
+  "courseId": "LEAD",
+  "title": "Strategic Leadership",
+  "description": "Covers vision creation and articulation, translating strategy into operational action, leading organizational change, managing resistance and building buy-in, and executing strategic plans effectively.",
+  "order": 7,
+  "lessonIds": [
+    "LEAD-107-01",
+    "LEAD-107-02",
+    "LEAD-107-03",
+    "LEAD-107-04",
+    "LEAD-107-05"
+  ]
+}

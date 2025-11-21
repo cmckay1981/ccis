@@ -1,0 +1,50 @@
+{
+  "sectionId": "1.6",
+  "title": "Roles & Responsibilities",
+  "content": {
+    "1.6.1": {
+      "title": "Well Control Response Team",
+      "content": "The Well Control Response Team comprises all personnel with roles in well control prevention, detection, and response. Team composition varies by operation type but core roles include:\n\n- Responsible Person (OIM/Rig Manager)\n- Drilling Supervisor/Superintendent\n- Toolpusher\n- Driller\n- Assistant Driller\n- Mud Engineer\n- Mud Logger\n- Subsea Supervisor/Engineer (subsea operations)\n- Operator Representative\n\nAll team members shall:\n- Hold appropriate certifications for their role\n- Understand their specific responsibilities\n- Be familiar with current well conditions\n- Participate in well control drills\n- Maintain readiness to respond"
+    },
+    "1.6.2": {
+      "title": "Responsible Person (OIM/Rig Manager)",
+      "content": "The Responsible Person has overall charge of the installation and well control operations.\n\n**Responsibilities:**\n- Ultimate accountability for well control on the installation\n- Ensure adequate resources for well control\n- Chair well control status meetings\n- Approve well control procedures and bridging documents\n- Ensure competent personnel are assigned\n- Authorize emergency actions\n- Notify shore base of well control events\n- Ensure regulatory compliance\n\n**Authority:**\n- Full authority over all operations on the installation\n- Authority to shut down operations for safety\n- Authority to mobilize emergency response resources\n\n**Delegation:**\n- Must designate a competent stand-in when absent\n- Delegation does not relieve accountability"
+    },
+    "1.6.3": {
+      "title": "Drilling Supervisor/Superintendent",
+      "content": "The Drilling Supervisor provides technical leadership for drilling operations including well control.\n\n**Responsibilities:**\n- Implement well control procedures\n- Ensure crew competency and readiness\n- Verify equipment readiness and testing\n- Lead pre-spud and operational meetings\n- Supervise well control drills\n- First-line decision making during events\n- Interface with Operator Representative\n- Ensure proper documentation\n- Report events to management\n\n**During Well Control Events:**\n- Take charge of well control operations\n- Direct kill operations\n- Coordinate with shore-based support\n- Ensure proper recording of data"
+    },
+    "1.6.4": {
+      "title": "Toolpusher",
+      "content": "The Toolpusher supervises drilling floor operations and crew.\n\n**Responsibilities:**\n- Direct supervision of drilling crew\n- Ensure procedures are followed\n- Monitor crew performance and alertness\n- Conduct crew briefings and handovers\n- Verify equipment status\n- Support Driller during operations\n- Act as Drilling Supervisor when delegated\n\n**During Well Control Events:**\n- Present on drill floor to support Driller\n- Manage additional personnel as needed\n- Coordinate with other departments\n- Maintain communication with Supervisor"
+    },
+    "1.6.5": {
+      "title": "Driller",
+      "content": "The Driller is responsible for direct control of the well and immediate response to well control events.\n\n**Responsibilities:**\n- Primary responsibility for well control at all times\n- Monitor all well parameters continuously\n- Detect kicks and other abnormal conditions\n- Execute shut-in procedures\n- Operate BOP and choke during well control\n- Maintain awareness of well status\n- Ensure relief Driller is properly briefed\n- Document all significant events\n\n**Authority:**\n- **ABSOLUTE AUTHORITY to shut in the well without seeking permission from any supervisor**\n- This authority cannot be overridden\n- No person shall be penalized for shutting in the well in good faith\n\n**During Well Control Events:**\n- Execute immediate shut-in\n- Record shut-in pressures\n- Operate choke during kill operations\n- Maintain pressure control\n- Follow Supervisor's direction for kill method"
+    },
+    "1.6.6": {
+      "title": "Assistant Driller",
+      "content": "The Assistant Driller supports the Driller and monitors well parameters.\n\n**Responsibilities:**\n- Monitor pit volumes, flow rates, and returns\n- Alert Driller to any anomalies\n- Maintain trip sheets and fill records\n- Assist with BOP and equipment operation\n- Support shut-in procedures\n- Monitor solids control equipment\n- Act as Driller when designated\n\n**During Well Control Events:**\n- Support Driller with monitoring\n- Record data as directed\n- Operate equipment as assigned\n- Maintain communication"
+    },
+    "1.6.7": {
+      "title": "Mud Engineer",
+      "content": "The Mud Engineer maintains the drilling fluid system and supports well control.\n\n**Responsibilities:**\n- Maintain mud properties per program\n- Ensure adequate mud volume and weight-up materials\n- Monitor mud returns for gas and cuttings\n- Advise on mud-related well control issues\n- Prepare kill mud when required\n- Document mud properties\n\n**During Well Control Events:**\n- Prepare kill mud to required weight\n- Monitor mud properties during circulation\n- Advise on mud-related complications\n- Ensure materials availability"
+    },
+    "1.6.8": {
+      "title": "Mud Logger",
+      "content": "The Mud Logger provides continuous monitoring and documentation of well parameters.\n\n**Responsibilities:**\n- Monitor and record drilling parameters\n- Monitor and record gas levels\n- Track pit volumes and flow\n- Alert Driller to anomalies\n- Maintain drilling logs\n- Support kick detection\n\n**During Well Control Events:**\n- Continuous recording of all parameters\n- Record time stamps for all events\n- Monitor gas composition if H2S capable\n- Provide data for post-event analysis"
+    },
+    "1.6.9": {
+      "title": "Subsea Supervisor/Engineer",
+      "content": "For subsea operations, the Subsea Supervisor/Engineer manages subsea equipment including the BOP.\n\n**Responsibilities:**\n- Ensure subsea BOP readiness\n- Monitor BOP control system\n- Conduct BOP testing\n- Present at control panel during critical operations\n- Manage ROV operations related to BOP\n- Maintain subsea equipment records\n\n**During Well Control Events:**\n- Man BOP control panel\n- Execute BOP functions as directed\n- Monitor hydraulic and electrical systems\n- Support emergency disconnect if required\n- Advise on subsea complications"
+    },
+    "1.6.10": {
+      "title": "Operator Representative",
+      "content": "The Operator Representative represents the well owner's interests and provides oversight.\n\n**Responsibilities:**\n- Verify operations comply with program and regulations\n- Interface between rig and operator engineering\n- Coordinate with shore base\n- Observe and report on operations\n- Participate in well control meetings\n- Support incident investigation\n- Environmental responsibilities as designated\n\n**During Well Control Events:**\n- Observe and document\n- Communicate with shore base\n- Do not interfere with rig crew's response\n- Coordinate additional resources if needed\n- Support regulatory notifications"
+    },
+    "1.6.11": {
+      "title": "Service Company Personnel",
+      "content": "Various service company personnel support well control operations:\n\n**Cementer:**\n- Maintain cementing equipment ready for emergency use\n- Ensure cement and additives available\n- Support bullheading or squeeze operations\n\n**Directional Driller/MWD Engineer:**\n- Provide downhole data if tools in hole\n- Support kick detection with PWD data\n- Advise on tool limitations during well control\n\n**All Service Personnel:**\n- Understand their role in emergency response\n- Muster and respond per emergency plan\n- Support operations as directed\n- Not interfere with well control response"
+    }
+  }
+}

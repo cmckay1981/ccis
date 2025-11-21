@@ -1,0 +1,76 @@
+{
+  "checklistId": "DWOP-CL-001",
+  "title": "Rig Move & Marine Operations Checklist",
+  "section": "Rig Move to Location",
+  "rigTypes": ["SEMISUBMERSIBLE", "DRILLSHIP"],
+  "bopType": "subsea",
+  "breakoutRoom": "A",
+  "participants": ["OIM", "Marine Superintendent", "Logistics Coordinator", "HSE"],
+  "aiParticipant": true,
+  "categories": [
+    {
+      "category": "Rig Move Planning",
+      "items": [
+        {"item": "Rig move plan reviewed and approved", "critical": true},
+        {"item": "Weather window requirements confirmed", "critical": true},
+        {"item": "Towage/DP vessel arrangements confirmed"},
+        {"item": "Anchor handling vessel (AHV) availability"},
+        {"item": "Rig move duration estimated"},
+        {"item": "Communications plan for move established"},
+        {"item": "Emergency response plan during move"}
+      ]
+    },
+    {
+      "category": "Positioning",
+      "items": [
+        {"item": "Target coordinates verified against well plan", "critical": true},
+        {"item": "Seabed survey reviewed for hazards"},
+        {"item": "Anchor pattern planned (if moored)"},
+        {"item": "DP footprint analysis completed (if DP)"},
+        {"item": "Reference systems verified"},
+        {"item": "Exclusion zones identified"}
+      ]
+    },
+    {
+      "category": "Marine Operations",
+      "items": [
+        {"item": "Ballast plan for operations confirmed"},
+        {"item": "Stability calculations verified"},
+        {"item": "Motion limits for operations defined"},
+        {"item": "Heave compensation system tested"},
+        {"item": "Marine riser tensioner capacity verified"}
+      ]
+    },
+    {
+      "category": "Supply Vessel Logistics",
+      "items": [
+        {"item": "Initial load-out priority list confirmed"},
+        {"item": "Supply vessel schedule confirmed"},
+        {"item": "Deck space allocation plan"},
+        {"item": "Hazmat transfer procedures reviewed"},
+        {"item": "Backload requirements identified"}
+      ]
+    },
+    {
+      "category": "HSE & Emergency Response",
+      "items": [
+        {"item": "Emergency response plan for location reviewed", "critical": true},
+        {"item": "SAR coverage confirmed"},
+        {"item": "Medical evacuation routes established"},
+        {"item": "Standby vessel requirements confirmed"},
+        {"item": "Environmental baseline completed"}
+      ]
+    }
+  ],
+  "aiQuestions": [
+    "What is the maximum weather window you need for rig move? What if weather deteriorates mid-move?",
+    "If primary positioning system fails during setup, what's your contingency?",
+    "The programme shows 24 hours for positioning - is this realistic given current vessel availability?",
+    "Have all permits and notifications been completed for this location?",
+    "What's the minimum acceptable accuracy for final position before spud?"
+  ],
+  "actionItemTemplate": {
+    "fields": ["item", "owner", "dueDate", "status", "notes"]
+  },
+  "tags": ["dwop", "checklist", "rig-move", "marine"]
+}

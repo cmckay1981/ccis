@@ -1,0 +1,15 @@
+{
+  "moduleId": "LEAD-112",
+  "courseId": "LEAD",
+  "title": "Organizational Leadership Systems",
+  "description": "Addresses talent assessment and succession planning, building performance measurement systems, creating mentoring culture, leading through organizational growth versus decline, post-failure recovery, and executive leadership transitions.",
+  "order": 12,
+  "lessonIds": [
+    "LEAD-112-01",
+    "LEAD-112-02",
+    "LEAD-112-03",
+    "LEAD-112-04",
+    "LEAD-112-05",
+    "LEAD-112-06"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "categoryId": "LAND_RIG",
+  "title": "Land Rig Operations - AI Probing Questions",
+  "rigTypes": ["LAND"],
+  "bopType": "surface",
+  "description": "Questions specific to land rig operations including rig move, conductor driving, surface BOP, and land-specific logistics",
+  "questions": [
+    {"questionId": "LR-001", "question": "Location is 15 km from nearest paved road - have you assessed road conditions for 60-tonne loads during all seasons?", "type": "verification", "focus": "Access logistics", "expectedResponse": "Road assessment and seasonal considerations"},
+    {"questionId": "LR-002", "question": "Water supply is from local well - what's your contingency if yield is insufficient for drilling operations?", "type": "what_if", "focus": "Water supply", "expectedResponse": "Alternative water sources or trucking plan"},
+    {"questionId": "LR-003", "question": "Rig move is scheduled for rainy season - what's your plan if roads become impassable?", "type": "what_if", "focus": "Weather contingency", "expectedResponse": "Seasonal planning and alternative routes"},
+    {"questionId": "LR-004", "question": "Nearest hospital is 2 hours away - what's your serious injury response plan?", "type": "verification", "focus": "Medical emergency", "expectedResponse": "Medevac plan and on-site medical capability"},
+    {"questionId": "LR-005", "question": "Conductor will be driven - confirm pile driver is scheduled and soil conditions are suitable?", "type": "verification", "focus": "Conductor installation", "expectedResponse": "Geotechnical data and equipment availability"},
+    {"questionId": "LR-006", "question": "Geotechnical report shows clay layer at 15m - what's your plan if conductor refuses above target depth?", "type": "what_if", "focus": "Conductor contingency", "expectedResponse": "Alternative conductor installation method"},
+    {"questionId": "LR-007", "question": "Power is generator-based - do you have redundancy for critical operations during well control events?", "type": "gap_identification", "focus": "Power supply", "expectedResponse": "Backup power plan"},
+    {"questionId": "LR-008", "question": "Local community is 5 km away - have all stakeholder engagements been completed?", "type": "verification", "focus": "Community relations", "expectedResponse": "Stakeholder engagement records"},
+    {"questionId": "LR-009", "question": "Surface BOP test shows 45-second closing time - your standard requires 30 seconds. Is this acceptable?", "type": "assumption_challenge", "focus": "BOP performance", "expectedResponse": "Closing time justification or remediation"},
+    {"questionId": "LR-010", "question": "Shear rams are rated for 5\" DP but programme shows 5-7/8\" HWDP - can you shear the HWDP?", "type": "gap_identification", "focus": "Shear capability", "expectedResponse": "Shear rating verification"},
+    {"questionId": "LR-011", "question": "Fuel delivery schedule shows weekly resupply - what's your minimum fuel reserve policy?", "type": "verification", "focus": "Fuel logistics", "expectedResponse": "Fuel reserve calculation"},
+    {"questionId": "LR-012", "question": "Previous well 200m away had conductor driving issues - have you reviewed that experience?", "type": "assumption_challenge", "focus": "Lessons learned", "expectedResponse": "Offset well review"},
+    {"questionId": "LR-013", "question": "Cellar depth is 3m but water table is at 2m - how will you manage water ingress?", "type": "what_if", "focus": "Cellar management", "expectedResponse": "Dewatering plan"},
+    {"questionId": "LR-014", "question": "Rig substructure rated for 500-ton hook load but your heaviest casing string is 480 tons - what's your safety margin?", "type": "calculation_check", "focus": "Rig capacity", "expectedResponse": "Load calculation with safety factor"},
+    {"questionId": "LR-015", "question": "Desert location with 45°C ambient temperature - have mud rheology and equipment ratings been adjusted?", "type": "verification", "focus": "High temperature operations", "expectedResponse": "Temperature adjustments for equipment and fluids"},
+    {"questionId": "LR-016", "question": "Night operations planned but no permanent lighting on access road - what's your vehicle safety plan?", "type": "gap_identification", "focus": "Transport safety", "expectedResponse": "Night transport procedures"},
+    {"questionId": "LR-017", "question": "Remote BOP panel is 50m from wellhead - confirm line of sight and communication during well control event?", "type": "verification", "focus": "Well control", "expectedResponse": "Remote panel positioning and comms"},
+    {"questionId": "LR-018", "question": "Mobile salt section expected at 1500m - do you have fresh water pills and OBM conversion materials on location?", "type": "verification", "focus": "Salt section drilling", "expectedResponse": "Materials inventory for salt section"},
+    {"questionId": "LR-019", "question": "Waste disposal shows trucking to approved facility 100 km away - what's your contingency if trucking is disrupted?", "type": "what_if", "focus": "Waste management", "expectedResponse": "On-site storage and alternative disposal"},
+    {"questionId": "LR-020", "question": "Programme shows 21-day BOP test interval but section estimate is 25 days - when will you perform mid-section test?", "type": "verification", "focus": "BOP testing schedule", "expectedResponse": "Test timing plan"}
+  ],
+  "tags": ["dwop", "ai-questions", "land-rig", "surface-bop", "logistics"]
+}

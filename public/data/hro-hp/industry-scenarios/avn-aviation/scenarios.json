@@ -1,0 +1,202 @@
+{
+  "industryCode": "AVN",
+  "industryName": "Aviation",
+  "description": "Comprehensive scenario pack for all aviation operations",
+  "targetOrganizations": ["Airlines", "Airports", "MRO facilities", "Ground handling", "Air traffic", "Charter operations"],
+
+  "departments": {
+    "FLIGHT_DECK": {
+      "name": "Flight Deck / Cockpit",
+      "roles": ["Captain", "First Officer", "Relief Pilot", "Check Airman", "Chief Pilot"],
+      "scenarios": {
+        "SA": "Captain monitoring instruments notices airspeed trend but doesn't project impact on approach configuration timing.",
+        "DM": "Deciding whether to continue approach with deteriorating weather vs. go-around vs. divert.",
+        "COMM": "Communicating an abnormal situation to cabin crew without causing passenger alarm.",
+        "TW": "Coordinating task sharing during high-workload phase with inexperienced first officer.",
+        "LEAD": "Captain managing crew resource dynamics when first officer challenges a decision.",
+        "HF": "Pilot fatigue effects after overnight flight crossing multiple time zones."
+      }
+    },
+
+    "CABIN_CREW": {
+      "name": "Cabin Crew",
+      "roles": ["Purser/Lead FA", "Flight Attendant", "Cabin Service Director", "In-Flight Supervisor"],
+      "scenarios": {
+        "SA": "Flight attendant notices passenger behavior change but doesn't connect to medical emergency signs.",
+        "DM": "Deciding how to handle intoxicated passenger before situation escalates.",
+        "COMM": "Communicating security concern to flight deck using established protocols.",
+        "TW": "Coordinating emergency positions and duties during irregular operation.",
+        "LEAD": "Purser managing cabin team morale during extended delay with difficult passengers.",
+        "HF": "Attention to detail degradation on fourth flight segment of the day."
+      }
+    },
+
+    "GROUND_OPERATIONS": {
+      "name": "Ground Operations / Ramp",
+      "roles": ["Ramp Agent", "Ground Crew Lead", "Baggage Handler", "Pushback Operator", "Ground Operations Manager"],
+      "scenarios": {
+        "SA": "Ramp agent notices aircraft position but doesn't anticipate conflict with adjacent arrival.",
+        "DM": "Deciding whether to delay pushback for late-connecting passengers vs. on-time departure.",
+        "COMM": "Communicating cargo loading discrepancy to operations and flight deck.",
+        "TW": "Coordinating turn activities between fueling, catering, cleaning, and baggage.",
+        "LEAD": "Ramp lead managing team through weather delay with multiple aircraft queued.",
+        "HF": "Physical fatigue effects on baggage handler during peak departure bank."
+      }
+    },
+
+    "DISPATCH_OPERATIONS": {
+      "name": "Dispatch / Operations Control",
+      "roles": ["Flight Dispatcher", "Operations Controller", "Crew Scheduler", "Weather Specialist", "Operations Manager"],
+      "scenarios": {
+        "SA": "Dispatcher monitoring weather sees current conditions but doesn't project impact on later departures.",
+        "DM": "Deciding whether to reroute multiple flights vs. delay vs. cancel given developing weather.",
+        "COMM": "Communicating operational changes to multiple stakeholders simultaneously.",
+        "TW": "Coordinating between crew scheduling, maintenance, and gate assignments.",
+        "LEAD": "Operations manager leading team through cascading delays affecting hub operations.",
+        "HF": "Decision quality degradation during extended irregular operations shift."
+      }
+    },
+
+    "MAINTENANCE": {
+      "name": "Maintenance / MRO",
+      "roles": ["A&P Mechanic", "Avionics Technician", "Inspector", "Lead Mechanic", "Maintenance Manager", "Quality Assurance"],
+      "scenarios": {
+        "SA": "Mechanic notices wear pattern but doesn't connect to potential system issue.",
+        "DM": "Deciding whether to defer maintenance item vs. ground aircraft for immediate repair.",
+        "COMM": "Communicating maintenance status to dispatch and flight crew with accurate timeline.",
+        "TW": "Coordinating heavy check activities between multiple specialized teams.",
+        "LEAD": "Lead mechanic managing crew through AOG situation with time pressure.",
+        "HF": "Inspection accuracy after multiple hours of detailed work."
+      }
+    },
+
+    "PASSENGER_SERVICES": {
+      "name": "Passenger Services / Customer Service",
+      "roles": ["Gate Agent", "Ticket Agent", "Customer Service Representative", "Club Lounge Staff", "Passenger Services Manager"],
+      "scenarios": {
+        "SA": "Gate agent notices boarding pace but doesn't project impact on departure time.",
+        "DM": "Deciding how to handle overbooked flight with multiple volunteer options.",
+        "COMM": "Communicating delay information to passengers clearly and with appropriate updates.",
+        "TW": "Coordinating between gate, ramp, and flight crew for on-time departure.",
+        "LEAD": "Supervisor managing team during irregular operations with frustrated passengers.",
+        "HF": "Emotional labor effects on customer service quality after difficult interactions."
+      }
+    },
+
+    "CARGO_OPERATIONS": {
+      "name": "Cargo Operations",
+      "roles": ["Cargo Agent", "Load Planner", "Dangerous Goods Specialist", "Cargo Supervisor", "Cargo Manager"],
+      "scenarios": {
+        "SA": "Cargo agent notices shipment weight but doesn't connect to aircraft balance implications.",
+        "DM": "Deciding whether to accept late freight vs. maintain load plan integrity.",
+        "COMM": "Communicating dangerous goods information to flight crew accurately.",
+        "TW": "Coordinating loading sequence between cargo, baggage, and catering.",
+        "LEAD": "Cargo supervisor prioritizing competing shipments during capacity constraint.",
+        "HF": "Documentation accuracy when processing high volume of shipments."
+      }
+    },
+
+    "SECURITY": {
+      "name": "Aviation Security",
+      "roles": ["TSA Officer", "Airport Security", "Security Supervisor", "K-9 Handler", "Security Director"],
+      "scenarios": {
+        "SA": "Security officer notices passenger behavior but doesn't connect to screening avoidance pattern.",
+        "DM": "Deciding response level for passenger who refuses secondary screening.",
+        "COMM": "Communicating security concern through proper channels without creating panic.",
+        "TW": "Coordinating checkpoint operations during high-volume period.",
+        "LEAD": "Supervisor managing team during security incident with terminal impact.",
+        "HF": "Vigilance decrement after extended hours of screening operations."
+      }
+    },
+
+    "AIR_TRAFFIC": {
+      "name": "Air Traffic Services",
+      "roles": ["Tower Controller", "Approach Controller", "Center Controller", "Traffic Management Specialist", "Facility Manager"],
+      "scenarios": {
+        "SA": "Controller tracks current aircraft positions but doesn't project conflict 10 minutes ahead.",
+        "DM": "Deciding sequencing priority between emergency aircraft and multiple holding aircraft.",
+        "COMM": "Issuing clear, unambiguous instructions during high-traffic complexity.",
+        "TW": "Coordinating handoffs between approach and tower during weather.",
+        "LEAD": "Supervisor managing position staffing during unexpected traffic surge.",
+        "HF": "Cognitive load effects during peak traffic with multiple frequencies."
+      }
+    },
+
+    "FUELING": {
+      "name": "Fueling Operations",
+      "roles": ["Fuel Technician", "Fuel Quality Specialist", "Fuel Supervisor", "Fuel Operations Manager"],
+      "scenarios": {
+        "SA": "Fuel tech notices gauge reading but doesn't connect to potential contamination indicator.",
+        "DM": "Deciding whether to stop fueling operation when anomaly is detected.",
+        "COMM": "Communicating fueling discrepancy to operations and flight crew.",
+        "TW": "Coordinating fueling with other ramp activities during quick turn.",
+        "LEAD": "Supervisor managing team response to fuel spill incident.",
+        "HF": "Verification accuracy during repetitive fueling operations."
+      }
+    },
+
+    "CATERING": {
+      "name": "Catering / In-Flight Services",
+      "roles": ["Catering Driver", "Galley Loader", "Catering Supervisor", "Food Safety Specialist", "Catering Manager"],
+      "scenarios": {
+        "SA": "Catering staff notices temperature deviation but doesn't project food safety implications.",
+        "DM": "Deciding whether to load questionable food items vs. short-cater the flight.",
+        "COMM": "Communicating special meal requirements and loading status to cabin crew.",
+        "TW": "Coordinating catering delivery with aircraft arrival and other turn activities.",
+        "LEAD": "Supervisor managing catering operation during multiple delays.",
+        "HF": "Food safety compliance accuracy during high-pressure operations."
+      }
+    },
+
+    "TRAINING": {
+      "name": "Training / Standards",
+      "roles": ["Flight Instructor", "Simulator Instructor", "Training Manager", "Check Airman", "Standards Captain"],
+      "scenarios": {
+        "SA": "Instructor notices trainee performance pattern but doesn't connect to underlying skill gap.",
+        "DM": "Deciding whether trainee is ready for checkride vs. needs additional training.",
+        "COMM": "Providing constructive feedback that addresses performance without damaging confidence.",
+        "TW": "Coordinating training schedule with line operations and crew availability.",
+        "LEAD": "Training manager addressing standardization issue across instructor group.",
+        "HF": "Evaluation accuracy when fatigued from multiple training sessions."
+      }
+    }
+  },
+
+  "crossDepartmentScenarios": [
+    {
+      "title": "The Weather Diversion",
+      "departments": ["FLIGHT_DECK", "DISPATCH_OPERATIONS", "PASSENGER_SERVICES", "GROUND_OPERATIONS"],
+      "scenario": "Multiple aircraft diverting to alternate airport. Requires coordination of crew duty times, passenger rebooking, and ground handling at unplanned station.",
+      "competencies": ["SA", "DM", "COMM", "TW"]
+    },
+    {
+      "title": "The Security Incident",
+      "departments": ["SECURITY", "PASSENGER_SERVICES", "GROUND_OPERATIONS", "AIR_TRAFFIC"],
+      "scenario": "Security breach detected after passenger boards aircraft. Terminal evacuation, aircraft hold, and passenger rescreening required.",
+      "competencies": ["DM", "COMM", "TW", "LEAD"]
+    },
+    {
+      "title": "The Mechanical AOG",
+      "departments": ["MAINTENANCE", "DISPATCH_OPERATIONS", "PASSENGER_SERVICES", "CABIN_CREW"],
+      "scenario": "Aircraft goes mechanical at outstation with no maintenance coverage. Requires ferry flight decision, passenger reaccommodation, crew reassignment.",
+      "competencies": ["SA", "DM", "COMM", "LEAD"]
+    },
+    {
+      "title": "The Medical Diversion",
+      "departments": ["FLIGHT_DECK", "CABIN_CREW", "DISPATCH_OPERATIONS", "GROUND_OPERATIONS"],
+      "scenario": "Medical emergency requiring diversion to nearest suitable airport. Coordination of medical resources, aircraft handling, and passenger care.",
+      "competencies": ["SA", "DM", "COMM", "TW"]
+    }
+  ],
+
+  "terminology": {
+    "operator": "crew member / employee",
+    "control room": "operations center / tower",
+    "shift handover": "crew change / shift brief",
+    "incident": "occurrence / event",
+    "crew": "crew / team",
+    "supervisor": "lead / supervisor",
+    "procedure": "SOP / checklist",
+    "equipment failure": "mechanical / MEL item"
+  }
+}

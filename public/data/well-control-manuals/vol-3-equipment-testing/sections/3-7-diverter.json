@@ -1,0 +1,26 @@
+{
+  "sectionId": "3.7",
+  "title": "Diverter System",
+  "content": {
+    "3.7.1": {
+      "title": "Purpose",
+      "content": "**Function:**\nDirect uncontrolled flow away from the rig when shut-in is not possible or appropriate:\n- Shallow gas situations\n- Before surface casing cemented\n- When formation cannot withstand shut-in pressure\n\n**Key Concept:**\nDiverter does NOT stop flow - it redirects flow to safe location away from personnel and equipment.\n\n**When Used:**\n- Shallow hole sections (conductor, surface hole)\n- Before BOP installed\n- Weak formation cannot handle shut-in"
+    },
+    "3.7.2": {
+      "title": "Components",
+      "content": "**Diverter Housing:**\n- Mounted on conductor or riser\n- Contains packer/sealing element\n- Supports rotating equipment above\n\n**Sealing Element:**\n- Rubber packer element\n- Closes around pipe\n- Diverts flow from annulus to diverter lines\n\n**Diverter Lines:**\n- Large diameter (12\" or larger typical)\n- Route away from rig (downwind)\n- Minimum bends to reduce friction\n- May have multiple lines (select based on wind)\n\n**Valves:**\n- Diverter line valves (open before packer closes)\n- Interlock prevents closing packer without line open\n- Remote operation essential"
+    },
+    "3.7.3": {
+      "title": "Operation",
+      "content": "**Activation Sequence:**\n1. Sound alarm\n2. Increase pump rate (keep circulating)\n3. Open diverter line valve (downwind line)\n4. Close diverter packer\n5. Maintain circulation at maximum safe rate\n6. Evacuate non-essential personnel from area\n\n**Critical Points:**\n- NEVER close packer with lines closed (would shut in well)\n- Keep circulating - stopping allows bridging\n- Maximum pump rate dilutes and displaces gas\n- Do not attempt to shut in\n\n**Interlock:**\nMost systems have interlock that opens line before packer can close. Verify interlock functions."
+    },
+    "3.7.4": {
+      "title": "Testing",
+      "content": "**Function Test:**\n- Test packer closes and opens\n- Test line valves operate\n- Verify interlock function\n- Check remote operation from safe location\n\n**Low Pressure Test:**\n- Test packer sealing (low pressure only)\n- Verify no bypassing\n- Do not high-pressure test (would test formation)\n\n**Frequency:**\n- Before drilling surface hole\n- Weekly while diverter is primary equipment\n- After any maintenance\n\n**Documentation:**\n- Record all tests\n- Note response times\n- Verify remote operation works"
+    },
+    "3.7.5": {
+      "title": "Maintenance",
+      "content": "**Packer Element:**\n- Inspect for wear and damage\n- Replace if worn\n- Have spare on location\n\n**Lines:**\n- Inspect for corrosion and damage\n- Ensure clear of obstructions\n- Check supports and anchoring\n\n**Valves:**\n- Operate regularly to prevent seizing\n- Check actuators function\n- Verify fail-safe position\n\n**Control System:**\n- Test controls at both panels\n- Check hydraulic supply\n- Verify alarms function"
+    }
+  }
+}

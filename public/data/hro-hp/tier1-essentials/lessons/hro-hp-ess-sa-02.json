@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-SA-02",
+  "moduleId": "HRO-HP-ESS-SA",
+  "courseId": "HRO-HP-ESS",
+  "title": "Active Scanning",
+  "type": "lesson",
+  "content": "Active scanning means systematically gathering information using structured patterns rather than passive observation. Effective operators use deliberate scan patterns—checking specific indicators in a consistent sequence—to ensure nothing is missed. The discipline of structured scanning is what separates noticing problems early from discovering them only after they've escalated.",
+  "mcq": {
+    "question": "During a busy shift, you rely on your usual habit of checking whatever catches your attention. A colleague uses a written checklist to monitor the same indicators every 30 minutes. After two hours, who likely has better situational awareness?",
+    "options": {
+      "A": "You, because flexible attention catches unexpected problems",
+      "B": "Your colleague, because structured scanning ensures consistent coverage",
+      "C": "Equal, since both approaches detect the same information",
+      "D": "Neither, scanning frequency matters more than method"
+    },
+    "correctOption": "B",
+    "explanation": "Structured scanning ensures all critical indicators are checked regularly, regardless of what seems interesting at the moment. Attention-driven scanning tends to miss slowly developing problems that don't immediately stand out."
+  },
+  "openQuestions": [
+    "What is your current scanning pattern during routine operations? Is it structured or opportunistic?",
+    "Which indicators in your work environment are most likely to be missed without deliberate, scheduled checking?"
+  ]
+}

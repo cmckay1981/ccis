@@ -1,0 +1,34 @@
+{
+  "sectionId": "2.16",
+  "title": "Subsea Operations & Emergency Disconnect",
+  "content": {
+    "2.16.1": {
+      "title": "Overview",
+      "content": "Subsea operations have unique well control requirements:\n\n**Key Differences:**\n- BOP at seabed, not at surface\n- Floating vessel (MODU or drillship)\n- Riser connecting vessel to BOP\n- Long choke and kill lines\n- ROV support for BOP observation/intervention\n- Emergency disconnect capability required\n\n**Implications:**\n- Longer response times for some functions\n- Choke line friction affects kill calculations\n- Vessel positioning critical\n- Must be able to disconnect and drift off if needed"
+    },
+    "2.16.2": {
+      "title": "Subsea BOP Configuration",
+      "content": "**Typical Stack:**\n- LMRP (Lower Marine Riser Package) - upper section\n- BOP Stack - lower section mounted on wellhead\n\n**LMRP Contains:**\n- Annular preventers\n- Flex joint\n- Riser connector\n- LMRP connector (allows disconnect from stack)\n\n**BOP Stack Contains:**\n- Pipe rams\n- Blind shear rams\n- Casing shear rams (in some configurations)\n- Choke and kill outlets\n\n**Control Systems:**\n- Hydraulic control from surface\n- Acoustic backup control\n- ROV intervention capability\n- Autoshear/deadman (automatic disconnect triggers)"
+    },
+    "2.16.3": {
+      "title": "Subsea Well Control Procedures",
+      "content": "**Detection:**\n- Same indicators as surface operations\n- PWD valuable due to water depth\n- May have slight delay in surface indication\n\n**Shut-In:**\n- Standard procedure applies\n- BOP function times account for subsea delay\n- ROV can confirm function activation\n\n**Kill Operations:**\n- Low Choke Pressure Method required (Section 2.8)\n- Account for choke line friction\n- Longer circulating times\n- Plan for extended operations\n\n**Monitoring:**\n- Subsea control system status\n- Hydraulic fluid levels and pressure\n- ROV observation as needed\n- Riser tension and vessel position"
+    },
+    "2.16.4": {
+      "title": "Emergency Disconnect System (EDS)",
+      "content": "**Purpose:**\nAllows rapid disconnection of vessel from well in emergency:\n- Vessel drive-off or drift-off\n- Severe weather\n- Riser damage\n- Fire/explosion on vessel\n- Other emergency requiring immediate departure\n\n**Sequence:**\n1. Close shear rams (cuts pipe if in hole)\n2. Close blind rams below shear\n3. Unlatch LMRP connector\n4. Vessel moves away with riser\n5. Well secured by closed BOP on seabed\n\n**Automatic Triggers:**\n- Autoshear: activates if LMRP unlatches without EDS command\n- Deadman: activates if communication lost for set period"
+    },
+    "2.16.5": {
+      "title": "When to Disconnect",
+      "content": "**Required:**\n- Vessel cannot maintain position\n- Riser integrity compromised\n- Fire or explosion requiring vessel evacuation\n- Environmental emergency\n\n**Not Typically Required:**\n- Normal well control event (can handle while connected)\n- Minor vessel issues (thrusters, power if backup available)\n- Weather within operating limits\n\n**Decision Authority:**\n- Captain/OIM has authority for vessel safety\n- Drilling Supervisor involved in timing if possible\n- May be automatic (autoshear/deadman) in sudden events\n\n**Goal:**\nSecure the well before disconnecting. If time permits:\n1. Shut in well\n2. Confirm rams closed\n3. Then disconnect\n\nIf no time: EDS will close and disconnect simultaneously."
+    },
+    "2.16.6": {
+      "title": "Riser Margin",
+      "content": "**Concept:**\nIf riser disconnects, mud in riser is lost. Wellbore sees only seawater hydrostatic above BOP.\n\n**Riser Margin:**\nAdditional mud weight carried to ensure well remains overbalanced even if riser mud is lost.\n\nRiser Margin = (MW - Seawater density) × (Water depth / TVD)\n\n**Application:**\n- Always consider when setting mud weight\n- May not be fully achievable in narrow margin wells\n- Operational decision based on risk assessment\n- If riser margin not carried, immediate disconnect becomes more risky"
+    },
+    "2.16.7": {
+      "title": "Post-Disconnect Operations",
+      "content": "**Well Status:**\n- BOP closed on seabed\n- Well secured (assuming successful EDS)\n- ROV can inspect BOP visually\n\n**Reconnection:**\n1. Weather/conditions must allow\n2. Lower riser and reconnect to LMRP\n3. Test connection\n4. Verify well status through BOP\n5. Resume operations per situation\n\n**If Unable to Reconnect:**\n- Well remains secured by BOP\n- May need relief vessel\n- ROV can perform some interventions\n- Long-term plan required\n\n**Documentation:**\n- Record all EDS activations\n- Document reason and conditions\n- Post-event review and investigation"
+    }
+  }
+}

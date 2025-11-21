@@ -1,0 +1,210 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper function to check if user is authenticated
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Helper function to check if user belongs to the organization
+    function belongsToOrganisation(organisationId) {
+      return isAuthenticated() &&
+             request.auth.token.organisationId == organisationId;
+    }
+
+    // Helper function to check if user has admin role
+    function isAdmin() {
+      return isAuthenticated() &&
+             request.auth.token.role == 'admin';
+    }
+
+    // Helper function to check if user can read organisation data
+    function canReadOrganisation(organisationId) {
+      return belongsToOrganisation(organisationId);
+    }
+
+    // Helper function to check if user can write organisation data
+    function canWriteOrganisation(organisationId) {
+      return belongsToOrganisation(organisationId);
+    }
+
+    // =======================
+    // WELLS COLLECTION
+    // =======================
+    match /wells/{wellId} {
+      // Read: User must belong to the same organisation
+      allow read: if canReadOrganisation(resource.data.organisationId);
+
+      // Create: User must be authenticated and set their organisationId
+      allow create: if isAuthenticated() &&
+                       request.resource.data.organisationId == request.auth.token.organisationId &&
+                       request.resource.data.createdBy == request.auth.uid &&
+                       request.resource.data.createdAt == request.time &&
+                       request.resource.data.updatedBy == request.auth.uid &&
+                       request.resource.data.updatedAt == request.time &&
+                       request.resource.data.isActive == true;
+
+      // Update: User must belong to the organisation
+      allow update: if canWriteOrganisation(resource.data.organisationId) &&
+                       request.resource.data.organisationId == resource.data.organisationId &&
+                       request.resource.data.updatedBy == request.auth.uid &&
+                       request.resource.data.updatedAt == request.time;
+
+      // Delete: Only admins or soft delete via update
+      allow delete: if isAdmin() && belongsToOrganisation(resource.data.organisationId);
+    }
+
+    // =======================
+    // WELL STRING CONFIGS
+    // =======================
+    match /well-string-configs/{configId} {
+      // Must check if user has access to the parent well
+      function canAccessWell() {
+        return exists(/databases/$(database)/documents/wells/$(resource.data.wellId)) &&
+               canReadOrganisation(get(/databases/$(database)/documents/wells/$(resource.data.wellId)).data.organisationId);
+      }
+
+      allow read: if canAccessWell();
+      allow create: if isAuthenticated() &&
+                       request.resource.data.createdBy == request.auth.uid &&
+                       request.resource.data.createdAt == request.time;
+      allow update: if canAccessWell() &&
+                       request.resource.data.updatedAt == request.time;
+      allow delete: if isAdmin() && canAccessWell();
+    }
+
+    // =======================
+    // WELL SECTIONS
+    // =======================
+    match /well-sections/{sectionId} {
+      function canAccessWell() {
+        return exists(/databases/$(database)/documents/wells/$(resource.data.wellId)) &&
+               canReadOrganisation(get(/databases/$(database)/documents/wells/$(resource.data.wellId)).data.organisationId);
+      }
+
+      allow read: if canAccessWell();
+      allow create: if isAuthenticated() &&
+                       request.resource.data.createdBy == request.auth.uid &&
+                       request.resource.data.createdAt == request.time;
+      allow update: if canAccessWell() &&
+                       request.resource.data.updatedAt == request.time;
+      allow delete: if isAdmin() && canAccessWell();
+    }
+
+    // =======================
+    // BOP CONFIGURATIONS
+    // =======================
+    match /bop-configurations/{bopId} {
+      function canAccessWell() {
+        return exists(/databases/$(database)/documents/wells/$(resource.data.wellId)) &&
+               canReadOrganisation(get(/databases/$(database)/documents/wells/$(resource.data.wellId)).data.organisationId);
+      }
+
+      allow read: if canAccessWell();
+      allow create: if isAuthenticated() &&
+                       request.resource.data.createdBy == request.auth.uid &&
+                       request.resource.data.createdAt == request.time;
+      allow update: if canAccessWell() &&
+                       request.resource.data.updatedAt == request.time;
+      allow delete: if isAdmin() && canAccessWell();
+    }
+
+    // =======================
+    // KILL SHEETS
+    // =======================
+    match /kill-sheets/{sheetId} {
+      function canAccessWell() {
+        return exists(/databases/$(database)/documents/wells/$(resource.data.wellId)) &&
+               canReadOrganisation(get(/databases/$(database)/documents/wells/$(resource.data.wellId)).data.organisationId);
+      }
+
+      allow read: if canAccessWell();
+      allow create: if isAuthenticated() &&
+                       request.resource.data.createdBy == request.auth.uid &&
+                       request.resource.data.createdAt == request.time;
+      allow update: if canAccessWell();
+      allow delete: if isAdmin() && canAccessWell();
+    }
+
+    // =======================
+    // DISPLACEMENT TRACKING
+    // =======================
+    match /displacement-tracking/{trackId} {
+      function canAccessWell() {
+        return exists(/databases/$(database)/documents/wells/$(resource.data.wellId)) &&
+               canReadOrganisation(get(/databases/$(database)/documents/wells/$(resource.data.wellId)).data.organisationId);
+      }
+
+      allow read: if canAccessWell();
+      allow create: if isAuthenticated();
+      allow update: if canAccessWell();
+      allow delete: if isAdmin() && canAccessWell();
+    }
+
+    // =======================
+    // ACTIVITY LOG
+    // =======================
+    match /activity-log/{activityId} {
+      // Read: User must belong to the organisation
+      allow read: if canReadOrganisation(resource.data.organisationId);
+
+      // Create: Only authenticated users can create logs
+      allow create: if isAuthenticated() &&
+                       request.resource.data.performedBy == request.auth.uid &&
+                       request.resource.data.timestamp == request.time;
+
+      // Update/Delete: Not allowed (immutable log)
+      allow update: if false;
+      allow delete: if isAdmin();
+    }
+
+    // =======================
+    // VOLUME CALCULATIONS LOG
+    // =======================
+    match /volume-calculations-log/{logId} {
+      function canAccessWell() {
+        return exists(/databases/$(database)/documents/wells/$(resource.data.wellId)) &&
+               canReadOrganisation(get(/databases/$(database)/documents/wells/$(resource.data.wellId)).data.organisationId);
+      }
+
+      allow read: if canAccessWell();
+      allow create: if isAuthenticated() &&
+                       request.resource.data.performedBy == request.auth.uid &&
+                       request.resource.data.timestamp == request.time;
+      allow update: if false; // Immutable log
+      allow delete: if isAdmin();
+    }
+
+    // =======================
+    // ORGANISATIONS (if you have this collection)
+    // =======================
+    match /organisations/{orgId} {
+      allow read: if belongsToOrganisation(orgId);
+      allow write: if isAdmin() && belongsToOrganisation(orgId);
+    }
+
+    // =======================
+    // USERS/PEOPLE (if you have this collection)
+    // =======================
+    match /people/{userId} {
+      // Users can read their own profile
+      allow read: if isAuthenticated() && request.auth.uid == userId;
+
+      // Users in same org can read each other
+      allow read: if isAuthenticated() &&
+                     resource.data.organisationId == request.auth.token.organisationId;
+
+      // Users can update their own profile (limited fields)
+      allow update: if isAuthenticated() && request.auth.uid == userId;
+
+      // Only admins can create/delete users
+      allow create, delete: if isAdmin();
+    }
+
+    // Default deny all other documents
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

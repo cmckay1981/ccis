@@ -1,0 +1,57 @@
+{
+  "templateId": "QT-BL-001",
+  "category": "EMERGENCY_SCENARIOS",
+  "title": "Loss of Primary Barrier During Operations",
+  "level": ["L4"],
+  "operationalFocus": "Real-time decision making when barriers are compromised",
+  "question": "On {{wellProfile.wellName}}, you are drilling at {{currentSection.settingDepth.tvd}} {{currentSection.settingDepth.unit}} TVD with {{currentSection.mudWeight.current}} ppg mud. Pore pressure is {{scenario.porePressure}} ppg. While pulling out of hole for a bit change, returns stop and you observe {{scenario.lossVolume}} bbls lost into the formation. Your mud weight is now {{scenario.underbalance}} ppg BELOW pore pressure due to the reduced hydrostatic column. What is your immediate response?",
+  "inputs": {
+    "wellProfile": {
+      "required": ["wellName"]
+    },
+    "currentSection": {
+      "from": "wellProfile.casingProgram[activeSection]",
+      "required": ["settingDepth.tvd", "mudWeight.current"]
+    },
+    "scenario": {
+      "generated": true,
+      "porePressure": {
+        "from": "wellProfile.ppfg nearest to TVD"
+      },
+      "lossVolume": {
+        "options": [50, 100, 200],
+        "description": "bbls lost"
+      },
+      "underbalance": {
+        "range": [0.3, 1.2],
+        "step": 0.1,
+        "description": "ppg below PP due to losses"
+      }
+    }
+  },
+  "correctSequence": [
+    "1. Stop pipe movement immediately - do not continue pulling",
+    "2. Position tool joint at rotary (prepare for potential shut-in)",
+    "3. Fill the hole - pump mud to restore hydrostatic column",
+    "4. Monitor for flow - losses can mask a kick",
+    "5. If well flows, shut in",
+    "6. If no flow, assess: continue POOH with caution or run back to bottom?",
+    "7. Prepare LCM treatment for when back on bottom"
+  ],
+  "answerOptions": {
+    "A": "Continue pulling out - get the bit to surface quickly before the well kicks",
+    "B": "Stop pipe movement, fill the hole, monitor for flow, prepare for shut-in if needed",
+    "C": "Immediately shut in the well to prevent further losses",
+    "D": "Run back to bottom as fast as possible to circulate out any influx"
+  },
+  "correctOption": "B",
+  "feedback": {
+    "correct": "Correct. When you lose returns, you've lost your primary barrier (hydrostatic). First priority is to restore it by filling the hole. But be vigilant - losses can mask a kick. The well may be taking fluid AND taking a kick simultaneously. Stop moving pipe and assess.",
+    "A_feedback": "Dangerous. Continuing to pull reduces hydrostatic further and increases swab effect. You're inviting a kick.",
+    "C_feedback": "You can't shut in on losses - there's no pressure to hold. Shutting in with a fractured zone below you traps you. Fill first, then assess for flow.",
+    "D_feedback": "Running pipe back quickly creates surge pressure which could worsen losses. Move deliberately, fill the hole, monitor."
+  },
+  "contextualTip": "On {{wellProfile.wellName}}, the tight MW window means losses are a real risk. Lost circulation and kicks can occur simultaneously - this is the most dangerous well control scenario. Always fill the hole and monitor.",
+  "advancedNote": "Loss of barrier scenarios require supervisor judgment. There's no single correct answer - you must balance kick risk, loss severity, pipe position, and formation characteristics. Pre-plan your response based on the well's PPFG and hazards.",
+  "tags": ["barrier-loss", "lost-circulation", "emergency", "operational", "L4", "dynamic"]
+}

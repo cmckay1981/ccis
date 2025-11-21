@@ -1,0 +1,180 @@
+{
+  "density": {
+    "imperial": {
+      "ppg": {
+        "name": "Pounds per Gallon",
+        "symbol": "ppg",
+        "conversions": {
+          "sg": 0.1198,
+          "kgm3": 119.8,
+          "lbft3": 7.48,
+          "psi_ft": 0.052
+        }
+      }
+    },
+    "metric": {
+      "sg": {
+        "name": "Specific Gravity",
+        "symbol": "sg",
+        "conversions": {
+          "ppg": 8.345,
+          "kgm3": 1000,
+          "bar_m": 0.0981
+        }
+      },
+      "kgm3": {
+        "name": "Kilograms per Cubic Meter",
+        "symbol": "kg/m³",
+        "conversions": {
+          "ppg": 0.00835,
+          "sg": 0.001
+        }
+      }
+    }
+  },
+  "length": {
+    "ft": {
+      "name": "Feet",
+      "symbol": "ft",
+      "conversions": {
+        "m": 0.3048,
+        "in": 12,
+        "cm": 30.48
+      }
+    },
+    "m": {
+      "name": "Meters",
+      "symbol": "m",
+      "conversions": {
+        "ft": 3.281,
+        "cm": 100,
+        "mm": 1000
+      }
+    },
+    "in": {
+      "name": "Inches",
+      "symbol": "in",
+      "conversions": {
+        "ft": 0.08333,
+        "mm": 25.4,
+        "cm": 2.54
+      }
+    },
+    "mm": {
+      "name": "Millimeters",
+      "symbol": "mm",
+      "conversions": {
+        "in": 0.03937,
+        "cm": 0.1,
+        "m": 0.001
+      }
+    }
+  },
+  "volume": {
+    "bbl": {
+      "name": "Barrels",
+      "symbol": "bbl",
+      "conversions": {
+        "gal": 42,
+        "L": 159,
+        "m3": 0.159,
+        "ft3": 5.615
+      }
+    },
+    "L": {
+      "name": "Liters",
+      "symbol": "L",
+      "conversions": {
+        "bbl": 0.00629,
+        "gal": 0.2642,
+        "m3": 0.001,
+        "ft3": 0.03531
+      }
+    },
+    "m3": {
+      "name": "Cubic Meters",
+      "symbol": "m³",
+      "conversions": {
+        "bbl": 6.29,
+        "L": 1000,
+        "gal": 264.2,
+        "ft3": 35.31
+      }
+    },
+    "gal": {
+      "name": "US Gallons",
+      "symbol": "gal",
+      "conversions": {
+        "bbl": 0.02381,
+        "L": 3.785,
+        "m3": 0.003785
+      }
+    }
+  },
+  "pressure": {
+    "psi": {
+      "name": "Pounds per Square Inch",
+      "symbol": "psi",
+      "conversions": {
+        "bar": 0.0689,
+        "kPa": 6.895,
+        "MPa": 0.006895,
+        "atm": 0.06805
+      }
+    },
+    "bar": {
+      "name": "Bar",
+      "symbol": "bar",
+      "conversions": {
+        "psi": 14.5,
+        "kPa": 100,
+        "MPa": 0.1,
+        "atm": 0.9869
+      }
+    },
+    "kPa": {
+      "name": "Kilopascals",
+      "symbol": "kPa",
+      "conversions": {
+        "psi": 0.145,
+        "bar": 0.01,
+        "MPa": 0.001
+      }
+    },
+    "MPa": {
+      "name": "Megapascals",
+      "symbol": "MPa",
+      "conversions": {
+        "psi": 145,
+        "bar": 10,
+        "kPa": 1000
+      }
+    }
+  },
+  "capacity": {
+    "constants": {
+      "imperial": {
+        "pipe_capacity_bbl_ft": "ID² / 1029.4",
+        "annular_capacity_bbl_ft": "(OD² - ID²) / 1029.4",
+        "hydrostatic_pressure_psi": "MW(ppg) × 0.052 × TVD(ft)"
+      },
+      "metric": {
+        "pipe_capacity_L_m": "ID(mm)² × 0.000785",
+        "annular_capacity_L_m": "(OD(mm)² - ID(mm)²) × 0.000785",
+        "hydrostatic_pressure_bar": "MW(sg) × 0.0981 × TVD(m)"
+      }
+    }
+  },
+  "common_values": {
+    "water_density": {
+      "ppg": 8.33,
+      "sg": 1.0,
+      "kgm3": 1000
+    },
+    "seawater_density": {
+      "ppg": 8.6,
+      "sg": 1.03,
+      "kgm3": 1030
+    }
+  }
+}

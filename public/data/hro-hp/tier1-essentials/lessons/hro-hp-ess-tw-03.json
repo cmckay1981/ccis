@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-TW-03",
+  "moduleId": "HRO-HP-ESS-TW",
+  "courseId": "HRO-HP-ESS",
+  "title": "Team Coordination",
+  "type": "lesson",
+  "content": "Coordination means synchronizing actions and sharing workload so team outputs exceed what individuals could achieve alone. It requires knowing what others are doing, anticipating their needs, and adjusting your work accordingly. High-performing teams coordinate implicitly through shared mental models and explicitly through communication.",
+  "mcq": {
+    "question": "During high-workload periods, one team member becomes overwhelmed while others have capacity. The overwhelmed member doesn't ask for help and others don't notice. What coordination mechanism is missing?",
+    "options": {
+      "A": "Task assignment—work wasn't distributed properly",
+      "B": "Mutual monitoring—team members aren't aware of each other's states",
+      "C": "Communication—the overwhelmed member should have asked for help",
+      "D": "All of the above represent coordination failures"
+    },
+    "correctOption": "D",
+    "explanation": "Multiple coordination mechanisms failed: initial workload distribution, ongoing mutual monitoring (noticing a teammate struggling), and help-seeking behavior. Effective coordination uses all these mechanisms together."
+  },
+  "openQuestions": [
+    "How does your team currently monitor each other's workload during operations? Is it systematic or informal?",
+    "What signals indicate that a teammate might be overwhelmed? How responsive is your team to these signals?"
+  ]
+}

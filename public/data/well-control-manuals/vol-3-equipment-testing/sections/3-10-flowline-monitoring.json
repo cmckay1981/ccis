@@ -1,0 +1,26 @@
+{
+  "sectionId": "3.10",
+  "title": "Flow Monitoring Equipment",
+  "content": {
+    "3.10.1": {
+      "title": "Purpose",
+      "content": "**Function:**\nMonitor return flow rate from the well:\n- Flow increase may indicate kick\n- Flow decrease may indicate loss\n- Supplements pit monitoring\n- Provides faster indication than pit gain\n\n**Comparison:**\nReturn flow vs pump rate:\n- Returns > Pump rate = gaining (possible kick)\n- Returns < Pump rate = losing (possible loss)\n- Returns = Pump rate = balanced"
+    },
+    "3.10.2": {
+      "title": "Flow Paddle/Sensor",
+      "content": "**Flow Paddle:**\n- Simple deflection indicator in flow line\n- Position indicates relative flow rate\n- Visual or electronic readout\n- Common and effective\n\n**Operation:**\n- Establish baseline at current pump rate\n- Watch for changes from baseline\n- Increasing deflection = increasing flow\n- Position displayed at driller's console\n\n**Limitations:**\n- Not quantitative\n- Affected by mud properties\n- Can stick or fail\n- Regular observation required"
+    },
+    "3.10.3": {
+      "title": "Return Flow Meters",
+      "content": "**Types:**\n\n**Paddle Wheel:**\n- Wheel turns with flow\n- Speed indicates flow rate\n- Relatively simple\n\n**Doppler:**\n- Uses sound waves to measure velocity\n- Non-contact\n- Clamp-on installation possible\n\n**Coriolis:**\n- Measures mass flow rate\n- Very accurate\n- Can detect density changes (gas)\n- Used in advanced MPD systems\n\n**Electromagnetic:**\n- Measures conductive fluid flow\n- No moving parts\n- Requires full pipe"
+    },
+    "3.10.4": {
+      "title": "Flow Integration",
+      "content": "**Comparison Systems:**\n- Compare pump strokes to return flow\n- Calculate differential\n- Display gain/loss trend\n- Alarm on significant difference\n\n**MPD Systems:**\n- Sophisticated flow monitoring\n- Mass balance calculations\n- Early kick detection capability\n- Integrated pressure and flow\n\n**Benefits:**\n- Earlier detection than pit monitoring alone\n- Quantitative data\n- Trends visible over time"
+    },
+    "3.10.5": {
+      "title": "Maintenance",
+      "content": "**Flow Sensors:**\n- Keep clean and clear of debris\n- Calibrate regularly\n- Replace worn components\n- Test alarm functions\n\n**Flow Line:**\n- Maintain clear flow path\n- Check for obstructions\n- Proper slope for drainage\n- Inspect for wear/damage"
+    }
+  }
+}

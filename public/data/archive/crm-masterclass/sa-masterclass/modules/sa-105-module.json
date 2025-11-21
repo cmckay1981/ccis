@@ -1,0 +1,8 @@
+{
+  "moduleId": "SA-105",
+  "courseId": "SA",
+  "title": "Threats to Situational Awareness",
+  "description": "Identifies and provides countermeasures for common SA degraders: distraction, fatigue, complacency, task saturation, and stress.",
+  "order": 5,
+  "lessonIds": ["SA-105-01", "SA-105-02", "SA-105-03", "SA-105-04"]
+}

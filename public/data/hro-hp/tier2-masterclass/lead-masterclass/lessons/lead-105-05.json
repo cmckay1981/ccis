@@ -1,0 +1,24 @@
+{
+  "lessonId": "LEAD-105-05",
+  "moduleId": "LEAD-105",
+  "courseId": "LEAD",
+  "title": "Termination Decisions and Execution",
+  "type": "scenario",
+  "content": "Terminating someone is one of the hardest leadership responsibilities, but sometimes it's necessary to protect team performance, safety, or culture. The decision requires careful consideration: Have you given the person genuine opportunity to improve? Is the issue correctable or fundamental? What message does retention send to the rest of the team? How you execute termination matters—it should be respectful, clear, and final.",
+  "scenario": {
+    "story": "You've worked with an underperforming team member for six months through progressive accountability: multiple conversations, documented expectations, a formal improvement plan with clear metrics, and coaching support. Performance has shown minimal improvement—enough to avoid immediate termination but not enough to meet role requirements. The person is well-liked personally, tries hard, but consistently falls short. Keeping them means other team members continue carrying extra load. Your team is watching how you handle this.",
+    "options": {
+      "A": "Extend the improvement plan another 90 days to give them more time",
+      "B": "Move them to a less demanding role where their current capability might be sufficient",
+      "C": "Make the termination decision based on demonstrated pattern after fair opportunity",
+      "D": "Wait until a major failure occurs that justifies immediate termination"
+    },
+    "recommendedResponse": "C",
+    "explanation": "This person has had fair opportunity—six months of support and clear expectations. Minimal improvement after extensive intervention indicates either capability mismatch or insufficient motivation. Option A delays the inevitable while continuing to burden the team and teaching everyone that performance standards are negotiable. Option B assumes another role exists and that the person would succeed there—often just moves the problem. Option D waits for catastrophic failure, which is unfair to the organization and potentially unsafe. Option C recognizes that sometimes people don't fit roles despite good intent. The decision should be respectful, documented, and final. Your team needs to see that sustained underperformance has consequences after fair process."
+  },
+  "openQuestions": [
+    "Have you ever delayed a necessary termination decision? What was the cost to the team and organization?",
+    "How do you know when you've given someone enough opportunity versus when you're avoiding a difficult decision?",
+    "What does it teach your high performers when you tolerate sustained low performance?"
+  ]
+}

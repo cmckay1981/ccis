@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-106-03",
+  "moduleId": "LEAD-MC-106",
+  "courseId": "LEAD-MC",
+  "title": "Managing Diverse Personalities and Conflict Styles",
+  "type": "lesson",
+  "content": "Teams are made of people with different communication preferences, conflict approaches, and working styles. Some people process by talking, others by thinking alone. Some address conflict directly, others avoid it. Some need detailed plans, others prefer flexibility. Leaders who expect everyone to work like they do create friction and miss talent. Effective leaders recognize different styles, create space for various approaches, and translate between people who naturally clash.",
+  "mcq": {
+    "question": "Two high-performing team members consistently clash. One prefers making quick decisions and adjusting as needed. The other wants thorough analysis before committing to action. Both are frustrated with each other and it's affecting collaboration. What's the best leadership response?",
+    "options": {
+      "A": "Tell them to figure it out between themselves since they're both adults",
+      "B": "Separate their work to minimize interaction",
+      "C": "Help them understand each other's approach has value and create a process that leverages both styles",
+      "D": "Side with whichever approach better matches the project's needs"
+    },
+    "correctOption": "C",
+    "explanation": "This isn't a personality conflict—it's a style mismatch that creates friction but also potential strength. Quick-decision people catch opportunities and maintain momentum. Analytical people catch risks and improve quality. Option C turns conflict into complementary capability: establish when speed matters versus when analysis matters, teach each person to value the other's contribution, and create workflow that uses both strengths. Option A abdicates leadership. Option B wastes capability and teaches people that differences are problems. Option D picks a winner instead of creating synthesis. Great teams leverage diversity, not eliminate it."
+  },
+  "openQuestions": [
+    "What working style frustrates you most in others? How might that style add value you're not seeing?",
+    "Think of two people on your team who clash. What unmet need or different value is driving each person?"
+  ]
+}

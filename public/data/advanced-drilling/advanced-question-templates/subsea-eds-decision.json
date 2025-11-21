@@ -1,0 +1,83 @@
+{
+  "templateId": "QT-EDS-001",
+  "category": "EMERGENCY_SCENARIOS",
+  "title": "EDS Decision Making Under Time Pressure",
+  "level": ["L4"],
+  "applicableTo": ["subsea"],
+  "operationalFocus": "Critical decision-making when disconnect may be required",
+  "question": "On {{wellProfile.wellName}} in {{wellProfile.waterDepth.value}} {{wellProfile.waterDepth.unit}} water depth, you are drilling at {{currentSection.settingDepth.tvd}} {{currentSection.settingDepth.unit}} TVD. The DP system alarms - vessel is experiencing {{scenario.event}}. You have approximately {{scenario.timeToLimit}} minutes before riser angle exceeds {{scenario.angleLimit}}°. Current well status: {{scenario.wellStatus}}. Pipe position: {{scenario.pipePosition}}. What is your action?",
+  "inputs": {
+    "wellProfile": {
+      "required": ["waterDepth", "wellName", "bopInfo"]
+    },
+    "currentSection": {
+      "from": "wellProfile.casingProgram[activeSection]",
+      "required": ["settingDepth.tvd"]
+    },
+    "scenario": {
+      "generated": true,
+      "event": {
+        "options": ["drive-off from thruster failure", "drift-off from DP reference loss", "severe weather onset", "adjacent vessel collision risk"]
+      },
+      "timeToLimit": {
+        "range": [5, 25],
+        "step": 5,
+        "description": "minutes"
+      },
+      "angleLimit": {
+        "default": 8,
+        "description": "degrees from vertical"
+      },
+      "wellStatus": {
+        "options": ["circulating normally", "taking a small kick (10 bbl)", "static - no circulation"]
+      },
+      "pipePosition": {
+        "options": ["connection across BSR", "tool joint across BSR", "pipe body across BSR"]
+      }
+    }
+  },
+  "decisionTree": {
+    "timeMoreThan15Minutes": {
+      "action": "Attempt controlled response first",
+      "steps": [
+        "Space out pipe to position pipe body across BSR",
+        "If kick in progress, attempt to secure well conventionally first",
+        "Prepare for EDS but don't execute unless situation deteriorates",
+        "Monitor vessel position - be ready to execute immediately"
+      ]
+    },
+    "timeLessThan15Minutes": {
+      "action": "Prepare for immediate EDS",
+      "steps": [
+        "Clear moonpool",
+        "Verify riser tensioner in disconnect mode",
+        "If pipe can be moved in time, space out",
+        "If not enough time, accept current pipe position and execute EDS"
+      ]
+    },
+    "timeLessThan5Minutes": {
+      "action": "Execute EDS immediately",
+      "steps": [
+        "Do not attempt to move pipe - not enough time",
+        "Execute EDS regardless of pipe position",
+        "BSR may not fully shear tool joint - accept this risk vs certain riser damage"
+      ]
+    }
+  },
+  "answerOptions": {
+    "A": "Execute EDS immediately regardless of time available",
+    "B": "Never disconnect - vessel damage is preferable to well control risk",
+    "C": "Assess time available: with >15 min attempt controlled response, with <5 min execute EDS immediately",
+    "D": "Wait until riser angle actually exceeds limits before taking action"
+  },
+  "correctOption": "C",
+  "feedback": {
+    "correct": "Correct. EDS decision-making is about time. With time, you can optimize - space out pipe, attempt to control kicks conventionally. Without time, you execute and accept the compromises. Waiting too long risks riser damage AND an uncontrolled disconnect.",
+    "A_feedback": "Premature EDS when time is available wastes the opportunity to position pipe correctly and possibly secure the well conventionally.",
+    "B_feedback": "This is never acceptable. Riser damage from over-angle can lead to uncontrolled release, injured personnel, and environmental disaster.",
+    "D_feedback": "Waiting until limits are exceeded means you've already failed. You need lead time for the sequence to complete."
+  },
+  "contextualTip": "On {{wellProfile.wellName}}, with {{wellProfile.bopInfo.workingPressure}} psi BOP in {{wellProfile.waterDepth.value}} {{wellProfile.waterDepth.unit}} water, EDS is your last barrier. Know your BSR shear rating and what pipe it can cut. A tool joint across the rams may not shear cleanly.",
+  "advancedNote": "Post-Macondo, EDS systems have multiple backups (deadman, autoshear, acoustic, ROV). But primary execution by the driller remains fastest. Drill this scenario regularly - you won't have time to read the procedure when it's real.",
+  "tags": ["eds", "subsea", "disconnect", "emergency", "time-critical", "operational", "L4", "dynamic"]
+}

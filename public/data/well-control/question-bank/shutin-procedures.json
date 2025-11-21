@@ -1,0 +1,163 @@
+{
+  "documentId": "SHUTIN_PROCEDURES",
+  "collectionId": "questionBank",
+  "categoryKey": "SHUTIN_PROCEDURES",
+  "title": "Shut-In Procedures",
+  "moduleAlignment": [
+    "WC-SF-105"
+  ],
+  "questionCount": 12,
+  "l3Count": 8,
+  "l4Count": 4,
+  "questions": [
+    {
+      "id": "EX6-Q1",
+      "level": "L3",
+      "question": "Identify Hard vs Soft Shut-In procedures.",
+      "answer": "Hard Shut-In: Close choke first, pump down, close BOP, then open side outlet. Soft Shut-In: Open choke first, pump down, open side outlet, close BOP, then close choke.",
+      "explanation": "Hard = immediate BOP closure (fast but pressure spike). Soft = establish flow path first (slower but gentler)."
+    },
+    {
+      "id": "EX6-Q2",
+      "level": "L3",
+      "question": "Soft shut-in choke manifold line-up?",
+      "options": {
+        "A": "Side outlet closed; choke line open; remote choke closed",
+        "B": "Side outlet open; choke line through manual; remote open",
+        "C": "Side outlet open; choke line through remote; manual closed",
+        "D": "Side outlet closed; choke line through remote; remote open"
+      },
+      "correctAnswer": "D",
+      "explanation": "Soft shut-in routes through remote choke (ready to control) with choke OPEN initially to accept flow during BOP closure."
+    },
+    {
+      "id": "EX6-Q3",
+      "level": "L3",
+      "question": "Shallow gas is less dangerous because there's more reaction time. True or False?",
+      "correctAnswer": "False",
+      "explanation": "Shallow gas is MORE dangerous\u2014less overburden, faster migration, rapid expansion, minimal time to react. The opposite is true."
+    },
+    {
+      "id": "EX6-Q4",
+      "level": "L3",
+      "question": "Hard shut-in choke manifold line-up?",
+      "options": {
+        "A": "Side outlet closed; choke through remote; remote closed",
+        "B": "Side outlet open; choke through manual; remote open",
+        "C": "Side outlet open; choke through remote; manual closed",
+        "D": "Side outlet closed; choke through remote; remote open"
+      },
+      "correctAnswer": "A",
+      "explanation": "Hard shut-in: Everything CLOSED. Choke closed, side outlet closed. BOP closes against sealed system."
+    },
+    {
+      "id": "EX6-Q5",
+      "level": "L4",
+      "question": "Practices that increase influx size? (SELECT THREE)",
+      "options": {
+        "A": "Regular pit drills",
+        "B": "Switching off flow meter alarms",
+        "C": "Derrickman briefing",
+        "D": "Drilling 15 feet after break before flow check",
+        "E": "Calling Toolpusher before shut-in",
+        "F": "Testing stab-in valves during BOP tests"
+      },
+      "correctAnswers": [
+        "B",
+        "D",
+        "E"
+      ],
+      "explanation": "Disabled alarms (B) delay detection. Drilling after break (D) lets kick develop. Calling supervisor (E) wastes shut-in time. All increase influx volume.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX6-Q6",
+      "level": "L4",
+      "question": "Soft shut-in while tripping - correct sequence?",
+      "options": {
+        "A": "Close BOP; open safety valve; close safety valve",
+        "B": "Stab safety valve; open BOP side outlet; close BOP; close choke",
+        "C": "Open side outlet; close BOP; stab safety valve; close choke; close safety valve",
+        "D": "Stab safety valve; close safety valve; open side outlet; close BOP; close choke"
+      },
+      "correctAnswer": "D",
+      "explanation": "While tripping: First secure the string (stab valve, close it), then establish flow path (side outlet), then close BOP, then close choke. Secure string first!"
+    },
+    {
+      "id": "EX6-Q7",
+      "level": "L4",
+      "question": "What does formation permeability affect during shut-in? (SELECT THREE)",
+      "options": {
+        "A": "Time for pressure to stabilise",
+        "B": "Bottom hole pressure",
+        "C": "SICP",
+        "D": "SIDPP",
+        "E": "Size of influx"
+      },
+      "correctAnswers": [
+        "A",
+        "C",
+        "E"
+      ],
+      "explanation": "High perm = fast flow = quick stabilization (A), higher SICP (C, more influx), larger kick (E). BHP is formation pressure\u2014permeability doesn't change it. SIDPP reflects formation pressure through mud column.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX6-Q8",
+      "level": "L3",
+      "question": "Shallow gas diversion steps?",
+      "options": {
+        "A": "Slow pumps; space out; maintain constant BHP via choke",
+        "B": "Stop drilling; increase pump rate; close diverter",
+        "C": "Pick up; space out; switch off pumps; open downwind vent; close shakers valve; close diverter"
+      },
+      "correctAnswer": "B",
+      "explanation": "Shallow gas: DON'T shut in (can fracture). INCREASE pump rate to sweep gas away. Close diverter to direct flow to vent lines. Keep mud moving!"
+    },
+    {
+      "id": "EX6-Q9",
+      "level": "L3",
+      "question": "Why is quick shut-in important?",
+      "options": {
+        "A": "Keep kick volume small",
+        "B": "Prevent gas migration",
+        "C": "Keep SIDPP small"
+      },
+      "correctAnswer": "A",
+      "explanation": "Fast shut-in = small kick. Small kick = easier to kill, less MAASP risk, less shoe pressure. SIDPP reflects formation pressure\u2014won't change with speed."
+    },
+    {
+      "id": "EX6-Q10",
+      "level": "L3",
+      "question": "Well flowing while tripping. Action?",
+      "options": {
+        "A": "Install safety valve; shut in",
+        "B": "Run back to bottom immediately",
+        "C": "Continue pulling",
+        "D": "Close BOP; install kelly/top drive"
+      },
+      "correctAnswer": "A",
+      "explanation": "Flowing = kick in progress. First secure the open pipe (stab safety valve), then shut in. Can't safely run back or install kelly with flow."
+    },
+    {
+      "id": "EX6-Q11",
+      "level": "L4",
+      "question": "SIDPP 530 psi, SICP 680 psi, 12.8 ppg mud. Gas migrates 600 ft. Expected pressures?",
+      "options": {
+        "A": "DP 530 psi; Casing 1080 psi",
+        "B": "DP 930 psi; Casing 1080 psi",
+        "C": "DP 930 psi; Casing 680 psi",
+        "D": "DP 530 psi; Casing 680 psi"
+      },
+      "correctAnswer": "B",
+      "explanation": "Gas migration adds pressure equally to both. 600 ft \u00d7 12.8 \u00d7 0.052 = 400 psi. New SIDPP = 530+400=930. New SICP = 680+400=1080."
+    },
+    {
+      "id": "Q36",
+      "level": "L3",
+      "question": "Hard Shut-in procedure on floating rig?",
+      "correctAnswer": "Stop drilling, close BOP, open choke line valve then choke, adjust annular pressure",
+      "explanation": "Floating rig hard shut-in: Stop pumps, close BOP immediately, then establish flow path through choke for pressure monitoring."
+    }
+  ]
+}

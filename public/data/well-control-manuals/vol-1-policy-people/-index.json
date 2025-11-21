@@ -1,0 +1,157 @@
+{
+  "volumeId": "vol-1",
+  "title": "Volume 1: Policy & People",
+  "description": "Well control philosophy, barrier requirements, organizational roles, certifications, training, and human factors. Sets the foundation for all well control activities.",
+  "sections": [
+    {
+      "sectionId": "1.1",
+      "title": "Introduction",
+      "file": "sections/1-1-introduction.json",
+      "topics": ["Purpose", "Scope", "Document control", "Language conventions", "Definitions", "Abbreviations"]
+    },
+    {
+      "sectionId": "1.2",
+      "title": "Well Control Philosophy",
+      "file": "sections/1-2-philosophy.json",
+      "topics": ["Safety priorities", "Life > Environment > Asset", "Prevention over intervention"]
+    },
+    {
+      "sectionId": "1.3",
+      "title": "Well Barrier Requirements",
+      "file": "sections/1-3-barriers.json",
+      "topics": [
+        "Two-barrier principle",
+        "Well Barrier Element (WBE)",
+        "Well Barrier Envelope",
+        "Well Barrier Schematic",
+        "Barrier independence",
+        "Acceptable leak rates",
+        "Barrier status monitoring",
+        "Lost barrier procedures"
+      ]
+    },
+    {
+      "sectionId": "1.4",
+      "title": "Barriers in Operations",
+      "file": "sections/1-4-barriers-operations.json",
+      "topics": [
+        "Overbalanced drilling",
+        "MPD operations",
+        "Cemented casing as barrier",
+        "Cement plug as barrier",
+        "Producing wells",
+        "Well intervention barriers",
+        "P&A barriers"
+      ]
+    },
+    {
+      "sectionId": "1.5",
+      "title": "Emergency Response Levels",
+      "file": "sections/1-5-emergency-levels.json",
+      "topics": ["Level 1: On-site handling", "Level 2: Enhanced response", "Level 3: Major emergency", "Notification procedures"]
+    },
+    {
+      "sectionId": "1.6",
+      "title": "Roles & Responsibilities",
+      "file": "sections/1-6-roles.json",
+      "topics": [
+        "Well Control Response Team",
+        "OIM/Responsible Person",
+        "Drilling Superintendent",
+        "Drilling Supervisor",
+        "Toolpusher",
+        "Driller",
+        "Assistant Driller",
+        "Mud Engineer",
+        "Mud Logger",
+        "Subsea Supervisor/Engineer",
+        "Operator Representative",
+        "Service company personnel"
+      ]
+    },
+    {
+      "sectionId": "1.7",
+      "title": "Certifications & Training",
+      "file": "sections/1-7-certifications.json",
+      "topics": [
+        "IWCF certification requirements",
+        "Position-specific requirements",
+        "Certification validity",
+        "Simulator training",
+        "On-board training programs",
+        "Competency assessment"
+      ]
+    },
+    {
+      "sectionId": "1.8",
+      "title": "Human Factors",
+      "file": "sections/1-8-human-factors.json",
+      "topics": [
+        "Performance shaping factors",
+        "Situational awareness",
+        "Mental traps",
+        "Confirmation bias",
+        "Normalisation of deviance",
+        "Groupthink",
+        "Loss aversion/sunk cost",
+        "Stress and fatigue",
+        "Communication barriers"
+      ]
+    },
+    {
+      "sectionId": "1.9",
+      "title": "Well Control Management Process",
+      "file": "sections/1-9-management-process.json",
+      "topics": [
+        "Step-by-step approach",
+        "Establish baseline",
+        "Monitor for anomalies",
+        "Status review meeting",
+        "Conventional vs unconventional response",
+        "Kill method selection",
+        "Devil's advocate challenge",
+        "Post-incident review"
+      ]
+    },
+    {
+      "sectionId": "1.10",
+      "title": "Meetings & Documentation",
+      "file": "sections/1-10-meetings.json",
+      "topics": [
+        "Pre-spud meetings",
+        "Well Control Response Plan",
+        "Bridging documents",
+        "Self-verification",
+        "Handover procedures",
+        "Documentation requirements"
+      ]
+    },
+    {
+      "sectionId": "1.11",
+      "title": "Management of Change",
+      "file": "sections/1-11-moc.json",
+      "topics": ["Deviation permits", "Change approval process", "Risk assessment", "Documentation"]
+    }
+  ],
+  "appendices": [
+    {
+      "appendixId": "A",
+      "title": "Definitions & Acronyms",
+      "file": "appendices/a-definitions.json"
+    },
+    {
+      "appendixId": "B",
+      "title": "Bridging Document Template",
+      "file": "appendices/b-bridging-template.json"
+    },
+    {
+      "appendixId": "C",
+      "title": "Well Barrier Schematic Template",
+      "file": "appendices/c-wbs-template.json"
+    }
+  ],
+  "clientCustomization": {
+    "replaceable": ["Company name", "Logo", "Document numbering", "Certification requirements", "Organizational structure"],
+    "addable": ["Company-specific policies", "Regional requirements", "Additional roles"]
+  }
+}

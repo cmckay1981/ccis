@@ -1,0 +1,73 @@
+{
+  "templateId": "LAND_RIG_LOGISTICS",
+  "title": "Land Rig Logistics & Contingency Planning",
+  "category": "OPERATIONAL_DECISIONS",
+  "rigTypes": ["LAND"],
+  "referenceWell": "CC-SANDSTONE-301",
+  "description": "Operational decision-making around land rig specific logistics challenges including remote locations, weather, and supply chain",
+  "applicableModules": ["ADO-107", "ADO-109"],
+  "scenario": {
+    "context": "You're drilling on land rig CC-LAND-150 in a remote desert location. Nearest supply base is {{distanceToBase}} km. Current section is {{holeSize}}\" at {{currentDepth}} m. Weather forecast shows {{weatherCondition}} for the next 48 hours.",
+    "variables": {
+      "distanceToBase": {"type": "number", "range": [150, 400], "unit": "km"},
+      "holeSize": {"type": "string", "options": ["16", "12-1/4", "8-1/2"]},
+      "currentDepth": {"type": "number", "range": [1500, 3500], "unit": "m"},
+      "weatherCondition": {"type": "string", "options": ["sandstorm warning", "heavy rain expected", "extreme heat (>45°C)"]},
+      "bariteTonnes": {"type": "number", "range": [30, 100], "unit": "tonnes"},
+      "dieselDays": {"type": "number", "range": [3, 10], "unit": "days"}
+    }
+  },
+  "questions": [
+    {
+      "questionId": "LAND-01",
+      "question": "You have {{bariteTonnes}} tonnes of barite on location. Based on your current MW of {{mudWeight}} sg and potential need to weight up to {{targetMW}} sg, do you have enough? When should you order resupply?",
+      "keyPoints": [
+        "Barite consumption calculation",
+        "Lead time for resupply",
+        "Safety stock policy",
+        "Contingency for faster-than-expected consumption"
+      ],
+      "correctResponse": "Calculate: Volume to weight up = Active system + hole volume. Barite required = (Target MW - Current MW) × Volume × specific calculation. For remote locations, maintain minimum 3-day buffer stock plus emergency reserve. Order point should be when stock reaches 5-day consumption + transport time. In this case: if road transport takes {{transportDays}} days, order when you reach {{orderPoint}} tonnes remaining.",
+      "variables": {
+        "mudWeight": {"type": "number", "range": [1.40, 1.55], "unit": "sg"},
+        "targetMW": {"type": "number", "range": [1.60, 1.75], "unit": "sg"},
+        "transportDays": {"type": "number", "range": [1, 3], "unit": "days"}
+      }
+    },
+    {
+      "questionId": "LAND-02",
+      "question": "A sandstorm is forecast to hit the location in 6 hours and last 24-48 hours. What preparations should you make and at what point do you consider suspending operations?",
+      "keyPoints": [
+        "Equipment protection",
+        "Personnel safety",
+        "Well suspension procedures",
+        "Communication plans",
+        "Restart readiness"
+      ],
+      "correctResponse": "Immediate preparations: 1) Secure all loose equipment, 2) Close air intakes on engines/compressors, 3) Cover sensitive equipment (MWD, electronics), 4) Position pipe safely (either at shoe or with contingency casing depth planned), 5) Full fuel and water tanks, 6) Verify communications backup. Suspension criteria: visibility <50m, wind >60 km/hr, or sand ingestion risk to engines. Decision point: 2 hours before forecast arrival - make go/no-go call."
+    },
+    {
+      "questionId": "LAND-03",
+      "question": "You've experienced a major equipment failure (top drive/mud pump) and the replacement part is {{partLeadTime}} days away. What are your options to minimize NPT while waiting?",
+      "keyPoints": [
+        "Productive waiting activities",
+        "Alternative equipment configurations",
+        "Well suspension requirements",
+        "Crew management",
+        "Documentation and planning"
+      ],
+      "correctResponse": "Options to minimize NPT: 1) If safe to leave pipe in hole - use time for maintenance, BOP testing, training, 2) If rotary table available (top drive failure) - evaluate if can continue limited operations, 3) If must suspend - position well safely, document hole condition, prepare for restart. Productive activities: Full rig maintenance, crew training/drills, review procedures, pre-stage materials for next section. Always: detailed handover notes for repair crew, lessons learned documentation.",
+      "variables": {
+        "partLeadTime": {"type": "number", "range": [3, 7], "unit": "days"}
+      }
+    }
+  ],
+  "discussionPoints": [
+    "How does supply chain planning differ between land and offshore operations?",
+    "What minimum stock levels should be maintained for critical materials?",
+    "How do you balance cost of inventory vs risk of stockout?",
+    "What communication systems are essential for remote land operations?"
+  ],
+  "relatedHazards": ["Supply chain disruption", "Weather", "Equipment failure"],
+  "tags": ["land-rig", "logistics", "contingency", "daily-coaching"]
+}

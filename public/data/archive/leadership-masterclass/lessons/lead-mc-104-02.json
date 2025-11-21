@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-104-02",
+  "moduleId": "LEAD-MC-104",
+  "courseId": "LEAD-MC",
+  "title": "Matching Challenge to Capability",
+  "type": "lesson",
+  "content": "Not all delegation is equal. High-performing individuals can handle ambiguous assignments with minimal oversight. Developing team members need structured tasks with clear checkpoints. New or struggling performers require detailed guidance and frequent feedback. Mismatching the challenge level to the person's readiness creates two failure modes: overwhelming someone who isn't ready, or boring someone who's capable of more. Effective leaders assess individual capability honestly and adjust delegation approach accordingly.",
+  "mcq": {
+    "question": "A leader has three team members: one is highly experienced and autonomous, one is competent but still developing judgment, and one is new to the role. The leader assigns all three the same type of task with identical instructions and check-in schedules. Six weeks later, the experienced person seems disengaged, the developing person is performing adequately, and the new person is struggling. What did the leader miss?",
+    "options": {
+      "A": "The experienced person needs a performance conversation about engagement",
+      "B": "The new person isn't suited for the role and should be replaced",
+      "C": "The leader failed to differentiate delegation approach based on individual readiness",
+      "D": "The task assignment was inappropriate for the entire team"
+    },
+    "correctOption": "C",
+    "explanation": "One-size-fits-all delegation ignores individual capability. The experienced person is disengaged because they're being micromanaged with unnecessary check-ins. The new person is struggling because they need more structure and support than they're getting. The developing person happened to match the delegation level. Leaders must flex their approach: give high performers autonomy and outcome focus, give developing performers structured frameworks with coaching, give new performers detailed guidance with frequent checkpoints."
+  },
+  "openQuestions": [
+    "For each person on your team, can you articulate their current capability level and how that should affect your delegation approach?",
+    "Describe someone who outgrew the level of oversight you were providing. What signal told you they were ready for more?"
+  ]
+}

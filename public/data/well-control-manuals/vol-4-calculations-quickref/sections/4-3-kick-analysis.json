@@ -1,0 +1,26 @@
+{
+  "sectionId": "4.3",
+  "title": "Kick Analysis Calculations",
+  "content": {
+    "4.3.1": {
+      "title": "Formation Pressure",
+      "content": "**From SIDPP:**\n```\nFormation Pressure = SIDPP + Hydrostatic Pressure (drillstring)\n```\n\n**Example:**\nSIDPP = 520 psi\nMW = 10.5 ppg\nTVD = 10,000 ft\n\nHP = 10.5 × 0.052 × 10,000 = 5,460 psi\nFormation Pressure = 520 + 5,460 = 5,980 psi"
+    },
+    "4.3.2": {
+      "title": "Influx Gradient",
+      "content": "**To determine influx type:**\n```\nInflux Gradient = Mud Gradient - [(SICP - SIDPP) ÷ Influx Height]\n```\n\n**Influx Height:**\n```\nInflux Height (ft) = Pit Gain (bbl) ÷ Annular Capacity (bbl/ft)\n```\n\n**Example:**\nSIDPP = 520 psi\nSICP = 680 psi\nPit Gain = 20 bbl\nAnnular Capacity = 0.05 bbl/ft\nMW = 10.5 ppg\n\nInflux Height = 20 ÷ 0.05 = 400 ft\nMud Gradient = 10.5 × 0.052 = 0.546 psi/ft\n\nInflux Gradient = 0.546 - [(680-520) ÷ 400]\nInflux Gradient = 0.546 - 0.4 = 0.146 psi/ft\n\n**Interpretation:**\n- < 0.15 psi/ft: Gas\n- 0.15 - 0.35 psi/ft: Gas/oil mix\n- 0.35 - 0.45 psi/ft: Oil or condensate\n- > 0.45 psi/ft: Salt water"
+    },
+    "4.3.3": {
+      "title": "Kick Tolerance",
+      "content": "**Definition:**\nMaximum kick size that can be safely circulated out without exceeding MAASP.\n\n**Simplified Formula (gas kick):**\n```\nKick Tolerance (bbl) = MAASP ÷ [(MW gradient - Gas gradient) × Annular cap]\n```\n\n**Factors Affecting Kick Tolerance:**\n- Higher MAASP → Higher tolerance\n- Heavier mud → Higher tolerance\n- Larger annulus → Higher tolerance\n- Longer open hole → Lower tolerance\n- Gas vs liquid kick → Gas is worse\n\n**Use:**\n- Plan operations within kick tolerance\n- Tighter margins require more vigilance\n- HPHT wells often have very low kick tolerance"
+    },
+    "4.3.4": {
+      "title": "Gas Migration Rate",
+      "content": "**Estimating Rate:**\nGas rises through static mud at approximately:\n- Light mud (9-10 ppg): 1,000-2,000 ft/hr\n- Medium mud (11-13 ppg): 500-1,000 ft/hr\n- Heavy mud (14+ ppg): 300-500 ft/hr\n\n**Pressure Increase:**\n```\nPressure increase per hour = Migration rate × Mud gradient\n```\n\n**Example:**\nMud weight = 12 ppg (gradient = 0.624 psi/ft)\nEstimated migration = 700 ft/hr\n\nPressure increase = 700 × 0.624 = 437 psi/hr\n\n**Implication:**\nIf shut-in with gas below, surface pressure increases. May need volumetric method."
+    },
+    "4.3.5": {
+      "title": "Annular Capacity",
+      "content": "**Formula:**\n```\nAnnular Capacity (bbl/ft) = (Hole ID² - Pipe OD²) ÷ 1029.4\n```\n\n**Common Capacities:**\n| Hole | Pipe | Capacity |\n|------|------|----------|\n| 12.25\" | 5\" DP | 0.1215 bbl/ft |\n| 8.5\" | 5\" DP | 0.0459 bbl/ft |\n| 8.5\" | 6.5\" DC | 0.0291 bbl/ft |\n\n**Use:**\n- Calculate influx height\n- Determine volumes at various depths\n- Kill circulation planning"
+    }
+  }
+}

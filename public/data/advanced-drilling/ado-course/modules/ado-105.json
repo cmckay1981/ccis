@@ -1,0 +1,78 @@
+{
+  "moduleId": "ADO-105",
+  "courseId": "ADO",
+  "title": "H2S Operations",
+  "description": "Hydrogen sulfide is immediately dangerous to life. H2S operations require specialized procedures that integrate personnel safety with well control. This module covers detection, protection, and response when drilling in H2S environments.",
+  "objectives": [
+    "Understand H2S properties and physiological effects",
+    "Implement detection and monitoring systems",
+    "Execute personnel protection and evacuation procedures",
+    "Manage well control events in H2S environment"
+  ],
+  "keyTopics": [
+    {
+      "topic": "H2S Properties",
+      "content": "H2S is colorless, heavier than air, and has a characteristic 'rotten egg' smell - but olfactory fatigue means you stop smelling it at dangerous concentrations. It's highly toxic: 100 ppm causes respiratory distress, 500+ ppm can be rapidly fatal."
+    },
+    {
+      "topic": "Detection Systems",
+      "content": "Fixed monitors at shakers, bell nipple, mud pits, and rig floor. Personal monitors for all personnel. Alarm levels: 10 ppm (alert), 20 ppm (SCBA required), 50 ppm (non-essential personnel muster). Never rely on smell alone."
+    },
+    {
+      "topic": "Material Compatibility",
+      "content": "H2S causes sulfide stress cracking in susceptible steels. All wellhead, BOP, and tubular components must be NACE MR0175 compliant. Failure to use H2S-rated materials can result in catastrophic equipment failure during a well control event."
+    },
+    {
+      "topic": "Personnel Protection",
+      "content": "SCBA immediately available for all personnel. Cascade breathing air systems for extended operations. Wind indicators for evacuation direction. Designated muster points upwind. Medical support including H2S antidote kits."
+    },
+    {
+      "topic": "Well Control with H2S",
+      "content": "A kick in H2S environment is a dual emergency - well control AND personnel safety simultaneously. You cannot evacuate and abandon the well. Critical personnel remain in SCBA to manage well control while non-essential muster. H2S scavenger in kill mud."
+    }
+  ],
+  "referenceWellContext": {
+    "wellName": "Phoenix-702",
+    "h2sZone": "6,000m - 6,920m (Alpha Sand, Bravo Sand)",
+    "severity": "High",
+    "mitigation": "Detection equipment, scavenger in mud, evacuation drills, SCBA ready"
+  },
+  "operationalPrinciples": [
+    "Assume H2S is present until proven otherwise in suspected zones",
+    "Detection systems must be tested and calibrated daily",
+    "Every person knows their muster point and evacuation route",
+    "SCBA training is mandatory - practice until it's automatic",
+    "Well control takes priority - but with protected personnel"
+  ],
+  "h2sLevels": {
+    "alertLevel": "10 ppm",
+    "scbaRequired": "20 ppm",
+    "nonEssentialEvacuate": "50 ppm",
+    "idlh": "100 ppm",
+    "rapidlyFatal": "500+ ppm"
+  },
+  "lessons": [
+    {
+      "lessonId": "ADO-105-01",
+      "title": "H2S Properties & Hazards",
+      "file": "lessons/ado-105-01.json"
+    },
+    {
+      "lessonId": "ADO-105-02",
+      "title": "Detection & Monitoring Systems",
+      "file": "lessons/ado-105-02.json"
+    },
+    {
+      "lessonId": "ADO-105-03",
+      "title": "Personnel Protection & Evacuation",
+      "file": "lessons/ado-105-03.json"
+    },
+    {
+      "lessonId": "ADO-105-04",
+      "title": "Well Control in H2S Environment",
+      "file": "lessons/ado-105-04.json"
+    }
+  ],
+  "documentId": "ADO-105",
+  "tags": ["h2s", "hydrogen-sulfide", "toxic-gas", "personnel-safety", "advanced-drilling"]
+}

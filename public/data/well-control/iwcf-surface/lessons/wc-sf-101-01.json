@@ -1,0 +1,62 @@
+{
+  "lessonId": "WC-SF-101-01",
+  "moduleId": "WC-SF-101",
+  "courseId": "WC-SF",
+  "title": "The Hydrostatic Equation",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "Hydrostatic pressure is the pressure exerted by a column of fluid at rest. It's the foundation of all well control\u2014if you don't understand this, nothing else will make sense. The formula is simple but critical: Hydrostatic Pressure (psi) = Mud Weight (ppg) \u00d7 0.052 \u00d7 True Vertical Depth (ft). The constant 0.052 converts ppg to psi/ft. Remember: we always use TVD, not measured depth, because pressure depends on vertical height, not the path the wellbore takes.",
+  "formula": {
+    "equation": "P (psi) = MW (ppg) \u00d7 0.052 \u00d7 TVD (ft)",
+    "variables": {
+      "P": "Hydrostatic pressure in pounds per square inch",
+      "MW": "Mud weight in pounds per gallon",
+      "0.052": "Conversion constant",
+      "TVD": "True vertical depth in feet"
+    },
+    "example": {
+      "given": "MW = 12.0 ppg, TVD = 10,000 ft",
+      "calculation": "P = 12.0 \u00d7 0.052 \u00d7 10,000 = 6,240 psi"
+    }
+  },
+  "mcq": {
+    "question": "A well has a mud weight of 10.5 ppg and a TVD of 8,000 ft. What is the hydrostatic pressure at the bottom of the hole?",
+    "options": {
+      "A": "4,200 psi",
+      "B": "4,368 psi",
+      "C": "5,460 psi",
+      "D": "8,400 psi"
+    },
+    "correctOption": "B",
+    "explanation": "P = 10.5 \u00d7 0.052 \u00d7 8,000 = 4,368 psi. This is a direct application of the hydrostatic equation. Always multiply MW \u00d7 0.052 \u00d7 TVD."
+  },
+  "openQuestions": [
+    "Why do we use TVD instead of measured depth in hydrostatic calculations?",
+    "If you increase mud weight by 0.5 ppg in a 10,000 ft well, how much additional hydrostatic pressure do you gain?"
+  ],
+  "practiceProblems": [
+    {
+      "problem": "MW = 11.2 ppg, TVD = 12,500 ft",
+      "answer": "7,280 psi"
+    },
+    {
+      "problem": "MW = 14.0 ppg, TVD = 6,000 ft",
+      "answer": "4,368 psi"
+    },
+    {
+      "problem": "If P = 5,200 psi and TVD = 10,000 ft, what is the MW?",
+      "answer": "10.0 ppg"
+    }
+  ],
+  "documentId": "WC-SF-101-01",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-101",
+    "WC-SF-101-01"
+  ]
+}

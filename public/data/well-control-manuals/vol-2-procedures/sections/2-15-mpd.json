@@ -1,0 +1,34 @@
+{
+  "sectionId": "2.15",
+  "title": "MPD Operations",
+  "content": {
+    "2.15.1": {
+      "title": "Overview",
+      "content": "Managed Pressure Drilling (MPD) uses surface back pressure to precisely control wellbore pressure.\n\n**Key Concept:**\nBHP = Hydrostatic Head + Annular Friction Loss (ECD) + Surface Back Pressure (SBP)\n\n**Why Used:**\n- Narrow drilling window (pore pressure close to fracture pressure)\n- Reduces kick/loss events\n- Better wellbore stability\n- Improved ROP in some cases\n- Enables drilling undrillable wells\n\n**Well Control Implications:**\n- SBP provides additional control\n- RCD is NOT a barrier\n- Must be able to transition to conventional well control\n- Different response procedures needed"
+    },
+    "2.15.2": {
+      "title": "MPD Barrier Philosophy",
+      "content": "**Primary Barrier:**\nHydrostatic head + Annular friction + Surface back pressure\n\n**Secondary Barrier:**\nBOP system (unchanged from conventional)\n\n**Critical Understanding:**\n- RCD (Rotating Control Device) is a pressure CONTAINMENT device\n- RCD is NOT a barrier element\n- If RCD fails, must have immediate response\n- Two-barrier principle still applies\n\n**MPD System Status:**\n- MPD system must be monitored continuously\n- Failure modes understood\n- Backup plans in place\n- Cannot rely on MPD as a barrier"
+    },
+    "2.15.3": {
+      "title": "Kick Detection in MPD",
+      "content": "**Advantages:**\n- Constant BHP monitoring (when equipped)\n- Can detect smaller influxes\n- More precise pressure control\n- Mass balance monitoring available\n\n**Detection Methods:**\n- Return flow rate vs pump rate\n- Coriolis meter for mass balance\n- Downhole pressure monitoring\n- Pit volume (as conventional)\n\n**Challenges:**\n- More complex system to monitor\n- SBP variations may mask small kicks\n- RCD seal leakage can cause false indications\n\n**Response to Indicators:**\n- Increase SBP to stop influx\n- If successful: adjust mud weight to eliminate need for SBP\n- If unsuccessful: transition to conventional well control"
+    },
+    "2.15.4": {
+      "title": "MPD Kick Response",
+      "content": "**Minor Influx (MPD Controllable):**\n1. Detect influx through monitoring\n2. Increase SBP to stop influx\n3. Circulate out influx at constant BHP\n4. Adjust mud weight to eliminate SBP need\n5. Resume normal MPD operations\n\n**Major Influx (Requires Conventional WC):**\n1. Increase SBP to maximum available\n2. If influx continues: shut in on BOP\n3. Transition to conventional well control\n4. Use standard kill procedures\n\n**Transition to Conventional:**\n1. Close BOP\n2. Record SIDPP and SICP\n3. Transfer control from MPD choke to conventional choke\n4. Kill using standard methods\n5. Do not revert to MPD until situation controlled"
+    },
+    "2.15.5": {
+      "title": "RCD Failure Response",
+      "content": "**Signs of RCD Failure:**\n- Loss of annular seal\n- Unable to maintain SBP\n- Flow from RCD\n- Pressure anomalies\n\n**Immediate Response:**\n1. Attempt to re-establish seal (if designed for it)\n2. If cannot seal: stop rotation\n3. Close BOP annular\n4. Transfer to conventional mode\n5. Assess RCD and repair/replace\n\n**Maintaining Well Control:**\n- BOP provides backup\n- May need to increase mud weight\n- Cannot rely on SBP without RCD seal\n- Have contingency procedure in place"
+    },
+    "2.15.6": {
+      "title": "MPD System Failure",
+      "content": "**Failure Types:**\n- Choke failure\n- Pump failure (if used for MPD)\n- Control system failure\n- Power failure\n\n**Response:**\n1. Close BOP to maintain pressure\n2. Switch to conventional well control mode\n3. Repair/restore MPD system\n4. Only resume MPD when system fully functional\n\n**Key Principle:**\nMPD system failure should not cause loss of well control. BOP is always available as conventional backup."
+    },
+    "2.15.7": {
+      "title": "Personnel and Training",
+      "content": "**Additional Requirements:**\n- MPD-specific training\n- Understanding of MPD system operation\n- Ability to transition to conventional\n- Knowledge of RCD limitations\n\n**Crew Roles:**\n- Dedicated MPD operator typically present\n- Driller still responsible for well control\n- Clear handoff procedures for emergencies\n\n**Drills:**\n- Include MPD-specific scenarios\n- Practice transition to conventional\n- RCD failure response\n- System failure response\n\n**Documentation:**\n- MPD parameters recorded\n- All pressure data logged\n- Influx events documented\n- System performance tracked"
+    }
+  }
+}

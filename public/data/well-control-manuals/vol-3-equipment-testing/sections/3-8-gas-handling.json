@@ -1,0 +1,30 @@
+{
+  "sectionId": "3.8",
+  "title": "Gas Handling Equipment",
+  "content": {
+    "3.8.1": {
+      "title": "Overview",
+      "content": "Gas handling equipment safely separates and disposes of gas from drilling returns:\n\n**Components:**\n- Mud Gas Separator (MGS / Poor Boy Degasser)\n- Degasser (vacuum type)\n- Flare system\n- Gas detection systems\n\n**Purpose:**\n- Remove gas from mud before it reaches shale shakers\n- Prevent gas accumulation in mud pits\n- Safely dispose of separated gas\n- Protect personnel from gas exposure"
+    },
+    "3.8.2": {
+      "title": "Mud Gas Separator (Poor Boy)",
+      "content": "**Function:**\nSeparates gas from mud at atmospheric pressure by gravity and baffles:\n- Mud enters near top\n- Falls through baffles, releasing gas\n- Gas vents to atmosphere or flare\n- Mud exits bottom to shakers or pits\n\n**Capacity:**\n- Must handle expected gas volumes during kill\n- Sizing based on anticipated flow rates\n- Critical for well control operations\n\n**Location:**\n- Downstream of choke manifold\n- Before mud reaches shakers\n- Vent line to safe location\n\n**Limitations:**\n- Cannot handle extremely high flow rates\n- May overflow if capacity exceeded\n- Atmospheric pressure only"
+    },
+    "3.8.3": {
+      "title": "Vacuum Degasser",
+      "content": "**Function:**\nRemoves dissolved and entrained gas from mud using vacuum:\n- Mud passes through vacuum chamber\n- Reduced pressure releases gas from mud\n- More thorough than gravity separation\n\n**Use:**\n- Routine drilling operations\n- Gas-cut mud cleanup\n- After well control event to restore mud properties\n\n**Not for Well Control:**\n- Cannot handle high gas volumes during kill\n- Use MGS during active well control\n- Degasser for cleanup afterward"
+    },
+    "3.8.4": {
+      "title": "Flare System",
+      "content": "**Purpose:**\nSafely burn separated gas:\n- Burns off combustible gases\n- Prevents accumulation\n- Located away from rig\n\n**Components:**\n- Flare stack or boom\n- Ignition system\n- Flame arrestor\n- Safety controls\n\n**Operation:**\n- Route gas from MGS to flare\n- Ignite and maintain flame\n- Monitor for flame-out\n\n**Safety:**\n- Locate downwind and away from operations\n- Ensure adequate height/distance\n- Monitor during use\n- Have backup ignition"
+    },
+    "3.8.5": {
+      "title": "Gas Detection",
+      "content": "**Fixed Detectors:**\n- Located throughout rig\n- Continuous monitoring\n- Alarm at set thresholds\n- Key locations: shakers, pits, drill floor\n\n**Portable Detectors:**\n- For spot checks\n- Entry into confined spaces\n- Personal monitors for H2S areas\n\n**Types:**\n- Combustible gas (% LEL)\n- H2S (ppm)\n- CO2 (where applicable)\n\n**Response:**\n- Know alarm thresholds\n- Have response procedures\n- Evacuation routes identified\n- Breathing apparatus available"
+    },
+    "3.8.6": {
+      "title": "Testing and Maintenance",
+      "content": "**MGS:**\n- Visual inspection for integrity\n- Verify vent line clear\n- Check mud seal at bottom\n- Inspect baffles if accessible\n\n**Gas Detectors:**\n- Calibrate per manufacturer requirements\n- Test alarms regularly\n- Replace sensors as needed\n- Document all tests\n\n**Flare:**\n- Test ignition system\n- Verify flame arrestor in place\n- Check pilot light (if equipped)\n- Inspect for damage"
+    }
+  }
+}

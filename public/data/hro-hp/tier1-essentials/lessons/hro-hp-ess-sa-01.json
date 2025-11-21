@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-SA-01",
+  "moduleId": "HRO-HP-ESS-SA",
+  "courseId": "HRO-HP-ESS",
+  "title": "What Situational Awareness Is",
+  "type": "lesson",
+  "content": "Situational awareness operates on three levels: perception (detecting information), comprehension (understanding what it means), and projection (anticipating what happens next). Each level builds on the previous—you cannot understand what you haven't perceived, and you cannot project what you don't understand. Master operators spend most of their mental energy at the projection level, staying ahead of events rather than reacting to them.",
+  "mcq": {
+    "question": "A team member notices pressure readings are slightly elevated but continues working without further thought. At which SA level did they stop?",
+    "options": {
+      "A": "They achieved full SA by noticing the reading",
+      "B": "They perceived but didn't comprehend or project",
+      "C": "They comprehended but failed to project",
+      "D": "They projected incorrectly"
+    },
+    "correctOption": "B",
+    "explanation": "Noticing the elevated reading is perception (Level 1). Without asking 'what does this mean?' and 'what might happen next?', they never progressed to comprehension or projection."
+  },
+  "openQuestions": [
+    "Think of a recent situation where you perceived information but didn't fully comprehend its significance until later. What would have helped you understand it sooner?",
+    "How do you currently stay at the projection level during routine operations, anticipating what might happen next?"
+  ]
+}

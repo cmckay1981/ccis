@@ -1,0 +1,25 @@
+{
+  "lessonId": "LEAD-112-06",
+  "moduleId": "LEAD-112",
+  "courseId": "LEAD",
+  "title": "Executive Leadership Transition",
+  "type": "scenario",
+  "content": "Transitioning into executive leadership requires fundamental mindset shifts. You move from managing execution to setting direction, from solving problems to building systems that prevent problems, from direct control to influence through others, and from technical expertise to strategic thinking. Many new executives fail by continuing to operate as senior managers. Success requires letting go of old strengths and developing new capabilities.",
+  "scenario": {
+    "story": "You've been promoted from operational leadership to executive level. You're now responsible for multiple departments, strategic planning, and organizational-level decision making. Your previous success came from deep operational involvement, personal problem-solving, and being the most knowledgeable person in the room. You've been in the role for three months and are overwhelmed: too many meetings, not enough time for deep work, operational problems still being escalated to you, and strategic initiatives not making progress. Your old approaches aren't working.",
+    "options": {
+      "A": "Work longer hours to handle both operational involvement and executive responsibilities",
+      "B": "Delegate more operational decisions, focus on developing your leadership team's capability, and shift your time to strategic priorities and system-building",
+      "C": "Push back on the executive workload since your operational expertise is where you add most value",
+      "D": "Hire additional staff to handle operational details so you can focus on strategy"
+    },
+    "recommendedResponse": "B",
+    "explanation": "Option B demonstrates the mindset shift executive leadership requires. You can't scale yourself by working harder—you scale by developing others, building systems, and focusing on leverage points that affect the entire organization. Your value as an executive isn't solving operational problems (your team should do that)—it's setting direction, allocating resources, building capability, and ensuring system health. Option A leads to burnout and neglects actual executive work. Option C misreads your new role and resists necessary transition. Option D throws resources at symptoms rather than addressing the fundamental shift needed. Executive transition means accepting that your old strengths may no longer be your highest contribution and deliberately developing new capabilities."
+  },
+  "openQuestions": [
+    "If you're in or approaching executive leadership, what operational involvement are you holding onto that you should release?",
+    "What capabilities got you to your current level that may not serve you at the next level?",
+    "How do you measure your effectiveness as a leader: by problems you personally solve, or by capability you build in others?",
+    "What's your next leadership transition, and what will it require you to let go of?"
+  ]
+}

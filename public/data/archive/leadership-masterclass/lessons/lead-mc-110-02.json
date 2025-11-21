@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-110-02",
+  "moduleId": "LEAD-MC-110",
+  "courseId": "LEAD-MC",
+  "title": "Leading Difficult Conversations: Layoffs and Restructuring",
+  "type": "lesson",
+  "content": "Some leadership conversations are inherently difficult: delivering layoff news, announcing restructuring, or communicating organizational failure. These require balancing honesty with compassion, clarity with sensitivity. The error is either being overly blunt (creating unnecessary trauma) or overly vague (creating confusion and anxiety). Effective difficult conversations are direct about facts, honest about what's known and unknown, and respectful of impact on people's lives.",
+  "mcq": {
+    "question": "You must inform your team that the organization is eliminating 30% of positions, including some from your team. Individual decisions will be communicated in two weeks. How do you inform the team?",
+    "options": {
+      "A": "Wait until individual decisions are final to avoid creating unnecessary anxiety",
+      "B": "Inform the team immediately about the situation, explain what you know and don't know, and commit to transparency as decisions are finalized",
+      "C": "Send an email with the basic facts to avoid an emotional group conversation",
+      "D": "Tell the team the organization is 'exploring options' without specifying layoffs"
+    },
+    "correctOption": "B",
+    "explanation": "Difficult news doesn't improve with delay. The team will learn about it regardless—better it comes from you with context than through rumors. Option B provides factual information, acknowledges uncertainty, and commits to ongoing communication. Option A allows anxiety to build and rumors to spread. Option C avoids the human element when people need to see your leadership. Option D is dishonest misdirection that destroys trust. Difficult conversations require showing up, being direct, acknowledging impact, and providing what support you can. People can handle hard truths; they can't handle being misled or avoided."
+  },
+  "openQuestions": [
+    "Think of the most difficult conversation you've had to have as a leader. How did you prepare for it?",
+    "What makes difficult conversations hard for you: the emotional weight, fear of reaction, or uncertainty about what to say?"
+  ]
+}

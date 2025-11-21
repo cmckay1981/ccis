@@ -1,0 +1,51 @@
+{
+  "lessonId": "WC-SF-103-01",
+  "moduleId": "WC-SF-103",
+  "courseId": "WC-SF",
+  "title": "Two Conditions for a Kick",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "For a kick to occur, two conditions must BOTH be present: (1) Formation pressure must exceed wellbore pressure, AND (2) the formation must be permeable enough to allow flow. Miss either condition, no kick. This is fundamental\u2014understanding it helps you prevent kicks and diagnose when they occur.",
+  "multiSensoryExplanations": {
+    "visual": "Picture a balloon (high pressure) behind a brick wall (low permeability). Pressure exists, but nothing gets through. Replace the wall with a screen door\u2014same pressure, now air rushes through. That's how permeability determines whether pressure becomes a kick.",
+    "auditory": "Two conditions, two syllables each: PRES-SURE and PER-MEABLE. Say them together: 'Pressure AND permeable.' If you can't say both, you don't have a kick.",
+    "kinesthetic": "At the beach, pick up clay and pour water over it\u2014water flows around, not through. Now grab sand\u2014water disappears straight through. Clay = low permeability. Sand = high permeability. Now add pressure behind that water. Sand lets it through instantly. Clay blocks it.",
+    "storyBased": "A driller in the Permian drilled into an overpressured zone\u2014500 psi underbalanced. Nothing happened. Why? The shale was so tight, gas couldn't squeeze through. Next day, hit the sand below\u2014same pressure\u2014got a 30-barrel kick in minutes. The sand was a highway for that gas."
+  },
+  "analogy": "The Locked Door: Someone pushes hard on a door (formation pressure). If the door is solid steel (impermeable shale), they can't get through no matter how hard they push. Replace with a screen door (permeable sandstone), they burst through. Kicks need both the push AND the pathway.",
+  "mcq": {
+    "question": "Which TWO conditions must BOTH exist for a kick to occur?",
+    "options": {
+      "A": "High mud weight and low pump rate",
+      "B": "Formation pressure exceeds wellbore pressure AND formation is permeable",
+      "C": "Gas in the formation AND open hole section",
+      "D": "Low mud weight AND deep depth"
+    },
+    "correctOption": "B",
+    "explanation": "Both conditions are required. High pressure alone (in impermeable rock) won't cause a kick. Permeability alone (with adequate mud weight) won't cause a kick. You need BOTH: underbalance + permeability."
+  },
+  "advancedQuestion": {
+    "question": "You're drilling through shale with estimated pore pressure of 12.5 ppg equivalent. Your mud weight is 11.8 ppg. Should you be concerned about taking a kick? Explain.",
+    "answer": "Not immediately. While formation pressure exceeds wellbore pressure (underbalanced by 0.7 ppg), shale typically has very low permeability. Without a permeable pathway, fluids cannot flow. However, you SHOULD increase mud weight before drilling into any associated sandstone, where permeability would allow a kick instantly.",
+    "l4Focus": "This tests diagnostic reasoning\u2014understanding WHY something isn't happening helps predict when it WILL."
+  },
+  "commonMisconception": {
+    "wrong": "If formation pressure is higher than mud weight, we'll always take a kick.",
+    "correct": "Pressure difference alone doesn't cause kicks. You also need permeability. Overpressured shales can be drilled underbalanced if tight enough\u2014but the moment you hit sand or fractured rock, that changes instantly."
+  },
+  "openQuestions": [
+    "Why can you sometimes drill underbalanced through shale without taking a kick?",
+    "What changes when you transition from shale to sandstone in an overpressured zone?"
+  ],
+  "documentId": "WC-SF-103-01",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-103",
+    "WC-SF-103-01"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "documentId": "ADO",
+  "courseId": "ADO",
+  "title": "Advanced Drilling Operations",
+  "provider": "Claymore & Colt",
+  "description": "Advanced operational training for complex drilling environments. Covers HPHT, MPD, ERD, deepwater, and challenging well conditions. Built around real well scenarios - not generic theory.",
+  "prerequisite": "IWCF Level 4 or equivalent well control certification",
+  "targetAudience": ["Driller", "Toolpusher", "OIM", "Drilling Engineer", "Well Control Specialist"],
+  "referenceWell": {
+    "wellId": "CC-PHOENIX-702",
+    "wellName": "Phoenix-702",
+    "description": "HPHT deepwater exploration well used as reference for course scenarios"
+  },
+  "modules": [
+    {
+      "moduleId": "ADO-101",
+      "title": "HPHT Operations",
+      "file": "modules/ado-101.json"
+    },
+    {
+      "moduleId": "ADO-102",
+      "title": "Managed Pressure Drilling (MPD)",
+      "file": "modules/ado-102.json"
+    },
+    {
+      "moduleId": "ADO-103",
+      "title": "Extended Reach & ECD Management",
+      "file": "modules/ado-103.json"
+    },
+    {
+      "moduleId": "ADO-104",
+      "title": "Continuous Circulation Systems",
+      "file": "modules/ado-104.json"
+    },
+    {
+      "moduleId": "ADO-105",
+      "title": "H2S Operations",
+      "file": "modules/ado-105.json"
+    },
+    {
+      "moduleId": "ADO-106",
+      "title": "Deepwater & Subsea Advanced Operations",
+      "file": "modules/ado-106.json"
+    },
+    {
+      "moduleId": "ADO-107",
+      "title": "Stuck Pipe Prevention & Recovery",
+      "file": "modules/ado-107.json"
+    },
+    {
+      "moduleId": "ADO-108",
+      "title": "Wellbore Stability",
+      "file": "modules/ado-108.json"
+    },
+    {
+      "moduleId": "ADO-109",
+      "title": "Lost Circulation Management",
+      "file": "modules/ado-109.json"
+    },
+    {
+      "moduleId": "ADO-110",
+      "title": "Tripping Operations in Tight Windows",
+      "file": "modules/ado-110.json"
+    },
+    {
+      "moduleId": "ADO-111",
+      "title": "Casing & Cementing Operations",
+      "file": "modules/ado-111.json"
+    },
+    {
+      "moduleId": "ADO-112",
+      "title": "Real-Time PPFG Interpretation",
+      "file": "modules/ado-112.json"
+    }
+  ],
+  "lessons": [
+    {"lessonId": "ADO-101-01", "moduleId": "ADO-101", "title": "HPHT Classification & Equipment Requirements", "file": "lessons/ado-101-01.json"},
+    {"lessonId": "ADO-101-02", "moduleId": "ADO-101", "title": "Operating in Narrow Windows", "file": "lessons/ado-101-02.json"},
+    {"lessonId": "ADO-101-03", "moduleId": "ADO-101", "title": "HPHT Kick Tolerance & Well Control", "file": "lessons/ado-101-03.json"},
+    {"lessonId": "ADO-101-04", "moduleId": "ADO-101", "title": "Temperature Effects on Operations", "file": "lessons/ado-101-04.json"},
+    {"lessonId": "ADO-102-01", "moduleId": "ADO-102", "title": "MPD Principles & Pressure Equations", "file": "lessons/ado-102-01.json"},
+    {"lessonId": "ADO-102-02", "moduleId": "ADO-102", "title": "MPD Control Modes", "file": "lessons/ado-102-02.json"},
+    {"lessonId": "ADO-102-03", "moduleId": "ADO-102", "title": "MPD Operations Matrix", "file": "lessons/ado-102-03.json"},
+    {"lessonId": "ADO-102-04", "moduleId": "ADO-102", "title": "MPD Connection Procedures", "file": "lessons/ado-102-04.json"},
+    {"lessonId": "ADO-102-05", "moduleId": "ADO-102", "title": "Influx Detection & Response with MPD", "file": "lessons/ado-102-05.json"},
+    {"lessonId": "ADO-102-06", "moduleId": "ADO-102", "title": "MPD Assisted Shut-In Protocol", "file": "lessons/ado-102-06.json"},
+    {"lessonId": "ADO-102-07", "moduleId": "ADO-102", "title": "Gas in Riser Removal", "file": "lessons/ado-102-07.json"},
+    {"lessonId": "ADO-102-08", "moduleId": "ADO-102", "title": "Transitioning Between MPD and Conventional", "file": "lessons/ado-102-08.json"},
+    {"lessonId": "ADO-102-09", "moduleId": "ADO-102", "title": "MPD Well Control Drills", "file": "lessons/ado-102-09.json"},
+    {"lessonId": "ADO-103-01", "moduleId": "ADO-103", "title": "Understanding ECD Components", "file": "lessons/ado-103-01.json"},
+    {"lessonId": "ADO-103-02", "moduleId": "ADO-103", "title": "Hole Cleaning Optimization", "file": "lessons/ado-103-02.json"},
+    {"lessonId": "ADO-103-03", "moduleId": "ADO-103", "title": "ECD Reduction Techniques", "file": "lessons/ado-103-03.json"},
+    {"lessonId": "ADO-103-04", "moduleId": "ADO-103", "title": "Surge & Swab Management", "file": "lessons/ado-103-04.json"},
+    {"lessonId": "ADO-104-01", "moduleId": "ADO-104", "title": "Why Continuous Circulation", "file": "lessons/ado-104-01.json"},
+    {"lessonId": "ADO-104-02", "moduleId": "ADO-104", "title": "System Components & Operation", "file": "lessons/ado-104-02.json"},
+    {"lessonId": "ADO-104-03", "moduleId": "ADO-104", "title": "Connection Procedures", "file": "lessons/ado-104-03.json"},
+    {"lessonId": "ADO-104-04", "moduleId": "ADO-104", "title": "Troubleshooting & Contingencies", "file": "lessons/ado-104-04.json"},
+    {"lessonId": "ADO-105-01", "moduleId": "ADO-105", "title": "H2S Properties & Hazards", "file": "lessons/ado-105-01.json"},
+    {"lessonId": "ADO-105-02", "moduleId": "ADO-105", "title": "Detection & Monitoring Systems", "file": "lessons/ado-105-02.json"},
+    {"lessonId": "ADO-105-03", "moduleId": "ADO-105", "title": "Personnel Protection & Evacuation", "file": "lessons/ado-105-03.json"},
+    {"lessonId": "ADO-105-04", "moduleId": "ADO-105", "title": "Well Control in H2S Environment", "file": "lessons/ado-105-04.json"},
+    {"lessonId": "ADO-106-01", "moduleId": "ADO-106", "title": "EDS Decision Framework", "file": "lessons/ado-106-01.json"},
+    {"lessonId": "ADO-106-02", "moduleId": "ADO-106", "title": "Operational Riser Margin Management", "file": "lessons/ado-106-02.json"},
+    {"lessonId": "ADO-106-03", "moduleId": "ADO-106", "title": "CLFL in Practice", "file": "lessons/ado-106-03.json"},
+    {"lessonId": "ADO-106-04", "moduleId": "ADO-106", "title": "Gas in Riser Response", "file": "lessons/ado-106-04.json"},
+    {"lessonId": "ADO-106-05", "moduleId": "ADO-106", "title": "Subsea BOP Contingencies", "file": "lessons/ado-106-05.json"},
+    {"lessonId": "ADO-107-01", "moduleId": "ADO-107", "title": "Differential Sticking - Causes & Prevention", "file": "lessons/ado-107-01.json"},
+    {"lessonId": "ADO-107-02", "moduleId": "ADO-107", "title": "Mechanical Sticking - Causes & Prevention", "file": "lessons/ado-107-02.json"},
+    {"lessonId": "ADO-107-03", "moduleId": "ADO-107", "title": "Warning Signs & Early Intervention", "file": "lessons/ado-107-03.json"},
+    {"lessonId": "ADO-107-04", "moduleId": "ADO-107", "title": "Stuck Pipe Response & Recovery", "file": "lessons/ado-107-04.json"},
+    {"lessonId": "ADO-108-01", "moduleId": "ADO-108", "title": "Geomechanics for Drillers", "file": "lessons/ado-108-01.json"},
+    {"lessonId": "ADO-108-02", "moduleId": "ADO-108", "title": "Shale Instability & Inhibition", "file": "lessons/ado-108-02.json"},
+    {"lessonId": "ADO-108-03", "moduleId": "ADO-108", "title": "Recognizing Instability", "file": "lessons/ado-108-03.json"},
+    {"lessonId": "ADO-108-04", "moduleId": "ADO-108", "title": "Response & Remediation", "file": "lessons/ado-108-04.json"},
+    {"lessonId": "ADO-109-01", "moduleId": "ADO-109", "title": "Understanding Lost Circulation", "file": "lessons/ado-109-01.json"},
+    {"lessonId": "ADO-109-02", "moduleId": "ADO-109", "title": "LCM Selection & Application", "file": "lessons/ado-109-02.json"},
+    {"lessonId": "ADO-109-03", "moduleId": "ADO-109", "title": "Well Control During Losses", "file": "lessons/ado-109-03.json"},
+    {"lessonId": "ADO-109-04", "moduleId": "ADO-109", "title": "Severe Loss Management", "file": "lessons/ado-109-04.json"},
+    {"lessonId": "ADO-110-01", "moduleId": "ADO-110", "title": "Swab & Surge in Practice", "file": "lessons/ado-110-01.json"},
+    {"lessonId": "ADO-110-02", "moduleId": "ADO-110", "title": "Trip Monitoring & Flow Checks", "file": "lessons/ado-110-02.json"},
+    {"lessonId": "ADO-110-03", "moduleId": "ADO-110", "title": "Pump Out of Hole Procedures", "file": "lessons/ado-110-03.json"},
+    {"lessonId": "ADO-110-04", "moduleId": "ADO-110", "title": "Responding to Trip-Induced Events", "file": "lessons/ado-110-04.json"},
+    {"lessonId": "ADO-111-01", "moduleId": "ADO-111", "title": "Surge Management During Casing Runs", "file": "lessons/ado-111-01.json"},
+    {"lessonId": "ADO-111-02", "moduleId": "ADO-111", "title": "Cement Design for Tight Windows", "file": "lessons/ado-111-02.json"},
+    {"lessonId": "ADO-111-03", "moduleId": "ADO-111", "title": "ECD Control During Displacement", "file": "lessons/ado-111-03.json"},
+    {"lessonId": "ADO-111-04", "moduleId": "ADO-111", "title": "Well Control During Casing Operations", "file": "lessons/ado-111-04.json"},
+    {"lessonId": "ADO-112-01", "moduleId": "ADO-112", "title": "PPFG Data Sources & Limitations", "file": "lessons/ado-112-01.json"},
+    {"lessonId": "ADO-112-02", "moduleId": "ADO-112", "title": "Drilling Parameter Interpretation", "file": "lessons/ado-112-02.json"},
+    {"lessonId": "ADO-112-03", "moduleId": "ADO-112", "title": "Recognizing Pressure Transitions", "file": "lessons/ado-112-03.json"},
+    {"lessonId": "ADO-112-04", "moduleId": "ADO-112", "title": "Operational Response to PPFG Changes", "file": "lessons/ado-112-04.json"}
+  ],
+  "moduleCount": 12,
+  "lessonCount": 54,
+  "tags": ["advanced-drilling", "hpht", "mpd", "erd", "deepwater", "h2s", "claymore-colt"]
+}

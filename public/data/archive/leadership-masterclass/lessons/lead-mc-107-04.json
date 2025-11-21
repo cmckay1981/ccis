@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-107-04",
+  "moduleId": "LEAD-MC-107",
+  "courseId": "LEAD-MC",
+  "title": "Managing Resistance and Building Buy-In",
+  "type": "lesson",
+  "content": "Resistance isn't defiance—it's information. People resist when they don't understand why change is necessary, fear what they'll lose, distrust leadership's motives, or believe they weren't consulted. Smart leaders listen to resistance instead of steamrolling it. Objections often reveal legitimate concerns, implementation blindspots, or better alternatives. Building buy-in requires involving people early, addressing concerns genuinely, making visible adjustments based on input, and demonstrating that participation matters.",
+  "mcq": {
+    "question": "During a change initiative, a vocal team member raises multiple objections in meetings, questions the need for change, and points out potential problems. Other team members start echoing concerns. The leader views this person as a blocker. What's a more productive interpretation?",
+    "options": {
+      "A": "This person is undermining leadership and should be managed out of the conversation",
+      "B": "This person is surfacing concerns others are thinking but not voicing—engage them",
+      "C": "This person doesn't have enough information and needs more communication",
+      "D": "This person is protecting their own interests and can be ignored"
+    },
+    "correctOption": "B",
+    "explanation": "Vocal resisters often speak for silent majority. Others are watching how leadership responds: will concerns be dismissed or addressed? This person is actually helping by making implicit resistance explicit, which gives leadership a chance to respond. Option B turns resistance into dialogue. Address the concerns directly, invite this person to help solve the problems they're identifying, and demonstrate that leadership values honest input. If the concerns are legitimate, adjust the plan. If they're based on misunderstanding, provide clarity. Option A silences dissent and drives resistance underground. Option C assumes information deficit when it might be legitimate disagreement. Option D dismisses concerns without examination."
+  },
+  "openQuestions": [
+    "Think of someone who resisted a change you led. What legitimate concern might they have been expressing?",
+    "How do you differentiate between productive dissent and destructive resistance?"
+  ]
+}

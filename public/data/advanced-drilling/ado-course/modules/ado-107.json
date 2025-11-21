@@ -1,0 +1,78 @@
+{
+  "moduleId": "ADO-107",
+  "courseId": "ADO",
+  "title": "Stuck Pipe Prevention & Recovery",
+  "description": "Stuck pipe is a costly, time-consuming problem that can escalate to well loss. In HPHT and narrow-window environments, the conditions that cause stuck pipe are amplified. Prevention through awareness is far better than recovery operations.",
+  "objectives": [
+    "Identify stuck pipe mechanisms and warning signs",
+    "Implement prevention strategies for each mechanism",
+    "Execute immediate response when stuck occurs",
+    "Understand recovery options and decision-making"
+  ],
+  "keyTopics": [
+    {
+      "topic": "Differential Sticking",
+      "content": "Occurs when drillstring contacts permeable formation in overbalanced conditions. High MW OBM (like 17+ ppg) creates significant differential pressure against sands. Prevention: minimize stationary time, use low-friction muds, reduce overbalance where possible."
+    },
+    {
+      "topic": "Mechanical Sticking",
+      "content": "Key seating (from doglegs), undergauge hole, packoff from cuttings, bridging from unstable formations. All cause physical obstruction. Prevention: hole cleaning, controlled drilling parameters, wiper trips, proper trajectory."
+    },
+    {
+      "topic": "Wellbore Geometry Issues",
+      "content": "Ledges, spiraled hole, undergauge from reactive shales. The drillstring gets mechanically trapped. Warning signs: increasing drag, difficulty getting back to bottom, fill on bottom after trips."
+    },
+    {
+      "topic": "Warning Signs",
+      "content": "Increasing overpull on connections. Increasing torque trends. Difficulty getting to bottom. Erratic weight transfer. Cuttings accumulation at shakers. Tight spots. Address these BEFORE they become stuck pipe."
+    },
+    {
+      "topic": "Immediate Response",
+      "content": "When stuck: note depth, string weight, and time. Do NOT apply maximum overpull immediately - this can make it worse. Attempt to work pipe with moderate overpull and rotation. Establish circulation if possible. Time is critical for differential sticking."
+    },
+    {
+      "topic": "Recovery Options",
+      "content": "Spotting pills (oil-based for differential, acid for calcium-based bridges). Jarring operations. Back-off and fish. Sidetrack as last resort. In HPHT wells, prolonged stuck pipe operations risk wellbore stability and well control issues."
+    }
+  ],
+  "referenceWellContext": {
+    "wellName": "Phoenix-702",
+    "risks": [
+      "High MW OBM (17+ ppg) = differential sticking risk in sands",
+      "Long open hole sections = cutting accumulation",
+      "Reactive shales possible = mechanical sticking",
+      "Tight windows = limited ability to adjust MW for recovery"
+    ]
+  },
+  "operationalPrinciples": [
+    "Prevention is infinitely cheaper than recovery",
+    "Trend monitoring catches problems early",
+    "Don't stop on bottom in permeable zones",
+    "Establish circulation immediately if stuck",
+    "Time works against you - act quickly"
+  ],
+  "lessons": [
+    {
+      "lessonId": "ADO-107-01",
+      "title": "Differential Sticking - Causes & Prevention",
+      "file": "lessons/ado-107-01.json"
+    },
+    {
+      "lessonId": "ADO-107-02",
+      "title": "Mechanical Sticking - Causes & Prevention",
+      "file": "lessons/ado-107-02.json"
+    },
+    {
+      "lessonId": "ADO-107-03",
+      "title": "Warning Signs & Early Intervention",
+      "file": "lessons/ado-107-03.json"
+    },
+    {
+      "lessonId": "ADO-107-04",
+      "title": "Stuck Pipe Response & Recovery",
+      "file": "lessons/ado-107-04.json"
+    }
+  ],
+  "documentId": "ADO-107",
+  "tags": ["stuck-pipe", "differential-sticking", "mechanical-sticking", "prevention", "advanced-drilling"]
+}

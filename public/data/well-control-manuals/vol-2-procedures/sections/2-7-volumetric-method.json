@@ -1,0 +1,30 @@
+{
+  "sectionId": "2.7",
+  "title": "Volumetric Method",
+  "content": {
+    "2.7.1": {
+      "title": "Overview",
+      "content": "The Volumetric Method controls gas migration when circulation is not possible.\n\n**Concept:**\n- Gas migrates upward due to buoyancy\n- Migration increases bottomhole pressure\n- Controlled bleed maintains constant BHP\n- Allows time for preparing to circulate\n\n**When Used:**\n- Circulation not possible (stuck pipe, no pump, BHA restrictions)\n- Gas kick is migrating\n- Need to buy time for solution\n- Strip to bottom operations (see Section 2.9)\n\n**Key Principle:**\nAs gas rises, it expands and surface pressure increases. By bleeding controlled amounts of mud, we allow gas expansion while maintaining constant bottomhole pressure.\n\n**Not a Kill Method:**\nVolumetric does not kill the well - it controls the situation while preparing to use another method."
+    },
+    "2.7.2": {
+      "title": "Fundamental Calculations",
+      "content": "**Pressure Change from Migration:**\nWhen gas rises through mud:\n- Gas bubble displaces mud above it\n- Hydrostatic above bubble decreases\n- Surface pressure must increase to compensate\n\n**Pressure Increase per Foot of Migration:**\n- Increase = MW × 0.052 (psi per foot)\n\n**Bleed Volume to Maintain Constant BHP:**\nAllow pressure to build to safety margin, then bleed:\n- Work with incremental pressure increases (e.g., 100 psi)\n- Calculate mud volume equivalent to that pressure\n- Volume = (Pressure increment ÷ 0.052 ÷ MW) × Annular capacity\n\n**Example:**\n- MW = 12 ppg\n- Pressure increment = 100 psi\n- Annular capacity = 0.05 bbl/ft\n- Volume = (100 ÷ 0.052 ÷ 12) × 0.05 = 8 bbls (approximately)\n\nBleed 8 bbls when pressure increases by 100 psi."
+    },
+    "2.7.3": {
+      "title": "Procedure",
+      "content": "**Preparation:**\n1. Record current surface pressure (baseline)\n2. Determine safety margin (typically 100-200 psi working range)\n3. Calculate bleed volume per pressure increment\n4. Prepare measurement system for bled volume\n5. Line up choke for controlled bleeding\n\n**Execution:**\n1. Monitor surface pressure continuously\n2. Allow pressure to increase by one increment (e.g., 100 psi)\n3. Bleed calculated volume through choke\n4. Pressure should return to approximately baseline + small increase\n5. Repeat as pressure rises again\n6. Continue until circulation can be established or gas reaches surface\n\n**Monitoring:**\n- Record pressure and volume at each bleed\n- Track cumulative volume bled\n- Estimate gas position from total migration\n- Watch for gas approaching surface"
+    },
+    "2.7.4": {
+      "title": "Lubricate and Bleed Variation",
+      "content": "**Concept:**\nCombines volumetric with lubrication - pumping heavier fluid on top of gas.\n\n**When Used:**\n- Can pump but cannot circulate\n- Want to add hydrostatic while managing migration\n- Preparing for eventual kill circulation\n\n**Procedure:**\n1. Pump kill weight mud into annulus top\n2. Allow to fall through gas (lubricate)\n3. As gas migrates, pressure increases\n4. Bleed off excess pressure\n5. Repeat: pump heavy mud, let lubricate, bleed\n\n**Effect:**\n- Gradually increases hydrostatic in annulus\n- Reduces surface pressure over time\n- Eventually may achieve enough hydrostatic to control well\n\n**Calculation:**\n- Volume pumped adds hydrostatic = Volume × MW × 0.052 / Annular capacity\n- Bleed volume accounts for gas expansion\n- Net effect: increasing hydrostatic in annulus"
+    },
+    "2.7.5": {
+      "title": "Gas at Surface",
+      "content": "**Approaching Surface:**\n- Gas expansion rate increases near surface\n- More frequent bleeds required\n- Pressure fluctuations increase\n- Prepare for gas handling\n\n**Gas Arriving at Choke:**\n- Transition from bleeding mud to venting gas\n- Control rate to handle gas safely\n- May have significant gas volume\n- Use degasser/separator system\n\n**After Gas Vented:**\n- Well may stabilize\n- Assess situation for next steps\n- May resume circulation if possible\n- May need to repeat if more gas in well"
+    },
+    "2.7.6": {
+      "title": "Limitations and Risks",
+      "content": "**Limitations:**\n- Time-consuming\n- Does not kill well - only controls situation\n- Requires constant attention\n- Not practical for large influxes\n\n**Risks:**\n- Incorrect bleed volume (over-bleed underbalances well)\n- Fatigue during extended operations\n- Secondary influx if control lost\n- Gas handling challenges at surface\n\n**Mitigation:**\n- Accurate calculations and measurements\n- Adequate staffing for extended operations\n- Gas handling equipment ready\n- Clear plan for transitioning to kill method\n\n**End Goal:**\nVolumetric maintains control while preparing to:\n- Circulate and kill (if path established)\n- Strip to bottom and circulate\n- Implement alternative well control measure"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "sectionId": "1.11",
+  "title": "Management of Change",
+  "content": {
+    "1.11.1": {
+      "title": "Overview",
+      "content": "Management of Change (MOC) ensures that changes to plans, procedures, equipment, or personnel are properly assessed and managed.\n\n**Why MOC Matters for Well Control:**\n- Changes can introduce unforeseen risks\n- Original risk assessments may no longer apply\n- Barriers may be affected by changes\n- Personnel may not be aware of changes\n- Procedures may need updating\n\nAll changes with potential well control implications shall go through MOC process."
+    },
+    "1.11.2": {
+      "title": "Types of Changes",
+      "content": "Changes requiring MOC assessment include:\n\n**Operational Changes:**\n- Deviation from drilling program\n- Mud weight changes outside planned window\n- Change in casing setting depth\n- Change in BOP configuration\n- Addition of special operations (MPD, UBD)\n\n**Equipment Changes:**\n- BOP component substitution\n- Choke or manifold changes\n- Pit monitoring system changes\n- Control system modifications\n- Wellhead equipment changes\n\n**Personnel Changes:**\n- Key position changes during critical operations\n- Changes in supervision structure\n- Contractor changes\n\n**Procedural Changes:**\n- Modifications to standard procedures\n- Bridging document updates\n- Emergency response changes\n\n**Note:** Routine operational decisions within the drilling program (e.g., mud weight adjustments within planned range) do not require formal MOC."
+    },
+    "1.11.3": {
+      "title": "MOC Process",
+      "content": "The MOC process follows these steps:\n\n**1. Identify the Change**\n- Clearly describe what is changing\n- Identify what was originally planned\n- Determine the reason for change\n\n**2. Assess the Change**\n- What are the well control implications?\n- Are barriers affected?\n- What new risks are introduced?\n- What additional mitigations are needed?\n- Are procedures adequate?\n- Is competency adequate?\n\n**3. Approve the Change**\n- Appropriate authority level approval\n- Higher risk changes require higher approval\n- Document the approval\n\n**4. Implement the Change**\n- Update relevant documentation\n- Communicate to affected personnel\n- Implement mitigations before proceeding\n- Verify understanding\n\n**5. Monitor and Review**\n- Verify change is working as planned\n- Watch for unintended consequences\n- Post-implementation review"
+    },
+    "1.11.4": {
+      "title": "Approval Authority",
+      "content": "Changes require approval at appropriate levels:\n\n**Drilling Supervisor Level:**\n- Minor operational deviations\n- Routine adjustments within program parameters\n- Personnel changes within shift\n\n**OIM/Operations Manager Level:**\n- Significant operational changes\n- Equipment substitutions\n- Key personnel changes\n- Procedure modifications\n\n**Senior Management Level:**\n- Major changes to well design\n- BOP configuration changes\n- Special operations addition (HPHT, MPD)\n- Changes with significant risk implications\n\n**Emergency Changes:**\n- Safety-critical changes may be implemented immediately\n- Retrospective MOC documentation required\n- Post-implementation review mandatory"
+    },
+    "1.11.5": {
+      "title": "Communication of Changes",
+      "content": "All changes must be effectively communicated:\n\n**Who to Inform:**\n- All personnel affected by the change\n- Shore-based support team\n- Regulatory authorities where required\n- Service companies if their scope affected\n\n**How to Communicate:**\n- Toolbox talks for operational changes\n- Updated documentation distributed\n- Shift handovers must include changes\n- Posting of significant changes\n\n**Verification:**\n- Confirm receipt and understanding\n- Ask questions to verify comprehension\n- Document that communication occurred"
+    },
+    "1.11.6": {
+      "title": "MOC Documentation",
+      "content": "MOC shall be documented using the standard form:\n\n**Documentation Includes:**\n- Description of original plan/equipment/procedure\n- Description of proposed change\n- Reason for change\n- Risk assessment\n- Mitigations identified\n- Approval signatures\n- Communication record\n- Post-implementation review\n\n**Record Retention:**\n- MOC records retained with well records\n- Available for audit\n- Referenced in daily reports\n\n**Template:** See Appendix B for MOC Form"
+    },
+    "1.11.7": {
+      "title": "Temporary vs Permanent Changes",
+      "content": "Changes may be temporary or permanent:\n\n**Temporary Changes:**\n- Have defined end date or condition\n- Reversal plan documented\n- Regular review of continued need\n- Same MOC process applies\n- Example: Temporary equipment substitution while repair is made\n\n**Permanent Changes:**\n- Incorporate into standard documentation\n- Training updated if needed\n- Procedures revised\n- Example: Updated kill procedure based on lessons learned\n\n**Caution:** Temporary changes that persist become normalized. Review all temporary changes regularly and either make permanent (with full documentation) or revert."
+    }
+  }
+}

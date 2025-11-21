@@ -1,0 +1,22 @@
+{
+  "sectionId": "4.6",
+  "title": "Subsea-Specific Calculations",
+  "content": {
+    "4.6.1": {
+      "title": "Choke Line Friction",
+      "content": "**Purpose:**\nAccounts for pressure loss in long choke line from subsea BOP to surface.\n\n**Estimation:**\nDepends on:\n- Choke line length (water depth + rig configuration)\n- Choke line ID\n- Mud weight and rheology\n- Flow rate\n\n**Determination:**\n1. Circulate down DP, up choke line\n2. Record pump pressure at kill rate\n3. Subtract normal annulus friction = choke line friction\n\n**Typical Values:**\n- 3,000 ft water depth: 200-400 psi\n- 6,000 ft water depth: 400-800 psi\n- 10,000 ft water depth: 600-1200+ psi\n\n**Impact:**\nReduce expected surface casing pressure by choke line friction during kill."
+    },
+    "4.6.2": {
+      "title": "Riser Margin",
+      "content": "**Formula:**\n```\nRiser Margin = (MW - SW) × Water Depth ÷ TVD\n```\n\nWhere:\n- MW = current mud weight\n- SW = seawater weight (8.55 ppg typically)\n\n**Purpose:**\nIf riser disconnects, loss of mud in riser reduces BHP. Riser margin compensates.\n\n**Example:**\nWater depth = 5,000 ft\nTVD = 15,000 ft\nCurrent MW = 12.0 ppg\n\nRiser Margin = (12.0 - 8.55) × 5,000 ÷ 15,000\nRiser Margin = 3.45 × 0.333 = 1.15 ppg\n\nIf riser disconnects, effective mud weight at TD would drop by ~1.15 ppg.\n\n**Application:**\nCarry mud weight 1.15 ppg above minimum to maintain balance if riser lost."
+    },
+    "4.6.3": {
+      "title": "Kill Line Operations",
+      "content": "**When pumping through kill line:**\n- Kill line friction adds to pump pressure\n- Similar calculation to choke line friction\n- May be different diameter\n\n**Consideration:**\nIf using kill line to pump kill mud into annulus:\n- Account for friction in pump pressure\n- Monitor pressures carefully\n- Confirm flow path"
+    },
+    "4.6.4": {
+      "title": "BHP at Mudline",
+      "content": "**Pressure at Mudline (BOP):**\n```\nPressure at BOP = Seawater HP + SICP(surface)\n```\n\n**Example:**\nWater depth = 5,000 ft\nSICP (surface) = 400 psi\n\nSeawater HP = 8.55 × 0.052 × 5,000 = 2,223 psi\nPressure at BOP = 2,223 + 400 = 2,623 psi\n\n**Actual BHP:**\n```\nBHP = Pressure at BOP + Mud HP (below BOP)\n```"
+    }
+  }
+}

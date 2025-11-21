@@ -1,0 +1,34 @@
+{
+  "sectionId": "3.14",
+  "title": "Maintenance Requirements",
+  "content": {
+    "3.14.1": {
+      "title": "Philosophy",
+      "content": "**Objective:**\nMaintain well control equipment in ready condition at all times.\n\n**Approach:**\n- Preventive maintenance to prevent failures\n- Corrective maintenance to fix issues found\n- Condition-based maintenance where appropriate\n\n**Priority:**\nWell control equipment maintenance takes priority over other maintenance activities. Never defer critical well control maintenance."
+    },
+    "3.14.2": {
+      "title": "BOP Maintenance",
+      "content": "**Routine:**\n- Visual inspection during operations\n- Seal and packer condition monitoring\n- Hydraulic system checks\n- Control system verification\n\n**Periodic:**\n- Ram packer replacement (per manufacturer or condition)\n- Annular element replacement (per cycles/wear)\n- Complete overhaul (per OEM schedule)\n- Recertification (per regulatory requirements)\n\n**Records:**\n- Track all maintenance performed\n- Log seal and packer changes\n- Document test results\n- Maintain equipment history"
+    },
+    "3.14.3": {
+      "title": "Accumulator Maintenance",
+      "content": "**Daily:**\n- Check reservoir fluid level\n- Verify system pressure\n- Check for leaks\n\n**Weekly:**\n- Test pumps operation\n- Verify pre-charge pressure (sample bottles)\n- Check accumulator performance per test\n\n**Periodic:**\n- Full pre-charge verification (all bottles)\n- Pump servicing\n- Valve and seal replacement\n- Fluid change if contaminated"
+    },
+    "3.14.4": {
+      "title": "Choke and Manifold Maintenance",
+      "content": "**Regular:**\n- Operate all valves to prevent seizing\n- Check for erosion (especially after use)\n- Verify choke operation through range\n- Inspect instrumentation\n\n**After Use:**\n- Inspect choke trim for erosion\n- Replace if worn\n- Check valve seats\n- Pressure test if opened for service\n\n**Spares:**\n- Keep critical spares on location\n- Choke trim kits\n- Valve parts\n- Gaskets and seals"
+    },
+    "3.14.5": {
+      "title": "Pit and Flow Monitoring",
+      "content": "**Sensors:**\n- Calibrate regularly\n- Clean sensor elements\n- Replace failed sensors promptly\n- Test alarm functions\n\n**Display/Recording:**\n- Verify display accuracy\n- Check recorder function\n- Ensure alarms audible/visible\n- Back up data regularly"
+    },
+    "3.14.6": {
+      "title": "Spare Parts",
+      "content": "**Critical Spares on Location:**\n- BOP seal kits\n- Annular element\n- Choke trim\n- Accumulator bottles (pre-charged)\n- Control system components\n- Gaskets and O-rings\n\n**Inventory Management:**\n- Track usage and stock levels\n- Reorder before depletion\n- Store properly (protect seals from heat/UV)\n- Rotate stock (use oldest first)\n\n**Critical Parts:**\n- Some parts may have long lead times\n- Identify critical items\n- Ensure availability or backup plan"
+    },
+    "3.14.7": {
+      "title": "Maintenance Records",
+      "content": "**Document:**\n- All maintenance performed\n- Parts replaced\n- Tests after maintenance\n- Identified issues and resolution\n\n**Purpose:**\n- Equipment history tracking\n- Regulatory compliance\n- Planning future maintenance\n- Warranty documentation\n\n**Retention:**\n- Per regulatory requirements\n- Typically life of equipment plus years\n- Available for inspection"
+    }
+  }
+}

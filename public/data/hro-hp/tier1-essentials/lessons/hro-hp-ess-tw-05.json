@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-TW-05",
+  "moduleId": "HRO-HP-ESS-TW",
+  "courseId": "HRO-HP-ESS",
+  "title": "Conflict Resolution",
+  "type": "lesson",
+  "content": "Conflict about ideas and approaches (task conflict) can improve decisions when handled constructively. Conflict about personalities or relationships (relationship conflict) is destructive. The goal isn't eliminating disagreement but channeling it productively—focusing on the issue, using data, and separating positions from people.",
+  "mcq": {
+    "question": "Two team members strongly disagree about the best approach to a problem. The discussion becomes heated, with personal criticisms mixed into technical arguments. What should happen?",
+    "options": {
+      "A": "Let them work it out—healthy debate improves decisions",
+      "B": "End the discussion—conflict is counterproductive",
+      "C": "Refocus on the technical issues and data, removing personal elements",
+      "D": "Have a leader make the decision to end the conflict"
+    },
+    "correctOption": "C",
+    "explanation": "The disagreement about approach (task conflict) is valuable, but personal criticisms (relationship conflict) are destructive. The goal is to preserve the useful technical debate while removing the personal elements that damage team functioning."
+  },
+  "openQuestions": [
+    "How does your team typically handle disagreements? Does task conflict stay focused on issues or drift into personal territory?",
+    "What techniques help you disagree with someone's idea without making them feel personally attacked?"
+  ]
+}

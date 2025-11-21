@@ -1,0 +1,22 @@
+{
+  "moduleId": "WC-SF-101",
+  "courseId": "WC-SF",
+  "title": "Pressure Foundations",
+  "description": "Establishes fundamental pressure concepts: hydrostatic pressure, pressure gradients, formation pressure, and the U-tube principle. These calculations form the foundation for all well control operations.",
+  "order": 1,
+  "lessonIds": [
+    "WC-SF-101-01",
+    "WC-SF-101-02",
+    "WC-SF-101-03",
+    "WC-SF-101-04"
+  ],
+  "examWeight": "High",
+  "iwcfSyllabus": "PP-02",
+  "documentId": "WC-SF-101",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-101"
+  ]
+}

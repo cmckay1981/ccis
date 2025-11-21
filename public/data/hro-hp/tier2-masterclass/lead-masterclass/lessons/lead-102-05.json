@@ -1,0 +1,24 @@
+{
+  "lessonId": "LEAD-102-05",
+  "moduleId": "LEAD-102",
+  "courseId": "LEAD",
+  "title": "Trust Breakdown Case Study",
+  "type": "scenario",
+  "content": "Trust collapses faster than it builds. Understanding how leaders lose credibility helps you recognize early warning signs and avoid common failures that damage team confidence.",
+  "scenario": {
+    "story": "An operations supervisor has been with the company for eight years and is generally well-regarded. Over six months, the following pattern emerges: the supervisor commits to advocate for additional equipment funding but the request never materializes; promises to address scheduling concerns but the schedule remains unchanged; assures the team that upcoming policy changes won't affect them, but the policies are implemented without modification. Team members begin routing concerns through other channels and stop bringing issues to the supervisor. Senior leadership is unaware of any problem.",
+    "options": {
+      "A": "The supervisor is dealing with constraints from above and the team needs to be more understanding",
+      "B": "The supervisor has lost credibility by making commitments they couldn't or wouldn't follow through on",
+      "C": "The team is being unreasonable and should trust the supervisor's judgment",
+      "D": "This is a normal communication breakdown that will resolve itself over time"
+    },
+    "recommendedResponse": "B",
+    "explanation": "Credibility erodes when leaders make commitments they don't keep, regardless of intent. If the supervisor couldn't deliver on equipment funding or schedule changes, the correct response is transparency: 'I pushed for this, here's what happened, here's what I can actually do.' Making assurances that don't materialize teaches people that your word doesn't mean anything. The team's behavior—routing around the supervisor—is a rational response to unreliability. Trust requires either delivering on commitments or being honest about constraints."
+  },
+  "openQuestions": [
+    "Have you ever made a commitment to your team that you didn't follow through on? What did you do to address it?",
+    "What do you do when you realize you can't deliver on something you've promised?",
+    "How do you maintain credibility when organizational decisions are outside your control?"
+  ]
+}

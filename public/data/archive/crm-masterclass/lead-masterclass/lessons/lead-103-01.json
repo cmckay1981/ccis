@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-103-01",
+  "moduleId": "LEAD-103",
+  "courseId": "LEAD",
+  "title": "How Stress Degrades Leadership",
+  "type": "lesson",
+  "content": "Under pressure, leaders default to their most ingrained behaviors—which are often the wrong ones. Stress narrows focus, shortens decision timelines, and amplifies emotional reactions. Leaders who don't recognize this pattern become controlling, dismissive of input, or paralyzed by overthinking. Your team watches how you respond when things go wrong. Composure under stress isn't about suppressing emotion—it's about maintaining disciplined thought process and deliberate communication when systems are failing.",
+  "mcq": {
+    "question": "During a high-pressure situation, a normally collaborative leader starts making rapid decisions without consulting subject matter experts, dismisses questions as 'slowing things down,' and becomes visibly irritated when someone suggests an alternative approach. The situation resolves, but the team seems hesitant in the debrief. What just happened?",
+    "options": {
+      "A": "The leader appropriately took control during a crisis",
+      "B": "Stress caused the leader to abandon effective practices and revert to command-and-control behavior",
+      "C": "The team is being overly sensitive about necessary decisiveness",
+      "D": "The leader successfully prioritized speed over consensus"
+    },
+    "correctOption": "B",
+    "explanation": "High-performing leaders maintain their operating principles under pressure, not abandon them. This leader's behavior signaled that collaboration only matters when things are easy. The team's hesitance in the debrief indicates damaged trust—they learned that their input isn't valued when it matters most. Effective crisis leadership involves faster decision cycles, not shutting down communication entirely."
+  },
+  "openQuestions": [
+    "Describe how your leadership behavior changes when you're under significant stress. What patterns do you recognize?",
+    "Think of a high-pressure moment when you responded well. What did you do differently that helped you maintain composure?"
+  ]
+}

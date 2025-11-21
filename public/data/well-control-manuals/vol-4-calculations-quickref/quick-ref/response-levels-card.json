@@ -1,0 +1,67 @@
+{
+  "cardId": "response-levels",
+  "title": "Emergency Response Levels",
+  "type": "reference-card",
+  "content": {
+    "level1": {
+      "title": "LEVEL 1 - STANDARD RESPONSE",
+      "description": "Event manageable on-site with standard procedures",
+      "examples": [
+        "Kick detected and shut in successfully",
+        "Well killed using standard methods",
+        "No injury, environmental impact, or equipment damage"
+      ],
+      "actions": [
+        "Driller initiates shut-in",
+        "Drilling Supervisor takes charge",
+        "Standard kill procedures",
+        "Shore base notified (routine)",
+        "Event documented, post-event review"
+      ]
+    },
+    "level2": {
+      "title": "LEVEL 2 - ENHANCED RESPONSE",
+      "description": "Event requires additional resources or expertise",
+      "examples": [
+        "Standard kill methods unsuccessful",
+        "Stuck pipe during well control",
+        "Equipment malfunction complicating response",
+        "Sustained casing pressure after kill",
+        "Potential for escalation"
+      ],
+      "actions": [
+        "Level 1 actions PLUS:",
+        "Shore-based well control support activated",
+        "Additional expertise mobilized",
+        "Management team briefed",
+        "Kill plan reviewed with shore support",
+        "Enhanced monitoring"
+      ]
+    },
+    "level3": {
+      "title": "LEVEL 3 - MAJOR EMERGENCY",
+      "description": "Loss of control, serious injury risk, major impact",
+      "examples": [
+        "Uncontrolled flow to surface",
+        "Underground blowout",
+        "Fire or explosion",
+        "Imminent threat to personnel",
+        "Major environmental release",
+        "Loss of BOP integrity"
+      ],
+      "actions": [
+        "Personnel safety (muster, evacuate if needed)",
+        "Emergency shutdown if required",
+        "All resources mobilized",
+        "Corporate emergency response team activated",
+        "External emergency services notified",
+        "Regulatory authorities notified",
+        "Executive management notified"
+      ]
+    },
+    "escalation": {
+      "title": "WHEN IN DOUBT, ESCALATE",
+      "note": "It is better to have resources available and not need them than to need them and not have them."
+    }
+  }
+}

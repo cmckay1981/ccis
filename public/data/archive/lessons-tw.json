@@ -1,0 +1,384 @@
+{
+  "course_id": "teamwork",
+  "course_name": "Teamwork",
+  "modules": [
+    {
+      "module_id": "tw-m1-fundamentals",
+      "module_name": "Team Fundamentals",
+      "order": 1,
+      "lessons": [
+        {
+          "lesson_id": "tw-m1-l1",
+          "title": "What Makes a Team",
+          "order": 1,
+          "content": "A team is a group with shared goals, interdependent roles, and mutual accountability. It's not just people in the same room—it's coordinated action toward a common objective. Without shared purpose or interdependence, you have a work group, not a team.",
+          "questions": [
+            "Is your crew a true team, or just individuals working in parallel?",
+            "What shared goal unites your team?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m1-l2",
+          "title": "Roles and Responsibilities",
+          "order": 2,
+          "content": "Clear roles prevent confusion and duplication. Each team member must know: What am I responsible for? Who do I coordinate with? What authority do I have? Ambiguous roles create gaps and overlaps—both are dangerous.",
+          "questions": [
+            "Can you state your role in one sentence?",
+            "Where do roles overlap or conflict in your team?"
+          ],
+          "mcq": {
+            "question": "Two people both think they're responsible for a critical task. What happens?",
+            "options": {
+              "A": "Redundancy—extra safety",
+              "B": "Coordination failure—task falls through gaps",
+              "C": "Both do it—waste of effort",
+              "D": "One defers to the other naturally"
+            },
+            "correct": "B",
+            "explanation": "Role ambiguity often leads to both people assuming the other will handle it—resulting in task failure, not redundancy."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m1-l3",
+          "title": "Team vs Individual Performance",
+          "order": 3,
+          "content": "Effective teams outperform collections of individuals because they leverage diverse skills, cross-check each other, and distribute cognitive load. Poor teams underperform because of conflict, miscommunication, and coordination overhead. Team performance isn't automatic—it's built.",
+          "questions": [
+            "When has your team performed better than the sum of its parts?",
+            "When has teamwork actually slowed you down?"
+          ],
+          "mcq": null,
+          "scenario": null
+        }
+      ]
+    },
+    {
+      "module_id": "tw-m2-coordination",
+      "module_name": "Coordination and Synchronization",
+      "order": 2,
+      "lessons": [
+        {
+          "lesson_id": "tw-m2-l1",
+          "title": "Shared Mental Models",
+          "order": 1,
+          "content": "A shared mental model means everyone understands the situation, plan, and priorities the same way. It enables implicit coordination—team members anticipate each other without constant communication. Build shared models through briefings, training, and experience working together.",
+          "questions": [
+            "How do you know your team shares the same understanding of the situation?",
+            "Describe a time when mental models weren't aligned. What happened?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m2-l2",
+          "title": "Explicit vs Implicit Coordination",
+          "order": 2,
+          "content": "Explicit coordination uses communication—'You do X, I'll do Y.' Implicit coordination relies on shared mental models and anticipation—you act without being told because you know what's needed. High-performing teams use both: explicit for novel situations, implicit for routine.",
+          "questions": [
+            "When does your team coordinate explicitly vs implicitly?",
+            "How do new team members disrupt implicit coordination?"
+          ],
+          "mcq": {
+            "question": "A well-trained team handles a routine emergency with minimal talk. What's happening?",
+            "options": {
+              "A": "Poor communication—they should be talking more",
+              "B": "Implicit coordination from shared mental models",
+              "C": "Complacency—they're not paying attention",
+              "D": "Luck—they're guessing"
+            },
+            "correct": "B",
+            "explanation": "Experienced teams with strong shared mental models can coordinate implicitly, reserving communication for exceptions and changes."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m2-l3",
+          "title": "Backup Behavior",
+          "order": 3,
+          "content": "Backup behavior is stepping in to assist a teammate who's overloaded or struggling. It requires monitoring each other's workload and performance. Good backup behavior is seamless—you help without being asked because you saw the need. Poor teams don't monitor or assist.",
+          "questions": [
+            "When was the last time a teammate backed you up without being asked?",
+            "How do you signal to your team that you need help?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m2-l4",
+          "title": "Task Allocation Under Pressure",
+          "order": 4,
+          "content": "Under pressure, workload imbalances emerge—some team members are overwhelmed, others underutilized. Effective teams redistribute tasks dynamically. 'I've got this, you handle that' or 'I'm free—what do you need?' Rigid role adherence during crisis is inefficient.",
+          "questions": [
+            "Does your team redistribute tasks when someone gets overloaded?",
+            "What prevents flexible task reallocation in your environment?"
+          ],
+          "mcq": null,
+          "scenario": "One teammate is managing three critical tasks simultaneously while others are idle. What do you do?"
+        }
+      ]
+    },
+    {
+      "module_id": "tw-m3-trust",
+      "module_name": "Trust and Psychological Safety",
+      "order": 3,
+      "lessons": [
+        {
+          "lesson_id": "tw-m3-l1",
+          "title": "Building Trust",
+          "order": 1,
+          "content": "Trust is built through consistency, competence, and reliability. You trust teammates who do what they say, know their job, and deliver when it matters. Trust isn't instant—it's earned through repeated positive interactions and proven reliability.",
+          "questions": [
+            "Who on your team do you trust most? Why?",
+            "How long does it take for you to trust a new teammate?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m3-l2",
+          "title": "Psychological Safety",
+          "order": 2,
+          "content": "Psychological safety is the belief that you can speak up, ask questions, admit mistakes, or challenge ideas without fear of humiliation or punishment. Teams with psychological safety identify and fix problems early. Teams without it hide errors until they escalate.",
+          "questions": [
+            "Can you admit mistakes openly in your team without fear?",
+            "What behaviors by leaders create or destroy psychological safety?"
+          ],
+          "mcq": {
+            "question": "A team member makes an error but doesn't report it immediately. What's the likely cause?",
+            "options": {
+              "A": "They don't care",
+              "B": "Lack of psychological safety—fear of consequences",
+              "C": "They forgot",
+              "D": "They're trying to fix it quietly first"
+            },
+            "correct": "B",
+            "explanation": "Most unreported errors stem from fear of blame or punishment. Psychological safety encourages early reporting when problems are still small."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m3-l3",
+          "title": "Vulnerability and Openness",
+          "order": 3,
+          "content": "Vulnerability is admitting you don't know, asking for help, or acknowledging uncertainty. It feels risky, but it builds trust and enables learning. Teams where everyone pretends to know everything are brittle—real vulnerability makes teams resilient.",
+          "questions": [
+            "When was the last time you said 'I don't know' at work?",
+            "How does your team respond to vulnerability—support or judgment?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m3-l4",
+          "title": "Repairing Trust After Failure",
+          "order": 4,
+          "content": "Trust, once broken, is hard to rebuild. Acknowledge the breach, take responsibility, explain what you'll change, and demonstrate consistency over time. Actions matter more than apologies. Rebuilding trust is slow—destroying it is fast.",
+          "questions": [
+            "Have you seen trust restored after a major failure? How did it happen?",
+            "What would you need to see to trust someone again after they let you down?"
+          ],
+          "mcq": null,
+          "scenario": "A teammate made a critical error that endangered the team. They apologized. How do you rebuild trust with them?"
+        }
+      ]
+    },
+    {
+      "module_id": "tw-m4-diversity",
+      "module_name": "Team Diversity and Dynamics",
+      "order": 4,
+      "lessons": [
+        {
+          "lesson_id": "tw-m4-l1",
+          "title": "Cognitive Diversity",
+          "order": 1,
+          "content": "Cognitive diversity is differences in thinking styles, backgrounds, and perspectives. Diverse teams spot more risks and generate better solutions because they don't share blind spots. Homogeneous teams think faster but miss non-obvious problems.",
+          "questions": [
+            "How does cognitive diversity show up in your team?",
+            "When has a different perspective caught something everyone else missed?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m4-l2",
+          "title": "Leveraging Strengths",
+          "order": 2,
+          "content": "High-performing teams assign tasks based on individual strengths. Know who's analytical, who's intuitive, who's detail-oriented, who's big-picture. Don't force everyone into the same mold—use diversity as an advantage. Match people to roles where they excel.",
+          "questions": [
+            "What are your strengths as a team member?",
+            "Does your team assign work based on strengths, or just rotate equally?"
+          ],
+          "mcq": {
+            "question": "Your team needs someone to triple-check a complex calculation and someone to brief leadership. How do you assign?",
+            "options": {
+              "A": "Assign randomly",
+              "B": "Match detail-oriented person to calculation, communicator to brief",
+              "C": "Have everyone do both",
+              "D": "Let them choose"
+            },
+            "correct": "B",
+            "explanation": "Matching tasks to individual strengths improves quality and efficiency. Use cognitive diversity strategically."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m4-l3",
+          "title": "Managing Conflict from Diversity",
+          "order": 3,
+          "content": "Diversity creates friction—different perspectives clash. This friction is productive if managed as task conflict (ideas) rather than relationship conflict (personalities). Frame disagreements as 'different ways to solve the problem,' not 'right vs wrong people.'",
+          "questions": [
+            "How does your team handle disagreements stemming from different perspectives?",
+            "When has diversity-driven conflict improved a decision?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m4-l4",
+          "title": "Inclusion and Participation",
+          "order": 4,
+          "content": "Inclusion means everyone's voice is heard and valued. It's not enough to have diversity—you must actively invite input from quieter or marginalized members. Dominant personalities can drown out valuable perspectives. Effective leaders solicit input from everyone.",
+          "questions": [
+            "Who tends to dominate discussions in your team?",
+            "How do you ensure quieter members contribute?"
+          ],
+          "mcq": null,
+          "scenario": "During a planning meeting, one person dominates while two others stay silent. What do you do?"
+        }
+      ]
+    },
+    {
+      "module_id": "tw-m5-performance",
+      "module_name": "Team Performance",
+      "order": 5,
+      "lessons": [
+        {
+          "lesson_id": "tw-m5-l1",
+          "title": "Measuring Team Effectiveness",
+          "order": 1,
+          "content": "Team effectiveness has three dimensions: output quality, team viability, and member satisfaction. A team that delivers results but burns out isn't sustainable. A team that's happy but fails to deliver isn't effective. Balance all three.",
+          "questions": [
+            "How does your organization measure team performance?",
+            "Would you rate your team as effective? Why or why not?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m5-l2",
+          "title": "Continuous Improvement",
+          "order": 2,
+          "content": "High-performing teams deliberately improve through after-action reviews, training, and process refinement. They don't accept 'this is how we've always done it.' Improvement requires psychological safety to critique performance and authority to implement changes.",
+          "questions": [
+            "When was the last time your team changed a process based on a lessons-learned?",
+            "What prevents your team from improving?"
+          ],
+          "mcq": {
+            "question": "After a successful operation, what should the team do?",
+            "options": {
+              "A": "Celebrate and move on",
+              "B": "Debrief to identify what could have been better",
+              "C": "Assume it's repeatable without analysis",
+              "D": "Document the win and archive it"
+            },
+            "correct": "B",
+            "explanation": "Even successful operations offer improvement opportunities. Debrief wins and losses to build continuous improvement culture."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m5-l3",
+          "title": "Team Resilience",
+          "order": 3,
+          "content": "Resilient teams recover quickly from setbacks, adapt to change, and maintain performance under stress. Resilience comes from trust, cross-training, psychological safety, and shared mental models. Brittle teams fracture under pressure.",
+          "questions": [
+            "How does your team respond to unexpected challenges?",
+            "What makes your team resilient—or what makes it fragile?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m5-l4",
+          "title": "Team Burnout and Fatigue",
+          "order": 4,
+          "content": "Teams, like individuals, suffer from prolonged stress and overwork. Symptoms: declining performance, increased conflict, absenteeism, apathy. Prevent burnout through workload management, recovery time, and recognition. Burned-out teams make catastrophic errors.",
+          "questions": [
+            "What are the early signs of team burnout in your experience?",
+            "How does your organization prevent or address team fatigue?"
+          ],
+          "mcq": null,
+          "scenario": "Your team has been working 12-hour shifts for two weeks straight. Performance is slipping. What do you recommend?"
+        }
+      ]
+    },
+    {
+      "module_id": "tw-m6-virtual",
+      "module_name": "Virtual and Distributed Teams",
+      "order": 6,
+      "lessons": [
+        {
+          "lesson_id": "tw-m6-l1",
+          "title": "Challenges of Remote Teamwork",
+          "order": 1,
+          "content": "Remote teams lose informal communication, non-verbal cues, and spontaneous coordination. Trust builds slower. Misunderstandings escalate faster. Compensate with structured communication, over-documentation, and intentional relationship-building.",
+          "questions": [
+            "If your team works remotely, what's the biggest challenge?",
+            "How do you build rapport without face-to-face interaction?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m6-l2",
+          "title": "Technology for Coordination",
+          "order": 2,
+          "content": "Use the right tool for the task: video for high-bandwidth discussions, chat for quick coordination, project management software for task tracking, email for formal documentation. Tool overload creates noise—consolidate where possible.",
+          "questions": [
+            "What communication tools does your team use? Are there too many or too few?",
+            "How do you decide which tool to use for a given message?"
+          ],
+          "mcq": {
+            "question": "You need to discuss a complex, sensitive issue with your remote team. What tool do you use?",
+            "options": {
+              "A": "Email—creates a record",
+              "B": "Video call—enables real-time dialogue and reading tone",
+              "C": "Chat—fastest response",
+              "D": "Project management comment thread"
+            },
+            "correct": "B",
+            "explanation": "Complex and sensitive topics require high-bandwidth communication. Video preserves tone, non-verbal cues, and enables real-time clarification."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m6-l3",
+          "title": "Time Zones and Asynchronous Work",
+          "order": 3,
+          "content": "Distributed teams across time zones require asynchronous work—not everyone is online simultaneously. Document decisions, over-communicate context, and establish handoff protocols. Real-time sync is expensive; use it selectively for high-value discussions.",
+          "questions": [
+            "How does your team handle time zone differences?",
+            "What decisions can be made asynchronously vs requiring synchronous discussion?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "tw-m6-l4",
+          "title": "Building Remote Team Culture",
+          "order": 4,
+          "content": "Remote teams need deliberate culture-building: virtual coffee chats, regular check-ins, team rituals. Don't rely on organic relationship formation—it won't happen remotely. Leaders must create opportunities for connection beyond task work.",
+          "questions": [
+            "What does your remote team do to build culture and connection?",
+            "How do new remote team members get integrated into the team?"
+          ],
+          "mcq": null,
+          "scenario": "Your remote team feels disconnected and transactional. How do you rebuild team cohesion?"
+        }
+      ]
+    }
+  ]
+}

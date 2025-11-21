@@ -1,0 +1,26 @@
+{
+  "sectionId": "3.1",
+  "title": "BOP System Overview",
+  "content": {
+    "3.1.1": {
+      "title": "Purpose",
+      "content": "The Blowout Preventer (BOP) system is the secondary well barrier:\n\n**Primary Function:**\n- Close the wellbore to stop uncontrolled flow\n- Seal around drillpipe or on open hole\n- Cut drillpipe if necessary\n- Allow controlled circulation during well control\n\n**Components:**\n- Preventers (rams and annulars)\n- Control system\n- Choke and kill lines and manifolds\n- Associated valves and instrumentation\n\n**The BOP does not prevent kicks - it enables controlled response to kicks.**"
+    },
+    "3.1.2": {
+      "title": "Surface BOP Stack Configuration",
+      "content": "**Typical Configuration (bottom to top):**\n1. Casing spool (mounted on wellhead)\n2. Kill line outlet\n3. Lower pipe rams\n4. Blind/shear rams\n5. Choke line outlet\n6. Upper pipe rams\n7. Annular preventer\n8. Drilling spool or rotating head\n\n**Minimum Requirements:**\n- At least two pipe ram sets\n- One blind or blind/shear ram\n- One annular preventer\n- Choke and kill line connections below ram\n\n**Variations:**\nConfiguration varies by:\n- Anticipated pressures\n- Pipe sizes used\n- Regulatory requirements\n- Company standards"
+    },
+    "3.1.3": {
+      "title": "Subsea BOP Stack Configuration",
+      "content": "**LMRP (Lower Marine Riser Package):**\n- Upper annular\n- Lower annular\n- Flex joint\n- Riser connector\n- LMRP connector\n- Control pods and hot lines\n\n**BOP Stack:**\n- Blind shear rams\n- Casing shear rams (some configurations)\n- Multiple pipe ram sets\n- Choke and kill outlets\n- Wellhead connector\n\n**Total Height:**\nSubsea stacks can be 40-60 ft tall and weigh hundreds of tons.\n\n**Control:**\n- Multiplex (MUX) control system\n- Dual control pods for redundancy\n- Acoustic backup\n- ROV intervention capability"
+    },
+    "3.1.4": {
+      "title": "Pressure Ratings",
+      "content": "**Common Ratings:**\n- 5,000 psi (34.5 MPa)\n- 10,000 psi (69 MPa)\n- 15,000 psi (103 MPa)\n- 20,000 psi (138 MPa)\n\n**Rating Basis:**\n- Working pressure at rated temperature\n- Higher temperatures may derate pressure\n- All components in stack must match rating\n\n**Selection:**\nBOP rating must exceed:\n- Maximum anticipated surface pressure (MASP)\n- Calculated based on formation pressure and wellbore geometry\n\n**Verification:**\n- Pressure tested to API/regulatory requirements\n- Typically test to full rated working pressure initially\n- Periodic tests to reduced percentage"
+    },
+    "3.1.5": {
+      "title": "Bore Size",
+      "content": "**Common Sizes:**\n- 13-5/8\" (surface and some subsea)\n- 18-3/4\" (common subsea)\n- 21-1/4\" (large bore subsea)\n\n**Sizing:**\n- Must accommodate all tools and casing to be run through\n- Match to wellhead and casing program\n- Larger bore = larger equipment\n\n**Tool Joint Clearance:**\n- Tool joints must pass through all rams\n- Critical for stripping operations\n- Know exact tool joint OD vs ram bore"
+    }
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "templateId": "L4-MPD-QUICK-REF-V1",
+  "level": 4,
+  "title": "MPD Quick Reference Cards",
+  "version": "1.0",
+  "description": "Single-screen digital reference cards for rig floor use. Large text, color-coded, swipeable. Designed for gloves and low-light conditions.",
+  "displaySettings": {
+    "fontSize": "large",
+    "contrast": "high",
+    "nightMode": "red-shifted available",
+    "orientation": "portrait preferred",
+    "swipeable": true
+  },
+  "cards": [
+    {
+      "cardId": "MPD-QR-01",
+      "title": "OPERATIONS MATRIX",
+      "category": "decision",
+      "priority": 1,
+      "content": {
+        "zones": [
+          {
+            "zone": "GREEN",
+            "color": "#38a169",
+            "condition": "All parameters normal",
+            "action": "CONTINUE DRILLING"
+          },
+          {
+            "zone": "YELLOW",
+            "color": "#d69e2e",
+            "condition": "Approaching limits",
+            "action": "ADJUST & MONITOR - Circulate via MPD"
+          },
+          {
+            "zone": "ORANGE",
+            "color": "#dd6b20",
+            "condition": "One limit met",
+            "action": "STOP DRILLING - Circulate via MPD until stable"
+          },
+          {
+            "zone": "RED",
+            "color": "#e53e3e",
+            "condition": "Limits exceeded",
+            "action": "SECURE WELL - CLOSE BOP - Conventional WC"
+          }
+        ],
+        "threshold": "Influx ≥ {{influxThreshold}} = RED ZONE"
+      },
+      "linkedSections": ["L3-MPD-JOM:Section7", "L1-MPD-POLICY:Section2"]
+    },
+    {
+      "cardId": "MPD-QR-02",
+      "title": "KICK DETECTED",
+      "category": "emergency",
+      "priority": 1,
+      "color": "#e53e3e",
+      "content": {
+        "steps": [
+          "1. CONFIRM - Flow-out > Flow-in? Pit gain?",
+          "2. SELECT FLOW CONTROL MODE",
+          "3. Note choke % and SPP when flows equalize",
+          "4. CHECK MATRIX - Within limits?",
+          "5. YES → Circulate via MPD (go to card MPD-QR-03)",
+          "6. NO → CLOSE BOP (go to card MPD-QR-04)"
+        ],
+        "remember": "DRILLER HAS AUTHORITY TO SHUT IN - NO APPROVAL NEEDED"
+      },
+      "linkedSections": ["L3-MPD-JOM:Section10", "L1-MPD-POLICY:Section3.01"]
+    },
+    {
+      "cardId": "MPD-QR-03",
+      "title": "CIRCULATE INFLUX - MPD",
+      "category": "procedure",
+      "priority": 2,
+      "color": "#dd6b20",
+      "content": {
+        "conditions": "Influx < {{influxThreshold}}, within MPD limits",
+        "steps": [
+          "1. P@D MODE - Select 'Well Depth' anchor",
+          "2. PICK UP & SPACE OUT for BOP closure",
+          "3. SPP MODE - Increase setpoint 50 psi above normal",
+          "4. MAINTAIN constant pump rate",
+          "5. MONITOR MGS - Reduce boost if overloading",
+          "6. CIRCULATE until density-out = active mud density",
+          "7. FLOW CHECK 15 min before resuming"
+        ]
+      },
+      "linkedSections": ["L3-MPD-JOM:Section10.03"]
+    },
+    {
+      "cardId": "MPD-QR-04",
+      "title": "MPD ASSISTED SHUT-IN",
+      "category": "emergency",
+      "priority": 1,
+      "color": "#e53e3e",
+      "content": {
+        "conditions": "Influx exceeds limits OR Flow Control at max",
+        "steps": [
+          "1. FLOW CONTROL MODE - Equalize flows",
+          "2. If at limit → System reverts to MANUAL",
+          "3. P@D MODE - Well Depth anchor",
+          "4. STOP ROTATION",
+          "5. PICK UP & SPACE OUT",
+          "6. RAMP DOWN pumps (P@D auto-adjusts)",
+          "7. PUMPS OFF → CLOSE BOP",
+          "8. ISOLATE MPD system",
+          "9. CONVENTIONAL WELL CONTROL"
+        ]
+      },
+      "linkedSections": ["L3-MPD-JOM:Section10.05", "L2-MPD-EQUIPMENT:Section5"]
+    },
+    {
+      "cardId": "MPD-QR-05",
+      "title": "CONTROL MODES",
+      "category": "reference",
+      "priority": 3,
+      "content": {
+        "modes": [
+          {
+            "mode": "P@D",
+            "name": "Pressure at Depth",
+            "use": "PREFERRED - Drilling & connections",
+            "note": "Auto-compensates for all changes"
+          },
+          {
+            "mode": "FLOW CONTROL",
+            "name": "Flow Control",
+            "use": "FIRST RESPONSE to kick",
+            "note": "Equalizes flow-in/out"
+          },
+          {
+            "mode": "SBP",
+            "name": "Surface Back Pressure",
+            "use": "Riser de-gassing, backup",
+            "note": "Holds fixed surface pressure"
+          },
+          {
+            "mode": "SPP",
+            "name": "Standpipe Pressure",
+            "use": "Influx circulation",
+            "note": "+50 psi above normal"
+          },
+          {
+            "mode": "MANUAL",
+            "name": "Manual",
+            "use": "Fallback / troubleshooting",
+            "note": "Direct choke control"
+          }
+        ]
+      },
+      "linkedSections": ["L2-MPD-EQUIPMENT:Section6", "L3-MPD-JOM:Section6"]
+    },
+    {
+      "cardId": "MPD-QR-06",
+      "title": "CONNECTION PROCEDURE",
+      "category": "procedure",
+      "priority": 2,
+      "content": {
+        "preConnection": [
+          "Record pick-up / slack-off weights",
+          "Record pit volume BEFORE pump reduction",
+          "Record pit volume AFTER stabilization"
+        ],
+        "duringConnection": [
+          "P@D MODE (preferred) - Auto-adjusts choke",
+          "Bleed standpipe to zero → Verify float integrity",
+          "Monitor trip tank for gains"
+        ],
+        "rampUp": [
+          "1. Pick up, remove slips",
+          "2. Rotate 30 rpm",
+          "3. Pumps on at 20-30 spm",
+          "4. Stage pumps as SPP recovers",
+          "5. Verify choke opening (P@D) or reduce SBP setpoint",
+          "6. Resume drilling"
+        ]
+      },
+      "linkedSections": ["L3-MPD-JOM:Section9.03-9.05"]
+    },
+    {
+      "cardId": "MPD-QR-07",
+      "title": "GAS IN RISER",
+      "category": "emergency",
+      "priority": 1,
+      "color": "#e53e3e",
+      "content": {
+        "priority": "RISER DE-GASSING BEFORE DOWNHOLE KILL",
+        "steps": [
+          "1. SBP MODE - Boost pump 450 gpm",
+          "2. SBP < 200 psi (below PRV)",
+          "3. Route returns → MGS",
+          "4. MONITOR:",
+          "   - Flow-out > Flow-in (gas expansion)",
+          "   - Density drop at surface",
+          "   - Flow meter signal loss = high gas",
+          "5. If MGS overloads → P@D mode, reduce pump",
+          "6. COMPLETE when density-out = active mud weight"
+        ]
+      },
+      "linkedSections": ["L3-MPD-JOM:Section10.06"]
+    },
+    {
+      "cardId": "MPD-QR-08",
+      "title": "FLOW CHECK",
+      "category": "procedure",
+      "priority": 2,
+      "content": {
+        "dynamic": {
+          "title": "Dynamic Flow Check",
+          "steps": [
+            "1. P@D mode at current depth",
+            "2. Pick up, space out, zero VTT",
+            "3. Reduce rotation to 10-20 rpm",
+            "4. Monitor 15 MINUTES minimum",
+            "5. Flow-out > Flow-in = INVESTIGATE"
+          ]
+        },
+        "static": {
+          "title": "Static Flow Check",
+          "steps": [
+            "1. Off bottom, stop rotation",
+            "2. Follow ramp-down to static SBP",
+            "3. Monitor Coriolis 15 MINUTES",
+            "4. Any sustained flow = NOT STATIC"
+          ]
+        }
+      },
+      "linkedSections": ["L3-MPD-JOM:Section9.06-9.08"]
+    },
+    {
+      "cardId": "MPD-QR-09",
+      "title": "EQUIPMENT LIMITS",
+      "category": "reference",
+      "priority": 3,
+      "content": {
+        "mbart": {
+          "title": "M-BART Limits",
+          "limits": [
+            "Max WOB: 300,000 lbf",
+            "Max Pull: 50,000 lbf",
+            "Max String: 1,000,000 lbf",
+            "Max Flow: 1,000 gpm"
+          ]
+        },
+        "rcd": {
+          "title": "RCD Ratings",
+          "dynamic": "{{rcdDynamicRating}}",
+          "static": "{{rcdStaticRating}}"
+        },
+        "prv": {
+          "title": "PRV Settings",
+          "open": "{{prvOpen}}",
+          "highHigh": "{{prvHighHigh}}"
+        },
+        "maxSBP": "{{maxSBP}}"
+      },
+      "linkedSections": ["L2-MPD-EQUIPMENT:Section5"]
+    },
+    {
+      "cardId": "MPD-QR-10",
+      "title": "TROUBLESHOOTING",
+      "category": "reference",
+      "priority": 3,
+      "content": {
+        "issues": [
+          {
+            "problem": "Choke plugged",
+            "action": "Switch to backup choke, isolate & clear"
+          },
+          {
+            "problem": "Flow meter signal loss",
+            "action": "High gas % - normal during gas circulation"
+          },
+          {
+            "problem": "RCD leak",
+            "action": "Reduce SBP if safe, change element"
+          },
+          {
+            "problem": "P@D not holding",
+            "action": "Check model calibration, switch to SBP"
+          },
+          {
+            "problem": "System reverts to Manual",
+            "action": "Limits reached - prepare BOP closure"
+          }
+        ]
+      },
+      "linkedSections": ["L2-MPD-EQUIPMENT:Section12-13"]
+    }
+  ],
+  "wellSpecificVariables": [
+    "influxThreshold",
+    "maxSBP",
+    "rcdDynamicRating",
+    "rcdStaticRating",
+    "prvOpen",
+    "prvHighHigh"
+  ],
+  "linkedDocuments": {
+    "level1": ["L1-MPD-POLICY"],
+    "level2": ["L2-MPD-EQUIPMENT"],
+    "level3": ["L3-MPD-JOM"]
+  },
+  "documentId": "L4-MPD-QUICK-REF",
+  "tags": ["level-4", "quick-reference", "mpd", "rig-floor"]
+}

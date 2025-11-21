@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-109-02",
+  "moduleId": "LEAD-MC-109",
+  "courseId": "LEAD-MC",
+  "title": "Lateral Leadership and Peer Influence",
+  "type": "lesson",
+  "content": "Lateral leadership is influencing peers when you have no formal authority over them. This requires building credibility through competence, maintaining collaborative relationships, and focusing on shared organizational goals rather than departmental wins. Leaders who can't influence laterally become bottlenecks or create silos. Effective lateral leadership involves understanding peer priorities, finding mutual benefit, and demonstrating that helping you helps them achieve their objectives.",
+  "mcq": {
+    "question": "You need another department's support for an initiative that will significantly benefit your team but creates additional short-term work for theirs. The department head is a peer with competing priorities. You've tried asking directly and were told, 'We don't have capacity right now.' What's the most effective next step?",
+    "options": {
+      "A": "Escalate to senior leadership to force prioritization",
+      "B": "Understand their constraints, identify how this initiative could also benefit them, and propose a phased approach that respects their capacity",
+      "C": "Wait until their workload decreases and try again later",
+      "D": "Find a way to accomplish your initiative without their involvement"
+    },
+    "correctOption": "B",
+    "explanation": "Lateral leadership requires seeing the situation from their perspective. 'We don't have capacity' is often true, not resistance. Option B demonstrates collaborative problem-solving: understand their actual constraints, look for mutual benefit, and structure the request to minimize their burden. Maybe the initiative solves a problem they also face. Maybe phasing it reduces immediate impact. Maybe you can offer support that addresses their capacity issue. Option A damages the relationship and teaches them to resist your requests. Option C delays indefinitely. Option D might work but misses the opportunity to build collaborative capability you'll need again. Influence comes from making it easy for people to help you."
+  },
+  "openQuestions": [
+    "Who are your key peer relationships? How strong is your ability to influence them?",
+    "Think of a peer you struggle to work with effectively. What's driving that difficulty?"
+  ]
+}

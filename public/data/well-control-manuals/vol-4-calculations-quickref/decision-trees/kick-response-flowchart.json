@@ -1,0 +1,116 @@
+{
+  "treeId": "kick-response-flowchart",
+  "title": "Kick Response Decision Flowchart",
+  "type": "decision-tree",
+  "content": {
+    "start": {
+      "id": "1",
+      "text": "Kick Indicator Detected",
+      "next": "2"
+    },
+    "nodes": [
+      {
+        "id": "2",
+        "type": "decision",
+        "text": "Is it a PRIMARY indicator? (Pit gain, flow increase, flow with pumps off)",
+        "yes": "3",
+        "no": "10"
+      },
+      {
+        "id": "3",
+        "type": "action",
+        "text": "SHUT IN IMMEDIATELY (Hard shut-in unless soft specified)",
+        "next": "4"
+      },
+      {
+        "id": "4",
+        "type": "action",
+        "text": "Record SIDPP, SICP, Pit Gain. Notify Supervisor",
+        "next": "5"
+      },
+      {
+        "id": "5",
+        "type": "action",
+        "text": "Complete Kill Sheet calculations",
+        "next": "6"
+      },
+      {
+        "id": "6",
+        "type": "decision",
+        "text": "Can you circulate?",
+        "yes": "7",
+        "no": "15"
+      },
+      {
+        "id": "7",
+        "type": "decision",
+        "text": "Is kill mud ready?",
+        "yes": "8",
+        "no": "9"
+      },
+      {
+        "id": "8",
+        "type": "endpoint",
+        "text": "Use WAIT & WEIGHT METHOD → Go to Section 2.4"
+      },
+      {
+        "id": "9",
+        "type": "endpoint",
+        "text": "Use DRILLER'S METHOD → Go to Section 2.3"
+      },
+      {
+        "id": "10",
+        "type": "action",
+        "text": "SECONDARY indicator - Perform Flow Check",
+        "next": "11"
+      },
+      {
+        "id": "11",
+        "type": "decision",
+        "text": "Is well flowing?",
+        "yes": "3",
+        "no": "12"
+      },
+      {
+        "id": "12",
+        "type": "action",
+        "text": "Monitor closely, increase awareness, consider mud weight adjustment",
+        "next": "13"
+      },
+      {
+        "id": "13",
+        "type": "endpoint",
+        "text": "Continue operations with heightened vigilance"
+      },
+      {
+        "id": "15",
+        "type": "decision",
+        "text": "Is gas migrating?",
+        "yes": "16",
+        "no": "17"
+      },
+      {
+        "id": "16",
+        "type": "endpoint",
+        "text": "Use VOLUMETRIC METHOD → Go to Section 2.7"
+      },
+      {
+        "id": "17",
+        "type": "decision",
+        "text": "Can formation accept fluid?",
+        "yes": "18",
+        "no": "19"
+      },
+      {
+        "id": "18",
+        "type": "endpoint",
+        "text": "Consider BULLHEADING → Go to Section 2.5"
+      },
+      {
+        "id": "19",
+        "type": "endpoint",
+        "text": "CONSULT SPECIALISTS - Complex situation requiring expert guidance"
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "templateId": "QT-EF-001",
+  "category": "EMERGENCY_SCENARIOS",
+  "title": "Equipment Failure During Kill Operation",
+  "level": ["L4"],
+  "operationalFocus": "Maintaining well control when equipment fails mid-operation",
+  "question": "On {{wellProfile.wellName}}, you are circulating out a kick using the Driller's Method. You are {{scenario.strokesCompleted}} strokes into the first circulation (gas is at {{scenario.gasPosition}}). Suddenly, pump #1 fails and cannot be repaired quickly. Casing pressure is {{scenario.casingPressure}} psi with MAASP of {{currentSection.maasp}} psi. What is your response?",
+  "inputs": {
+    "wellProfile": {
+      "required": ["wellName"]
+    },
+    "currentSection": {
+      "from": "wellProfile.casingProgram[activeSection]",
+      "required": ["maasp"]
+    },
+    "scenario": {
+      "generated": true,
+      "strokesCompleted": {
+        "options": [200, 600, 1200],
+        "description": "strokes into kill"
+      },
+      "gasPosition": {
+        "options": ["bottom of hole", "mid-annulus", "near surface"],
+        "correlatedTo": "strokesCompleted"
+      },
+      "casingPressure": {
+        "range": [400, 1200],
+        "step": 100
+      }
+    }
+  },
+  "correctSequence": [
+    "1. Close choke to hold casing pressure constant",
+    "2. Note current pump pressure and casing pressure",
+    "3. Switch to backup pump (if available)",
+    "4. Establish circulation at SCR and adjust choke to maintain original casing pressure",
+    "5. If no backup pump, hold well static on choke - gas will migrate",
+    "6. Implement volumetric method if gas migration causes pressure build",
+    "7. Resume kill when pump available"
+  ],
+  "answerOptions": {
+    "A": "Shut in the well completely and wait for pump repair",
+    "B": "Close choke to hold pressure, switch to backup pump maintaining casing pressure, or hold static and use volumetric method",
+    "C": "Open choke to bleed pressure while pump is switched",
+    "D": "Continue at reduced rate with remaining pump capacity"
+  },
+  "correctOption": "B",
+  "feedback": {
+    "correct": "Correct. The golden rule: maintain constant BHP. When the pump stops, close the choke to trap the pressure. Switch to backup pump while holding casing pressure constant. If no backup, you may need volumetric method to manage gas migration while static.",
+    "A_feedback": "Shutting in is acceptable but remember - gas will continue migrating and pressure will build. You must manage this with volumetric bleed-off.",
+    "C_feedback": "Never open the choke when losing circulation capacity - you'll lose BHP and the kick will expand.",
+    "D_feedback": "Continuing at a different rate changes your pressure schedule. You need to recalculate or maintain original parameters with backup pump."
+  },
+  "contextualTip": "With casing pressure at {{scenario.casingPressure}} psi and MAASP at {{currentSection.maasp}} psi, you have {{maaspMargin}} psi margin. If gas is near surface, pressure spikes from migration could exceed MAASP. Pre-plan your volumetric increments.",
+  "advancedNote": "Equipment failures happen. The crew that practices pump switches during drills performs better in real events. Know your backup pump SCR before you need it.",
+  "tags": ["equipment-failure", "pump-failure", "volumetric", "emergency", "operational", "L4", "dynamic"]
+}

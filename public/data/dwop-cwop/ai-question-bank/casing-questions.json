@@ -1,0 +1,21 @@
+{
+  "categoryId": "CASING",
+  "title": "Casing Running Operations - AI Probing Questions",
+  "breakoutRoom": "A",
+  "targetParticipants": ["Casing Specialist", "Driller", "Drilling Engineer"],
+  "questions": [
+    {"questionId": "CS-001", "question": "Your centralization shows 67% standoff - cementing typically needs 75% for good displacement. Is this acceptable?", "type": "assumption_challenge", "focus": "Centralization", "expectedResponse": "Cement displacement analysis or design change"},
+    {"questionId": "CS-002", "question": "Surge calculations show 0.4 ppg ECD increase at max run speed - you have 0.3 ppg margin to frac. What's your running speed?", "type": "calculation_check", "focus": "Surge management", "expectedResponse": "Running speed limits"},
+    {"questionId": "CS-003", "question": "The programme shows auto-fill float equipment but I don't see it on the rig inventory - has this been ordered?", "type": "gap_identification", "focus": "Equipment availability", "expectedResponse": "Float equipment status"},
+    {"questionId": "CS-004", "question": "If casing gets stuck 500m from bottom, what's your contingency? Can you cement at that depth?", "type": "what_if", "focus": "Stuck casing contingency", "expectedResponse": "Stuck casing decision tree"},
+    {"questionId": "CS-005", "question": "Make-up torque is 35,000 ft-lbs but rig tongs are rated to 30,000 - confirm you have correct equipment?", "type": "gap_identification", "focus": "Equipment capability", "expectedResponse": "Tong capacity verification"},
+    {"questionId": "CS-006", "question": "Fill-up schedule shows every 5 joints - what's the maximum allowable under-fill before surge risk?", "type": "calculation_check", "focus": "Fill-up procedures", "expectedResponse": "Under-fill limits"},
+    {"questionId": "CS-007", "question": "Liner hanger setting depth is 50m inside previous shoe - what if you can't get to depth?", "type": "what_if", "focus": "Liner contingency", "expectedResponse": "Alternative setting depth options"},
+    {"questionId": "CS-008", "question": "Thread compound is Jet-Lube 21 but connection is VAM TOP - is this the approved compound?", "type": "verification", "focus": "Connection integrity", "expectedResponse": "Thread compound compatibility"},
+    {"questionId": "CS-009", "question": "Your casing drift is 8.681\" but the programme shows 8.75\" drift requirement - confirm dimensions?", "type": "gap_identification", "focus": "Casing specification", "expectedResponse": "Drift verification"},
+    {"questionId": "CS-010", "question": "Centralizer spacing is 1 per 3 joints but deviation is 60° - is this adequate for this inclination?", "type": "assumption_challenge", "focus": "Centralization", "expectedResponse": "Centralization vs inclination analysis"},
+    {"questionId": "CS-011", "question": "If circulation is lost while running casing, what's your response - continue or pull back?", "type": "what_if", "focus": "Lost circulation", "expectedResponse": "Decision criteria for losses while running"},
+    {"questionId": "CS-012", "question": "Pickup/slackoff limits are 50 klbs - what's the maximum depth you can verify casing is free?", "type": "calculation_check", "focus": "Running operations", "expectedResponse": "Depth vs pickup/slackoff capability"}
+  ],
+  "tags": ["dwop", "ai-questions", "casing", "running", "liner"]
+}

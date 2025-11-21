@@ -1,0 +1,21 @@
+{
+  "categoryId": "FLUIDS",
+  "title": "Drilling Fluids & Hole Conditioning - AI Probing Questions",
+  "breakoutRoom": "B",
+  "targetParticipants": ["Mud Engineer", "Drilling Engineer", "Logistics Coordinator"],
+  "questions": [
+    {"questionId": "FL-001", "question": "Barite inventory shows 200 tonnes - is this sufficient for a worst-case weight-up scenario?", "type": "calculation_check", "focus": "Material inventory", "expectedResponse": "Weight-up calculation vs inventory"},
+    {"questionId": "FL-002", "question": "What's your ECD margin to fracture gradient? The programme shows only 0.3 ppg - is this adequate?", "type": "assumption_challenge", "focus": "ECD management", "expectedResponse": "Risk assessment for tight margin"},
+    {"questionId": "FL-003", "question": "If you lose returns completely, what's your maximum volume before converting to LCM cure?", "type": "verification", "focus": "Lost circulation response", "expectedResponse": "Defined loss thresholds and response triggers"},
+    {"questionId": "FL-004", "question": "Your inhibition plan uses KCl - have environmental discharge permits been confirmed?", "type": "verification", "focus": "Environmental compliance", "expectedResponse": "Permit status and discharge limits"},
+    {"questionId": "FL-005", "question": "Hole cleaning model shows marginal transport at planned flow rates - what's your contingency?", "type": "assumption_challenge", "focus": "Hole cleaning", "expectedResponse": "Alternative approach or increased flow rates"},
+    {"questionId": "FL-006", "question": "LCM pill is 50 bbls at 30 ppb - how long to mix this if losses occur unexpectedly?", "type": "verification", "focus": "Response time", "expectedResponse": "Mixing time and pre-mix policy"},
+    {"questionId": "FL-007", "question": "Your mud cooler capacity is 50°C reduction - bottom hole temperature is 180°C. Is this sufficient?", "type": "calculation_check", "focus": "Temperature management", "expectedResponse": "Cooling capacity assessment"},
+    {"questionId": "FL-008", "question": "Centrifuge is planned for continuous operation but only one unit on board - what's your backup?", "type": "gap_identification", "focus": "Equipment redundancy", "expectedResponse": "Backup plan or spare parts"},
+    {"questionId": "FL-009", "question": "The programme shows OBM but offset wells had severe losses with OBM - have you considered WBM for problem zones?", "type": "assumption_challenge", "focus": "Fluid selection", "expectedResponse": "Rationale for fluid choice"},
+    {"questionId": "FL-010", "question": "Sweep volume is 30 bbls every 6 hours - is this adequate for a 12-1/4\" hole at 60° inclination?", "type": "calculation_check", "focus": "Hole cleaning effectiveness", "expectedResponse": "Hole cleaning model verification"},
+    {"questionId": "FL-011", "question": "Your resupply schedule shows barite arriving 3 days after spud - what if you need emergency weight-up on day 1?", "type": "what_if", "focus": "Logistics timing", "expectedResponse": "Emergency resupply options"},
+    {"questionId": "FL-012", "question": "Shaker screens are API 140 - is this suitable for the expected formation and solids loading?", "type": "verification", "focus": "Solids control", "expectedResponse": "Screen selection rationale"}
+  ],
+  "tags": ["dwop", "ai-questions", "fluids", "mud", "hole-cleaning"]
+}

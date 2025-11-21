@@ -1,0 +1,96 @@
+{
+  "documentId": "KICK_INDICATORS",
+  "collectionId": "questionBank",
+  "categoryKey": "KICK_INDICATORS",
+  "title": "Kick Indicators & Detection",
+  "moduleAlignment": [
+    "WC-SF-105"
+  ],
+  "questionCount": 6,
+  "l3Count": 5,
+  "l4Count": 1,
+  "questions": [
+    {
+      "id": "EX4-Q1",
+      "level": "L3",
+      "question": "First indication that a well is flowing?",
+      "options": {
+        "A": "Decrease in pump pressure",
+        "B": "Increase in rotary torque",
+        "C": "Gas cut mud at shakers",
+        "D": "Increase in flow from well"
+      },
+      "correctAnswer": "D",
+      "explanation": "Increased flow rate is the earliest positive indicator\u2014formation fluid entering displaces mud out. All other signs come later or indicate different conditions."
+    },
+    {
+      "id": "EX4-Q2",
+      "level": "L3",
+      "question": "Action at drilling break?",
+      "options": {
+        "A": "Stop drilling; flow check",
+        "B": "Stop drilling; circulate bottoms up",
+        "C": "Stop drilling; shut well in",
+        "D": "Reduce WOB; control ROP"
+      },
+      "correctAnswer": "A",
+      "explanation": "Drilling break = ROP increase = possible new formation. Stop and flow check before proceeding. Don't assume kick (shut in) or ignore it (continue)."
+    },
+    {
+      "id": "EX4-Q3",
+      "level": "L3",
+      "question": "Positive kick indicators? (SELECT TWO)",
+      "options": {
+        "A": "Increase in flow rate",
+        "B": "Decrease in pit volume",
+        "C": "Decrease in flow rate",
+        "D": "Increase in pit volume"
+      },
+      "correctAnswers": [
+        "A",
+        "D"
+      ],
+      "explanation": "Kick = formation fluid entering = MORE flow out (A) and MORE volume in pits (D). Decreases indicate opposite\u2014losses, not kicks.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX4-Q4",
+      "level": "L3",
+      "question": "What makes pit gain detection difficult?",
+      "options": {
+        "A": "Setting alarms at +/- 5 barrels",
+        "B": "By-passing shakers",
+        "C": "Allowing overflow at shakers",
+        "D": "Minimizing mud transfers"
+      },
+      "correctAnswer": "C",
+      "explanation": "Shaker overflow bypasses pit level monitoring\u2014mud goes overboard, not to pits. Can't detect gain if mud doesn't reach measurement point."
+    },
+    {
+      "id": "EX4-Q5",
+      "level": "L3",
+      "question": "Action upon observing positive kick indicator?",
+      "options": {
+        "A": "Continue drilling at reduced rate",
+        "B": "Stop drilling; flow check",
+        "C": "Stop drilling; shut well in",
+        "D": "Stop drilling; call toolpusher"
+      },
+      "correctAnswer": "C",
+      "explanation": "POSITIVE indicator = kick confirmed. Shut in immediately. Flow check is for warnings or drilling breaks, not confirmed kicks."
+    },
+    {
+      "id": "EX4-Q6",
+      "level": "L4",
+      "question": "15 stands pulled dry, 8.2 bbl fluid used, no flow. Action?",
+      "options": {
+        "A": "Continue pulling",
+        "B": "Trip back; monitor displaced volume; circulate bottoms up",
+        "C": "Pump heavy-weight slug; continue pulling",
+        "D": "Pump high density fluid into annulus"
+      },
+      "correctAnswer": "B",
+      "explanation": "8.2 bbl for 15 stands seems low\u2014potential swab without obvious flow yet. Run back to restore hydrostatic and circulate to verify wellbore condition. Don't risk continuing."
+    }
+  ]
+}

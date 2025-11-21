@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-104-01",
+  "moduleId": "LEAD-MC-104",
+  "courseId": "LEAD-MC",
+  "title": "Delegation as Development",
+  "type": "lesson",
+  "content": "Delegation isn't about offloading tasks you don't want to do—it's about systematically building capability in others. Every task you delegate is a teaching opportunity if you frame it correctly. Effective delegation includes clear outcome definition, appropriate authority level, identified constraints, and post-action review. Leaders who refuse to delegate create bottlenecks and prevent their team from growing. Leaders who delegate poorly create confusion and repeated failures that damage confidence.",
+  "mcq": {
+    "question": "A leader assigns a complex task to a team member by saying, 'Handle the vendor coordination for this project.' Three weeks later, the project is stalled because the team member made commitments the leader wouldn't have approved and missed several critical requirements. The leader is frustrated that the person 'didn't use common sense.' What delegation failure occurred?",
+    "options": {
+      "A": "The team member wasn't ready for this level of responsibility",
+      "B": "The leader failed to define the desired outcome, boundaries, and decision authorities",
+      "C": "The team member should have asked more questions before proceeding",
+      "D": "Vendor coordination is too complex to delegate"
+    },
+    "correctOption": "B",
+    "explanation": "Telling someone to 'handle' something without defining success criteria, constraints, or decision limits isn't delegation—it's abdication. The team member had no framework for making choices aligned with the leader's expectations. Effective delegation requires clarity: what does success look like, what are you authorized to decide independently, what requires approval, and what are the non-negotiable constraints? This failure is on the leader, not the team member."
+  },
+  "openQuestions": [
+    "Think of the last task you delegated. Did you clearly define the outcome, boundaries, and decision authorities?",
+    "What's one task you're currently doing yourself that would develop someone else if you delegated it properly?"
+  ]
+}

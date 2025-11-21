@@ -1,0 +1,45 @@
+{
+  "cardId": "emergency-contacts-template",
+  "title": "Emergency Contact Card Template",
+  "type": "template-card",
+  "instructions": "Complete with site-specific contacts. Post at Driller's console and remote locations.",
+  "content": {
+    "onSite": {
+      "title": "ON-SITE CONTACTS",
+      "contacts": [
+        {"role": "OIM/Rig Manager", "name": "[NAME]", "extension": "[EXT]"},
+        {"role": "Drilling Supervisor", "name": "[NAME]", "extension": "[EXT]"},
+        {"role": "Toolpusher (Day)", "name": "[NAME]", "extension": "[EXT]"},
+        {"role": "Toolpusher (Night)", "name": "[NAME]", "extension": "[EXT]"},
+        {"role": "Subsea Supervisor", "name": "[NAME]", "extension": "[EXT]"},
+        {"role": "Medic", "name": "[NAME]", "extension": "[EXT]"}
+      ]
+    },
+    "shoreBase": {
+      "title": "SHORE BASE",
+      "contacts": [
+        {"role": "Operations Manager", "name": "[NAME]", "phone": "[NUMBER]"},
+        {"role": "Drilling Manager", "name": "[NAME]", "phone": "[NUMBER]"},
+        {"role": "Well Control Specialist", "name": "[NAME]", "phone": "[NUMBER]"},
+        {"role": "Emergency Response Center", "name": "[NAME]", "phone": "[NUMBER]"}
+      ]
+    },
+    "client": {
+      "title": "CLIENT/OPERATOR",
+      "contacts": [
+        {"role": "Company Rep", "name": "[NAME]", "phone": "[NUMBER]"},
+        {"role": "Drilling Superintendent", "name": "[NAME]", "phone": "[NUMBER]"},
+        {"role": "Operations Center", "name": "[NAME]", "phone": "[NUMBER]"}
+      ]
+    },
+    "external": {
+      "title": "EXTERNAL EMERGENCY",
+      "contacts": [
+        {"role": "Coast Guard/SAR", "phone": "[NUMBER]"},
+        {"role": "Regulatory Authority", "phone": "[NUMBER]"},
+        {"role": "Wild Well Control", "phone": "[NUMBER]"},
+        {"role": "Boots & Coots", "phone": "[NUMBER]"}
+      ]
+    }
+  }
+}

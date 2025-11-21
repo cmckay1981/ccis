@@ -1,0 +1,21 @@
+{
+  "moduleId": "WC-SS-105",
+  "courseId": "WC-SS",
+  "title": "Gas in Riser",
+  "description": "Recognizing and responding to gas in riser scenarios - detection, response procedures, riser boil-out risks, and emergency actions.",
+  "order": 5,
+  "lessonIds": [
+    "WC-SS-105-01",
+    "WC-SS-105-02"
+  ],
+  "examWeight": "High",
+  "iwcfSyllabus": "DR-SS-PP-10, PP-11",
+  "documentId": "WC-SS-105",
+  "tags": [
+    "well-control",
+    "subsea",
+    "deepwater",
+    "IWCF",
+    "WC-SS-105"
+  ]
+}

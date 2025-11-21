@@ -1,0 +1,85 @@
+{
+  "lessonId": "WC-SF-106-02",
+  "moduleId": "WC-SF-106",
+  "courseId": "WC-SF",
+  "title": "Gas Laws (Boyle's Law)",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "Boyle's Law governs gas behavior: P1 \u00d7 V1 = P2 \u00d7 V2. As gas rises in the wellbore, pressure decreases, so volume increases. A small kick at bottomhole can become massive at surface. This is why gas kicks are dangerous\u2014they expand exponentially as they approach surface.",
+  "multiSensoryExplanations": {
+    "visual": "A balloon at the bottom of a pool is small\u2014water pressure compresses it. Release it, and as it rises, it expands. At the surface, it's huge. Same gas, different size depending on pressure. That's Boyle's Law in action.",
+    "auditory": "P times V equals P times V. Pressure DOWN, Volume UP. Pressure UP, Volume DOWN. The product stays constant. Sing it: 'P-V, P-V, always the same P-V.'",
+    "kinesthetic": "Press on a sealed syringe with air inside. Feel the resistance as you compress\u2014pressure increases, volume decreases. Release\u2014volume increases, pressure drops. Your hands feel Boyle's Law.",
+    "storyBased": "A 10-barrel gas kick at 10,000 ft reaches 5,000 ft\u2014pressure halves, so volume doubles to 20 barrels. At surface pressure, it could be 200+ barrels. A driller once said: 'Gas is a liar. It looks small downhole and becomes a monster at surface.'"
+  },
+  "formula": {
+    "equation": "P1 \u00d7 V1 = P2 \u00d7 V2",
+    "alternates": [
+      "V2 = (P1 \u00d7 V1) \u00f7 P2",
+      "P2 = (P1 \u00d7 V1) \u00f7 V2"
+    ],
+    "important": "Use ABSOLUTE pressure (gauge + 14.7 psi) in calculations",
+    "example": {
+      "given": "10-barrel kick at 5,000 psi bottomhole. What volume at 500 psi?",
+      "calculation": "V2 = (5,000 \u00d7 10) \u00f7 500 = 100 barrels (10\u00d7 expansion)"
+    }
+  },
+  "gasExpansionTable": {
+    "description": "Example: 20-barrel kick at 6,000 psi bottomhole",
+    "data": [
+      {
+        "depth": "BH (6000 psi)",
+        "volume": "20 bbl"
+      },
+      {
+        "depth": "3000 psi",
+        "volume": "40 bbl"
+      },
+      {
+        "depth": "1500 psi",
+        "volume": "80 bbl"
+      },
+      {
+        "depth": "500 psi",
+        "volume": "240 bbl"
+      },
+      {
+        "depth": "Surface (14.7 psi)",
+        "volume": "8,163 bbl"
+      }
+    ],
+    "warning": "Gas expansion is NOT linear\u2014it's exponential near surface"
+  },
+  "mcq": {
+    "question": "A 15-barrel gas kick at 4,500 psi bottomhole pressure expands as it rises. What will its volume be when it reaches 1,500 psi?",
+    "options": {
+      "A": "15 barrels",
+      "B": "30 barrels",
+      "C": "45 barrels",
+      "D": "60 barrels"
+    },
+    "correctOption": "C",
+    "explanation": "V2 = (P1 \u00d7 V1) \u00f7 P2 = (4,500 \u00d7 15) \u00f7 1,500 = 45 barrels. Pressure reduced by 3\u00d7, so volume increased by 3\u00d7."
+  },
+  "advancedQuestion": {
+    "question": "Why do we use absolute pressure (gauge + 14.7 psi) rather than gauge pressure in Boyle's Law calculations?",
+    "answer": "Boyle's Law applies to absolute pressure\u2014the actual force on the gas molecules. Gauge pressure is relative to atmospheric. At surface, gauge reads 0 but absolute is 14.7 psi. If you use gauge pressure at surface, you'd divide by zero, which is mathematically impossible. Near surface, the difference between 14.7 and 0 dramatically affects expansion calculations.",
+    "l4Focus": "Understanding the physics behind the formula prevents calculation errors in critical situations."
+  },
+  "commonMisconception": {
+    "wrong": "A 10-barrel kick will still be about 10 barrels at surface.",
+    "correct": "Gas volume at surface can be hundreds of times larger than at bottomhole. A 'small' 10-barrel kick at 5,000 psi could expand to 3,400+ barrels at atmospheric pressure. Never underestimate gas expansion."
+  },
+  "examTip": "Remember: Must use ABSOLUTE pressure. On exams, they may give gauge pressure\u2014add 14.7 before calculating.",
+  "documentId": "WC-SF-106-02",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-106",
+    "WC-SF-106-02"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-HF-02",
+  "moduleId": "HRO-HP-ESS-HF",
+  "courseId": "HRO-HP-ESS",
+  "title": "Fatigue Effects",
+  "type": "lesson",
+  "content": "Fatigue degrades cognitive performance as severely as alcohol intoxication—being awake 17 hours equals 0.05% blood alcohol; 24 hours equals 0.10% (legally drunk). Fatigue impairs judgment, reaction time, attention, and memory—and critically, it impairs your ability to recognize you're impaired. Self-assessment of fatigue is notoriously unreliable.",
+  "mcq": {
+    "question": "A team member has been awake for 20 hours during an extended operation. When asked, they say they feel fine and can continue safely. How should this self-assessment be weighted?",
+    "options": {
+      "A": "Trust their judgment—they know their own state best",
+      "B": "Give it moderate weight—fatigue affects people differently",
+      "C": "Give it low weight—fatigue impairs the ability to assess one's own impairment",
+      "D": "Rely only on visible signs of fatigue like yawning"
+    },
+    "correctOption": "C",
+    "explanation": "A key effect of fatigue is impaired self-assessment. People reliably underestimate their own impairment when fatigued. Objective indicators (hours awake, quality of recent sleep) are more reliable than subjective self-reports."
+  },
+  "openQuestions": [
+    "What objective indicators does your organization use to manage fatigue risk, beyond self-reporting?",
+    "Describe a time when you were more fatigued than you initially realized. What eventually made you recognize it?"
+  ]
+}

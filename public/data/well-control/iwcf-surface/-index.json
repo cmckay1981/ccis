@@ -1,0 +1,146 @@
+{
+  "documentId": "WC-SF",
+  "courseId": "WC-SF",
+  "title": "IWCF Well Control - Surface Stack",
+  "provider": "Claymore & Colt",
+  "certification": "IWCF",
+  "levels": [
+    "L3",
+    "L4"
+  ],
+  "stackType": "surface",
+  "modules": [
+    {
+      "moduleId": "WC-SF-101",
+      "title": "Pressure Foundations",
+      "file": "modules/wc-sf-101.json"
+    },
+    {
+      "moduleId": "WC-SF-102",
+      "title": "Formation Strength",
+      "file": "modules/wc-sf-102.json"
+    },
+    {
+      "moduleId": "WC-SF-103",
+      "title": "Causes of Kicks",
+      "file": "modules/wc-sf-103.json"
+    },
+    {
+      "moduleId": "WC-SF-104",
+      "title": "Kick Detection",
+      "file": "modules/wc-sf-104.json"
+    },
+    {
+      "moduleId": "WC-SF-105",
+      "title": "Shut-In Procedures",
+      "file": "modules/wc-sf-105.json"
+    },
+    {
+      "moduleId": "WC-SF-106",
+      "title": "Influx Characteristics",
+      "file": "modules/wc-sf-106.json"
+    },
+    {
+      "moduleId": "WC-SF-107",
+      "title": "Well Kill Calculations",
+      "file": "modules/wc-sf-107.json"
+    },
+    {
+      "moduleId": "WC-SF-108",
+      "title": "Well Control Methods",
+      "file": "modules/wc-sf-108.json"
+    },
+    {
+      "moduleId": "WC-SF-109",
+      "title": "Complications During Kill",
+      "file": "modules/wc-sf-109.json"
+    },
+    {
+      "moduleId": "WC-SF-110",
+      "title": "BOP Equipment",
+      "file": "modules/wc-sf-110.json"
+    }
+  ],
+  "lessons": [
+    {
+      "lessonId": "WC-SF-101-01",
+      "moduleId": "WC-SF-101",
+      "title": "The Hydrostatic Equation",
+      "file": "lessons/wc-sf-101-01.json"
+    },
+    {
+      "lessonId": "WC-SF-101-02",
+      "moduleId": "WC-SF-101",
+      "title": "Pressure Gradients",
+      "file": "lessons/wc-sf-101-02.json"
+    },
+    {
+      "lessonId": "WC-SF-102-01",
+      "moduleId": "WC-SF-102",
+      "title": "Leak Off Test (LOT)",
+      "file": "lessons/wc-sf-102-01.json"
+    },
+    {
+      "lessonId": "WC-SF-102-04",
+      "moduleId": "WC-SF-102",
+      "title": "MAASP Calculation",
+      "file": "lessons/wc-sf-102-04.json"
+    },
+    {
+      "lessonId": "WC-SF-103-01",
+      "moduleId": "WC-SF-103",
+      "title": "Two Conditions for a Kick",
+      "file": "lessons/wc-sf-103-01.json"
+    },
+    {
+      "lessonId": "WC-SF-105-01",
+      "moduleId": "WC-SF-105",
+      "title": "Hard vs Soft Shut-In",
+      "file": "lessons/wc-sf-105-01.json"
+    },
+    {
+      "lessonId": "WC-SF-106-02",
+      "moduleId": "WC-SF-106",
+      "title": "Gas Laws (Boyle's Law)",
+      "file": "lessons/wc-sf-106-02.json"
+    },
+    {
+      "lessonId": "WC-SF-107-01",
+      "moduleId": "WC-SF-107",
+      "title": "Kill Mud Weight Calculation",
+      "file": "lessons/wc-sf-107-01.json"
+    },
+    {
+      "lessonId": "WC-SF-107-02",
+      "moduleId": "WC-SF-107",
+      "title": "Initial Circulating Pressure (ICP)",
+      "file": "lessons/wc-sf-107-02.json"
+    },
+    {
+      "lessonId": "WC-SF-107-03",
+      "moduleId": "WC-SF-107",
+      "title": "Final Circulating Pressure (FCP)",
+      "file": "lessons/wc-sf-107-03.json"
+    },
+    {
+      "lessonId": "WC-SF-108-01",
+      "moduleId": "WC-SF-108",
+      "title": "Driller's Method",
+      "file": "lessons/wc-sf-108-01.json"
+    },
+    {
+      "lessonId": "WC-SF-108-02",
+      "moduleId": "WC-SF-108",
+      "title": "Wait and Weight Method",
+      "file": "lessons/wc-sf-108-02.json"
+    },
+    {
+      "lessonId": "WC-SF-110-01",
+      "moduleId": "WC-SF-110",
+      "title": "Annular Preventers",
+      "file": "lessons/wc-sf-110-01.json"
+    }
+  ],
+  "moduleCount": 10,
+  "lessonCount": 13
+}

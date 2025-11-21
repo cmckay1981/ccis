@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-HF-05",
+  "moduleId": "HRO-HP-ESS-HF",
+  "courseId": "HRO-HP-ESS",
+  "title": "Error Types",
+  "type": "lesson",
+  "content": "Human errors fall into three categories: slips (intended action done incorrectly), lapses (forgetting to do intended action), and mistakes (correct execution of wrong plan). Slips and lapses are execution failures—you knew what to do but didn't do it correctly. Mistakes are planning failures—you did what you intended but the intention was wrong.",
+  "mcq": {
+    "question": "An operator intends to adjust a setting to 150 but accidentally enters 115. They notice immediately and correct it. What type of error was this?",
+    "options": {
+      "A": "Lapse—they forgot the correct value",
+      "B": "Slip—unintended action despite correct intention",
+      "C": "Mistake—they intended to enter 115",
+      "D": "Near-miss—the error was caught before consequences"
+    },
+    "correctOption": "B",
+    "explanation": "A slip is performing an action incorrectly despite correct intention. The operator knew the correct value (150) but physically entered wrong digits (115). This differs from a mistake (intending to enter 115) or a lapse (forgetting to make the adjustment entirely)."
+  },
+  "openQuestions": [
+    "Think of a recent error you made. Was it a slip, lapse, or mistake? What conditions contributed to it?",
+    "Which error type is most common in your work environment? What makes that type more likely?"
+  ]
+}

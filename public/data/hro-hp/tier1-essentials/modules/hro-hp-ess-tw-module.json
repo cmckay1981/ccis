@@ -1,0 +1,22 @@
+{
+  "moduleId": "HRO-HP-ESS-TW",
+  "courseId": "HRO-HP-ESS",
+  "title": "Teamwork Essentials",
+  "description": "Core principles of effective team coordination. Covers team fundamentals, roles, coordination, trust, and conflict resolution.",
+  "order": 4,
+  "lessonIds": [
+    "HRO-HP-ESS-TW-01",
+    "HRO-HP-ESS-TW-02",
+    "HRO-HP-ESS-TW-03",
+    "HRO-HP-ESS-TW-04",
+    "HRO-HP-ESS-TW-05",
+    "HRO-HP-ESS-TW-06"
+  ],
+  "learningObjectives": [
+    "Understand what distinguishes teams from groups",
+    "Maintain clear roles and responsibilities",
+    "Coordinate effectively with team members",
+    "Build and maintain trust",
+    "Manage conflict constructively"
+  ]
+}

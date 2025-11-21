@@ -1,0 +1,30 @@
+{
+  "sectionId": "2.10",
+  "title": "Stuck Pipe During Well Control",
+  "content": {
+    "2.10.1": {
+      "title": "Overview",
+      "content": "Stuck pipe during a well control event is a serious complication:\n\n**Why It's Serious:**\n- Cannot position pipe for optimal circulation\n- May lose ability to rotate or reciprocate\n- Circulation path may be compromised\n- Limits response options\n\n**Common Causes:**\n- Differential sticking (against permeable zone)\n- Mechanical sticking (ledges, key seats)\n- Pack-off (cuttings, formations caving)\n- Wellbore collapse\n- Hydrate formation (deepwater)\n\n**Key Decision:**\nIs it more important to free the pipe or kill the well first?\nUsually: Kill the well first if possible, then address stuck pipe."
+    },
+    "2.10.2": {
+      "title": "Immediate Response",
+      "content": "When pipe becomes stuck during well control:\n\n**Assess:**\n1. Can still circulate? (Flow through drillstring and returns)\n2. Can move pipe at all? (Up, down, rotate)\n3. What type of sticking is suspected?\n4. Where is the bit relative to kick zone?\n\n**If Circulation Possible:**\n- Kill the well using standard method\n- Work pipe while circulating if possible\n- Do not delay kill for pipe freeing\n- After well killed, address stuck pipe\n\n**If Circulation NOT Possible:**\n- Situation is more serious\n- May need volumetric method while assessing\n- Options limited - need to restore circulation or use alternative"
+    },
+    "2.10.3": {
+      "title": "Differential Sticking",
+      "content": "**Characteristics:**\n- Pipe stuck against permeable zone\n- Often can still circulate\n- Occurs opposite porous formation\n- May be able to rotate but not move up/down\n\n**During Well Control:**\n- If can circulate: proceed with kill\n- If kill mud is heavier, may increase differential sticking\n- May spot spotting fluid after kill if needed\n\n**Considerations:**\n- Reducing mud weight would help free pipe\n- But cannot reduce weight during well control\n- Kill first, then address sticking\n- May need jarring operations after kill"
+    },
+    "2.10.4": {
+      "title": "Pack-Off/Wellbore Instability",
+      "content": "**Characteristics:**\n- Cuttings or formation blocking annulus\n- Increasing pump pressure\n- Cannot circulate (or reduced returns)\n- May have total losses\n\n**During Well Control:**\n- Loss of circulation is critical complication\n- May need to attempt to restore circulation\n- Working pipe carefully if possible\n- May need alternative kill method (bullhead)\n\n**If Complete Pack-Off:**\n- No circulation possible\n- Volumetric method to control migration\n- May need to consider abandoning string\n- Consult with experts"
+    },
+    "2.10.5": {
+      "title": "Well Control with Stuck Pipe",
+      "content": "**Priority:**\n1. Maintain well control (constant BHP)\n2. Attempt to kill if circulation exists\n3. Address stuck pipe after well is controlled\n\n**Circulation Exists:**\n- Use standard kill method\n- Work pipe during circulation if helpful and safe\n- Do not compromise well control for pipe freeing\n\n**No Circulation:**\n- Volumetric method if gas migrating\n- Assess bullhead possibility\n- May need to consider cutting pipe and fishing\n- Consult specialists\n\n**Cannot Kill:**\n- If pipe is stuck with no circulation and bullhead not working\n- Very serious situation\n- May require relief well considerations\n- Full emergency response activation"
+    },
+    "2.10.6": {
+      "title": "After Well is Killed",
+      "content": "Once well is under control with stuck pipe:\n\n**Options:**\n\n**Jarring:**\n- If jar in string, may free pipe\n- Work jar according to procedure\n- May need extended jarring\n\n**Spotting Fluid:**\n- Spot oil-based or spotting fluid at stuck point\n- Allow soak time\n- Attempt to free\n\n**Back-Off:**\n- If cannot free, may need to back off above stuck point\n- Retrieve free pipe\n- Fish stuck portion separately\n\n**Cutting:**\n- Cut pipe above stuck point\n- Retrieve free portion\n- Sidetrack may be required\n\n**Decision Factors:**\n- Value of stuck pipe and BHA\n- Cost of continued attempts vs sidetrack\n- Time sensitivity\n- Formation exposure concerns"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "documentId": "WC-SS",
+  "courseId": "WC-SS",
+  "title": "IWCF Well Control - Subsea Stack",
+  "provider": "Claymore & Colt",
+  "certification": "IWCF",
+  "levels": [
+    "L3",
+    "L4"
+  ],
+  "stackType": "subsea",
+  "modules": [
+    {
+      "moduleId": "WC-SS-101",
+      "title": "Subsea Pressure Environment",
+      "file": "modules/wc-ss-101.json"
+    },
+    {
+      "moduleId": "WC-SS-102",
+      "title": "Riser Margin",
+      "file": "modules/wc-ss-102.json"
+    },
+    {
+      "moduleId": "WC-SS-103",
+      "title": "Choke Line Friction Loss (CLFL)",
+      "file": "modules/wc-ss-103.json"
+    },
+    {
+      "moduleId": "WC-SS-104",
+      "title": "Subsea BOP Equipment",
+      "file": "modules/wc-ss-104.json"
+    },
+    {
+      "moduleId": "WC-SS-105",
+      "title": "Gas in Riser",
+      "file": "modules/wc-ss-105.json"
+    },
+    {
+      "moduleId": "WC-SS-106",
+      "title": "Emergency Procedures",
+      "file": "modules/wc-ss-106.json"
+    }
+  ],
+  "lessons": [
+    {
+      "lessonId": "WC-SS-102-01",
+      "moduleId": "WC-SS-102",
+      "title": "Riser Margin Concept",
+      "file": "lessons/wc-ss-102-01.json"
+    },
+    {
+      "lessonId": "WC-SS-102-02",
+      "moduleId": "WC-SS-102",
+      "title": "Riser Margin Calculation",
+      "file": "lessons/wc-ss-102-02.json"
+    },
+    {
+      "lessonId": "WC-SS-103-01",
+      "moduleId": "WC-SS-103",
+      "title": "What is Choke Line Friction Loss?",
+      "file": "lessons/wc-ss-103-01.json"
+    },
+    {
+      "lessonId": "WC-SS-103-02",
+      "moduleId": "WC-SS-103",
+      "title": "CLFL Corrections for ICP and FCP",
+      "file": "lessons/wc-ss-103-02.json"
+    },
+    {
+      "lessonId": "WC-SS-105-01",
+      "moduleId": "WC-SS-105",
+      "title": "Gas in Riser - Recognition and Response",
+      "file": "lessons/wc-ss-105-01.json"
+    },
+    {
+      "lessonId": "WC-SS-106-01",
+      "moduleId": "WC-SS-106",
+      "title": "Emergency Disconnect Sequence (EDS)",
+      "file": "lessons/wc-ss-106-01.json"
+    }
+  ],
+  "moduleCount": 6,
+  "lessonCount": 6
+}

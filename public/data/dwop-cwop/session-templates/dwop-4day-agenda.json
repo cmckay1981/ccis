@@ -1,0 +1,70 @@
+{
+  "templateId": "DWOP-4DAY-STANDARD",
+  "title": "4-Day DWOP Session Agenda",
+  "description": "Standard agenda for complex well DWOP (HPHT, deepwater, extended reach). Includes breakout rooms with AI participants, plenary sessions, and structured breaks.",
+  "rigTypes": ["SEMISUBMERSIBLE", "DRILLSHIP"],
+  "bopType": "subsea",
+  "wellComplexity": "High (HPHT, Deepwater, ERD)",
+  "totalDays": 4,
+  "dailySchedule": {"startTime": "08:00", "endTime": "17:00", "timezone": "Adjusted to majority participant location"},
+  "participants": {
+    "required": ["Operator Drilling Engineer", "Operator Well Engineer", "Drilling Contractor OIM/Toolpusher", "Drilling Contractor Driller Representative", "Mud Engineer / Fluids Specialist", "Cementing Engineer", "Directional Driller", "MWD/LWD Engineer", "Well Control Specialist", "HSE Representative", "Logistics Coordinator", "Casing/Tubing Specialist"],
+    "asNeeded": ["MPD Specialist", "Completions Engineer", "Subsea Engineer", "Fishing Specialist", "Geologist/Geophysicist"]
+  },
+  "days": [
+    {"day": 1, "title": "Overview & Rig Move to First Milestone", "sessions": [
+      {"time": "08:00-08:30", "type": "plenary", "title": "Welcome & Introductions", "description": "Session objectives, ground rules, introduce AI facilitator role", "room": "main"},
+      {"time": "08:30-10:00", "type": "plenary", "title": "Well Overview & Programme Walkthrough", "description": "Well objectives, geological prognosis, PPFG overview, casing design rationale, key risks and hazards", "room": "main", "presenter": "Operator Drilling Engineer"},
+      {"time": "10:00-10:30", "type": "break", "title": "Morning Break"},
+      {"time": "10:30-12:00", "type": "plenary", "title": "Rig Capability Review", "description": "Rig spec vs programme requirements. Equipment inventory. Identify gaps", "room": "main", "presenter": "Drilling Contractor", "aiRole": "Flags mismatches between rig spec and programme requirements"},
+      {"time": "12:00-13:00", "type": "break", "title": "Lunch"},
+      {"time": "13:00-14:30", "type": "breakout", "title": "Section Review: Rig Move & Positioning", "rooms": [{"roomId": "A", "topic": "Rig Move & Marine Operations", "participants": ["OIM", "Marine", "Logistics", "HSE"], "aiParticipant": true}, {"roomId": "B", "topic": "BOP & Riser Deployment", "participants": ["Subsea", "Toolpusher", "Well Control"], "aiParticipant": true}]},
+      {"time": "14:30-15:00", "type": "break", "title": "Afternoon Break"},
+      {"time": "15:00-16:00", "type": "breakout", "title": "Section Review: Jetting & Conductor", "rooms": [{"roomId": "A", "topic": "Jetting Operations", "participants": ["Drilling Eng", "Driller", "Mud Eng"], "aiParticipant": true}, {"roomId": "B", "topic": "Conductor Running & Cementing", "participants": ["Casing", "Cementing", "Subsea"], "aiParticipant": true}]},
+      {"time": "16:00-17:00", "type": "plenary", "title": "Day 1 Consolidation", "room": "main", "aiRole": "Presents consolidated findings, gaps identified, questions raised"}
+    ]},
+    {"day": 2, "title": "Surface & Intermediate Sections", "sessions": [
+      {"time": "08:00-08:30", "type": "plenary", "title": "Day 1 Action Item Review", "room": "main"},
+      {"time": "08:30-10:00", "type": "breakout", "title": "Section Review: Surface Hole Drilling", "rooms": [{"roomId": "A", "topic": "Drilling Operations", "participants": ["Drilling Eng", "Driller", "DD", "MWD"], "aiParticipant": true}, {"roomId": "B", "topic": "Fluids & Hole Conditioning", "participants": ["Mud Eng", "Drilling Eng", "Logistics"], "aiParticipant": true}]},
+      {"time": "10:00-10:30", "type": "break", "title": "Morning Break"},
+      {"time": "10:30-12:00", "type": "breakout", "title": "Section Review: Surface Casing", "rooms": [{"roomId": "A", "topic": "Casing Running", "participants": ["Casing", "Driller", "Drilling Eng"], "aiParticipant": true}, {"roomId": "B", "topic": "Cementing", "participants": ["Cementing", "Drilling Eng", "Well Eng"], "aiParticipant": true}]},
+      {"time": "12:00-13:00", "type": "break", "title": "Lunch"},
+      {"time": "13:00-14:30", "type": "breakout", "title": "Section Review: Intermediate Hole Drilling", "rooms": [{"roomId": "A", "topic": "Drilling Operations", "participants": ["Drilling Eng", "Driller", "DD", "MWD", "Well Control"], "aiParticipant": true}, {"roomId": "B", "topic": "Wellbore Stability & Fluids", "participants": ["Mud Eng", "Drilling Eng", "Geologist"], "aiParticipant": true}]},
+      {"time": "14:30-15:00", "type": "break", "title": "Afternoon Break"},
+      {"time": "15:00-16:00", "type": "breakout", "title": "Section Review: Intermediate Casing", "rooms": [{"roomId": "A", "topic": "Casing Running", "participants": ["Casing", "Driller", "Drilling Eng"], "aiParticipant": true}, {"roomId": "B", "topic": "Cementing & Integrity", "participants": ["Cementing", "Well Eng", "Drilling Eng"], "aiParticipant": true}]},
+      {"time": "16:00-17:00", "type": "plenary", "title": "Day 2 Consolidation", "room": "main", "aiRole": "Consolidates all breakout findings, highlights critical gaps"}
+    ]},
+    {"day": 3, "title": "Production Section & Well Control", "sessions": [
+      {"time": "08:00-08:30", "type": "plenary", "title": "Day 2 Action Item Review", "room": "main"},
+      {"time": "08:30-10:00", "type": "breakout", "title": "Section Review: Production Hole Drilling", "rooms": [{"roomId": "A", "topic": "HPHT/Tight Window Drilling", "participants": ["Drilling Eng", "Well Control", "MPD Specialist", "Driller"], "aiParticipant": true}, {"roomId": "B", "topic": "Formation Evaluation & Hazards", "participants": ["Geologist", "MWD", "Drilling Eng", "HSE"], "aiParticipant": true}]},
+      {"time": "10:00-10:30", "type": "break", "title": "Morning Break"},
+      {"time": "10:30-12:00", "type": "plenary", "title": "Well Control Deep Dive", "description": "Comprehensive well control review for all sections", "room": "main", "presenter": "Well Control Specialist", "aiRole": "Challenges assumptions, asks 'what if' scenarios"},
+      {"time": "12:00-13:00", "type": "break", "title": "Lunch"},
+      {"time": "13:00-14:30", "type": "breakout", "title": "Section Review: Production Casing/Liner", "rooms": [{"roomId": "A", "topic": "Casing/Liner Running", "participants": ["Casing", "Driller", "Drilling Eng", "Well Control"], "aiParticipant": true}, {"roomId": "B", "topic": "Cementing in HPHT", "participants": ["Cementing", "Well Eng", "Drilling Eng"], "aiParticipant": true}]},
+      {"time": "14:30-15:00", "type": "break", "title": "Afternoon Break"},
+      {"time": "15:00-16:00", "type": "plenary", "title": "MPD Operations Review", "room": "main", "presenter": "MPD Specialist", "aiRole": "References ADO-102 training content, challenges readiness"},
+      {"time": "16:00-17:00", "type": "plenary", "title": "Day 3 Consolidation", "room": "main", "aiRole": "Consolidates findings, highlights well control and HPHT critical items"}
+    ]},
+    {"day": 4, "title": "Completions, Contingencies & Close-Out", "sessions": [
+      {"time": "08:00-08:30", "type": "plenary", "title": "Day 3 Action Item Review", "room": "main"},
+      {"time": "08:30-10:00", "type": "breakout", "title": "Section Review: Completions", "rooms": [{"roomId": "A", "topic": "Lower Completions", "participants": ["Completions Eng", "Well Eng", "Drilling Eng"], "aiParticipant": true}, {"roomId": "B", "topic": "Upper Completions", "participants": ["Completions Eng", "Subsea", "Drilling Eng"], "aiParticipant": true}]},
+      {"time": "10:00-10:30", "type": "break", "title": "Morning Break"},
+      {"time": "10:30-12:00", "type": "breakout", "title": "Section Review: BOP Pull & Xmas Tree", "rooms": [{"roomId": "A", "topic": "BOP Recovery", "participants": ["Subsea", "Toolpusher", "Well Control"], "aiParticipant": true}, {"roomId": "B", "topic": "Xmas Tree Installation", "participants": ["Subsea", "Completions", "Operations"], "aiParticipant": true}]},
+      {"time": "12:00-13:00", "type": "break", "title": "Lunch"},
+      {"time": "13:00-14:30", "type": "plenary", "title": "Contingency Planning", "description": "Stuck pipe, lost circulation, well control events, weather, equipment failure", "room": "main", "aiRole": "Presents common failure modes, asks 'what's your plan for X?'"},
+      {"time": "14:30-15:00", "type": "break", "title": "Afternoon Break"},
+      {"time": "15:00-16:00", "type": "plenary", "title": "Action Item Review & Gap Closure", "room": "main", "aiRole": "Presents complete action item register, flags overdue/at-risk items"},
+      {"time": "16:00-17:00", "type": "plenary", "title": "DWOP Close-Out", "room": "main", "deliverables": ["Completed action item register", "Equipment/material gap list", "Residual risk register", "Updated drilling programme", "DWOP completion certificate"]}
+    ]}
+  ],
+  "aiParticipantRole": {
+    "description": "AI participant in each breakout room acts as a challenger and recorder",
+    "functions": ["Challenges assumptions with probing questions", "Flags mismatches between programme and rig capability", "References relevant training content when knowledge gaps appear", "Records all discussion points and action items", "Asks 'what if' scenarios for contingency planning", "Ensures checklist items are addressed", "Consolidates findings for plenary sessions"]
+  },
+  "preWorkRequirements": {
+    "timeline": "Distributed 1 week before DWOP",
+    "materials": ["Final drilling programme", "Rig specification sheet", "Equipment inventory list", "PPFG prognosis", "Offset well data", "Hazard register", "Previous lessons learned"]
+  },
+  "documentId": "DWOP-4DAY-AGENDA",
+  "tags": ["dwop", "agenda", "4-day", "complex-well"]
+}

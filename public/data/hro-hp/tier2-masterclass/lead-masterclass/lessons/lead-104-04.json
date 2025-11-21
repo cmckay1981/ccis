@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-104-04",
+  "moduleId": "LEAD-104",
+  "courseId": "LEAD",
+  "title": "Coaching vs Mentoring vs Managing",
+  "type": "lesson",
+  "content": "These three development approaches serve different purposes and require different relationships. Coaching focuses on skill development for specific tasks—it's short-term, performance-oriented, and usually done by a direct supervisor. Mentoring focuses on long-term career development and usually involves someone outside the reporting chain who provides perspective and guidance. Managing involves directing work, allocating resources, and evaluating performance. Confusing these roles creates ineffective development and unclear relationships. Great leaders know which hat to wear when.",
+  "mcq": {
+    "question": "A supervisor notices a team member struggling with a technical skill. The supervisor schedules weekly one-on-one meetings where they discuss the person's long-term career aspirations, share personal leadership philosophy, and offer general life advice. The technical skill gap isn't improving. What's the mismatch?",
+    "options": {
+      "A": "The team member isn't receptive to development",
+      "B": "The supervisor is mentoring when they should be coaching",
+      "C": "Weekly meetings are too infrequent for skill development",
+      "D": "The supervisor should delegate coaching to someone more technical"
+    },
+    "correctOption": "B",
+    "explanation": "The immediate need is coaching—focused, tactical skill development with practice and feedback. The supervisor has shifted into mentoring mode, which addresses different needs. Coaching says: 'Here's how to do this specific thing better, let's practice it, I'll observe and give you feedback.' Mentoring says: 'Here's how I think about your career trajectory and development over time.' Both are valuable, but this situation requires coaching first. Fix the performance issue, then build the longer-term relationship."
+  },
+  "openQuestions": [
+    "Think of your direct reports. Which ones need coaching, which need mentoring, and how do you differentiate your approach?",
+    "Who has been the most effective mentor in your career? What made them different from a good coach or manager?"
+  ]
+}

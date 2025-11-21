@@ -1,0 +1,215 @@
+{
+  "industryCode": "MFG",
+  "industryName": "Manufacturing",
+  "description": "Comprehensive scenario pack for all manufacturing and industrial operations",
+  "targetOrganizations": ["Process plants", "Assembly operations", "Warehousing", "Logistics", "Food processing", "Pharmaceuticals"],
+
+  "departments": {
+    "PRODUCTION_OPERATIONS": {
+      "name": "Production / Operations",
+      "roles": ["Machine Operator", "Production Technician", "Line Lead", "Production Supervisor", "Operations Manager", "Plant Manager"],
+      "scenarios": {
+        "SA": "Operator notices machine vibration change but doesn't connect to bearing wear progression.",
+        "DM": "Deciding whether to stop production line for quality concern vs. continue and inspect.",
+        "COMM": "Communicating equipment anomaly to maintenance and supervision.",
+        "TW": "Coordinating line changeover between production and setup crews.",
+        "LEAD": "Supervisor managing team morale during mandatory overtime period.",
+        "HF": "Attention to detail degradation during repetitive assembly task."
+      }
+    },
+
+    "MAINTENANCE": {
+      "name": "Maintenance / Reliability",
+      "roles": ["Maintenance Technician", "Electrician", "Millwright", "PLC Technician", "Maintenance Planner", "Reliability Engineer", "Maintenance Manager"],
+      "scenarios": {
+        "SA": "Technician completing PM doesn't notice wear indicator on adjacent component.",
+        "DM": "Deciding whether to attempt repair vs. wait for parts during production downtime.",
+        "COMM": "Communicating repair timeline to production for schedule adjustment.",
+        "TW": "Coordinating complex repair with production, safety, and contractors.",
+        "LEAD": "Maintenance manager prioritizing work orders during equipment emergency.",
+        "HF": "Lockout/tagout compliance accuracy during rushed repair."
+      }
+    },
+
+    "QUALITY_CONTROL": {
+      "name": "Quality Control / Assurance",
+      "roles": ["Quality Inspector", "Quality Technician", "Lab Analyst", "Quality Engineer", "Quality Manager", "Quality Director"],
+      "scenarios": {
+        "SA": "Inspector reviews sample but doesn't connect to upstream process drift.",
+        "DM": "Deciding whether to hold product for additional testing vs. release to customer.",
+        "COMM": "Communicating quality hold to production, shipping, and customer service.",
+        "TW": "Coordinating root cause investigation across multiple departments.",
+        "LEAD": "Quality manager balancing customer deadline with product conformance.",
+        "HF": "Inspection accuracy during high-volume production periods."
+      }
+    },
+
+    "WAREHOUSE_LOGISTICS": {
+      "name": "Warehouse / Logistics",
+      "roles": ["Forklift Operator", "Warehouse Associate", "Picker/Packer", "Shipping/Receiving Clerk", "Warehouse Supervisor", "Logistics Manager"],
+      "scenarios": {
+        "SA": "Forklift operator notices load shift but doesn't anticipate stability issue.",
+        "DM": "Deciding whether to ship partial order vs. delay for complete fulfillment.",
+        "COMM": "Communicating inventory discrepancy to purchasing and production.",
+        "TW": "Coordinating inbound receiving with outbound shipping during dock shortage.",
+        "LEAD": "Supervisor managing team during peak shipping period with tight deadlines.",
+        "HF": "Picking accuracy during high-volume order fulfillment."
+      }
+    },
+
+    "ENGINEERING": {
+      "name": "Engineering",
+      "roles": ["Process Engineer", "Manufacturing Engineer", "Design Engineer", "Project Engineer", "Engineering Manager"],
+      "scenarios": {
+        "SA": "Engineer reviews process data but doesn't connect variation to equipment change.",
+        "DM": "Deciding whether to implement process change during production vs. wait for shutdown.",
+        "COMM": "Communicating engineering change to production, quality, and training.",
+        "TW": "Coordinating equipment installation with maintenance, safety, and production.",
+        "LEAD": "Engineering manager balancing multiple project priorities with limited resources.",
+        "HF": "Design review thoroughness under project deadline pressure."
+      }
+    },
+
+    "SAFETY_EHS": {
+      "name": "Safety / EHS",
+      "roles": ["Safety Technician", "EHS Specialist", "Industrial Hygienist", "Safety Manager", "EHS Director"],
+      "scenarios": {
+        "SA": "Safety specialist reviews incident but doesn't connect to systemic pattern.",
+        "DM": "Deciding whether to stop work for safety concern vs. implement controls and continue.",
+        "COMM": "Communicating safety requirements to contractors unfamiliar with site.",
+        "TW": "Coordinating emergency response drill with production schedule.",
+        "LEAD": "Safety manager addressing safety culture issues in specific department.",
+        "HF": "Hazard recognition accuracy during routine workplace inspection."
+      }
+    },
+
+    "SUPPLY_CHAIN": {
+      "name": "Supply Chain / Purchasing",
+      "roles": ["Buyer", "Planner", "Supply Chain Analyst", "Procurement Specialist", "Supply Chain Manager"],
+      "scenarios": {
+        "SA": "Planner monitors inventory but doesn't anticipate supplier lead time change impact.",
+        "DM": "Deciding whether to expedite shipment at premium cost vs. adjust production schedule.",
+        "COMM": "Communicating material shortage to production planning and sales.",
+        "TW": "Coordinating with multiple suppliers during component shortage.",
+        "LEAD": "Supply chain manager managing vendor relationship during quality dispute.",
+        "HF": "Forecast accuracy when processing large volume of demand signals."
+      }
+    },
+
+    "PRODUCTION_PLANNING": {
+      "name": "Production Planning / Scheduling",
+      "roles": ["Production Planner", "Master Scheduler", "Capacity Planner", "Planning Manager"],
+      "scenarios": {
+        "SA": "Planner reviews schedule but doesn't anticipate downstream bottleneck.",
+        "DM": "Deciding production sequence when multiple orders have same priority.",
+        "COMM": "Communicating schedule change to production, shipping, and sales.",
+        "TW": "Coordinating schedule adjustment with production, quality, and maintenance windows.",
+        "LEAD": "Planning manager balancing customer commitments with capacity constraints.",
+        "HF": "Schedule optimization accuracy with multiple competing variables."
+      }
+    },
+
+    "PROCESS_CONTROL": {
+      "name": "Process Control / Control Room",
+      "roles": ["Control Room Operator", "Board Operator", "DCS Technician", "Shift Supervisor", "Operations Superintendent"],
+      "scenarios": {
+        "SA": "Operator monitors parameters but doesn't project trend impact on downstream process.",
+        "DM": "Deciding whether to make process adjustment vs. wait for engineering guidance.",
+        "COMM": "Communicating process upset to field operators and supervision.",
+        "TW": "Coordinating control room actions with field operator activities.",
+        "LEAD": "Shift supervisor managing team response to process emergency.",
+        "HF": "Alarm response accuracy during alarm flood situation."
+      }
+    },
+
+    "UTILITIES_FACILITIES": {
+      "name": "Utilities / Facilities",
+      "roles": ["Utilities Operator", "Boiler Operator", "HVAC Technician", "Facilities Technician", "Facilities Manager"],
+      "scenarios": {
+        "SA": "Operator notices utility parameter but doesn't connect to production process requirement.",
+        "DM": "Deciding whether to reduce utility capacity vs. maintain and risk equipment.",
+        "COMM": "Communicating utility limitation to production operations.",
+        "TW": "Coordinating utility shutdown with production schedule and safety.",
+        "LEAD": "Facilities manager prioritizing repairs during multiple system issues.",
+        "HF": "Monitoring accuracy during extended overnight utility watch."
+      }
+    },
+
+    "TRAINING_HR": {
+      "name": "Training / Human Resources",
+      "roles": ["Training Coordinator", "HR Generalist", "Training Manager", "HR Manager"],
+      "scenarios": {
+        "SA": "Trainer notices skill gap but doesn't connect to recent process changes.",
+        "DM": "Deciding training priority between new hire onboarding and retraining.",
+        "COMM": "Communicating competency requirements to supervisors and employees.",
+        "TW": "Coordinating training schedule with production coverage needs.",
+        "LEAD": "Training manager addressing systemic competency gaps across shifts.",
+        "HF": "Training effectiveness assessment accuracy with limited evaluation time."
+      }
+    },
+
+    "LAB_RD": {
+      "name": "Laboratory / R&D",
+      "roles": ["Lab Technician", "Research Scientist", "Product Developer", "Lab Manager", "R&D Director"],
+      "scenarios": {
+        "SA": "Technician notes test result but doesn't connect to formulation batch variation.",
+        "DM": "Deciding whether to approve raw material with borderline test results.",
+        "COMM": "Communicating test result implications to production and quality.",
+        "TW": "Coordinating pilot run between R&D, production, and quality.",
+        "LEAD": "Lab manager managing competing priorities from multiple departments.",
+        "HF": "Test accuracy when processing high volume of samples."
+      }
+    },
+
+    "PACKAGING": {
+      "name": "Packaging / Finishing",
+      "roles": ["Packaging Operator", "Packaging Technician", "Packaging Line Lead", "Packaging Supervisor", "Packaging Manager"],
+      "scenarios": {
+        "SA": "Operator notices packaging seal quality but doesn't project customer complaint risk.",
+        "DM": "Deciding whether to rework suspect product vs. scrap and restart.",
+        "COMM": "Communicating packaging material issue to purchasing and production.",
+        "TW": "Coordinating packaging line with production output and shipping schedule.",
+        "LEAD": "Supervisor managing team during product recall repackaging.",
+        "HF": "Label accuracy during high-speed packaging operations."
+      }
+    }
+  },
+
+  "crossDepartmentScenarios": [
+    {
+      "title": "The Equipment Failure",
+      "departments": ["PRODUCTION_OPERATIONS", "MAINTENANCE", "QUALITY_CONTROL", "SUPPLY_CHAIN"],
+      "scenario": "Critical production equipment fails. Requires coordination of repair, quality hold evaluation, schedule adjustment, and customer communication.",
+      "competencies": ["SA", "DM", "COMM", "TW"]
+    },
+    {
+      "title": "The Quality Escape",
+      "departments": ["QUALITY_CONTROL", "PRODUCTION_OPERATIONS", "WAREHOUSE_LOGISTICS", "SUPPLY_CHAIN"],
+      "scenario": "Quality issue discovered after product shipped. Requires containment, investigation, customer notification, and corrective action.",
+      "competencies": ["DM", "COMM", "TW", "LEAD"]
+    },
+    {
+      "title": "The Process Upset",
+      "departments": ["PROCESS_CONTROL", "PRODUCTION_OPERATIONS", "SAFETY_EHS", "MAINTENANCE"],
+      "scenario": "Process excursion creates safety and quality concerns. Requires emergency response, safe shutdown, and root cause investigation.",
+      "competencies": ["SA", "DM", "COMM", "LEAD"]
+    },
+    {
+      "title": "The Rush Order",
+      "departments": ["PRODUCTION_PLANNING", "PRODUCTION_OPERATIONS", "WAREHOUSE_LOGISTICS", "QUALITY_CONTROL"],
+      "scenario": "High-priority customer order requires expedited production. Requires schedule adjustment, quality verification, and shipping coordination.",
+      "competencies": ["DM", "TW", "LEAD", "HF"]
+    }
+  ],
+
+  "terminology": {
+    "operator": "operator / technician",
+    "control room": "control room / operations center",
+    "shift handover": "shift change / turnover",
+    "incident": "incident / event",
+    "crew": "team / crew",
+    "supervisor": "supervisor / lead",
+    "procedure": "SOP / work instruction",
+    "equipment failure": "breakdown / downtime"
+  }
+}

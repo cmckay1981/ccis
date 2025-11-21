@@ -1,0 +1,21 @@
+{
+  "moduleId": "WC-SF-109",
+  "courseId": "WC-SF",
+  "title": "Complications During Kill",
+  "description": "Managing problems during well control operations - lost circulation, equipment failures, excessive pressures, gas migration. Decision-making under pressure.",
+  "order": 9,
+  "lessonIds": [
+    "WC-SF-109-01",
+    "WC-SF-109-02",
+    "WC-SF-109-03"
+  ],
+  "examWeight": "Medium",
+  "iwcfSyllabus": "PP-10",
+  "documentId": "WC-SF-109",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-109"
+  ]
+}

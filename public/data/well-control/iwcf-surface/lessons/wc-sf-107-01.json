@@ -1,0 +1,63 @@
+{
+  "lessonId": "WC-SF-107-01",
+  "moduleId": "WC-SF-107",
+  "courseId": "WC-SF",
+  "title": "Kill Mud Weight Calculation",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "When you take a kick, the formation pressure exceeded your wellbore pressure. Kill mud weight is the density needed to balance formation pressure with hydrostatic pressure alone\u2014no surface pressure required. The formula adds just enough weight to overcome the formation pressure that caused the kick. Kill MW = Current MW + (SIDPP \u00f7 (TVD \u00d7 0.052)). SIDPP tells you how much underbalanced you were\u2014we're converting that pressure deficit into additional mud weight.",
+  "formula": {
+    "equation": "Kill MW (ppg) = Current MW (ppg) + (SIDPP (psi) \u00f7 (TVD (ft) \u00d7 0.052))",
+    "variables": {
+      "Kill MW": "Required mud weight to balance formation pressure",
+      "Current MW": "Mud weight when kick occurred",
+      "SIDPP": "Shut-in drill pipe pressure",
+      "TVD": "True vertical depth"
+    },
+    "example": {
+      "given": "Current MW = 11.0 ppg, SIDPP = 520 psi, TVD = 10,000 ft",
+      "calculation": "Kill MW = 11.0 + (520 \u00f7 (10,000 \u00d7 0.052)) = 11.0 + (520 \u00f7 520) = 11.0 + 1.0 = 12.0 ppg"
+    }
+  },
+  "mcq": {
+    "question": "You're drilling at 12,000 ft TVD with 10.5 ppg mud. You take a kick and record SIDPP of 312 psi. What kill mud weight is required?",
+    "options": {
+      "A": "10.8 ppg",
+      "B": "11.0 ppg",
+      "C": "11.2 ppg",
+      "D": "11.5 ppg"
+    },
+    "correctOption": "B",
+    "explanation": "Kill MW = 10.5 + (312 \u00f7 (12,000 \u00d7 0.052)) = 10.5 + (312 \u00f7 624) = 10.5 + 0.5 = 11.0 ppg. Always round UP for safety\u2014never round down on kill weight."
+  },
+  "openQuestions": [
+    "Why do we use SIDPP rather than SICP for calculating kill mud weight?",
+    "What would happen if you used a kill weight lower than calculated?"
+  ],
+  "practiceProblems": [
+    {
+      "problem": "Current MW = 12.0 ppg, SIDPP = 624 psi, TVD = 12,000 ft",
+      "answer": "13.0 ppg"
+    },
+    {
+      "problem": "Current MW = 9.8 ppg, SIDPP = 200 psi, TVD = 8,000 ft",
+      "answer": "10.3 ppg"
+    },
+    {
+      "problem": "Current MW = 14.5 ppg, SIDPP = 780 psi, TVD = 15,000 ft",
+      "answer": "15.5 ppg"
+    }
+  ],
+  "examTip": "Kill MW questions appear frequently on IWCF exams. Practice until you can do these calculations quickly and accurately.",
+  "documentId": "WC-SF-107-01",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-107",
+    "WC-SF-107-01"
+  ]
+}

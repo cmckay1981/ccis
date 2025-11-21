@@ -1,0 +1,75 @@
+{
+  "templateId": "QT-GM-001",
+  "category": "OPERATIONAL_DECISIONS",
+  "title": "Gas Migration During Static Conditions",
+  "level": ["L4"],
+  "operationalFocus": "Managing pressure buildup when circulation is not possible",
+  "question": "On {{wellProfile.wellName}}, you took a {{scenario.kickVolume}} bbl gas kick at {{currentSection.settingDepth.tvd}} {{currentSection.settingDepth.unit}} TVD and shut in. SIDPP is {{scenario.sidpp}} psi and SICP is {{scenario.sicp}} psi. Due to {{scenario.reason}}, you cannot circulate for at least {{scenario.waitTime}} hours. After 1 hour static, you observe SICP has increased from {{scenario.sicp}} to {{scenario.sicpAfter1hr}} psi while SIDPP remains constant. What is happening and what is your response?",
+  "inputs": {
+    "wellProfile": {
+      "required": ["wellName"]
+    },
+    "currentSection": {
+      "from": "wellProfile.casingProgram[activeSection]",
+      "required": ["settingDepth.tvd", "maasp"]
+    },
+    "scenario": {
+      "generated": true,
+      "kickVolume": {
+        "range": [10, 30],
+        "step": 5
+      },
+      "sidpp": {
+        "range": [400, 700],
+        "step": 50
+      },
+      "sicp": {
+        "correlatedTo": "sidpp",
+        "offset": [50, 200]
+      },
+      "sicpAfter1hr": {
+        "calculated": "sicp + migration pressure",
+        "increase": [100, 400]
+      },
+      "reason": {
+        "options": ["pump repairs", "waiting on kill weight mud", "weather delays on supply boat", "BOP function test required"]
+      },
+      "waitTime": {
+        "range": [4, 12],
+        "step": 2
+      }
+    }
+  },
+  "explanation": {
+    "phenomenon": "Gas migration. The gas bubble is rising in the annulus due to buoyancy. As it rises into lower-pressure regions, it expands, displacing mud and increasing surface pressure.",
+    "sidppConstant": "SIDPP remains constant because formation pressure hasn't changed and there's no gas in the drillstring.",
+    "sicpIncreasing": "SICP increases as gas rises and expands in the annulus."
+  },
+  "correctResponse": {
+    "method": "Volumetric Well Control",
+    "steps": [
+      "Calculate pressure increase from gas migration: ΔP = new SICP - original SICP",
+      "Calculate volume to bleed: V = ΔP × Annular Capacity / (MW × 0.052)",
+      "Bleed mud through choke in small increments to maintain constant BHP",
+      "Allow pressure to build to predetermined increment (typically 100 psi)",
+      "Bleed calculated volume",
+      "Repeat until circulation is possible"
+    ]
+  },
+  "answerOptions": {
+    "A": "Open choke and bleed all pressure increase to return SICP to original value",
+    "B": "Keep well shut in - do not bleed anything until you can circulate",
+    "C": "Use volumetric method - allow controlled pressure buildup then bleed calculated volumes",
+    "D": "Open annular and let gas escape freely to surface"
+  },
+  "correctOption": "C",
+  "feedback": {
+    "correct": "Correct. Volumetric method allows you to maintain constant BHP while gas migrates. You allow pressure to build (which temporarily over-pressures BHP), then bleed a calculated volume which reduces BHP back to target. This controlled approach prevents both under-balance (kick expansion) and over-balance at the shoe.",
+    "A_feedback": "Bleeding all pressure increase would reduce BHP and allow the kick to expand further. You'd be chasing an ever-growing influx.",
+    "B_feedback": "Keeping everything shut in causes continuous pressure buildup. Eventually SICP will exceed MAASP, risking fracture at the shoe and underground blowout.",
+    "D_feedback": "Never open the annular with a kick in the well. This is an uncontrolled release."
+  },
+  "contextualTip": "With MAASP at {{currentSection.maasp}} psi and SICP now at {{scenario.sicpAfter1hr}} psi, you have {{maaspMargin}} psi before reaching shoe limits. Gas will continue migrating - at approximately {{migrationRate}} ft/hr in this mud weight. You need volumetric control.",
+  "advancedNote": "Volumetric requires good annular capacity data and discipline. Each bleed must be carefully calculated and measured. Pre-calculate your pressure increments and bleed volumes before you need them.",
+  "tags": ["gas-migration", "volumetric", "static-well", "operational", "L4", "dynamic"]
+}

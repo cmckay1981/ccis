@@ -1,0 +1,21 @@
+{
+  "moduleId": "WC-SF-106",
+  "courseId": "WC-SF",
+  "title": "Influx Characteristics",
+  "description": "Identifying influx type and predicting behavior - gas, oil, and water kicks, gas laws (Boyle's Law), gas migration rates, OBM vs WBM considerations.",
+  "order": 6,
+  "lessonIds": [
+    "WC-SF-106-01",
+    "WC-SF-106-02",
+    "WC-SF-106-03"
+  ],
+  "examWeight": "Medium",
+  "iwcfSyllabus": "PP-07",
+  "documentId": "WC-SF-106",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-106"
+  ]
+}

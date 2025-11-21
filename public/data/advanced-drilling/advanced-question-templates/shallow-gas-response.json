@@ -1,0 +1,60 @@
+{
+  "templateId": "QT-SG-001",
+  "category": "HAZARD_AWARENESS",
+  "title": "Shallow Gas Response",
+  "level": ["L3", "L4"],
+  "applicableTo": ["surface", "subsea"],
+  "triggeredBy": {
+    "hazardType": "shallow_gas",
+    "severity": ["medium", "high"]
+  },
+  "question": "On {{wellProfile.wellName}}, you are drilling the {{currentSection.section}} section at {{currentSection.settingDepth.tvd}} {{currentSection.settingDepth.unit}} TVD (above BOP installation). You observe rapid pit gain, gas at surface, and drilling fluid being blown out of the hole. What is the correct response?",
+  "inputs": {
+    "wellProfile": {
+      "required": ["wellName", "bopInfo.stackType"]
+    },
+    "currentSection": {
+      "from": "wellProfile.casingProgram[activeSection]",
+      "required": ["settingDepth.tvd", "section"]
+    },
+    "hazard": {
+      "from": "wellProfile.hazards where hazardType = 'shallow_gas'"
+    }
+  },
+  "correctSequence": [
+    "1. Stop drilling immediately",
+    "2. Pick up off bottom",
+    "3. Activate diverter (NOT BOP - you don't have one yet)",
+    "4. Divert flow overboard or to designated safe area",
+    "5. Continue pumping to maintain annular velocity and cool the wellhead",
+    "6. Prepare to abandon wellbore if uncontrollable",
+    "7. Monitor for fire/explosion hazards"
+  ],
+  "answerOptions": {
+    "A": "Shut in the well using the BOP",
+    "B": "Stop drilling, pick up, activate diverter, divert flow overboard, continue pumping",
+    "C": "Stop pumping and let the gas dissipate naturally",
+    "D": "Weight up mud and continue drilling through the gas zone"
+  },
+  "correctOption": "B",
+  "explanation": {
+    "B": "Before BOP installation, you cannot shut in. The diverter allows flow to be directed away from the rig floor. Continued pumping maintains annular velocity and prevents gas accumulation at surface.",
+    "A": "The BOP is not installed at this depth - you only have a diverter.",
+    "C": "Stopping pumping allows gas to accumulate at surface - extreme fire/explosion hazard.",
+    "D": "You cannot weight up fast enough to control a shallow gas flow. Never attempt to drill through an active shallow gas blowout."
+  },
+  "feedback": {
+    "correct": "Correct. Shallow gas before BOP installation means diverter operations only. The goal is to divert gas safely away from the rig while maintaining circulation. You CANNOT shut in - the formation is too weak and you have no BOP.",
+    "incorrect": "Before BOP installation, your only well control barrier is the diverter. You cannot shut in shallow gas - the weak formation would fracture. Divert and pump."
+  },
+  "contextualTip": "On {{wellProfile.wellName}}, shallow gas risk exists in the Pliocene sands. The conductor and surface sections are drilled before BOP installation, making shallow gas the most dangerous hazard - you cannot shut in.",
+  "hazardContext": {
+    "description": "{{hazard.description}}",
+    "mitigation": "{{hazard.mitigation}}"
+  },
+  "subsea_specific": {
+    "note": "On subsea wells, the diverter is located on the vessel. Riser disconnection may be required if the situation becomes uncontrollable."
+  },
+  "relatedLesson": "WC-SF-104-01",
+  "tags": ["shallow-gas", "diverter", "hazard", "pre-bop", "well-control", "dynamic"]
+}

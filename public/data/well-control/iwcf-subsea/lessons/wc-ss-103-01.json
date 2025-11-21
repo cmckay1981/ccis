@@ -1,0 +1,42 @@
+{
+  "lessonId": "WC-SS-103-01",
+  "moduleId": "WC-SS-103",
+  "courseId": "WC-SS",
+  "title": "What is Choke Line Friction Loss?",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "In subsea operations, the choke line runs from the BOP stack on the seafloor up to the choke manifold on the rig. This can be thousands of feet of small-diameter line. When you circulate through it, friction creates pressure loss. This Choke Line Friction Loss (CLFL) affects your readings and calculations. Unlike surface operations where the choke is close to the wellhead, subsea operations must account for CLFL in almost every calculation. If you ignore CLFL, you'll under-read the actual casing pressure at the BOP.",
+  "keyPoint": "CLFL only applies when circulating through the choke line. During static conditions (well shut-in, no circulation), CLFL = 0.",
+  "formula": {
+    "concept": "CLFL is measured by circulating at kill rate through the choke line and recording the pressure loss. This value is then added to ICP and used to adjust FCP calculations.",
+    "measurement": "Circulate at kill rate (same SPM used for SCR) through choke line and record pressure difference between drillstring and choke manifold gauges."
+  },
+  "mcq": {
+    "question": "Why is CLFL important in subsea well control but not in surface operations?",
+    "options": {
+      "A": "Subsea mud is heavier",
+      "B": "The choke line is much longer in subsea, creating significant friction loss",
+      "C": "Surface BOPs don't have choke lines",
+      "D": "CLFL only occurs in deep water"
+    },
+    "correctOption": "B",
+    "explanation": "In surface operations, the choke is close to the wellhead, so friction loss in the short choke line is negligible. In subsea operations, the choke line may be 5,000+ feet long, creating substantial friction loss that must be accounted for."
+  },
+  "openQuestions": [
+    "When does CLFL equal zero?",
+    "What problems would occur if you ignored CLFL during a subsea well kill?"
+  ],
+  "subseaTip": "CLFL values vary with pump rate (higher rate = higher CLFL) and mud weight. Always record CLFL at the same rate you'll use for the kill.",
+  "documentId": "WC-SS-103-01",
+  "tags": [
+    "well-control",
+    "subsea",
+    "deepwater",
+    "IWCF",
+    "WC-SS-103",
+    "WC-SS-103-01"
+  ]
+}

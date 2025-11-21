@@ -1,0 +1,21 @@
+{
+  "categoryId": "BOP_PULL_TREE",
+  "title": "BOP Pull & Xmas Tree Installation - AI Probing Questions",
+  "breakoutRoom": "A/B",
+  "targetParticipants": ["Subsea Engineer", "Toolpusher", "Well Control Specialist", "Completions Engineer"],
+  "questions": [
+    {"questionId": "BT-001", "question": "Your well suspension shows single mechanical plug - does this meet two-barrier policy?", "type": "verification", "focus": "Barrier policy", "expectedResponse": "Barrier element identification"},
+    {"questionId": "BT-002", "question": "Weather forecast shows potential storm in 72 hours - can you complete tree installation in that window?", "type": "assumption_challenge", "focus": "Weather contingency", "expectedResponse": "Timeline assessment vs weather"},
+    {"questionId": "BT-003", "question": "BOP has been on well for 90 days - does it require inspection before stacking?", "type": "verification", "focus": "Equipment inspection", "expectedResponse": "Inspection requirements"},
+    {"questionId": "BT-004", "question": "Tree control system is electric - confirm umbilical routing and tie-in to production controls?", "type": "verification", "focus": "Control system integration", "expectedResponse": "Umbilical and control system plan"},
+    {"questionId": "BT-005", "question": "If tree fails to latch on wellhead, what's your contingency? Can you reinstall BOP?", "type": "what_if", "focus": "Tree installation contingency", "expectedResponse": "Fallback options"},
+    {"questionId": "BT-006", "question": "Final well barrier schematic shows tubing hanger as primary barrier - has leak path been tested?", "type": "verification", "focus": "Barrier verification", "expectedResponse": "Test results"},
+    {"questionId": "BT-007", "question": "Riser pull is planned for night shift - is lighting adequate for safe operations?", "type": "verification", "focus": "Safety", "expectedResponse": "Lighting adequacy"},
+    {"questionId": "BT-008", "question": "BOP connector has been cycled 50 times - what's the maintenance interval and are you within limits?", "type": "verification", "focus": "Equipment cycles", "expectedResponse": "Cycle count vs limits"},
+    {"questionId": "BT-009", "question": "Well suspension fluid is seawater - what's your corrosion protection for extended suspension?", "type": "assumption_challenge", "focus": "Corrosion protection", "expectedResponse": "Suspension fluid selection rationale"},
+    {"questionId": "BT-010", "question": "Production handover is scheduled for same day as tree installation - is this realistic?", "type": "assumption_challenge", "focus": "Timeline realism", "expectedResponse": "Handover timeline justification"},
+    {"questionId": "BT-011", "question": "Tree ROV panel is configured for Class 2 ROV - confirm your ROV class is compatible?", "type": "verification", "focus": "Equipment compatibility", "expectedResponse": "ROV class confirmation"},
+    {"questionId": "BT-012", "question": "Emergency shutdown system requires function test after installation - what's the test procedure and acceptance criteria?", "type": "verification", "focus": "Safety system testing", "expectedResponse": "ESD test procedure"}
+  ],
+  "tags": ["dwop", "ai-questions", "bop-pull", "xmas-tree", "subsea"]
+}

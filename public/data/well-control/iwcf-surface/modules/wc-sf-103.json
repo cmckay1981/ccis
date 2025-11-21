@@ -1,0 +1,21 @@
+{
+  "moduleId": "WC-SF-103",
+  "courseId": "WC-SF",
+  "title": "Causes of Kicks",
+  "description": "Understanding why kicks occur - the two essential conditions (formation pressure exceeding wellbore pressure AND permeability) plus operational and geological causes. Builds diagnostic reasoning for preventing kicks.",
+  "order": 3,
+  "lessonIds": [
+    "WC-SF-103-01",
+    "WC-SF-103-02",
+    "WC-SF-103-03"
+  ],
+  "examWeight": "High",
+  "iwcfSyllabus": "PP-04",
+  "documentId": "WC-SF-103",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-103"
+  ]
+}

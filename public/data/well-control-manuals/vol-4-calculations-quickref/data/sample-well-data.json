@@ -1,0 +1,421 @@
+{
+  "wells": [
+    {
+      "wellId": "well-maersk-voyager-001",
+      "wellName": "Maersk Voyager - Well A-12",
+      "wellNumber": "A-12",
+      "rigName": "Maersk Voyager",
+      "organisationId": "org-metamorphic",
+      "location": {
+        "field": "North Sea Field",
+        "block": "Block 14/19",
+        "country": "United Kingdom",
+        "latitude": 58.1234,
+        "longitude": 1.5678,
+        "waterDepth": 350
+      },
+      "wellType": "development",
+      "status": "drilling",
+      "totalDepth": 11000,
+      "tvd": 10500,
+      "kickoffDepth": 3500,
+      "maxInclination": 35,
+      "currentMudWeight": 12.0,
+      "currentDepth": 8500,
+      "formationPressure": 5460,
+      "units": {
+        "system": "imperial",
+        "length": "ft",
+        "diameter": "in",
+        "volume": "bbl",
+        "mudWeight": "ppg",
+        "pressure": "psi",
+        "pumpOutput": "bbl/stk"
+      }
+    },
+    {
+      "wellId": "well-platform-echo-002",
+      "wellName": "Platform Echo - Well B-05",
+      "wellNumber": "B-05",
+      "rigName": "Platform Echo",
+      "organisationId": "org-claymore",
+      "location": {
+        "field": "Claymore Field",
+        "block": "Block 16/21",
+        "country": "United Kingdom",
+        "latitude": 58.4567,
+        "longitude": 1.8901,
+        "waterDepth": 280
+      },
+      "wellType": "producer",
+      "status": "completed",
+      "totalDepth": 9850,
+      "tvd": 9500,
+      "kickoffDepth": 3000,
+      "maxInclination": 28,
+      "currentMudWeight": 11.5,
+      "currentDepth": 9850,
+      "units": {
+        "system": "imperial",
+        "length": "ft",
+        "diameter": "in",
+        "volume": "bbl",
+        "mudWeight": "ppg",
+        "pressure": "psi",
+        "pumpOutput": "bbl/stk"
+      }
+    }
+  ],
+  "stringConfigurations": [
+    {
+      "configId": "string-001",
+      "wellId": "well-maersk-voyager-001",
+      "configName": "Initial String - Surface Hole",
+      "description": "Surface hole drilling BHA",
+      "isActive": true,
+      "components": [
+        {
+          "order": 1,
+          "componentType": "drill-pipe",
+          "name": "5\" Drill Pipe",
+          "od": 5.0,
+          "id": 4.276,
+          "length": 10000,
+          "weight": 19.5,
+          "capacity": 0.01776,
+          "volume": 177.6,
+          "displacement": 264.4
+        },
+        {
+          "order": 2,
+          "componentType": "hwdp",
+          "name": "5\" HWDP",
+          "od": 5.0,
+          "id": 3.0,
+          "length": 500,
+          "weight": 49.3,
+          "capacity": 0.00875,
+          "volume": 4.375,
+          "displacement": 33.41
+        },
+        {
+          "order": 3,
+          "componentType": "drill-collar",
+          "name": "6-1/2\" Drill Collar",
+          "od": 6.5,
+          "id": 2.5,
+          "length": 500,
+          "weight": 107.5,
+          "capacity": 0.00607,
+          "volume": 3.035,
+          "displacement": 72.865
+        }
+      ],
+      "totalLength": 11000,
+      "totalVolume": 185.01,
+      "totalDisplacement": 370.675,
+      "totalStrokes": 1582,
+      "pumpData": {
+        "pumpOutput": 0.117,
+        "pumpRate": 60,
+        "pumpTime": 26
+      }
+    },
+    {
+      "configId": "string-002",
+      "wellId": "well-maersk-voyager-001",
+      "configName": "Production Hole BHA",
+      "description": "Final production hole configuration",
+      "isActive": false,
+      "components": [
+        {
+          "order": 1,
+          "componentType": "drill-pipe",
+          "name": "5\" Drill Pipe",
+          "od": 5.0,
+          "id": 4.276,
+          "length": 7500,
+          "weight": 19.5,
+          "capacity": 0.01776,
+          "volume": 133.2,
+          "displacement": 198.3
+        },
+        {
+          "order": 2,
+          "componentType": "hwdp",
+          "name": "5\" HWDP",
+          "od": 5.0,
+          "id": 3.0,
+          "length": 300,
+          "weight": 49.3,
+          "capacity": 0.00875,
+          "volume": 2.625,
+          "displacement": 20.046
+        },
+        {
+          "order": 3,
+          "componentType": "drill-collar",
+          "name": "8\" Drill Collar",
+          "od": 8.0,
+          "id": 3.0,
+          "length": 300,
+          "weight": 147.0,
+          "capacity": 0.00875,
+          "volume": 2.625,
+          "displacement": 59.781
+        }
+      ],
+      "totalLength": 8100,
+      "totalVolume": 138.45,
+      "totalDisplacement": 278.127,
+      "totalStrokes": 1183,
+      "pumpData": {
+        "pumpOutput": 0.117,
+        "pumpRate": 60,
+        "pumpTime": 20
+      }
+    }
+  ],
+  "wellSections": [
+    {
+      "sectionId": "sections-001",
+      "wellId": "well-maersk-voyager-001",
+      "configName": "Current Well Configuration",
+      "isActive": true,
+      "sections": [
+        {
+          "order": 1,
+          "sectionType": "conductor",
+          "name": "36\" Conductor",
+          "holeID": 36.0,
+          "stringOD": 5.0,
+          "topDepth": 0,
+          "bottomDepth": 200,
+          "length": 200,
+          "casingOD": 36.0,
+          "annularCapacity": 1.2351,
+          "annularVolume": 247.02,
+          "strokes": 2111
+        },
+        {
+          "order": 2,
+          "sectionType": "surface-casing",
+          "name": "20\" Surface Casing",
+          "holeID": 19.124,
+          "stringOD": 5.0,
+          "topDepth": 200,
+          "bottomDepth": 3000,
+          "length": 2800,
+          "casingWeight": 94.0,
+          "casingGrade": "K-55",
+          "casingOD": 20.0,
+          "annularCapacity": 0.3308,
+          "annularVolume": 926.24,
+          "strokes": 7918
+        },
+        {
+          "order": 3,
+          "sectionType": "intermediate-casing",
+          "name": "13-3/8\" Intermediate Casing",
+          "holeID": 12.415,
+          "stringOD": 5.0,
+          "topDepth": 3000,
+          "bottomDepth": 8000,
+          "length": 5000,
+          "casingWeight": 61.0,
+          "casingGrade": "N-80",
+          "casingOD": 13.375,
+          "annularCapacity": 0.1256,
+          "annularVolume": 628.0,
+          "strokes": 5368
+        },
+        {
+          "order": 4,
+          "sectionType": "open-hole",
+          "name": "8-1/2\" Open Hole",
+          "holeID": 8.5,
+          "stringOD": 5.0,
+          "topDepth": 8000,
+          "bottomDepth": 10500,
+          "length": 2500,
+          "annularCapacity": 0.0459,
+          "annularVolume": 114.75,
+          "strokes": 981
+        },
+        {
+          "order": 5,
+          "sectionType": "open-hole",
+          "name": "8-1/2\" OH with DC",
+          "holeID": 8.5,
+          "stringOD": 6.5,
+          "topDepth": 10500,
+          "bottomDepth": 11000,
+          "length": 500,
+          "annularCapacity": 0.0330,
+          "annularVolume": 16.5,
+          "strokes": 141
+        }
+      ],
+      "totalAnnularVolume": 1932.51,
+      "totalStrokes": 16519,
+      "totalCirculationTime": 275
+    }
+  ],
+  "killSheets": [
+    {
+      "killSheetId": "kill-001",
+      "wellId": "well-maersk-voyager-001",
+      "stringConfigId": "string-001",
+      "wellSectionsId": "sections-001",
+      "sheetName": "Kill Sheet - 8500ft Kick",
+      "method": "drillers-method",
+      "status": "active",
+      "kickData": {
+        "timestamp": "2025-11-21T10:30:00Z",
+        "sidpp": 500,
+        "sicp": 650,
+        "pitGain": 20,
+        "flowRateBeforeShutIn": 450,
+        "mudWeightIn": 12.0,
+        "mudWeightOut": 12.2
+      },
+      "wellData": {
+        "bitDepth": 8500,
+        "tvd": 8200,
+        "currentMudWeight": 12.0,
+        "scr": 800,
+        "scrRate": 30
+      },
+      "shoeData": {
+        "shoeTVD": 7800,
+        "shoeMD": 8000,
+        "lotPressure": 5900,
+        "lotEMW": 14.5,
+        "shoeTestPressure": 5500,
+        "fractureGradient": 15.2
+      },
+      "calculations": {
+        "formationPressure": 5612,
+        "killMudWeight": 13.17,
+        "icp": 1300,
+        "fcp": 878,
+        "maasp": 555,
+        "strokesToBit": 1582,
+        "strokesBottomsUp": 18101,
+        "killMudVolume": 2117.52,
+        "pressureSteps": []
+      },
+      "notes": [
+        "Gas kick detected at 8500ft",
+        "Shut in on BOP annular",
+        "SIDPP stabilized after 15 minutes",
+        "Preparing for Driller's Method kill operation"
+      ]
+    }
+  ],
+  "bopConfigurations": [
+    {
+      "bopConfigId": "bop-001",
+      "wellId": "well-maersk-voyager-001",
+      "rigName": "Maersk Voyager",
+      "stackType": "subsea",
+      "manufacturer": "Cameron",
+      "model": "CAM-18-3/4-15K",
+      "components": [
+        {
+          "order": 1,
+          "componentType": "connector",
+          "manufacturer": "Cameron",
+          "model": "Wellhead Connector",
+          "size": "18-3/4\"",
+          "workingPressure": 15000,
+          "ratedPressure": 15000
+        },
+        {
+          "order": 2,
+          "componentType": "pipe-ram",
+          "manufacturer": "Cameron",
+          "model": "Type U",
+          "size": "18-3/4\"",
+          "workingPressure": 15000,
+          "ratedPressure": 15000,
+          "pipeSize": "5-1/2\"",
+          "lastTestDate": "2025-11-15T08:00:00Z",
+          "lastTestPressure": 15000,
+          "testPassed": true
+        },
+        {
+          "order": 3,
+          "componentType": "pipe-ram",
+          "manufacturer": "Cameron",
+          "model": "Type U",
+          "size": "18-3/4\"",
+          "workingPressure": 15000,
+          "ratedPressure": 15000,
+          "pipeSize": "5\"",
+          "lastTestDate": "2025-11-15T08:30:00Z",
+          "lastTestPressure": 15000,
+          "testPassed": true
+        },
+        {
+          "order": 4,
+          "componentType": "blind-shear-ram",
+          "manufacturer": "Cameron",
+          "model": "BSR",
+          "size": "18-3/4\"",
+          "workingPressure": 15000,
+          "ratedPressure": 15000,
+          "lastTestDate": "2025-11-15T09:00:00Z",
+          "lastTestPressure": 15000,
+          "testPassed": true
+        },
+        {
+          "order": 5,
+          "componentType": "annular",
+          "manufacturer": "Hydril",
+          "model": "GK",
+          "size": "18-3/4\"",
+          "workingPressure": 10000,
+          "ratedPressure": 10000,
+          "lastTestDate": "2025-11-15T09:30:00Z",
+          "lastTestPressure": 5000,
+          "testPassed": true
+        },
+        {
+          "order": 6,
+          "componentType": "connector",
+          "manufacturer": "Cameron",
+          "model": "LMRP Connector",
+          "size": "18-3/4\"",
+          "workingPressure": 15000,
+          "ratedPressure": 15000
+        }
+      ],
+      "controlSystem": {
+        "type": "multiplex",
+        "accumulatorCapacity": 320,
+        "accumulatorPressure": 3000,
+        "fluidType": "Water-based"
+      },
+      "killChoke": {
+        "killLineSize": "4\"",
+        "killLineRating": 15000,
+        "chokeLineSize": "4\"",
+        "chokeLineRating": 15000,
+        "chokeManifoldType": "Swaco MD-3"
+      },
+      "subsea": {
+        "waterDepth": 350,
+        "lmrpConnector": "Cameron H4",
+        "wellheadConnector": "Cameron DWC-XT",
+        "flexJointAngle": 10,
+        "riserSize": "21\"",
+        "riserPressureRating": 5000
+      },
+      "installDate": "2025-06-01T00:00:00Z",
+      "lastServiceDate": "2025-10-15T00:00:00Z",
+      "nextServiceDue": "2026-04-15T00:00:00Z",
+      "certificationExpiry": "2026-12-31T00:00:00Z"
+    }
+  ]
+}

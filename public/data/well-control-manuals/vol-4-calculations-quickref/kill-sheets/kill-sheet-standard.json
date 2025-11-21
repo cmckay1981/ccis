@@ -1,0 +1,113 @@
+{
+  "sheetId": "kill-sheet-standard",
+  "title": "Standard Kill Sheet",
+  "description": "Kill sheet for surface and shallow water operations",
+  "instructions": "Complete this kill sheet before commencing kill operations. Update whenever well conditions change.",
+  "sections": {
+    "wellData": {
+      "title": "Well Data",
+      "fields": [
+        {"label": "Well Name", "value": "", "unit": ""},
+        {"label": "Current Depth (MD)", "value": "", "unit": "ft"},
+        {"label": "Current Depth (TVD)", "value": "", "unit": "ft"},
+        {"label": "Casing Shoe Depth (TVD)", "value": "", "unit": "ft"},
+        {"label": "LOT/FIT at Shoe", "value": "", "unit": "ppg EMW"},
+        {"label": "Current Mud Weight", "value": "", "unit": "ppg"}
+      ]
+    },
+    "shutInData": {
+      "title": "Shut-In Data",
+      "fields": [
+        {"label": "SIDPP", "value": "", "unit": "psi"},
+        {"label": "SICP", "value": "", "unit": "psi"},
+        {"label": "Pit Gain", "value": "", "unit": "bbl"},
+        {"label": "Time of Shut-In", "value": "", "unit": ""}
+      ]
+    },
+    "killCalculations": {
+      "title": "Kill Calculations",
+      "calculations": [
+        {
+          "label": "Formation Pressure",
+          "formula": "SIDPP + (MW × 0.052 × TVD)",
+          "calculation": "___ + (___ × 0.052 × ___) = ___",
+          "unit": "psi"
+        },
+        {
+          "label": "Kill Weight Mud",
+          "formula": "MW + (SIDPP ÷ 0.052 ÷ TVD)",
+          "calculation": "___ + (___ ÷ 0.052 ÷ ___) = ___",
+          "unit": "ppg"
+        },
+        {
+          "label": "MAASP",
+          "formula": "(LOT - KWM) × 0.052 × Shoe TVD",
+          "calculation": "(___ - ___) × 0.052 × ___ = ___",
+          "unit": "psi"
+        }
+      ]
+    },
+    "pumpData": {
+      "title": "Pump Data",
+      "fields": [
+        {"label": "Kill Rate", "value": "", "unit": "spm"},
+        {"label": "Pump Output at Kill Rate", "value": "", "unit": "bbl/stk"},
+        {"label": "SCR Pressure at Kill Rate (Original MW)", "value": "", "unit": "psi"}
+      ]
+    },
+    "circulatingPressures": {
+      "title": "Circulating Pressures",
+      "calculations": [
+        {
+          "label": "Initial Circulating Pressure (ICP)",
+          "formula": "SCR + SIDPP",
+          "calculation": "___ + ___ = ___",
+          "unit": "psi"
+        },
+        {
+          "label": "Final Circulating Pressure (FCP)",
+          "formula": "SCR × (KWM ÷ Original MW)",
+          "calculation": "___ × (___ ÷ ___) = ___",
+          "unit": "psi"
+        }
+      ]
+    },
+    "strokeData": {
+      "title": "Stroke Data",
+      "sections": [
+        {
+          "subtitle": "Drillstring Volume",
+          "items": [
+            {"component": "DP", "length": "", "capacity": "", "volume": "", "strokes": ""},
+            {"component": "HWDP", "length": "", "capacity": "", "volume": "", "strokes": ""},
+            {"component": "DC", "length": "", "capacity": "", "volume": "", "strokes": ""}
+          ],
+          "total": {"label": "Total Strokes to Bit", "value": ""}
+        },
+        {
+          "subtitle": "Annulus Volume",
+          "items": [
+            {"component": "DC × OH", "length": "", "capacity": "", "volume": "", "strokes": ""},
+            {"component": "HWDP × OH", "length": "", "capacity": "", "volume": "", "strokes": ""},
+            {"component": "DP × OH", "length": "", "capacity": "", "volume": "", "strokes": ""},
+            {"component": "DP × Casing", "length": "", "capacity": "", "volume": "", "strokes": ""}
+          ],
+          "total": {"label": "Total Annulus Strokes", "value": ""}
+        }
+      ],
+      "grandTotal": {"label": "Total Kill Strokes", "value": ""}
+    },
+    "pressureSchedule": {
+      "title": "Drillpipe Pressure Schedule (Wait & Weight)",
+      "note": "Linear reduction from ICP to FCP over strokes to bit",
+      "table": [
+        {"strokes": "0", "dpPressure": "ICP = ___"},
+        {"strokes": "", "dpPressure": ""},
+        {"strokes": "", "dpPressure": ""},
+        {"strokes": "", "dpPressure": ""},
+        {"strokes": "", "dpPressure": ""},
+        {"strokes": "At Bit = ___", "dpPressure": "FCP = ___"}
+      ]
+    }
+  }
+}

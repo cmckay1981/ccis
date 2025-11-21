@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-TW-01",
+  "moduleId": "HRO-HP-ESS-TW",
+  "courseId": "HRO-HP-ESS",
+  "title": "Teams vs Groups",
+  "type": "lesson",
+  "content": "A team is more than a group of people working in the same area. Teams have shared goals, interdependent tasks, and coordinated effort—each member's success depends on others. Groups can work in parallel with minimal coordination; teams must actively integrate their work. Understanding this distinction determines what coordination behaviors are necessary.",
+  "mcq": {
+    "question": "Five technicians work in the same facility, each handling their own customers independently. They share a break room and occasionally help each other. Are they a team or a group?",
+    "options": {
+      "A": "Team—they share a workspace and goals",
+      "B": "Group—their work is independent, not interdependent",
+      "C": "Team—they occasionally collaborate",
+      "D": "Neither—this is just coworkers"
+    },
+    "correctOption": "B",
+    "explanation": "Despite shared space and occasional help, their core work is independent—one technician's success doesn't depend on coordinating with others. This is a group. A team would have interdependent tasks where coordination is essential to success."
+  },
+  "openQuestions": [
+    "Is your current work unit more of a team or a group? What makes you classify it that way?",
+    "What would need to change for a group in your organization to function as a true team?"
+  ]
+}

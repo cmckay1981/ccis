@@ -1,0 +1,68 @@
+{
+  "lessonId": "WC-SF-101-02",
+  "moduleId": "WC-SF-101",
+  "courseId": "WC-SF",
+  "title": "Pressure Gradients",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "Pressure gradient tells you how fast pressure increases with depth\u2014measured in psi per foot. Normal formation pressure gradient is 0.433-0.465 psi/ft (equivalent to 8.33-8.95 ppg). Above this range is abnormal (overpressured). Below is subnormal (underpressured). Knowing the gradient helps you predict pressures before you drill.",
+  "multiSensoryExplanations": {
+    "visual": "Think of gradient as the steepness of a hill. A gentle slope (low gradient) rises slowly\u2014you climb 1 foot, pressure increases a little. A steep slope (high gradient) rises quickly\u2014same climb, much more pressure increase. Abnormal pressure zones are like suddenly hitting a cliff.",
+    "auditory": "Gradient = rate of change. Say it: 'How FAST does pressure GROW?' Normal water: 0.433 psi for every foot. Heavy mud: 0.624 psi for every foot. The number tells you the rate.",
+    "kinesthetic": "Stack books on your hand, one at a time. Normal gradient: each book adds the same small weight. Abnormal gradient: suddenly someone drops a whole shelf of books at once. You feel the difference in how pressure accumulates.",
+    "storyBased": "A geologist told me: 'Normal pressure is easy\u2014it's just the weight of water from surface to depth. Abnormal pressure happens when fluids get trapped and squeezed by the rock above them. They can't escape, so they build up pressure beyond what depth alone would create.'"
+  },
+  "analogy": "The Water Tank: A tank 100 ft tall filled with water has a certain pressure at the bottom (normal). Now seal the top and pump in extra air\u2014the bottom pressure increases beyond what the water height alone would create. That's abnormal pressure\u2014trapped fluids under compression.",
+  "keyValues": {
+    "normalFreshwater": "0.433 psi/ft (8.33 ppg)",
+    "normalSaltwater": "0.465 psi/ft (8.95 ppg)",
+    "typicalMudRange": "0.52-0.78 psi/ft (10-15 ppg)",
+    "abnormal": "> 0.465 psi/ft (higher than normal water column would create)",
+    "subnormal": "< 0.433 psi/ft (lower than normal\u2014depleted zones)"
+  },
+  "formula": {
+    "equation": "Gradient (psi/ft) = MW (ppg) \u00d7 0.052",
+    "example": "12.0 ppg \u00d7 0.052 = 0.624 psi/ft"
+  },
+  "mcq": {
+    "question": "What is the normal formation pressure gradient range for saltwater?",
+    "options": {
+      "A": "0.300-0.400 psi/ft",
+      "B": "0.433-0.465 psi/ft",
+      "C": "0.500-0.600 psi/ft",
+      "D": "0.700-0.800 psi/ft"
+    },
+    "correctOption": "B",
+    "explanation": "Normal formation pressure equals the pressure from a column of formation water (fresh or salt). Freshwater: 0.433 psi/ft. Saltwater: up to 0.465 psi/ft. Anything higher is abnormal."
+  },
+  "advancedQuestion": {
+    "question": "You're drilling at 10,000 ft TVD with 10.5 ppg mud. Formation pressure is estimated at 5,500 psi. Is this formation normally pressured, abnormally pressured, or subnormally pressured?",
+    "answer": "Calculate: Normal pressure = 0.465 \u00d7 10,000 = 4,650 psi (max normal). Actual formation: 5,500 psi. 5,500 > 4,650, so ABNORMALLY pressured. The formation pressure is higher than what a normal water column would create at this depth.",
+    "l4Focus": "Interpreting formation pressure relative to normal gradient is essential for well planning."
+  },
+  "commonMisconception": {
+    "wrong": "Higher mud weight always means abnormal pressure.",
+    "correct": "Mud weight is what WE choose. Formation pressure gradient is what the FORMATION has. We use mud weight higher than formation gradient to maintain overbalance. High mud weight doesn't mean abnormal pressure\u2014it means we're providing extra overbalance."
+  },
+  "practiceProblems": [
+    {
+      "problem": "What is the pressure gradient for 11.0 ppg mud?",
+      "answer": "0.572 psi/ft"
+    },
+    {
+      "problem": "Formation pressure is 7,000 psi at 12,000 ft TVD. What is the equivalent gradient? Is this normal or abnormal?",
+      "answer": "7,000 \u00f7 12,000 = 0.583 psi/ft. This exceeds normal (0.465), so ABNORMAL."
+    }
+  ],
+  "documentId": "WC-SF-101-02",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-101",
+    "WC-SF-101-02"
+  ]
+}

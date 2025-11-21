@@ -1,0 +1,150 @@
+{
+  "documentId": "digital-manuals",
+  "collectionId": "digital-manuals",
+  "title": "Digital Manual Generation Service",
+  "provider": "Claymore & Colt",
+  "description": "Tiered digital manual system for MPD and well control operations. Four levels from corporate policy to rig floor quick reference cards. All manuals are digital-first with search, cross-linking, and offline capability.",
+  "tieredStructure": {
+    "level1": {
+      "name": "Corporate Policy Manual",
+      "purpose": "Philosophy, authority, training requirements, compliance standards",
+      "audience": "Management, HSE, Compliance, All Personnel",
+      "updateFrequency": "Annual or regulatory change",
+      "format": "Digital document with approval workflow"
+    },
+    "level2": {
+      "name": "Rig-Specific Equipment Manual",
+      "purpose": "Equipment specs, maintenance procedures, operational limits, troubleshooting",
+      "audience": "Rig crew, MPD operators, Maintenance",
+      "updateFrequency": "Equipment change or rig mobilization",
+      "format": "Digital document with equipment diagrams"
+    },
+    "level3": {
+      "name": "Well-Specific JOM",
+      "purpose": "Operations matrix, procedures, PPFG, contingencies, kill sheets",
+      "audience": "Drilling team, Well site personnel",
+      "updateFrequency": "Per well, updated as conditions change",
+      "format": "Digital document with well data integration"
+    },
+    "level4": {
+      "name": "Quick Reference Cards",
+      "purpose": "Single-page procedures for rig floor use, emergency response",
+      "audience": "Drillers, Floormen, All rig personnel",
+      "updateFrequency": "Synced with parent documents",
+      "format": "Digital cards, swipeable, large text, color-coded"
+    }
+  },
+  "digitalFeatures": {
+    "search": {
+      "fullText": true,
+      "crossDocument": true,
+      "recentSearches": true
+    },
+    "navigation": {
+      "tableOfContents": true,
+      "breadcrumbs": true,
+      "crossLinks": "Links between related sections across all levels",
+      "bookmarks": "User-defined bookmarks"
+    },
+    "offline": {
+      "downloadable": true,
+      "syncOnConnect": true,
+      "offlineEditing": false
+    },
+    "accessibility": {
+      "largeTextMode": true,
+      "highContrast": true,
+      "nightMode": "Red-shifted for night operations"
+    },
+    "integration": {
+      "wellDataFeed": "Live well data injection into procedures",
+      "notificationAlerts": "Updates pushed to users",
+      "auditTrail": "Track document access and acknowledgments"
+    }
+  },
+  "templates": {
+    "level1": [
+      {
+        "templateId": "L1-MPD-POLICY",
+        "title": "MPD Corporate Policy Manual",
+        "file": "templates/l1-mpd-policy.json"
+      },
+      {
+        "templateId": "L1-WELLCONTROL-POLICY",
+        "title": "Well Control Corporate Policy Manual",
+        "file": "templates/l1-wellcontrol-policy.json"
+      }
+    ],
+    "level2": [
+      {
+        "templateId": "L2-MPD-EQUIPMENT",
+        "title": "MPD Equipment Manual",
+        "file": "templates/l2-mpd-equipment.json"
+      },
+      {
+        "templateId": "L2-BOP-EQUIPMENT",
+        "title": "BOP Equipment Manual",
+        "file": "templates/l2-bop-equipment.json"
+      }
+    ],
+    "level3": [
+      {
+        "templateId": "L3-MPD-JOM",
+        "title": "MPD Joint Operations Manual",
+        "file": "templates/l3-mpd-jom.json"
+      },
+      {
+        "templateId": "L3-WELLCONTROL-JOM",
+        "title": "Well Control JOM",
+        "file": "templates/l3-wellcontrol-jom.json"
+      }
+    ],
+    "level4": [
+      {
+        "templateId": "L4-MPD-CARDS",
+        "title": "MPD Quick Reference Cards",
+        "file": "templates/l4-mpd-quick-ref.json"
+      },
+      {
+        "templateId": "L4-WELLCONTROL-CARDS",
+        "title": "Well Control Quick Reference Cards",
+        "file": "templates/l4-wellcontrol-quick-ref.json"
+      },
+      {
+        "templateId": "L4-EMERGENCY-CARDS",
+        "title": "Emergency Response Cards",
+        "file": "templates/l4-emergency-cards.json"
+      }
+    ]
+  },
+  "crossLinkingSchema": {
+    "description": "All documents cross-reference related content across levels",
+    "example": {
+      "L4_KickResponse": {
+        "linksTo": [
+          "L3_JOM_Section10_WellControl",
+          "L1_Policy_Section2_DrillerAuthority",
+          "L2_Equipment_Section5_Chokes"
+        ]
+      }
+    }
+  },
+  "outputFormats": [
+    {
+      "format": "HTML",
+      "description": "Interactive web-based with full navigation and search",
+      "features": ["Responsive", "Offline PWA", "Search", "Bookmarks", "Night mode"]
+    },
+    {
+      "format": "PDF",
+      "description": "Print-ready controlled documents",
+      "features": ["Revision control", "Watermarks", "Page numbers", "Approval signatures"]
+    }
+  ],
+  "relatedProducts": {
+    "certification": "well-control",
+    "advancedTraining": "advanced-drilling"
+  },
+  "serviceType": "Client Deliverable",
+  "tags": ["digital-manuals", "tiered-documentation", "mpd", "well-control", "client-service"]
+}

@@ -1,0 +1,323 @@
+{
+  "documentId": "KILL_PROBLEMS",
+  "collectionId": "questionBank",
+  "categoryKey": "KILL_PROBLEMS",
+  "title": "Kill Problems & Troubleshooting",
+  "moduleAlignment": [
+    "WC-SF-109"
+  ],
+  "questionCount": 24,
+  "l3Count": 5,
+  "l4Count": 19,
+  "questions": [
+    {
+      "id": "EX9-Q1",
+      "level": "L3",
+      "question": "Pump failure during circulation. First action?",
+      "options": {
+        "A": "Shut well in",
+        "B": "Fix pump ASAP",
+        "C": "Change to pump No. 2",
+        "D": "Divert well"
+      },
+      "correctAnswer": "A",
+      "explanation": "First: secure the well. Shut in to trap pressure and maintain BHP. Then troubleshoot pump while well is safely controlled."
+    },
+    {
+      "id": "EX9-Q2",
+      "level": "L4",
+      "question": "Kelly hose splits during kill. First action?",
+      "options": {
+        "A": "Close shear rams",
+        "B": "Prepare reverse circulate",
+        "C": "Stop pump; close string valve; close choke",
+        "D": "Stop pump; close choke; close string valve"
+      },
+      "correctAnswer": "C",
+      "explanation": "Stop pump immediately. Close STRING VALVE first to prevent backflow up the split hose, then close choke to trap pressure. Order matters!"
+    },
+    {
+      "id": "EX9-Q3",
+      "level": "L3",
+      "question": "How to detect losses during kill?",
+      "options": {
+        "A": "Monitoring spm",
+        "B": "Monitoring pit level",
+        "C": "Monitoring flowline return",
+        "D": "Monitoring hook load"
+      },
+      "correctAnswer": "B",
+      "explanation": "Losses = mud going into formation. Pit level drops. SPM stays same (pumping); flowline shows what comes back (but doesn't show what's lost downhole)."
+    },
+    {
+      "id": "EX9-Q4",
+      "level": "L3",
+      "question": "Danger of MGS pressure buildup?",
+      "options": {
+        "A": "Gas enters shale shaker area",
+        "B": "Affects DP pressure",
+        "C": "Increases lost circulation risk",
+        "D": "Gas blown along vent line"
+      },
+      "correctAnswer": "A",
+      "explanation": "MGS over-pressure forces gas out at mud discharge, into shaker area\u2014occupied workspace. Explosion/H2S risk. Doesn't affect downhole conditions or vent line."
+    },
+    {
+      "id": "EX9-Q5",
+      "level": "L4",
+      "question": "How to detect losses during second Driller's circulation? (SELECT TWO)",
+      "options": {
+        "A": "Return flow decreasing",
+        "B": "Pit level decreasing",
+        "C": "Opening choke for FCP",
+        "D": "Closing choke for FCP"
+      },
+      "correctAnswers": [
+        "B",
+        "D"
+      ],
+      "explanation": "Losses: Pit level drops (B) as mud goes to formation. Must CLOSE choke to maintain FCP (D)\u2014less mud returning requires more backpressure.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX9-Q6",
+      "level": "L4",
+      "question": "Pump leaking but DP pressure held constant. BHP effect?",
+      "options": {
+        "A": "Increase",
+        "B": "Stay constant",
+        "C": "Decrease"
+      },
+      "correctAnswer": "A",
+      "explanation": "Leak means less flow reaching annulus. If you're closing choke to maintain DP pressure, you're adding backpressure beyond what reduced flow requires. BHP increases."
+    },
+    {
+      "id": "EX9-Q7",
+      "level": "L4",
+      "question": "Plugged drill pipe - what can't you calculate? (SELECT TWO)",
+      "options": {
+        "A": "Shoe pressure",
+        "B": "Formation pressure",
+        "C": "Hydrostatic pressure",
+        "D": "Fracture pressure",
+        "E": "Kill mud weight"
+      },
+      "correctAnswers": [
+        "B",
+        "E"
+      ],
+      "explanation": "Plugged pipe = no SIDPP = can't determine formation pressure (B) or kill mud weight (E). Hydrostatic known from mud weight. Fracture from LOT. Shoe calculated from known values.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX9-Q8",
+      "level": "L4",
+      "question": "Pressures build then drop before stabilising. Cause?",
+      "options": {
+        "A": "Weak formation breakdown",
+        "B": "String washout",
+        "C": "Gauge problem",
+        "D": "Annulus packed off",
+        "E": "Salt water influx migration"
+      },
+      "correctAnswer": "A",
+      "explanation": "Build (pressure increasing) then drop (formation fractures, fluid flows in) = weak zone breakdown. Serious situation requiring modified approach."
+    },
+    {
+      "id": "EX9-Q9",
+      "level": "L4",
+      "question": "Choke adjusted +150 psi. Effect on shoe pressure, BHP, choke pressure?",
+      "answer": {
+        "shoe_pressure": "Increase",
+        "BHP": "Increase",
+        "choke_pressure": "Increase"
+      },
+      "explanation": "More choke restriction = more backpressure everywhere. All pressures downstream of choke increase (transmitted through fluid column)."
+    },
+    {
+      "id": "EX9-Q10",
+      "level": "L4",
+      "question": "How to recognize choke washout?",
+      "options": {
+        "A": "DP pressure increases; casing constant",
+        "B": "Casing pressure increases; DP constant",
+        "C": "Closing choke for pressure maintenance",
+        "D": "Opening choke for pressure maintenance"
+      },
+      "correctAnswer": "C",
+      "explanation": "Washout = erosion opening choke. Pressure drops. Must continually CLOSE to maintain target. If opening = plugging, opposite problem."
+    },
+    {
+      "id": "EX9-Q11",
+      "level": "L3",
+      "question": "SPM increased. Casing pressure action?",
+      "options": {
+        "A": "Allow increase",
+        "B": "Allow decrease",
+        "C": "Hold constant"
+      },
+      "correctAnswer": "C",
+      "explanation": "Casing pressure reflects BHP. Changing pump speed shouldn't change BHP. Adjust choke to hold casing constant despite SPM change."
+    },
+    {
+      "id": "EX9-Q12",
+      "level": "L4",
+      "question": "How to recognize choke plugging?",
+      "options": {
+        "A": "Pump pressure decrease; no casing change",
+        "B": "Continually open choke",
+        "C": "Casing pressure decrease; no pump change",
+        "D": "Continually close choke"
+      },
+      "correctAnswer": "D",
+      "explanation": "Plugging restricts flow. Pressure builds. Must continually CLOSE (reduce opening) to compensate for natural restriction. Wait\u2014that's backwards. Plugging BUILDS pressure, so you OPEN to relieve. If CLOSING = washout."
+    },
+    {
+      "id": "EX9-Q13",
+      "level": "L4",
+      "question": "String washout - choke closed to maintain pressure. BHP effect?",
+      "options": {
+        "A": "Decrease",
+        "B": "Remain constant",
+        "C": "Increase"
+      },
+      "correctAnswer": "C",
+      "explanation": "Washout reduces circulating pressure. Closing choke adds backpressure. If you're closing to maintain DP (which is artificially low from washout), you're over-pressuring annulus. BHP increases."
+    },
+    {
+      "id": "EX9-Q14",
+      "level": "L4",
+      "question": "String washout, no choke adjustment. What changes?",
+      "options": {
+        "A": "MAASP",
+        "B": "Pump pressure at kill rate",
+        "C": "Formation fracture pressure",
+        "D": "Casing pressure"
+      },
+      "correctAnswer": "D",
+      "explanation": "Washout reduces system resistance. With constant pump rate and no choke adjustment, casing pressure drops (less restriction). DP pressure also drops. MAASP and frac P are well properties\u2014unchanged."
+    },
+    {
+      "id": "EX9-Q15",
+      "level": "L4",
+      "question": "SICP 0 psi, SIDPP 435 psi, no annulus flow. Cause?",
+      "options": {
+        "A": "Well swabbed",
+        "B": "Hole packed off around BHA",
+        "C": "Formation at shoe fractured",
+        "D": "Drill string twisted off",
+        "E": "Choke gauge failed"
+      },
+      "correctAnswer": "B",
+      "explanation": "SIDPP exists (formation pressure) but SICP = 0 (annulus not seeing it) with no flow = packed off. Pressure trapped in DS, not transmitted to annulus."
+    },
+    {
+      "id": "EX9-Q16",
+      "level": "L4",
+      "question": "Small losses during kill. How to reduce weak zone pressure?",
+      "options": {
+        "A": "Reduce kill fluid viscosity",
+        "B": "Reduce pump speed; keep BHP near formation pressure",
+        "C": "Stop circulation; shut in; manage via Volumetric Method"
+      },
+      "correctAnswer": "B",
+      "explanation": "Small losses = marginal situation. Reduce pump speed (less friction, less pressure). Keep BHP just above formation (minimum safe overbalance). Don't stop unless losses worsen."
+    },
+    {
+      "id": "EX9-Q17",
+      "level": "L4",
+      "question": "Nozzle plugged. BHP effect if no action taken?",
+      "options": {
+        "A": "Increase",
+        "B": "Decrease",
+        "C": "Constant"
+      },
+      "correctAnswer": "C",
+      "explanation": "Nozzle plugging changes WHERE pressure is lost (more at bit, less below). BHP at formation unchanged if total system pressure maintained by choke adjustment."
+    },
+    {
+      "id": "EX9-Q18",
+      "level": "L4",
+      "question": "Choke washout recognition?",
+      "options": {
+        "A": "DP and casing both falling",
+        "B": "Casing increases; DP constant",
+        "C": "DP and casing both rising",
+        "D": "DP increases; casing constant"
+      },
+      "correctAnswer": "A",
+      "explanation": "Washout = erosion = bigger opening = less restriction = pressures DROP. Both DP and casing fall as backpressure bleeds off through eroded choke."
+    },
+    {
+      "id": "EX9-Q19",
+      "level": "L4",
+      "question": "Kill at 35 spm (DP 700, Casing 1000). Speed drops to 25 spm, holding casing at 1000. BHP?",
+      "options": {
+        "A": "Decrease",
+        "B": "Stay same",
+        "C": "Increase"
+      },
+      "correctAnswer": "A",
+      "explanation": "Lower speed = less friction = less circulating ECD. If casing held constant (not increased to compensate), BHP actually decreases. Should let casing rise to maintain BHP."
+    },
+    {
+      "id": "EX9-Q20",
+      "level": "L4",
+      "question": "Casing approaching MAASP, influx still in open hole. Action?",
+      "options": {
+        "A": "Operate choke to prevent exceeding MAASP",
+        "B": "Minimise extra pressure without underbalance",
+        "C": "Pump extra heavy mud"
+      },
+      "correctAnswer": "B",
+      "explanation": "Near MAASP with influx in open hole = balancing act. Can't just hold MAASP (may underbalance). Minimize excess while maintaining slight overbalance. May need to accept small MAASP exceedance."
+    },
+    {
+      "id": "EX9-Q21",
+      "level": "L4",
+      "question": "BHP effects: (a) Increase SPM 20\u219230 holding DP constant; (b) Pump kill mud to bit holding DP constant",
+      "answer": {
+        "SPM_increase": "Decrease",
+        "kill_mud_pump": "Increase"
+      },
+      "explanation": "(a) Higher SPM = more friction. If DP constant, choke must open = less backpressure = BHP drops. (b) Kill mud adds hydrostatic in DS. If DP constant, that extra hydrostatic goes to BHP."
+    },
+    {
+      "id": "EX9-Q22",
+      "level": "L4",
+      "question": "Horizontal well, casing pressure increases rapidly when gas enters vertical section. Why?",
+      "options": {
+        "A": "ECD greater in horizontal",
+        "B": "Kill mud not pumped from start",
+        "C": "Normal for Driller's Method",
+        "D": "No hydrostatic head loss until gas reaches inclined/vertical"
+      },
+      "correctAnswer": "D",
+      "explanation": "In horizontal section, gas migration doesn't reduce hydrostatic (no vertical movement). Once gas enters vertical/inclined section, it suddenly gains buoyancy and reduces hydrostatic rapidly."
+    },
+    {
+      "id": "EX9-Q23",
+      "level": "L3",
+      "question": "Pump speed increased. To maintain constant BHP, pump pressure should?",
+      "options": {
+        "A": "Should rise",
+        "B": "Should stay same",
+        "C": "Should fall"
+      },
+      "correctAnswer": "A",
+      "explanation": "Higher speed = more friction. Pump pressure = BHP + friction. If BHP constant and friction increases, pump pressure must rise."
+    },
+    {
+      "id": "EX9-Q24",
+      "level": "L4",
+      "question": "25 bbl gas condensate kick. Pump fails, influx migrating. Holding casing constant at 700 psi. BHP?",
+      "options": {
+        "A": "Decrease",
+        "B": "Increase",
+        "C": "Remains unchanged"
+      },
+      "correctAnswer": "A",
+      "explanation": "Gas migration while holding surface constant = BHP drops. The gas 'pushes' pressure to surface. To maintain BHP, should allow casing to rise then bleed (volumetric)."
+    }
+  ]
+}

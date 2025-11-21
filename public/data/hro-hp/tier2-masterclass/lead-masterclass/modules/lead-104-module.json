@@ -1,0 +1,14 @@
+{
+  "moduleId": "LEAD-104",
+  "courseId": "LEAD",
+  "title": "Developing People",
+  "description": "Focuses on delegation as capability-building tool, matching challenge level to individual readiness, understanding why high performers leave, differentiating coaching from mentoring, and analyzing delegation failures.",
+  "order": 4,
+  "lessonIds": [
+    "LEAD-104-01",
+    "LEAD-104-02",
+    "LEAD-104-03",
+    "LEAD-104-04",
+    "LEAD-104-05"
+  ]
+}

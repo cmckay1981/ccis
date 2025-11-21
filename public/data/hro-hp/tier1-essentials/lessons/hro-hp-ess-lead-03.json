@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-LEAD-03",
+  "moduleId": "HRO-HP-ESS-LEAD",
+  "courseId": "HRO-HP-ESS",
+  "title": "Leading Under Pressure",
+  "type": "lesson",
+  "content": "Pressure reveals leadership. Under stress, leaders set the emotional tone—if they panic, teams panic; if they're calm and focused, teams follow that lead. Key skills include managing your own stress response first, maintaining clear communication, and simplifying rather than complicating when situations are overwhelming.",
+  "mcq": {
+    "question": "During an escalating situation, a team leader speaks rapidly, issues multiple conflicting instructions, and visibly shows frustration. Team members become confused and anxious. What is the primary leadership failure?",
+    "options": {
+      "A": "Technical—wrong decisions about how to respond",
+      "B": "Emotional—failing to manage personal stress before leading others",
+      "C": "Communication—not being clear enough",
+      "D": "Planning—should have prepared better for this situation"
+    },
+    "correctOption": "B",
+    "explanation": "The leader's unmanaged stress is cascading to the team through their behavior—rapid speech, conflicting instructions, visible frustration. Before leading others effectively under pressure, leaders must first regulate their own stress response."
+  },
+  "openQuestions": [
+    "What techniques do you use to manage your own stress response before addressing your team during a crisis?",
+    "Think of a time when a leader's calm presence helped you perform better under pressure. What specifically did they do?"
+  ]
+}

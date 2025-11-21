@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-108-02",
+  "moduleId": "LEAD-MC-108",
+  "courseId": "LEAD-MC",
+  "title": "Ethical Decision-Making Under Pressure",
+  "type": "lesson",
+  "content": "Ethical challenges rarely arrive with clear labels. They emerge as competing goods, least-bad options, or pressure to compromise principles for results. Leaders face ethical tests when doing the right thing costs something: time, money, relationships, or career consequences. Your response to these moments defines your integrity and teaches your team what you actually value. Ethical leadership means choosing principle over convenience, even when it hurts.",
+  "mcq": {
+    "question": "You discover that a critical client deliverable contains a significant error. Fixing it properly will cause you to miss the deadline and likely cost the client relationship. The error probably won't be detected immediately and might never cause a problem. Your team has worked extremely hard and will be devastated by the client loss. What do you do?",
+    "options": {
+      "A": "Deliver as-is since the error might never surface and the team needs the win",
+      "B": "Disclose the error to the client, explain the delay needed to fix it properly, and accept the consequences",
+      "C": "Deliver as-is but monitor closely and fix it later if problems emerge",
+      "D": "Implement a quick patch that appears to fix the issue without fully addressing it"
+    },
+    "correctOption": "B",
+    "explanation": "Ethical decisions require choosing integrity over expedience. Option B is the only choice that maintains professional standards and builds long-term credibility. You might lose this client, but you keep your integrity and teach your team that quality and honesty are non-negotiable. Options A, C, and D all involve different forms of deception or acceptable defects. They might preserve the immediate relationship but at the cost of professional integrity. Clients lost due to honest mistakes can sometimes be recovered. Trust lost due to dishonesty rarely comes back. Your team is also watching: what matters more when the pressure is on?"
+  },
+  "openQuestions": [
+    "Describe an ethical challenge you've faced where doing the right thing had a cost. What did you choose and why?",
+    "What ethical line would you absolutely not cross, regardless of pressure or consequences?"
+  ]
+}

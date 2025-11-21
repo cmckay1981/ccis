@@ -1,0 +1,69 @@
+{
+  "templateId": "rig-bop-config",
+  "title": "BOP Configuration Template",
+  "description": "Rig-specific BOP stack configuration and specifications",
+  "instructions": "Complete this template with rig-specific BOP information. This becomes the reference document for the specific installation.",
+  "content": {
+    "rigInfo": {
+      "rigName": "[RIG NAME]",
+      "rigType": "[JACKUP/SEMI/DRILLSHIP/LAND]",
+      "owner": "[DRILLING CONTRACTOR]",
+      "location": "[CURRENT LOCATION]",
+      "documentDate": "[DATE]",
+      "revision": "[REV NUMBER]"
+    },
+    "bopStack": {
+      "manufacturer": "[OEM]",
+      "model": "[MODEL]",
+      "serialNumber": "[S/N]",
+      "workingPressure": "[RATING] psi",
+      "bore": "[SIZE] inch",
+      "stackConfiguration": {
+        "description": "List stack from bottom to top",
+        "components": [
+          {"position": 1, "type": "[COMPONENT TYPE]", "size": "[SIZE]", "notes": ""},
+          {"position": 2, "type": "[COMPONENT TYPE]", "size": "[SIZE]", "notes": ""},
+          {"position": 3, "type": "[COMPONENT TYPE]", "size": "[SIZE]", "notes": ""},
+          {"position": 4, "type": "[COMPONENT TYPE]", "size": "[SIZE]", "notes": ""},
+          {"position": 5, "type": "[COMPONENT TYPE]", "size": "[SIZE]", "notes": ""}
+        ]
+      }
+    },
+    "rams": {
+      "pipeRams": [
+        {"position": "[UPPER/MIDDLE/LOWER]", "size": "[PIPE SIZE]", "type": "Pipe Ram"},
+        {"position": "[UPPER/MIDDLE/LOWER]", "size": "[PIPE SIZE]", "type": "VBR", "range": "[SIZE RANGE]"}
+      ],
+      "blindShearRams": {
+        "position": "[POSITION IN STACK]",
+        "shearCapacity": "[PIPE SIZE/GRADE THAT CAN BE SHEARED]",
+        "limitations": "[WHAT CANNOT BE SHEARED - TOOL JOINTS, ETC]"
+      },
+      "otherRams": []
+    },
+    "annularPreventers": [
+      {"position": "[UPPER/LOWER]", "manufacturer": "[OEM]", "model": "[MODEL]", "elementType": "[TYPE]"}
+    ],
+    "controlSystem": {
+      "type": "[DIRECT HYDRAULIC/MUX/ETC]",
+      "manufacturer": "[OEM]",
+      "operatingPressure": "[PSI]",
+      "accumulatorCapacity": "[GALLONS]",
+      "preChargePress": "[PSI]",
+      "closingTimes": {
+        "annular": "[SECONDS]",
+        "pipeRams": "[SECONDS]",
+        "blindShearRams": "[SECONDS]"
+      }
+    },
+    "chokeKillLines": {
+      "chokeLine": {"id": "[SIZE]", "workingPressure": "[PSI]"},
+      "killLine": {"id": "[SIZE]", "workingPressure": "[PSI]"}
+    },
+    "certificationDates": {
+      "lastRecertification": "[DATE]",
+      "nextRecertificationDue": "[DATE]",
+      "lastMajorOverhaul": "[DATE]"
+    }
+  }
+}

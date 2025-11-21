@@ -1,0 +1,58 @@
+{
+  "documentId": "well-control",
+  "collectionId": "well-control",
+  "title": "Well Control Certification Training",
+  "provider": "Claymore & Colt",
+  "description": "IWCF and IADC certification training courses for well control. Prepares personnel for industry-recognized certifications through structured learning and exam preparation.",
+  "courses": [
+    {
+      "courseId": "IWCF-SURFACE",
+      "title": "IWCF Well Control - Surface Stack",
+      "certification": "IWCF Level 3/4 Surface",
+      "folder": "iwcf-surface"
+    },
+    {
+      "courseId": "IWCF-SUBSEA",
+      "title": "IWCF Well Control - Subsea Stack",
+      "certification": "IWCF Level 3/4 Subsea",
+      "folder": "iwcf-subsea"
+    },
+    {
+      "courseId": "IADC-WELLSHARP",
+      "title": "IADC WellSharp",
+      "certification": "IADC WellSharp",
+      "folder": "iadc-wellsharp"
+    }
+  ],
+  "questionBank": {
+    "folder": "question-bank",
+    "description": "235+ questions across 15 categories for exam preparation",
+    "categories": [
+      "Primary & Secondary Control",
+      "Causes of Kicks",
+      "Warning Signs",
+      "Kick Indicators",
+      "Fractures & MAASP",
+      "Shut-In Procedures",
+      "Data Collection & SCR",
+      "Well Kill Operations",
+      "Kill Problems",
+      "Equipment",
+      "Pump Pressure Calculations",
+      "Subsea Operations",
+      "Kill Mud Calculations",
+      "Equipment Operations"
+    ]
+  },
+  "targetAudience": [
+    "Drillers seeking IWCF/IADC certification",
+    "Assistant Drillers",
+    "Rig crew requiring well control competency",
+    "Personnel preparing for certification exams"
+  ],
+  "relatedProducts": {
+    "advancedTraining": "advanced-drilling",
+    "documentation": "digital-manuals"
+  },
+  "tags": ["certification", "iwcf", "iadc", "wellsharp", "well-control", "training"]
+}

@@ -1,0 +1,78 @@
+{
+  "moduleId": "ADO-109",
+  "courseId": "ADO",
+  "title": "Lost Circulation Management",
+  "description": "Lost circulation is more than a mud cost problem - in HPHT wells, losses can compromise your hydrostatic barrier and trigger well control events. Managing losses while maintaining well control is a critical skill.",
+  "objectives": [
+    "Identify loss severity and formation type",
+    "Select appropriate LCM treatment",
+    "Maintain well control during loss events",
+    "Recognize when to drill ahead vs treat losses"
+  ],
+  "keyTopics": [
+    {
+      "topic": "Loss Severity Classification",
+      "content": "Seepage (<10 bbl/hr) - may be manageable with LCM. Partial losses (10-50 bbl/hr) - require treatment before continuing. Severe losses (50-100+ bbl/hr) - likely need specialized treatment. Total losses (no returns) - emergency requiring immediate action."
+    },
+    {
+      "topic": "Loss Mechanisms",
+      "content": "Induced fractures (exceeded fracture gradient). Natural fractures (intersected fractured zone). Vugs and caverns (carbonates). Unconsolidated/high permeability (rare in HPHT). The mechanism determines treatment."
+    },
+    {
+      "topic": "Losses and Well Control",
+      "content": "Lost circulation means lost hydrostatic. If losses occur while pore pressure is high, you can simultaneously have losses AND a kick. This is the most dangerous well control scenario - you cannot simply weight up without making losses worse."
+    },
+    {
+      "topic": "LCM Selection",
+      "content": "Fibrous (nut shells, fibers) for general sealing. Granular (calcium carbonate, graphite) for matrix permeability. Flake (mica, cellophane) for induced fractures. Sized combinations for natural fractures. Cement for severe cases."
+    },
+    {
+      "topic": "Treatment Procedures",
+      "content": "For seepage: continuous LCM in active system. For partial: high-concentration LCM pill, squeeze if needed. For severe: specialized LCM, cement, or crosslinked systems. For total: stop drilling, evaluate, may need cement or specialized plugs."
+    },
+    {
+      "topic": "Managing Losses in Tight Windows",
+      "content": "In tight windows, you often can't reduce MW to stop losses without risking a kick. MPD with reduced BHP, continuous LCM, or drilling ahead with managed losses may be required. Each decision balances kick risk against formation damage."
+    }
+  ],
+  "referenceWellContext": {
+    "wellName": "Phoenix-702",
+    "risks": [
+      "High ECD may exceed FG at shoe during circulation",
+      "Tight window at TD - cannot reduce MW to stop losses",
+      "Losses + kick scenario is realistic possibility",
+      "OBM makes some LCM options less effective"
+    ]
+  },
+  "operationalPrinciples": [
+    "Losses are a symptom - identify the cause",
+    "Fill the hole - maintain hydrostatic",
+    "Losses AND kicks happen together - stay vigilant",
+    "Treatment must match the loss mechanism",
+    "Sometimes the best option is to drill ahead and set casing"
+  ],
+  "lessons": [
+    {
+      "lessonId": "ADO-109-01",
+      "title": "Understanding Lost Circulation",
+      "file": "lessons/ado-109-01.json"
+    },
+    {
+      "lessonId": "ADO-109-02",
+      "title": "LCM Selection & Application",
+      "file": "lessons/ado-109-02.json"
+    },
+    {
+      "lessonId": "ADO-109-03",
+      "title": "Well Control During Losses",
+      "file": "lessons/ado-109-03.json"
+    },
+    {
+      "lessonId": "ADO-109-04",
+      "title": "Severe Loss Management",
+      "file": "lessons/ado-109-04.json"
+    }
+  ],
+  "documentId": "ADO-109",
+  "tags": ["lost-circulation", "lcm", "losses", "well-control", "advanced-drilling"]
+}

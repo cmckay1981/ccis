@@ -1,0 +1,70 @@
+{
+  "lessonId": "WC-SS-102-02",
+  "moduleId": "WC-SS-102",
+  "courseId": "WC-SS",
+  "title": "Riser Margin Calculation",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "Riser margin calculation determines how much heavier your mud must be to maintain overbalance after disconnect. The formula accounts for water depth, air gap, and the difference between mud and seawater density. This calculation must be done for every well and updated when mud weight changes.",
+  "formula": {
+    "equation": "Riser Margin (ppg) = ((Air Gap + Water Depth) \u00d7 Mud MW) - (Water Depth \u00d7 Seawater MW)) \u00f7 (TVD - Air Gap - Water Depth)",
+    "simplified": "The difference in hydrostatic pressure between mud-filled riser and seawater-filled riser, expressed as equivalent mud weight below the BOP",
+    "example": {
+      "given": "Air Gap = 75 ft, Water Depth = 5,000 ft, Mud MW = 12.0 ppg, Seawater MW = 8.6 ppg, TVD = 15,000 ft",
+      "calculation": [
+        "Numerator: ((75 + 5,000) \u00d7 12.0) - (5,000 \u00d7 8.6) = (5,075 \u00d7 12.0) - 43,000 = 60,900 - 43,000 = 17,900",
+        "Denominator: 15,000 - 75 - 5,000 = 9,925 ft (depth below mudline)",
+        "Riser Margin = 17,900 \u00f7 9,925 = 1.8 ppg"
+      ],
+      "interpretation": "You need 1.8 ppg riser margin. If formation pressure requires 12.0 ppg to balance, use 12.0 + 1.8 = 13.8 ppg to be safe after disconnect."
+    }
+  },
+  "multiSensoryExplanations": {
+    "visual": "Picture a see-saw. On one side: heavy mud from surface to bottom. On the other: seawater in riser + mud below BOP. The see-saw tips toward the mud side (more pressure). Riser margin is how much extra weight you add below the BOP so the see-saw stays level even with seawater in the riser.",
+    "auditory": "The formula is long, but the concept is simple: 'What do I lose up top, and how do I make it up down below?' The numerator is what you lose. The denominator spreads that loss over the formation depth.",
+    "kinesthetic": "Fill a tube with water, measure the pressure at the bottom. Now replace the top half with air (lighter). Pressure drops. To get back to the original pressure, you'd need to make the bottom half heavier. That's riser margin\u2014making up for the light stuff on top."
+  },
+  "mcq": {
+    "question": "In 6,000 ft of water, if calculated riser margin is 2.0 ppg and formation balance requires 11.5 ppg, what mud weight should you use?",
+    "options": {
+      "A": "11.5 ppg",
+      "B": "12.5 ppg",
+      "C": "13.5 ppg",
+      "D": "14.0 ppg"
+    },
+    "correctOption": "C",
+    "explanation": "Required mud weight = Formation balance + Riser margin = 11.5 + 2.0 = 13.5 ppg. This ensures you remain overbalanced even if you disconnect and lose the mud column in the riser."
+  },
+  "advancedQuestion": {
+    "question": "You're drilling in ultra-deepwater (10,000 ft water depth). Calculated riser margin is 3.5 ppg. Adding this to formation balance puts you dangerously close to fracture gradient. What are your options?",
+    "answer": "Options include: (1) Accept reduced riser margin with formal risk assessment and management approval\u2014understanding you're trading wellbore stability during disconnect for fracture protection now; (2) Use Managed Pressure Drilling (MPD) to maintain surface backpressure equivalent to riser margin, removing it from mud weight; (3) Set additional casing to change the weak point depth and fracture gradient; (4) Modify well plan to reduce TVD before entering this narrow-margin zone. This is a classic deepwater dilemma requiring engineering judgment.",
+    "l4Focus": "Balancing competing risks (underbalance after disconnect vs. fracturing during drilling) is a key supervisor decision."
+  },
+  "practiceProblems": [
+    {
+      "problem": "Air Gap = 80 ft, Water Depth = 4,000 ft, Mud MW = 11.0 ppg, Seawater = 8.6 ppg, TVD = 12,000 ft. Calculate riser margin.",
+      "answer": "Riser Margin \u2248 1.2 ppg"
+    },
+    {
+      "problem": "Same well, formation requires 10.8 ppg balance. What operational mud weight is needed?",
+      "answer": "10.8 + 1.2 = 12.0 ppg"
+    }
+  ],
+  "commonMisconception": {
+    "wrong": "Riser margin formula is too complex to use in an emergency.",
+    "correct": "Riser margin should be calculated BEFORE drilling\u2014it's a pre-job planning number, not an emergency calculation. The value should be on the kill sheet and posted in the driller's shack."
+  },
+  "examTip": "IWCF subsea exams include riser margin calculations. Know the formula and be able to work through examples. Practice until you can do it reliably.",
+  "documentId": "WC-SS-102-02",
+  "tags": [
+    "well-control",
+    "subsea",
+    "deepwater",
+    "IWCF",
+    "WC-SS-102",
+    "WC-SS-102-02"
+  ]
+}

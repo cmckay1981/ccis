@@ -1,0 +1,34 @@
+{
+  "sectionId": "3.13",
+  "title": "Well Control Drills",
+  "content": {
+    "3.13.1": {
+      "title": "Purpose",
+      "content": "**Why Drills Matter:**\n- Build automatic responses\n- Verify crew competency\n- Identify equipment issues\n- Maintain readiness\n- Meet regulatory requirements\n\n**Key Principle:**\nA well control event is not the time to learn procedures. Drills ensure the crew can respond effectively when it matters."
+    },
+    "3.13.2": {
+      "title": "Types of Drills",
+      "content": "**Pit Drill:**\n- Simulate pit gain\n- Test detection and initial response\n- Verify monitoring systems\n- Quick drill, minimal disruption\n\n**BOP/Shut-In Drill:**\n- Practice shut-in procedure\n- May include actual BOP operation\n- Test crew coordination\n- Time and evaluate response\n\n**Scenario Drill:**\n- Full well control scenario\n- Includes kill sheet completion\n- May simulate entire kill operation\n- Tests decision-making\n\n**Trip Drill:**\n- Practice tripping shut-in\n- Include FOSV installation\n- Different starting positions\n\n**Diverter Drill:**\n- Practice shallow gas response\n- Diverter activation\n- Evacuation procedures"
+    },
+    "3.13.3": {
+      "title": "Frequency",
+      "content": "**Minimum Requirements:**\n- Weekly: At least one drill type\n- Per tour: New crew members participate\n- Each crew: Both crews must drill\n\n**Typical Schedule:**\n- Pit drill: Weekly\n- Shut-in drill: Weekly, rotating scenarios\n- Full scenario: Monthly or per well section\n- Trip drill: Before major trips\n- Diverter drill: When diverter is primary equipment\n\n**Regulatory:**\n- Specific requirements vary by jurisdiction\n- May specify minimum types and frequency\n- Document all drills"
+    },
+    "3.13.4": {
+      "title": "Conducting Drills",
+      "content": "**Planning:**\n- Select drill type and scenario\n- Brief drill conductor\n- Ensure equipment available for drill\n- Choose appropriate time (not during critical operations)\n\n**Execution:**\n1. Announce drill (or unannounced for realism)\n2. Start scenario (simulate kick indication)\n3. Crew responds per procedures\n4. Observe and time response\n5. Note actions taken\n6. Complete drill when objectives met\n\n**Debrief:**\n- Review performance with crew\n- Discuss what went well\n- Identify areas for improvement\n- Answer questions\n- Positive reinforcement for good performance"
+    },
+    "3.13.5": {
+      "title": "Evaluation Criteria",
+      "content": "**Response Time:**\n- Time from indication to shut-in\n- Target: < 2 minutes typical\n- Compare to previous drills\n\n**Correct Procedure:**\n- Proper sequence followed\n- Right equipment used\n- Communication appropriate\n\n**Equipment:**\n- All equipment functioned\n- Any issues identified\n- Positioning correct\n\n**Team Performance:**\n- Coordination effective\n- Communication clear\n- Leadership appropriate\n- All roles understood"
+    },
+    "3.13.6": {
+      "title": "Documentation",
+      "content": "**Record:**\n- Date and time\n- Drill type and scenario\n- Participants\n- Response time\n- Actions taken\n- Evaluation (pass/needs improvement)\n- Issues identified\n- Follow-up actions\n\n**Use of Records:**\n- Track crew performance over time\n- Identify training needs\n- Demonstrate competency for audits\n- Support continuous improvement\n\n**Form:**\nUse standard drill record form (Appendix B)"
+    },
+    "3.13.7": {
+      "title": "Improving Drill Value",
+      "content": "**Vary Scenarios:**\n- Different operations (drilling, tripping, connections)\n- Various influx types\n- Complications (stuck pipe, equipment failure)\n- Time of day variations\n\n**Involve All Levels:**\n- Drillers lead drill floor response\n- Supervisors practice decision-making\n- Mud engineer practices kill mud calculation\n- All crew members participate\n\n**Learn from Each Drill:**\n- Debrief after every drill\n- Implement improvements\n- Track recurring issues\n- Recognize good performance\n\n**Avoid:**\n- Same drill every time (becomes routine)\n- Skipping drills when busy (often when most needed)\n- Negative feedback only (kills motivation)"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "lessonId": "LEAD-MC-103-04",
+  "moduleId": "LEAD-MC-103",
+  "courseId": "LEAD-MC",
+  "title": "Decision-Making with Incomplete Information",
+  "type": "scenario",
+  "content": "Leaders rarely have complete information during critical moments. Waiting for certainty often means deciding too late. The skill is knowing when you have enough information to act and when delay creates more risk than a potentially imperfect decision.",
+  "scenario": {
+    "story": "You're leading a team during an operational abnormality. Two experienced technicians are providing conflicting assessments of the root cause. One argues for an immediate shutdown to prevent equipment damage. The other believes the system can be stabilized without stopping operations, avoiding significant production loss. Both are credible. You have about 90 seconds before the situation will force a decision by default. You don't have time to gather additional data.",
+    "options": {
+      "A": "Choose the shutdown option because it's the more conservative approach",
+      "B": "Choose the stabilization option to avoid unnecessary production loss",
+      "C": "Ask both technicians to briefly explain their reasoning, assess which analysis has fewer assumptions, then decide",
+      "D": "Escalate the decision to a higher authority since you don't have enough information"
+    },
+    "recommendedResponse": "C",
+    "explanation": "Option C demonstrates decision-making under uncertainty. You don't have time for extensive analysis, but you do have time for each person to articulate their logic in 30 seconds. The quality of reasoning matters more than seniority or conservatism. Option A defaults to risk avoidance without evaluating the actual situation. Option B prioritizes production without assessing the consequences of being wrong. Option D abdicates leadership at a moment when your team needs a decision. Even with incomplete information, you can assess the strength of each argument and make a reasoned choice. Perfect information isn't required—just enough to act responsibly."
+  },
+  "openQuestions": [
+    "Describe a time you had to make a significant decision with incomplete information. How did you determine you had 'enough' to decide?",
+    "What's your internal signal that tells you you're overthinking versus appropriately analyzing a decision?",
+    "How do you communicate a decision to your team when you're not fully certain it's the right call?"
+  ]
+}

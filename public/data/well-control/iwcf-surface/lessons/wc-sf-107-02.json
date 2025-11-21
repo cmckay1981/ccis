@@ -1,0 +1,62 @@
+{
+  "lessonId": "WC-SF-107-02",
+  "moduleId": "WC-SF-107",
+  "courseId": "WC-SF",
+  "title": "Initial Circulating Pressure (ICP)",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "Initial Circulating Pressure is the pressure you'll see on the drill pipe when you start circulating to kill the well. It's the sum of two things: the pressure needed to circulate at kill rate (SCR pressure) plus the formation pressure above what your current mud can handle (SIDPP). The formula is: ICP = SCR Pressure + SIDPP. You establish ICP by slowly bringing up the pump while holding casing pressure constant, then maintaining drill pipe pressure at ICP throughout the first circulation.",
+  "formula": {
+    "equation": "ICP (psi) = SCR Pressure (psi) + SIDPP (psi)",
+    "variables": {
+      "ICP": "Initial circulating pressure on drill pipe",
+      "SCR Pressure": "Slow circulating rate pressure (recorded before kick)",
+      "SIDPP": "Shut-in drill pipe pressure"
+    },
+    "example": {
+      "given": "SCR Pressure = 600 psi, SIDPP = 400 psi",
+      "calculation": "ICP = 600 + 400 = 1,000 psi"
+    }
+  },
+  "mcq": {
+    "question": "Your recorded SCR pressure at 30 SPM is 550 psi. After taking a kick, SIDPP stabilizes at 325 psi. What should your ICP be?",
+    "options": {
+      "A": "225 psi",
+      "B": "550 psi",
+      "C": "875 psi",
+      "D": "1,100 psi"
+    },
+    "correctOption": "C",
+    "explanation": "ICP = 550 + 325 = 875 psi. This is straightforward addition. The drill pipe pressure gauge should read 875 psi when you're circulating at kill rate and holding bottom hole pressure constant."
+  },
+  "openQuestions": [
+    "Why is it critical to record accurate SCR pressures before taking a kick?",
+    "What would happen if you started circulating before the well had fully stabilized?"
+  ],
+  "practiceProblems": [
+    {
+      "problem": "SCR = 700 psi, SIDPP = 450 psi",
+      "answer": "1,150 psi"
+    },
+    {
+      "problem": "SCR = 480 psi, SIDPP = 260 psi",
+      "answer": "740 psi"
+    },
+    {
+      "problem": "SCR = 850 psi, SIDPP = 0 psi",
+      "answer": "850 psi (no kick, just circulating)"
+    }
+  ],
+  "l4Focus": "As supervisor, ensure your crew records SCR pressures at multiple pump rates before entering the kick-prone zone. Having accurate data is essential when you need it.",
+  "documentId": "WC-SF-107-02",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-107",
+    "WC-SF-107-02"
+  ]
+}

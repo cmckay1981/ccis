@@ -1,0 +1,93 @@
+{
+  "situational-awareness": {
+    "courseId": "situational-awareness",
+    "name": "Situational Awareness",
+    "description": "Build and maintain situational awareness in dynamic operational environments. Master perception, comprehension, projection, attention management, and threat recognition to stay ahead of changing conditions.",
+    "code": "SA",
+    "order": 1,
+    "totalModules": 6,
+    "estimatedHours": 10,
+    "difficulty": "foundational",
+    "prerequisites": [],
+    "tags": ["situational-awareness", "perception", "attention", "mental-models", "threat-detection"],
+    "active": true
+  },
+  "decision-making": {
+    "courseId": "decision-making",
+    "name": "Decision Making",
+    "description": "Operational decision-making under pressure, uncertainty, and time constraints. Master decision models, recognize cognitive biases, and improve team decision processes.",
+    "code": "DM",
+    "order": 2,
+    "totalModules": 6,
+    "estimatedHours": 12,
+    "difficulty": "intermediate",
+    "prerequisites": ["situational-awareness"],
+    "tags": ["decision-making", "cognitive-biases", "ooda-loop", "stress-management"],
+    "active": true
+  },
+  "communication": {
+    "courseId": "communication",
+    "name": "Communication",
+    "description": "Verbal and non-verbal communication in operational environments. Master briefings, active listening, assertiveness, conflict resolution, and digital communication.",
+    "code": "COMM",
+    "order": 3,
+    "totalModules": 6,
+    "estimatedHours": 12,
+    "difficulty": "foundational",
+    "prerequisites": ["situational-awareness"],
+    "tags": ["communication", "briefings", "active-listening", "assertiveness", "conflict"],
+    "active": true
+  },
+  "teamwork": {
+    "courseId": "teamwork",
+    "name": "Teamwork",
+    "description": "Team dynamics, coordination, trust-building, and performance optimization. Learn to leverage diversity, build psychological safety, and excel in distributed teams.",
+    "code": "TW",
+    "order": 4,
+    "totalModules": 6,
+    "estimatedHours": 12,
+    "difficulty": "intermediate",
+    "prerequisites": ["situational-awareness", "communication"],
+    "tags": ["teamwork", "coordination", "trust", "diversity", "remote-teams"],
+    "active": true
+  },
+  "leadership": {
+    "courseId": "leadership",
+    "name": "Leadership",
+    "description": "Leadership skills for high-reliability operations. Develop decision authority, influence, people development capabilities, crisis management, and ethical leadership.",
+    "code": "LEAD",
+    "order": 5,
+    "totalModules": 6,
+    "estimatedHours": 15,
+    "difficulty": "advanced",
+    "prerequisites": ["situational-awareness", "communication", "decision-making", "teamwork"],
+    "tags": ["leadership", "decision-authority", "motivation", "coaching", "crisis-management", "ethics"],
+    "active": true
+  },
+  "human-factors": {
+    "courseId": "human-factors",
+    "name": "Human Factors",
+    "description": "Human performance limitations, fatigue, stress, environmental factors, human-machine interfaces, and organizational influences on safety.",
+    "code": "HF",
+    "order": 6,
+    "totalModules": 6,
+    "estimatedHours": 15,
+    "difficulty": "intermediate",
+    "prerequisites": ["situational-awareness"],
+    "tags": ["human-factors", "fatigue", "stress", "ergonomics", "automation", "safety-culture"],
+    "active": true
+  },
+  "hf-offshore": {
+    "courseId": "hf-offshore",
+    "name": "Human Factors for Offshore Drilling Operations",
+    "description": "Advanced human factors for offshore drilling operations. Master HF integration in MODU design, control room environments, barrier management, offshore work organization, and UK safety case compliance.",
+    "code": "HFO",
+    "order": 7,
+    "totalModules": 6,
+    "estimatedHours": 18,
+    "difficulty": "advanced",
+    "prerequisites": ["human-factors", "situational-awareness", "decision-making"],
+    "tags": ["offshore", "drilling", "MODU", "safety-case", "IADC", "barrier-management", "EEMUA", "HRA", "PIFs"],
+    "active": true
+  }
+}

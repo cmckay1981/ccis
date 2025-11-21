@@ -1,0 +1,396 @@
+{
+  "course_id": "human-factors",
+  "course_name": "Human Factors",
+  "modules": [
+    {
+      "module_id": "hf-m1-human-performance",
+      "module_name": "Human Performance Limits",
+      "order": 1,
+      "lessons": [
+        {
+          "lesson_id": "hf-m1-l1",
+          "title": "Human Error is Normal",
+          "order": 1,
+          "content": "Humans make errors—it's not a character flaw, it's biology. Slips, lapses, and mistakes are predictable outcomes of how our brains work. The goal isn't perfection—it's designing systems that prevent errors or catch them before they become accidents.",
+          "questions": [
+            "What's the last error you made at work? Was it punished or treated as a learning opportunity?",
+            "How does your organization view human error—blame or system design problem?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m1-l2",
+          "title": "Types of Human Error",
+          "order": 2,
+          "content": "Slips are unintended actions—you meant to do X but did Y. Lapses are memory failures—you forgot a step. Mistakes are wrong decisions based on misunderstanding. Violations are intentional rule-breaking. Each type has different causes and different countermeasures.",
+          "questions": [
+            "Give an example of a slip, lapse, and mistake from your work.",
+            "How do you prevent each type of error?"
+          ],
+          "mcq": {
+            "question": "You meant to close Valve A, but closed Valve B instead. What type of error is this?",
+            "options": {
+              "A": "Slip—unintended action",
+              "B": "Lapse—memory failure",
+              "C": "Mistake—wrong decision",
+              "D": "Violation—rule-breaking"
+            },
+            "correct": "A",
+            "explanation": "Slips are correct intentions executed incorrectly. You knew what to do but performed the wrong action."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m1-l3",
+          "title": "Attention and Vigilance",
+          "order": 3,
+          "content": "Sustained attention degrades over time. Monitoring tasks are especially hard—humans are poor at watching for rare events. After 20-30 minutes of vigilance, detection rates drop. Countermeasures: rotate tasks, introduce variety, use automation to assist, take breaks.",
+          "questions": [
+            "How long can you maintain focus on a monitoring task before attention drifts?",
+            "What strategies help you stay alert during long, monotonous shifts?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m1-l4",
+          "title": "Working Memory Limits",
+          "order": 4,
+          "content": "Working memory holds 4-7 items at once. Overload it, and you forget steps, make errors, or freeze. Reduce cognitive load: write things down, use checklists, chunk information, eliminate distractions. Don't trust your memory under pressure—offload to external aids.",
+          "questions": [
+            "When have you experienced cognitive overload? How did it feel?",
+            "What tools do you use to offload working memory?"
+          ],
+          "mcq": null,
+          "scenario": "You're managing three concurrent tasks with multiple steps each. How do you avoid overloading your working memory?"
+        }
+      ]
+    },
+    {
+      "module_id": "hf-m2-fatigue",
+      "module_name": "Fatigue and Sleep",
+      "order": 2,
+      "lessons": [
+        {
+          "lesson_id": "hf-m2-l1",
+          "title": "Physiological Effects of Fatigue",
+          "order": 1,
+          "content": "Fatigue impairs reaction time, judgment, memory, and attention—equivalent to alcohol intoxication. After 17 hours awake, performance matches 0.05% BAC. After 24 hours, it's 0.10%. You can't willpower your way through fatigue—your brain's capabilities are physically degraded.",
+          "questions": [
+            "How many hours into a shift do you notice fatigue affecting your performance?",
+            "What physical signs tell you that fatigue is setting in?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m2-l2",
+          "title": "Circadian Rhythms",
+          "order": 2,
+          "content": "Your body has a 24-hour internal clock that regulates alertness, body temperature, and hormone release. Performance dips between 2-6 AM and 2-4 PM. Night shifts fight biology—you're working when your body wants to sleep. Adaptation takes weeks and is never complete.",
+          "questions": [
+            "If you work nights, how well do you adapt? What helps you stay alert?",
+            "When do you feel most alert and most sluggish during your shift?"
+          ],
+          "mcq": {
+            "question": "It's 3 AM. You're monitoring systems and feel drowsy. What's the best countermeasure?",
+            "options": {
+              "A": "Drink coffee—caffeine will fix it",
+              "B": "Take a 20-minute nap if possible",
+              "C": "Push through—you can handle it",
+              "D": "Increase physical activity"
+            },
+            "correct": "B",
+            "explanation": "Short naps (10-20 minutes) are the most effective countermeasure for acute fatigue. Caffeine helps but has limits. Activity provides temporary relief."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m2-l3",
+          "title": "Sleep Debt and Recovery",
+          "order": 3,
+          "content": "Sleep debt accumulates—missing an hour each night adds up. You can't fully repay sleep debt on weekends. Chronic sleep deprivation causes long-term performance degradation, health issues, and increased accident risk. Recovery requires sustained adequate sleep, not binge sleeping.",
+          "questions": [
+            "How much sleep do you average per night? Is it enough?",
+            "Do you feel rested after days off, or still fatigued?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m2-l4",
+          "title": "Shift Work and Health",
+          "order": 4,
+          "content": "Long-term shift work, especially rotating shifts, disrupts sleep quality, increases risk of cardiovascular disease, metabolic disorders, and mental health issues. If you work shifts, prioritize sleep hygiene: dark room, consistent sleep schedule, avoid alcohol/caffeine before bed, manage light exposure.",
+          "questions": [
+            "What strategies help you sleep during the day after night shifts?",
+            "How does shift work affect your health and well-being?"
+          ],
+          "mcq": null,
+          "scenario": "You're on a rotating shift schedule. What steps can you take to minimize health impacts?"
+        }
+      ]
+    },
+    {
+      "module_id": "hf-m3-stress",
+      "module_name": "Stress and Performance",
+      "order": 3,
+      "lessons": [
+        {
+          "lesson_id": "hf-m3-l1",
+          "title": "Acute vs Chronic Stress",
+          "order": 1,
+          "content": "Acute stress is short-term—response to immediate threats. It sharpens focus temporarily but narrows attention. Chronic stress is prolonged—it degrades health, judgment, and immune function. Acute stress can be managed; chronic stress must be eliminated or reduced.",
+          "questions": [
+            "What situations trigger acute stress for you?",
+            "Are you under chronic stress right now? What's the source?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m3-l2",
+          "title": "The Inverted-U Curve",
+          "order": 2,
+          "content": "Performance follows an inverted-U with stress: too little arousal causes boredom and low performance. Moderate arousal is optimal. Too much arousal causes panic and performance collapse. Your optimal zone varies by task complexity—simple tasks tolerate more arousal than complex ones.",
+          "questions": [
+            "When do you perform best—under pressure or when calm?",
+            "How do you recognize when stress has crossed from helpful to harmful?"
+          ],
+          "mcq": {
+            "question": "During a high-stress event, you're making more errors than usual. What does this indicate?",
+            "options": {
+              "A": "You need more pressure to focus",
+              "B": "You've exceeded optimal arousal—need to reduce stress",
+              "C": "Stress is irrelevant to performance",
+              "D": "You're not trying hard enough"
+            },
+            "correct": "B",
+            "explanation": "Increasing errors under stress means you've passed the peak of the inverted-U curve. You need stress reduction, not more pressure."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m3-l3",
+          "title": "Stress Inoculation",
+          "order": 3,
+          "content": "Stress inoculation is training under realistic stress to build resilience. Simulations, drills, and scenario training prepare your brain for real events. Exposure reduces panic response and builds confidence. Train hard so operations are easier. Without stress training, first real exposure is overwhelming.",
+          "questions": [
+            "What training have you done under realistic stress conditions?",
+            "How did stress training prepare you for actual high-pressure situations?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m3-l4",
+          "title": "Stress Management Techniques",
+          "order": 4,
+          "content": "Manage stress with: controlled breathing (box breathing), progressive muscle relaxation, positive self-talk, time management, physical exercise, social support. Different techniques work for different people. Experiment and build a personal toolkit. Proactive stress management prevents breakdown.",
+          "questions": [
+            "What stress management techniques work for you?",
+            "How do you decompress after a high-stress day?"
+          ],
+          "mcq": null,
+          "scenario": "You're feeling overwhelmed by workload and starting to make mistakes. What do you do?"
+        }
+      ]
+    },
+    {
+      "module_id": "hf-m4-environment",
+      "module_name": "Environmental Factors",
+      "order": 4,
+      "lessons": [
+        {
+          "lesson_id": "hf-m4-l1",
+          "title": "Noise and Distraction",
+          "order": 1,
+          "content": "Noise degrades communication, increases cognitive load, and raises stress. Sustained noise above 85 dB damages hearing and impairs performance. Use hearing protection, reduce ambient noise, and establish quiet zones for critical tasks. Distraction fragments attention and increases error rates.",
+          "questions": [
+            "What's the noise level in your work environment? Does it affect you?",
+            "How do you minimize distraction during critical tasks?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m4-l2",
+          "title": "Lighting and Visual Acuity",
+          "order": 2,
+          "content": "Poor lighting causes eye strain, fatigue, and errors. Too little light makes details invisible. Too much light causes glare. Optimal lighting depends on task—reading requires more light than monitoring. Night vision requires red light to preserve adaptation. Control lighting to match task demands.",
+          "questions": [
+            "Is your work environment well-lit for the tasks you perform?",
+            "Have you experienced eye strain or fatigue from poor lighting?"
+          ],
+          "mcq": {
+            "question": "You're transitioning from a bright control room to a dark field area. What should you do?",
+            "options": {
+              "A": "Go immediately—your eyes will adjust",
+              "B": "Allow 5-10 minutes for dark adaptation",
+              "C": "Use a bright flashlight to see",
+              "D": "Wear sunglasses to reduce glare"
+            },
+            "correct": "B",
+            "explanation": "Dark adaptation takes 5-30 minutes depending on prior light exposure. Allow time for adaptation or use red light to preserve night vision."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m4-l3",
+          "title": "Temperature and Comfort",
+          "order": 3,
+          "content": "Extreme heat or cold degrades performance. Heat above 85°F impairs fine motor skills and cognitive function. Cold below 50°F reduces dexterity and increases injury risk. Maintain comfortable temperatures (68-75°F) or provide PPE and breaks for extreme environments.",
+          "questions": [
+            "Do you work in temperature extremes? How does it affect you?",
+            "What PPE or breaks are provided for thermal stress?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m4-l4",
+          "title": "Workplace Design and Ergonomics",
+          "order": 4,
+          "content": "Poor ergonomics causes musculoskeletal injuries, fatigue, and inefficiency. Design workspaces to minimize reach, awkward postures, and repetitive strain. Controls should be within easy reach, displays at eye level, frequently used items closest. Small ergonomic improvements have large cumulative effects.",
+          "questions": [
+            "What ergonomic issues exist in your workspace?",
+            "Have you experienced injury or discomfort from poor workspace design?"
+          ],
+          "mcq": null,
+          "scenario": "You notice team members frequently complaining of back and shoulder pain. What do you investigate?"
+        }
+      ]
+    },
+    {
+      "module_id": "hf-m5-interface",
+      "module_name": "Human-Machine Interface",
+      "order": 5,
+      "lessons": [
+        {
+          "lesson_id": "hf-m5-l1",
+          "title": "Display Design Principles",
+          "order": 1,
+          "content": "Good displays present information clearly, prioritize critical data, and minimize clutter. Use color coding consistently, group related information, highlight alarms distinctly. Poor displays overwhelm with data, bury critical info, or use inconsistent conventions. Design for human perception, not machine logic.",
+          "questions": [
+            "What displays do you use most often? Are they well-designed or frustrating?",
+            "What display improvement would make your job easier?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m5-l2",
+          "title": "Control Design and Feedback",
+          "order": 2,
+          "content": "Controls should map intuitively to their effects—turn clockwise to increase, push up to raise. Provide immediate feedback when a control is activated—visual, auditory, or tactile. Ambiguous or delayed feedback causes errors. Standardize controls across systems to prevent negative transfer.",
+          "questions": [
+            "Have you ever operated a control that behaved opposite to your expectation?",
+            "What feedback do you get when you activate a control? Is it sufficient?"
+          ],
+          "mcq": {
+            "question": "A critical valve has no position indicator. You're unsure if it's open or closed. What's the problem?",
+            "options": {
+              "A": "User error—should have checked before",
+              "B": "Poor interface design—lack of feedback",
+              "C": "Maintenance issue—broken indicator",
+              "D": "Normal—not all valves have indicators"
+            },
+            "correct": "B",
+            "explanation": "Critical controls must provide clear state feedback. Lack of feedback is a design flaw, not acceptable."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m5-l3",
+          "title": "Automation and Human Role",
+          "order": 3,
+          "content": "Automation changes human role from active controller to monitor. Monitoring is harder than doing—vigilance degrades, skill atrophies, situational awareness erodes. Good automation assists humans and maintains their engagement. Bad automation creates complacency and out-of-the-loop syndrome.",
+          "questions": [
+            "What tasks are automated in your work? Does it help or hurt your performance?",
+            "Have you experienced loss of manual skills due to automation?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m5-l4",
+          "title": "Alarm Management",
+          "order": 4,
+          "content": "Too many alarms cause alarm fatigue—operators ignore or silence them. Alarms should be rare, distinct, and actionable. Nuisance alarms train you to dismiss real threats. Prioritize alarms: critical (immediate action), warning (monitor), advisory (information). Suppress non-essential alarms during abnormal situations.",
+          "questions": [
+            "How many alarms do you see in a typical shift? Are most meaningful or noise?",
+            "Have you ever missed a critical alarm because of alarm overload?"
+          ],
+          "mcq": null,
+          "scenario": "Your system generates 50 alarms per hour, most false or low-priority. How do you address this?"
+        }
+      ]
+    },
+    {
+      "module_id": "hf-m6-organizational",
+      "module_name": "Organizational Factors",
+      "order": 6,
+      "lessons": [
+        {
+          "lesson_id": "hf-m6-l1",
+          "title": "Safety Culture",
+          "order": 1,
+          "content": "Safety culture is the shared values, beliefs, and practices around safety. Strong safety culture treats errors as learning opportunities, encourages reporting, and prioritizes safety over production. Weak safety culture blames individuals, hides problems, and pressures for shortcuts.",
+          "questions": [
+            "How would you describe your organization's safety culture?",
+            "What behaviors are rewarded—safety or speed?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m6-l2",
+          "title": "Normalization of Deviance",
+          "order": 2,
+          "content": "Normalization of deviance is gradual acceptance of rule-breaking or risky behavior because 'nothing bad happened yet.' Small violations accumulate until catastrophe. Every successful shortcut reinforces the behavior. Reset the norm by enforcing standards consistently and understanding why rules exist.",
+          "questions": [
+            "What 'workarounds' or shortcuts exist in your operation that used to be violations?",
+            "How do you push back against normalization of deviance?"
+          ],
+          "mcq": {
+            "question": "A safety procedure is routinely skipped because 'we've never had a problem.' What is this?",
+            "options": {
+              "A": "Efficient optimization",
+              "B": "Normalization of deviance—gradual acceptance of risk",
+              "C": "Acceptable risk management",
+              "D": "Proof the procedure is unnecessary"
+            },
+            "correct": "B",
+            "explanation": "Skipping procedures because nothing bad has happened yet is normalization of deviance. Absence of accidents doesn't prove the procedure is unnecessary."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m6-l3",
+          "title": "Production Pressure",
+          "order": 3,
+          "content": "Production pressure tempts shortcuts, corner-cutting, and fatigue accumulation. When schedule and safety conflict, which wins? Organizations say safety first, but actions reveal true priorities. Leaders must protect teams from unsafe production pressure and resource safety adequately.",
+          "questions": [
+            "Have you felt pressure to compromise safety for schedule or cost?",
+            "How does your organization balance production demands with safety?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "hf-m6-l4",
+          "title": "Learning from Failure",
+          "order": 4,
+          "content": "High-reliability organizations learn from near-misses and small failures before they become disasters. They investigate incidents to understand system weaknesses, not just punish individuals. Blameless post-mortems, trend analysis, and proactive risk identification prevent future accidents.",
+          "questions": [
+            "Does your organization investigate near-misses or only actual accidents?",
+            "When incidents are investigated, is the focus on blame or system improvement?"
+          ],
+          "mcq": null,
+          "scenario": "A near-miss occurs—no one was hurt, no damage. Do you report and investigate it, or move on since nothing happened?"
+        }
+      ]
+    }
+  ]
+}

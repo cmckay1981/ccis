@@ -1,0 +1,22 @@
+{
+  "moduleId": "WC-SS-102",
+  "courseId": "WC-SS",
+  "title": "Riser Margin",
+  "description": "Calculating and applying riser margin - the additional mud weight needed to maintain overbalance if the riser is disconnected and seawater replaces mud in the riser.",
+  "order": 2,
+  "lessonIds": [
+    "WC-SS-102-01",
+    "WC-SS-102-02"
+  ],
+  "examWeight": "Critical",
+  "iwcfSyllabus": "DR-SS-PP-02",
+  "subseaCritical": true,
+  "documentId": "WC-SS-102",
+  "tags": [
+    "well-control",
+    "subsea",
+    "deepwater",
+    "IWCF",
+    "WC-SS-102"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-COMM-05",
+  "moduleId": "HRO-HP-ESS-COMM",
+  "courseId": "HRO-HP-ESS",
+  "title": "Briefings and Handovers",
+  "type": "lesson",
+  "content": "Briefings and handovers are structured information transfers at critical transitions. Effective handovers cover current status, recent history, pending actions, and anticipated issues. Using consistent formats (like SBAR: Situation, Background, Assessment, Recommendation) ensures complete information transfer and reduces reliance on memory.",
+  "mcq": {
+    "question": "A shift handover covers current equipment status thoroughly but doesn't mention that a sensor has been intermittently unreliable. Two hours later, the incoming team makes decisions based on readings from that sensor. What handover element was missing?",
+    "options": {
+      "A": "Current status—they didn't describe present conditions",
+      "B": "Recent history—they didn't cover relevant past events",
+      "C": "Pending actions—they didn't list tasks to complete",
+      "D": "Anticipated issues—they didn't identify potential problems"
+    },
+    "correctOption": "B",
+    "explanation": "The intermittent sensor unreliability is recent history that affects how current information should be interpreted. Complete handovers include relevant history that might not be obvious from current status alone."
+  },
+  "openQuestions": [
+    "What structured format does your team use for handovers? What elements are most often missed or abbreviated?",
+    "Describe a situation where incomplete handover information led to problems. What information was missing?"
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "documentId": "CAUSES_OF_KICKS",
+  "collectionId": "questionBank",
+  "categoryKey": "CAUSES_OF_KICKS",
+  "title": "Causes of Kicks",
+  "moduleAlignment": [
+    "WC-SF-103",
+    "WC-SF-104"
+  ],
+  "questionCount": 24,
+  "l3Count": 9,
+  "l4Count": 15,
+  "questions": [
+    {
+      "id": "EX2-Q1",
+      "level": "L3",
+      "question": "What is the definition of abnormal formation pressure?",
+      "options": {
+        "A": "High overbalance with heavy mud",
+        "B": "Formation fluid pressure exceeding normal formation water hydrostatic pressure",
+        "C": "Pressure required to exceed MAASP",
+        "D": "Excess pressure due to annular pressure loss"
+      },
+      "correctAnswer": "B",
+      "explanation": "Abnormal pressure = formation pressure higher than normal hydrostatic gradient (0.433-0.465 psi/ft for water). This is what catches crews off guard."
+    },
+    {
+      "id": "EX2-Q2",
+      "level": "L4",
+      "question": "What are good top hole operating practices? (SELECT TWO)",
+      "options": {
+        "A": "Maintain high overbalance",
+        "B": "Pump out of hole on trips",
+        "C": "Drill pilot hole",
+        "D": "Drill section rapidly",
+        "E": "Keep mud viscosity high then pump fresh water pills"
+      },
+      "correctAnswers": [
+        "B",
+        "C"
+      ],
+      "explanation": "Pumping out during trips maintains hole fill and reduces swab effect. Pilot holes detect shallow gas before full-size hole. High overbalance causes losses; rapid drilling increases swab risk.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX2-Q3",
+      "level": "L4",
+      "question": "What factors increase swabbing risk? (SELECT THREE)",
+      "options": {
+        "A": "Pulling through tight hole with pump off",
+        "B": "Pumping out through tight spots",
+        "C": "Pumping out of hole",
+        "D": "Pulling pipe too quickly",
+        "E": "Maintaining high mud viscosity",
+        "F": "Pulling pipe slowly"
+      },
+      "correctAnswers": [
+        "A",
+        "D",
+        "E"
+      ],
+      "explanation": "Tight hole + no circulation + high pull speed + viscous mud = maximum swab. Pumping out (B, C) and slow pulling (F) REDUCE swab risk.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX2-Q4",
+      "level": "L4",
+      "question": "What are good connection gas practices? (SELECT TWO)",
+      "options": {
+        "A": "Increase mud viscosity",
+        "B": "Minimise time with pumps off",
+        "C": "Reduce mud weight slightly",
+        "D": "Control ROP for single connection gas slug",
+        "E": "Change bit"
+      },
+      "correctAnswers": [
+        "B",
+        "D"
+      ],
+      "explanation": "Short pump-off time reduces gas influx opportunity. Controlled ROP keeps gas slug manageable. Don't reduce MW or change viscosity\u2014address the root cause.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX2-Q5",
+      "level": "L3",
+      "question": "Observing rising cuttings volume, safe course of action?",
+      "options": {
+        "A": "By-pass shakers",
+        "B": "Check for flow; circulate bottoms up at reduced rate",
+        "C": "Increase pump rate",
+        "D": "Reduce pump rate"
+      },
+      "correctAnswer": "B",
+      "explanation": "Rising cuttings could indicate increased ROP or formation breakdown. Check for flow first (kick?), then circulate slowly to analyze cuttings without inducing losses."
+    },
+    {
+      "id": "EX2-Q6",
+      "level": "L3",
+      "question": "Action for total losses?",
+      "options": {
+        "A": "Increase pump rate by 30%",
+        "B": "Slow pump; start mixing LCM",
+        "C": "Fill annulus with water; record volume",
+        "D": "Close well in"
+      },
+      "correctAnswer": "C",
+      "explanation": "Total losses = no returns. Priority: Keep hole full to maintain hydrostatic. Use water (cheap, available) and record volume to track loss rate. Then address cause."
+    },
+    {
+      "id": "EX2-Q7",
+      "level": "L3",
+      "question": "Do kicks always follow total losses?",
+      "options": {
+        "A": "Yes, always",
+        "B": "No, depends on mud viscosity",
+        "C": "No, depends on mud level drop"
+      },
+      "correctAnswer": "C",
+      "explanation": "Kicks follow IF the fluid level drops enough to underbalance the formation. A kick-inducing zone must exist AND hydrostatic must drop to that level. Not automatic."
+    },
+    {
+      "id": "EX2-Q9",
+      "level": "L4",
+      "question": "When does gas in the wellbore reduce BHP?",
+      "options": {
+        "A": "When gas at bottom",
+        "B": "When gas reaches surface",
+        "C": "When gas at casing shoe"
+      },
+      "correctAnswer": "B",
+      "explanation": "Gas expands as it rises due to decreasing pressure. At bottom, it's compressed and dense. Only at surface does expansion significantly reduce total hydrostatic column."
+    },
+    {
+      "id": "EX2-Q10",
+      "level": "L3",
+      "question": "What factors contribute to swabbing? (SELECT THREE)",
+      "options": {
+        "A": "High viscosity mud",
+        "B": "Keeping hole full",
+        "C": "Pumping out of hole",
+        "D": "Balled bit or stabilisers",
+        "E": "Pulling out too fast"
+      },
+      "correctAnswers": [
+        "A",
+        "D",
+        "E"
+      ],
+      "explanation": "High viscosity increases drag. Balled BHA acts like piston. Fast pulling increases suction effect. Keeping hole full and pumping out REDUCE swab.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX2-Q11",
+      "level": "L3",
+      "question": "What is swabbing?",
+      "options": {
+        "A": "Increase in BHP while tripping",
+        "B": "Reduction in BHP while tripping",
+        "C": "A kick",
+        "D": "Lost circulation"
+      },
+      "correctAnswer": "B",
+      "explanation": "Swabbing = pulling pipe acts like piston, creating suction that reduces BHP. This can pull formation fluid into wellbore (swab kick)."
+    },
+    {
+      "id": "EX2-Q12",
+      "level": "L4",
+      "question": "Heavy slug pumped, mud level drops in drillstring. Effect on BHP?",
+      "options": {
+        "A": "Decreases 21 psi",
+        "B": "Increases 1,000 psi",
+        "C": "No change",
+        "D": "Increases 125 psi"
+      },
+      "correctAnswer": "C",
+      "explanation": "Slug is HEAVIER than original mud. When level drops in DS, the heavier slug offsets lighter column above. Net BHP unchanged\u2014that's the point of a slug!"
+    },
+    {
+      "id": "EX2-Q14",
+      "level": "L4",
+      "question": "Swabbing suspected, flow check negative. Next step?",
+      "options": {
+        "A": "Continue pulling",
+        "B": "Shut well in; check pressures",
+        "C": "Run back to bottom; circulate bottoms up",
+        "D": "Pull 5 stands; flow check again"
+      },
+      "correctAnswer": "C",
+      "explanation": "Negative flow check doesn't mean no swab occurred\u2014gas may not have migrated yet. Run back to restore hydrostatic and circulate bottoms up to verify wellbore is clean."
+    },
+    {
+      "id": "EX2-Q15",
+      "level": "L3",
+      "question": "Effect of drilling through gas-bearing formation on BHP?",
+      "options": {
+        "A": "BHP falls significantly",
+        "B": "Small reduction in BHP",
+        "C": "No change"
+      },
+      "correctAnswer": "B",
+      "explanation": "Drilling gas causes small BHP reduction from gas-cut mud. Not a kick\u2014just entrained gas from cuttings. Significant only if large gas volume enters rapidly."
+    },
+    {
+      "id": "EX2-Q16",
+      "level": "L4",
+      "question": "Light mud pill pumped. When does BHP decrease?",
+      "options": {
+        "A": "Once all pill in annulus",
+        "B": "When all pumped into drillstring",
+        "C": "When pill starts into drillstring",
+        "D": "When pill starts into annulus"
+      },
+      "correctAnswer": "D",
+      "explanation": "BHP depends on TOTAL column weight. Lighter fluid entering annulus immediately reduces annular hydrostatic, therefore BHP. DS content doesn't directly affect BHP."
+    },
+    {
+      "id": "EX2-Q17",
+      "level": "L3",
+      "question": "Trip returns less than calculated indicate?",
+      "options": {
+        "A": "Swabbing",
+        "B": "Kick",
+        "C": "Total losses",
+        "D": "Partial losses"
+      },
+      "correctAnswer": "D",
+      "explanation": "Less return than displacement = mud went somewhere. Not total losses (would be zero returns). Partial losses to formation. Swabbing gives MORE returns, not less."
+    },
+    {
+      "id": "EX2-Q18",
+      "level": "L4",
+      "question": "Losing 20 bbl/hr into formation. Annular capacity 0.1252 bbl/ft, 12 ppg mud. BHP reduction after 2 hours?",
+      "options": {
+        "A": "Decrease 320 psi",
+        "B": "Decrease 200 psi",
+        "C": "Decrease 150 psi",
+        "D": "Decrease 470 psi"
+      },
+      "correctAnswer": "B",
+      "explanation": "40 bbl lost = 40/0.1252 = 319 ft of fluid level drop. Pressure = 319 \u00d7 12 \u00d7 0.052 = 199 psi \u2248 200 psi",
+      "type": "calculation"
+    },
+    {
+      "id": "EX2-Q19",
+      "level": "L4",
+      "question": "Why is pressure higher at top of trapped gas reservoir than gas/water contact?",
+      "options": {
+        "A": "Reservoir gas less dense than formation water",
+        "B": "Artesian effect",
+        "C": "Highest point more compact"
+      },
+      "correctAnswer": "A",
+      "explanation": "Gas gradient (~0.1 psi/ft) much lower than water (~0.465 psi/ft). From contact upward, pressure drops less in gas than it would in water\u2014so top of gas is overpressured relative to normal hydrostatic."
+    },
+    {
+      "id": "EX2-Q20",
+      "level": "L4",
+      "question": "Gas/water contact at 5,400 ft, top of gas at 4,000 ft. Gas gradient 0.1 psi/ft, water 0.465 psi/ft. Pressure at top of gas?",
+      "options": {
+        "A": "2,511 psi",
+        "B": "140 psi",
+        "C": "2,371 psi",
+        "D": "2,231 psi"
+      },
+      "correctAnswer": "C",
+      "explanation": "Contact pressure = 5,400 \u00d7 0.465 = 2,511 psi. Gas column = 1,400 ft \u00d7 0.1 = 140 psi. Top pressure = 2,511 - 140 = 2,371 psi",
+      "type": "calculation"
+    },
+    {
+      "id": "EX2-Q21",
+      "level": "L4",
+      "question": "Gas cut mud zones: What is total BHP reduction? (Multiple density zones specified)",
+      "options": {
+        "A": "20 psi",
+        "B": "70 psi",
+        "C": "85 psi",
+        "D": "108 psi"
+      },
+      "correctAnswer": "C",
+      "explanation": "Calculate each zone separately and sum the reductions from original mud weight hydrostatic.",
+      "type": "calculation"
+    },
+    {
+      "id": "EX2-Q23",
+      "level": "L4",
+      "question": "Pull 5 stands DC (90 ft each), DC cap 0.0073 bbl/ft, DC displacement 0.0370 bbl/ft. Fluid required?",
+      "options": {
+        "A": "2 bbl",
+        "B": "8.20 bbl",
+        "C": "16.65 bbl",
+        "D": "12.23 bbl"
+      },
+      "correctAnswer": "C",
+      "explanation": "Total length = 450 ft. Displacement = 450 \u00d7 0.0370 = 16.65 bbl. This replaces the steel volume removed.",
+      "type": "calculation"
+    },
+    {
+      "id": "EX2-Q24",
+      "level": "L4",
+      "question": "580 ft BHA pulled DRY. DC cap 0.0061 bbl/ft, displacement 0.032 bbl/ft. BHP reduction?",
+      "options": {
+        "A": "148 psi",
+        "B": "188 psi",
+        "C": "258 psi",
+        "D": "100 psi"
+      },
+      "correctAnswer": "A",
+      "explanation": "Dry = air replacing mud. Loss = 580 \u00d7 (0.032 + 0.0061) \u00d7 mud gradient. Calculate hydrostatic loss from empty column.",
+      "type": "calculation"
+    },
+    {
+      "id": "EX2-Q26",
+      "level": "L4",
+      "question": "10,100 ft depth. How many stands can be pulled dry before well flows?",
+      "options": {
+        "A": "44 stands",
+        "B": "47 stands",
+        "C": "46 stands",
+        "D": "45 stands"
+      },
+      "correctAnswer": "D",
+      "explanation": "Calculate overbalance, convert to equivalent fluid column, divide by stand displacement.",
+      "type": "calculation"
+    },
+    {
+      "id": "EX2-Q27",
+      "level": "L3",
+      "question": "10,000 ft, 7,000 ft shoe, 11.3 ppg mud, 600 psi surface pressure. BHP?",
+      "options": {
+        "A": "5,876 psi",
+        "B": "6,476 psi",
+        "C": "5,276 psi",
+        "D": "4,713 psi"
+      },
+      "correctAnswer": "B",
+      "explanation": "BHP = Hydrostatic + Surface = (11.3 \u00d7 0.052 \u00d7 10,000) + 600 = 5,876 + 600 = 6,476 psi"
+    },
+    {
+      "id": "EX2-Q28",
+      "level": "L4",
+      "question": "BHP while circulating with specified pressure losses?",
+      "options": {
+        "A": "5,876 psi",
+        "B": "6,076 psi",
+        "C": "5,676 psi",
+        "D": "6,026 psi"
+      },
+      "correctAnswer": "D",
+      "explanation": "Static BHP + APL (annular pressure loss) = circulating BHP. APL adds to BHP during circulation."
+    }
+  ]
+}

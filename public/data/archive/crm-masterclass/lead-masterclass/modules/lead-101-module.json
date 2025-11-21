@@ -1,0 +1,13 @@
+{
+  "moduleId": "LEAD-101",
+  "courseId": "LEAD",
+  "title": "Leadership Operating System",
+  "description": "Defines what leadership actually controls and what it doesn't. Introduces the leadership scan: the patterns, signals, and early indicators effective leaders monitor daily. Includes self-diagnostic to assess whether you're leading or just managing tasks.",
+  "order": 1,
+  "lessonIds": [
+    "LEAD-101-01",
+    "LEAD-101-02",
+    "LEAD-101-03",
+    "LEAD-101-04"
+  ]
+}

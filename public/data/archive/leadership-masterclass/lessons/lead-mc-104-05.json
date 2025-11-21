@@ -1,0 +1,24 @@
+{
+  "lessonId": "LEAD-MC-104-05",
+  "moduleId": "LEAD-MC-104",
+  "courseId": "LEAD-MC",
+  "title": "Delegation Failure Analysis",
+  "type": "scenario",
+  "content": "Understanding why delegation fails helps you diagnose problems before they become patterns. Most delegation failures fall into predictable categories that leaders can prevent.",
+  "scenario": {
+    "story": "You delegated a medium-complexity project to a team member you assessed as ready for increased responsibility. You defined the outcome, established boundaries, and set a two-week checkpoint. At the checkpoint meeting, you discover the person interpreted the assignment completely differently than you intended, made several decisions you would have reversed, and is now significantly off track. The person seems frustrated and says, 'I thought this is what you wanted.' You're both invested significant time and the project timeline is now at risk.",
+    "options": {
+      "A": "Take the project back and complete it yourself to ensure it's done correctly",
+      "B": "Recognize this as a communication failure, clarify expectations now, and adjust the timeline if needed",
+      "C": "Let the person continue with their approach since correcting course now would damage their confidence",
+      "D": "Assign a more experienced team member to co-lead the project going forward"
+    },
+    "recommendedResponse": "B",
+    "explanation": "This is a clarity failure, not a capability failure. The person was willing and engaged—they just didn't understand the intent. Taking it back teaches them that mistakes mean loss of opportunity, which discourages future initiative. Letting them continue on the wrong path wastes more time and reinforces incorrect understanding. Adding another person signals you don't trust them to recover. The right move is acknowledging the miscommunication, providing clear direction now, and adjusting timeline expectations if necessary. This becomes a learning moment: 'Here's where we diverged, here's what I should have been clearer about, here's what right looks like.' Then let them execute with better clarity."
+  },
+  "openQuestions": [
+    "Describe a time you delegated something that went off track. Looking back, was it a clarity issue, a capability issue, or something else?",
+    "When delegation fails, what's your typical response? Do you take it back, fix it yourself, or use it as a development opportunity?",
+    "How do you balance timeline pressure with developmental patience when someone struggles with a delegated task?"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-106-02",
+  "moduleId": "LEAD-MC-106",
+  "courseId": "LEAD-MC",
+  "title": "Building Psychological Safety",
+  "type": "lesson",
+  "content": "Psychological safety means team members believe they can speak up, ask questions, admit mistakes, or challenge ideas without fear of humiliation or punishment. It's the foundation of high-performance teams because it enables rapid learning, honest communication, and early problem detection. Leaders build psychological safety by responding to bad news with problem-solving not blame, admitting their own mistakes openly, asking for input genuinely, and protecting people who raise uncomfortable truths.",
+  "mcq": {
+    "question": "During a team meeting, a junior team member challenges a decision the leader made, citing a risk they believe was overlooked. The leader responds: 'I appreciate you bringing that up. Let's look at it together—walk me through your concern.' Two other team members then voice related concerns that hadn't been raised before. What just happened?",
+    "options": {
+      "A": "The team is becoming too comfortable challenging leadership",
+      "B": "The leader demonstrated psychological safety by welcoming the challenge",
+      "C": "The leader should have defended the decision more strongly",
+      "D": "The junior team member was inappropriate to challenge in public"
+    },
+    "correctOption": "B",
+    "explanation": "The leader's response created a moment of psychological safety that unlocked information the team was holding back. By welcoming the challenge and treating it as valuable input rather than insubordination, the leader signaled it's safe to speak up. The fact that others then contributed means they were watching to see if dissent was punished or welcomed. Option A misreads healthy challenge as problematic. Option C would have shut down communication. Option D would teach the team to stay silent about concerns. This is exactly how psychological safety enables better decisions—more information surfaces earlier."
+  },
+  "openQuestions": [
+    "Think of your last team meeting. Did anyone challenge your thinking or surface a concern? If not, why not?",
+    "Describe how you typically respond when someone points out a mistake you made. What does that teach the team?"
+  ]
+}

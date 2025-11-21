@@ -1,0 +1,25 @@
+{
+  "categoryId": "WELL_CONTROL",
+  "title": "Well Control (Cross-Cutting) - AI Probing Questions",
+  "description": "Questions applicable across all drilling sections during well control deep dive",
+  "breakoutRoom": "main",
+  "targetParticipants": ["Well Control Specialist", "Drilling Engineer", "Driller", "Toolpusher"],
+  "questions": [
+    {"questionId": "WC-001", "question": "Kill sheet shows kill mud weight of 15.2 ppg but maximum rig capability is 18 ppg - what's your maximum reservoir pressure you can handle?", "type": "calculation_check", "focus": "Kill capability", "expectedResponse": "Maximum controllable reservoir pressure"},
+    {"questionId": "WC-002", "question": "MAASP at surface is 2,800 psi but weak point test showed 2,600 psi - which value are you using?", "type": "verification", "focus": "MAASP determination", "expectedResponse": "Conservative MAASP selection"},
+    {"questionId": "WC-003", "question": "Your shut-in procedure is hard shut-in - what's your choke manifold pressure rating vs MAASP?", "type": "verification", "focus": "Equipment ratings", "expectedResponse": "Pressure rating confirmation"},
+    {"questionId": "WC-004", "question": "When was the last well control drill? Were any deficiencies identified and have they been closed?", "type": "verification", "focus": "Drill currency", "expectedResponse": "Drill date and close-out status"},
+    {"questionId": "WC-005", "question": "If you take a kick while tripping, what's your response - strip or snub back to bottom?", "type": "what_if", "focus": "Tripping kick response", "expectedResponse": "Decision criteria and procedure"},
+    {"questionId": "WC-006", "question": "Gas migration rate in 12.5 ppg mud is approximately 1,000 ft/hr - how long before gas reaches surface from TD?", "type": "calculation_check", "focus": "Gas migration", "expectedResponse": "Time calculation"},
+    {"questionId": "WC-007", "question": "Your choke operator has IWCF Level 3 - when does their certification expire?", "type": "verification", "focus": "Personnel certification", "expectedResponse": "Certification validity"},
+    {"questionId": "WC-008", "question": "If you lose one pump during kill operation, can you maintain bottomhole pressure with single pump?", "type": "what_if", "focus": "Equipment redundancy", "expectedResponse": "Single pump kill capability"},
+    {"questionId": "WC-009", "question": "Volumetric control procedure is in your manual - have the crew actually practiced this?", "type": "verification", "focus": "Procedure familiarity", "expectedResponse": "Training/drill records"},
+    {"questionId": "WC-010", "question": "Your BOP can shear drill pipe - can it shear the BHA components you're running?", "type": "verification", "focus": "Shear capability", "expectedResponse": "Shear test results for BHA components"},
+    {"questionId": "WC-011", "question": "Underground blowout contingency - what's your crossflow monitoring and response plan?", "type": "what_if", "focus": "Underground blowout", "expectedResponse": "Monitoring and response procedure"},
+    {"questionId": "WC-012", "question": "Bullheading is listed as contingency - have you calculated the required surface pressure and does it exceed casing rating?", "type": "calculation_check", "focus": "Bullhead capability", "expectedResponse": "Bullhead pressure calculation"},
+    {"questionId": "WC-013", "question": "Kick tolerance decreases as you drill deeper - at what depth does kick tolerance become critical?", "type": "calculation_check", "focus": "Kick tolerance profile", "expectedResponse": "Critical depth identification"},
+    {"questionId": "WC-014", "question": "Your well control procedures reference API RP 59 - which revision and have there been updates?", "type": "verification", "focus": "Procedure currency", "expectedResponse": "Reference document version"},
+    {"questionId": "WC-015", "question": "If you have to evacuate the rig during a well control event, what's the minimum crew to maintain well control?", "type": "what_if", "focus": "Emergency response", "expectedResponse": "Minimum manning for well control"}
+  ],
+  "tags": ["dwop", "ai-questions", "well-control", "kick", "kill-operations"]
+}

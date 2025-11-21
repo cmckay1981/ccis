@@ -1,0 +1,296 @@
+{
+  "sa-m1-fundamentals": {
+    "moduleId": "sa-m1-fundamentals",
+    "moduleName": "SA Fundamentals",
+    "courseId": "situational-awareness",
+    "order": 1,
+    "totalLessons": 3
+  },
+  "sa-m2-perception": {
+    "moduleId": "sa-m2-perception",
+    "moduleName": "Perception and Scanning",
+    "courseId": "situational-awareness",
+    "order": 2,
+    "totalLessons": 4
+  },
+  "sa-m3-comprehension": {
+    "moduleId": "sa-m3-comprehension",
+    "moduleName": "Comprehension and Mental Models",
+    "courseId": "situational-awareness",
+    "order": 3,
+    "totalLessons": 4
+  },
+  "sa-m4-projection": {
+    "moduleId": "sa-m4-projection",
+    "moduleName": "Projection and Anticipation",
+    "courseId": "situational-awareness",
+    "order": 4,
+    "totalLessons": 4
+  },
+  "sa-m5-threats": {
+    "moduleId": "sa-m5-threats",
+    "moduleName": "Threats to SA",
+    "courseId": "situational-awareness",
+    "order": 5,
+    "totalLessons": 4
+  },
+  "sa-m6-team-sa": {
+    "moduleId": "sa-m6-team-sa",
+    "moduleName": "Team Situational Awareness",
+    "courseId": "situational-awareness",
+    "order": 6,
+    "totalLessons": 4
+  },
+  "dm-m1-fundamentals": {
+    "moduleId": "dm-m1-fundamentals",
+    "moduleName": "Decision Fundamentals",
+    "courseId": "decision-making",
+    "order": 1,
+    "totalLessons": 3
+  },
+  "dm-m2-models": {
+    "moduleId": "dm-m2-models",
+    "moduleName": "Decision Models",
+    "courseId": "decision-making",
+    "order": 2,
+    "totalLessons": 4
+  },
+  "dm-m3-biases": {
+    "moduleId": "dm-m3-biases",
+    "moduleName": "Cognitive Biases",
+    "courseId": "decision-making",
+    "order": 3,
+    "totalLessons": 4
+  },
+  "dm-m4-uncertainty": {
+    "moduleId": "dm-m4-uncertainty",
+    "moduleName": "Deciding Under Uncertainty",
+    "courseId": "decision-making",
+    "order": 4,
+    "totalLessons": 4
+  },
+  "dm-m5-team": {
+    "moduleId": "dm-m5-team",
+    "moduleName": "Team Decision Making",
+    "courseId": "decision-making",
+    "order": 5,
+    "totalLessons": 4
+  },
+  "dm-m6-stress": {
+    "moduleId": "dm-m6-stress",
+    "moduleName": "Decisions Under Stress",
+    "courseId": "decision-making",
+    "order": 6,
+    "totalLessons": 4
+  },
+  "comm-m1-fundamentals": {
+    "moduleId": "comm-m1-fundamentals",
+    "moduleName": "Communication Fundamentals",
+    "courseId": "communication",
+    "order": 1,
+    "totalLessons": 3
+  },
+  "comm-m2-briefings": {
+    "moduleId": "comm-m2-briefings",
+    "moduleName": "Briefings and Handovers",
+    "courseId": "communication",
+    "order": 2,
+    "totalLessons": 4
+  },
+  "comm-m3-listening": {
+    "moduleId": "comm-m3-listening",
+    "moduleName": "Active Listening",
+    "courseId": "communication",
+    "order": 3,
+    "totalLessons": 4
+  },
+  "comm-m4-assertive": {
+    "moduleId": "comm-m4-assertive",
+    "moduleName": "Assertive Communication",
+    "courseId": "communication",
+    "order": 4,
+    "totalLessons": 4
+  },
+  "comm-m5-conflict": {
+    "moduleId": "comm-m5-conflict",
+    "moduleName": "Conflict and Miscommunication",
+    "courseId": "communication",
+    "order": 5,
+    "totalLessons": 4
+  },
+  "comm-m6-digital": {
+    "moduleId": "comm-m6-digital",
+    "moduleName": "Digital Communication",
+    "courseId": "communication",
+    "order": 6,
+    "totalLessons": 4
+  },
+  "tw-m1-fundamentals": {
+    "moduleId": "tw-m1-fundamentals",
+    "moduleName": "Team Fundamentals",
+    "courseId": "teamwork",
+    "order": 1,
+    "totalLessons": 3
+  },
+  "tw-m2-coordination": {
+    "moduleId": "tw-m2-coordination",
+    "moduleName": "Coordination and Synchronization",
+    "courseId": "teamwork",
+    "order": 2,
+    "totalLessons": 4
+  },
+  "tw-m3-trust": {
+    "moduleId": "tw-m3-trust",
+    "moduleName": "Trust and Psychological Safety",
+    "courseId": "teamwork",
+    "order": 3,
+    "totalLessons": 4
+  },
+  "tw-m4-diversity": {
+    "moduleId": "tw-m4-diversity",
+    "moduleName": "Team Diversity and Dynamics",
+    "courseId": "teamwork",
+    "order": 4,
+    "totalLessons": 4
+  },
+  "tw-m5-performance": {
+    "moduleId": "tw-m5-performance",
+    "moduleName": "Team Performance",
+    "courseId": "teamwork",
+    "order": 5,
+    "totalLessons": 4
+  },
+  "tw-m6-virtual": {
+    "moduleId": "tw-m6-virtual",
+    "moduleName": "Virtual and Distributed Teams",
+    "courseId": "teamwork",
+    "order": 6,
+    "totalLessons": 4
+  },
+  "lead-m1-fundamentals": {
+    "moduleId": "lead-m1-fundamentals",
+    "moduleName": "Leadership Fundamentals",
+    "courseId": "leadership",
+    "order": 1,
+    "totalLessons": 3
+  },
+  "lead-m2-decision": {
+    "moduleId": "lead-m2-decision",
+    "moduleName": "Decision Leadership",
+    "courseId": "leadership",
+    "order": 2,
+    "totalLessons": 4
+  },
+  "lead-m3-influence": {
+    "moduleId": "lead-m3-influence",
+    "moduleName": "Influence and Motivation",
+    "courseId": "leadership",
+    "order": 3,
+    "totalLessons": 4
+  },
+  "lead-m4-development": {
+    "moduleId": "lead-m4-development",
+    "moduleName": "Developing People",
+    "courseId": "leadership",
+    "order": 4,
+    "totalLessons": 4
+  },
+  "lead-m5-crisis": {
+    "moduleId": "lead-m5-crisis",
+    "moduleName": "Crisis Leadership",
+    "courseId": "leadership",
+    "order": 5,
+    "totalLessons": 4
+  },
+  "lead-m6-ethical": {
+    "moduleId": "lead-m6-ethical",
+    "moduleName": "Ethical Leadership",
+    "courseId": "leadership",
+    "order": 6,
+    "totalLessons": 4
+  },
+  "hf-m1-limits": {
+    "moduleId": "hf-m1-limits",
+    "moduleName": "Human Performance Limits",
+    "courseId": "human-factors",
+    "order": 1,
+    "totalLessons": 4
+  },
+  "hf-m2-fatigue": {
+    "moduleId": "hf-m2-fatigue",
+    "moduleName": "Fatigue and Sleep",
+    "courseId": "human-factors",
+    "order": 2,
+    "totalLessons": 4
+  },
+  "hf-m3-stress": {
+    "moduleId": "hf-m3-stress",
+    "moduleName": "Stress and Performance",
+    "courseId": "human-factors",
+    "order": 3,
+    "totalLessons": 4
+  },
+  "hf-m4-environment": {
+    "moduleId": "hf-m4-environment",
+    "moduleName": "Environmental Factors",
+    "courseId": "human-factors",
+    "order": 4,
+    "totalLessons": 4
+  },
+  "hf-m5-hmi": {
+    "moduleId": "hf-m5-hmi",
+    "moduleName": "Human-Machine Interface",
+    "courseId": "human-factors",
+    "order": 5,
+    "totalLessons": 4
+  },
+  "hf-m6-organizational": {
+    "moduleId": "hf-m6-organizational",
+    "moduleName": "Organizational Factors",
+    "courseId": "human-factors",
+    "order": 6,
+    "totalLessons": 4
+  },
+  "hfo-m1-integration": {
+    "moduleId": "hfo-m1-integration",
+    "moduleName": "HF Integration & Design",
+    "courseId": "hf-offshore",
+    "order": 1,
+    "totalLessons": 4
+  },
+  "hfo-m2-control-environments": {
+    "moduleId": "hfo-m2-control-environments",
+    "moduleName": "Control Environments & Interfaces",
+    "courseId": "hf-offshore",
+    "order": 2,
+    "totalLessons": 4
+  },
+  "hfo-m3-risk-barriers": {
+    "moduleId": "hfo-m3-risk-barriers",
+    "moduleName": "Risk Assessment & Barrier Management",
+    "courseId": "hf-offshore",
+    "order": 3,
+    "totalLessons": 4
+  },
+  "hfo-m4-work-organization": {
+    "moduleId": "hfo-m4-work-organization",
+    "moduleName": "Offshore Work Organization",
+    "courseId": "hf-offshore",
+    "order": 4,
+    "totalLessons": 4
+  },
+  "hfo-m5-operational-integrity": {
+    "moduleId": "hfo-m5-operational-integrity",
+    "moduleName": "Operational Integrity",
+    "courseId": "hf-offshore",
+    "order": 5,
+    "totalLessons": 5
+  },
+  "hfo-m6-regulatory-compliance": {
+    "moduleId": "hfo-m6-regulatory-compliance",
+    "moduleName": "Regulatory Compliance & Safety Cases",
+    "courseId": "hf-offshore",
+    "order": 6,
+    "totalLessons": 5
+  }
+}

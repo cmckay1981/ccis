@@ -1,0 +1,67 @@
+{
+  "templateId": "QT-HPHT-003",
+  "category": "HAZARD_AWARENESS",
+  "title": "HPHT MAWP Exceeding BOP Rating Scenario",
+  "level": ["L4"],
+  "applicableTo": ["surface", "subsea"],
+  "triggeredBy": {
+    "classification": "mawpExceeds15k"
+  },
+  "question": "On {{wellProfile.wellName}}, you are drilling at {{currentSection.settingDepth.tvd}} {{currentSection.settingDepth.unit}} TVD where pore pressure is {{scenario.porePressure}} ppg. The BOP is rated at {{wellProfile.bopInfo.workingPressure}} psi. If you take a full column gas kick and shut in, the Maximum Anticipated Wellhead Pressure (MAWP) could be {{scenario.mawp}} psi - potentially exceeding equipment rating. What considerations must be addressed BEFORE drilling this section?",
+  "inputs": {
+    "wellProfile": {
+      "required": ["classification.mawpExceeds15k", "bopInfo.workingPressure", "wellName"]
+    },
+    "currentSection": {
+      "from": "wellProfile.casingProgram[activeSection]",
+      "required": ["settingDepth.tvd"]
+    },
+    "scenario": {
+      "porePressure": {
+        "from": "wellProfile.ppfg nearest to TVD"
+      },
+      "mawp": {
+        "calculated": "porePressure converted to surface pressure for gas column"
+      }
+    }
+  },
+  "correctConsiderations": [
+    {
+      "consideration": "Prevention is paramount",
+      "detail": "With potential MAWP exceeding BOP rating, kick prevention must be the primary focus. No kick is acceptable."
+    },
+    {
+      "consideration": "Early kick detection sensitivity",
+      "detail": "Detection systems must be at maximum sensitivity. React to ANY positive flow indicator."
+    },
+    {
+      "consideration": "MPD with constant BHP",
+      "detail": "Use MPD to maintain precise bottom hole pressure control and eliminate swab/surge kicks."
+    },
+    {
+      "consideration": "Pre-planned kick response",
+      "detail": "If a kick occurs, conventional shut-in may not be safe. Pre-planned bullhead procedures, dynamic kill options, and relief well contingencies must be ready."
+    },
+    {
+      "consideration": "HPHT crew competency",
+      "detail": "All crew must be HPHT-trained and fully briefed on the elevated risks and response procedures."
+    }
+  ],
+  "answerOptions": {
+    "A": "No special considerations - the 15,000 psi BOP provides adequate safety margin",
+    "B": "Maximum prevention focus, early kick detection at highest sensitivity, MPD required, pre-planned emergency procedures, HPHT crew training",
+    "C": "Simply reduce drilling rate to minimize kick risk",
+    "D": "Install a higher-rated BOP before continuing"
+  },
+  "correctOption": "B",
+  "feedback": {
+    "correct": "Correct. When MAWP may exceed BOP rating, the focus shifts entirely to prevention. You cannot rely on shut-in as your primary barrier - you must prevent kicks through MPD, early detection, and flawless execution. Emergency procedures must be pre-planned because you won't have time to figure them out during an event.",
+    "A_feedback": "Dangerous misconception. If MAWP exceeds BOP rating, shut-in may fail or damage equipment. Prevention becomes your primary well control barrier.",
+    "C_feedback": "Reducing ROP alone doesn't address the fundamental pressure management issues. MPD and early detection are required.",
+    "D_feedback": "Higher-rated BOPs (20K) exist but may not be available or practical. The industry approach is to manage risk through prevention when MAWP approaches equipment limits."
+  },
+  "contextualTip": "On {{wellProfile.wellName}}, the DOP notes MAWP could exceed 15,000 psi. This means conventional well control may not be viable in worst-case scenarios. Prevention through MPD and early kick detection is not optional - it's mandatory.",
+  "advancedNote": "L4 supervisors drilling these sections must understand they are operating at the edge of equipment capability. The decision to continue drilling rests on confidence in prevention systems. If those systems are compromised (sensor failure, MPD issues), drilling must stop.",
+  "relatedLesson": "WC-SF-107-01",
+  "tags": ["hpht", "mawp", "bop-rating", "prevention", "hazard", "well-control", "L4", "dynamic"]
+}

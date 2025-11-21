@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-HF-04",
+  "moduleId": "HRO-HP-ESS-HF",
+  "courseId": "HRO-HP-ESS",
+  "title": "Cognitive Biases",
+  "type": "lesson",
+  "content": "Cognitive biases are mental shortcuts that usually help us process information efficiently but can cause systematic errors. They're universal—affecting everyone regardless of intelligence or experience. You cannot think your way out of biases because the biased thinking feels like correct thinking. Awareness helps but structured processes provide better protection.",
+  "mcq": {
+    "question": "A highly intelligent, experienced professional makes a decision that, in hindsight, was clearly influenced by confirmation bias. How should we understand this?",
+    "options": {
+      "A": "Intelligence and experience should have prevented this—it's a personal failing",
+      "B": "Cognitive biases affect everyone—individual traits don't provide immunity",
+      "C": "More training on biases would have prevented this",
+      "D": "This was an unusual situation where biases are more likely"
+    },
+    "correctOption": "B",
+    "explanation": "Cognitive biases are features of human cognition, not deficits of specific individuals. Intelligence and experience don't prevent biases—they sometimes make us more confident in biased conclusions. Systemic defenses (checklists, second opinions, structured processes) provide better protection than individual awareness."
+  },
+  "openQuestions": [
+    "Which cognitive bias do you think most frequently affects your decisions? How do you know?",
+    "What systematic defenses exist in your workplace to protect against cognitive biases in critical decisions?"
+  ]
+}

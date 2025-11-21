@@ -1,0 +1,88 @@
+{
+  "configId": "EXAMPLE-CONFIG-001",
+  "title": "Example Client Manual Configuration",
+  "description": "Example configuration showing how to generate a client-branded MPD manual",
+  "clientBranding": {
+    "clientName": "Phoenix Energy",
+    "clientLogo": "/assets/logos/phoenix-energy-logo.png",
+    "colors": {
+      "primary": "#0d4f8b",
+      "secondary": "#1a73b8",
+      "accent": "#f5a623"
+    },
+    "tagline": "Safe Operations. Reliable Results."
+  },
+  "wellData": {
+    "wellName": "Phoenix-702",
+    "wellId": "CC-PHOENIX-702",
+    "rigName": "C&C Explorer",
+    "location": "Offshore West Africa",
+    "waterDepth": {
+      "value": 648,
+      "unit": "m"
+    },
+    "targetDepth": {
+      "tvd": 6920,
+      "md": 7100,
+      "unit": "m"
+    },
+    "porePressureTD": "17.2 ppg EMW",
+    "fracGradTD": "18.5 ppg EMW",
+    "windowSize": "1.3 ppg"
+  },
+  "equipmentConfig": {
+    "rcdType": "BTR Rotating Control Device with M-BART Gen 2",
+    "rcdDynamicRating": "1,500 psi",
+    "rcdStaticRating": "2,500 psi",
+    "chokeSize": "6\" and 3\" electrically actuated",
+    "prvOpen": "1,480 psi",
+    "prvHighHigh": "1,500 psi",
+    "mgsCapacity": "Sized for 50 bbl influx at 450 gpm circulation",
+    "flowMeters": "Coriolis mass-flow meters (inlet/outlet)"
+  },
+  "operationalLimits": {
+    "maxSBP": "500 psi",
+    "influxThreshold": "2 bbl",
+    "maasp": "Calculated per section - see kill sheet",
+    "kickTolerance": {
+      "atTD": "8 bbl",
+      "intermediate": "15 bbl"
+    },
+    "tripMargin": "0.3 ppg",
+    "flowCheckDuration": "15 minutes minimum"
+  },
+  "documentSettings": {
+    "documentNumber": "PE-MPD-702-001",
+    "revision": "1.0",
+    "effectiveDate": "2025-01-15",
+    "reviewDate": "2026-01-15",
+    "classification": "CONFIDENTIAL",
+    "approvedBy": [
+      {"role": "Drilling Manager", "name": "{{approver1}}"},
+      {"role": "HSE Manager", "name": "{{approver2}}"},
+      {"role": "Operations Director", "name": "{{approver3}}"}
+    ]
+  },
+  "outputSettings": {
+    "format": "HTML",
+    "includeTableOfContents": true,
+    "includePrintStyles": true,
+    "includeSearchFunction": true,
+    "offlineCapable": true,
+    "generatePDF": true
+  },
+  "customSections": {
+    "includeH2SProcedures": true,
+    "includeDeepwaterProcedures": true,
+    "includeCementingWithMPD": false,
+    "includeWirelineWithMPD": false
+  },
+  "generatedManual": {
+    "templateUsed": "MPD-MANUAL-V1",
+    "generatedDate": null,
+    "generatedBy": null,
+    "outputPath": null
+  },
+  "documentId": "EXAMPLE-CONFIG-001",
+  "tags": ["example", "client-config", "phoenix-energy"]
+}

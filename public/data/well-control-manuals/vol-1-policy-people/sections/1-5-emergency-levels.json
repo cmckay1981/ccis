@@ -1,0 +1,34 @@
+{
+  "sectionId": "1.5",
+  "title": "Emergency Response Levels",
+  "content": {
+    "1.5.1": {
+      "title": "Overview",
+      "content": "Well control events are classified into response levels based on severity and resource requirements. The response level determines:\n\n- Notification requirements\n- Resource mobilization\n- Management involvement\n- External reporting\n\nResponse levels may be escalated or de-escalated as the situation evolves."
+    },
+    "1.5.2": {
+      "title": "Level 1 - Standard Response",
+      "content": "**Definition:**\nA well control event that can be managed on-site using standard procedures and personnel.\n\n**Examples:**\n- Kick detected and shut in successfully\n- Well killed using standard methods (Driller's or W&W)\n- Event contained with no escalation\n- No injury, environmental impact, or equipment damage\n\n**Actions:**\n- Driller initiates shut-in\n- Drilling Supervisor takes charge\n- Standard kill procedures implemented\n- Shore base notified (routine reporting)\n- Event documented\n- Post-event review conducted\n\n**Notification:**\n- OIM notified immediately\n- Shore base notified per routine reporting\n- Regulatory notification per local requirements"
+    },
+    "1.5.3": {
+      "title": "Level 2 - Enhanced Response",
+      "content": "**Definition:**\nA well control event requiring additional resources or expertise beyond normal on-site capability.\n\n**Examples:**\n- Standard kill methods unsuccessful\n- Stuck pipe during well control\n- Equipment malfunction complicating response\n- Sustained casing pressure after kill\n- Lost circulation during kill\n- Potential for escalation identified\n\n**Actions:**\n- Level 1 actions plus:\n- Shore-based well control support activated\n- Additional expertise mobilized as needed\n- Management team briefed\n- Detailed situation assessment\n- Kill plan reviewed with shore support\n- Enhanced monitoring implemented\n\n**Notification:**\n- Immediate notification to Asset Manager/Operations Manager\n- Shore-based well control team activated\n- Client/Operator senior management notified\n- Regulatory notification as required"
+    },
+    "1.5.4": {
+      "title": "Level 3 - Major Emergency",
+      "content": "**Definition:**\nA well control event that has or may result in loss of well control (blowout), serious injury, major environmental impact, or significant asset damage.\n\n**Examples:**\n- Uncontrolled flow to surface\n- Underground blowout\n- Fire or explosion\n- Imminent threat to personnel\n- Major environmental release\n- Structural damage to rig/vessel\n- Loss of BOP integrity\n\n**Actions:**\n- Personnel safety actions (muster, evacuation if needed)\n- Emergency shutdown if required\n- All available resources mobilized\n- Corporate emergency response team activated\n- External emergency services notified as needed\n- Media response team on standby\n- Full documentation and recording\n\n**Notification:**\n- Immediate notification to:\n  - Corporate emergency response center\n  - Executive management\n  - Regulatory authorities\n  - Client executive management\n- Ongoing situation updates at defined frequency"
+    },
+    "1.5.5": {
+      "title": "Escalation and De-escalation",
+      "content": "**Escalation:**\nResponse level shall be escalated when:\n- Situation worsens despite current response\n- Additional resources are needed\n- Timeline extends beyond initial estimates\n- Complications develop\n- Potential consequences increase\n\nWhen in doubt, escalate. It is better to have resources available and not need them.\n\n**De-escalation:**\nResponse level may be de-escalated when:\n- Situation is stabilized\n- Well is under control\n- Immediate threat is past\n- Reduced monitoring is appropriate\n\nDe-escalation requires explicit decision by responsible authority. Maintain heightened awareness during de-escalation."
+    },
+    "1.5.6": {
+      "title": "Communication During Events",
+      "content": "**On-Site Communication:**\n- Driller communicates status to drill floor team\n- Toolpusher maintains communication with Driller\n- Drilling Supervisor coordinates overall response\n- OIM maintains installation-wide awareness\n- All communications logged with timestamps\n\n**Shore-Base Communication:**\n- Initial notification via quickest means (phone)\n- Follow-up with written situation report\n- Regular updates at agreed frequency\n- Use standard reporting format\n- Ensure back-up communication available\n\n**Information to Communicate:**\n- Current well status (pressures, volumes)\n- Actions taken and planned\n- Personnel status\n- Equipment status\n- Resource requirements\n- Timeline estimates"
+    },
+    "1.5.7": {
+      "title": "Post-Event Actions",
+      "content": "Following any well control event:\n\n**Immediate:**\n- Verify well is stable and secure\n- Account for all personnel\n- Assess equipment condition\n- Preserve data and records\n- Relieve fatigued personnel\n\n**Short-term:**\n- Conduct hot debrief with response team\n- Document sequence of events\n- Identify immediate lessons\n- Report per requirements\n- Plan resumption of operations\n\n**Longer-term:**\n- Formal investigation for Level 2 and 3 events\n- Root cause analysis\n- Corrective actions identified\n- Lessons learned shared\n- Procedures updated if needed\n- Recognition of effective response"
+    }
+  }
+}

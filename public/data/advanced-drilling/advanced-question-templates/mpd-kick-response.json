@@ -1,0 +1,53 @@
+{
+  "templateId": "QT-MPD-002",
+  "category": "MANAGED_PRESSURE_DRILLING",
+  "title": "MPD Influx Response",
+  "level": ["L4"],
+  "applicableTo": ["surface", "subsea"],
+  "question": "On {{wellProfile.wellName}}, you are drilling with MPD at {{currentSection.settingDepth.tvd}} {{currentSection.settingDepth.unit}} TVD. Current MW is {{currentSection.mudWeight.current}} ppg with {{scenario.currentSBP}} psi SBP applied. Delta flow monitoring detects a {{scenario.deltaFlow}} gpm increase in returns. What is the correct MPD response sequence?",
+  "inputs": {
+    "wellProfile": {
+      "required": ["mpdData", "wellName", "connectionMonitoring.earlyKickDetection"]
+    },
+    "currentSection": {
+      "from": "wellProfile.casingProgram[activeSection]",
+      "required": ["settingDepth.tvd", "mudWeight.current"]
+    },
+    "scenario": {
+      "generated": true,
+      "currentSBP": {
+        "range": [100, 400],
+        "step": 50
+      },
+      "deltaFlow": {
+        "range": [20, 80],
+        "step": 10,
+        "description": "gpm increase in flow rate"
+      }
+    }
+  },
+  "correctSequence": [
+    "1. Stop drilling and pick up off bottom",
+    "2. Increase SBP using MPD choke to compensate for influx",
+    "3. Monitor pit volume and flow rate",
+    "4. If influx controlled with SBP < limit, circulate out micro-influx",
+    "5. If SBP approaching limit or influx continues, convert to conventional shut-in"
+  ],
+  "answerOptions": {
+    "A": "Immediately shut in using conventional BOP procedure",
+    "B": "Increase SBP to control influx, monitor, circulate out if contained",
+    "C": "Continue drilling and monitor - MPD will handle it automatically",
+    "D": "Reduce pump rate to decrease ECD and observe"
+  },
+  "correctOption": "B",
+  "feedback": {
+    "correct": "Correct. MPD's advantage is the ability to dynamically increase surface back pressure to control small influxes without shutting in. Monitor SBP limit ({{wellProfile.mpdData.surfaceBackPressure.max}} psi max) and pit volumes. If the influx continues growing or SBP approaches limits, convert to conventional shut-in.",
+    "A_feedback": "Premature. MPD can handle small influxes by increasing SBP. Only convert to conventional shut-in if the influx exceeds MPD capability.",
+    "C_feedback": "Incorrect and dangerous. MPD requires active intervention - you must increase SBP to control the influx.",
+    "D_feedback": "This would reduce BHP further and worsen the influx. Never reduce BHP when taking an influx."
+  },
+  "contextualTip": "On {{wellProfile.wellName}}, the tight mud weight window means conventional shut-in risks fracturing the formation. MPD's dynamic control allows influx management with less formation stress.",
+  "advancedNote": "The decision point is when SBP approaches {{wellProfile.mpdData.surfaceBackPressure.max}} psi or pit gain exceeds 10-15 bbls. At that point, the influx has exceeded MPD capability and conventional well control is required.",
+  "relatedLesson": "WC-SF-109-01",
+  "tags": ["mpd", "influx-response", "early-kick-detection", "well-control", "L4", "dynamic"]
+}

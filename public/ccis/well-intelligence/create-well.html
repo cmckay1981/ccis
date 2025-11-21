@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Well - Claymore & Colt Well Intelligence</title>
+
+    <!-- React & ReactDOM via CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-functions-compat.js"></script>
+
+    <style>
+        :root {
+            --primary: #1a365d;
+            --primary-light: #2c5282;
+            --accent: #ed8936;
+            --success: #38a169;
+            --bg: #f7fafc;
+            --card-bg: #ffffff;
+            --text: #2d3748;
+            --text-light: #718096;
+            --border: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .wizard-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .wizard-header h1 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .wizard-header .step-indicator {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            margin: 2rem 0;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transition: width 0.3s ease;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .form-group label.required::after {
+            content: ' *';
+            color: #e53e3e;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1);
+        }
+
+        .form-group small {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .radio-option input[type="radio"] {
+            width: 18px;
+            height: 18px;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-light);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--border);
+            color: var(--text);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-success {
+            background: var(--success);
+            color: white;
+        }
+
+        .wizard-actions {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: #f7fafc;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        td input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+
+        .add-row-btn {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .add-row-btn:hover {
+            background: var(--primary-light);
+        }
+
+        .remove-btn {
+            background: #e53e3e;
+            color: white;
+            border: none;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .summary-card {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            padding: 1.25rem;
+            border-radius: 8px;
+        }
+
+        .summary-label {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-bottom: 0.25rem;
+        }
+
+        .summary-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .info-box {
+            background: #ebf8ff;
+            border-left: 4px solid #4299e1;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+
+        .info-box-title {
+            font-weight: 600;
+            color: #2c5282;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .wizard-actions {
+                flex-direction: column;
+            }
+
+            .wizard-actions button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        // Well Creation Wizard Component
+        function WellCreationWizard() {
+            const [currentStep, setCurrentStep] = useState(1);
+            const [wellData, setWellData] = useState({
+                // Step 1: Well Information
+                wellName: '',
+                wellNumber: '',
+                apiNumber: '',
+                operatorName: 'Metamorphic Energy',
+                rigName: '',
+                rigType: 'semi-sub',
+                contractor: '',
+                field: '',
+                block: '',
+                country: 'United Kingdom',
+                latitude: '',
+                longitude: '',
+                waterDepth: '',
+                airGap: '',
+                wellType: 'development',
+                wellPurpose: 'oil',
+                wellProfile: 'directional',
+                unitSystem: 'imperial',
+
+                // Step 2: Casing Design
+                totalDepth: '',
+                tvd: '',
+                kickoffDepth: '',
+                maxInclination: '',
+                azimuth: '',
+                currentMudWeight: '',
+                mudType: 'OBM',
+                mudSystem: '',
+                casings: [],
+                openHoleSections: [],
+
+                // Step 3: Drill String
+                stringComponents: [],
+                pumpType: 'triplex',
+                linerSize: '',
+                strokeLength: '',
+                efficiency: 95,
+                targetSPM: 60,
+
+                // Step 4: BOP Configuration
+                bopStackType: 'subsea',
+                bopManufacturer: '',
+                bopModel: '',
+                bopWorkingPressure: '',
+                bopComponents: [],
+                killLineSize: '',
+                killLineRating: '',
+                chokeLineSize: '',
+                chokeLineRating: '',
+                chokeManifold: '',
+                riserSize: '',
+                riserRating: ''
+            });
+
+            const totalSteps = 5;
+            const progress = (currentStep / totalSteps) * 100;
+
+            function handleInputChange(field, value) {
+                setWellData(prev => ({ ...prev, [field]: value }));
+            }
+
+            function nextStep() {
+                if (currentStep < totalSteps) {
+                    setCurrentStep(currentStep + 1);
+                    window.scrollTo(0, 0);
+                }
+            }
+
+            function prevStep() {
+                if (currentStep > 1) {
+                    setCurrentStep(currentStep - 1);
+                    window.scrollTo(0, 0);
+                }
+            }
+
+            function addCasing() {
+                const newCasing = {
+                    id: Date.now(),
+                    section: '',
+                    size: '',
+                    grade: 'K-55',
+                    top: '',
+                    bottom: '',
+                    weight: ''
+                };
+                setWellData(prev => ({
+                    ...prev,
+                    casings: [...prev.casings, newCasing]
+                }));
+            }
+
+            function removeCasing(id) {
+                setWellData(prev => ({
+                    ...prev,
+                    casings: prev.casings.filter(c => c.id !== id)
+                }));
+            }
+
+            function updateCasing(id, field, value) {
+                setWellData(prev => ({
+                    ...prev,
+                    casings: prev.casings.map(c =>
+                        c.id === id ? { ...c, [field]: value } : c
+                    )
+                }));
+            }
+
+            function addStringComponent() {
+                const newComponent = {
+                    id: Date.now(),
+                    type: 'drill-pipe',
+                    name: '',
+                    od: '',
+                    id: '',
+                    length: ''
+                };
+                setWellData(prev => ({
+                    ...prev,
+                    stringComponents: [...prev.stringComponents, newComponent]
+                }));
+            }
+
+            function removeStringComponent(id) {
+                setWellData(prev => ({
+                    ...prev,
+                    stringComponents: prev.stringComponents.filter(c => c.id !== id)
+                }));
+            }
+
+            function updateStringComponent(id, field, value) {
+                setWellData(prev => ({
+                    ...prev,
+                    stringComponents: prev.stringComponents.map(c =>
+                        c.id === id ? { ...c, [field]: value } : c
+                    )
+                }));
+            }
+
+            async function saveWell() {
+                try {
+                    // TODO: Call Firebase Cloud Function to save well
+                    console.log('Saving well:', wellData);
+                    alert('Well saved successfully! (Firebase integration coming soon)');
+                    // Redirect to dashboard
+                    window.location.href = './index.html';
+                } catch (error) {
+                    console.error('Error saving well:', error);
+                    alert('Error saving well: ' + error.message);
+                }
+            }
+
+            return (
+                <div className="container">
+                    <div className="wizard-header">
+                        <h1>Create New Well</h1>
+                        <p className="step-indicator">Step {currentStep} of {totalSteps}</p>
+                    </div>
+
+                    <div className="progress-bar">
+                        <div className="progress-bar-fill" style={{ width: `${progress}%` }}></div>
+                    </div>
+
+                    {currentStep === 1 && (
+                        <Step1WellInformation
+                            data={wellData}
+                            onChange={handleInputChange}
+                        />
+                    )}
+
+                    {currentStep === 2 && (
+                        <Step2CasingDesign
+                            data={wellData}
+                            onChange={handleInputChange}
+                            onAddCasing={addCasing}
+                            onRemoveCasing={removeCasing}
+                            onUpdateCasing={updateCasing}
+                        />
+                    )}
+
+                    {currentStep === 3 && (
+                        <Step3DrillString
+                            data={wellData}
+                            onChange={handleInputChange}
+                            onAddComponent={addStringComponent}
+                            onRemoveComponent={removeStringComponent}
+                            onUpdateComponent={updateStringComponent}
+                        />
+                    )}
+
+                    {currentStep === 4 && (
+                        <Step4BOPConfiguration
+                            data={wellData}
+                            onChange={handleInputChange}
+                        />
+                    )}
+
+                    {currentStep === 5 && (
+                        <Step5Review
+                            data={wellData}
+                            onEdit={(step) => setCurrentStep(step)}
+                        />
+                    )}
+
+                    <div className="wizard-actions">
+                        <div>
+                            {currentStep > 1 && (
+                                <button className="btn btn-outline" onClick={prevStep}>
+                                    ← Back
+                                </button>
+                            )}
+                        </div>
+                        <div style={{ display: 'flex', gap: '1rem' }}>
+                            <button className="btn btn-outline" onClick={() => window.location.href = './index.html'}>
+                                Cancel
+                            </button>
+                            {currentStep < totalSteps ? (
+                                <button className="btn btn-primary" onClick={nextStep}>
+                                    Next: {getNextStepName(currentStep)} →
+                                </button>
+                            ) : (
+                                <button className="btn btn-success" onClick={saveWell}>
+                                    Save & Create Well
+                                </button>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        function getNextStepName(current) {
+            const names = ['', 'Casing Design', 'Drill String', 'BOP Config', 'Review'];
+            return names[current] || 'Next';
+        }
+
+        // Step 1: Well Information
+        function Step1WellInformation({ data, onChange }) {
+            return (
+                <div>
+                    <div className="card">
+                        <h2 className="section-title">Basic Information</h2>
+                        <div className="form-grid">
+                            <div className="form-group">
+                                <label className="required">Well Name</label>
+                                <input
+                                    type="text"
+                                    value={data.wellName}
+                                    onChange={e => onChange('wellName', e.target.value)}
+                                    placeholder="Maersk Voyager - Well A-12"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label className="required">Well Number</label>
+                                <input
+                                    type="text"
+                                    value={data.wellNumber}
+                                    onChange={e => onChange('wellNumber', e.target.value)}
+                                    placeholder="A-12"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>API/UWI Number</label>
+                                <input
+                                    type="text"
+                                    value={data.apiNumber}
+                                    onChange={e => onChange('apiNumber', e.target.value)}
+                                    placeholder="Optional"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card">
+                        <h2 className="section-title">Operator & Rig</h2>
+                        <div className="form-grid">
+                            <div className="form-group">
+                                <label className="required">Organization</label>
+                                <input
+                                    type="text"
+                                    value={data.operatorName}
+                                    onChange={e => onChange('operatorName', e.target.value)}
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label className="required">Rig Name</label>
+                                <input
+                                    type="text"
+                                    value={data.rigName}
+                                    onChange={e => onChange('rigName', e.target.value)}
+                                    placeholder="Maersk Voyager"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label className="required">Rig Type</label>
+                                <select
+                                    value={data.rigType}
+                                    onChange={e => onChange('rigType', e.target.value)}
+                                >
+                                    <option value="jack-up">Jack-Up</option>
+                                    <option value="semi-sub">Semi-Submersible</option>
+                                    <option value="drillship">Drillship</option>
+                                    <option value="platform">Fixed Platform</option>
+                                    <option value="land">Land Rig</option>
+                                </select>
+                            </div>
+                            <div className="form-group">
+                                <label>Contractor</label>
+                                <input
+                                    type="text"
+                                    value={data.contractor}
+                                    onChange={e => onChange('contractor', e.target.value)}
+                                    placeholder="Maersk Drilling"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card">
+                        <h2 className="section-title">Location</h2>
+                        <div className="form-grid">
+                            <div className="form-group">
+                                <label className="required">Field</label>
+                                <input
+                                    type="text"
+                                    value={data.field}
+                                    onChange={e => onChange('field', e.target.value)}
+                                    placeholder="North Sea Field"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label className="required">Block</label>
+                                <input
+                                    type="text"
+                                    value={data.block}
+                                    onChange={e => onChange('block', e.target.value)}
+                                    placeholder="Block 14/19"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label className="required">Country</label>
+                                <input
+                                    type="text"
+                                    value={data.country}
+                                    onChange={e => onChange('country', e.target.value)}
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Latitude</label>
+                                <input
+                                    type="number"
+                                    step="0.0001"
+                                    value={data.latitude}
+                                    onChange={e => onChange('latitude', e.target.value)}
+                                    placeholder="58.1234"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Longitude</label>
+                                <input
+                                    type="number"
+                                    step="0.0001"
+                                    value={data.longitude}
+                                    onChange={e => onChange('longitude', e.target.value)}
+                                    placeholder="1.5678"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Water Depth (ft)</label>
+                                <input
+                                    type="number"
+                                    value={data.waterDepth}
+                                    onChange={e => onChange('waterDepth', e.target.value)}
+                                    placeholder="350"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Air Gap (ft)</label>
+                                <input
+                                    type="number"
+                                    value={data.airGap}
+                                    onChange={e => onChange('airGap', e.target.value)}
+                                    placeholder="75"
+                                />
+                                <small>For floating rigs</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card">
+                        <h2 className="section-title">Well Type</h2>
+                        <div className="form-grid">
+                            <div className="form-group">
+                                <label>Type</label>
+                                <select
+                                    value={data.wellType}
+                                    onChange={e => onChange('wellType', e.target.value)}
+                                >
+                                    <option value="exploration">Exploration</option>
+                                    <option value="appraisal">Appraisal</option>
+                                    <option value="development">Development</option>
+                                    <option value="injection">Injection</option>
+                                    <option value="producer">Producer</option>
+                                </select>
+                            </div>
+                            <div className="form-group">
+                                <label>Purpose</label>
+                                <select
+                                    value={data.wellPurpose}
+                                    onChange={e => onChange('wellPurpose', e.target.value)}
+                                >
+                                    <option value="oil">Oil Producer</option>
+                                    <option value="gas">Gas Producer</option>
+                                    <option value="water-injection">Water Injection</option>
+                                    <option value="gas-injection">Gas Injection</option>
+                                    <option value="observation">Observation</option>
+                                </select>
+                            </div>
+                            <div className="form-group">
+                                <label>Profile</label>
+                                <select
+                                    value={data.wellProfile}
+                                    onChange={e => onChange('wellProfile', e.target.value)}
+                                >
+                                    <option value="vertical">Vertical</option>
+                                    <option value="directional">Directional</option>
+                                    <option value="horizontal">Horizontal</option>
+                                    <option value="extended-reach">Extended Reach</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card">
+                        <h2 className="section-title">Unit System</h2>
+                        <div className="radio-group">
+                            <div className="radio-option">
+                                <input
+                                    type="radio"
+                                    id="imperial"
+                                    name="unitSystem"
+                                    value="imperial"
+                                    checked={data.unitSystem === 'imperial'}
+                                    onChange={e => onChange('unitSystem', e.target.value)}
+                                />
+                                <label htmlFor="imperial">Imperial (US)</label>
+                            </div>
+                            <div className="radio-option">
+                                <input
+                                    type="radio"
+                                    id="metric"
+                                    name="unitSystem"
+                                    value="metric"
+                                    checked={data.unitSystem === 'metric'}
+                                    onChange={e => onChange('unitSystem', e.target.value)}
+                                />
+                                <label htmlFor="metric">Metric (SI)</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        // Step 2: Casing Design
+        function Step2CasingDesign({ data, onChange, onAddCasing, onRemoveCasing, onUpdateCasing }) {
+            return (
+                <div>
+                    <div className="card">
+                        <h2 className="section-title">Well Trajectory</h2>
+                        <div className="form-grid">
+                            <div className="form-group">
+                                <label className="required">Total Depth (MD) (ft)</label>
+                                <input
+                                    type="number"
+                                    value={data.totalDepth}
+                                    onChange={e => onChange('totalDepth', e.target.value)}
+                                    placeholder="11000"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label className="required">True Vertical Depth (ft)</label>
+                                <input
+                                    type="number"
+                                    value={data.tvd}
+                                    onChange={e => onChange('tvd', e.target.value)}
+                                    placeholder="10500"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Kickoff Depth (ft)</label>
+                                <input
+                                    type="number"
+                                    value={data.kickoffDepth}
+                                    onChange={e => onChange('kickoffDepth', e.target.value)}
+                                    placeholder="3500"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Max Inclination (degrees)</label>
+                                <input
+                                    type="number"
+                                    value={data.maxInclination}
+                                    onChange={e => onChange('maxInclination', e.target.value)}
+                                    placeholder="35"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Azimuth (degrees)</label>
+                                <input
+                                    type="number"
+                                    value={data.azimuth}
+                                    onChange={e => onChange('azimuth', e.target.value)}
+                                    placeholder="087"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card">
+                        <h2 className="section-title">Casing Program</h2>
+                        <div className="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Section</th>
+                                        <th>Size</th>
+                                        <th>Grade</th>
+                                        <th>Top (ft)</th>
+                                        <th>Bottom (ft)</th>
+                                        <th>Weight (lb/ft)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {data.casings.map(casing => (
+                                        <tr key={casing.id}>
+                                            <td>
+                                                <input
+                                                    type="text"
+                                                    value={casing.section}
+                                                    onChange={e => onUpdateCasing(casing.id, 'section', e.target.value)}
+                                                    placeholder="30\" Conductor"
+                                                />
+                                            </td>
+                                            <td>
+                                                <input
+                                                    type="text"
+                                                    value={casing.size}
+                                                    onChange={e => onUpdateCasing(casing.id, 'size', e.target.value)}
+                                                    placeholder='30"'
+                                                />
+                                            </td>
+                                            <td>
+                                                <input
+                                                    type="text"
+                                                    value={casing.grade}
+                                                    onChange={e => onUpdateCasing(casing.id, 'grade', e.target.value)}
+                                                    placeholder="K-55"
+                                                />
+                                            </td>
+                                            <td>
+                                                <input
+                                                    type="number"
+                                                    value={casing.top}
+                                                    onChange={e => onUpdateCasing(casing.id, 'top', e.target.value)}
+                                                />
+                                            </td>
+                                            <td>
+                                                <input
+                                                    type="number"
+                                                    value={casing.bottom}
+                                                    onChange={e => onUpdateCasing(casing.id, 'bottom', e.target.value)}
+                                                />
+                                            </td>
+                                            <td>
+                                                <input
+                                                    type="number"
+                                                    value={casing.weight}
+                                                    onChange={e => onUpdateCasing(casing.id, 'weight', e.target.value)}
+                                                />
+                                            </td>
+                                            <td>
+                                                <button
+                                                    className="remove-btn"
+                                                    onClick={() => onRemoveCasing(casing.id)}
+                                                >
+                                                    Remove
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                        <button className="add-row-btn" onClick={onAddCasing}>
+                            + Add Casing String
+                        </button>
+                    </div>
+
+                    <div className="card">
+                        <h2 className="section-title">Drilling Fluids</h2>
+                        <div className="form-grid">
+                            <div className="form-group">
+                                <label className="required">Current Mud Weight (ppg)</label>
+                                <input
+                                    type="number"
+                                    step="0.1"
+                                    value={data.currentMudWeight}
+                                    onChange={e => onChange('currentMudWeight', e.target.value)}
+                                    placeholder="12.0"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Mud Type</label>
+                                <select
+                                    value={data.mudType}
+                                    onChange={e => onChange('mudType', e.target.value)}
+                                >
+                                    <option value="WBM">WBM (Water-Based)</option>
+                                    <option value="OBM">OBM (Oil-Based)</option>
+                                    <option value="SBM">SBM (Synthetic-Based)</option>
+                                    <option value="foam">Foam</option>
+                                    <option value="air">Air/Gas</option>
+                                </select>
+                            </div>
+                            <div className="form-group">
+                                <label>Mud System</label>
+                                <input
+                                    type="text"
+                                    value={data.mudSystem}
+                                    onChange={e => onChange('mudSystem', e.target.value)}
+                                    placeholder="Versapro"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        // Step 3: Drill String
+        function Step3DrillString({ data, onChange, onAddComponent, onRemoveComponent, onUpdateComponent }) {
+            const calculateVolumes = () => {
+                let totalVolume = 0;
+                data.stringComponents.forEach(comp => {
+                    if (comp.id && comp.length) {
+                        const cap = (parseFloat(comp.id) ** 2) / 1029.4;
+                        totalVolume += cap * parseFloat(comp.length);
+                    }
+                });
+                return totalVolume;
+            };
+
+            const calculatePumpOutput = () => {
+                if (!data.linerSize || !data.strokeLength) return 0;
+                const cylinders = data.pumpType === 'triplex' ? 3 : 2;
+                const efficiency = data.efficiency / 100;
+                return (parseFloat(data.linerSize) ** 2 * parseFloat(data.strokeLength) * cylinders * efficiency) / 294;
+            };
+
+            const totalVolume = calculateVolumes();
+            const pumpOutput = calculatePumpOutput();
+            const strokesToBit = pumpOutput > 0 ? Math.ceil(totalVolume / pumpOutput) : 0;
+
+            return (
+                <div>
+                    <div className="card">
+                        <h2 className="section-title">Drill String Components</h2>
+                        <div className="info-box">
+                            <div className="info-box-title">💡 Tip</div>
+                            <p>Add components from top (surface) to bottom (bit). Use the pipe library for standard dimensions.</p>
+                        </div>
+                        <div className="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Name</th>
+                                        <th>OD (in)</th>
+                                        <th>ID (in)</th>
+                                        <th>Length (ft)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {data.stringComponents.map(comp => (
+                                        <tr key={comp.id}>
+                                            <td>
+                                                <select
+                                                    value={comp.type}
+                                                    onChange={e => onUpdateComponent(comp.id, 'type', e.target.value)}
+                                                >
+                                                    <option value="drill-pipe">Drill Pipe</option>
+                                                    <option value="hwdp">HWDP</option>
+                                                    <option value="drill-collar">Drill Collar</option>
+                                                    <option value="stabilizer">Stabilizer</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <input
+                                                    type="text"
+                                                    value={comp.name}
+                                                    onChange={e => onUpdateComponent(comp.id, 'name', e.target.value)}
+                                                    placeholder='5" DP'
+                                                />
+                                            </td>
+                                            <td>
+                                                <input
+                                                    type="number"
+                                                    step="0.001"
+                                                    value={comp.od}
+                                                    onChange={e => onUpdateComponent(comp.id, 'od', e.target.value)}
+                                                />
+                                            </td>
+                                            <td>
+                                                <input
+                                                    type="number"
+                                                    step="0.001"
+                                                    value={comp.id}
+                                                    onChange={e => onUpdateComponent(comp.id, 'id', e.target.value)}
+                                                />
+                                            </td>
+                                            <td>
+                                                <input
+                                                    type="number"
+                                                    value={comp.length}
+                                                    onChange={e => onUpdateComponent(comp.id, 'length', e.target.value)}
+                                                />
+                                            </td>
+                                            <td>
+                                                <button
+                                                    className="remove-btn"
+                                                    onClick={() => onRemoveComponent(comp.id)}
+                                                >
+                                                    Remove
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                        <button className="add-row-btn" onClick={onAddComponent}>
+                            + Add Component
+                        </button>
+                    </div>
+
+                    <div className="card">
+                        <h2 className="section-title">Pump Data</h2>
+                        <div className="form-grid">
+                            <div className="form-group">
+                                <label>Pump Type</label>
+                                <select
+                                    value={data.pumpType}
+                                    onChange={e => onChange('pumpType', e.target.value)}
+                                >
+                                    <option value="triplex">Triplex</option>
+                                    <option value="duplex">Duplex</option>
+                                </select>
+                            </div>
+                            <div className="form-group">
+                                <label>Liner Size (inches)</label>
+                                <input
+                                    type="number"
+                                    step="0.1"
+                                    value={data.linerSize}
+                                    onChange={e => onChange('linerSize', e.target.value)}
+                                    placeholder="6.5"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Stroke Length (inches)</label>
+                                <input
+                                    type="number"
+                                    step="0.1"
+                                    value={data.strokeLength}
+                                    onChange={e => onChange('strokeLength', e.target.value)}
+                                    placeholder="12"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Efficiency (%)</label>
+                                <input
+                                    type="number"
+                                    value={data.efficiency}
+                                    onChange={e => onChange('efficiency', e.target.value)}
+                                    placeholder="95"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Target SPM</label>
+                                <input
+                                    type="number"
+                                    value={data.targetSPM}
+                                    onChange={e => onChange('targetSPM', e.target.value)}
+                                    placeholder="60"
+                                />
+                            </div>
+                        </div>
+
+                        <div className="summary-grid">
+                            <div className="summary-card">
+                                <div className="summary-label">Pump Output</div>
+                                <div className="summary-value">{pumpOutput.toFixed(4)}</div>
+                                <div className="summary-label">bbl/stroke</div>
+                            </div>
+                            <div className="summary-card">
+                                <div className="summary-label">String Volume</div>
+                                <div className="summary-value">{totalVolume.toFixed(1)}</div>
+                                <div className="summary-label">bbl</div>
+                            </div>
+                            <div className="summary-card">
+                                <div className="summary-label">Strokes to Bit</div>
+                                <div className="summary-value">{strokesToBit}</div>
+                                <div className="summary-label">strokes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        // Step 4: BOP Configuration
+        function Step4BOPConfiguration({ data, onChange }) {
+            return (
+                <div>
+                    <div className="card">
+                        <h2 className="section-title">BOP Stack Information</h2>
+                        <div className="form-grid">
+                            <div className="form-group">
+                                <label>Stack Type</label>
+                                <select
+                                    value={data.bopStackType}
+                                    onChange={e => onChange('bopStackType', e.target.value)}
+                                >
+                                    <option value="surface">Surface</option>
+                                    <option value="subsea">Subsea</option>
+                                </select>
+                            </div>
+                            <div className="form-group">
+                                <label>Manufacturer</label>
+                                <input
+                                    type="text"
+                                    value={data.bopManufacturer}
+                                    onChange={e => onChange('bopManufacturer', e.target.value)}
+                                    placeholder="Cameron"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Model</label>
+                                <input
+                                    type="text"
+                                    value={data.bopModel}
+                                    onChange={e => onChange('bopModel', e.target.value)}
+                                    placeholder="CAM-18-3/4-15K"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Working Pressure (psi)</label>
+                                <input
+                                    type="number"
+                                    value={data.bopWorkingPressure}
+                                    onChange={e => onChange('bopWorkingPressure', e.target.value)}
+                                    placeholder="15000"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card">
+                        <h2 className="section-title">Kill & Choke Lines</h2>
+                        <div className="form-grid">
+                            <div className="form-group">
+                                <label>Kill Line Size</label>
+                                <input
+                                    type="text"
+                                    value={data.killLineSize}
+                                    onChange={e => onChange('killLineSize', e.target.value)}
+                                    placeholder='4"'
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Kill Line Rating (psi)</label>
+                                <input
+                                    type="number"
+                                    value={data.killLineRating}
+                                    onChange={e => onChange('killLineRating', e.target.value)}
+                                    placeholder="15000"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Choke Line Size</label>
+                                <input
+                                    type="text"
+                                    value={data.chokeLineSize}
+                                    onChange={e => onChange('chokeLineSize', e.target.value)}
+                                    placeholder='4"'
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Choke Line Rating (psi)</label>
+                                <input
+                                    type="number"
+                                    value={data.chokeLineRating}
+                                    onChange={e => onChange('chokeLineRating', e.target.value)}
+                                    placeholder="15000"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Choke Manifold</label>
+                                <input
+                                    type="text"
+                                    value={data.chokeManifold}
+                                    onChange={e => onChange('chokeManifold', e.target.value)}
+                                    placeholder="Swaco MD-3"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    {data.bopStackType === 'subsea' && (
+                        <div className="card">
+                            <h2 className="section-title">Subsea Details</h2>
+                            <div className="form-grid">
+                                <div className="form-group">
+                                    <label>Riser Size</label>
+                                    <input
+                                        type="text"
+                                        value={data.riserSize}
+                                        onChange={e => onChange('riserSize', e.target.value)}
+                                        placeholder='21"'
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    <label>Riser Rating (psi)</label>
+                                    <input
+                                        type="number"
+                                        value={data.riserRating}
+                                        onChange={e => onChange('riserRating', e.target.value)}
+                                        placeholder="5000"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            );
+        }
+
+        // Step 5: Review
+        function Step5Review({ data, onEdit }) {
+            return (
+                <div>
+                    <div className="card">
+                        <h2 className="section-title">✓ Well Summary</h2>
+                        <div style={{ padding: '1rem', background: '#f7fafc', borderRadius: '8px', marginBottom: '1rem' }}>
+                            <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>{data.wellName}</h3>
+                            <p style={{ color: 'var(--text-light)' }}>
+                                {data.field}, {data.block}, {data.country}
+                            </p>
+                            <p style={{ color: 'var(--text-light)' }}>
+                                {data.wellType} Well | {data.wellProfile} | {data.totalDepth} ft MD
+                            </p>
+                        </div>
+                        <button className="btn btn-outline btn-sm" onClick={() => onEdit(1)}>Edit</button>
+                    </div>
+
+                    <div className="card">
+                        <h2 className="section-title">✓ Casing Program ({data.casings.length} strings)</h2>
+                        {data.casings.map((casing, idx) => (
+                            <p key={idx}>{casing.section}: {casing.top}-{casing.bottom} ft</p>
+                        ))}
+                        <button className="btn btn-outline btn-sm" onClick={() => onEdit(2)} style={{ marginTop: '1rem' }}>Edit</button>
+                    </div>
+
+                    <div className="card">
+                        <h2 className="section-title">✓ Drill String ({data.stringComponents.length} components)</h2>
+                        <div className="summary-grid">
+                            <div className="summary-card">
+                                <div className="summary-label">Total Length</div>
+                                <div className="summary-value">
+                                    {data.stringComponents.reduce((sum, c) => sum + parseFloat(c.length || 0), 0)}
+                                </div>
+                                <div className="summary-label">ft</div>
+                            </div>
+                        </div>
+                        <button className="btn btn-outline btn-sm" onClick={() => onEdit(3)} style={{ marginTop: '1rem' }}>Edit</button>
+                    </div>
+
+                    <div className="card">
+                        <h2 className="section-title">✓ BOP Configuration</h2>
+                        <p>{data.bopManufacturer} {data.bopModel} {data.bopStackType} Stack</p>
+                        <p>Working Pressure: {data.bopWorkingPressure} psi</p>
+                        <button className="btn btn-outline btn-sm" onClick={() => onEdit(4)} style={{ marginTop: '1rem' }}>Edit</button>
+                    </div>
+
+                    <div className="info-box">
+                        <div className="info-box-title">Ready to Save</div>
+                        <p>Click "Save & Create Well" to save this configuration to Firebase. You'll be able to access it anytime from the dashboard.</p>
+                    </div>
+                </div>
+            );
+        }
+
+        // Render the app
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<WellCreationWizard />);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-HF-01",
+  "moduleId": "HRO-HP-ESS-HF",
+  "courseId": "HRO-HP-ESS",
+  "title": "Human Performance Limits",
+  "type": "lesson",
+  "content": "Human attention and memory have fundamental limits that cannot be overcome by effort or motivation. Working memory holds only 4-7 items; attention can only focus on one complex task at a time; multitasking is really rapid task-switching with performance costs. Designing work that respects these limits prevents errors; ignoring them guarantees them.",
+  "mcq": {
+    "question": "An operator is asked to monitor 12 different parameters while simultaneously troubleshooting an equipment issue. They miss an important change in one parameter. What best explains this error?",
+    "options": {
+      "A": "Inadequate training on what to monitor",
+      "B": "Task demands exceeded human attention and memory limits",
+      "C": "Lack of motivation to monitor carefully",
+      "D": "Poor situational awareness skills"
+    },
+    "correctOption": "B",
+    "explanation": "Monitoring 12 parameters while troubleshooting exceeds normal human cognitive capacity. This isn't a training, motivation, or skill issue—it's a mismatch between task demands and fundamental human limits. Better design (fewer parameters, alarms, or additional personnel) is the solution."
+  },
+  "openQuestions": [
+    "What tasks in your work environment regularly exceed human attention or memory limits? How are these currently managed?",
+    "How do you personally compensate for memory limitations during complex tasks? (Notes, checklists, technology?)"
+  ]
+}

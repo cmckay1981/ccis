@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-SA-06",
+  "moduleId": "HRO-HP-ESS-SA",
+  "courseId": "HRO-HP-ESS",
+  "title": "Recovering Lost SA",
+  "type": "lesson",
+  "content": "SA loss happens to everyone—the key is recognizing it quickly and recovering deliberately. Warning signs include confusion, fixation on single issues, gut feelings that something is wrong, and falling behind the pace of events. Recovery requires stopping or slowing down, gathering fresh information, and rebuilding your mental model before continuing.",
+  "mcq": {
+    "question": "Mid-operation, you realize you're confused about the current system state—nothing seems to match your expectations. What is the most appropriate immediate action?",
+    "options": {
+      "A": "Continue cautiously while gathering more information",
+      "B": "Pause if safe, announce confusion, and systematically verify current state",
+      "C": "Ask a teammate to take over while you observe",
+      "D": "Review procedures to find where you deviated"
+    },
+    "correctOption": "B",
+    "explanation": "When SA is lost, the priority is stopping the drift and rebuilding from verified information. Announcing confusion enables team support and prevents actions based on faulty understanding. Continuing cautiously risks compounding errors."
+  },
+  "openQuestions": [
+    "What personal signals tell you that your situational awareness has degraded? How reliable are these warning signs?",
+    "How comfortable is your team with someone saying 'I'm confused' or 'I've lost the picture'? What would make this easier?"
+  ]
+}

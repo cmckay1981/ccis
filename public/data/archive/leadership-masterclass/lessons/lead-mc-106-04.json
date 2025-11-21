@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-106-04",
+  "moduleId": "LEAD-MC-106",
+  "courseId": "LEAD-MC",
+  "title": "Creating High-Performance Team Culture",
+  "type": "lesson",
+  "content": "High-performance culture doesn't happen by accident—it's built through consistent leadership choices. These teams share characteristics: clarity about what matters, ownership of outcomes, rapid feedback loops, intolerance for sustained mediocrity, and genuine collaboration. Leaders create this by modeling expected behavior, celebrating the right wins, addressing problems immediately, and making visible trade-offs that reinforce stated values. Culture is what you tolerate, not what you post on walls.",
+  "mcq": {
+    "question": "A leader publicly states that 'we value quality over speed.' When a project runs behind schedule, the leader pushes the team to cut quality checkpoints to hit the deadline. The project ships on time with known defects. What cultural lesson did the team just learn?",
+    "options": {
+      "A": "Sometimes quality must be sacrificed for business needs",
+      "B": "Speed actually matters more than quality despite stated values",
+      "C": "The leader makes good decisions under pressure",
+      "D": "Deadlines are non-negotiable in this organization"
+    },
+    "correctOption": "B",
+    "explanation": "Actions under pressure reveal true priorities. The stated value (quality) was immediately abandoned when tested, teaching the team that the real value is hitting deadlines. This creates cynicism about any stated values and teaches people to watch what leaders do, not what they say. If quality truly mattered, the leader would have either extended the timeline, reduced scope, or accepted the business consequences—then explained the decision openly. Instead, the gap between words and actions destroyed credibility and defined actual culture: speed wins, quality is negotiable."
+  },
+  "openQuestions": [
+    "What's one stated value of your team or organization that gets compromised regularly under pressure?",
+    "If someone new joined your team, what would they learn about real priorities by watching behavior for a week?"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-107-03",
+  "moduleId": "LEAD-MC-107",
+  "courseId": "LEAD-MC",
+  "title": "Leading Organizational Change",
+  "type": "lesson",
+  "content": "Change fails more often than it succeeds because leaders underestimate resistance, overcommunicate the what but undercommunicate the why, and declare victory before new behaviors become embedded. Successful change requires: clear case for why current state is insufficient, compelling vision of future state, visible leadership commitment, early wins that build momentum, and persistence through the messy middle when enthusiasm fades. People don't resist change—they resist uncertainty and loss of control.",
+  "mcq": {
+    "question": "A leader announces a major process change with detailed implementation plan and clear benefits. Three months in, adoption is low and people are finding workarounds to keep using the old process. The leader is frustrated that people 'won't change.' What's the most likely issue?",
+    "options": {
+      "A": "The team is resistant to change and needs stronger accountability",
+      "B": "The new process has problems that make the old way more effective",
+      "C": "The leader didn't address the emotional side of change: what people are losing, why it's worth it, and how to navigate the transition",
+      "D": "The implementation timeline was too aggressive"
+    },
+    "correctOption": "C",
+    "explanation": "Technical solutions don't fix emotional resistance. The old process represents comfort, competence, and control—even if it's suboptimal. The new process requires learning, uncertainty, and temporary decreased performance. The leader addressed the rational case (benefits, plan) but ignored the emotional reality (anxiety, loss, disruption). Successful change leadership acknowledges what people are giving up, addresses their concerns directly, provides support during transition, and celebrates progress. Option A blames people instead of examining leadership approach. Option B might be true but isn't indicated. Option D misses that timeline isn't the issue—emotional readiness is."
+  },
+  "openQuestions": [
+    "Think of a change initiative you've led. How much time did you spend on the rational case versus addressing people's emotional concerns?",
+    "What change are you currently experiencing? What have you lost in the transition, and how are you managing that loss?"
+  ]
+}

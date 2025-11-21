@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-DM-02",
+  "moduleId": "HRO-HP-ESS-DM",
+  "courseId": "HRO-HP-ESS",
+  "title": "The OODA Loop",
+  "type": "lesson",
+  "content": "OODA stands for Observe, Orient, Decide, Act—a continuous cycle for adaptive decision-making. Orient is the critical phase where you interpret observations through your experience, training, and mental models. The loop repeats continuously; faster, more accurate loops give you advantage over evolving situations.",
+  "mcq": {
+    "question": "A team rapidly responds to an equipment alarm but their actions make the situation worse. Review shows they acted on initial observations without considering what the readings meant in context. Which OODA phase was inadequate?",
+    "options": {
+      "A": "Observe—they missed critical information",
+      "B": "Orient—they didn't properly interpret what they observed",
+      "C": "Decide—they chose the wrong response",
+      "D": "Act—they executed poorly"
+    },
+    "correctOption": "B",
+    "explanation": "The Orient phase is where observations are interpreted and understood. Acting quickly on observations without proper orientation (understanding context and meaning) leads to responses that don't match the actual situation."
+  },
+  "openQuestions": [
+    "When you receive new information during operations, how much time do you typically spend on orientation (understanding what it means) before deciding what to do?",
+    "Describe a situation where taking time to orient properly—even under pressure—led to a better outcome."
+  ]
+}

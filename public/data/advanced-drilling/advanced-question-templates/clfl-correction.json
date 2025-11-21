@@ -1,0 +1,45 @@
+{
+  "templateId": "QT-CLFL-001",
+  "category": "CLFL_CALCULATIONS",
+  "title": "Subsea ICP with CLFL Correction",
+  "level": ["L3", "L4"],
+  "applicableTo": ["subsea"],
+  "question": "On {{wellProfile.wellName}}, you are in {{wellProfile.waterDepth.value}} {{wellProfile.waterDepth.unit}} water depth. SCR pressure is {{scenario.scr}} psi, SIDPP is {{scenario.sidpp}} psi, and CLFL at kill rate is {{wellProfile.chokeLineData.clflAtKillRate[0].clfl}} psi. Calculate the subsea ICP.",
+  "inputs": {
+    "wellProfile": {
+      "required": ["waterDepth", "chokeLineData.clflAtKillRate"]
+    },
+    "scenario": {
+      "generated": true,
+      "scr": {
+        "range": [400, 800],
+        "step": 50
+      },
+      "sidpp": {
+        "range": [200, 600],
+        "step": 50
+      }
+    }
+  },
+  "calculation": {
+    "formula": "ICP (Subsea) = SCR + SIDPP + CLFL",
+    "steps": [
+      "Add SCR pressure (slow circulating rate pressure)",
+      "Add SIDPP (shut-in drill pipe pressure)",
+      "Add CLFL (choke line friction loss)"
+    ]
+  },
+  "answerValidation": {
+    "tolerance": 10,
+    "unit": "psi",
+    "roundTo": 0
+  },
+  "feedback": {
+    "correct": "Correct. Subsea ICP = {{answer}} psi. In subsea operations, CLFL must always be added to account for friction in the long choke line.",
+    "incorrect": "Subsea ICP = SCR + SIDPP + CLFL. Simply add all three values: {{scenario.scr}} + {{scenario.sidpp}} + {{wellProfile.chokeLineData.clflAtKillRate[0].clfl}} = {{answer}} psi.",
+    "hint": "Unlike surface operations, subsea must account for choke line friction. Just add the three pressures together."
+  },
+  "contextualTip": "With {{wellProfile.waterDepth.value}} {{wellProfile.waterDepth.unit}} water depth, the choke line creates significant friction loss. Always verify CLFL was measured at your planned kill rate.",
+  "relatedLesson": "WC-SS-103-02",
+  "tags": ["clfl", "subsea", "icp", "well-control", "dynamic"]
+}

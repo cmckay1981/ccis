@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-103-05",
+  "moduleId": "LEAD-103",
+  "courseId": "LEAD",
+  "title": "Leading Through Full-Scale Crisis",
+  "type": "knowledge-check",
+  "content": "Crisis leadership requires integrating all pressure management skills simultaneously: maintaining composure, communicating clearly despite chaos, making rapid decisions with limited information, and keeping the team focused on controllable actions. The leader's role shifts from normal operations to crisis mode: prioritize immediate safety, establish command structure, manage information flow, and prepare for recovery while still responding.",
+  "mcq": {
+    "question": "During a major incident, a leader notices their team fragmenting: some people are acting independently without coordination, others are waiting for direction, and information flow has become chaotic. What is the most critical first action?",
+    "options": {
+      "A": "Assign specific roles and establish a clear command structure immediately",
+      "B": "Gather everyone for a full briefing to ensure shared understanding",
+      "C": "Let experienced people continue working while you focus on the biggest problem",
+      "D": "Document what's happening for the post-incident review"
+    },
+    "correctOption": "A",
+    "explanation": "Crisis requires structure before strategy. Fragmented action wastes effort and creates new problems. Establishing clear roles and command structure—even imperfectly—creates coordination that enables effective response. Option B takes too long when action is needed now. Option C allows chaos to continue. Option D mistakes documentation for leadership. First create order, then solve problems."
+  },
+  "openQuestions": [
+    "Have you ever led through a genuine crisis? What did you learn about your own leadership under extreme pressure?",
+    "What is your crisis leadership checklist—the immediate actions you would take to create structure during chaos?"
+  ]
+}

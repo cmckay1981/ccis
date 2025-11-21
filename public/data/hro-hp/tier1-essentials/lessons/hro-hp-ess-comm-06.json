@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-COMM-06",
+  "moduleId": "HRO-HP-ESS-COMM",
+  "courseId": "HRO-HP-ESS",
+  "title": "Assertive Communication",
+  "type": "lesson",
+  "content": "Assertive communication means clearly stating concerns, questions, or disagreements—even to those with more authority or experience. Authority gradients can suppress critical information when junior team members hesitate to speak up. Effective teams create environments where anyone can voice concerns without fear of dismissal or retaliation.",
+  "mcq": {
+    "question": "A junior team member notices something that doesn't look right but the senior operator seems confident and busy. The junior member decides not to interrupt. Later, the issue causes a problem. What barrier prevented effective communication?",
+    "options": {
+      "A": "Lack of technical knowledge to articulate the concern",
+      "B": "Authority gradient—reluctance to question senior personnel",
+      "C": "Poor timing—the senior operator was legitimately too busy",
+      "D": "The concern wasn't significant enough to raise"
+    },
+    "correctOption": "B",
+    "explanation": "Authority gradients create psychological barriers to speaking up. When junior members assume seniors have already considered or would dismiss their input, critical information goes unshared. The senior's confidence and busyness reinforced the barrier."
+  },
+  "openQuestions": [
+    "What makes it difficult to speak up when you have concerns about a decision or action by someone more senior?",
+    "How do you, as a team member or leader, create an environment where people feel safe raising concerns?"
+  ]
+}

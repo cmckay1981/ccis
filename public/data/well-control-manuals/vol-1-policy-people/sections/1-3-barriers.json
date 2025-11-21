@@ -1,0 +1,42 @@
+{
+  "sectionId": "1.3",
+  "title": "Well Barrier Requirements",
+  "content": {
+    "1.3.1": {
+      "title": "Two-Barrier Principle",
+      "content": "**At least two independent and tested barriers shall be present at all times during well operations where there is a potential for uncontrolled flow.**\n\nThis requirement applies:\n- After surface casing is set and cemented\n- Whenever the well is exposed to potential flow zones\n- During all phases of construction, intervention, and abandonment\n- Until the well is permanently abandoned with verified barriers\n\nExceptions require specific risk assessment and approval through Management of Change."
+    },
+    "1.3.2": {
+      "title": "Well Barrier Element (WBE)",
+      "content": "A Well Barrier Element is a single component that alone cannot prevent flow but contributes to a barrier envelope.\n\n**Examples of WBEs:**\n- Drilling fluid (mud column)\n- Casing\n- Cement\n- BOP rams\n- Annular preventer\n- Wellhead seals\n- Packers\n- Plugs\n- Float valves\n- SSSV\n\n**WBE Requirements:**\n- Rated for the maximum anticipated pressure and temperature\n- Compatible with well fluids and environment\n- Testable or verifiable\n- Properly installed per manufacturer specifications\n- Maintained in serviceable condition"
+    },
+    "1.3.3": {
+      "title": "Well Barrier Envelope",
+      "content": "A Well Barrier Envelope is a combination of WBEs that together form a continuous seal preventing flow from the formation to the external environment.\n\n**Envelope Requirements:**\n- Must provide complete isolation (no leak paths)\n- Each element in the envelope must be functioning\n- Must withstand maximum anticipated differential pressure\n- Must be independent from other barrier envelopes\n\n**Primary Barrier Envelope (typical drilling):**\nDrilling fluid column + open hole formation + casing + wellhead\n\n**Secondary Barrier Envelope (typical drilling):**\nDrilling fluid column + casing + cement + BOP + wellhead"
+    },
+    "1.3.4": {
+      "title": "Barrier Independence",
+      "content": "Barriers are independent when failure of one cannot cause or contribute to failure of the other.\n\n**Independence Requirements:**\n- Different failure modes\n- No common components where practical\n- No common control systems where practical\n- Failure of primary barrier leaves secondary barrier intact\n\n**Note:** Complete independence is not always achievable. Where barriers share common elements (e.g., wellhead), additional verification and monitoring may be required."
+    },
+    "1.3.5": {
+      "title": "Barrier Verification",
+      "content": "All barriers shall be verified before relying on them:\n\n**Testing:**\n- Pressure testing to required values\n- Function testing of mechanical elements\n- Inflow testing where applicable\n\n**When to Test:**\n- Prior to initial use\n- After installation\n- After any work that could affect integrity\n- After exposure to abnormal loads\n- After repair or replacement\n- At periodic intervals per testing schedule\n\n**Test Documentation:**\nAll barrier tests shall be documented including:\n- Date and time\n- Test pressure and duration\n- Result (pass/fail)\n- Personnel conducting test\n- Any observations or anomalies"
+    },
+    "1.3.6": {
+      "title": "Acceptable Leak Rates",
+      "content": "Barriers should seal completely. Where minor leakage occurs, the following limits apply:\n\n**Pressure Tests:**\n- No leak is acceptable during pressure testing\n- Stabilized pressure with no decline over test period\n\n**Operational Leakage (if observed):**\n- Gas: Maximum 20% LEL at 4 inches from source\n- Liquid: Maximum 4 drops per minute OR 1 liter per 24 hours\n- No conduit-to-conduit leak is acceptable (e.g., annulus to bore)\n\n**Note:** Any leak approaching these limits requires investigation and remediation planning. These limits do not authorize operating with known leaks."
+    },
+    "1.3.7": {
+      "title": "Barrier Status Monitoring",
+      "content": "Barrier status shall be continuously monitored:\n\n**Methods:**\n- Pressure monitoring (surface and downhole where available)\n- Flow monitoring\n- Pit volume monitoring\n- Annulus pressure observation\n- Visual inspection of surface equipment\n\n**Status Categories:**\n\n**GREEN - Verified**\nBarrier tested and confirmed functional. Full operations may proceed.\n\n**YELLOW - Unverified**\nBarrier not yet tested or test due. Verify before relying on barrier.\n\n**RED - Failed/Compromised**\nBarrier known or suspected to be non-functional. Immediate action required."
+    },
+    "1.3.8": {
+      "title": "Lost Barrier Procedures",
+      "content": "When a barrier is lost or suspected to be compromised:\n\n**Immediate Actions:**\n1. Notify Driller and Supervisor immediately\n2. Assess remaining barrier status\n3. Cease operations that could stress remaining barrier\n4. Implement contingency measures\n\n**If ONE barrier remains:**\n- Operations to restore second barrier take priority\n- Limited operations may continue with enhanced monitoring\n- Risk assessment required for continued operations\n- Senior management notification required\n\n**If NO barriers remain (or suspected):**\n- Shut in well immediately if possible\n- Implement emergency response procedures\n- Do not attempt operations without barriers\n- Notify emergency response chain\n\n**Restoration:**\nOperations shall not resume normal mode until two verified barriers are re-established."
+    },
+    "1.3.9": {
+      "title": "Well Barrier Schematic (WBS)",
+      "content": "A Well Barrier Schematic shall be maintained for every well showing:\n\n**Required Information:**\n- Well identification and current status\n- Primary and secondary barrier envelopes clearly marked\n- All WBEs identified with status (verified/unverified)\n- Pressure ratings of each element\n- Test dates and results for each element\n- Hydrocarbon-bearing zones identified\n- Pore pressure and fracture gradient at key depths\n- Casing and cement details\n- Current fluid weights and heights\n\n**Updates:**\nThe WBS shall be updated:\n- At each operational phase change\n- When barrier status changes\n- After any barrier test\n- At crew handover\n\n**Display:**\nCurrent WBS shall be displayed at the Driller's station and available to all well control personnel."
+    }
+  }
+}

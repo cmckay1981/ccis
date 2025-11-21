@@ -1,0 +1,23 @@
+{
+  "moduleId": "WC-SS-103",
+  "courseId": "WC-SS",
+  "title": "Choke Line Friction Loss (CLFL)",
+  "description": "Understanding and calculating CLFL - the critical difference between surface and subsea well control. Covers CLFL effects on shut-in pressures, ICP/FCP corrections, and kill sheet modifications for subsea operations.",
+  "order": 3,
+  "lessonIds": [
+    "WC-SS-103-01",
+    "WC-SS-103-02",
+    "WC-SS-103-03"
+  ],
+  "examWeight": "Critical",
+  "iwcfSyllabus": "DR-SS-PP-08",
+  "subseaCritical": true,
+  "documentId": "WC-SS-103",
+  "tags": [
+    "well-control",
+    "subsea",
+    "deepwater",
+    "IWCF",
+    "WC-SS-103"
+  ]
+}

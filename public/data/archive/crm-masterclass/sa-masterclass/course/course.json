@@ -1,0 +1,32 @@
+{
+  "courseId": "SA",
+  "title": "Situational Awareness Masterclass",
+  "description": "A comprehensive course on building, maintaining, and recovering situational awareness in dynamic operational environments. Covers perception, comprehension, projection, team SA, and threat management. Designed for operators and supervisors in high-reliability industries.",
+  "order": 1,
+  "modules": [
+    "SA-101",
+    "SA-102",
+    "SA-103",
+    "SA-104",
+    "SA-105",
+    "SA-106"
+  ],
+  "totalLessons": 24,
+  "estimatedCompletionTime": "4 training days",
+  "trainingFormat": {
+    "sessionsPerDay": 7,
+    "sessionLength": "45 minutes",
+    "breakLength": "15 minutes",
+    "lunchBreak": "1 hour",
+    "dailySchedule": "08:00-16:00 with structured breaks"
+  },
+  "prerequisites": [],
+  "learningObjectives": [
+    "Understand the three levels of situational awareness and how they interact",
+    "Develop effective scanning and perception techniques",
+    "Build accurate mental models and update them based on new information",
+    "Project future states and anticipate system behavior",
+    "Recognize and mitigate common SA threats",
+    "Maintain shared SA across teams and during handovers"
+  ]
+}

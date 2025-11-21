@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-110-04",
+  "moduleId": "LEAD-MC-110",
+  "courseId": "LEAD-MC",
+  "title": "Remote and Distributed Team Leadership",
+  "type": "lesson",
+  "content": "Leading people you rarely see in person requires deliberate communication structure, intentional culture-building, and different visibility mechanisms. Remote leadership fails when leaders assume physical absence means they can reduce engagement. It actually requires more intentional effort: structured check-ins, clear communication of priorities, proactive relationship-building, and creating opportunities for team connection. Distance amplifies small communication gaps into major misalignments.",
+  "mcq": {
+    "question": "You lead a team distributed across three locations. You notice that the local team (same office as you) consistently has better information, gets faster responses to questions, and seems more engaged than the remote members. Remote team members have started missing optional meetings and seem less connected to organizational culture. What's the primary issue?",
+    "options": {
+      "A": "Remote workers are naturally less engaged and this is expected",
+      "B": "You're unintentionally creating information and access inequality based on proximity",
+      "C": "Remote team members need to take more initiative to stay connected",
+      "D": "The remote locations need their own local leadership presence"
+    },
+    "correctOption": "B",
+    "explanation": "Proximity bias is real and destructive. You're unconsciously giving better access, information, and engagement to people you see physically. Remote team members aren't less motivated—they're operating with less information and weaker connection. This is a leadership problem, not a remote work problem. Fix it by standardizing communication (if remote team needs video calls, local team gets video calls too), rotating meeting times across time zones, being deliberate about information distribution, and spending face-time proportionally. Remote leadership requires compensating for proximity bias, not accepting it."
+  },
+  "openQuestions": [
+    "If you lead distributed team members, how do you ensure equal access and information flow?",
+    "What communication rhythm works best for maintaining connection across distance?"
+  ]
+}

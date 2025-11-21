@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-108-01",
+  "moduleId": "LEAD-108",
+  "courseId": "LEAD",
+  "title": "Risk Assessment and Management",
+  "type": "lesson",
+  "content": "Effective leaders assess risk systematically: likelihood of occurrence, potential severity of consequence, and ability to detect early warning signs. Not all risks require the same response—some should be eliminated, some mitigated, some monitored, and some accepted. The error is treating all risks identically or ignoring low-probability high-consequence scenarios. Risk management isn't about eliminating all risk—it's about taking the right risks consciously.",
+  "mcq": {
+    "question": "A team is planning a complex operation with three identified risks: high-likelihood minor equipment failure (easily fixable), low-likelihood major system failure (catastrophic consequences), and medium-likelihood schedule delay (annoying but manageable). The leader has limited resources to address risks. How should they prioritize?",
+    "options": {
+      "A": "Address the high-likelihood risk first since it's most certain to occur",
+      "B": "Address the low-likelihood catastrophic risk first since consequences are severe",
+      "C": "Spread resources equally across all three risks",
+      "D": "Accept all risks since resources are limited and proceed with the operation"
+    },
+    "correctOption": "B",
+    "explanation": "Low-probability high-consequence risks demand priority attention because you can't recover from catastrophic failure. The equipment failure is likely but manageable—you can respond when it occurs. The schedule delay is inconvenient but not critical. The system failure could end the operation or cause serious harm—this requires upfront mitigation regardless of likelihood. Option A optimizes for probability not consequence. Option C dilutes effort across different risk profiles. Option D ignores that some risks are unacceptable. Risk management is about protecting against the outcomes you can't tolerate, even if they seem unlikely."
+  },
+  "openQuestions": [
+    "What's the biggest risk your team faces that you're currently not actively managing? Why?",
+    "Describe a time when a low-probability risk actually occurred. How did that change your risk assessment approach?"
+  ]
+}

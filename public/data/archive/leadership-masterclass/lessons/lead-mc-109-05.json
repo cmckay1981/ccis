@@ -1,0 +1,24 @@
+{
+  "lessonId": "LEAD-MC-109-05",
+  "moduleId": "LEAD-MC-109",
+  "courseId": "LEAD-MC",
+  "title": "Managing Organizational Resistance",
+  "type": "scenario",
+  "content": "Sometimes organizations resist necessary change due to entrenched interests, cultural inertia, or past failed initiatives. Overcoming organizational resistance requires patience, strategic thinking, and sometimes accepting that change happens incrementally. Forcing change through formal authority often creates compliance without commitment.",
+  "scenario": {
+    "story": "You've been brought in to improve performance in a department with a long history of resistance to change. Previous leaders tried top-down mandates that were passively resisted until the leaders moved on and things returned to previous state. The team is competent but skeptical of any new initiative. You have formal authority but limited trust. You need meaningful improvement within a year.",
+    "options": {
+      "A": "Use your authority to mandate changes quickly before resistance can organize",
+      "B": "Start with small wins that demonstrate value, involve skeptics in problem-solving, and build momentum gradually",
+      "C": "Replace the most resistant team members to remove obstacles to change",
+      "D": "Wait to build relationships before attempting any changes"
+    },
+    "recommendedResponse": "B",
+    "explanation": "Option B recognizes that resistance is based on experience—past changes failed, so skepticism is rational. Start small: identify a problem the team actually cares about, involve them in solving it, deliver visible improvement, and build credibility. Skeptics who see genuine improvement often become advocates. Option A repeats the pattern that's already failed multiple times. Option C removes people instead of addressing why resistance exists. Option D delays too long—you have a year, and building trust requires demonstrating competence through action, not just relationship-building. Overcome organizational resistance by earning credibility through results, not forcing compliance through authority."
+  },
+  "openQuestions": [
+    "Think of an organization or team that resisted change you tried to lead. What was driving the resistance?",
+    "What small win could you deliver in the next 30 days that would build credibility for larger change?",
+    "How do you differentiate between resistance that signals legitimate concerns versus resistance protecting status quo?"
+  ]
+}

@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "redcell-gabriella"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }

@@ -1,0 +1,47 @@
+{
+  "templateId": "QT-RM-001",
+  "category": "RISER_MARGIN",
+  "title": "Riser Margin Calculation",
+  "level": ["L3", "L4"],
+  "applicableTo": ["subsea"],
+  "question": "On {{wellProfile.wellName}}, water depth is {{wellProfile.waterDepth.value}} {{wellProfile.waterDepth.unit}}, current TVD is {{currentSection.settingDepth.tvd}} {{currentSection.settingDepth.unit}}, and pore pressure gradient is {{scenario.porePressure}} ppg EMW. Seawater density is 8.55 ppg. Calculate the riser margin required.",
+  "inputs": {
+    "wellProfile": {
+      "required": ["waterDepth", "wellName"]
+    },
+    "currentSection": {
+      "from": "wellProfile.casingProgram[activeSection]",
+      "required": ["settingDepth.tvd"]
+    },
+    "scenario": {
+      "porePressure": {
+        "from": "wellProfile.ppfg.dataPoints[nearest to TVD].porePressure"
+      }
+    },
+    "constants": {
+      "seawaterDensity": 8.55
+    }
+  },
+  "calculation": {
+    "formula": "RM = (Pore Pressure - Seawater Density) × (Water Depth / TVD)",
+    "steps": [
+      "Calculate pressure difference: Pore Pressure EMW - Seawater Density",
+      "Calculate depth ratio: Water Depth / Total TVD",
+      "Multiply to get Riser Margin in ppg"
+    ],
+    "note": "Riser margin ensures that if the riser is lost, seawater in the riser section won't allow formation to flow"
+  },
+  "answerValidation": {
+    "tolerance": 0.05,
+    "unit": "ppg",
+    "roundTo": 2
+  },
+  "feedback": {
+    "correct": "Correct. Riser margin = {{answer}} ppg. Your mud weight must be at least {{scenario.porePressure}} + {{answer}} = {{totalRequired}} ppg to maintain control if the riser is lost.",
+    "incorrect": "Riser Margin = (PP - SW) × (WD / TVD). With PP={{scenario.porePressure}} ppg, SW=8.55 ppg, WD={{wellProfile.waterDepth.value}} m, TVD={{currentSection.settingDepth.tvd}} m, RM = {{answer}} ppg.",
+    "hint": "Think of it this way: if you lose the riser, that column of mud becomes seawater. How much extra mud weight do you need below to compensate?"
+  },
+  "contextualTip": "In {{wellProfile.waterDepth.value}} {{wellProfile.waterDepth.unit}} water depth, riser margin is significant. Always verify your MW exceeds pore pressure PLUS riser margin.",
+  "relatedLesson": "WC-SS-102-02",
+  "tags": ["riser-margin", "subsea", "deepwater", "well-control", "dynamic"]
+}

@@ -1,0 +1,115 @@
+{
+  "appendixId": "C",
+  "title": "References & Standards",
+  "content": {
+    "C.1": {
+      "title": "International Standards",
+      "references": [
+        {
+          "standard": "API RP 53",
+          "title": "Blowout Prevention Equipment Systems for Drilling Wells",
+          "description": "Recommended practice for BOP systems including testing requirements"
+        },
+        {
+          "standard": "API RP 59",
+          "title": "Recommended Practice for Well Control Operations",
+          "description": "Guidelines for well control procedures and practices"
+        },
+        {
+          "standard": "API Standard 53",
+          "title": "Blowout Prevention Equipment Systems for Drilling Wells",
+          "description": "Equipment standards for BOP systems"
+        },
+        {
+          "standard": "ISO 16530",
+          "title": "Well Integrity",
+          "description": "International standard for well integrity management throughout lifecycle"
+        },
+        {
+          "standard": "NORSOK D-010",
+          "title": "Well Integrity in Drilling and Well Operations",
+          "description": "Norwegian standard for well barriers and integrity, widely adopted internationally"
+        },
+        {
+          "standard": "API RP 96",
+          "title": "Deepwater Well Design and Construction",
+          "description": "Recommended practice for deepwater drilling operations"
+        },
+        {
+          "standard": "API RP 92U",
+          "title": "Underbalanced Drilling Operations",
+          "description": "Guidelines for underbalanced and managed pressure drilling"
+        }
+      ]
+    },
+    "C.2": {
+      "title": "Certification Standards",
+      "references": [
+        {
+          "standard": "IWCF",
+          "title": "International Well Control Forum Certification Scheme",
+          "description": "International certification program for well control competency",
+          "website": "www.iwcf.org"
+        },
+        {
+          "standard": "IADC WellSharp",
+          "title": "IADC WellSharp Certification Program",
+          "description": "Industry-wide well control training and assessment program",
+          "website": "www.iadc.org/wellsharp"
+        }
+      ]
+    },
+    "C.3": {
+      "title": "Regulatory References",
+      "note": "Specific regulatory requirements vary by jurisdiction. Consult applicable regulations for:",
+      "topics": [
+        "BOP testing frequency and requirements",
+        "Certification requirements for personnel",
+        "Notification and reporting requirements",
+        "Well barrier requirements",
+        "Environmental protection requirements",
+        "Emergency response requirements"
+      ],
+      "commonRegulators": [
+        {"region": "USA - Gulf of Mexico", "regulator": "BSEE", "reference": "30 CFR 250"},
+        {"region": "UK - North Sea", "regulator": "HSE/OPRED", "reference": "DCR, SCR Regulations"},
+        {"region": "Norway", "regulator": "PSA", "reference": "Activities Regulations"},
+        {"region": "Brazil", "regulator": "ANP", "reference": "SGSO Regulations"},
+        {"region": "Australia", "regulator": "NOPSEMA", "reference": "OPGGS Act"}
+      ]
+    },
+    "C.4": {
+      "title": "Industry Publications",
+      "references": [
+        {
+          "publisher": "SPE",
+          "title": "Applied Drilling Engineering",
+          "description": "Comprehensive textbook including well control fundamentals"
+        },
+        {
+          "publisher": "IADC",
+          "title": "Drilling Manual",
+          "description": "Industry reference for drilling operations including well control"
+        },
+        {
+          "publisher": "Well Control Institute",
+          "title": "Well Control Reference Materials",
+          "description": "Technical publications on well control topics"
+        }
+      ]
+    },
+    "C.5": {
+      "title": "Related Company Documents",
+      "note": "The following internal documents support this manual:",
+      "documents": [
+        "Volume 2: Well Control Procedures",
+        "Volume 3: Equipment & Testing",
+        "Volume 4: Calculations & Quick Reference",
+        "Emergency Response Plan",
+        "HSE Management System",
+        "Drilling Operations Manual",
+        "Competency Management System"
+      ]
+    }
+  }
+}

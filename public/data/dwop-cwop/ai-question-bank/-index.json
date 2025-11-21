@@ -1,0 +1,81 @@
+{
+  "documentId": "DWOP-AI-QUESTIONS",
+  "title": "DWOP/WOP AI Participant Question Bank",
+  "description": "Probing questions for AI participants in DWOP/WOP breakout rooms. Organized by section/milestone for easy review and expansion.",
+  "purpose": "AI uses these questions to challenge assumptions, identify gaps, and ensure thorough review of each operational phase",
+  "questionCategories": [
+    {
+      "categoryId": "RIG_MOVE",
+      "title": "Rig Move & Marine Operations",
+      "file": "rig-move-questions.json"
+    },
+    {
+      "categoryId": "BOP_RISER",
+      "title": "BOP & Riser Deployment",
+      "file": "bop-riser-questions.json"
+    },
+    {
+      "categoryId": "JETTING",
+      "title": "Jetting & Conductor",
+      "file": "jetting-questions.json"
+    },
+    {
+      "categoryId": "SURFACE_DRILLING",
+      "title": "Surface Hole Drilling",
+      "file": "surface-drilling-questions.json"
+    },
+    {
+      "categoryId": "FLUIDS",
+      "title": "Drilling Fluids & Hole Conditioning",
+      "file": "fluids-questions.json"
+    },
+    {
+      "categoryId": "INTERMEDIATE_DRILLING",
+      "title": "Intermediate Hole Drilling",
+      "file": "intermediate-drilling-questions.json"
+    },
+    {
+      "categoryId": "PRODUCTION_DRILLING",
+      "title": "Production Hole Drilling (HPHT/MPD)",
+      "file": "production-drilling-questions.json"
+    },
+    {
+      "categoryId": "CASING",
+      "title": "Casing Running Operations",
+      "file": "casing-questions.json"
+    },
+    {
+      "categoryId": "CEMENTING",
+      "title": "Cementing Operations",
+      "file": "cementing-questions.json"
+    },
+    {
+      "categoryId": "COMPLETIONS",
+      "title": "Completions Operations",
+      "file": "completions-questions.json"
+    },
+    {
+      "categoryId": "BOP_PULL_TREE",
+      "title": "BOP Pull & Xmas Tree",
+      "file": "bop-pull-tree-questions.json"
+    },
+    {
+      "categoryId": "WELL_CONTROL",
+      "title": "Well Control (Cross-Cutting)",
+      "file": "well-control-questions.json"
+    },
+    {
+      "categoryId": "CONTINGENCY",
+      "title": "Contingency Planning",
+      "file": "contingency-questions.json"
+    }
+  ],
+  "questionTypes": {
+    "gap_identification": "Questions that expose missing equipment, materials, or procedures",
+    "assumption_challenge": "Questions that challenge planning assumptions against reality",
+    "what_if": "Scenario-based questions testing contingency readiness",
+    "verification": "Questions confirming critical items are in place",
+    "calculation_check": "Questions probing engineering calculations and margins"
+  },
+  "tags": ["dwop", "wop", "ai-questions", "probing-questions"]
+}

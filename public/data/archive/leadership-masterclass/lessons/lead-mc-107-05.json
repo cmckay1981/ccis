@@ -1,0 +1,24 @@
+{
+  "lessonId": "LEAD-MC-107-05",
+  "moduleId": "LEAD-MC-107",
+  "courseId": "LEAD-MC",
+  "title": "Strategic Planning Execution",
+  "type": "scenario",
+  "content": "Strategic plans fail in execution when they remain documents instead of becoming operational frameworks. Effective execution requires translating strategy into quarterly objectives, assigning clear ownership, establishing progress metrics, creating review rhythms, and maintaining discipline to say no to activities that don't serve strategic priorities. Plans must be living tools, not shelf-ware.",
+  "scenario": {
+    "story": "Your organization completed a comprehensive strategic planning process six months ago with clear priorities and initiatives. You're now responsible for executing one major initiative. You have broad objectives but limited guidance on approach, competing priorities demanding your attention, unclear resource allocation, and no established review process with senior leadership. Your team is asking for direction and you're uncertain how to proceed while maintaining daily operations.",
+    "options": {
+      "A": "Focus on daily operations since those are more urgent and concrete",
+      "B": "Break the strategic initiative into quarterly milestones, assign ownership, establish metrics, and schedule regular review sessions with leadership",
+      "C": "Wait for senior leadership to provide more detailed implementation guidance",
+      "D": "Delegate the strategic initiative to a project team while you manage daily operations"
+    },
+    "recommendedResponse": "B",
+    "explanation": "Option B demonstrates strategic execution discipline. You're creating the structure needed to translate strategy into action: breaking big objectives into manageable chunks, assigning accountability, defining what success looks like, and establishing rhythm for progress review. This makes the abstract concrete. Option A allows urgent to crowd out important—daily operations will always consume available time if you let them. Option C abdicates responsibility for execution. Option D separates strategic work from operational work, which usually means strategic work gets ignored. Leaders execute strategy by integrating it into operational rhythm, not treating it as separate project work."
+  },
+  "openQuestions": [
+    "What strategic priority is currently being crowded out by urgent operational demands? What would it take to rebalance?",
+    "How do you currently track progress on strategic initiatives versus daily operations? Are both visible?",
+    "What's one strategic objective you could break into quarterly milestones this week?"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "courseId": "LEAD",
+  "title": "Leadership Masterclass",
+  "description": "A comprehensive leadership development program covering every dimension of effective leadership from first-line supervision to executive responsibility. This course builds complete leadership capability through operational challenges, diagnostic scenarios, and progressive skill development across team leadership, strategic thinking, influence, communication, and organizational systems.",
+  "order": 5,
+  "modules": [
+    "LEAD-101",
+    "LEAD-102",
+    "LEAD-103",
+    "LEAD-104",
+    "LEAD-105",
+    "LEAD-106",
+    "LEAD-107",
+    "LEAD-108",
+    "LEAD-109",
+    "LEAD-110",
+    "LEAD-111",
+    "LEAD-112"
+  ],
+  "totalLessons": 58,
+  "estimatedCompletionTime": "9 training days",
+  "trainingFormat": {
+    "sessionsPerDay": 7,
+    "sessionLength": "45 minutes",
+    "breakLength": "15 minutes",
+    "lunchBreak": "1 hour",
+    "dailySchedule": "08:00-16:00 with structured breaks"
+  },
+  "prerequisites": [],
+  "learningObjectives": [
+    "Diagnose leadership challenges and apply appropriate frameworks",
+    "Build and maintain high-trust, high-performance teams",
+    "Lead effectively under pressure and uncertainty",
+    "Develop people through delegation and coaching",
+    "Enforce accountability without creating toxic culture",
+    "Influence upward, laterally, and across boundaries",
+    "Communicate strategically during normal operations and crises",
+    "Make sound decisions with incomplete information",
+    "Navigate organizational politics with integrity",
+    "Build sustainable personal leadership practices"
+  ]
+}

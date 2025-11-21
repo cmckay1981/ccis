@@ -1,0 +1,22 @@
+{
+  "moduleId": "WC-SS-106",
+  "courseId": "WC-SS",
+  "title": "Emergency Procedures",
+  "description": "Emergency Disconnect Sequence (EDS), controlled disconnect, hang-off procedures, and emergency response protocols for subsea operations.",
+  "order": 6,
+  "lessonIds": [
+    "WC-SS-106-01",
+    "WC-SS-106-02"
+  ],
+  "examWeight": "Critical",
+  "iwcfSyllabus": "DR-SS-PP-11, PP-13",
+  "l4Only": true,
+  "documentId": "WC-SS-106",
+  "tags": [
+    "well-control",
+    "subsea",
+    "deepwater",
+    "IWCF",
+    "WC-SS-106"
+  ]
+}

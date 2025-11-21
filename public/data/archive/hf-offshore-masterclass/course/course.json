@@ -1,0 +1,38 @@
+{
+  "courseId": "HFO-MC",
+  "title": "Human Factors for Offshore Drilling Operations Masterclass",
+  "description": "An advanced course applying Human Factors principles specifically to offshore drilling and marine operations. Built from IADC North Sea Chapter guidance and UK regulatory requirements, covering HF integration in MODU design, control room environments, barrier management, offshore work organization, and safety case compliance.",
+  "order": 2,
+  "modules": [
+    "HFO-MC-101",
+    "HFO-MC-102",
+    "HFO-MC-103",
+    "HFO-MC-104",
+    "HFO-MC-105",
+    "HFO-MC-106"
+  ],
+  "totalLessons": 26,
+  "estimatedCompletionTime": "4 training days",
+  "trainingFormat": {
+    "sessionsPerDay": 7,
+    "sessionLength": "45 minutes",
+    "breakLength": "15 minutes",
+    "lunchBreak": "1 hour",
+    "dailySchedule": "08:00-16:00 with structured breaks"
+  },
+  "prerequisites": ["HF", "SA", "DM"],
+  "learningObjectives": [
+    "Apply HF integration principles throughout MODU design and modification projects",
+    "Evaluate control room design against ISO 11064 and EEMUA standards",
+    "Conduct Human Reliability Analysis for safety-critical drilling tasks",
+    "Identify and optimize Performance Influencing Factors",
+    "Apply bowtie analysis to understand human contributions to MAH control",
+    "Implement Fatigue Risk Management Plans for offshore operations",
+    "Assess staffing adequacy using recognized methodologies (CRIOP)",
+    "Design and implement effective alarm management systems",
+    "Develop procedural integrity linked to MAH scenarios",
+    "Prepare HF content for UK safety case submissions",
+    "Conduct accident investigations identifying latent organizational factors",
+    "Manage organizational change with HF impact assessment"
+  ]
+}

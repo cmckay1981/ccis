@@ -1,0 +1,104 @@
+{
+  "sheetId": "kill-sheet-subsea",
+  "title": "Subsea Kill Sheet",
+  "description": "Kill sheet for deepwater/subsea operations with choke line friction corrections",
+  "instructions": "Complete this kill sheet for subsea operations. Includes choke line friction adjustments.",
+  "sections": {
+    "wellData": {
+      "title": "Well Data",
+      "fields": [
+        {"label": "Well Name", "value": "", "unit": ""},
+        {"label": "Water Depth", "value": "", "unit": "ft"},
+        {"label": "Current Depth (MD)", "value": "", "unit": "ft"},
+        {"label": "Current Depth (TVD)", "value": "", "unit": "ft"},
+        {"label": "TVD Below Mudline", "value": "", "unit": "ft"},
+        {"label": "Casing Shoe Depth (TVD)", "value": "", "unit": "ft"},
+        {"label": "LOT/FIT at Shoe", "value": "", "unit": "ppg EMW"},
+        {"label": "Current Mud Weight", "value": "", "unit": "ppg"}
+      ]
+    },
+    "chokeLineData": {
+      "title": "Choke Line Data",
+      "fields": [
+        {"label": "Choke Line ID", "value": "", "unit": "inch"},
+        {"label": "Choke Line Length", "value": "", "unit": "ft"},
+        {"label": "Choke Line Friction at Kill Rate", "value": "", "unit": "psi"},
+        {"label": "How Determined", "value": "", "unit": "(measured/calculated)"}
+      ],
+      "note": "Choke line friction reduces surface casing pressure reading during circulation."
+    },
+    "shutInData": {
+      "title": "Shut-In Data",
+      "fields": [
+        {"label": "SIDPP (surface)", "value": "", "unit": "psi"},
+        {"label": "SICP (surface)", "value": "", "unit": "psi"},
+        {"label": "Pit Gain", "value": "", "unit": "bbl"},
+        {"label": "Time of Shut-In", "value": "", "unit": ""}
+      ]
+    },
+    "killCalculations": {
+      "title": "Kill Calculations",
+      "calculations": [
+        {
+          "label": "Formation Pressure",
+          "formula": "SIDPP + (MW × 0.052 × TVD)",
+          "calculation": "___ + (___ × 0.052 × ___) = ___",
+          "unit": "psi"
+        },
+        {
+          "label": "Kill Weight Mud",
+          "formula": "MW + (SIDPP ÷ 0.052 ÷ TVD)",
+          "calculation": "___ + (___ ÷ 0.052 ÷ ___) = ___",
+          "unit": "ppg"
+        },
+        {
+          "label": "MAASP (at surface)",
+          "formula": "(LOT - KWM) × 0.052 × Shoe TVD",
+          "calculation": "(___ - ___) × 0.052 × ___ = ___",
+          "unit": "psi"
+        },
+        {
+          "label": "Riser Margin",
+          "formula": "(MW - Seawater) × Water Depth ÷ TVD",
+          "calculation": "(___ - 8.55) × ___ ÷ ___ = ___",
+          "unit": "ppg"
+        }
+      ]
+    },
+    "pumpData": {
+      "title": "Pump Data",
+      "fields": [
+        {"label": "Kill Rate", "value": "", "unit": "spm"},
+        {"label": "Pump Output at Kill Rate", "value": "", "unit": "bbl/stk"},
+        {"label": "SCR Pressure at Kill Rate (Original MW)", "value": "", "unit": "psi"}
+      ]
+    },
+    "circulatingPressures": {
+      "title": "Circulating Pressures",
+      "calculations": [
+        {
+          "label": "Initial Circulating Pressure (ICP)",
+          "formula": "SCR + SIDPP",
+          "calculation": "___ + ___ = ___",
+          "unit": "psi"
+        },
+        {
+          "label": "Final Circulating Pressure (FCP)",
+          "formula": "SCR × (KWM ÷ Original MW)",
+          "calculation": "___ × (___ ÷ ___) = ___",
+          "unit": "psi"
+        }
+      ],
+      "note": "During circulation, surface casing pressure will be LOWER than calculated by the amount of choke line friction. This is expected."
+    },
+    "chokeLineFrictionEffect": {
+      "title": "Expected Casing Pressure During Kill",
+      "calculation": {
+        "label": "Expected Surface SICP During Circulation",
+        "formula": "Calculated SICP - Choke Line Friction",
+        "example": "If calculated SICP = 500 psi and CLF = 300 psi, surface reading = 200 psi"
+      },
+      "warning": "Do NOT adjust choke to increase surface casing pressure to calculated value. Low reading is correct."
+    }
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "documentId": "FRACTURES_MAASP",
+  "collectionId": "questionBank",
+  "categoryKey": "FRACTURES_MAASP",
+  "title": "Fractures & MAASP",
+  "moduleAlignment": [
+    "WC-SF-102"
+  ],
+  "questionCount": 12,
+  "l3Count": 4,
+  "l4Count": 8,
+  "questions": [
+    {
+      "id": "EX5-Q1",
+      "level": "L4",
+      "question": "Pre-Leak-Off Test requirements? (SELECT THREE)",
+      "options": {
+        "A": "Circulate and condition mud",
+        "B": "Line up through kill line; pump at SCR",
+        "C": "Raise bit inside shoe to prevent damage",
+        "D": "Drill out casing shoe",
+        "E": "Drill 10-15 feet new formation"
+      },
+      "correctAnswers": [
+        "A",
+        "D",
+        "E"
+      ],
+      "explanation": "LOT needs: Clean uniform mud (A), exposed shoe (D), and virgin formation to test (E). Kill line routing is for well control, not LOT. Bit position varies by procedure.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX5-Q2",
+      "level": "L4",
+      "question": "What influences Leak-Off Test results? (SELECT TWO)",
+      "options": {
+        "A": "Volume of mud in well",
+        "B": "Slow circulating rate",
+        "C": "Different mud densities around well",
+        "D": "Maximum pump pressure",
+        "E": "Mud hydrostatic in annulus"
+      },
+      "correctAnswers": [
+        "C",
+        "E"
+      ],
+      "explanation": "LOT measures formation strength against mud pressure. Variable mud densities (C) give inconsistent baseline. Annular hydrostatic (E) is half the equation. Volume and SCR don't affect static LOT.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX5-Q3",
+      "level": "L3",
+      "question": "When is Leak-Off Test performed?",
+      "options": {
+        "A": "While waiting on cement",
+        "B": "After drilling shoe and 5-15 feet new formation",
+        "C": "Before running casing",
+        "D": "Before drilling out shoe"
+      },
+      "correctAnswer": "B",
+      "explanation": "LOT tests FORMATION strength, not cement. Must drill into formation (5-15 ft) to expose it, but not so deep that you're past the shoe protection zone."
+    },
+    {
+      "id": "EX5-Q4",
+      "level": "L4",
+      "question": "Conditions for accurate formation strength test? (SELECT THREE)",
+      "options": {
+        "A": "Good pressure test of surface equipment",
+        "B": "Working spm gauge",
+        "C": "Calibrated pressure gauges",
+        "D": "Clean mud in well",
+        "E": "Accurate MD of casing shoe",
+        "F": "Accurate annular volume calculation"
+      },
+      "correctAnswers": [
+        "A",
+        "C",
+        "D"
+      ],
+      "explanation": "Accurate LOT needs: No surface leaks (A), reliable readings (C), and consistent mud (D). Annular volume is less critical for static test.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX5-Q7",
+      "level": "L4",
+      "question": "Inconsistent mud density in wellbore. How to get most accurate LOT?",
+      "options": {
+        "A": "Stop after 10 bbls; read DP pressure",
+        "B": "Condition mud until consistent; then test",
+        "C": "Pump at SCR until fracture",
+        "D": "Pump down drillstring at SCR"
+      },
+      "correctAnswer": "B",
+      "explanation": "Variable density = variable hydrostatic = unreliable LOT. Circulate to condition and homogenize mud first, then test against known uniform column."
+    },
+    {
+      "id": "EX5-Q8",
+      "level": "L3",
+      "question": "Definition of MAASP?",
+      "options": {
+        "A": "Maximum choke pressure rating",
+        "B": "Pressure above hydrostatic likely causing losses at shoe",
+        "C": "Pressure at shoe causing losses",
+        "D": "Maximum BHP allowed during kill"
+      },
+      "correctAnswer": "B",
+      "explanation": "MAASP = Maximum Allowable Annular Surface Pressure. It's the maximum SURFACE pressure before shoe fractures\u2014not the shoe pressure itself."
+    },
+    {
+      "id": "EX5-Q9",
+      "level": "L3",
+      "question": "Effect of increased mud weight on MAASP?",
+      "options": {
+        "A": "MAASP increases",
+        "B": "MAASP decreases",
+        "C": "MAASP stays same"
+      },
+      "correctAnswer": "B",
+      "explanation": "Higher MW = higher hydrostatic = less room for surface pressure before reaching fracture gradient. MAASP decreases."
+    },
+    {
+      "id": "EX5-Q10",
+      "level": "L4",
+      "question": "When is MAASP most likely to be exceeded? (SELECT THREE)",
+      "options": {
+        "A": "Short open hole section",
+        "B": "Large influx",
+        "C": "Small influx",
+        "D": "Small margin between hydrostatic and fracture pressure",
+        "E": "Large margin between hydrostatic and fracture pressure",
+        "F": "Long open hole section"
+      },
+      "correctAnswers": [
+        "B",
+        "D",
+        "F"
+      ],
+      "explanation": "Large influx (B) creates more casing pressure. Small margin (D) means less room. Long open hole (F) means kick gas can be larger before detection. All increase MAASP risk.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX5-Q11",
+      "level": "L4",
+      "question": "Factors affecting MAASP? (SELECT THREE)",
+      "options": {
+        "A": "Annular volume",
+        "B": "pH of mud",
+        "C": "Vertical depth of shoe",
+        "D": "Mud weight",
+        "E": "Maximum pump pressure",
+        "F": "Fracture pressure at shoe"
+      },
+      "correctAnswers": [
+        "C",
+        "D",
+        "F"
+      ],
+      "explanation": "MAASP = f(Fracture pressure, shoe TVD, mud weight). Annular volume affects kick severity, not MAASP directly. pH and pump pressure irrelevant.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX5-Q12",
+      "level": "L4",
+      "question": "9 5/8\" casing at 8,900 ft TVD, formation strength 6,351 psi, 11 ppg mud. Calculate MAASP.",
+      "options": {
+        "A": "5,091 psi",
+        "B": "1,260 psi",
+        "C": "3,832 psi",
+        "D": "685 psi"
+      },
+      "correctAnswer": "B",
+      "explanation": "MAASP = Fracture pressure - Hydrostatic = 6,351 - (11 \u00d7 0.052 \u00d7 8,900) = 6,351 - 5,091 = 1,260 psi",
+      "type": "calculation"
+    },
+    {
+      "id": "EX5-Q13",
+      "level": "L3",
+      "question": "When must MAASP be recalculated?",
+      "options": {
+        "A": "At top of reservoir",
+        "B": "After changing mud weight",
+        "C": "Every 12 hours",
+        "D": "At casing setting point"
+      },
+      "correctAnswer": "B",
+      "explanation": "Any MW change affects MAASP directly. MAASP = f(MW). Recalculate immediately after weight up or weight down."
+    },
+    {
+      "id": "Q33",
+      "level": "L4",
+      "question": "LOT 1400 psi at 10.6 ppg, drilling at 7000 ft with 11.1 ppg. MAASP?",
+      "correctAnswer": "1245-1270 psi",
+      "explanation": "Max MW = 10.6 + (1400/(7000\u00d70.052)) = 14.45 ppg. MAASP = (14.45-11.1) \u00d7 0.052 \u00d7 7000 = 1,219 psi",
+      "type": "calculation"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "moduleId": "HRO-HP-ESS-COMM",
+  "courseId": "HRO-HP-ESS",
+  "title": "Communication Essentials",
+  "description": "Core principles of effective operational communication. Covers clarity, active listening, closed-loop protocols, briefings, and assertive communication.",
+  "order": 3,
+  "lessonIds": [
+    "HRO-HP-ESS-COMM-01",
+    "HRO-HP-ESS-COMM-02",
+    "HRO-HP-ESS-COMM-03",
+    "HRO-HP-ESS-COMM-04",
+    "HRO-HP-ESS-COMM-05",
+    "HRO-HP-ESS-COMM-06"
+  ],
+  "learningObjectives": [
+    "Communicate with clarity and precision",
+    "Practice active listening and verification",
+    "Use closed-loop communication protocols",
+    "Conduct effective briefings and handovers",
+    "Speak up assertively when needed"
+  ]
+}

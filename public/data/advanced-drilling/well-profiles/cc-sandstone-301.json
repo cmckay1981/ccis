@@ -1,0 +1,110 @@
+{
+  "wellId": "CC-SANDSTONE-301",
+  "organizationId": "CLAYMORE_COLT",
+  "wellName": "Sandstone-301",
+  "wellType": "appraisal",
+  "environment": "land",
+  "classification": {
+    "isHPHT": false,
+    "maxBHT": 250,
+    "maxBHP": 4500,
+    "hasSaltSection": true,
+    "hasLostCirculation": true
+  },
+  "rigInfo": {
+    "rigName": "CC-LAND-150",
+    "rigType": "land",
+    "contractor": "Claymore & Colt"
+  },
+  "location": {
+    "region": "Middle East Land",
+    "terrain": "Desert / Onshore"
+  },
+  "targetDepth": {
+    "tvd": 3300,
+    "md": 3683,
+    "unit": "m"
+  },
+  "directionalProfile": {
+    "type": "Directional",
+    "maxInclination": 38,
+    "azimuth": 259,
+    "lateralDisplacement": 1200
+  },
+  "bopInfo": {
+    "stackType": "surface",
+    "workingPressure": 5000,
+    "configuration": "Surface Stack",
+    "annularPreventers": 1,
+    "pipeRams": 2,
+    "blindShearRams": 1
+  },
+  "casingProgram": [
+    {
+      "section": "Surface",
+      "holeSize": 23,
+      "casingSize": "18-5/8",
+      "settingDepth": {"md": 800, "unit": "m"},
+      "mudWeight": {"min": 1.06, "max": 1.08, "unit": "sg"},
+      "mudType": "Spud Mud / KCl Polymer"
+    },
+    {
+      "section": "Intermediate",
+      "holeSize": 16,
+      "casingSize": "13-3/8 x 13-5/8",
+      "settingDepth": {"md": 2300, "unit": "m"},
+      "mudWeight": {"min": 1.08, "max": 1.16, "unit": "sg"},
+      "mudType": "KCl Polymer",
+      "hazards": ["Mobile salt", "Seepage losses"]
+    },
+    {
+      "section": "Production Liner",
+      "holeSize": 12.25,
+      "casingSize": "9-5/8 x 10-3/4",
+      "settingDepth": {"md": 3350, "unit": "m"},
+      "mudWeight": {"value": 1.65, "unit": "sg"},
+      "mudType": "OBM",
+      "hazards": ["Lost circulation", "Hole instability"]
+    },
+    {
+      "section": "Production Liner",
+      "holeSize": 8.5,
+      "casingSize": "7",
+      "settingDepth": {"md": 3683, "unit": "m"},
+      "mudWeight": {"min": 1.15, "max": 1.17, "unit": "sg"},
+      "mudType": "OBM",
+      "hazards": ["Hole instability", "Poor hole cleaning", "Stuck pipe"]
+    }
+  ],
+  "formationTops": [
+    {"formation": "Surface Formation", "tvdss": 0},
+    {"formation": "Evaporite/Salt", "tvdss": 1900, "pressure": 2800},
+    {"formation": "Upper Transition", "tvdss": 2150},
+    {"formation": "Middle Shale", "tvdss": 2460},
+    {"formation": "Lower Transition", "tvdss": 2760},
+    {"formation": "Pre-Salt Clastics", "tvdss": 2930},
+    {"formation": "Target Sandstone (Reservoir)", "tvdss": 3080, "pressure": 2900}
+  ],
+  "keyHazards": [
+    "Mobile salt - hole closure and stuck pipe risk",
+    "Lost circulation in fractured zones",
+    "Hole instability in reactive shales",
+    "High temperature (250°F BHST)",
+    "Remote location logistics"
+  ],
+  "keyTrainingScenarios": [
+    "Salt section drilling and stuck pipe prevention",
+    "KCl to OBM conversion procedure",
+    "Surface BOP well control",
+    "Severe lost circulation management",
+    "Remote location contingency planning"
+  ],
+  "applicableModules": [
+    "ADO-107 (Stuck Pipe)",
+    "ADO-108 (Wellbore Stability)",
+    "ADO-109 (Lost Circulation)",
+    "ADO-110 (Tripping Operations)",
+    "ADO-111 (Casing & Cementing)"
+  ],
+  "tags": ["land-rig", "surface-bop", "salt-drilling", "obm", "lost-circulation", "training-well"]
+}

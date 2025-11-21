@@ -1,0 +1,42 @@
+{
+  "sectionId": "2.2",
+  "title": "Shut-In Procedures",
+  "content": {
+    "2.2.1": {
+      "title": "Shut-In Philosophy",
+      "content": "The goal of shut-in is to stop influx and allow pressure readings:\n\n**Priorities:**\n1. Stop the influx as quickly as possible\n2. Minimize influx volume\n3. Obtain accurate pressure readings\n4. Protect wellbore from damage\n\n**Key Principles:**\n- Speed is critical - every second of delay increases kick size\n- Any crew member can initiate shut-in without permission\n- Follow trained procedures - this is not the time to improvise\n- Pipe position affects shut-in choice\n\n**Hard vs Soft Shut-In:**\nThis manual specifies which method to use. If not specified, use HARD shut-in unless there is specific reason not to (e.g., H2S risk, formation sensitivity)."
+    },
+    "2.2.2": {
+      "title": "Hard Shut-In Procedure",
+      "content": "Hard shut-in is the default method for most operations:\n\n**Procedure:**\n1. Stop rotation (if drilling)\n2. Stop pumps\n3. Raise kelly/top drive to position tool joint above BOP\n4. Close annular preventer (or pipe rams)\n5. Open HCR valve (if closed)\n6. Notify Supervisor immediately\n7. Read and record SIDPP and SICP\n8. Monitor for pressure stabilization\n\n**Timing Target:**\nFrom kick indication to BOP closed: < 2 minutes\n\n**Pressure Readings:**\n- Wait for pressures to stabilize (typically 5-10 minutes)\n- Record SIDPP and SICP\n- Monitor for gas migration (increasing pressures)\n\n**When to Use:**\n- Standard drilling operations\n- Connections\n- Most tripping situations\n- Default method unless otherwise specified"
+    },
+    "2.2.3": {
+      "title": "Soft Shut-In Procedure",
+      "content": "Soft shut-in routes initial flow through choke to reduce water hammer:\n\n**Procedure:**\n1. Stop rotation (if drilling)\n2. Stop pumps\n3. Raise kelly/top drive to position tool joint above BOP\n4. Verify choke is OPEN\n5. Close annular preventer (or pipe rams)\n6. Close choke slowly, monitoring pressure\n7. Notify Supervisor immediately\n8. Read and record SIDPP and SICP\n\n**When to Use:**\n- H2S environment (reduces risk of fire from friction)\n- Weak formations where pressure spike concern exists\n- When specifically directed by procedures\n\n**Considerations:**\n- Takes longer than hard shut-in\n- More influx may enter during closure\n- Requires choke line to be clear and open\n- Use only when benefits outweigh delay"
+    },
+    "2.2.4": {
+      "title": "Shut-In While Drilling",
+      "content": "Kick detected while drilling - pipe on bottom or near bottom:\n\n**Procedure:**\n1. Recognize kick indicator\n2. Pick up off bottom (if drilling)\n3. Stop rotation\n4. Stop pumps\n5. Space out to position tool joint above BOP\n6. Close annular preventer\n7. Open HCR valve\n8. Notify Supervisor\n9. Record SIDPP and SICP\n10. Record pit gain\n\n**Space Out:**\n- Know tool joint positions relative to BOP\n- Position joint so pipe rams could close below if needed\n- Do not space out excessively - speed is critical\n\n**If Pipe Cannot Be Raised:**\n- Close annular around pipe at any position\n- Pipe rams may not seal on tool joint\n- Proceed with shut-in; tool position is secondary to stopping influx"
+    },
+    "2.2.5": {
+      "title": "Shut-In While Tripping",
+      "content": "Kick detected during trip operations:\n\n**Pipe In Slips (connection height):**\n1. Set pipe in slips (if not already)\n2. Install full-opening safety valve (FOSV) - open position\n3. Close FOSV\n4. Close annular preventer\n5. Open HCR valve\n6. Notify Supervisor\n7. Record pressures when stable\n\n**Pipe Above Slips:**\n1. Lower pipe to slips if safe to do so\n2. If cannot reach slips safely: Close annular around pipe\n3. Install FOSV when possible\n4. Proceed with pressure monitoring\n\n**Pipe Below Slips (mid-joint):**\n1. Stab and make up FOSV immediately\n2. Close FOSV\n3. Close annular preventer\n4. Lower to slips when safe\n5. Proceed with pressure monitoring\n\n**Time Critical:**\nDo not delay shut-in to achieve perfect pipe position. Close the well first."
+    },
+    "2.2.6": {
+      "title": "Shut-In During Connections",
+      "content": "Kick detected during connection operations:\n\n**If Stand Not Yet Broken:**\n1. Do not break connection\n2. Close annular preventer\n3. Notify Supervisor\n4. Observe flow line and pressures\n5. If kick confirmed: proceed with well control\n6. If false alarm: resume operations after verification\n\n**If Stand Already Broken:**\n1. Stab FOSV (open position)\n2. Close FOSV\n3. Close annular preventer\n4. Notify Supervisor\n5. Record pressures\n\n**After Making Connection (new stand):**\nIf kick indication occurs just after making connection:\n1. Stop pumps\n2. Close annular\n3. Proceed with standard shut-in\n\n**Note:** Connection is highest-risk time for kicks due to ECD loss. Maintain vigilance."
+    },
+    "2.2.7": {
+      "title": "Shut-In With Pipe Off Bottom",
+      "content": "If kick occurs with pipe significantly off bottom:\n\n**Considerations:**\n- Cannot circulate directly at formation face\n- May need to strip back to bottom\n- Kill weight mud may not reach influx point\n\n**Procedure:**\n1. Shut in per standard procedure\n2. Record pressures and pit gain\n3. Assess situation with Supervisor\n4. Options:\n   a. Strip to bottom if possible (Section 2.9)\n   b. Volumetric method while preparing to strip\n   c. Kill from current position if circumstances allow\n\n**Special Case - Float in String:**\nIf float valve in string, cannot read SIDPP directly:\n- Estimate bottomhole pressure from SICP and annular gradient\n- Apply pump pressure to determine if float holding\n- More complex calculations required"
+    },
+    "2.2.8": {
+      "title": "Post Shut-In Actions",
+      "content": "After successful shut-in:\n\n**Immediate:**\n1. Record time of shut-in\n2. Record stabilized SIDPP and SICP\n3. Record pit gain (influx volume)\n4. Notify Supervisor and commence kill planning\n5. Line up choke manifold for kill\n\n**Pressure Monitoring:**\n- Monitor both pressures every 5 minutes minimum\n- Watch for gas migration (increasing pressures)\n- If pressures rising: may need to bleed/lubricate (Section 2.7)\n\n**Do Not:**\n- Open the well without authorization\n- Bleed pressure without procedure\n- Leave the well unattended\n- Make assumptions about influx type\n\n**Information Gathering:**\n- Calculate kill weight mud\n- Calculate ICP and FCP\n- Prepare kill sheet\n- Brief crew on kill procedure"
+    },
+    "2.2.9": {
+      "title": "Subsea Shut-In Considerations",
+      "content": "Subsea operations have additional considerations:\n\n**BOP Location:**\n- BOP at seabed, not surface\n- Longer response time for functions\n- ROV observation capability\n\n**Choke Line Effects:**\n- Long choke line (water depth dependent)\n- Choke line friction significant\n- Affects kill calculations\n\n**Shut-In Procedure:**\n- Standard procedure applies\n- Close annular (or pipe rams) at BOP\n- Pressures read at surface include choke line hydrostatic\n- SIDPP read at surface may need correction for choke line effects\n\n**Additional Monitoring:**\n- ROV observation of BOP and wellhead\n- Subsea control system status\n- Riser pressure monitoring\n\n**Riser Disconnection:**\nIf situation escalates, EDS (Emergency Disconnect) may be required. See Section 2.16."
+    }
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "documentId": "DATA_COLLECTION_SCR",
+  "collectionId": "questionBank",
+  "categoryKey": "DATA_COLLECTION_SCR",
+  "title": "Data Collection & Slow Circulating Rates",
+  "moduleAlignment": [
+    "WC-SF-106",
+    "WC-SF-107"
+  ],
+  "questionCount": 20,
+  "l3Count": 9,
+  "l4Count": 11,
+  "questions": [
+    {
+      "id": "EX7-Q1",
+      "level": "L4",
+      "question": "Factors determining slow circulation rate selection? (SELECT THREE)",
+      "options": {
+        "A": "Casing burst pressure at surface",
+        "B": "Annular friction losses",
+        "C": "Ability to mix kill mud",
+        "D": "Trip tank volume",
+        "E": "MGS capacity"
+      },
+      "correctAnswers": [
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "SCR must: minimize friction (B), allow kill mud mixing (C), not overwhelm gas separator (E). Surface burst and trip tank irrelevant to pump rate selection.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX7-Q2",
+      "level": "L4",
+      "question": "Correct statements about SCR? (SELECT THREE)",
+      "options": {
+        "A": "SCR through choke manifold",
+        "B": "SCR for formation pressure calculation",
+        "C": "SCR when mud properties change",
+        "D": "SCR on DP gauge at remote panel",
+        "E": "SCR with bit near bottom"
+      },
+      "correctAnswers": [
+        "C",
+        "D",
+        "E"
+      ],
+      "explanation": "Retake SCR when mud changes (C). Read on DP gauge at choke panel (D). Bit near bottom for true circulating pressure (E). SCR not through choke normally; not for formation pressure calc.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX7-Q3",
+      "level": "L3",
+      "question": "SPM selection factors? (SELECT TWO)",
+      "options": {
+        "A": "Volume in drillpipe",
+        "B": "Maximum pump pressure",
+        "C": "Volume in annulus",
+        "D": "Mud viscosity",
+        "E": "MGS capacity"
+      },
+      "correctAnswers": [
+        "B",
+        "E"
+      ],
+      "explanation": "Must stay within pump pressure limits (B) and not overwhelm surface equipment (E). DS/annulus volume affects stroke count, not rate.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX7-Q4",
+      "level": "L3",
+      "question": "When to take/verify SCR? (SELECT TWO)",
+      "options": {
+        "A": "Beginning of each shift",
+        "B": "After well shut in on influx",
+        "C": "Before running casing",
+        "D": "After mud property changes"
+      },
+      "correctAnswers": [
+        "A",
+        "D"
+      ],
+      "explanation": "SCR each shift (A) ensures current value. After mud changes (D) because SCR varies with mud properties. After shut-in is too late; before casing is irrelevant.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX7-Q5",
+      "level": "L3",
+      "question": "Why use slow pump rate during kick displacement?",
+      "options": {
+        "A": "Prevent gas expansion while circulating",
+        "B": "Maintain high overbalance via annular losses",
+        "C": "Minimise excess pressure on formations"
+      },
+      "correctAnswer": "C",
+      "explanation": "Slower = less friction = less ECD = less formation stress. You can't prevent gas expansion (it WILL expand). Overbalance comes from mud weight, not APL during kill."
+    },
+    {
+      "id": "EX7-Q7",
+      "level": "L4",
+      "question": "Reasons for slow rate kick displacement? (SELECT FOUR)",
+      "options": {
+        "A": "Allow choke operator adjustment time",
+        "B": "Reduce hydrate risk",
+        "C": "Minimise wellbore pressures",
+        "D": "Allow surface kick fluid handling",
+        "E": "Reduce gas migration",
+        "F": "Reduce MGS overload"
+      },
+      "correctAnswers": [
+        "A",
+        "C",
+        "D",
+        "F"
+      ],
+      "explanation": "Slow rate: gives choke operator time (A), reduces pressures (C), allows surface handling (D), prevents MGS overload (F). Doesn't affect hydrate risk or migration speed.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX7-Q8",
+      "level": "L3",
+      "question": "What increases pump pressure? (SELECT TWO)",
+      "options": {
+        "A": "Larger nozzles",
+        "B": "Drilling deeper",
+        "C": "Reduced mud weight",
+        "D": "Longer BHA"
+      },
+      "correctAnswers": [
+        "B",
+        "D"
+      ],
+      "explanation": "Deeper well = more friction (B). Longer BHA = more restriction (D). Larger nozzles REDUCE pressure. Lighter mud REDUCES friction.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX7-Q10",
+      "level": "L4",
+      "question": "SIDPP determined by? (SELECT TWO)",
+      "options": {
+        "A": "Influx height",
+        "B": "Influx volume",
+        "C": "Mud density in drillstring",
+        "D": "Formation fluid pressure",
+        "E": "Cuttings volume"
+      },
+      "correctAnswers": [
+        "C",
+        "D"
+      ],
+      "explanation": "SIDPP = Formation pressure - DS hydrostatic. Depends only on formation pressure (D) and mud in DS (C). Influx characteristics affect SICP, not SIDPP.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX7-Q11",
+      "level": "L3",
+      "question": "Which gauge indicates formation pressure?",
+      "options": {
+        "A": "Accumulator gauge",
+        "B": "Casing pressure on choke panel",
+        "C": "Drill pipe on choke panel"
+      },
+      "correctAnswer": "C",
+      "explanation": "DP gauge reflects formation pressure through known mud column. Casing pressure affected by unknown influx. Accumulator is BOP hydraulic system."
+    },
+    {
+      "id": "EX7-Q12",
+      "level": "L4",
+      "question": "Float in string, how to read SIDPP?",
+      "options": {
+        "A": "Use SICP for kill mud calculation",
+        "B": "Raise density by 0.5 ppg increments",
+        "C": "Pump slowly until SICP increases; DP pressure is SIDPP",
+        "D": "Pump at kill rate until SICP increases"
+      },
+      "correctAnswer": "C",
+      "explanation": "Float blocks DP from transmitting pressure. Pump slowly\u2014when SICP starts to rise, you've overcome float resistance. DP reading at that moment = true SIDPP."
+    },
+    {
+      "id": "EX7-Q13",
+      "level": "L3",
+      "question": "Why is casing pressure higher than SIDPP?",
+      "options": {
+        "A": "Choke line larger than kill line",
+        "B": "Influx usually lighter than mud weight",
+        "C": "Choke line longer than kill line",
+        "D": "Cuttings reduce annular hydrostatic"
+      },
+      "correctAnswer": "B",
+      "explanation": "Influx (gas/oil/saltwater) is lighter than drilling mud. Less hydrostatic in annulus = more surface pressure needed to balance same formation pressure."
+    },
+    {
+      "id": "EX7-Q14",
+      "level": "L4",
+      "question": "Cuttings-loaded annulus effect on SICP?",
+      "options": {
+        "A": "SICP higher",
+        "B": "SICP lower",
+        "C": "SICP same"
+      },
+      "correctAnswer": "B",
+      "explanation": "Cuttings are denser than mud. More cuttings = higher annular density = higher hydrostatic = LOWER surface pressure required."
+    },
+    {
+      "id": "EX7-Q15",
+      "level": "L3",
+      "question": "What determines pressure stabilisation time?",
+      "options": {
+        "A": "Friction losses",
+        "B": "Gas migration",
+        "C": "Formation porosity",
+        "D": "Formation permeability"
+      },
+      "correctAnswer": "D",
+      "explanation": "Permeability = flow rate. High perm = fast fluid movement = quick stabilization. Porosity is storage; friction and migration are during circulation."
+    },
+    {
+      "id": "EX7-Q16",
+      "level": "L4",
+      "question": "Rig floor gauge reads lower than pump gauge. Why?",
+      "options": {
+        "A": "Pressure loss from pump to floor affects readings",
+        "B": "Floor gauge lower than pump gauge",
+        "C": "Mud less dense at pump"
+      },
+      "correctAnswer": "A",
+      "explanation": "Friction loss in surface lines between pump and floor reduces pressure. The further from pump, the lower the reading."
+    },
+    {
+      "id": "EX7-Q17",
+      "level": "L4",
+      "question": "SIDPP and SICP both rising by same amount. Cause?",
+      "options": {
+        "A": "Remote choke leaking",
+        "B": "Gas migrating up annulus",
+        "C": "Pumps at SCR",
+        "D": "Second influx"
+      },
+      "correctAnswer": "B",
+      "explanation": "Gas migration increases pressure equally on both DS and annulus. Choke leak would affect SICP only. Second influx would show unequal changes."
+    },
+    {
+      "id": "EX7-Q18",
+      "level": "L3",
+      "question": "SICP primary use?",
+      "options": {
+        "A": "Establish true ICP at startup",
+        "B": "Calculate kill mud weight",
+        "C": "Calculate ICP"
+      },
+      "correctAnswer": "A",
+      "explanation": "SICP verifies proper startup\u2014should match calculated ICP when coming to kill rate. Kill mud uses SIDPP. ICP calculation uses SIDPP + SCR."
+    },
+    {
+      "id": "EX7-Q19",
+      "level": "L4",
+      "question": "Gas migration, can't start pumps. How to maintain BHP?",
+      "options": {
+        "A": "Allow SIDPP +200 psi; bleed 200 psi via SICP",
+        "B": "Allow SIDPP +200 psi; bleed 100 psi via SIDPP",
+        "C": "Bleed DP in 100 psi increments at manifold",
+        "D": "Bleed 1 bbl at time through choke"
+      },
+      "correctAnswer": "B",
+      "explanation": "Volumetric method: Allow pressure to build (work value, e.g., 200 psi), then bleed HALF through casing to maintain BHP constant. Bleed through choke, not DP."
+    },
+    {
+      "id": "EX7-Q20",
+      "level": "L4",
+      "question": "SIDPP 700, SICP 900, 13.5 ppg. After 30 min both increase 150 psi. Gas migration speed?",
+      "options": {
+        "A": "214 ft/h",
+        "B": "427 ft/h",
+        "C": "14 ft/h",
+        "D": "28 ft/h"
+      },
+      "correctAnswer": "B",
+      "explanation": "150 psi in 30 min = 150/(13.5 \u00d7 0.052) = 213.7 ft in 30 min = 427 ft/hr. Migration rate calculated from pressure rise and mud gradient.",
+      "type": "calculation"
+    },
+    {
+      "id": "EX7-Q21",
+      "level": "L3",
+      "question": "Pump speed reduced from 80 to 40 spm. New pressure? (Original 4000 psi)",
+      "options": {
+        "A": "500 psi",
+        "B": "800 psi",
+        "C": "1,000 psi",
+        "D": "2,000 psi"
+      },
+      "correctAnswer": "C",
+      "explanation": "Pressure varies with square of rate. (40/80)\u00b2 = 0.25. 4000 \u00d7 0.25 = 1000 psi"
+    },
+    {
+      "id": "EX7-Q22",
+      "level": "L4",
+      "question": "16,435 ft MD, 15.9 ppg mud, 12 bbl kick, DC capacity 0.0292 bbl/ft. Influx height?",
+      "correctAnswer": "410-411 feet",
+      "explanation": "Influx height = Volume / Annular capacity = 12 / 0.0292 = 411 ft",
+      "type": "calculation"
+    }
+  ]
+}

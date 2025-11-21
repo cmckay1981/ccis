@@ -1,0 +1,25 @@
+{
+  "categoryId": "CONTINGENCY",
+  "title": "Contingency Planning - AI Probing Questions",
+  "description": "Questions for Day 4 contingency planning session covering stuck pipe, lost circulation, weather, equipment failure",
+  "breakoutRoom": "main",
+  "targetParticipants": ["All DWOP Participants"],
+  "questions": [
+    {"questionId": "CT-001", "question": "Stuck pipe response shows jarring as first option - how many jar runs do you have on board?", "type": "verification", "focus": "Stuck pipe equipment", "expectedResponse": "Jar inventory"},
+    {"questionId": "CT-002", "question": "If you have to sidetrack, what's your casing contingency and do you have the equipment?", "type": "what_if", "focus": "Sidetrack contingency", "expectedResponse": "Sidetrack plan and equipment"},
+    {"questionId": "CT-003", "question": "Lost circulation shows cement squeeze as final option - what's your squeeze design and do you have materials?", "type": "verification", "focus": "LC contingency", "expectedResponse": "Squeeze procedure and materials"},
+    {"questionId": "CT-004", "question": "Weather downtime contingency shows 5 days supplies - worst case storm is 7 days. What's your plan?", "type": "gap_identification", "focus": "Weather contingency", "expectedResponse": "Extended weather plan"},
+    {"questionId": "CT-005", "question": "If top drive fails, can you continue drilling with rotary table?", "type": "what_if", "focus": "Equipment failure", "expectedResponse": "Rotary table capability"},
+    {"questionId": "CT-006", "question": "Fishing equipment list shows an overshot and spear - are these dressed for your pipe sizes?", "type": "verification", "focus": "Fishing equipment", "expectedResponse": "Fishing tool configuration"},
+    {"questionId": "CT-007", "question": "What's your decision tree for when stuck pipe becomes a fishing job vs sidetrack?", "type": "verification", "focus": "Decision criteria", "expectedResponse": "Time/cost decision tree"},
+    {"questionId": "CT-008", "question": "If MWD fails and you're in a critical steering section, can you continue blind or must you trip?", "type": "what_if", "focus": "Tool failure", "expectedResponse": "MWD failure response"},
+    {"questionId": "CT-009", "question": "Emergency disconnect is planned if vessel moves off station - what's your reconnect procedure?", "type": "verification", "focus": "Emergency response", "expectedResponse": "Reconnect procedure"},
+    {"questionId": "CT-010", "question": "If cementing fails and you have communication, what's your remedial timeline and does it fit the drilling schedule?", "type": "what_if", "focus": "Cementing contingency", "expectedResponse": "Remedial cementing timeline"},
+    {"questionId": "CT-011", "question": "Your contingency plan references shore-based support - what's the response time for getting specialist equipment to rig?", "type": "verification", "focus": "Logistics response", "expectedResponse": "Emergency logistics timeline"},
+    {"questionId": "CT-012", "question": "Medevac is helicopter but weather limits helicopter operations - what's your backup medevac plan?", "type": "what_if", "focus": "Medical emergency", "expectedResponse": "Alternative medevac options"},
+    {"questionId": "CT-013", "question": "If you have a BOP failure requiring repair, what's your well suspension procedure and barrier status?", "type": "what_if", "focus": "BOP failure", "expectedResponse": "BOP failure response plan"},
+    {"questionId": "CT-014", "question": "Differential sticking contingency shows spotting fluid - what volume, what type, and how long to mix?", "type": "verification", "focus": "Stuck pipe response", "expectedResponse": "Spotting fluid details"},
+    {"questionId": "CT-015", "question": "If supply vessel is delayed 48 hours, which critical materials run out first?", "type": "gap_identification", "focus": "Consumables management", "expectedResponse": "Critical material inventory"}
+  ],
+  "tags": ["dwop", "ai-questions", "contingency", "stuck-pipe", "lost-circulation", "fishing"]
+}

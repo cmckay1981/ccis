@@ -1,0 +1,77 @@
+{
+  "moduleId": "ADO-106",
+  "courseId": "ADO",
+  "title": "Deepwater & Subsea Advanced Operations",
+  "description": "Deepwater drilling adds complexity through water depth, subsea equipment, and riser systems. This module covers advanced subsea operations beyond basic IWCF content - focusing on operational decision-making in real scenarios.",
+  "objectives": [
+    "Make time-critical EDS decisions under pressure",
+    "Manage riser margin and CLFL in actual operations",
+    "Respond to subsea equipment malfunctions",
+    "Understand gas-in-riser scenarios and responses"
+  ],
+  "keyTopics": [
+    {
+      "topic": "EDS Decision Making",
+      "content": "Emergency Disconnect Sequence requires rapid assessment: How much time? What's the pipe position? Is the well controlled? With 15+ minutes, optimize. With <5 minutes, execute regardless of pipe position. The decision tree must be pre-planned and practiced."
+    },
+    {
+      "topic": "Riser Margin in Practice",
+      "content": "Riser margin protects against riser loss. In 648m water, if the riser parts, you lose MW and gain seawater density in that column. Your mud below must compensate. Monitor riser margin as pore pressure increases with depth."
+    },
+    {
+      "topic": "CLFL Operational Impact",
+      "content": "Choke line friction loss affects all subsea well control. CLFL must be measured at kill rate with current mud weight. It's added to ICP and included in FCP calculations. Wrong CLFL = wrong pressures = failed kill or formation damage."
+    },
+    {
+      "topic": "Gas in Riser",
+      "content": "Gas that migrates above the BOP into the riser is no longer controlled by the choke. It will expand rapidly as it rises through decreasing hydrostatic. Diverter operations, controlled circulation through riser booster line, or riser disconnection may be required."
+    },
+    {
+      "topic": "Subsea Equipment Reliability",
+      "content": "The BOP is 648m away - you can't just walk over and fix it. ROV intervention capability, acoustic backup, deadman/autoshear systems, and redundancy are critical. Know your backup systems and test them."
+    }
+  ],
+  "referenceWellContext": {
+    "wellName": "Phoenix-702",
+    "waterDepth": "648m",
+    "bop": "18-3/4\" 15K DDBOP",
+    "chokeLineLength": "2,150 ft",
+    "riserMargin": "0.35 ppg required"
+  },
+  "operationalPrinciples": [
+    "Time is compressed in subsea emergencies - decide fast",
+    "Know your CLFL before you need it",
+    "Riser margin erodes as pore pressure increases - recalculate",
+    "Practice EDS until the sequence is automatic",
+    "Backup systems only work if you test them"
+  ],
+  "lessons": [
+    {
+      "lessonId": "ADO-106-01",
+      "title": "EDS Decision Framework",
+      "file": "lessons/ado-106-01.json"
+    },
+    {
+      "lessonId": "ADO-106-02",
+      "title": "Operational Riser Margin Management",
+      "file": "lessons/ado-106-02.json"
+    },
+    {
+      "lessonId": "ADO-106-03",
+      "title": "CLFL in Practice",
+      "file": "lessons/ado-106-03.json"
+    },
+    {
+      "lessonId": "ADO-106-04",
+      "title": "Gas in Riser Response",
+      "file": "lessons/ado-106-04.json"
+    },
+    {
+      "lessonId": "ADO-106-05",
+      "title": "Subsea BOP Contingencies",
+      "file": "lessons/ado-106-05.json"
+    }
+  ],
+  "documentId": "ADO-106",
+  "tags": ["deepwater", "subsea", "eds", "riser-margin", "clfl", "advanced-drilling"]
+}

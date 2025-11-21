@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-102-01",
+  "moduleId": "LEAD-102",
+  "courseId": "LEAD",
+  "title": "Competence Is Not Enough",
+  "type": "lesson",
+  "content": "Being the most technically skilled person in the room doesn't make you a leader—it makes you a high-performing individual contributor. Leadership requires translating expertise into team capability, not just demonstrating personal mastery. Teams follow leaders they trust to make sound decisions under uncertainty, advocate for their interests, and remain consistent under pressure. Technical skill earns respect, but trust earns followership.",
+  "mcq": {
+    "question": "A newly promoted supervisor was the best technician on the crew. Six months in, the team meets standards but shows no initiative, rarely asks questions, and waits for explicit direction on everything. The supervisor is frustrated that 'no one steps up.' What is the most likely root cause?",
+    "options": {
+      "A": "The team lacks technical competence and needs more training",
+      "B": "The supervisor is still operating as the lead technician instead of developing others",
+      "C": "The crew is intentionally underperforming to resist the new supervisor",
+      "D": "The work environment doesn't reward initiative"
+    },
+    "correctOption": "B",
+    "explanation": "High-performing technicians often become supervisors who solve every problem themselves instead of teaching others to solve problems. This creates dependency, not capability. The team has learned to wait because the supervisor will eventually just do it themselves. Leadership requires stepping back from execution to create space for others to grow."
+  },
+  "openQuestions": [
+    "What is one technical task you still handle personally that you should be teaching someone else to do?",
+    "How do you know if your team trusts your judgment versus just complying with your authority?"
+  ]
+}

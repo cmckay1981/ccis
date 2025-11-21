@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-COMM-01",
+  "moduleId": "HRO-HP-ESS-COMM",
+  "courseId": "HRO-HP-ESS",
+  "title": "The Communication Model",
+  "type": "lesson",
+  "content": "Effective communication has five elements: sender (who originates the message), message (the content), channel (how it's transmitted), receiver (who receives it), and feedback (confirmation of understanding). Failure can occur at any point—the sender may be unclear, the channel may distort, or the receiver may misunderstand. Feedback closes the loop and catches failures.",
+  "mcq": {
+    "question": "A supervisor radios instructions to a team member during noisy operations. The team member acknowledges but performs a different action than intended. Where did communication most likely break down?",
+    "options": {
+      "A": "Sender—unclear message formulation",
+      "B": "Channel—radio transmission in noisy environment",
+      "C": "Receiver—misinterpreted the message",
+      "D": "Cannot determine without more information"
+    },
+    "correctOption": "D",
+    "explanation": "Communication failures can occur at multiple points. Without knowing the exact words used, transmission quality, and what the receiver understood, we cannot identify the breakdown point. This is why feedback (readback) is essential—it reveals where failures occur."
+  },
+  "openQuestions": [
+    "Which element of the communication model fails most often in your work environment? What causes those failures?",
+    "How do you currently verify that your messages are received and understood correctly?"
+  ]
+}

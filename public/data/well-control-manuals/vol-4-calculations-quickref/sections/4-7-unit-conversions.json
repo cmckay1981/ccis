@@ -1,0 +1,30 @@
+{
+  "sectionId": "4.7",
+  "title": "Unit Conversions",
+  "content": {
+    "4.7.1": {
+      "title": "Pressure",
+      "content": "**Conversions:**\n```\n1 psi = 0.06895 bar\n1 bar = 14.5 psi\n1 psi = 6.895 kPa\n1 MPa = 145 psi\n1 atm = 14.7 psi = 1.013 bar\n```\n\n**Quick Conversions:**\n| psi | bar | kPa |\n|-----|-----|-----|\n| 100 | 6.9 | 689 |\n| 500 | 34.5 | 3,447 |\n| 1,000 | 69 | 6,895 |\n| 5,000 | 345 | 34,474 |\n| 10,000 | 690 | 68,948 |"
+    },
+    "4.7.2": {
+      "title": "Density/Mud Weight",
+      "content": "**Conversions:**\n```\n1 ppg = 0.1198 sg (specific gravity)\n1 sg = 8.345 ppg\n1 ppg = 119.8 kg/m³\n1 kg/m³ = 0.00835 ppg\n```\n\n**Common Mud Weights:**\n| ppg | sg | kg/m³ |\n|-----|------|-------|\n| 8.33 | 1.0 | 1,000 |\n| 10.0 | 1.2 | 1,198 |\n| 12.0 | 1.44 | 1,438 |\n| 14.0 | 1.68 | 1,678 |\n| 16.0 | 1.92 | 1,918 |\n| 18.0 | 2.16 | 2,158 |"
+    },
+    "4.7.3": {
+      "title": "Length/Depth",
+      "content": "**Conversions:**\n```\n1 ft = 0.3048 m\n1 m = 3.281 ft\n1 inch = 25.4 mm\n1 mm = 0.03937 inch\n```\n\n**Quick Conversions:**\n| feet | meters |\n|------|--------|\n| 100 | 30.5 |\n| 1,000 | 305 |\n| 5,000 | 1,524 |\n| 10,000 | 3,048 |\n| 20,000 | 6,096 |"
+    },
+    "4.7.4": {
+      "title": "Volume",
+      "content": "**Conversions:**\n```\n1 bbl (US oil) = 42 US gallons = 159 liters = 0.159 m³\n1 m³ = 6.29 bbl\n1 gallon (US) = 3.785 liters\n1 liter = 0.264 gallon\n```\n\n**Quick Conversions:**\n| bbl | m³ | liters |\n|-----|-----|--------|\n| 1 | 0.159 | 159 |\n| 10 | 1.59 | 1,590 |\n| 100 | 15.9 | 15,900 |\n| 500 | 79.5 | 79,500 |"
+    },
+    "4.7.5": {
+      "title": "Flow Rate",
+      "content": "**Conversions:**\n```\n1 gpm = 0.0238 bbl/min = 3.785 l/min\n1 bbl/min = 42 gpm = 159 l/min\n```\n\n**Pump Output:**\n| gpm | bbl/min |\n|-----|--------|\n| 100 | 2.38 |\n| 200 | 4.76 |\n| 500 | 11.9 |\n| 800 | 19.0 |"
+    },
+    "4.7.6": {
+      "title": "Key Constants",
+      "content": "**Pressure Gradient:**\n```\n0.052 = converts ppg to psi/ft\nMW (ppg) × 0.052 = gradient (psi/ft)\n0.0981 = converts sg to bar/m (metric)\n```\n\n**Capacity:**\n```\n1029.4 = converts diameter² (in²) to bbl/ft\nID² ÷ 1029.4 = capacity (bbl/ft)\n```\n\n**Barite:**\n```\n35.4 ppg = barite specific gravity\n14.9 = factor for barite calculations\n```"
+    }
+  }
+}

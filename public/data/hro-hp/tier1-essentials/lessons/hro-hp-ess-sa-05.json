@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-SA-05",
+  "moduleId": "HRO-HP-ESS-SA",
+  "courseId": "HRO-HP-ESS",
+  "title": "Team Situational Awareness",
+  "type": "lesson",
+  "content": "Team SA means every member has accurate, compatible understanding of the current situation and what teammates are doing. It requires deliberate sharing—don't assume others see what you see. Cross-monitoring (watching each other's work) catches individual blind spots and errors before they propagate.",
+  "mcq": {
+    "question": "During a complex operation, each team member focuses intensely on their own tasks. Everyone performs their individual role correctly, yet the operation fails because actions weren't coordinated. What was missing?",
+    "options": {
+      "A": "Individual SA—team members didn't understand their own tasks",
+      "B": "Team SA—no shared understanding of overall situation",
+      "C": "Technical skills—proper execution wasn't achieved",
+      "D": "Leadership—someone should have taken charge"
+    },
+    "correctOption": "B",
+    "explanation": "Individual excellence doesn't guarantee team success. Without shared understanding of the overall situation and what others are doing, perfectly executed individual actions can still produce failed outcomes when they don't integrate properly."
+  },
+  "openQuestions": [
+    "How does your team currently share situational awareness during operations? Is it systematic or ad hoc?",
+    "Describe a situation where cross-monitoring (watching a teammate's work) caught an error or problem early."
+  ]
+}

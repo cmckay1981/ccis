@@ -1,0 +1,137 @@
+{
+  "documentId": "metadata",
+  "collectionId": "questionBank",
+  "courseId": "IWCF-WC",
+  "title": "IWCF Well Control Supervisor Exam Question Bank",
+  "description": "Comprehensive question bank organized by topic for IWCF Level 3 and Level 4 exam preparation",
+  "source": "Claymore & Colt IWCF Exam Preparation Materials",
+  "totalQuestions": 235,
+  "categories": [
+    {
+      "categoryKey": "PRIMARY_SECONDARY_CONTROL",
+      "title": "Primary & Secondary Control Methods",
+      "questionCount": 4,
+      "l3Count": 4,
+      "l4Count": 0
+    },
+    {
+      "categoryKey": "CAUSES_OF_KICKS",
+      "title": "Causes of Kicks",
+      "questionCount": 24,
+      "l3Count": 9,
+      "l4Count": 15
+    },
+    {
+      "categoryKey": "WARNING_SIGNS",
+      "title": "Warning Signs of Abnormal Pressure",
+      "questionCount": 8,
+      "l3Count": 6,
+      "l4Count": 2
+    },
+    {
+      "categoryKey": "KICK_INDICATORS",
+      "title": "Kick Indicators & Detection",
+      "questionCount": 6,
+      "l3Count": 5,
+      "l4Count": 1
+    },
+    {
+      "categoryKey": "FRACTURES_MAASP",
+      "title": "Fractures & MAASP",
+      "questionCount": 12,
+      "l3Count": 4,
+      "l4Count": 8
+    },
+    {
+      "categoryKey": "SHUTIN_PROCEDURES",
+      "title": "Shut-In Procedures",
+      "questionCount": 12,
+      "l3Count": 8,
+      "l4Count": 4
+    },
+    {
+      "categoryKey": "DATA_COLLECTION_SCR",
+      "title": "Data Collection & Slow Circulating Rates",
+      "questionCount": 20,
+      "l3Count": 9,
+      "l4Count": 11
+    },
+    {
+      "categoryKey": "WELL_KILL_OPERATIONS",
+      "title": "Well Kill Operations - Methods",
+      "questionCount": 26,
+      "l3Count": 7,
+      "l4Count": 19
+    },
+    {
+      "categoryKey": "KILL_PROBLEMS",
+      "title": "Kill Problems & Troubleshooting",
+      "questionCount": 24,
+      "l3Count": 5,
+      "l4Count": 19
+    },
+    {
+      "categoryKey": "WELL_CONTROL_EQUIPMENT",
+      "title": "Well Control Equipment",
+      "questionCount": 18,
+      "l3Count": 7,
+      "l4Count": 11
+    },
+    {
+      "categoryKey": "PUMP_PRESSURE_CALCULATIONS",
+      "title": "Pump & Pressure Calculations",
+      "questionCount": 2,
+      "l3Count": 1,
+      "l4Count": 1
+    },
+    {
+      "categoryKey": "SUBSEA_OPERATIONS",
+      "title": "Subsea/Floating Rig Operations",
+      "questionCount": 6,
+      "l3Count": 3,
+      "l4Count": 3
+    },
+    {
+      "categoryKey": "KILL_MUD_CALCULATIONS",
+      "title": "Kill Mud Weight Calculations",
+      "questionCount": 3,
+      "l3Count": 1,
+      "l4Count": 2
+    },
+    {
+      "categoryKey": "EQUIPMENT_OPERATIONS",
+      "title": "BOP Equipment Operations (IWCF Combined Supervisor)",
+      "questionCount": 70,
+      "l3Count": 18,
+      "l4Count": 52
+    }
+  ],
+  "examStatistics": {
+    "byLevel": {
+      "L3": 87,
+      "L4": 148
+    },
+    "byType": {
+      "multipleChoice": 200,
+      "calculation": 15,
+      "multiSelect": 20
+    },
+    "topTopics": [
+      "Kill Operations & Methods",
+      "MAASP/Pressure Calculations",
+      "Causes of Kicks",
+      "Shut-In Procedures",
+      "BOP Equipment Operations",
+      "Subsea Control Systems",
+      "Subsea/CLFL Operations",
+      "SCR & Data Collection",
+      "Mud Gas Separator Operations",
+      "Accumulator Systems"
+    ]
+  },
+  "sourceFiles": [
+    "Claymore & Colt IWCF Exam Preparation - Set 1",
+    "Claymore & Colt IWCF Exam Preparation - Set 2",
+    "Claymore & Colt Equipment Operations Module"
+  ]
+}

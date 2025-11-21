@@ -1,0 +1,22 @@
+{
+  "moduleId": "HRO-HP-ESS-HF",
+  "courseId": "HRO-HP-ESS",
+  "title": "Human Factors Essentials",
+  "description": "Core principles of human performance and limitations. Covers attention and memory limits, fatigue, stress, cognitive biases, and error prevention.",
+  "order": 6,
+  "lessonIds": [
+    "HRO-HP-ESS-HF-01",
+    "HRO-HP-ESS-HF-02",
+    "HRO-HP-ESS-HF-03",
+    "HRO-HP-ESS-HF-04",
+    "HRO-HP-ESS-HF-05",
+    "HRO-HP-ESS-HF-06"
+  ],
+  "learningObjectives": [
+    "Understand human attention and memory limitations",
+    "Recognize and manage fatigue effects",
+    "Understand stress impacts on performance",
+    "Recognize common cognitive biases",
+    "Apply error prevention and recovery strategies"
+  ]
+}

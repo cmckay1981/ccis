@@ -1,0 +1,79 @@
+{
+  "moduleId": "ADO-112",
+  "courseId": "ADO",
+  "title": "Real-Time PPFG Interpretation",
+  "description": "Pre-drill PPFG predictions are estimates. Real-time data reveals actual pressures, which may differ significantly. This module covers interpretation of pore pressure and fracture gradient indicators during drilling operations.",
+  "objectives": [
+    "Understand PPFG data sources and their limitations",
+    "Interpret drilling parameters for pressure indications",
+    "Recognize pressure ramp zones and transition zones",
+    "Update operational decisions based on real-time PPFG"
+  ],
+  "keyTopics": [
+    {
+      "topic": "PPFG Data Sources",
+      "content": "Pre-drill: seismic velocities, offset well data, basin models. While drilling: d-exponent, MWD/LWD resistivity and sonic, RFT/MDT measurements. Real-time interpretation calibrates pre-drill predictions."
+    },
+    {
+      "topic": "Drilling Parameter Indicators",
+      "content": "Pore pressure increase often shows as: decreasing d-exponent (faster ROP for given WOB), increasing background gas, shale cavings character change, connection gas increases. These are warning signs before kicks."
+    },
+    {
+      "topic": "LWD Indicators",
+      "content": "Resistivity decreases in overpressured shales (higher water content). Sonic slowness increases (undercompaction). These trends, combined with drilling indicators, give confidence in pressure estimates."
+    },
+    {
+      "topic": "Pressure Ramps",
+      "content": "Pore pressure doesn't always increase gradually. Centroid effects, fault blocks, and aquifer connections can cause sudden pressure increases. Recognize the signs and anticipate - don't be surprised."
+    },
+    {
+      "topic": "Fracture Gradient Estimation",
+      "content": "Pre-drill FG is estimated from stress models. Real FG is confirmed by LOT/FIT. In HPHT, FG may be lower than predicted due to temperature effects. Don't rely on predictions alone - test."
+    },
+    {
+      "topic": "Updating Operations",
+      "content": "When real PPFG differs from predicted, mud weights and casing points may need adjustment. This requires communication between rig, office, and geology team. Have decision-making protocols in place."
+    }
+  ],
+  "referenceWellContext": {
+    "wellName": "Phoenix-702",
+    "ppfgProfile": "Significant pressure ramp from 3,500m through TD",
+    "concerns": [
+      "Pressure increase from 13.2 to 17.2 ppg EMW in lower sections",
+      "Tight window at TD requires accurate PPFG",
+      "Casing points may need adjustment based on real-time data",
+      "Early detection of pressure ramp is critical"
+    ]
+  },
+  "operationalPrinciples": [
+    "Pre-drill PPFG is a starting point, not gospel",
+    "Multiple indicators give confidence - one indicator is a warning",
+    "Anticipate pressure changes - don't just react",
+    "LOT/FIT confirms fracture gradient - trust tests over predictions",
+    "Communicate PPFG changes to decision-makers immediately"
+  ],
+  "lessons": [
+    {
+      "lessonId": "ADO-112-01",
+      "title": "PPFG Data Sources & Limitations",
+      "file": "lessons/ado-112-01.json"
+    },
+    {
+      "lessonId": "ADO-112-02",
+      "title": "Drilling Parameter Interpretation",
+      "file": "lessons/ado-112-02.json"
+    },
+    {
+      "lessonId": "ADO-112-03",
+      "title": "Recognizing Pressure Transitions",
+      "file": "lessons/ado-112-03.json"
+    },
+    {
+      "lessonId": "ADO-112-04",
+      "title": "Operational Response to PPFG Changes",
+      "file": "lessons/ado-112-04.json"
+    }
+  ],
+  "documentId": "ADO-112",
+  "tags": ["ppfg", "pore-pressure", "fracture-gradient", "real-time", "interpretation", "advanced-drilling"]
+}

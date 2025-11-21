@@ -1,0 +1,21 @@
+{
+  "moduleId": "HRO-HP-ESS-DM",
+  "courseId": "HRO-HP-ESS",
+  "title": "Decision Making Essentials",
+  "description": "Core principles of making sound decisions under pressure. Covers decision types, key models, cognitive biases, and time-critical techniques.",
+  "order": 2,
+  "lessonIds": [
+    "HRO-HP-ESS-DM-01",
+    "HRO-HP-ESS-DM-02",
+    "HRO-HP-ESS-DM-03",
+    "HRO-HP-ESS-DM-04",
+    "HRO-HP-ESS-DM-05",
+    "HRO-HP-ESS-DM-06"
+  ],
+  "learningObjectives": [
+    "Distinguish between routine, tactical, and critical decisions",
+    "Apply the OODA loop and recognition-primed decision models",
+    "Recognize and mitigate common cognitive biases",
+    "Make effective decisions under time pressure"
+  ]
+}

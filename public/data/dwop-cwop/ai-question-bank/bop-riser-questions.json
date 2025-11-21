@@ -1,0 +1,93 @@
+{
+  "categoryId": "BOP_RISER",
+  "title": "BOP & Riser Deployment - AI Probing Questions",
+  "breakoutRoom": "B",
+  "targetParticipants": ["Subsea Engineer", "Toolpusher", "Well Control Specialist"],
+  "questions": [
+    {
+      "questionId": "BR-001",
+      "question": "When was the last full BOP overhaul? Are all components within their certification period?",
+      "type": "verification",
+      "focus": "Equipment certification",
+      "expectedResponse": "Overhaul date and certification status of all components"
+    },
+    {
+      "questionId": "BR-002",
+      "question": "If the wellhead connector fails to latch, what's your contingency?",
+      "type": "what_if",
+      "focus": "Landing contingency",
+      "expectedResponse": "Troubleshooting steps and alternative approaches"
+    },
+    {
+      "questionId": "BR-003",
+      "question": "The programme shows 36 hours for BOP deployment and test - does this account for weather delays?",
+      "type": "assumption_challenge",
+      "focus": "Timeline realism",
+      "expectedResponse": "Weather contingency built into schedule"
+    },
+    {
+      "questionId": "BR-004",
+      "question": "What's your response if initial BOP test fails? How many repair attempts before you pull the stack?",
+      "type": "what_if",
+      "focus": "Test failure response",
+      "expectedResponse": "Clear decision criteria and escalation path"
+    },
+    {
+      "questionId": "BR-005",
+      "question": "ROV availability - do you have redundancy if primary ROV fails during critical operations?",
+      "type": "gap_identification",
+      "focus": "Equipment redundancy",
+      "expectedResponse": "Backup ROV availability or alternative procedures"
+    },
+    {
+      "questionId": "BR-006",
+      "question": "What is the maximum water depth rating of your BOP vs actual water depth?",
+      "type": "calculation_check",
+      "focus": "Equipment rating",
+      "expectedResponse": "BOP depth rating with adequate margin"
+    },
+    {
+      "questionId": "BR-007",
+      "question": "Deadman and autoshear were tested on surface - when will they be function tested subsea?",
+      "type": "verification",
+      "focus": "Emergency systems",
+      "expectedResponse": "Subsea function test schedule"
+    },
+    {
+      "questionId": "BR-008",
+      "question": "Your accumulator precharge is set for surface conditions - has it been adjusted for seabed temperature?",
+      "type": "calculation_check",
+      "focus": "Accumulator performance",
+      "expectedResponse": "Temperature-corrected precharge values"
+    },
+    {
+      "questionId": "BR-009",
+      "question": "If you get a stack leak during initial test, what's your minimum acceptable test duration for a repair decision?",
+      "type": "verification",
+      "focus": "Test criteria",
+      "expectedResponse": "Defined test duration and leak rate criteria"
+    },
+    {
+      "questionId": "BR-010",
+      "question": "The riser has been stored for 6 months - have all joints been inspected and drift checked?",
+      "type": "verification",
+      "focus": "Equipment condition",
+      "expectedResponse": "Inspection records and drift verification"
+    },
+    {
+      "questionId": "BR-011",
+      "question": "What's your emergency disconnect sequence time? Has this been verified recently?",
+      "type": "verification",
+      "focus": "Emergency response",
+      "expectedResponse": "EDS time and test results"
+    },
+    {
+      "questionId": "BR-012",
+      "question": "Maximum predicted current is 2 knots but your riser analysis was done for 1.5 knots - have you updated the analysis?",
+      "type": "assumption_challenge",
+      "focus": "Engineering calculations",
+      "expectedResponse": "Updated riser analysis or justification"
+    }
+  ],
+  "tags": ["dwop", "ai-questions", "bop", "riser", "subsea"]
+}

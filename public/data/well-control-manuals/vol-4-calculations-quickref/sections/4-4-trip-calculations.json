@@ -1,0 +1,26 @@
+{
+  "sectionId": "4.4",
+  "title": "Trip & Fill Calculations",
+  "content": {
+    "4.4.1": {
+      "title": "Pipe Displacement",
+      "content": "**Definitions:**\n- **Metal Displacement:** Volume of steel (displaces when pipe enters hole)\n- **Closed-end Displacement:** Total volume of pipe (metal + internal)\n- **Open-end Displacement:** Metal only (fluid inside remains)\n\n**Metal Displacement:**\n```\nDisplacement (bbl/ft) = (OD² - ID²) ÷ 1029.4\n```\n\n**Common Values:**\n| Pipe | Metal Disp. |\n|------|-------------|\n| 5\" DP (19.5 lb/ft) | 0.0076 bbl/ft |\n| 5\" HWDP | 0.0180 bbl/ft |\n| 6.5\" DC | 0.0295 bbl/ft |\n| 8\" DC | 0.0490 bbl/ft |"
+    },
+    "4.4.2": {
+      "title": "Trip Fill Calculations",
+      "content": "**When Pulling Pipe (POOH):**\n```\nExpected Fill = Pipe Displacement × Length Pulled\n```\n\n**Example:**\n5\" DP displacement = 0.0076 bbl/ft\nLength pulled = 10 stands × 93 ft = 930 ft\n\nExpected Fill = 0.0076 × 930 = 7.1 bbl\n\n**Compare:**\n- If hole takes LESS than expected: Possible influx (gain)\n- If hole takes MORE than expected: Possible losses\n- If hole takes expected: Normal\n\n**Trip Sheet:**\nMaintain trip sheet recording fill at regular intervals."
+    },
+    "4.4.3": {
+      "title": "Swab and Surge",
+      "content": "**Swab (pulling pipe):**\nCreates pressure reduction below pipe.\n```\nSwab Pressure = f(pull speed, mud properties, annular clearance)\n```\n\n**Surge (running pipe):**\nCreates pressure increase below pipe.\n```\nSurge Pressure = f(run speed, mud properties, annular clearance)\n```\n\n**Factors:**\n- Faster = more pressure change\n- Thicker mud = more pressure change\n- Tighter annulus = more pressure change\n\n**Mitigation:**\n- Control trip speed\n- Optimize mud properties\n- Use swab/surge models for planning\n- Add trip margin to mud weight"
+    },
+    "4.4.4": {
+      "title": "Trip Margin",
+      "content": "**Definition:**\nAdditional mud weight above required balance to account for swab effects.\n\n**Typical Values:**\n- Normal operations: 0.2-0.3 ppg\n- High swab risk: 0.3-0.5 ppg\n- Very tight annulus: May need higher\n\n**Calculation:**\nBased on swab pressure prediction.\n```\nTrip Margin (ppg) = Predicted Swab (psi) ÷ 0.052 ÷ TVD\n```\n\n**Application:**\nMaintain mud weight = Pore pressure EMW + Trip margin"
+    },
+    "4.4.5": {
+      "title": "Volume to Fill",
+      "content": "**Pipe Internal Volume:**\n```\nPipe Volume (bbl/ft) = ID² ÷ 1029.4\n```\n\n**Common Values:**\n| Pipe | Internal Cap. |\n|------|---------------|\n| 5\" DP (4.276\" ID) | 0.0178 bbl/ft |\n| 6.5\" DC (2.25\" ID) | 0.0049 bbl/ft |\n| 7\" Casing | 0.0454 bbl/ft |\n\n**Use:**\n- Calculate volume to fill pipe when running\n- Calculate volume inside string for kill calculations"
+    }
+  }
+}

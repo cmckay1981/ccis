@@ -1,0 +1,248 @@
+{
+  "wellId": "CC-PHOENIX-702",
+  "organizationId": "CLAYMORE_COLT",
+  "wellName": "Phoenix-702",
+  "wellType": "exploration",
+  "environment": "deepwater",
+  "classification": {
+    "isHPHT": true,
+    "hphtCategory": "Tier 2",
+    "maxBHT": 360,
+    "maxBHP": 15000,
+    "mawpExceeds15k": true
+  },
+  "rigInfo": {
+    "rigName": "C&C Explorer",
+    "rigType": "drillship",
+    "contractor": "Claymore & Colt"
+  },
+  "waterDepth": {
+    "value": 648,
+    "unit": "m"
+  },
+  "targetDepth": {
+    "tvd": 6920,
+    "md": 7100,
+    "unit": "m",
+    "uncertainty": 141
+  },
+  "bopInfo": {
+    "stackType": "subsea",
+    "workingPressure": 15000,
+    "configuration": "18-3/4\" 15K DDBOP",
+    "annularPreventers": 2,
+    "pipeRams": 2,
+    "blindShearRams": 1,
+    "casingShearRams": 1
+  },
+  "casingProgram": [
+    {
+      "section": "Conductor",
+      "holeSize": 36,
+      "casingSize": 30,
+      "settingDepth": { "tvd": 737, "md": 737, "unit": "m" },
+      "mudWeight": { "min": 8.6, "max": 8.6, "unit": "ppg" },
+      "mudType": "Seawater/Gel"
+    },
+    {
+      "section": "1st Surface",
+      "holeSize": 26,
+      "casingSize": 20,
+      "settingDepth": { "tvd": 1291, "md": 1291, "unit": "m" },
+      "mudWeight": { "min": 8.7, "max": 9.3, "unit": "ppg" },
+      "mudType": "Seawater/Gel",
+      "lotEmw": 12.5,
+      "maasp": 1200
+    },
+    {
+      "section": "2nd Surface",
+      "holeSize": 17.5,
+      "casingSize": 13.625,
+      "settingDepth": { "tvd": 2650, "md": 2650, "unit": "m" },
+      "mudWeight": { "min": 9.5, "max": 11.5, "unit": "ppg" },
+      "mudType": "WBM",
+      "lotEmw": 14.2,
+      "maasp": 1680
+    },
+    {
+      "section": "Intermediate",
+      "holeSize": 12.25,
+      "casingSize": 9.625,
+      "settingDepth": { "tvd": 3800, "md": 3900, "unit": "m" },
+      "mudWeight": { "min": 11.8, "max": 14.0, "unit": "ppg" },
+      "mudType": "OBM",
+      "lotEmw": 16.5,
+      "maasp": 2100
+    },
+    {
+      "section": "Production",
+      "holeSize": 8.5,
+      "casingSize": 7,
+      "settingDepth": { "tvd": 4800, "md": 4950, "unit": "m" },
+      "mudWeight": { "min": 14.2, "max": 15.8, "unit": "ppg" },
+      "mudType": "OBM",
+      "lotEmw": 17.2,
+      "maasp": 1850
+    },
+    {
+      "section": "Liner 1",
+      "holeSize": 6.125,
+      "casingSize": 5,
+      "settingDepth": { "tvd": 5800, "md": 6000, "unit": "m" },
+      "mudWeight": { "min": 15.5, "max": 16.8, "unit": "ppg" },
+      "mudType": "OBM",
+      "lotEmw": 17.8,
+      "maasp": 1450
+    },
+    {
+      "section": "Liner 2 (TD)",
+      "holeSize": 6.125,
+      "casingSize": 4.5,
+      "settingDepth": { "tvd": 6920, "md": 7100, "unit": "m" },
+      "mudWeight": { "min": 16.5, "max": 17.5, "unit": "ppg" },
+      "mudType": "OBM",
+      "lotEmw": 18.2,
+      "maasp": 1200,
+      "isReservoirSection": true,
+      "targets": ["Alpha Sand", "Bravo Sand"]
+    }
+  ],
+  "ppfg": {
+    "dataPoints": [
+      { "depth": 1000, "depthUnit": "m", "porePressure": 8.6, "fracGradient": 13.5, "unit": "ppg" },
+      { "depth": 1500, "depthUnit": "m", "porePressure": 8.8, "fracGradient": 14.0, "unit": "ppg" },
+      { "depth": 2000, "depthUnit": "m", "porePressure": 9.2, "fracGradient": 14.5, "unit": "ppg" },
+      { "depth": 2500, "depthUnit": "m", "porePressure": 10.5, "fracGradient": 15.2, "unit": "ppg" },
+      { "depth": 3000, "depthUnit": "m", "porePressure": 11.8, "fracGradient": 15.8, "unit": "ppg" },
+      { "depth": 3500, "depthUnit": "m", "porePressure": 13.2, "fracGradient": 16.5, "unit": "ppg" },
+      { "depth": 4000, "depthUnit": "m", "porePressure": 14.0, "fracGradient": 17.0, "unit": "ppg" },
+      { "depth": 4500, "depthUnit": "m", "porePressure": 14.8, "fracGradient": 17.3, "unit": "ppg" },
+      { "depth": 5000, "depthUnit": "m", "porePressure": 15.2, "fracGradient": 17.5, "unit": "ppg" },
+      { "depth": 5500, "depthUnit": "m", "porePressure": 15.8, "fracGradient": 17.8, "unit": "ppg" },
+      { "depth": 6000, "depthUnit": "m", "porePressure": 16.2, "fracGradient": 18.0, "unit": "ppg" },
+      { "depth": 6500, "depthUnit": "m", "porePressure": 16.8, "fracGradient": 18.2, "unit": "ppg" },
+      { "depth": 6920, "depthUnit": "m", "porePressure": 17.2, "fracGradient": 18.5, "unit": "ppg" }
+    ]
+  },
+  "kickTolerance": [
+    { "section": "17.5\" hole", "influxVolume": 50, "influxIntensity": 0.5, "ktValue": 45 },
+    { "section": "12.25\" hole", "influxVolume": 30, "influxIntensity": 0.5, "ktValue": 28 },
+    { "section": "8.5\" hole", "influxVolume": 20, "influxIntensity": 0.5, "ktValue": 18 },
+    { "section": "6.125\" hole (Liner 1)", "influxVolume": 15, "influxIntensity": 0.5, "ktValue": 12, "limitedKT": true },
+    { "section": "6.125\" hole (TD)", "influxVolume": 10, "influxIntensity": 0.3, "ktValue": 8, "limitedKT": true, "requiresHighestAlertness": true }
+  ],
+  "hazards": [
+    {
+      "section": "26\" hole",
+      "depthRange": { "from": 737, "to": 1291, "unit": "m" },
+      "hazardType": "shallow_gas",
+      "severity": "medium",
+      "description": "Potential shallow gas in upper sands",
+      "mitigation": "Use weighted mud, monitor returns closely, diverter ready"
+    },
+    {
+      "section": "12.25\" hole",
+      "depthRange": { "from": 2650, "to": 3800, "unit": "m" },
+      "hazardType": "narrow_window",
+      "severity": "high",
+      "description": "Tight mud weight window between PP and FG",
+      "mitigation": "ECD management, PWD monitoring, maintain wellbore stability"
+    },
+    {
+      "section": "8.5\" hole",
+      "depthRange": { "from": 3800, "to": 4800, "unit": "m" },
+      "hazardType": "abnormal_pressure",
+      "severity": "critical",
+      "description": "HPHT zone - significant overpressure",
+      "mitigation": "Continuous PWD monitoring, MPD standby, well control drills"
+    },
+    {
+      "section": "6.125\" hole",
+      "depthRange": { "from": 4800, "to": 6920, "unit": "m" },
+      "hazardType": "abnormal_pressure",
+      "severity": "critical",
+      "description": "Extreme HPHT - MAWP may exceed 15,000 psi",
+      "mitigation": "MPD required, highest well control alertness, early kick detection systems"
+    },
+    {
+      "section": "6.125\" hole",
+      "depthRange": { "from": 5500, "to": 6920, "unit": "m" },
+      "hazardType": "narrow_window",
+      "severity": "critical",
+      "description": "Very tight MW window in reservoir section - limited kick tolerance",
+      "mitigation": "Connection flow monitoring, MPD active, pre-planned kill procedures"
+    },
+    {
+      "section": "6.125\" hole",
+      "depthRange": { "from": 6000, "to": 6920, "unit": "m" },
+      "hazardType": "h2s",
+      "severity": "high",
+      "description": "Potential H2S in reservoir (Alpha Sand, Bravo Sand targets)",
+      "mitigation": "H2S detection equipment, scavenger in mud, evacuation drills, SCBA ready"
+    }
+  ],
+  "riserMargin": {
+    "required": true,
+    "value": 0.35,
+    "unit": "ppg"
+  },
+  "chokeLineData": {
+    "length": 2150,
+    "internalDiameter": 3.0,
+    "clflAtKillRate": [
+      { "pumpRate": 30, "mudWeight": 12.0, "clfl": 180 },
+      { "pumpRate": 30, "mudWeight": 14.0, "clfl": 210 },
+      { "pumpRate": 30, "mudWeight": 15.5, "clfl": 235 },
+      { "pumpRate": 30, "mudWeight": 17.0, "clfl": 265 }
+    ]
+  },
+  "mpdData": {
+    "required": true,
+    "requiredBelowCasing": "16\" casing (Intermediate)",
+    "system": "Managed Pressure Drilling",
+    "surfaceBackPressure": {
+      "min": 0,
+      "max": 500,
+      "unit": "psi"
+    },
+    "ecdManagement": true,
+    "constantBottomHolePressure": true,
+    "autoChoke": true
+  },
+  "connectionMonitoring": {
+    "required": true,
+    "parameters": {
+      "flowCheck": {
+        "duration": 5,
+        "unit": "minutes",
+        "acceptableFlow": 0.5,
+        "flowUnit": "bbl"
+      },
+      "pitVolumeTolerance": {
+        "value": 10,
+        "unit": "bbl"
+      },
+      "sppTracking": true,
+      "tripMargin": {
+        "value": 0.3,
+        "unit": "ppg"
+      }
+    },
+    "earlyKickDetection": {
+      "enabled": true,
+      "highResolutionPitMonitoring": true,
+      "deltaFlowMonitoring": true,
+      "sensitivity": "high"
+    }
+  },
+  "accessControl": "organization",
+  "assignedUsers": [],
+  "metadata": {
+    "createdAt": "2025-11-21T00:00:00Z",
+    "updatedAt": "2025-11-21T00:00:00Z",
+    "createdBy": "system",
+    "sourceDocument": "Claymore & Colt Training Well Profile",
+    "version": "1.0"
+  },
+  "_note": "This is an EXAMPLE well profile for training demonstration. Real well data would be uploaded by operators and kept confidential."
+}

@@ -1,0 +1,1407 @@
+{"lessons": [
+{
+  "lessonId": "LEAD-MC-101-01",
+  "moduleId": "LEAD-MC-101",
+  "courseId": "LEAD-MC",
+  "title": "What Leadership Actually Controls",
+  "type": "lesson",
+  "content": "Leadership doesn't control outcomes directly. It shapes the conditions that make good outcomes more likely: team clarity, resource flow, decision speed, and willingness to surface problems early. Leaders who confuse activity with impact burn out their teams while missing the signals that matter. Your job is creating an environment where competent people can perform at their best.",
+  "mcq": {
+    "question": "A supervisor spends most of their shift walking the floor, asking detailed questions about every task, and correcting minor deviations immediately. Productivity is declining and experienced workers seem disengaged. What is the most likely issue?",
+    "options": {
+      "A": "The supervisor is maintaining necessary standards",
+      "B": "The team needs more training on procedures",
+      "C": "The supervisor is confusing presence with micromanagement",
+      "D": "Experienced workers are becoming complacent"
+    },
+    "correctOption": "C",
+    "explanation": "Visible leadership means being accessible and aware, not controlling every detail. This supervisor is managing tasks instead of leading people. The decline in engagement signals that competent workers feel untrusted, which reduces initiative and ownership."
+  },
+  "openQuestions": [
+    "What are three specific conditions you control that directly affect your team's ability to perform well?",
+    "Think of a recent situation where you focused on activity instead of impact. What would you do differently now?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-101-02",
+  "moduleId": "LEAD-MC-101",
+  "courseId": "LEAD-MC",
+  "title": "The Leadership Scan",
+  "type": "lesson",
+  "content": "Effective leaders develop a consistent scan pattern similar to hazard awareness. You're looking for: shifts in morale or engagement, emerging friction between team members, early signs of process breakdown, and resource constraints before they become critical. This scan changes as you move up in responsibility—frontline supervisors monitor individual behavior, while senior leaders watch cultural patterns and systemic risks.",
+  "mcq": {
+    "question": "A mid-level manager notices that two departments have stopped communicating directly and are now routing everything through formal channels. No one has reported a problem. What should the manager do first?",
+    "options": {
+      "A": "Wait to see if the issue resolves itself",
+      "B": "Send a memo reinforcing collaboration expectations",
+      "C": "Talk individually with key people in both departments to understand what changed",
+      "D": "Escalate to senior leadership for intervention"
+    },
+    "correctOption": "C",
+    "explanation": "Behavioral changes often signal unresolved conflict or breakdown in trust. Direct conversation uncovers root causes that formal processes miss. Waiting allows the problem to calcify, while memos don't address underlying issues. This is a scan indicator worth investigating early."
+  },
+  "openQuestions": [
+    "What patterns do you currently monitor in your daily leadership scan?",
+    "Identify one early warning sign you've missed in the past. What made it hard to see?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-101-03",
+  "moduleId": "LEAD-MC-101",
+  "courseId": "LEAD-MC",
+  "title": "Second and Third-Order Effects",
+  "type": "lesson",
+  "content": "Every leadership decision creates ripples beyond the immediate result. A decision to enforce a safety rule might improve compliance but damage trust if applied inconsistently. Choosing speed over thoroughness might deliver short-term results but teach your team that quality doesn't matter. Strong leaders think two or three steps ahead: what behavior does this decision reinforce, what does it discourage, and what will people believe about priorities based on what I just did?",
+  "mcq": {
+    "question": "A team is behind schedule on a critical project. The leader decides to cancel the weekly team meeting to 'buy back time' and keep people focused on execution. Three weeks later, coordination errors are increasing and team members seem unclear about priorities. What second-order effect did the leader miss?",
+    "options": {
+      "A": "The team needed more individual work time, not meetings",
+      "B": "Canceling the meeting signaled that communication isn't a priority under pressure",
+      "C": "Team members should have escalated confusion sooner",
+      "D": "The project timeline was unrealistic from the beginning"
+    },
+    "correctOption": "B",
+    "explanation": "Actions under pressure reveal true priorities to your team. Canceling communication to save time taught the team that coordination is optional when things get hard. The immediate gain in work hours created larger losses in alignment and clarity. Leaders must consider what their decisions teach, not just what they accomplish."
+  },
+  "openQuestions": [
+    "Describe a recent decision you made. What second-order effects did it create beyond the immediate result?",
+    "What does your team believe is most important based on how you actually spend your time?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-101-04",
+  "moduleId": "LEAD-MC-101",
+  "courseId": "LEAD-MC",
+  "title": "Self-Diagnostic: Leading vs Managing",
+  "type": "reflection",
+  "content": "Most people promoted into leadership spend their first year managing tasks instead of leading people. This self-assessment helps you identify where you actually spend your energy. Leadership focuses on direction, development, culture, and removing obstacles. Management focuses on process execution, resource allocation, and variance control. Both matter—but if you're only managing, you're not leading.",
+  "scenario": {
+    "story": "You arrive Monday morning to find three issues waiting: a key piece of equipment failed over the weekend, one of your strongest performers requested a meeting to discuss 'career development,' and another department is asking for your input on a process change that affects your team. You have two hours before back-to-back operational meetings consume the rest of your day.",
+    "options": {
+      "A": "Handle the equipment failure first, delegate the process input to a senior team member, and reschedule the career conversation for later in the week",
+      "B": "Delegate the equipment failure to your maintenance lead, take the career conversation immediately, and provide input on the process change",
+      "C": "Handle the equipment failure yourself to ensure it's done right, then address whichever other issue has time left",
+      "D": "Postpone all three until you have proper time to address them thoroughly"
+    },
+    "recommendedResponse": "B",
+    "explanation": "Option B demonstrates leadership prioritization. The equipment failure is a management task best handled by a capable subordinate—delegating it builds their capability and frees you for leadership work. The career conversation is a leadership priority: strong performers who are thinking about development need immediate attention or they start looking elsewhere. Process input affects your team's future operating environment, making it worth your strategic involvement. Option A delays a critical leadership moment. Option C is pure management—you're doing technical work instead of leading. Option D avoids decisions entirely."
+  },
+  "openQuestions": [
+    "Review your last week. What percentage of your time went to leadership activities versus management tasks?",
+    "What is one management task you could delegate this week to create space for actual leadership?",
+    "If a strong performer is questioning their future on your team, how quickly do you typically respond? What does your response time signal about priorities?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-102-01",
+  "moduleId": "LEAD-MC-102",
+  "courseId": "LEAD-MC",
+  "title": "Competence Is Not Enough",
+  "type": "lesson",
+  "content": "Being the most technically skilled person in the room doesn't make you a leader—it makes you a high-performing individual contributor. Leadership requires translating expertise into team capability, not just demonstrating personal mastery. Teams follow leaders they trust to make sound decisions under uncertainty, advocate for their interests, and remain consistent under pressure. Technical skill earns respect, but trust earns followership.",
+  "mcq": {
+    "question": "A newly promoted supervisor was the best technician on the crew. Six months in, the team meets standards but shows no initiative, rarely asks questions, and waits for explicit direction on everything. The supervisor is frustrated that 'no one steps up.' What is the most likely root cause?",
+    "options": {
+      "A": "The team lacks technical competence and needs more training",
+      "B": "The supervisor is still operating as the lead technician instead of developing others",
+      "C": "The crew is intentionally underperforming to resist the new supervisor",
+      "D": "The work environment doesn't reward initiative"
+    },
+    "correctOption": "B",
+    "explanation": "High-performing technicians often become supervisors who solve every problem themselves instead of teaching others to solve problems. This creates dependency, not capability. The team has learned to wait because the supervisor will eventually just do it themselves. Leadership requires stepping back from execution to create space for others to grow."
+  },
+  "openQuestions": [
+    "What is one technical task you still handle personally that you should be teaching someone else to do?",
+    "How do you know if your team trusts your judgment versus just complying with your authority?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-102-02",
+  "moduleId": "LEAD-MC-102",
+  "courseId": "LEAD-MC",
+  "title": "Trust as Operational Performance",
+  "type": "lesson",
+  "content": "Trust isn't a soft skill—it's a performance multiplier. High-trust teams make decisions faster, adapt to changing conditions more readily, and surface problems earlier because people aren't afraid of blame. Low-trust environments create defensive behavior: people cover mistakes, hoard information, avoid risk, and wait for permission. Leaders build trust through three mechanisms: being consistently trustworthy, trusting others with real responsibility, and maintaining transparency about decisions and constraints.",
+  "mcq": {
+    "question": "After a significant operational error, a leader gathers the team and says, 'I need to understand exactly what happened, and I need complete honesty. No one will be punished for telling the truth.' Three people provide carefully worded statements that avoid mentioning key details. What is the most likely issue?",
+    "options": {
+      "A": "The team doesn't understand what happened clearly enough to explain it",
+      "B": "Past experience has taught them that 'no punishment' doesn't actually mean no consequences",
+      "C": "The team is protecting someone who made the error",
+      "D": "The leader didn't ask specific enough questions"
+    },
+    "correctOption": "B",
+    "explanation": "Trust is built through consistent action over time, not single statements. If this team has previously seen people punished despite assurances, words won't override experience. Leaders who want honest reporting must demonstrate—repeatedly—that they respond to truth-telling with problem-solving, not blame. The team's defensive behavior is a trust indicator the leader needs to address."
+  },
+  "openQuestions": [
+    "Describe a time when someone on your team took a risk by being honest with you. How did you respond?",
+    "What is one decision you made recently that you could have been more transparent about?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-102-03",
+  "moduleId": "LEAD-MC-102",
+  "courseId": "LEAD-MC",
+  "title": "Visible Leadership Without Micromanagement",
+  "type": "lesson",
+  "content": "Effective leaders are present and engaged without controlling every detail. Visibility means your team knows you're aware of their work, available when needed, and invested in their success. Micromanagement means you're inserting yourself into decisions that don't require your involvement, second-guessing competent judgment, or requiring approval for routine actions. The difference is whether your presence creates confidence or anxiety.",
+  "mcq": {
+    "question": "A manager reviews every outgoing communication from the team, edits minor wording choices, and requires pre-approval for scheduling decisions that used to be handled independently. Team members have stopped proposing new ideas. The manager believes this is 'staying engaged.' What is actually happening?",
+    "options": {
+      "A": "The team needs this level of oversight to maintain quality",
+      "B": "The manager's behavior has signaled that independent judgment isn't trusted",
+      "C": "Team members are deliberately withholding ideas to avoid work",
+      "D": "The manager is appropriately maintaining standards during a quality issue"
+    },
+    "correctOption": "B",
+    "explanation": "Micromanagement trains people to stop thinking independently. When leaders control low-stakes decisions, teams learn that initiative isn't valued and that it's safer to wait for direction. The loss of new ideas is a direct result of the manager's behavior. Visible leadership would involve knowing what the team is working on and being available for genuine challenges, not controlling routine execution."
+  },
+  "openQuestions": [
+    "What decisions are you currently involved in that your team could handle without you?",
+    "How would your team describe the difference between when you're being helpful versus when you're micromanaging?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-102-04",
+  "moduleId": "LEAD-MC-102",
+  "courseId": "LEAD-MC",
+  "title": "Integrity and Consistency Under Pressure",
+  "type": "lesson",
+  "content": "Leaders reveal their true values when conditions deteriorate. Integrity means your principles remain intact regardless of circumstances—you don't compromise standards when it's convenient or pressured to do so. Consistency means people can predict how you'll respond based on established patterns, not mood or external pressure. Teams watch how leaders behave during stress to determine what actually matters. If you abandon stated values when challenged, you teach your team that those values were performative.",
+  "mcq": {
+    "question": "A leader has consistently emphasized safety as the top priority. During a high-pressure deadline with senior leadership watching, a team member raises a safety concern that would require stopping work for several hours. The leader says, 'We'll address that after we hit this milestone—we can't afford delays right now.' What just happened?",
+    "options": {
+      "A": "The leader made a reasonable risk-based decision under time pressure",
+      "B": "The leader demonstrated that safety is negotiable when business pressure is high",
+      "C": "The team member should have raised the concern earlier",
+      "D": "The leader appropriately balanced competing priorities"
+    },
+    "correctOption": "B",
+    "explanation": "The leader just taught the entire team that safety is only a priority when convenient. Actions under pressure reveal true values more clearly than any stated policy. This moment created a lasting cultural lesson: when it matters most, production takes precedence over safety. The team will now filter future safety concerns based on perceived business impact. Leaders who maintain integrity under pressure reinforce stated values. Leaders who compromise principles when challenged destroy credibility."
+  },
+  "openQuestions": [
+    "Describe a time when you faced pressure to compromise a stated principle. What did you do?",
+    "What does your behavior under stress teach your team about your actual priorities?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-102-05",
+  "moduleId": "LEAD-MC-102",
+  "courseId": "LEAD-MC",
+  "title": "Trust Breakdown Case Study",
+  "type": "scenario",
+  "content": "Trust collapses faster than it builds. Understanding how leaders lose credibility helps you recognize early warning signs and avoid common failures that damage team confidence.",
+  "scenario": {
+    "story": "An operations supervisor has been with the company for eight years and is generally well-regarded. Over six months, the following pattern emerges: the supervisor commits to advocate for additional equipment funding but the request never materializes; promises to address scheduling concerns but the schedule remains unchanged; assures the team that upcoming policy changes won't affect them, but the policies are implemented without modification. Team members begin routing concerns through other channels and stop bringing issues to the supervisor. Senior leadership is unaware of any problem.",
+    "options": {
+      "A": "The supervisor is dealing with constraints from above and the team needs to be more understanding",
+      "B": "The supervisor has lost credibility by making commitments they couldn't or wouldn't follow through on",
+      "C": "The team is being unreasonable and should trust the supervisor's judgment",
+      "D": "This is a normal communication breakdown that will resolve itself over time"
+    },
+    "recommendedResponse": "B",
+    "explanation": "Credibility erodes when leaders make commitments they don't keep, regardless of intent. If the supervisor couldn't deliver on equipment funding or schedule changes, the correct response is transparency: 'I pushed for this, here's what happened, here's what I can actually do.' Making assurances that don't materialize teaches people that your word doesn't mean anything. The team's behavior—routing around the supervisor—is a rational response to unreliability. Trust requires either delivering on commitments or being honest about constraints."
+  },
+  "openQuestions": [
+    "Have you ever made a commitment to your team that you didn't follow through on? What did you do to address it?",
+    "What do you do when you realize you can't deliver on something you've promised?",
+    "How do you maintain credibility when organizational decisions are outside your control?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-103-01",
+  "moduleId": "LEAD-MC-103",
+  "courseId": "LEAD-MC",
+  "title": "How Stress Degrades Leadership",
+  "type": "lesson",
+  "content": "Under pressure, leaders default to their most ingrained behaviors—which are often the wrong ones. Stress narrows focus, shortens decision timelines, and amplifies emotional reactions. Leaders who don't recognize this pattern become controlling, dismissive of input, or paralyzed by overthinking. Your team watches how you respond when things go wrong. Composure under stress isn't about suppressing emotion—it's about maintaining disciplined thought process and deliberate communication when systems are failing.",
+  "mcq": {
+    "question": "During a high-pressure situation, a normally collaborative leader starts making rapid decisions without consulting subject matter experts, dismisses questions as 'slowing things down,' and becomes visibly irritated when someone suggests an alternative approach. The situation resolves, but the team seems hesitant in the debrief. What just happened?",
+    "options": {
+      "A": "The leader appropriately took control during a crisis",
+      "B": "Stress caused the leader to abandon effective practices and revert to command-and-control behavior",
+      "C": "The team is being overly sensitive about necessary decisiveness",
+      "D": "The leader successfully prioritized speed over consensus"
+    },
+    "correctOption": "B",
+    "explanation": "High-performing leaders maintain their operating principles under pressure, not abandon them. This leader's behavior signaled that collaboration only matters when things are easy. The team's hesitance in the debrief indicates damaged trust—they learned that their input isn't valued when it matters most. Effective crisis leadership involves faster decision cycles, not shutting down communication entirely."
+  },
+  "openQuestions": [
+    "Describe how your leadership behavior changes when you're under significant stress. What patterns do you recognize?",
+    "Think of a high-pressure moment when you responded well. What did you do differently that helped you maintain composure?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-103-02",
+  "moduleId": "LEAD-MC-103",
+  "courseId": "LEAD-MC",
+  "title": "Maintaining Composure When Systems Fail",
+  "type": "lesson",
+  "content": "Composure doesn't mean emotionless—it means your decision-making process remains intact even when conditions deteriorate. Panic spreads faster than information during system failures. Your team takes behavioral cues from you: if you're visibly overwhelmed, they assume the situation is unmanageable. Effective leaders acknowledge the severity of the situation while projecting confidence in the team's ability to respond. This requires deliberate self-management: slowing your breathing, verbalizing your thought process, and focusing on controllable actions rather than cascading consequences.",
+  "mcq": {
+    "question": "A critical system failure occurs during peak operations. The leader's initial internal reaction is near-panic, but they pause for ten seconds, take two deep breaths, and then say to the team: 'Alright, here's what we know, here's what we don't know yet, and here's what we're doing first.' The team begins executing immediately. What principle did the leader apply?",
+    "options": {
+      "A": "The leader faked confidence to manipulate the team's response",
+      "B": "The leader used a brief reset to shift from emotional reaction to deliberate response",
+      "C": "The leader wasted valuable time with unnecessary breathing exercises",
+      "D": "The leader should have acted immediately without pausing"
+    },
+    "correctOption": "B",
+    "explanation": "Ten seconds of self-regulation prevented a panic response from becoming team-wide chaos. Acknowledging what's known and unknown reduces uncertainty, and immediate action creates focus. This isn't faking composure—it's managing your physiological stress response so you can think clearly. Teams need leaders who can process stress without letting it degrade decision quality."
+  },
+  "openQuestions": [
+    "What physical or mental technique do you use to reset yourself when you feel stress escalating?",
+    "How does your team know the difference between when you're concerned versus when you're losing control?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-103-03",
+  "moduleId": "LEAD-MC-103",
+  "courseId": "LEAD-MC",
+  "title": "Communication During High-Tempo Operations",
+  "type": "lesson",
+  "content": "When the operational pace accelerates, communication becomes shorter but must remain clearer. Leaders often make two errors under time pressure: they stop communicating entirely, assuming everyone understands, or they over-communicate irrelevant details that create confusion. Effective high-tempo communication follows a pattern: state the current priority, confirm understanding, identify who needs what information, and establish the next decision point. Silence creates information voids that people fill with assumptions—usually wrong ones.",
+  "mcq": {
+    "question": "During a fast-moving operational problem, a team leader goes silent for 45 minutes while troubleshooting. The team continues working but begins making conflicting decisions because no one knows if priorities have changed. When the leader resurfaces with a solution, several people have duplicated effort or worked on the wrong things. What communication failure occurred?",
+    "options": {
+      "A": "The team should have asked for guidance instead of assuming",
+      "B": "The leader failed to provide directional updates even while problem-solving",
+      "C": "45 minutes isn't long enough to require a status update",
+      "D": "The team lacks the experience to operate independently"
+    },
+    "correctOption": "B",
+    "explanation": "Leaders don't get to disappear during high-tempo operations, even when they're personally focused on solving a critical problem. A 15-second update—'Still working the primary issue, hold current priorities unless you hear otherwise'—prevents the team from fragmenting. The leader's silence created an information vacuum that cost the team coordination and efficiency. High-tempo leadership requires communicating continuously, not just when you have answers."
+  },
+  "openQuestions": [
+    "During your last high-pressure situation, how frequently did you communicate with your team? Was it enough?",
+    "What's your default communication pattern when you're personally focused on solving a hard problem?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-103-04",
+  "moduleId": "LEAD-MC-103",
+  "courseId": "LEAD-MC",
+  "title": "Decision-Making with Incomplete Information",
+  "type": "scenario",
+  "content": "Leaders rarely have complete information during critical moments. Waiting for certainty often means deciding too late. The skill is knowing when you have enough information to act and when delay creates more risk than a potentially imperfect decision.",
+  "scenario": {
+    "story": "You're leading a team during an operational abnormality. Two experienced technicians are providing conflicting assessments of the root cause. One argues for an immediate shutdown to prevent equipment damage. The other believes the system can be stabilized without stopping operations, avoiding significant production loss. Both are credible. You have about 90 seconds before the situation will force a decision by default. You don't have time to gather additional data.",
+    "options": {
+      "A": "Choose the shutdown option because it's the more conservative approach",
+      "B": "Choose the stabilization option to avoid unnecessary production loss",
+      "C": "Ask both technicians to briefly explain their reasoning, assess which analysis has fewer assumptions, then decide",
+      "D": "Escalate the decision to a higher authority since you don't have enough information"
+    },
+    "recommendedResponse": "C",
+    "explanation": "Option C demonstrates decision-making under uncertainty. You don't have time for extensive analysis, but you do have time for each person to articulate their logic in 30 seconds. The quality of reasoning matters more than seniority or conservatism. Option A defaults to risk avoidance without evaluating the actual situation. Option B prioritizes production without assessing the consequences of being wrong. Option D abdicates leadership at a moment when your team needs a decision. Even with incomplete information, you can assess the strength of each argument and make a reasoned choice. Perfect information isn't required—just enough to act responsibly."
+  },
+  "openQuestions": [
+    "Describe a time you had to make a significant decision with incomplete information. How did you determine you had 'enough' to decide?",
+    "What's your internal signal that tells you you're overthinking versus appropriately analyzing a decision?",
+    "How do you communicate a decision to your team when you're not fully certain it's the right call?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-103-05",
+  "moduleId": "LEAD-MC-103",
+  "courseId": "LEAD-MC",
+  "title": "Leading Through Full-Scale Crisis",
+  "type": "knowledge-check",
+  "content": "Crisis leadership requires integrating all pressure management skills simultaneously: maintaining composure, communicating clearly despite chaos, making rapid decisions with limited information, and keeping the team focused on controllable actions. The leader's role shifts from normal operations to crisis mode: prioritize immediate safety, establish command structure, manage information flow, and prepare for recovery while still responding.",
+  "mcq": {
+    "question": "During a major incident, a leader notices their team fragmenting: some people are acting independently without coordination, others are waiting for direction, and information flow has become chaotic. What is the most critical first action?",
+    "options": {
+      "A": "Assign specific roles and establish a clear command structure immediately",
+      "B": "Gather everyone for a full briefing to ensure shared understanding",
+      "C": "Let experienced people continue working while you focus on the biggest problem",
+      "D": "Document what's happening for the post-incident review"
+    },
+    "correctOption": "A",
+    "explanation": "Crisis requires structure before strategy. Fragmented action wastes effort and creates new problems. Establishing clear roles and command structure—even imperfectly—creates coordination that enables effective response. Option B takes too long when action is needed now. Option C allows chaos to continue. Option D mistakes documentation for leadership. First create order, then solve problems."
+  },
+  "openQuestions": [
+    "Have you ever led through a genuine crisis? What did you learn about your own leadership under extreme pressure?",
+    "What is your crisis leadership checklist—the immediate actions you would take to create structure during chaos?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-104-01",
+  "moduleId": "LEAD-MC-104",
+  "courseId": "LEAD-MC",
+  "title": "Delegation as Development",
+  "type": "lesson",
+  "content": "Delegation isn't about offloading tasks you don't want to do—it's about systematically building capability in others. Every task you delegate is a teaching opportunity if you frame it correctly. Effective delegation includes clear outcome definition, appropriate authority level, identified constraints, and post-action review. Leaders who refuse to delegate create bottlenecks and prevent their team from growing. Leaders who delegate poorly create confusion and repeated failures that damage confidence.",
+  "mcq": {
+    "question": "A leader assigns a complex task to a team member by saying, 'Handle the vendor coordination for this project.' Three weeks later, the project is stalled because the team member made commitments the leader wouldn't have approved and missed several critical requirements. The leader is frustrated that the person 'didn't use common sense.' What delegation failure occurred?",
+    "options": {
+      "A": "The team member wasn't ready for this level of responsibility",
+      "B": "The leader failed to define the desired outcome, boundaries, and decision authorities",
+      "C": "The team member should have asked more questions before proceeding",
+      "D": "Vendor coordination is too complex to delegate"
+    },
+    "correctOption": "B",
+    "explanation": "Telling someone to 'handle' something without defining success criteria, constraints, or decision limits isn't delegation—it's abdication. The team member had no framework for making choices aligned with the leader's expectations. Effective delegation requires clarity: what does success look like, what are you authorized to decide independently, what requires approval, and what are the non-negotiable constraints? This failure is on the leader, not the team member."
+  },
+  "openQuestions": [
+    "Think of the last task you delegated. Did you clearly define the outcome, boundaries, and decision authorities?",
+    "What's one task you're currently doing yourself that would develop someone else if you delegated it properly?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-104-02",
+  "moduleId": "LEAD-MC-104",
+  "courseId": "LEAD-MC",
+  "title": "Matching Challenge to Capability",
+  "type": "lesson",
+  "content": "Not all delegation is equal. High-performing individuals can handle ambiguous assignments with minimal oversight. Developing team members need structured tasks with clear checkpoints. New or struggling performers require detailed guidance and frequent feedback. Mismatching the challenge level to the person's readiness creates two failure modes: overwhelming someone who isn't ready, or boring someone who's capable of more. Effective leaders assess individual capability honestly and adjust delegation approach accordingly.",
+  "mcq": {
+    "question": "A leader has three team members: one is highly experienced and autonomous, one is competent but still developing judgment, and one is new to the role. The leader assigns all three the same type of task with identical instructions and check-in schedules. Six weeks later, the experienced person seems disengaged, the developing person is performing adequately, and the new person is struggling. What did the leader miss?",
+    "options": {
+      "A": "The experienced person needs a performance conversation about engagement",
+      "B": "The new person isn't suited for the role and should be replaced",
+      "C": "The leader failed to differentiate delegation approach based on individual readiness",
+      "D": "The task assignment was inappropriate for the entire team"
+    },
+    "correctOption": "C",
+    "explanation": "One-size-fits-all delegation ignores individual capability. The experienced person is disengaged because they're being micromanaged with unnecessary check-ins. The new person is struggling because they need more structure and support than they're getting. The developing person happened to match the delegation level. Leaders must flex their approach: give high performers autonomy and outcome focus, give developing performers structured frameworks with coaching, give new performers detailed guidance with frequent checkpoints."
+  },
+  "openQuestions": [
+    "For each person on your team, can you articulate their current capability level and how that should affect your delegation approach?",
+    "Describe someone who outgrew the level of oversight you were providing. What signal told you they were ready for more?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-104-03",
+  "moduleId": "LEAD-MC-104",
+  "courseId": "LEAD-MC",
+  "title": "Why High Performers Leave",
+  "type": "lesson",
+  "content": "High performers leave when they stop growing, stop feeling challenged, or stop believing leadership values their contribution. Exit interviews often surface generic reasons like 'better opportunity elsewhere,' but the real causes are usually leadership failures: lack of development opportunities, inconsistent recognition, tolerance of low performers, or being overlooked for advancement. Retaining top talent requires understanding what drives each individual and deliberately creating conditions for their continued growth. Losing your best people isn't inevitable—it's a leadership choice.",
+  "mcq": {
+    "question": "A high-performing team member who consistently exceeds expectations submits a resignation. The leader is surprised and asks why. The person says, 'I've been doing the same work for two years, I've asked about advancement opportunities three times, and I watched someone with less capability get promoted last month because they were more visible to senior leadership.' What pattern does this reveal?",
+    "options": {
+      "A": "The person has unrealistic expectations about promotion timelines",
+      "B": "The leader failed to advocate for the person and didn't create developmental growth",
+      "C": "High performers are naturally more prone to job-hopping",
+      "D": "The organization's promotion process is broken and the leader couldn't control it"
+    },
+    "correctOption": "B",
+    "explanation": "This departure was preventable and entirely predictable. The person signaled their needs multiple times and was ignored. High performers need progression—if they're not advancing in responsibility or capability, they'll find it elsewhere. The leader had multiple opportunities to create development, advocate for promotion, or at minimum have an honest conversation about timing and path. 'Surprise' resignations from top performers are almost always leadership failures in disguise."
+  },
+  "openQuestions": [
+    "When did you last have a development conversation with your strongest performer? What did you learn about their goals?",
+    "If your best team member resigned tomorrow, would you be surprised? What does that tell you?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-104-04",
+  "moduleId": "LEAD-MC-104",
+  "courseId": "LEAD-MC",
+  "title": "Coaching vs Mentoring vs Managing",
+  "type": "lesson",
+  "content": "These three development approaches serve different purposes and require different relationships. Coaching focuses on skill development for specific tasks—it's short-term, performance-oriented, and usually done by a direct supervisor. Mentoring focuses on long-term career development and usually involves someone outside the reporting chain who provides perspective and guidance. Managing involves directing work, allocating resources, and evaluating performance. Confusing these roles creates ineffective development and unclear relationships. Great leaders know which hat to wear when.",
+  "mcq": {
+    "question": "A supervisor notices a team member struggling with a technical skill. The supervisor schedules weekly one-on-one meetings where they discuss the person's long-term career aspirations, share personal leadership philosophy, and offer general life advice. The technical skill gap isn't improving. What's the mismatch?",
+    "options": {
+      "A": "The team member isn't receptive to development",
+      "B": "The supervisor is mentoring when they should be coaching",
+      "C": "Weekly meetings are too infrequent for skill development",
+      "D": "The supervisor should delegate coaching to someone more technical"
+    },
+    "correctOption": "B",
+    "explanation": "The immediate need is coaching—focused, tactical skill development with practice and feedback. The supervisor has shifted into mentoring mode, which addresses different needs. Coaching says: 'Here's how to do this specific thing better, let's practice it, I'll observe and give you feedback.' Mentoring says: 'Here's how I think about your career trajectory and development over time.' Both are valuable, but this situation requires coaching first. Fix the performance issue, then build the longer-term relationship."
+  },
+  "openQuestions": [
+    "Think of your direct reports. Which ones need coaching, which need mentoring, and how do you differentiate your approach?",
+    "Who has been the most effective mentor in your career? What made them different from a good coach or manager?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-104-05",
+  "moduleId": "LEAD-MC-104",
+  "courseId": "LEAD-MC",
+  "title": "Delegation Failure Analysis",
+  "type": "scenario",
+  "content": "Understanding why delegation fails helps you diagnose problems before they become patterns. Most delegation failures fall into predictable categories that leaders can prevent.",
+  "scenario": {
+    "story": "You delegated a medium-complexity project to a team member you assessed as ready for increased responsibility. You defined the outcome, established boundaries, and set a two-week checkpoint. At the checkpoint meeting, you discover the person interpreted the assignment completely differently than you intended, made several decisions you would have reversed, and is now significantly off track. The person seems frustrated and says, 'I thought this is what you wanted.' You're both invested significant time and the project timeline is now at risk.",
+    "options": {
+      "A": "Take the project back and complete it yourself to ensure it's done correctly",
+      "B": "Recognize this as a communication failure, clarify expectations now, and adjust the timeline if needed",
+      "C": "Let the person continue with their approach since correcting course now would damage their confidence",
+      "D": "Assign a more experienced team member to co-lead the project going forward"
+    },
+    "recommendedResponse": "B",
+    "explanation": "This is a clarity failure, not a capability failure. The person was willing and engaged—they just didn't understand the intent. Taking it back teaches them that mistakes mean loss of opportunity, which discourages future initiative. Letting them continue on the wrong path wastes more time and reinforces incorrect understanding. Adding another person signals you don't trust them to recover. The right move is acknowledging the miscommunication, providing clear direction now, and adjusting timeline expectations if necessary. This becomes a learning moment: 'Here's where we diverged, here's what I should have been clearer about, here's what right looks like.' Then let them execute with better clarity."
+  },
+  "openQuestions": [
+    "Describe a time you delegated something that went off track. Looking back, was it a clarity issue, a capability issue, or something else?",
+    "When delegation fails, what's your typical response? Do you take it back, fix it yourself, or use it as a development opportunity?",
+    "How do you balance timeline pressure with developmental patience when someone struggles with a delegated task?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-105-01",
+  "moduleId": "LEAD-MC-105",
+  "courseId": "LEAD-MC",
+  "title": "Standards vs Punishment",
+  "type": "lesson",
+  "content": "Accountability means holding a clear standard and addressing deviations consistently. Punishment means inflicting consequences to create fear-based compliance. The difference is intent and consistency. Leaders who enforce standards explain why the standard exists, address issues immediately regardless of who's involved, and focus on correction rather than blame. Punitive cultures enforce rules selectively, make examples of people, and create fear that prevents honest communication. High-performing teams need accountability. Toxic cultures are built on punishment.",
+  "mcq": {
+    "question": "Two team members commit similar procedural violations within the same week. One is a high performer who's well-liked. The other is a marginal performer with a history of issues. The leader addresses the marginal performer immediately with formal documentation but has an informal conversation with the high performer and takes no further action. Three weeks later, team morale has declined noticeably. What happened?",
+    "options": {
+      "A": "The leader appropriately tailored the response based on each person's track record",
+      "B": "The inconsistent response signaled that standards are negotiable based on favoritism",
+      "C": "The marginal performer's history justified different treatment",
+      "D": "Team morale issues are unrelated to the leader's response"
+    },
+    "correctOption": "B",
+    "explanation": "Inconsistent accountability destroys trust faster than no accountability at all. The team learned that standards apply differently based on who you are, not what you did. High performers should be held to the same standards as everyone else—if anything, higher. When leaders play favorites, the organization loses faith in fairness and people start gaming the system rather than performing. Accountability requires consistency, even when it's uncomfortable."
+  },
+  "openQuestions": [
+    "Describe a time you enforced a standard inconsistently. What was your reasoning, and what was the result?",
+    "How do you ensure you're holding everyone to the same standard regardless of personal relationship or performance history?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-105-02",
+  "moduleId": "LEAD-MC-105",
+  "courseId": "LEAD-MC",
+  "title": "Performance Conversations That Work",
+  "type": "lesson",
+  "content": "Delivering corrective feedback is a leadership fundamental that most people avoid until problems become severe. Effective performance conversations happen early, focus on specific observable behaviors rather than character judgments, and clarify the path to improvement. The structure is simple: describe what you observed, explain the impact or standard gap, ask for the person's perspective, and establish clear expectations going forward. Avoiding these conversations doesn't make problems disappear—it makes them worse and signals to the rest of the team that you tolerate substandard performance.",
+  "mcq": {
+    "question": "A team member's work quality has declined noticeably over the past month. The leader schedules a meeting and opens with, 'You've been making a lot of mistakes lately and your attitude seems off. What's going on with you?' The person becomes defensive and the conversation deteriorates. What did the leader do wrong?",
+    "options": {
+      "A": "The leader should have been more direct about potential consequences",
+      "B": "The leader made generalized character statements instead of citing specific performance gaps",
+      "C": "The leader shouldn't have asked an open-ended question",
+      "D": "Some people can't handle feedback and will always react defensively"
+    },
+    "correctOption": "B",
+    "explanation": "'A lot of mistakes' and 'attitude seems off' are vague judgments that put people on the defensive. Effective feedback is specific: 'In the past three weeks, I've observed four calculation errors in your reports, and you've been absent from the last two team meetings without notice. This is a change from your normal performance. Help me understand what's happening.' Specific observations are harder to argue with and open the door to genuine conversation. The leader's opening statement attacked the person's character rather than addressing observable performance."
+  },
+  "openQuestions": [
+    "Think of a performance conversation you've been avoiding. What's preventing you from addressing it?",
+    "When you receive critical feedback, what approach makes you most receptive versus most defensive?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-105-03",
+  "moduleId": "LEAD-MC-105",
+  "courseId": "LEAD-MC",
+  "title": "Managing Declining Performers",
+  "type": "lesson",
+  "content": "Performance decline in previously capable team members signals something has changed—personal circumstances, job fit, motivation, or organizational factors. Leaders must diagnose the cause before deciding on a response. Is this temporary struggle requiring support, skill gap requiring training, or disengagement requiring accountability? The approach differs dramatically based on root cause. Treating all decline as a performance problem misses opportunities to recover valuable people and may accelerate their departure.",
+  "mcq": {
+    "question": "A previously strong performer has been declining for three months. Direct conversation reveals they feel burned out from repeatedly covering for underperforming teammates while receiving no additional recognition. They're now doing minimum acceptable work. What's the appropriate response?",
+    "options": {
+      "A": "Document the performance decline and establish a performance improvement plan",
+      "B": "Recognize this as a workload and equity issue, address the underperformance problem, and re-engage the person",
+      "C": "Accept that some people plateau and redistribute their critical work to others",
+      "D": "Offer the person a less demanding role if they can't handle the pressure"
+    },
+    "correctOption": "B",
+    "explanation": "This isn't a performance problem—it's a leadership problem. The person is responding rationally to an inequitable situation. They carried extra load without recognition while watching others coast, so they've recalibrated to minimum effort. Option A treats the symptom and will likely drive them to leave. Option C writes off a previously valuable contributor. Option D misreads the situation entirely. Option B addresses the actual problem: fix the equity issue by dealing with underperformers, acknowledge the person's contribution, and give them reason to re-engage. This is recoverable if leadership acts."
+  },
+  "openQuestions": [
+    "Think of someone on your team whose performance has declined. Have you diagnosed the root cause or just addressed the symptoms?",
+    "How do you differentiate between someone who needs support versus someone who needs accountability?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-105-04",
+  "moduleId": "LEAD-MC-105",
+  "courseId": "LEAD-MC",
+  "title": "Progressive Accountability Frameworks",
+  "type": "lesson",
+  "content": "Progressive accountability means escalating response based on pattern and severity, not jumping to termination on first failure. The framework typically moves through: immediate feedback for first occurrence, documented conversation for repeated issues, formal performance plan with clear timeline and expectations, and separation if improvement doesn't occur. This protects the organization legally, gives people genuine opportunity to improve, and demonstrates fairness to the rest of the team. Skip steps only for severe violations that require immediate action.",
+  "mcq": {
+    "question": "A team member has been late to shift start three times in six weeks—each time by 10-15 minutes with different excuses. This violates attendance policy. The leader hasn't addressed it yet. What's the appropriate next step?",
+    "options": {
+      "A": "Document all three instances and initiate formal corrective action",
+      "B": "Have an immediate conversation about the pattern, understand what's happening, and set clear expectations",
+      "C": "Wait to see if it continues since three instances isn't enough to establish a real pattern",
+      "D": "Announce a reminder about attendance expectations to the entire team"
+    },
+    "correctOption": "B",
+    "explanation": "Three occurrences is a pattern worth addressing, but this is early-stage accountability. Direct conversation accomplishes multiple goals: makes clear you've noticed, understands if there's a solvable problem, and establishes expectations going forward. If it continues after this conversation, then documentation is appropriate. Option A skips the informal step and may be premature. Option C allows the problem to continue and teaches the person (and team) that you don't address policy violations. Option D is passive-aggressive and doesn't actually address the individual's behavior. Start with direct conversation. Escalate if the pattern continues."
+  },
+  "openQuestions": [
+    "What's your typical pattern when someone violates a standard? Do you address it immediately, wait to see if it repeats, or something else?",
+    "Think of your team's perception of accountability. Do they believe standards are enforced consistently and fairly?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-105-05",
+  "moduleId": "LEAD-MC-105",
+  "courseId": "LEAD-MC",
+  "title": "Termination Decisions and Execution",
+  "type": "scenario",
+  "content": "Terminating someone is one of the hardest leadership responsibilities, but sometimes it's necessary to protect team performance, safety, or culture. The decision requires careful consideration: Have you given the person genuine opportunity to improve? Is the issue correctable or fundamental? What message does retention send to the rest of the team? How you execute termination matters—it should be respectful, clear, and final.",
+  "scenario": {
+    "story": "You've worked with an underperforming team member for six months through progressive accountability: multiple conversations, documented expectations, a formal improvement plan with clear metrics, and coaching support. Performance has shown minimal improvement—enough to avoid immediate termination but not enough to meet role requirements. The person is well-liked personally, tries hard, but consistently falls short. Keeping them means other team members continue carrying extra load. Your team is watching how you handle this.",
+    "options": {
+      "A": "Extend the improvement plan another 90 days to give them more time",
+      "B": "Move them to a less demanding role where their current capability might be sufficient",
+      "C": "Make the termination decision based on demonstrated pattern after fair opportunity",
+      "D": "Wait until a major failure occurs that justifies immediate termination"
+    },
+    "recommendedResponse": "C",
+    "explanation": "This person has had fair opportunity—six months of support and clear expectations. Minimal improvement after extensive intervention indicates either capability mismatch or insufficient motivation. Option A delays the inevitable while continuing to burden the team and teaching everyone that performance standards are negotiable. Option B assumes another role exists and that the person would succeed there—often just moves the problem. Option D waits for catastrophic failure, which is unfair to the organization and potentially unsafe. Option C recognizes that sometimes people don't fit roles despite good intent. The decision should be respectful, documented, and final. Your team needs to see that sustained underperformance has consequences after fair process."
+  },
+  "openQuestions": [
+    "Have you ever delayed a necessary termination decision? What was the cost to the team and organization?",
+    "How do you know when you've given someone enough opportunity versus when you're avoiding a difficult decision?",
+    "What does it teach your high performers when you tolerate sustained low performance?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-106-01",
+  "moduleId": "LEAD-MC-106",
+  "courseId": "LEAD-MC",
+  "title": "Team Formation and Lifecycle Stages",
+  "type": "lesson",
+  "content": "Teams move through predictable stages: forming (polite, uncertain, looking for direction), storming (conflict emerges, roles are challenged, frustration appears), norming (patterns stabilize, expectations clarify, cooperation increases), and performing (high output, self-correction, minimal supervision needed). Leaders who don't recognize these stages often panic during storming or hover during performing. Each stage requires different leadership. New teams need structure and clarity. Storming teams need conflict facilitation. Performing teams need autonomy and challenge.",
+  "mcq": {
+    "question": "A newly formed project team has been working together for three weeks. Initially collaborative, the team is now experiencing frequent disagreements about approach, roles, and decision authority. The leader is concerned the team isn't working out and considers reassigning people. What's actually happening?",
+    "options": {
+      "A": "The team has incompatible personalities and should be restructured",
+      "B": "The team is in the storming stage, which is normal and necessary for development",
+      "C": "The leader failed to establish clear enough expectations at the start",
+      "D": "The project scope is unclear and creating confusion"
+    },
+    "correctOption": "B",
+    "explanation": "This is predictable team development. The polite forming stage is ending and real work is forcing people to negotiate roles, challenge assumptions, and establish patterns. This feels uncomfortable but it's healthy. Teams that skip storming by avoiding conflict often underperform because they never establish genuine norms. The leader's job during storming is facilitating productive conflict, clarifying roles and decision rights, and helping the team work through disagreement. Reassigning people at first sign of conflict prevents team development. Let them storm, guide the process, and they'll likely emerge stronger."
+  },
+  "openQuestions": [
+    "Think of a current or recent team. What stage is it in, and how does that affect your leadership approach?",
+    "Describe a team that got stuck in the storming stage. What prevented it from moving to norming?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-106-02",
+  "moduleId": "LEAD-MC-106",
+  "courseId": "LEAD-MC",
+  "title": "Building Psychological Safety",
+  "type": "lesson",
+  "content": "Psychological safety means team members believe they can speak up, ask questions, admit mistakes, or challenge ideas without fear of humiliation or punishment. It's the foundation of high-performance teams because it enables rapid learning, honest communication, and early problem detection. Leaders build psychological safety by responding to bad news with problem-solving not blame, admitting their own mistakes openly, asking for input genuinely, and protecting people who raise uncomfortable truths.",
+  "mcq": {
+    "question": "During a team meeting, a junior team member challenges a decision the leader made, citing a risk they believe was overlooked. The leader responds: 'I appreciate you bringing that up. Let's look at it together—walk me through your concern.' Two other team members then voice related concerns that hadn't been raised before. What just happened?",
+    "options": {
+      "A": "The team is becoming too comfortable challenging leadership",
+      "B": "The leader demonstrated psychological safety by welcoming the challenge",
+      "C": "The leader should have defended the decision more strongly",
+      "D": "The junior team member was inappropriate to challenge in public"
+    },
+    "correctOption": "B",
+    "explanation": "The leader's response created a moment of psychological safety that unlocked information the team was holding back. By welcoming the challenge and treating it as valuable input rather than insubordination, the leader signaled it's safe to speak up. The fact that others then contributed means they were watching to see if dissent was punished or welcomed. Option A misreads healthy challenge as problematic. Option C would have shut down communication. Option D would teach the team to stay silent about concerns. This is exactly how psychological safety enables better decisions—more information surfaces earlier."
+  },
+  "openQuestions": [
+    "Think of your last team meeting. Did anyone challenge your thinking or surface a concern? If not, why not?",
+    "Describe how you typically respond when someone points out a mistake you made. What does that teach the team?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-106-03",
+  "moduleId": "LEAD-MC-106",
+  "courseId": "LEAD-MC",
+  "title": "Managing Diverse Personalities and Conflict Styles",
+  "type": "lesson",
+  "content": "Teams are made of people with different communication preferences, conflict approaches, and working styles. Some people process by talking, others by thinking alone. Some address conflict directly, others avoid it. Some need detailed plans, others prefer flexibility. Leaders who expect everyone to work like they do create friction and miss talent. Effective leaders recognize different styles, create space for various approaches, and translate between people who naturally clash.",
+  "mcq": {
+    "question": "Two high-performing team members consistently clash. One prefers making quick decisions and adjusting as needed. The other wants thorough analysis before committing to action. Both are frustrated with each other and it's affecting collaboration. What's the best leadership response?",
+    "options": {
+      "A": "Tell them to figure it out between themselves since they're both adults",
+      "B": "Separate their work to minimize interaction",
+      "C": "Help them understand each other's approach has value and create a process that leverages both styles",
+      "D": "Side with whichever approach better matches the project's needs"
+    },
+    "correctOption": "C",
+    "explanation": "This isn't a personality conflict—it's a style mismatch that creates friction but also potential strength. Quick-decision people catch opportunities and maintain momentum. Analytical people catch risks and improve quality. Option C turns conflict into complementary capability: establish when speed matters versus when analysis matters, teach each person to value the other's contribution, and create workflow that uses both strengths. Option A abdicates leadership. Option B wastes capability and teaches people that differences are problems. Option D picks a winner instead of creating synthesis. Great teams leverage diversity, not eliminate it."
+  },
+  "openQuestions": [
+    "What working style frustrates you most in others? How might that style add value you're not seeing?",
+    "Think of two people on your team who clash. What unmet need or different value is driving each person?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-106-04",
+  "moduleId": "LEAD-MC-106",
+  "courseId": "LEAD-MC",
+  "title": "Creating High-Performance Team Culture",
+  "type": "lesson",
+  "content": "High-performance culture doesn't happen by accident—it's built through consistent leadership choices. These teams share characteristics: clarity about what matters, ownership of outcomes, rapid feedback loops, intolerance for sustained mediocrity, and genuine collaboration. Leaders create this by modeling expected behavior, celebrating the right wins, addressing problems immediately, and making visible trade-offs that reinforce stated values. Culture is what you tolerate, not what you post on walls.",
+  "mcq": {
+    "question": "A leader publicly states that 'we value quality over speed.' When a project runs behind schedule, the leader pushes the team to cut quality checkpoints to hit the deadline. The project ships on time with known defects. What cultural lesson did the team just learn?",
+    "options": {
+      "A": "Sometimes quality must be sacrificed for business needs",
+      "B": "Speed actually matters more than quality despite stated values",
+      "C": "The leader makes good decisions under pressure",
+      "D": "Deadlines are non-negotiable in this organization"
+    },
+    "correctOption": "B",
+    "explanation": "Actions under pressure reveal true priorities. The stated value (quality) was immediately abandoned when tested, teaching the team that the real value is hitting deadlines. This creates cynicism about any stated values and teaches people to watch what leaders do, not what they say. If quality truly mattered, the leader would have either extended the timeline, reduced scope, or accepted the business consequences—then explained the decision openly. Instead, the gap between words and actions destroyed credibility and defined actual culture: speed wins, quality is negotiable."
+  },
+  "openQuestions": [
+    "What's one stated value of your team or organization that gets compromised regularly under pressure?",
+    "If someone new joined your team, what would they learn about real priorities by watching behavior for a week?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-106-05",
+  "moduleId": "LEAD-MC-106",
+  "courseId": "LEAD-MC",
+  "title": "Toxic Culture Identification and Intervention",
+  "type": "scenario",
+  "content": "Toxic cultures destroy performance, safety, and retention. They're characterized by fear-based compliance, information hoarding, blame assignment, tolerance of bullying, and silence about problems. Leaders sometimes inherit toxic cultures, sometimes create them unintentionally, but always own the responsibility to fix them. Intervention requires diagnosing root causes, making visible changes in behavior and consequences, and sustaining new patterns long enough to rebuild trust.",
+  "scenario": {
+    "story": "You've been promoted to lead a team with a reputation for high turnover and low morale. In your first month, you observe: people avoid speaking in meetings unless directly asked, information flows slowly and incompletely, several team members make dismissive or sarcastic comments to newer employees, mistakes are hidden rather than reported, and when you ask how things are going, everyone says 'fine.' Exit interview data shows people leave citing 'culture issues' but won't elaborate. You recognize this is systemic, not individual.",
+    "options": {
+      "A": "Replace the most problematic individuals to signal change",
+      "B": "Announce new expectations about collaboration and respect, then wait to see if behavior improves",
+      "C": "Conduct one-on-one conversations to understand what's happening, identify specific toxic patterns, address them visibly, and model different behavior consistently",
+      "D": "Bring in outside facilitation or team-building to reset culture"
+    },
+    "recommendedResponse": "C",
+    "explanation": "Toxic culture requires systematic intervention, not quick fixes. Option C starts with diagnosis—you can't fix what you don't understand—then addresses specific behaviors with visible consequences, and models the culture you want to build. Option A might remove symptoms but won't fix systemic issues and may create martyrs. Option B is announcement without action, which teams ignore. Option D outsources responsibility and rarely creates lasting change. Fixing toxic culture requires: understanding what created it, making visible changes in what's tolerated, protecting people who speak truth, consistently modeling new behavior, and sustaining the effort long enough that people believe it's real. This takes months, not days."
+  },
+  "openQuestions": [
+    "Have you ever worked in a toxic culture? What specific behaviors made it toxic, and what would have been required to fix it?",
+    "How do you know if your current team culture is healthy versus just politely dysfunctional?",
+    "What's one toxic pattern you might be tolerating without realizing its impact?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-107-01",
+  "moduleId": "LEAD-MC-107",
+  "courseId": "LEAD-MC",
+  "title": "Vision Creation and Articulation",
+  "type": "lesson",
+  "content": "Strategic leaders create compelling vision of future state that mobilizes action. Effective vision answers: where are we going, why it matters, and what success looks like. It must be clear enough to guide decisions but flexible enough to adapt to changing conditions. Vision without execution plan is fantasy. Execution without vision is aimless activity. Leaders translate abstract strategy into concrete direction that frontline teams can act on.",
+  "mcq": {
+    "question": "A leader announces a new strategic vision: 'We're going to be the industry leader in operational excellence.' Six months later, teams are still working the same way with no clear change in direction. What's missing?",
+    "options": {
+      "A": "The team doesn't understand what operational excellence means",
+      "B": "The vision wasn't translated into specific objectives and actions people can execute",
+      "C": "Six months isn't enough time to see strategic change",
+      "D": "The vision wasn't ambitious enough to inspire change"
+    },
+    "correctOption": "B",
+    "explanation": "'Operational excellence' is aspirational language, not actionable direction. The leader failed to answer: what specific capabilities do we need to build, what are we changing about how we work, what does success look like in measurable terms, and what's the first 90 days of action? Vision must connect to operational reality. Effective strategic leaders cascade vision into objectives, objectives into initiatives, and initiatives into team-level action. Without that translation, vision remains abstract and teams default to existing patterns."
+  },
+  "openQuestions": [
+    "If you had to articulate your team's vision in two sentences, what would you say? Could your team articulate the same vision?",
+    "What's the clearest strategic vision you've ever heard? What made it compelling and actionable?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-107-02",
+  "moduleId": "LEAD-MC-107",
+  "courseId": "LEAD-MC",
+  "title": "Translating Strategy into Operational Action",
+  "type": "lesson",
+  "content": "The gap between strategy and execution kills most initiatives. Senior leaders set direction, but frontline teams execute. Leaders in the middle must translate strategic intent into operational reality: what changes in our daily work, what stops, what starts, and how do we measure progress. This requires understanding both strategic intent and operational constraints, then bridging the two with clear action plans and resource commitment.",
+  "mcq": {
+    "question": "Senior leadership announces a strategic pivot toward customer responsiveness. A mid-level leader's team currently optimizes for efficiency and standardization. The leader must now translate the strategy for their team. What's the most effective approach?",
+    "options": {
+      "A": "Share the announcement and tell the team to start being more responsive",
+      "B": "Identify specific processes that need to change, explain the trade-offs, and establish new success metrics aligned with responsiveness",
+      "C": "Wait for senior leadership to provide detailed implementation guidance",
+      "D": "Continue optimizing for efficiency since that's what the team knows how to do well"
+    },
+    "correctOption": "B",
+    "explanation": "Option B demonstrates strategic translation. The leader understands that shifting from efficiency to responsiveness requires changing specific workflows, accepting different trade-offs (speed over standardization), and measuring different outcomes. Simply announcing the change (A) doesn't help people understand what to actually do differently. Waiting for detailed guidance (C) abdicates leadership responsibility for translation. Ignoring the strategic shift (D) creates misalignment. Mid-level leaders earn value by making strategy actionable for their specific context."
+  },
+  "openQuestions": [
+    "Think of a recent strategic initiative from senior leadership. How effectively did you translate it into action for your team?",
+    "What's the biggest gap between strategic intent and operational reality in your organization right now?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-107-03",
+  "moduleId": "LEAD-MC-107",
+  "courseId": "LEAD-MC",
+  "title": "Leading Organizational Change",
+  "type": "lesson",
+  "content": "Change fails more often than it succeeds because leaders underestimate resistance, overcommunicate the what but undercommunicate the why, and declare victory before new behaviors become embedded. Successful change requires: clear case for why current state is insufficient, compelling vision of future state, visible leadership commitment, early wins that build momentum, and persistence through the messy middle when enthusiasm fades. People don't resist change—they resist uncertainty and loss of control.",
+  "mcq": {
+    "question": "A leader announces a major process change with detailed implementation plan and clear benefits. Three months in, adoption is low and people are finding workarounds to keep using the old process. The leader is frustrated that people 'won't change.' What's the most likely issue?",
+    "options": {
+      "A": "The team is resistant to change and needs stronger accountability",
+      "B": "The new process has problems that make the old way more effective",
+      "C": "The leader didn't address the emotional side of change: what people are losing, why it's worth it, and how to navigate the transition",
+      "D": "The implementation timeline was too aggressive"
+    },
+    "correctOption": "C",
+    "explanation": "Technical solutions don't fix emotional resistance. The old process represents comfort, competence, and control—even if it's suboptimal. The new process requires learning, uncertainty, and temporary decreased performance. The leader addressed the rational case (benefits, plan) but ignored the emotional reality (anxiety, loss, disruption). Successful change leadership acknowledges what people are giving up, addresses their concerns directly, provides support during transition, and celebrates progress. Option A blames people instead of examining leadership approach. Option B might be true but isn't indicated. Option D misses that timeline isn't the issue—emotional readiness is."
+  },
+  "openQuestions": [
+    "Think of a change initiative you've led. How much time did you spend on the rational case versus addressing people's emotional concerns?",
+    "What change are you currently experiencing? What have you lost in the transition, and how are you managing that loss?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-107-04",
+  "moduleId": "LEAD-MC-107",
+  "courseId": "LEAD-MC",
+  "title": "Managing Resistance and Building Buy-In",
+  "type": "lesson",
+  "content": "Resistance isn't defiance—it's information. People resist when they don't understand why change is necessary, fear what they'll lose, distrust leadership's motives, or believe they weren't consulted. Smart leaders listen to resistance instead of steamrolling it. Objections often reveal legitimate concerns, implementation blindspots, or better alternatives. Building buy-in requires involving people early, addressing concerns genuinely, making visible adjustments based on input, and demonstrating that participation matters.",
+  "mcq": {
+    "question": "During a change initiative, a vocal team member raises multiple objections in meetings, questions the need for change, and points out potential problems. Other team members start echoing concerns. The leader views this person as a blocker. What's a more productive interpretation?",
+    "options": {
+      "A": "This person is undermining leadership and should be managed out of the conversation",
+      "B": "This person is surfacing concerns others are thinking but not voicing—engage them",
+      "C": "This person doesn't have enough information and needs more communication",
+      "D": "This person is protecting their own interests and can be ignored"
+    },
+    "correctOption": "B",
+    "explanation": "Vocal resisters often speak for silent majority. Others are watching how leadership responds: will concerns be dismissed or addressed? This person is actually helping by making implicit resistance explicit, which gives leadership a chance to respond. Option B turns resistance into dialogue. Address the concerns directly, invite this person to help solve the problems they're identifying, and demonstrate that leadership values honest input. If the concerns are legitimate, adjust the plan. If they're based on misunderstanding, provide clarity. Option A silences dissent and drives resistance underground. Option C assumes information deficit when it might be legitimate disagreement. Option D dismisses concerns without examination."
+  },
+  "openQuestions": [
+    "Think of someone who resisted a change you led. What legitimate concern might they have been expressing?",
+    "How do you differentiate between productive dissent and destructive resistance?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-107-05",
+  "moduleId": "LEAD-MC-107",
+  "courseId": "LEAD-MC",
+  "title": "Strategic Planning Execution",
+  "type": "scenario",
+  "content": "Strategic plans fail in execution when they remain documents instead of becoming operational frameworks. Effective execution requires translating strategy into quarterly objectives, assigning clear ownership, establishing progress metrics, creating review rhythms, and maintaining discipline to say no to activities that don't serve strategic priorities. Plans must be living tools, not shelf-ware.",
+  "scenario": {
+    "story": "Your organization completed a comprehensive strategic planning process six months ago with clear priorities and initiatives. You're now responsible for executing one major initiative. You have broad objectives but limited guidance on approach, competing priorities demanding your attention, unclear resource allocation, and no established review process with senior leadership. Your team is asking for direction and you're uncertain how to proceed while maintaining daily operations.",
+    "options": {
+      "A": "Focus on daily operations since those are more urgent and concrete",
+      "B": "Break the strategic initiative into quarterly milestones, assign ownership, establish metrics, and schedule regular review sessions with leadership",
+      "C": "Wait for senior leadership to provide more detailed implementation guidance",
+      "D": "Delegate the strategic initiative to a project team while you manage daily operations"
+    },
+    "recommendedResponse": "B",
+    "explanation": "Option B demonstrates strategic execution discipline. You're creating the structure needed to translate strategy into action: breaking big objectives into manageable chunks, assigning accountability, defining what success looks like, and establishing rhythm for progress review. This makes the abstract concrete. Option A allows urgent to crowd out important—daily operations will always consume available time if you let them. Option C abdicates responsibility for execution. Option D separates strategic work from operational work, which usually means strategic work gets ignored. Leaders execute strategy by integrating it into operational rhythm, not treating it as separate project work."
+  },
+  "openQuestions": [
+    "What strategic priority is currently being crowded out by urgent operational demands? What would it take to rebalance?",
+    "How do you currently track progress on strategic initiatives versus daily operations? Are both visible?",
+    "What's one strategic objective you could break into quarterly milestones this week?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-108-01",
+  "moduleId": "LEAD-MC-108",
+  "courseId": "LEAD-MC",
+  "title": "Risk Assessment and Management",
+  "type": "lesson",
+  "content": "Effective leaders assess risk systematically: likelihood of occurrence, potential severity of consequence, and ability to detect early warning signs. Not all risks require the same response—some should be eliminated, some mitigated, some monitored, and some accepted. The error is treating all risks identically or ignoring low-probability high-consequence scenarios. Risk management isn't about eliminating all risk—it's about taking the right risks consciously.",
+  "mcq": {
+    "question": "A team is planning a complex operation with three identified risks: high-likelihood minor equipment failure (easily fixable), low-likelihood major system failure (catastrophic consequences), and medium-likelihood schedule delay (annoying but manageable). The leader has limited resources to address risks. How should they prioritize?",
+    "options": {
+      "A": "Address the high-likelihood risk first since it's most certain to occur",
+      "B": "Address the low-likelihood catastrophic risk first since consequences are severe",
+      "C": "Spread resources equally across all three risks",
+      "D": "Accept all risks since resources are limited and proceed with the operation"
+    },
+    "correctOption": "B",
+    "explanation": "Low-probability high-consequence risks demand priority attention because you can't recover from catastrophic failure. The equipment failure is likely but manageable—you can respond when it occurs. The schedule delay is inconvenient but not critical. The system failure could end the operation or cause serious harm—this requires upfront mitigation regardless of likelihood. Option A optimizes for probability not consequence. Option C dilutes effort across different risk profiles. Option D ignores that some risks are unacceptable. Risk management is about protecting against the outcomes you can't tolerate, even if they seem unlikely."
+  },
+  "openQuestions": [
+    "What's the biggest risk your team faces that you're currently not actively managing? Why?",
+    "Describe a time when a low-probability risk actually occurred. How did that change your risk assessment approach?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-108-02",
+  "moduleId": "LEAD-MC-108",
+  "courseId": "LEAD-MC",
+  "title": "Ethical Decision-Making Under Pressure",
+  "type": "lesson",
+  "content": "Ethical challenges rarely arrive with clear labels. They emerge as competing goods, least-bad options, or pressure to compromise principles for results. Leaders face ethical tests when doing the right thing costs something: time, money, relationships, or career consequences. Your response to these moments defines your integrity and teaches your team what you actually value. Ethical leadership means choosing principle over convenience, even when it hurts.",
+  "mcq": {
+    "question": "You discover that a critical client deliverable contains a significant error. Fixing it properly will cause you to miss the deadline and likely cost the client relationship. The error probably won't be detected immediately and might never cause a problem. Your team has worked extremely hard and will be devastated by the client loss. What do you do?",
+    "options": {
+      "A": "Deliver as-is since the error might never surface and the team needs the win",
+      "B": "Disclose the error to the client, explain the delay needed to fix it properly, and accept the consequences",
+      "C": "Deliver as-is but monitor closely and fix it later if problems emerge",
+      "D": "Implement a quick patch that appears to fix the issue without fully addressing it"
+    },
+    "correctOption": "B",
+    "explanation": "Ethical decisions require choosing integrity over expedience. Option B is the only choice that maintains professional standards and builds long-term credibility. You might lose this client, but you keep your integrity and teach your team that quality and honesty are non-negotiable. Options A, C, and D all involve different forms of deception or acceptable defects. They might preserve the immediate relationship but at the cost of professional integrity. Clients lost due to honest mistakes can sometimes be recovered. Trust lost due to dishonesty rarely comes back. Your team is also watching: what matters more when the pressure is on?"
+  },
+  "openQuestions": [
+    "Describe an ethical challenge you've faced where doing the right thing had a cost. What did you choose and why?",
+    "What ethical line would you absolutely not cross, regardless of pressure or consequences?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-108-03",
+  "moduleId": "LEAD-MC-108",
+  "courseId": "LEAD-MC",
+  "title": "Balancing Competing Priorities",
+  "type": "lesson",
+  "content": "Leaders constantly face competing demands: quality versus speed, short-term results versus long-term capability, individual needs versus team needs, customer demands versus resource constraints. The error is pretending these aren't trade-offs or trying to optimize everything simultaneously. Effective leaders make trade-offs explicit, explain the reasoning, and accept the consequences of their choices. Trying to please everyone usually means disappointing everyone.",
+  "mcq": {
+    "question": "Your team is managing three priorities: a critical deadline, a major quality issue, and developing a promising but junior team member. All three matter, but you don't have capacity for all of them. How do you decide?",
+    "options": {
+      "A": "Split focus evenly to make progress on all three",
+      "B": "Choose the critical deadline since it has immediate business impact",
+      "C": "Assess which priority has the highest consequence if you get it wrong, prioritize that, and explicitly defer the others",
+      "D": "Work longer hours to avoid having to choose"
+    },
+    "correctOption": "C",
+    "explanation": "Option C demonstrates strategic prioritization: assess downside risk of each choice, make an explicit decision, and own the trade-offs. Maybe the quality issue affects safety or customer trust—that becomes priority one. Maybe missing the deadline costs critical opportunity—that might win. The point is making the trade-off consciously based on consequence, not trying to do everything poorly. Option A dilutes effort across all three, likely failing at all of them. Option B defaults to urgency without analyzing actual importance. Option D is unsustainable and teaches your team that leadership means burnout. Leaders get paid to make hard choices and explain them, not to avoid choosing."
+  },
+  "openQuestions": [
+    "What competing priorities are you currently trying to balance? Have you made the trade-offs explicit or are you pretending you can do it all?",
+    "Think of a time you tried to optimize everything simultaneously. What was the result?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-108-04",
+  "moduleId": "LEAD-MC-108",
+  "courseId": "LEAD-MC",
+  "title": "When to Decide, Delegate, or Escalate",
+  "type": "scenario",
+  "content": "One of the most important leadership skills is knowing which decisions are yours to make, which to delegate, and which to escalate. Decide when you have authority, information, and accountability. Delegate when developing others or when they're closer to the problem. Escalate when the decision exceeds your authority, requires resources you don't control, or creates organizational risk beyond your level. Making decisions that aren't yours or avoiding decisions that are both create problems.",
+  "scenario": {
+    "story": "Three decisions land on your desk simultaneously: (1) A team member requests approval to attend expensive specialized training that would benefit their development but isn't critical to current work. (2) Your team has identified a process improvement that would save time but requires changing how two other departments work. (3) A safety concern has been raised that might require stopping operations, with significant production impact. You need to act on all three today.",
+    "options": {
+      "A": "Decide all three yourself since you're the leader and have the context",
+      "B": "Delegate all three to your team to develop their decision-making capability",
+      "C": "Make the safety decision immediately, escalate the cross-departmental process change, and delegate the training decision to your senior team member with budget parameters",
+      "D": "Escalate all three to your boss since they all have broader implications"
+    },
+    "recommendedResponse": "C",
+    "explanation": "Option C demonstrates decision triage. Safety decisions within your authority require immediate leadership action—this is your call. The cross-departmental process change exceeds your authority since it affects other leaders' operations—escalate to someone who can coordinate. The training request is a good development opportunity for delegation within clear constraints. Option A centralizes everything and misses delegation opportunities. Option B abdicates decisions that require your authority (safety, cross-organizational). Option D escalates decisions you should own. Effective leaders know their decision boundaries and act accordingly."
+  },
+  "openQuestions": [
+    "What's a recent decision you made that you should have delegated? What stopped you?",
+    "What's a decision you're currently avoiding that actually requires your leadership?",
+    "How do you know when a decision exceeds your authority and requires escalation?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-109-01",
+  "moduleId": "LEAD-MC-109",
+  "courseId": "LEAD-MC",
+  "title": "Leading Upward Effectively",
+  "type": "lesson",
+  "content": "You don't stop leading when you're talking to your boss. Leading upward means providing your senior leaders with information they need, perspective they might lack, and honest assessment of conditions at the operational level. Many leaders default to 'yes' reflexively or filter bad news to avoid conflict. This deprives senior leadership of reality and prevents organizational learning. Effective upward leadership requires courage to speak truth, tact to deliver it constructively, and judgment about when to push back versus execute.",
+  "mcq": {
+    "question": "Your boss announces a new policy that you immediately recognize will create significant operational problems based on ground-level realities they may not be aware of. In the meeting, everyone nods along without comment. What should you do?",
+    "options": {
+      "A": "Stay silent in the meeting and raise concerns privately afterward",
+      "B": "Voice your concerns directly in the meeting with specific examples of the operational impact",
+      "C": "Implement the policy as directed since your boss has more information and context than you do",
+      "D": "Discuss concerns with peers first to build a coalition before approaching your boss"
+    },
+    "correctOption": "B",
+    "explanation": "Leaders need ground truth, and they need it early. If you wait until after the meeting, the decision gains momentum and becomes harder to adjust. If you stay silent entirely, you've failed your responsibility to provide operational reality. If you build coalitions first, you're creating political pressure instead of offering professional input. Option B demonstrates professional courage: 'I see a potential implementation challenge—here's what I'm concerned about based on how this works at ground level.' Give your boss the chance to adjust course with real information. This is leadership upward."
+  },
+  "openQuestions": [
+    "Describe a time you disagreed with a decision from above. How did you handle it?",
+    "What makes it difficult for you to speak up to senior leadership? What would make it easier?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-109-02",
+  "moduleId": "LEAD-MC-109",
+  "courseId": "LEAD-MC",
+  "title": "Lateral Leadership and Peer Influence",
+  "type": "lesson",
+  "content": "Lateral leadership is influencing peers when you have no formal authority over them. This requires building credibility through competence, maintaining collaborative relationships, and focusing on shared organizational goals rather than departmental wins. Leaders who can't influence laterally become bottlenecks or create silos. Effective lateral leadership involves understanding peer priorities, finding mutual benefit, and demonstrating that helping you helps them achieve their objectives.",
+  "mcq": {
+    "question": "You need another department's support for an initiative that will significantly benefit your team but creates additional short-term work for theirs. The department head is a peer with competing priorities. You've tried asking directly and were told, 'We don't have capacity right now.' What's the most effective next step?",
+    "options": {
+      "A": "Escalate to senior leadership to force prioritization",
+      "B": "Understand their constraints, identify how this initiative could also benefit them, and propose a phased approach that respects their capacity",
+      "C": "Wait until their workload decreases and try again later",
+      "D": "Find a way to accomplish your initiative without their involvement"
+    },
+    "correctOption": "B",
+    "explanation": "Lateral leadership requires seeing the situation from their perspective. 'We don't have capacity' is often true, not resistance. Option B demonstrates collaborative problem-solving: understand their actual constraints, look for mutual benefit, and structure the request to minimize their burden. Maybe the initiative solves a problem they also face. Maybe phasing it reduces immediate impact. Maybe you can offer support that addresses their capacity issue. Option A damages the relationship and teaches them to resist your requests. Option C delays indefinitely. Option D might work but misses the opportunity to build collaborative capability you'll need again. Influence comes from making it easy for people to help you."
+  },
+  "openQuestions": [
+    "Who are your key peer relationships? How strong is your ability to influence them?",
+    "Think of a peer you struggle to work with effectively. What's driving that difficulty?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-109-03",
+  "moduleId": "LEAD-MC-109",
+  "courseId": "LEAD-MC",
+  "title": "Navigating Organizational Politics with Integrity",
+  "type": "lesson",
+  "content": "Organizational politics exist wherever humans work together—pretending they don't makes you naive, not principled. Politics become toxic when people prioritize personal gain over organizational good, manipulate information, or undermine others. Ethical leaders navigate politics by building genuine relationships, maintaining transparency, delivering results, and refusing to participate in destructive behavior. You can be politically aware without being political. Understanding power dynamics and relationship networks isn't unethical—it's essential for getting things done.",
+  "mcq": {
+    "question": "You learn that a peer is taking credit for work your team did, presenting it to senior leadership as their department's achievement. Several people suggest you 'play the game' and do the same to them. What's the most effective response that maintains integrity?",
+    "options": {
+      "A": "Ignore it since engaging in credit disputes looks petty",
+      "B": "Retaliate by taking credit for their work in your next update",
+      "C": "Address it directly with the peer first, then escalate to leadership with facts if it continues",
+      "D": "Start documenting your team's work more publicly to prevent future credit theft"
+    },
+    "correctOption": "C",
+    "explanation": "Option C addresses the problem professionally without compromising integrity. Direct conversation might resolve it—maybe they didn't realize the work wasn't theirs, or there's a misunderstanding. If it's intentional and continues, factual escalation is appropriate: 'Here's what happened, here's the impact, here's what I've tried.' Option A allows the behavior to continue and demoralizes your team. Option B makes you part of the toxicity. Option D is defensive and doesn't address the immediate issue. Navigating politics with integrity means addressing problems directly, refusing to participate in destructive behavior, and escalating when necessary—but always with facts, not manipulation."
+  },
+  "openQuestions": [
+    "Describe a time you witnessed organizational politics. How did you respond?",
+    "Where is the line for you between political awareness and unethical political behavior?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-109-04",
+  "moduleId": "LEAD-MC-109",
+  "courseId": "LEAD-MC",
+  "title": "Building Coalitions",
+  "type": "lesson",
+  "content": "Some initiatives require support from multiple stakeholders who don't report to you. Building coalitions means identifying who needs to be involved, understanding what each stakeholder cares about, finding common ground, and creating shared commitment to an outcome. Effective coalition building focuses on organizational benefit, not personal agenda. It requires patience, genuine listening, and willingness to adjust your approach based on input. Coalitions built on manipulation fall apart under pressure.",
+  "mcq": {
+    "question": "You're proposing a cross-functional initiative that requires buy-in from four department heads, each with different priorities and concerns. Your initial proposal focused heavily on benefits to your area. The proposal failed to gain support. What should you do differently?",
+    "options": {
+      "A": "Strengthen the business case and present it again with more data",
+      "B": "Meet with each stakeholder individually to understand their priorities, then revise the proposal to address shared objectives",
+      "C": "Get senior leadership to mandate participation since the initiative is important",
+      "D": "Scale down the initiative to only involve supportive departments"
+    },
+    "correctOption": "B",
+    "explanation": "Option B demonstrates effective coalition building. You failed initially because you presented your priorities, not shared objectives. Individual conversations reveal what each person actually cares about, what concerns they have, and what would make this valuable to them. Then revise the proposal to serve multiple objectives, not just yours. Option A gives them more of what they've already rejected. Option C creates forced compliance, not genuine support—they'll passively resist. Option D reduces scope but misses the larger opportunity. Real coalition building requires understanding stakeholder perspectives and finding legitimate common ground."
+  },
+  "openQuestions": [
+    "Think of an initiative that requires cross-functional support. Have you genuinely understood what each stakeholder needs from it?",
+    "When have you successfully built a coalition? What made it work?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-109-05",
+  "moduleId": "LEAD-MC-109",
+  "courseId": "LEAD-MC",
+  "title": "Managing Organizational Resistance",
+  "type": "scenario",
+  "content": "Sometimes organizations resist necessary change due to entrenched interests, cultural inertia, or past failed initiatives. Overcoming organizational resistance requires patience, strategic thinking, and sometimes accepting that change happens incrementally. Forcing change through formal authority often creates compliance without commitment.",
+  "scenario": {
+    "story": "You've been brought in to improve performance in a department with a long history of resistance to change. Previous leaders tried top-down mandates that were passively resisted until the leaders moved on and things returned to previous state. The team is competent but skeptical of any new initiative. You have formal authority but limited trust. You need meaningful improvement within a year.",
+    "options": {
+      "A": "Use your authority to mandate changes quickly before resistance can organize",
+      "B": "Start with small wins that demonstrate value, involve skeptics in problem-solving, and build momentum gradually",
+      "C": "Replace the most resistant team members to remove obstacles to change",
+      "D": "Wait to build relationships before attempting any changes"
+    },
+    "recommendedResponse": "B",
+    "explanation": "Option B recognizes that resistance is based on experience—past changes failed, so skepticism is rational. Start small: identify a problem the team actually cares about, involve them in solving it, deliver visible improvement, and build credibility. Skeptics who see genuine improvement often become advocates. Option A repeats the pattern that's already failed multiple times. Option C removes people instead of addressing why resistance exists. Option D delays too long—you have a year, and building trust requires demonstrating competence through action, not just relationship-building. Overcome organizational resistance by earning credibility through results, not forcing compliance through authority."
+  },
+  "openQuestions": [
+    "Think of an organization or team that resisted change you tried to lead. What was driving the resistance?",
+    "What small win could you deliver in the next 30 days that would build credibility for larger change?",
+    "How do you differentiate between resistance that signals legitimate concerns versus resistance protecting status quo?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-110-01",
+  "moduleId": "LEAD-MC-110",
+  "courseId": "LEAD-MC",
+  "title": "Strategic Messaging: Normal, Stress, and Post-Incident",
+  "type": "lesson",
+  "content": "Communication strategy changes based on context. During normal operations, reinforce culture and priorities. During high-stress periods, provide clarity and stability. After incidents, rebuild trust and facilitate learning. Leaders who communicate the same way regardless of context miss opportunities to strengthen culture when it matters most. Each context requires different message content, frequency, and tone.",
+  "mcq": {
+    "question": "After a significant operational failure, a leader sends a brief email to the team: 'The issue has been resolved. Resume normal operations. We'll review what happened at our next scheduled meeting in two weeks.' Team anxiety remains high and rumors are spreading. What communication failure occurred?",
+    "options": {
+      "A": "The leader communicated too quickly without full investigation",
+      "B": "The leader failed to acknowledge the emotional impact, explain what happened, and outline next steps for learning",
+      "C": "Email was the wrong medium for this message",
+      "D": "Waiting two weeks for discussion was appropriate to allow emotions to settle"
+    },
+    "correctOption": "B",
+    "explanation": "Post-incident communication requires more than operational status. The team needs to understand what happened, why, what's being done to prevent recurrence, and that leadership takes it seriously. The brief email created an information vacuum that rumors filled. Option B identifies what's missing: acknowledgment of impact, explanation of events, and commitment to learning. Option A misreads the issue—you can provide interim communication before full investigation. Option C focuses on medium rather than content. Option D allows anxiety to fester for two weeks. Post-incident requires over-communication, not minimal updates."
+  },
+  "openQuestions": [
+    "Think of how you communicated after a recent significant problem. Did you address operational status only, or also emotional impact and learning?",
+    "What's your default communication pattern during high-stress situations? Is it effective?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-110-02",
+  "moduleId": "LEAD-MC-110",
+  "courseId": "LEAD-MC",
+  "title": "Leading Difficult Conversations: Layoffs and Restructuring",
+  "type": "lesson",
+  "content": "Some leadership conversations are inherently difficult: delivering layoff news, announcing restructuring, or communicating organizational failure. These require balancing honesty with compassion, clarity with sensitivity. The error is either being overly blunt (creating unnecessary trauma) or overly vague (creating confusion and anxiety). Effective difficult conversations are direct about facts, honest about what's known and unknown, and respectful of impact on people's lives.",
+  "mcq": {
+    "question": "You must inform your team that the organization is eliminating 30% of positions, including some from your team. Individual decisions will be communicated in two weeks. How do you inform the team?",
+    "options": {
+      "A": "Wait until individual decisions are final to avoid creating unnecessary anxiety",
+      "B": "Inform the team immediately about the situation, explain what you know and don't know, and commit to transparency as decisions are finalized",
+      "C": "Send an email with the basic facts to avoid an emotional group conversation",
+      "D": "Tell the team the organization is 'exploring options' without specifying layoffs"
+    },
+    "correctOption": "B",
+    "explanation": "Difficult news doesn't improve with delay. The team will learn about it regardless—better it comes from you with context than through rumors. Option B provides factual information, acknowledges uncertainty, and commits to ongoing communication. Option A allows anxiety to build and rumors to spread. Option C avoids the human element when people need to see your leadership. Option D is dishonest misdirection that destroys trust. Difficult conversations require showing up, being direct, acknowledging impact, and providing what support you can. People can handle hard truths; they can't handle being misled or avoided."
+  },
+  "openQuestions": [
+    "Think of the most difficult conversation you've had to have as a leader. How did you prepare for it?",
+    "What makes difficult conversations hard for you: the emotional weight, fear of reaction, or uncertainty about what to say?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-110-03",
+  "moduleId": "LEAD-MC-110",
+  "courseId": "LEAD-MC",
+  "title": "Cross-Cultural and Multi-Generational Communication",
+  "type": "lesson",
+  "content": "Teams increasingly span cultures, generations, and communication preferences. What's direct in one culture is rude in another. What's respectful to one generation feels formal to another. Leaders who assume everyone communicates like they do create misunderstanding and exclusion. Effective communication across differences requires awareness of preferences, flexibility in approach, and focusing on clarity over comfort with your preferred style.",
+  "mcq": {
+    "question": "Your team includes: older workers who prefer face-to-face meetings and phone calls, younger workers who default to messaging apps, and international team members whose first language isn't English. Your current practice is sending detailed emails for all important communication. Several people seem to miss key information regularly. What's the issue?",
+    "options": {
+      "A": "People aren't reading emails carefully enough",
+      "B": "One communication method doesn't work for everyone—you need multiple channels",
+      "C": "The team needs training on email best practices",
+      "D": "Email is professional standard and people need to adapt"
+    },
+    "correctOption": "B",
+    "explanation": "Communication effectiveness beats communication preference. If people are missing information despite your effort, your method isn't working for them. Option B recognizes you need to meet people where they are: key messages might need face-to-face discussion for some, messaging app summaries for others, and simplified language for non-native speakers. Yes, it's more work. But leadership communication is about ensuring understanding, not broadcasting in your preferred format. Option A blames recipients. Option C misses that the issue is channel mismatch, not skill. Option D prioritizes your comfort over effectiveness. Leaders adapt communication style to audience needs."
+  },
+  "openQuestions": [
+    "What's your default communication style? Who on your team might not receive information effectively in that format?",
+    "Think of a miscommunication that occurred recently. Could communication style or cultural difference have contributed?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-110-04",
+  "moduleId": "LEAD-MC-110",
+  "courseId": "LEAD-MC",
+  "title": "Remote and Distributed Team Leadership",
+  "type": "lesson",
+  "content": "Leading people you rarely see in person requires deliberate communication structure, intentional culture-building, and different visibility mechanisms. Remote leadership fails when leaders assume physical absence means they can reduce engagement. It actually requires more intentional effort: structured check-ins, clear communication of priorities, proactive relationship-building, and creating opportunities for team connection. Distance amplifies small communication gaps into major misalignments.",
+  "mcq": {
+    "question": "You lead a team distributed across three locations. You notice that the local team (same office as you) consistently has better information, gets faster responses to questions, and seems more engaged than the remote members. Remote team members have started missing optional meetings and seem less connected to organizational culture. What's the primary issue?",
+    "options": {
+      "A": "Remote workers are naturally less engaged and this is expected",
+      "B": "You're unintentionally creating information and access inequality based on proximity",
+      "C": "Remote team members need to take more initiative to stay connected",
+      "D": "The remote locations need their own local leadership presence"
+    },
+    "correctOption": "B",
+    "explanation": "Proximity bias is real and destructive. You're unconsciously giving better access, information, and engagement to people you see physically. Remote team members aren't less motivated—they're operating with less information and weaker connection. This is a leadership problem, not a remote work problem. Fix it by standardizing communication (if remote team needs video calls, local team gets video calls too), rotating meeting times across time zones, being deliberate about information distribution, and spending face-time proportionally. Remote leadership requires compensating for proximity bias, not accepting it."
+  },
+  "openQuestions": [
+    "If you lead distributed team members, how do you ensure equal access and information flow?",
+    "What communication rhythm works best for maintaining connection across distance?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-110-05",
+  "moduleId": "LEAD-MC-110",
+  "courseId": "LEAD-MC",
+  "title": "Crisis Communication Strategy",
+  "type": "scenario",
+  "content": "Crisis communication requires speed, accuracy, and transparency under extreme pressure. Leaders must balance the need to communicate quickly with the need to be accurate, maintain calm while acknowledging severity, and control information flow without appearing to hide information. Poor crisis communication amplifies the crisis itself.",
+  "scenario": {
+    "story": "A significant incident has occurred affecting operations, customers, and potentially public perception. Information is still emerging, root cause is unclear, and multiple stakeholders are demanding updates: your team needs direction, customers need information, senior leadership needs status, and external parties are asking questions. You have partial information with significant uncertainty. The next 2-4 hours of communication will shape the narrative.",
+    "options": {
+      "A": "Wait until you have complete information before communicating to avoid spreading inaccurate details",
+      "B": "Immediately communicate what you know, what you don't know, what you're doing, and when you'll provide the next update",
+      "C": "Provide minimal information to avoid creating panic or speculation",
+      "D": "Delegate communication to a spokesperson while you focus on resolving the incident"
+    },
+    "recommendedResponse": "B",
+    "explanation": "Option B demonstrates crisis communication principles: speed, transparency, and rhythm. Acknowledge the situation, provide factual information, admit uncertainty honestly, describe response actions, and establish when more information will come. This prevents information vacuum and demonstrates control. Option A allows speculation and rumors to fill the void—silence during crisis signals loss of control. Option C creates distrust and invites speculation. Option D separates leadership from communication, which weakens both. During crisis, people need to hear from leaders. Partial information with honesty beats complete silence or vague platitudes."
+  },
+  "openQuestions": [
+    "Have you ever led communication during a crisis? What did you learn about speed versus accuracy?",
+    "What's your crisis communication template: who gets what information, through which channels, and how frequently?",
+    "How do you balance transparency with avoiding unnecessary alarm during evolving situations?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-111-01",
+  "moduleId": "LEAD-MC-111",
+  "courseId": "LEAD-MC",
+  "title": "Self-Awareness and Identifying Blind Spots",
+  "type": "lesson",
+  "content": "Leaders have blind spots—behaviors, patterns, or impacts they don't see in themselves. These create friction, limit effectiveness, and damage relationships without the leader realizing it. Self-awareness requires actively seeking feedback, reflecting on your impact, and being willing to see yourself as others see you. The most dangerous leaders are those who believe they have no blind spots. Growth starts with recognizing what you don't know about yourself.",
+  "mcq": {
+    "question": "A leader receives feedback from multiple sources that they interrupt people in meetings and don't let others finish their thoughts. The leader's self-perception is that they're energetically engaged and helping move conversations forward. What's happening?",
+    "options": {
+      "A": "The feedback is from people who prefer slower-paced discussions",
+      "B": "The leader has a blind spot between their intent (engagement) and their impact (shutting people down)",
+      "C": "The leader's communication style is fine and others need to be more assertive",
+      "D": "This is a personality difference that doesn't need to change"
+    },
+    "correctOption": "B",
+    "explanation": "Classic blind spot: the leader experiences their behavior as helpful while others experience it as dominating. Intent doesn't equal impact. When multiple people provide similar feedback, it's data worth examining, not defending against. Option B recognizes the gap between self-perception and others' experience. Option A dismisses the feedback. Option C blames others for the leader's behavior. Option D refuses to adapt based on impact. Self-aware leaders ask: 'What am I doing that creates this experience for others?' then decide if they want to change it. The pattern is the data; defending it prevents growth."
+  },
+  "openQuestions": [
+    "What feedback have you received multiple times that you've been dismissing or defending against?",
+    "Who gives you honest feedback about your blind spots? If no one, why do you think that is?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-111-02",
+  "moduleId": "LEAD-MC-111",
+  "courseId": "LEAD-MC",
+  "title": "Managing Leader Stress and Burnout",
+  "type": "lesson",
+  "content": "Leadership is demanding: constant decisions, emotional weight of responsibility, competing pressures, and limited control over outcomes. Leaders who don't manage their own stress eventually degrade in judgment, patience, and effectiveness. Burnout doesn't announce itself—it accumulates gradually until you're making poor decisions, losing composure, or checking out emotionally. Sustainable leadership requires recognizing early stress signals, establishing boundaries, and building recovery practices into your routine.",
+  "mcq": {
+    "question": "A leader notices they're sleeping poorly, getting irritated by small issues that normally wouldn't bother them, and having difficulty concentrating on complex decisions. Their response is to work harder and push through since 'this is what leadership requires.' What's the problem with this approach?",
+    "options": {
+      "A": "The leader needs to develop better stress tolerance",
+      "B": "These are early burnout signals that will degrade leadership effectiveness if ignored",
+      "C": "This is normal leadership stress and doesn't require action",
+      "D": "The leader should delegate more to reduce their workload"
+    },
+    "correctOption": "B",
+    "explanation": "These are classic burnout warning signs: physiological stress (sleep disruption), emotional dysregulation (irritability), and cognitive impairment (concentration difficulty). Pushing through doesn't build resilience—it accelerates decline. Burned-out leaders make worse decisions, damage relationships, and model unsustainable behavior to their teams. Option B recognizes these as signals requiring response, not weaknesses to power through. Option A misreads stress response as character flaw. Option C normalizes dysfunction. Option D might help but doesn't address the underlying need for recovery and boundary-setting. Leaders must manage their own sustainability or they become liabilities."
+  },
+  "openQuestions": [
+    "What are your early warning signs that stress is affecting your leadership effectiveness?",
+    "What recovery practices do you have built into your routine? Are they actually happening or just intended?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-111-03",
+  "moduleId": "LEAD-MC-111",
+  "courseId": "LEAD-MC",
+  "title": "Continuous Learning and Adaptation",
+  "type": "lesson",
+  "content": "Leadership capability isn't fixed—it grows through deliberate learning, reflection on experience, and willingness to adapt based on results. Leaders who stop learning become obsolete as contexts change. Continuous learning means seeking challenging assignments, learning from failures, studying how other leaders approach problems, and regularly examining your own effectiveness. The mindset matters more than the method: viewing yourself as always developing rather than already developed.",
+  "mcq": {
+    "question": "A experienced leader is promoted into a new context with different challenges. Their initial approach—which worked well previously—isn't producing the same results. They continue applying the same methods with increasing frustration. What's the issue?",
+    "options": {
+      "A": "The new team needs more time to adjust to the leader's proven approach",
+      "B": "The leader is failing to recognize that different contexts require different approaches",
+      "C": "The methods are sound but need stronger execution",
+      "D": "The new organization has a performance culture problem"
+    },
+    "correctOption": "B",
+    "explanation": "Past success doesn't guarantee future effectiveness in new contexts. What worked with one team, culture, or challenge may not work elsewhere. The leader is applying old patterns without diagnosing new reality. Option B recognizes the need to adapt approach based on context. Effective leaders ask: 'What's different here? What needs to change in my approach?' Option A assumes the leader is right and others need to conform. Option C doubles down on methods that aren't working. Option D blames the environment. Leaders who can't adapt based on feedback and results become less effective over time, regardless of past success."
+  },
+  "openQuestions": [
+    "What's a leadership approach that worked well for you in the past but isn't working now? What might need to change?",
+    "How do you know when to persist with your approach versus when to adapt?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-111-04",
+  "moduleId": "LEAD-MC-111",
+  "courseId": "LEAD-MC",
+  "title": "Personal Leadership Development Planning",
+  "type": "reflection",
+  "content": "Intentional leadership development requires assessing current capability honestly, identifying specific growth areas, creating development plan with measurable progress, and holding yourself accountable to growth. Most leaders have vague development goals ('be a better communicator') without concrete actions or progress measures. Effective development is specific, actionable, and tracked over time.",
+  "scenario": {
+    "story": "You've completed this leadership course and identified several areas for growth. You want to create a development plan that actually drives improvement rather than becoming another forgotten intention. You have normal workload demands and limited dedicated development time. You need an approach that creates real capability growth within the next 6-12 months.",
+    "options": {
+      "A": "Identify your top three development priorities, define specific observable behaviors for each, and build practice into weekly routine with monthly self-assessment",
+      "B": "Set broad goals to become better at all the leadership competencies covered in the course",
+      "C": "Wait for development opportunities to emerge naturally through work challenges",
+      "D": "Ask your boss to send you to additional leadership training programs"
+    },
+    "recommendedResponse": "A",
+    "explanation": "Option A creates an actionable development plan: prioritize (you can't improve everything simultaneously), make it concrete (specific behaviors you can practice and observe), integrate it into routine (dedicated development time rarely happens), and track progress (monthly check helps sustain focus). Option B is too broad to drive action—'better at communication' doesn't tell you what to practice tomorrow. Option C is passive—growth requires intentional practice, not just hoping experience teaches you. Option D outsources development to training rather than embedding it in daily practice. Real development happens through deliberate practice of specific skills in real situations, not just learning concepts."
+  },
+  "openQuestions": [
+    "Based on this course, what are your top three leadership development priorities right now?",
+    "For each priority, what specific behavior could you practice this week? How will you know if you're improving?",
+    "Who will hold you accountable to your development goals, and how often will you review progress together?",
+    "What leadership capability do you most want to be known for in three years? What needs to change to get there?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-112-01",
+  "moduleId": "LEAD-MC-112",
+  "courseId": "LEAD-MC",
+  "title": "Talent Assessment and Succession Planning",
+  "type": "lesson",
+  "content": "Organizations fail when leadership talent runs dry. Succession planning means identifying future leaders early, developing them intentionally, and ensuring continuity when transitions occur. This requires honest assessment of capability versus potential, creating development opportunities that build leadership skills, and having ready talent for critical roles. Leaders who don't develop successors create organizational fragility and limit their own advancement.",
+  "mcq": {
+    "question": "A senior leader is asked to identify potential successors for their role. They respond: 'No one on my current team is ready to step into this position.' What's the most likely issue?",
+    "options": {
+      "A": "The team lacks high-potential talent",
+      "B": "The leader hasn't been developing people for advancement",
+      "C": "The role requires external hiring to bring fresh perspective",
+      "D": "Succession planning is premature until the leader plans to leave"
+    },
+    "correctOption": "B",
+    "explanation": "If no one is ready after years of leadership, the leader hasn't been developing successors—either through lack of delegation, failure to identify potential, or viewing team development as low priority. Succession readiness doesn't happen accidentally. Option B identifies the development failure. Option A might be true but is less likely than development failure. Option C avoids accountability for internal development. Option D misunderstands succession planning as retirement planning rather than ongoing organizational capability building. Leaders should always be developing people who could eventually replace them. That's how organizations build bench strength."
+  },
+  "openQuestions": [
+    "If you left your role tomorrow, who would be ready to step in? If no one, what does that say about your development focus?",
+    "Who on your team has leadership potential that you're not currently developing? What's stopping you?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-112-02",
+  "moduleId": "LEAD-MC-112",
+  "courseId": "LEAD-MC",
+  "title": "Building Performance Measurement Systems",
+  "type": "lesson",
+  "content": "What gets measured gets attention. Performance measurement systems shape behavior by defining what success looks like. Poor measurement drives wrong behaviors: measuring only activity creates busywork, measuring only outcomes ignores process quality, and measuring too many things dilutes focus. Effective performance systems balance leading indicators (predictive) with lagging indicators (results), measure what matters not just what's easy to count, and align individual metrics with organizational objectives.",
+  "mcq": {
+    "question": "A team's performance metrics focus entirely on output volume: units produced, tickets closed, projects completed. Quality has declined, customer complaints have increased, and team burnout is rising, but all measured metrics show green. What's wrong with the measurement system?",
+    "options": {
+      "A": "The team is gaming the metrics instead of focusing on real performance",
+      "B": "The measurement system optimizes for quantity while ignoring quality, sustainability, and customer impact",
+      "C": "The metrics are fine but need stronger accountability for hitting targets",
+      "D": "More metrics need to be added to capture all aspects of performance"
+    },
+    "correctOption": "B",
+    "explanation": "The measurement system is driving exactly the behavior it incentivizes: maximize output regardless of quality or consequence. This is a design problem, not a compliance problem. Option B recognizes that incomplete metrics create perverse incentives. When you measure only volume, people optimize for volume—even if it destroys quality and burns out teams. Option A blames people for responding rationally to the system's incentives. Option C doubles down on broken metrics. Option D risks measurement overload. Fix the system by measuring what actually matters: customer satisfaction, defect rates, team sustainability, not just output volume."
+  },
+  "openQuestions": [
+    "What do your current performance metrics incentivize? Is that what you actually want?",
+    "What important outcome isn't currently measured because it's difficult to quantify?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-112-03",
+  "moduleId": "LEAD-MC-112",
+  "courseId": "LEAD-MC",
+  "title": "Building Mentoring Culture",
+  "type": "lesson",
+  "content": "Mentoring culture multiplies leadership impact across the organization. When senior leaders mentor emerging leaders, and those leaders mentor others, leadership capability compounds. This requires making mentoring expected not optional, providing structure and time for mentoring relationships, and recognizing mentoring as valuable leadership contribution. Organizations without mentoring culture lose institutional knowledge and force every generation to relearn the same lessons.",
+  "mcq": {
+    "question": "An organization claims to value mentoring, but senior leaders are evaluated and rewarded entirely on their team's operational results. Mentoring relationships exist informally but are frequently cancelled due to 'more urgent priorities.' What's the actual message about mentoring?",
+    "options": {
+      "A": "Mentoring is valued but operational demands are higher priority",
+      "B": "The organization says it values mentoring but doesn't actually prioritize or reward it",
+      "C": "Senior leaders need better time management to balance mentoring with operations",
+      "D": "Informal mentoring is sufficient and doesn't need organizational support"
+    },
+    "correctOption": "B",
+    "explanation": "Culture is what you reward and make time for, not what you say you value. If mentoring isn't evaluated, rewarded, or protected with time, the organization doesn't actually value it—regardless of stated values. Option B recognizes the gap between rhetoric and reality. Actions reveal priorities: if operational metrics are the only evaluation criteria and mentoring gets cancelled when things get busy, mentoring is optional. To build mentoring culture, include it in leadership evaluation, provide dedicated time, and demonstrate that developing others is as important as delivering results. Option A accepts the status quo. Option C blames individuals for systemic priorities. Option D accepts informal approach that depends on individual initiative rather than organizational commitment."
+  },
+  "openQuestions": [
+    "Does your organization actually reward and protect time for mentoring, or just encourage it rhetorically?",
+    "Who are you currently mentoring? How much of your time goes to their development versus your operational work?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-112-04",
+  "moduleId": "LEAD-MC-112",
+  "courseId": "LEAD-MC",
+  "title": "Leading Through Growth vs Decline",
+  "type": "lesson",
+  "content": "Leadership challenges differ dramatically between growth and decline phases. Growth creates opportunity but strains systems, tests culture, and risks losing what made the organization successful. Decline requires difficult decisions, maintaining morale despite constraints, and selective investment with limited resources. Leaders must diagnose which phase they're in and adapt their approach accordingly. Strategies that work during growth often fail during decline, and vice versa.",
+  "mcq": {
+    "question": "An organization experiencing rapid growth is struggling with quality issues, cultural dilution as new people join faster than they can be integrated, and breaking processes that worked at smaller scale. The leadership team's response is to maintain the same collaborative consensus-driven decision-making that served them well previously. What's the issue?",
+    "options": {
+      "A": "The collaborative approach is being undermined by new employees who don't understand the culture",
+      "B": "Growth requires more structure, faster decisions, and formalized processes that consensus-building can't provide at scale",
+      "C": "The quality and culture issues are temporary growing pains that will self-correct",
+      "D": "The organization is growing too fast and should slow down"
+    },
+    "correctOption": "B",
+    "explanation": "What works at small scale breaks at large scale. Informal consensus, relationship-based coordination, and everyone-involved decision-making worked when the team was small and cohesive. Growth demands structure: clearer roles, delegated authority, formalized processes, and faster decision-making. Option B recognizes that leadership approach must evolve with organizational phase. Option A blames new people instead of examining what needs to change systemically. Option C assumes problems will fix themselves without leadership intervention. Option D avoids the real challenge of leading through growth. Successful growth leadership means deliberately choosing which startup characteristics to preserve and which to evolve."
+  },
+  "openQuestions": [
+    "Is your organization currently in growth, stability, or decline? How does your leadership approach match that phase?",
+    "What worked in a previous organizational phase that's not working now? What needs to change?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-112-05",
+  "moduleId": "LEAD-MC-112",
+  "courseId": "LEAD-MC",
+  "title": "Post-Failure Organizational Recovery",
+  "type": "lesson",
+  "content": "How organizations respond after major failures determines whether they become stronger or permanently damaged. Recovery requires: honest analysis of what happened without scapegoating, visible leadership accountability, systematic addressing of root causes, rebuilding trust through demonstrated change, and treating failure as learning opportunity. Organizations that punish failure become risk-averse and defensive. Organizations that learn from failure build resilience.",
+  "mcq": {
+    "question": "After a significant organizational failure, leadership conducts investigation, identifies individuals who made errors, terminates or demotes them, announces the issue is resolved, and moves forward. Six months later, similar problems emerge. People are more cautious but less likely to surface concerns early. What pattern is occurring?",
+    "options": {
+      "A": "The wrong people were held accountable and the real problems remain",
+      "B": "The organization treated failure as individual problem rather than system problem, missing root causes and creating defensive culture",
+      "C": "More aggressive accountability is needed to prevent future failures",
+      "D": "The individuals who were terminated should have been replaced with more capable people"
+    },
+    "correctOption": "B",
+    "explanation": "Blaming individuals for system failures misses the opportunity to improve and creates fear that prevents future problem-reporting. The pattern will repeat because root causes weren't addressed—just people were removed. Option B recognizes this as learning failure disguised as accountability. Effective post-failure response asks: what systemic issues allowed this to happen? How do we prevent it structurally? What did we learn? Individual accountability may be appropriate, but it's rarely the complete answer. Organizations that only punish become places where people hide problems until they explode. Organizations that learn systematically become more resilient. The hesitance to surface concerns is evidence that the response created fear, not learning."
+  },
+  "openQuestions": [
+    "Think of a major failure in your organization. Did the response focus more on blaming individuals or fixing systems?",
+    "How does your organization treat people who report problems early versus those who hide them until they become crises?"
+  ]
+}
+,
+{
+  "lessonId": "LEAD-MC-112-06",
+  "moduleId": "LEAD-MC-112",
+  "courseId": "LEAD-MC",
+  "title": "Executive Leadership Transition",
+  "type": "scenario",
+  "content": "Transitioning into executive leadership requires fundamental mindset shifts. You move from managing execution to setting direction, from solving problems to building systems that prevent problems, from direct control to influence through others, and from technical expertise to strategic thinking. Many new executives fail by continuing to operate as senior managers. Success requires letting go of old strengths and developing new capabilities.",
+  "scenario": {
+    "story": "You've been promoted from operational leadership to executive level. You're now responsible for multiple departments, strategic planning, and organizational-level decision making. Your previous success came from deep operational involvement, personal problem-solving, and being the most knowledgeable person in the room. You've been in the role for three months and are overwhelmed: too many meetings, not enough time for deep work, operational problems still being escalated to you, and strategic initiatives not making progress. Your old approaches aren't working.",
+    "options": {
+      "A": "Work longer hours to handle both operational involvement and executive responsibilities",
+      "B": "Delegate more operational decisions, focus on developing your leadership team's capability, and shift your time to strategic priorities and system-building",
+      "C": "Push back on the executive workload since your operational expertise is where you add most value",
+      "D": "Hire additional staff to handle operational details so you can focus on strategy"
+    },
+    "recommendedResponse": "B",
+    "explanation": "Option B demonstrates the mindset shift executive leadership requires. You can't scale yourself by working harder—you scale by developing others, building systems, and focusing on leverage points that affect the entire organization. Your value as an executive isn't solving operational problems (your team should do that)—it's setting direction, allocating resources, building capability, and ensuring system health. Option A leads to burnout and neglects actual executive work. Option C misreads your new role and resists necessary transition. Option D throws resources at symptoms rather than addressing the fundamental shift needed. Executive transition means accepting that your old strengths may no longer be your highest contribution and deliberately developing new capabilities."
+  },
+  "openQuestions": [
+    "If you're in or approaching executive leadership, what operational involvement are you holding onto that you should release?",
+    "What capabilities got you to your current level that may not serve you at the next level?",
+    "How do you measure your effectiveness as a leader: by problems you personally solve, or by capability you build in others?",
+    "What's your next leadership transition, and what will it require you to let go of?"
+  ]
+}
+]}

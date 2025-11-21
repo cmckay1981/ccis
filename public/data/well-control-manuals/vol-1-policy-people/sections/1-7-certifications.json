@@ -1,0 +1,34 @@
+{
+  "sectionId": "1.7",
+  "title": "Certifications & Training",
+  "content": {
+    "1.7.1": {
+      "title": "Certification Requirements",
+      "content": "All personnel with well control responsibilities shall hold appropriate certifications.\n\n**Recognized Certification Bodies:**\n- IWCF (International Well Control Forum)\n- IADC WellSharp\n- Equivalent national certifications as approved\n\n**Certification Levels:**\n\n| Position | Minimum Certification |\n|----------|----------------------|\n| Driller | IWCF Level 4 or WellSharp Driller |\n| Assistant Driller | IWCF Level 3 or WellSharp Supervisor |\n| Toolpusher | IWCF Level 4 or WellSharp Driller |\n| Drilling Supervisor | IWCF Level 4 or WellSharp Driller |\n| OIM | IWCF Level 4 or WellSharp Driller |\n\n**Stack Type:**\nCertification must match the operation:\n- Surface operations: Surface stack certification\n- Subsea operations: Combined (Surface + Subsea) certification"
+    },
+    "1.7.2": {
+      "title": "Certification Validity",
+      "content": "**Validity Period:**\nIWCF and WellSharp certifications are valid for 2 years from date of issue.\n\n**Renewal:**\n- Personnel must renew before expiration\n- Expired certifications are not valid\n- Planning should ensure renewal in advance of expiration\n\n**Lapsed Certifications:**\nPersonnel with lapsed certifications:\n- Cannot perform well control duties\n- Must be reassigned until renewed\n- May require full recertification rather than renewal\n\n**Verification:**\n- Certifications verified before assignment\n- Copies maintained on file\n- Original certificate or verifiable digital credential required"
+    },
+    "1.7.3": {
+      "title": "Training Requirements",
+      "content": "Beyond certification, ongoing training is required:\n\n**Induction Training:**\nAll well control personnel receive:\n- Rig-specific orientation\n- BOP and equipment familiarization\n- Current well status and hazards\n- Emergency procedures and muster\n- Communication systems\n\n**Ongoing Training:**\n- Participation in well control drills\n- Equipment operation practice\n- Procedure reviews\n- Incident lessons learned\n- New equipment or procedure training\n\n**Simulator Training:**\nSimulator-based training is recommended:\n- Initial: As part of certification\n- Refresher: Annually where available\n- Advanced: For supervisory positions"
+    },
+    "1.7.4": {
+      "title": "On-Board Training Program",
+      "content": "Each installation shall maintain an on-board well control training program:\n\n**Components:**\n\n**1. Computer-Based Training**\n- Well control principles review\n- Procedure familiarization\n- Calculation practice\n- Available 24/7\n\n**2. Simulator Sessions (where equipped)**\n- Team-based scenarios\n- Kill procedure practice\n- Decision-making exercises\n- Duration: 1-2 hours per session\n\n**3. Equipment Drills**\n- BOP function testing observation\n- Choke operation practice\n- Shut-in procedure walk-through\n\n**Frequency:**\n- Weekly: At least one training element\n- Monthly: Full team exercise or scenario\n- Per tour: Orientation for new arrivals"
+    },
+    "1.7.5": {
+      "title": "Competency Assessment",
+      "content": "Personnel competency shall be verified beyond certification:\n\n**Assessment Methods:**\n- Observation during operations\n- Performance in drills\n- Knowledge checks\n- Peer feedback\n- Incident review participation\n\n**Competency Areas:**\n- Technical knowledge (procedures, calculations)\n- Practical skills (equipment operation)\n- Decision-making (scenario responses)\n- Communication (crew interaction)\n- Leadership (for supervisory roles)\n\n**Documentation:**\n- Training records maintained\n- Drill participation logged\n- Assessment results recorded\n- Development needs identified\n\n**Addressing Gaps:**\n- Additional training provided\n- Mentoring assigned\n- Reassignment if competency cannot be achieved"
+    },
+    "1.7.6": {
+      "title": "Special Operations Training",
+      "content": "Personnel involved in special operations require additional training:\n\n**HPHT Operations:**\n- HPHT-specific well control training\n- Narrow window drilling awareness\n- Enhanced monitoring techniques\n- HPHT equipment familiarization\n\n**MPD Operations:**\n- MPD principles and equipment\n- MPD-specific barrier management\n- RCD operations\n- Transition to conventional well control\n\n**Deepwater Operations:**\n- Subsea BOP systems\n- Choke line friction effects\n- Riser margin considerations\n- EDS procedures\n- Hydrate awareness\n\n**H2S Operations:**\n- H2S properties and hazards\n- Detection equipment\n- Breathing apparatus use\n- Rescue procedures\n- Well control in H2S environment"
+    },
+    "1.7.7": {
+      "title": "Training Records",
+      "content": "Complete training records shall be maintained:\n\n**Required Records:**\n- Certification copies and validity dates\n- Training course completions\n- Drill participation dates and results\n- Assessment results\n- Development plans\n\n**Retention:**\n- Active personnel: Current plus previous certification period\n- After departure: Per regulatory requirements (typically 3-5 years)\n\n**Availability:**\n- Records available for audit\n- Summary available to personnel on request\n- Electronic records backed up"
+    }
+  }
+}

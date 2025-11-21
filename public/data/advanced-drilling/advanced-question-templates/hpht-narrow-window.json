@@ -1,0 +1,56 @@
+{
+  "templateId": "QT-HPHT-001",
+  "category": "HAZARD_AWARENESS",
+  "title": "HPHT Narrow Mud Weight Window Management",
+  "level": ["L4"],
+  "applicableTo": ["surface", "subsea"],
+  "triggeredBy": {
+    "hazardType": "narrow_window",
+    "severity": ["high", "critical"]
+  },
+  "question": "On {{wellProfile.wellName}}, you are drilling at {{currentSection.settingDepth.tvd}} {{currentSection.settingDepth.unit}} TVD in an HPHT section. Pore pressure is {{scenario.porePressure}} ppg and fracture gradient is {{scenario.fracGradient}} ppg. Your mud weight window is only {{scenario.windowSize}} ppg. Current MW is {{currentSection.mudWeight.current}} ppg. What is the MAXIMUM ECD you can tolerate before risking losses?",
+  "inputs": {
+    "wellProfile": {
+      "required": ["classification.isHPHT", "wellName"]
+    },
+    "currentSection": {
+      "from": "wellProfile.casingProgram[activeSection]",
+      "required": ["settingDepth.tvd", "mudWeight.current"]
+    },
+    "scenario": {
+      "porePressure": {
+        "from": "wellProfile.ppfg nearest to TVD"
+      },
+      "fracGradient": {
+        "from": "wellProfile.ppfg nearest to TVD"
+      },
+      "windowSize": {
+        "calculated": "fracGradient - porePressure"
+      }
+    }
+  },
+  "calculation": {
+    "formula": "Max ECD = Fracture Gradient",
+    "steps": [
+      "The maximum ECD is the fracture gradient at TD",
+      "Available ECD increase = Frac Gradient - Current MW",
+      "This is your operating margin for circulation"
+    ]
+  },
+  "answerValidation": {
+    "tolerance": 0.1,
+    "unit": "ppg",
+    "roundTo": 1
+  },
+  "feedback": {
+    "correct": "Correct. Maximum ECD = {{scenario.fracGradient}} ppg (the fracture gradient). With current MW of {{currentSection.mudWeight.current}} ppg, you have only {{availableMargin}} ppg ECD margin. Monitor PWD closely.",
+    "incorrect": "Maximum ECD equals the fracture gradient at TD: {{scenario.fracGradient}} ppg. Exceeding this risks lost circulation and potential well control complications."
+  },
+  "contextualTip": "With a {{scenario.windowSize}} ppg window on {{wellProfile.wellName}}, you're walking a tightrope. A kick adds pressure (toward frac gradient), but weighting up to kill also adds pressure. This is why HPHT wells use MPD and careful ECD management.",
+  "hazardContext": {
+    "description": "{{hazard.description}}",
+    "mitigation": "{{hazard.mitigation}}"
+  },
+  "relatedLesson": "WC-SF-102-01",
+  "tags": ["hpht", "narrow-window", "ecd", "hazard", "well-control", "L4", "dynamic"]
+}

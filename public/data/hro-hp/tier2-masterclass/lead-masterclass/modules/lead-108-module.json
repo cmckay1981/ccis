@@ -1,0 +1,13 @@
+{
+  "moduleId": "LEAD-108",
+  "courseId": "LEAD",
+  "title": "Decision-Making Frameworks",
+  "description": "Teaches risk assessment and management, ethical decision-making under pressure, balancing competing priorities, and knowing when to decide yourself versus when to delegate or escalate decisions.",
+  "order": 8,
+  "lessonIds": [
+    "LEAD-108-01",
+    "LEAD-108-02",
+    "LEAD-108-03",
+    "LEAD-108-04"
+  ]
+}

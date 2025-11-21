@@ -1,0 +1,213 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Well Profile Schema",
+  "description": "Schema for company-uploaded well data used in daily well control coaching. This data is CONFIDENTIAL to each organization.",
+  "type": "object",
+  "required": ["wellId", "organizationId", "wellName", "wellType", "waterDepth", "casingProgram", "ppfg"],
+  "properties": {
+    "wellId": {
+      "type": "string",
+      "description": "Unique identifier for the well"
+    },
+    "organizationId": {
+      "type": "string",
+      "description": "Organization that owns this well data - used for access control"
+    },
+    "wellName": {
+      "type": "string",
+      "description": "Well name (e.g., 'Salamat-1')"
+    },
+    "wellType": {
+      "type": "string",
+      "enum": ["exploration", "development", "appraisal", "workover"],
+      "description": "Type of well operation"
+    },
+    "environment": {
+      "type": "string",
+      "enum": ["deepwater", "shallow_water", "land"],
+      "description": "Operating environment"
+    },
+    "classification": {
+      "type": "object",
+      "properties": {
+        "isHPHT": { "type": "boolean" },
+        "hphtCategory": { "type": "string", "enum": ["Tier 1", "Tier 2", "Tier 3"] },
+        "maxBHT": { "type": "number", "description": "Maximum Bottom Hole Temperature (°F)" },
+        "maxBHP": { "type": "number", "description": "Maximum Bottom Hole Pressure (psi)" }
+      }
+    },
+    "rigInfo": {
+      "type": "object",
+      "properties": {
+        "rigName": { "type": "string" },
+        "rigType": { "type": "string", "enum": ["drillship", "semi-submersible", "jackup", "platform", "land_rig"] },
+        "contractor": { "type": "string" }
+      }
+    },
+    "waterDepth": {
+      "type": "object",
+      "properties": {
+        "value": { "type": "number" },
+        "unit": { "type": "string", "enum": ["m", "ft"] }
+      }
+    },
+    "targetDepth": {
+      "type": "object",
+      "properties": {
+        "tvd": { "type": "number" },
+        "md": { "type": "number" },
+        "unit": { "type": "string", "enum": ["m", "ft"] }
+      }
+    },
+    "bopInfo": {
+      "type": "object",
+      "properties": {
+        "stackType": { "type": "string", "enum": ["surface", "subsea"] },
+        "workingPressure": { "type": "number", "description": "psi" },
+        "configuration": { "type": "string", "description": "e.g., '18-3/4\" 15K DDBOP'" },
+        "annularPreventers": { "type": "integer" },
+        "pipeRams": { "type": "integer" },
+        "blindShearRams": { "type": "integer" },
+        "casingShearRams": { "type": "integer" }
+      }
+    },
+    "casingProgram": {
+      "type": "array",
+      "description": "Casing strings from surface to TD",
+      "items": {
+        "type": "object",
+        "required": ["section", "holeSize", "casingSize", "settingDepth"],
+        "properties": {
+          "section": { "type": "string", "description": "e.g., 'Conductor', '1st Surface', '2nd Surface'" },
+          "holeSize": { "type": "number", "description": "inches" },
+          "casingSize": { "type": "number", "description": "inches" },
+          "settingDepth": {
+            "type": "object",
+            "properties": {
+              "tvd": { "type": "number" },
+              "md": { "type": "number" },
+              "unit": { "type": "string", "enum": ["m", "ft"] }
+            }
+          },
+          "mudWeight": {
+            "type": "object",
+            "properties": {
+              "min": { "type": "number" },
+              "max": { "type": "number" },
+              "unit": { "type": "string", "enum": ["ppg", "sg", "psi/ft"] }
+            }
+          },
+          "mudType": { "type": "string", "description": "e.g., 'Seawater/Gel', 'WBM', 'OBM', 'SOBM'" },
+          "lotEmw": { "type": "number", "description": "Leak-off test EMW" },
+          "maasp": { "type": "number", "description": "Maximum Allowable Annular Surface Pressure (psi)" }
+        }
+      }
+    },
+    "ppfg": {
+      "type": "object",
+      "description": "Pore Pressure and Fracture Gradient data",
+      "properties": {
+        "dataPoints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "depth": { "type": "number" },
+              "depthUnit": { "type": "string", "enum": ["m", "ft"] },
+              "porePressure": { "type": "number", "description": "EMW" },
+              "fracGradient": { "type": "number", "description": "EMW" },
+              "unit": { "type": "string", "enum": ["ppg", "sg", "psi/ft"] }
+            }
+          }
+        }
+      }
+    },
+    "kickTolerance": {
+      "type": "array",
+      "description": "Kick tolerance values by section",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section": { "type": "string" },
+          "influxVolume": { "type": "number", "description": "bbls" },
+          "influxIntensity": { "type": "number", "description": "ppg above MW" },
+          "ktValue": { "type": "number", "description": "Kick Tolerance in bbls or ppg" }
+        }
+      }
+    },
+    "hazards": {
+      "type": "array",
+      "description": "Well control hazards by section/depth",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section": { "type": "string" },
+          "depthRange": {
+            "type": "object",
+            "properties": {
+              "from": { "type": "number" },
+              "to": { "type": "number" },
+              "unit": { "type": "string", "enum": ["m", "ft"] }
+            }
+          },
+          "hazardType": {
+            "type": "string",
+            "enum": ["shallow_gas", "h2s", "co2", "lost_circulation", "abnormal_pressure", "depleted_zone", "narrow_window", "wellbore_instability"]
+          },
+          "severity": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+          "description": { "type": "string" },
+          "mitigation": { "type": "string" }
+        }
+      }
+    },
+    "riserMargin": {
+      "type": "object",
+      "description": "Subsea only - Riser margin requirements",
+      "properties": {
+        "required": { "type": "boolean" },
+        "value": { "type": "number" },
+        "unit": { "type": "string", "enum": ["ppg", "sg"] }
+      }
+    },
+    "chokeLineData": {
+      "type": "object",
+      "description": "Subsea only - Choke line specifications",
+      "properties": {
+        "length": { "type": "number", "description": "feet" },
+        "internalDiameter": { "type": "number", "description": "inches" },
+        "clflAtKillRate": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "pumpRate": { "type": "number", "description": "SPM or gpm" },
+              "mudWeight": { "type": "number" },
+              "clfl": { "type": "number", "description": "psi" }
+            }
+          }
+        }
+      }
+    },
+    "accessControl": {
+      "type": "string",
+      "enum": ["organization", "well-assigned"],
+      "description": "Who can access this well data",
+      "default": "organization"
+    },
+    "assignedUsers": {
+      "type": "array",
+      "description": "User IDs with access when accessControl is 'well-assigned'",
+      "items": { "type": "string" }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" },
+        "createdBy": { "type": "string" },
+        "sourceDocument": { "type": "string", "description": "Original DOP/Well Programme reference" },
+        "version": { "type": "string" }
+      }
+    }
+  }
+}

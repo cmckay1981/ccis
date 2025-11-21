@@ -1,0 +1,77 @@
+{
+  "checklistId": "DWOP-CL-102",
+  "title": "Land Rig Conductor Driving Checklist",
+  "section": "Conductor Installation",
+  "rigTypes": ["LAND"],
+  "bopType": "surface",
+  "note": "Land rigs typically drive conductor rather than jet - different from offshore operations",
+  "breakoutRoom": "A",
+  "participants": ["Drilling Engineer", "Toolpusher", "Driller"],
+  "aiParticipant": true,
+  "categories": [
+    {
+      "category": "Pre-Drive Preparation",
+      "items": [
+        {"item": "Soil/geotechnical survey reviewed", "critical": true},
+        {"item": "Conductor pipe inspected"},
+        {"item": "Pile driver equipment on location"},
+        {"item": "Drive depth target confirmed"},
+        {"item": "Refusal criteria established", "critical": true},
+        {"item": "Blow count requirements defined"},
+        {"item": "Conductor handling equipment ready"}
+      ]
+    },
+    {
+      "category": "Shallow Hazards",
+      "items": [
+        {"item": "Shallow gas survey reviewed"},
+        {"item": "Underground utilities located and marked", "critical": true},
+        {"item": "Water table depth known"},
+        {"item": "Previous wellbores in area identified"},
+        {"item": "Diverter system ready (if drilling conductor)"}
+      ]
+    },
+    {
+      "category": "Driving Operations",
+      "items": [
+        {"item": "Pile driver capacity vs conductor weight verified"},
+        {"item": "Driving sequence planned"},
+        {"item": "Verticality monitoring method"},
+        {"item": "Blow count recording procedure"},
+        {"item": "Maximum blow count before reassessment"},
+        {"item": "Welding procedures for conductor joints (if required)"}
+      ]
+    },
+    {
+      "category": "Alternative Methods",
+      "items": [
+        {"item": "Drilled conductor contingency available"},
+        {"item": "Auger equipment on standby (if soil conditions uncertain)"},
+        {"item": "Cement conductor contingency"},
+        {"item": "Shallow casing alternative if conductor fails"}
+      ]
+    },
+    {
+      "category": "Completion & Verification",
+      "items": [
+        {"item": "Final depth verification"},
+        {"item": "Verticality check"},
+        {"item": "Conductor head installation"},
+        {"item": "Cellar drainage confirmed"},
+        {"item": "Ready for surface hole drilling"}
+      ]
+    }
+  ],
+  "aiQuestions": [
+    "Geotechnical report shows clay layer at 15m - what's your plan if conductor refuses above target depth?",
+    "Blow count limit is 100 blows per foot - at what point do you switch to drilling the conductor?",
+    "Previous well 200m away had conductor driving issues - have you reviewed that experience?",
+    "Conductor verticality tolerance is 1° - how will you verify this during driving?",
+    "If you encounter shallow water, what's your contingency for conductor stability?",
+    "Pile driver is diesel hammer - do you have backup equipment if it fails?"
+  ],
+  "actionItemTemplate": {
+    "fields": ["item", "owner", "dueDate", "status", "notes"]
+  },
+  "tags": ["dwop", "checklist", "land-rig", "conductor", "pile-driving"]
+}

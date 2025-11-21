@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-101-01",
+  "moduleId": "LEAD-101",
+  "courseId": "LEAD",
+  "title": "What Leadership Actually Controls",
+  "type": "lesson",
+  "content": "Leadership doesn't control outcomes directly. It shapes the conditions that make good outcomes more likely: team clarity, resource flow, decision speed, and willingness to surface problems early. Leaders who confuse activity with impact burn out their teams while missing the signals that matter. Your job is creating an environment where competent people can perform at their best.",
+  "mcq": {
+    "question": "A supervisor spends most of their shift walking the floor, asking detailed questions about every task, and correcting minor deviations immediately. Productivity is declining and experienced workers seem disengaged. What is the most likely issue?",
+    "options": {
+      "A": "The supervisor is maintaining necessary standards",
+      "B": "The team needs more training on procedures",
+      "C": "The supervisor is confusing presence with micromanagement",
+      "D": "Experienced workers are becoming complacent"
+    },
+    "correctOption": "C",
+    "explanation": "Visible leadership means being accessible and aware, not controlling every detail. This supervisor is managing tasks instead of leading people. The decline in engagement signals that competent workers feel untrusted, which reduces initiative and ownership."
+  },
+  "openQuestions": [
+    "What are three specific conditions you control that directly affect your team's ability to perform well?",
+    "Think of a recent situation where you focused on activity instead of impact. What would you do differently now?"
+  ]
+}

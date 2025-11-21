@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-105-01",
+  "moduleId": "LEAD-105",
+  "courseId": "LEAD",
+  "title": "Standards vs Punishment",
+  "type": "lesson",
+  "content": "Accountability means holding a clear standard and addressing deviations consistently. Punishment means inflicting consequences to create fear-based compliance. The difference is intent and consistency. Leaders who enforce standards explain why the standard exists, address issues immediately regardless of who's involved, and focus on correction rather than blame. Punitive cultures enforce rules selectively, make examples of people, and create fear that prevents honest communication. High-performing teams need accountability. Toxic cultures are built on punishment.",
+  "mcq": {
+    "question": "Two team members commit similar procedural violations within the same week. One is a high performer who's well-liked. The other is a marginal performer with a history of issues. The leader addresses the marginal performer immediately with formal documentation but has an informal conversation with the high performer and takes no further action. Three weeks later, team morale has declined noticeably. What happened?",
+    "options": {
+      "A": "The leader appropriately tailored the response based on each person's track record",
+      "B": "The inconsistent response signaled that standards are negotiable based on favoritism",
+      "C": "The marginal performer's history justified different treatment",
+      "D": "Team morale issues are unrelated to the leader's response"
+    },
+    "correctOption": "B",
+    "explanation": "Inconsistent accountability destroys trust faster than no accountability at all. The team learned that standards apply differently based on who you are, not what you did. High performers should be held to the same standards as everyone else—if anything, higher. When leaders play favorites, the organization loses faith in fairness and people start gaming the system rather than performing. Accountability requires consistency, even when it's uncomfortable."
+  },
+  "openQuestions": [
+    "Describe a time you enforced a standard inconsistently. What was your reasoning, and what was the result?",
+    "How do you ensure you're holding everyone to the same standard regardless of personal relationship or performance history?"
+  ]
+}

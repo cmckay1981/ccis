@@ -1,0 +1,78 @@
+{
+  "moduleId": "ADO-108",
+  "courseId": "ADO",
+  "title": "Wellbore Stability",
+  "description": "Wellbore stability is the balance between formation strength, mud properties, and pressure regime. In HPHT wells with reactive shales and tight windows, maintaining stability is critical for reaching TD without stuck pipe or losses.",
+  "objectives": [
+    "Understand the geomechanical principles of wellbore stability",
+    "Recognize instability warning signs in real-time",
+    "Implement mud and operational responses to instability",
+    "Balance stability requirements against window constraints"
+  ],
+  "keyTopics": [
+    {
+      "topic": "Geomechanical Principles",
+      "content": "Wellbore stability depends on three stress fields: overburden (vertical), maximum horizontal, and minimum horizontal stress. The mud weight window is bounded by collapse pressure (below which the hole caves) and fracture pressure (above which the hole breaks down)."
+    },
+    {
+      "topic": "Shale Instability",
+      "content": "Reactive shales absorb water and swell, leading to sloughing, tight hole, and packoff. Time-dependent failure means a stable hole today may be unstable tomorrow. OBM reduces water activity but doesn't eliminate the problem in highly reactive formations."
+    },
+    {
+      "topic": "Chemical Inhibition",
+      "content": "Water activity, salinity, and inhibitive additives affect shale-fluid interaction. The mud system must be compatible with the formation. In WBM sections, inhibition is critical. Even OBM can destabilize shales if water content isn't controlled."
+    },
+    {
+      "topic": "Warning Signs",
+      "content": "Cavings at shakers (splintery = stress failure, blocky = shale hydration). Increasing background gas. Tight hole while tripping. Fill on bottom. Increasing torque/drag without explanation. Recognize these early."
+    },
+    {
+      "topic": "Response Options",
+      "content": "Increase MW (if window allows). Adjust mud chemistry for inhibition. Increase circulation for better cleaning. Wiper trips. In severe cases, set casing early. The cost of setting casing early is far less than losing the wellbore."
+    },
+    {
+      "topic": "Stability vs Window",
+      "content": "Sometimes collapse pressure exceeds pore pressure, or stability requires MW that risks losses. This is the 'unstable window' problem. MPD, continuous circulation, and casing strategy are tools to navigate this."
+    }
+  ],
+  "referenceWellContext": {
+    "wellName": "Phoenix-702",
+    "concerns": [
+      "Multiple mud system transitions (Seawater → WBM → OBM)",
+      "Potential reactive shales in intermediate sections",
+      "Tight window at TD leaves little room for MW increase",
+      "Long open hole times increase exposure"
+    ]
+  },
+  "operationalPrinciples": [
+    "Stability is time-dependent - don't leave hole open longer than necessary",
+    "Cavings tell a story - learn to read them",
+    "Early casing beats lost wellbore",
+    "Monitor trends, not just instantaneous values",
+    "Mud chemistry matters as much as mud weight"
+  ],
+  "lessons": [
+    {
+      "lessonId": "ADO-108-01",
+      "title": "Geomechanics for Drillers",
+      "file": "lessons/ado-108-01.json"
+    },
+    {
+      "lessonId": "ADO-108-02",
+      "title": "Shale Instability & Inhibition",
+      "file": "lessons/ado-108-02.json"
+    },
+    {
+      "lessonId": "ADO-108-03",
+      "title": "Recognizing Instability",
+      "file": "lessons/ado-108-03.json"
+    },
+    {
+      "lessonId": "ADO-108-04",
+      "title": "Response & Remediation",
+      "file": "lessons/ado-108-04.json"
+    }
+  ],
+  "documentId": "ADO-108",
+  "tags": ["wellbore-stability", "geomechanics", "shale", "cavings", "advanced-drilling"]
+}

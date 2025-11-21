@@ -1,0 +1,77 @@
+{
+  "moduleId": "ADO-110",
+  "courseId": "ADO",
+  "title": "Tripping Operations in Tight Windows",
+  "description": "Tripping in HPHT and tight-window wells requires precise management of swab and surge pressures. A swab kick or surge-induced loss can quickly escalate in environments with limited kick tolerance. This module covers safe tripping practices.",
+  "objectives": [
+    "Calculate and manage swab/surge pressures",
+    "Execute connection flow checks and trip monitoring",
+    "Implement trip margins and pump-out-of-hole procedures",
+    "Respond to tripping-induced well control events"
+  ],
+  "keyTopics": [
+    {
+      "topic": "Swab and Surge Fundamentals",
+      "content": "Pipe movement displaces fluid, creating pressure changes. Pulling up (swab) reduces BHP - risk of kick. Running in (surge) increases BHP - risk of losses. Effect increases with speed, pipe OD, hole size, and mud rheology."
+    },
+    {
+      "topic": "Trip Margin",
+      "content": "Trip margin is extra MW added to compensate for swab effect. Typical 0.2-0.5 ppg depending on well conditions. On Phoenix-702, 0.3 ppg trip margin is specified - but actual swab depends on trip speed and rheology."
+    },
+    {
+      "topic": "Connection Flow Checks",
+      "content": "Before and after each connection, verify well is static. Typical: 5 minutes, <0.5 bbl acceptable. On HPHT wells with limited kick tolerance, flow checks may be more stringent. Don't assume - verify every connection."
+    },
+    {
+      "topic": "Pump Out of Hole",
+      "content": "Maintaining circulation while tripping eliminates swab effect and maintains ECD. Takes longer but prevents swab kicks. In tight-window HPHT wells, the extra time is worth the reduced risk."
+    },
+    {
+      "topic": "PWD Monitoring During Trips",
+      "content": "Real-time PWD shows actual BHP during trips. Compare to pore pressure - if BHP approaches PP, slow down or pump. Don't rely on calculated swab - measure it. PWD is essential in tight windows."
+    },
+    {
+      "topic": "Tripping Through Problem Zones",
+      "content": "Tight spots, reactive shales, differential sticking zones. Plan trip speed for each section. Note problem depths on the trip sheet. Extra vigilance when pulling through known problem areas."
+    }
+  ],
+  "referenceWellContext": {
+    "wellName": "Phoenix-702",
+    "tripMargin": "0.3 ppg",
+    "flowCheckDuration": "5 minutes",
+    "acceptableFlow": "0.5 bbl",
+    "pitVolumeTolerance": "10 bbl",
+    "concerns": "8 bbl kick tolerance at TD - no room for swab kicks"
+  },
+  "operationalPrinciples": [
+    "Speed kills in tight windows - slow and controlled",
+    "Trust PWD, not assumptions",
+    "Flow check every connection in critical sections",
+    "Pump out of hole when margins are thin",
+    "Know your problem zones before you start"
+  ],
+  "lessons": [
+    {
+      "lessonId": "ADO-110-01",
+      "title": "Swab & Surge in Practice",
+      "file": "lessons/ado-110-01.json"
+    },
+    {
+      "lessonId": "ADO-110-02",
+      "title": "Trip Monitoring & Flow Checks",
+      "file": "lessons/ado-110-02.json"
+    },
+    {
+      "lessonId": "ADO-110-03",
+      "title": "Pump Out of Hole Procedures",
+      "file": "lessons/ado-110-03.json"
+    },
+    {
+      "lessonId": "ADO-110-04",
+      "title": "Responding to Trip-Induced Events",
+      "file": "lessons/ado-110-04.json"
+    }
+  ],
+  "documentId": "ADO-110",
+  "tags": ["tripping", "swab", "surge", "trip-margin", "flow-check", "advanced-drilling"]
+}

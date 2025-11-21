@@ -1,0 +1,239 @@
+{
+  "volumeId": "vol-3",
+  "title": "Volume 3: Equipment & Testing",
+  "description": "Well control equipment specifications, requirements, and testing procedures. Includes rig-specific templates for customization.",
+  "sections": [
+    {
+      "sectionId": "3.1",
+      "title": "BOP Stack Systems",
+      "file": "sections/3-1-bop-systems.json",
+      "topics": [
+        "General requirements",
+        "Surface BOP configurations",
+        "Subsea BOP configurations",
+        "Ram types and ratings",
+        "Annular preventers",
+        "Shear capability requirements",
+        "Working pressure ratings"
+      ]
+    },
+    {
+      "sectionId": "3.2",
+      "title": "BOP Control Systems",
+      "file": "sections/3-2-bop-control.json",
+      "topics": [
+        "Surface BOP controls",
+        "Subsea BOP controls",
+        "Accumulator systems",
+        "Emergency control systems",
+        "Autoshear",
+        "Deadman",
+        "Acoustic backup",
+        "ROV intervention capability"
+      ]
+    },
+    {
+      "sectionId": "3.3",
+      "title": "Accumulator Systems",
+      "file": "sections/3-3-accumulators.json",
+      "topics": [
+        "Capacity requirements",
+        "Precharge pressure",
+        "Charge time requirements",
+        "Drawdown test procedures",
+        "API 16D compliance"
+      ]
+    },
+    {
+      "sectionId": "3.4",
+      "title": "Choke & Kill Systems",
+      "file": "sections/3-4-choke-kill.json",
+      "topics": [
+        "Choke manifold specifications (3K/5K/10K/15K)",
+        "Kill line requirements",
+        "Choke line requirements",
+        "Valve specifications",
+        "Surface vs subsea requirements",
+        "Remote choke operation"
+      ]
+    },
+    {
+      "sectionId": "3.5",
+      "title": "Mud Gas Separator",
+      "file": "sections/3-5-mgs.json",
+      "topics": [
+        "Design requirements",
+        "Capacity sizing",
+        "U-tube configuration",
+        "Vent line specifications",
+        "Inspection requirements",
+        "Operating procedures"
+      ]
+    },
+    {
+      "sectionId": "3.6",
+      "title": "Diverter System",
+      "file": "sections/3-6-diverter.json",
+      "topics": [
+        "Diverter requirements",
+        "Line sizing",
+        "Valve specifications",
+        "Overboard routing",
+        "Testing requirements"
+      ]
+    },
+    {
+      "sectionId": "3.7",
+      "title": "Gas Handler System",
+      "file": "sections/3-7-gas-handler.json",
+      "topics": [
+        "System description",
+        "Operating criteria",
+        "Back pressure management",
+        "Installation requirements",
+        "Testing procedures",
+        "Operating scenarios"
+      ]
+    },
+    {
+      "sectionId": "3.8",
+      "title": "Inside BOP & Float Equipment",
+      "file": "sections/3-8-ibop-floats.json",
+      "topics": [
+        "IBOP requirements",
+        "Gray valve",
+        "Drop-in check valve",
+        "Float valve specifications",
+        "Testing requirements"
+      ]
+    },
+    {
+      "sectionId": "3.9",
+      "title": "Auxiliary Equipment",
+      "file": "sections/3-9-auxiliary.json",
+      "topics": [
+        "Trip tank",
+        "Active mud system",
+        "Rig floor manifold",
+        "Cementing lines",
+        "Flare system",
+        "Degasser"
+      ]
+    },
+    {
+      "sectionId": "3.10",
+      "title": "HPHT Equipment Requirements",
+      "file": "sections/3-10-hpht-equipment.json",
+      "topics": [
+        "BOP requirements (HPHT)",
+        "Choke/kill manifold (HPHT)",
+        "Kill system",
+        "Kick assembly",
+        "MGS requirements (HPHT)",
+        "Auxiliary equipment (HPHT)"
+      ]
+    },
+    {
+      "sectionId": "3.11",
+      "title": "Well Intervention Equipment",
+      "file": "sections/3-11-intervention-equipment.json",
+      "topics": [
+        "Coiled tubing equipment",
+        "Slickline equipment",
+        "Wireline equipment",
+        "Snubbing equipment",
+        "Completion & workover riser",
+        "Subsea test tree",
+        "IWOCS"
+      ]
+    },
+    {
+      "sectionId": "3.12",
+      "title": "BOP Testing Procedures",
+      "file": "sections/3-12-bop-testing.json",
+      "topics": [
+        "Pressure test requirements",
+        "Function test requirements",
+        "Test frequencies",
+        "Test pressures",
+        "Test documentation",
+        "Inflow testing"
+      ]
+    },
+    {
+      "sectionId": "3.13",
+      "title": "Equipment Testing Procedures",
+      "file": "sections/3-13-equipment-testing.json",
+      "topics": [
+        "Accumulator drawdown test",
+        "Choke manifold testing",
+        "Kill line testing",
+        "MGS testing",
+        "Diverter testing",
+        "IBOP testing",
+        "Casing testing",
+        "Wellhead testing"
+      ]
+    },
+    {
+      "sectionId": "3.14",
+      "title": "Inspection & Maintenance",
+      "file": "sections/3-14-inspection.json",
+      "topics": [
+        "Inspection frequency",
+        "Repair requirements",
+        "Remanufacture standards",
+        "Maintenance schedules",
+        "Documentation requirements"
+      ]
+    }
+  ],
+  "rigSpecificTemplates": [
+    {
+      "templateId": "bop-test-matrix",
+      "title": "BOP Test Matrix Template",
+      "file": "templates/bop-test-matrix.json",
+      "description": "Weekly BOP test configuration matrix - customize per rig"
+    },
+    {
+      "templateId": "valve-lineup",
+      "title": "Valve Lineup Template",
+      "file": "templates/valve-lineup.json",
+      "description": "Choke/kill/standpipe manifold valve positions"
+    },
+    {
+      "templateId": "accumulator-test",
+      "title": "Accumulator Test Form",
+      "file": "templates/accumulator-test.json",
+      "description": "Charge time and drawdown test documentation"
+    },
+    {
+      "templateId": "function-test",
+      "title": "BOP Function Test Form",
+      "file": "templates/function-test.json",
+      "description": "Function test timing and flow documentation"
+    }
+  ],
+  "appendices": [
+    {
+      "appendixId": "A",
+      "title": "Equipment Specifications Summary",
+      "file": "appendices/a-equipment-specs.json"
+    },
+    {
+      "appendixId": "B",
+      "title": "Test Frequency Matrix",
+      "file": "appendices/b-test-frequency.json"
+    },
+    {
+      "appendixId": "C",
+      "title": "MGS Checklist",
+      "file": "appendices/c-mgs-checklist.json"
+    }
+  ],
+  "clientCustomization": {
+    "replaceable": ["Rig-specific equipment", "Test procedures", "Valve configurations"],
+    "addable": ["Rig-specific schematics", "Additional equipment", "Custom test forms"],
+    "note": "This volume is most commonly customized per rig/vessel"
+  }
+}

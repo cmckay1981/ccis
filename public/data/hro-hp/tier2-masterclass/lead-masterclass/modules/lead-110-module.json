@@ -1,0 +1,14 @@
+{
+  "moduleId": "LEAD-110",
+  "courseId": "LEAD",
+  "title": "Advanced Communication",
+  "description": "Covers strategic messaging during normal operations, stress, and post-incident; leading difficult conversations like layoffs and restructuring; cross-cultural and multi-generational communication; remote team leadership; and crisis communication strategy.",
+  "order": 10,
+  "lessonIds": [
+    "LEAD-110-01",
+    "LEAD-110-02",
+    "LEAD-110-03",
+    "LEAD-110-04",
+    "LEAD-110-05"
+  ]
+}

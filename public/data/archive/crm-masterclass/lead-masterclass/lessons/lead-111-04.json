@@ -1,0 +1,25 @@
+{
+  "lessonId": "LEAD-111-04",
+  "moduleId": "LEAD-111",
+  "courseId": "LEAD",
+  "title": "Personal Leadership Development Planning",
+  "type": "reflection",
+  "content": "Intentional leadership development requires assessing current capability honestly, identifying specific growth areas, creating development plan with measurable progress, and holding yourself accountable to growth. Most leaders have vague development goals ('be a better communicator') without concrete actions or progress measures. Effective development is specific, actionable, and tracked over time.",
+  "scenario": {
+    "story": "You've completed this leadership course and identified several areas for growth. You want to create a development plan that actually drives improvement rather than becoming another forgotten intention. You have normal workload demands and limited dedicated development time. You need an approach that creates real capability growth within the next 6-12 months.",
+    "options": {
+      "A": "Identify your top three development priorities, define specific observable behaviors for each, and build practice into weekly routine with monthly self-assessment",
+      "B": "Set broad goals to become better at all the leadership competencies covered in the course",
+      "C": "Wait for development opportunities to emerge naturally through work challenges",
+      "D": "Ask your boss to send you to additional leadership training programs"
+    },
+    "recommendedResponse": "A",
+    "explanation": "Option A creates an actionable development plan: prioritize (you can't improve everything simultaneously), make it concrete (specific behaviors you can practice and observe), integrate it into routine (dedicated development time rarely happens), and track progress (monthly check helps sustain focus). Option B is too broad to drive action—'better at communication' doesn't tell you what to practice tomorrow. Option C is passive—growth requires intentional practice, not just hoping experience teaches you. Option D outsources development to training rather than embedding it in daily practice. Real development happens through deliberate practice of specific skills in real situations, not just learning concepts."
+  },
+  "openQuestions": [
+    "Based on this course, what are your top three leadership development priorities right now?",
+    "For each priority, what specific behavior could you practice this week? How will you know if you're improving?",
+    "Who will hold you accountable to your development goals, and how often will you review progress together?",
+    "What leadership capability do you most want to be known for in three years? What needs to change to get there?"
+  ]
+}

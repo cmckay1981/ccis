@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-TW-06",
+  "moduleId": "HRO-HP-ESS-TW",
+  "courseId": "HRO-HP-ESS",
+  "title": "Team Resilience",
+  "type": "lesson",
+  "content": "Resilient teams maintain performance under pressure and recover quickly from setbacks. Key elements include backup behavior (stepping in to help struggling members), flexibility (adjusting to changing conditions), and maintaining communication when stressed. Resilience is built before pressure hits—through training, relationship building, and practicing under simulated stress.",
+  "mcq": {
+    "question": "A team faces an unexpected crisis. Initially they respond well, but as pressure continues, communication decreases, members focus only on their own tasks, and mistakes increase. What is happening?",
+    "options": {
+      "A": "Normal stress response—performance always degrades under pressure",
+      "B": "Team resilience is being depleted—they're reverting to individual coping",
+      "C": "Leadership failure—someone should take control",
+      "D": "Training gap—they weren't prepared for this situation"
+    },
+    "correctOption": "B",
+    "explanation": "Under sustained pressure, teams can deplete their resilience capacity and revert from coordinated team behavior to individual survival mode. Communication reduction and narrowing focus are warning signs of resilience depletion."
+  },
+  "openQuestions": [
+    "What are the early warning signs that your team is approaching its resilience limits under pressure?",
+    "How has your team built resilience before facing high-pressure situations? What could strengthen this preparation?"
+  ]
+}

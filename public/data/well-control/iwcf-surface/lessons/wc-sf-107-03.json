@@ -1,0 +1,63 @@
+{
+  "lessonId": "WC-SF-107-03",
+  "moduleId": "WC-SF-107",
+  "courseId": "WC-SF",
+  "title": "Final Circulating Pressure (FCP)",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "Final Circulating Pressure is the drill pipe pressure you'll maintain once kill weight mud reaches the bit. FCP is lower than ICP because the heavier kill mud has higher friction loss in the drillstring. The formula: FCP = (Kill MW \u00f7 Current MW) \u00d7 SCR Pressure. This ratio adjusts the circulating pressure for the new, heavier fluid. During the kill, you transition from ICP to FCP as kill mud fills the drillstring.",
+  "formula": {
+    "equation": "FCP (psi) = (Kill MW (ppg) \u00f7 Current MW (ppg)) \u00d7 SCR Pressure (psi)",
+    "variables": {
+      "FCP": "Final circulating pressure on drill pipe",
+      "Kill MW": "Kill mud weight",
+      "Current MW": "Original mud weight",
+      "SCR Pressure": "Slow circulating rate pressure"
+    },
+    "example": {
+      "given": "Kill MW = 12.0 ppg, Current MW = 11.0 ppg, SCR = 600 psi",
+      "calculation": "FCP = (12.0 \u00f7 11.0) \u00d7 600 = 1.09 \u00d7 600 = 654 psi"
+    }
+  },
+  "mcq": {
+    "question": "Kill MW is 13.0 ppg, current MW is 12.0 ppg, and SCR pressure is 720 psi. What is the FCP?",
+    "options": {
+      "A": "663 psi",
+      "B": "720 psi",
+      "C": "780 psi",
+      "D": "936 psi"
+    },
+    "correctOption": "C",
+    "explanation": "FCP = (13.0 \u00f7 12.0) \u00d7 720 = 1.083 \u00d7 720 = 780 psi. Note that FCP is higher than SCR because kill mud is denser than original mud."
+  },
+  "openQuestions": [
+    "Why is FCP always higher than the original SCR pressure?",
+    "Explain why FCP is lower than ICP."
+  ],
+  "practiceProblems": [
+    {
+      "problem": "Kill MW = 11.5 ppg, Current MW = 10.5 ppg, SCR = 550 psi",
+      "answer": "602 psi"
+    },
+    {
+      "problem": "Kill MW = 14.0 ppg, Current MW = 12.5 ppg, SCR = 800 psi",
+      "answer": "896 psi"
+    },
+    {
+      "problem": "Kill MW = 10.8 ppg, Current MW = 10.0 ppg, SCR = 500 psi",
+      "answer": "540 psi"
+    }
+  ],
+  "examTip": "Remember: FCP formula uses the RATIO of mud weights multiplied by SCR. Many candidates confuse this with the ICP formula. ICP adds, FCP multiplies a ratio.",
+  "documentId": "WC-SF-107-03",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-107",
+    "WC-SF-107-03"
+  ]
+}

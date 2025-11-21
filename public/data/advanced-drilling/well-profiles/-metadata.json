@@ -1,0 +1,58 @@
+{
+  "collectionId": "well-profiles",
+  "title": "Well Profiles for Daily Coaching",
+  "description": "Company-uploaded well data used to generate well-specific coaching questions. Data is CONFIDENTIAL to each organization.",
+  "accessModel": {
+    "public": "Question templates and coaching logic only",
+    "organization": "Well profiles visible to all org members",
+    "well-assigned": "Well profiles visible only to assigned crew"
+  },
+  "questionGeneration": {
+    "type": "dynamic",
+    "storage": "ephemeral - questions generated on-demand, not stored",
+    "injection": "Real well values injected into question templates"
+  },
+  "mappedQuestionCategories": [
+    {
+      "category": "PRESSURE_CALCULATIONS",
+      "wellDataUsed": ["ppfg", "casingProgram.mudWeight", "waterDepth"]
+    },
+    {
+      "category": "KICK_TOLERANCE",
+      "wellDataUsed": ["kickTolerance", "casingProgram", "ppfg"]
+    },
+    {
+      "category": "KILL_CALCULATIONS",
+      "wellDataUsed": ["casingProgram.mudWeight", "ppfg.porePressure", "targetDepth"]
+    },
+    {
+      "category": "MAASP",
+      "wellDataUsed": ["casingProgram.lotEmw", "casingProgram.mudWeight", "casingProgram.settingDepth"]
+    },
+    {
+      "category": "RISER_MARGIN",
+      "wellDataUsed": ["waterDepth", "riserMargin", "casingProgram.mudWeight"],
+      "applicableTo": "subsea"
+    },
+    {
+      "category": "CLFL_CALCULATIONS",
+      "wellDataUsed": ["chokeLineData", "casingProgram.mudWeight"],
+      "applicableTo": "subsea"
+    },
+    {
+      "category": "HAZARD_AWARENESS",
+      "wellDataUsed": ["hazards", "classification"]
+    }
+  ],
+  "schema": "_schema.json",
+  "profiles": [
+    {
+      "wellId": "CC-PHOENIX-702",
+      "file": "cc-phoenix-702.json",
+      "wellName": "Phoenix-702",
+      "organizationId": "CLAYMORE_COLT",
+      "isExample": true
+    }
+  ],
+  "profileCount": 1
+}

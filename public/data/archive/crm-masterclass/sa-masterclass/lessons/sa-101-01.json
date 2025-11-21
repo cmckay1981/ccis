@@ -1,0 +1,23 @@
+{
+  "lessonId": "SA-101-01",
+  "moduleId": "SA-101",
+  "courseId": "SA",
+  "title": "What Situational Awareness Actually Is",
+  "type": "lesson",
+  "content": "Situational awareness is knowing what's happening around you, understanding what it means, and predicting what will happen next. It's not passive observation—it's active mental engagement with your environment. Without SA, you're reacting to events rather than anticipating them, which in high-stakes operations often means you're already too late.",
+  "mcq": {
+    "question": "An operator is monitoring a control panel during routine operations. They notice all gauges are in normal range but haven't thought about whether conditions might change over the next hour. What level of SA are they demonstrating?",
+    "options": {
+      "A": "Complete situational awareness",
+      "B": "Level 1 only—perception without comprehension or projection",
+      "C": "Adequate SA for routine operations",
+      "D": "No situational awareness"
+    },
+    "correctOption": "B",
+    "explanation": "Seeing that gauges are normal is perception (Level 1). SA requires understanding what those readings mean in context (Level 2) and anticipating how conditions might evolve (Level 3). Noticing without thinking ahead is incomplete SA."
+  },
+  "openQuestions": [
+    "Describe a time when you had good perception but failed to understand or anticipate what was happening. What was the result?",
+    "How would you explain situational awareness to a new operator in one sentence?"
+  ]
+}

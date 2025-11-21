@@ -1,0 +1,79 @@
+{
+  "categoryId": "RIG_MOVE",
+  "title": "Rig Move & Marine Operations - AI Probing Questions",
+  "breakoutRoom": "A",
+  "targetParticipants": ["OIM", "Marine Superintendent", "Logistics Coordinator", "HSE"],
+  "questions": [
+    {
+      "questionId": "RM-001",
+      "question": "What is the maximum weather window you need for rig move? What if weather deteriorates mid-move?",
+      "type": "what_if",
+      "focus": "Weather contingency",
+      "expectedResponse": "Clear understanding of weather limits and hold/abort criteria"
+    },
+    {
+      "questionId": "RM-002",
+      "question": "If primary positioning system fails during setup, what's your contingency?",
+      "type": "what_if",
+      "focus": "Equipment redundancy",
+      "expectedResponse": "Backup positioning method and procedures"
+    },
+    {
+      "questionId": "RM-003",
+      "question": "The programme shows 24 hours for positioning - is this realistic given current vessel availability?",
+      "type": "assumption_challenge",
+      "focus": "Timeline realism",
+      "expectedResponse": "Confirmation of vessel schedule alignment"
+    },
+    {
+      "questionId": "RM-004",
+      "question": "Have all permits and notifications been completed for this location?",
+      "type": "verification",
+      "focus": "Regulatory compliance",
+      "expectedResponse": "List of permits obtained and pending"
+    },
+    {
+      "questionId": "RM-005",
+      "question": "What's the minimum acceptable accuracy for final position before spud?",
+      "type": "verification",
+      "focus": "Positioning requirements",
+      "expectedResponse": "Position tolerance and verification method"
+    },
+    {
+      "questionId": "RM-006",
+      "question": "Your anchor pattern shows 8 anchors but only 6 AHV runs are scheduled - how does this work?",
+      "type": "gap_identification",
+      "focus": "Logistics planning",
+      "expectedResponse": "Clarification of anchor deployment sequence"
+    },
+    {
+      "questionId": "RM-007",
+      "question": "If standby vessel is called away for emergency during rig move, what's your backup?",
+      "type": "what_if",
+      "focus": "Emergency response",
+      "expectedResponse": "Alternative standby arrangements"
+    },
+    {
+      "questionId": "RM-008",
+      "question": "Supply vessel schedule shows first supply 48 hours after positioning - do you have sufficient consumables for initial operations?",
+      "type": "assumption_challenge",
+      "focus": "Logistics timing",
+      "expectedResponse": "Confirmation of onboard inventory vs consumption rate"
+    },
+    {
+      "questionId": "RM-009",
+      "question": "What's the maximum current/wind you can operate in at this location?",
+      "type": "verification",
+      "focus": "Environmental limits",
+      "expectedResponse": "Defined operating envelope"
+    },
+    {
+      "questionId": "RM-010",
+      "question": "The seabed survey is 18 months old - has anything changed that could affect anchor holding or spud location?",
+      "type": "assumption_challenge",
+      "focus": "Data currency",
+      "expectedResponse": "Assessment of survey validity"
+    }
+  ],
+  "tags": ["dwop", "ai-questions", "rig-move", "marine"]
+}

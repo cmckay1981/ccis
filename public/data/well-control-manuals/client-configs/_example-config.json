@@ -1,0 +1,125 @@
+{
+  "configId": "example-client",
+  "clientName": "Example Drilling Company",
+  "configType": "drilling-contractor",
+  "description": "Example configuration showing all customization options",
+
+  "branding": {
+    "companyName": "Example Drilling Company",
+    "shortName": "EDC",
+    "logo": "assets/client-logo.png",
+    "documentPrefix": "EDC-WCM",
+    "revisionScheme": "Rev XX",
+    "confidentialityNotice": "CONFIDENTIAL - Example Drilling Company"
+  },
+
+  "documentControl": {
+    "numberingFormat": "{prefix}-{volume}-{section}-{revision}",
+    "approvalWorkflow": ["Technical Author", "Well Control Specialist", "Operations Manager"],
+    "reviewFrequency": "Annual",
+    "controlledDocumentNotice": "UNCONTROLLED WHEN PRINTED"
+  },
+
+  "volumeCustomizations": {
+    "vol-1": {
+      "include": true,
+      "overrides": {
+        "sections": {
+          "1.6-roles": {
+            "customRoles": [
+              {
+                "roleId": "custom-role-1",
+                "title": "MPD Supervisor",
+                "responsibilities": ["MPD system oversight", "Barrier verification during MPD"]
+              }
+            ]
+          },
+          "1.7-certifications": {
+            "additionalRequirements": [
+              {
+                "position": "Driller",
+                "requirement": "Company MPD certification within 6 months of assignment"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "vol-2": {
+      "include": true,
+      "overrides": {
+        "sections": {
+          "2.3-shut-in": {
+            "preferredMethod": "hard",
+            "reactionTimeTarget": {
+              "drilling": "60 seconds",
+              "tripping": "90 seconds"
+            }
+          }
+        }
+      }
+    },
+    "vol-3": {
+      "include": true,
+      "rigSpecific": {
+        "rigName": "Example Rig 1",
+        "bopConfiguration": "18-3/4\" 15K DDBOP",
+        "customTestProcedures": "rig-configs/example-rig-1/",
+        "valveLineups": "rig-configs/example-rig-1/valve-lineups/"
+      }
+    },
+    "vol-4": {
+      "include": true,
+      "overrides": {
+        "units": "metric",
+        "killSheetFormat": "company-standard"
+      }
+    }
+  },
+
+  "terminology": {
+    "replacements": [
+      {"from": "Toolpusher", "to": "Night Toolpusher"},
+      {"from": "OIM", "to": "Rig Manager"},
+      {"from": "Drilling Section Leader", "to": "Senior Toolpusher"}
+    ]
+  },
+
+  "additionalContent": {
+    "appendices": [
+      {
+        "appendixId": "client-a1",
+        "title": "Company Emergency Contacts",
+        "file": "client-content/emergency-contacts.json"
+      }
+    ],
+    "policies": [
+      {
+        "policyId": "client-p1",
+        "title": "Company H2S Policy",
+        "file": "client-content/h2s-policy.json",
+        "insertAfter": "1.5-emergency-levels"
+      }
+    ]
+  },
+
+  "exclusions": {
+    "sections": [],
+    "topics": [],
+    "note": "List section IDs to exclude from generated manual"
+  },
+
+  "outputSettings": {
+    "formats": ["HTML", "PDF"],
+    "pdfSettings": {
+      "pageSize": "A4",
+      "includeWatermark": true,
+      "watermarkText": "CONTROLLED DOCUMENT"
+    },
+    "htmlSettings": {
+      "enableSearch": true,
+      "enableOffline": true,
+      "theme": "default"
+    }
+  }
+}

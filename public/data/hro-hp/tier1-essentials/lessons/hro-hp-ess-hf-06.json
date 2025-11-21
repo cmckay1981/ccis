@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-HF-06",
+  "moduleId": "HRO-HP-ESS-HF",
+  "courseId": "HRO-HP-ESS",
+  "title": "Error Prevention",
+  "type": "lesson",
+  "content": "Error prevention uses barriers to stop errors from occurring and recovery strategies to catch errors before harm results. Barriers include training, procedures, checklists, and design features. Recovery requires assuming errors will happen and building in detection points. Multiple barriers create defense in depth—single failures don't cause accidents.",
+  "mcq": {
+    "question": "A system requires two people to independently verify a critical step. One person makes an error, but the second person catches it before any consequence. What does this demonstrate?",
+    "options": {
+      "A": "The first person needs more training",
+      "B": "Independent verification is unnecessary redundancy",
+      "C": "Defense in depth working—an error was caught by a recovery barrier",
+      "D": "The system is error-prone and needs redesign"
+    },
+    "correctOption": "C",
+    "explanation": "This is defense in depth working correctly. The first barrier (individual competence) failed, but the second barrier (independent verification) caught the error. This is why we build multiple barriers—assuming any single barrier can fail."
+  },
+  "openQuestions": [
+    "What barriers exist in your workplace to prevent critical errors? Are there single points of failure where one error could cause significant harm?",
+    "Describe a time when a recovery strategy (like verification) caught an error before it caused harm. What would have happened without that barrier?"
+  ]
+}

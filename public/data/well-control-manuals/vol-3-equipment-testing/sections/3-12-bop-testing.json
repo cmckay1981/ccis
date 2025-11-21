@@ -1,0 +1,34 @@
+{
+  "sectionId": "3.12",
+  "title": "BOP Testing Requirements",
+  "content": {
+    "3.12.1": {
+      "title": "Overview",
+      "content": "BOP testing ensures equipment will function when needed:\n\n**Types of Tests:**\n- Pressure tests (verify seal integrity)\n- Function tests (verify operation)\n- Response time tests (verify speed)\n\n**Regulatory Basis:**\n- API RP 53 provides industry guidance\n- Local regulations specify requirements\n- Company standards may exceed regulatory minimum\n\n**Key Principle:**\nTesting must be rigorous enough to verify function but not so frequent as to cause unnecessary wear."
+    },
+    "3.12.2": {
+      "title": "Initial Testing",
+      "content": "**When Required:**\n- New BOP installation\n- After stack pulled and reinstalled\n- Before starting drilling operations\n\n**Surface BOP:**\n- Full working pressure test\n- Test all rams and annular\n- Test choke and kill lines\n- Test accumulator capacity\n- Function test all controls\n\n**Subsea BOP:**\n- Onshore test before deployment\n- Subsea test after landing on wellhead\n- All functions verified\n- Acoustic backup tested"
+    },
+    "3.12.3": {
+      "title": "Periodic Testing - Surface",
+      "content": "**Pressure Tests:**\n\n**Low Pressure Test:**\n- 200-300 psi\n- Verifies seal integrity\n- Frequency: Weekly (or per regulation)\n- Tests all rams and annular\n\n**High Pressure Test:**\n- Full rated working pressure (or percentage)\n- Frequency: Every 21 days typical (or per regulation)\n- May be reduced frequency in some jurisdictions\n\n**Function Tests:**\n- Open and close all preventers\n- Verify full travel\n- Observe for anomalies\n- Frequency: Weekly typical"
+    },
+    "3.12.4": {
+      "title": "Periodic Testing - Subsea",
+      "content": "**Pressure Tests:**\n- Low pressure: Weekly\n- High pressure: Every 14-21 days (varies by regulation)\n- Tested from surface control\n\n**Function Tests:**\n- All functions operated\n- Including shear rams (without shearing)\n- Emergency disconnect (without actual disconnect)\n- Control pod switching\n\n**Additional:**\n- Acoustic system tested\n- ROV intervention panel verified\n- Response times documented"
+    },
+    "3.12.5": {
+      "title": "Testing After Events",
+      "content": "**BOP Must Be Tested After:**\n- Any well control event (kick)\n- Suspected ram damage\n- Equipment malfunction\n- Repairs or maintenance\n- Stack reconfiguration\n\n**Post-Kick:**\n- Function test all components used\n- Pressure test if rams were closed on pressure\n- Verify no damage from operation"
+    },
+    "3.12.6": {
+      "title": "Test Procedures",
+      "content": "**Pressure Test Procedure:**\n1. Close preventer to be tested\n2. Isolate test area (close valves)\n3. Apply test pressure from below\n4. Hold for required time (typically 5 minutes)\n5. Observe pressure - should not drop\n6. Record result\n7. Bleed pressure and open preventer\n8. Verify preventer opens fully\n\n**Function Test Procedure:**\n1. Operate preventer close function\n2. Verify closure (indicator or observation)\n3. Note closing time\n4. Operate open function\n5. Verify full open\n6. Note opening time\n7. Record results\n\n**Accumulator Test:**\n1. Record accumulator pressure\n2. Disable pumps\n3. Operate all BOPs (close and open one ram)\n4. Record final pressure\n5. Verify meets minimum requirements\n6. Re-enable pumps"
+    },
+    "3.12.7": {
+      "title": "Documentation",
+      "content": "**Record:**\n- Date and time\n- Test type (pressure/function)\n- Equipment tested\n- Test pressure and duration\n- Results (pass/fail)\n- Any observations or issues\n- Tester name/signature\n\n**Retention:**\n- Per regulatory requirements\n- Typically life of well plus years\n- Available for audit\n\n**Format:**\n- Standard forms\n- Electronic records acceptable\n- Chart recorder data where used"
+    }
+  }
+}

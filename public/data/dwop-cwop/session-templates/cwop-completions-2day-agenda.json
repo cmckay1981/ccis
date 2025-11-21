@@ -1,0 +1,47 @@
+{
+  "templateId": "WOP-COMPLETIONS-2DAY-STANDARD",
+  "title": "2-Day Completions Well on Paper (WOP) Agenda",
+  "description": "Focused WOP session for upper and lower completions operations. Used when completions programme requires detailed review separate from full DWOP.",
+  "rigTypes": ["SEMISUBMERSIBLE", "DRILLSHIP"],
+  "bopType": "subsea",
+  "sessionType": "WOP-COMPLETIONS",
+  "totalDays": 2,
+  "dailySchedule": {"startTime": "08:00", "endTime": "17:00", "timezone": "Adjusted to majority participant location"},
+  "participants": {
+    "required": ["Operator Completions Engineer", "Operator Well Engineer", "Operator Production Engineer", "Drilling Contractor Toolpusher", "Subsea Engineer"],
+    "asNeeded": ["Wireline Engineer", "Perforating Specialist", "Sand Control Specialist", "Well Test Supervisor", "Production Operations Representative"]
+  },
+  "days": [
+    {"day": 1, "title": "Lower Completions & Well Testing", "sessions": [
+      {"time": "08:00-08:30", "type": "plenary", "title": "Welcome & Session Objectives", "room": "main"},
+      {"time": "08:30-10:00", "type": "plenary", "title": "Reservoir & Completion Strategy", "description": "Reservoir properties, completion strategy rationale, inflow predictions, sand production risk", "room": "main", "presenter": "Completions/Production Engineer"},
+      {"time": "10:00-10:30", "type": "break", "title": "Morning Break"},
+      {"time": "10:30-12:00", "type": "breakout", "title": "Lower Completions Review", "rooms": [{"roomId": "A", "topic": "Perforating Operations", "participants": ["Completions Eng", "Wireline Eng", "Perforating Specialist"], "aiParticipant": true}, {"roomId": "B", "topic": "Sand Control", "participants": ["Completions Eng", "Sand Control Specialist"], "aiParticipant": true}]},
+      {"time": "12:00-13:00", "type": "break", "title": "Lunch"},
+      {"time": "13:00-14:30", "type": "breakout", "title": "Well Testing Operations", "rooms": [{"roomId": "A", "topic": "Well Test Programme", "participants": ["Well Test Supervisor", "Production Eng", "Completions Eng"], "aiParticipant": true}, {"roomId": "B", "topic": "Surface Test Equipment", "participants": ["Well Test Supervisor", "HSE", "Operations"], "aiParticipant": true}]},
+      {"time": "14:30-15:00", "type": "break", "title": "Afternoon Break"},
+      {"time": "15:00-16:00", "type": "plenary", "title": "Completion Fluids Review", "room": "main", "presenter": "Completions Engineer", "aiRole": "Verifies fluid compatibility with formation and completion materials"},
+      {"time": "16:00-17:00", "type": "plenary", "title": "Day 1 Consolidation", "room": "main", "aiRole": "Presents consolidated findings"}
+    ]},
+    {"day": 2, "title": "Upper Completions & Handover", "sessions": [
+      {"time": "08:00-08:30", "type": "plenary", "title": "Day 1 Action Item Review", "room": "main"},
+      {"time": "08:30-10:00", "type": "breakout", "title": "Upper Completions Review", "rooms": [{"roomId": "A", "topic": "Tubing & Packer", "participants": ["Completions Eng", "Well Eng"], "aiParticipant": true}, {"roomId": "B", "topic": "Safety Systems", "participants": ["Completions Eng", "Subsea Eng"], "aiParticipant": true}]},
+      {"time": "10:00-10:30", "type": "break", "title": "Morning Break"},
+      {"time": "10:30-12:00", "type": "breakout", "title": "Subsea Systems Review", "rooms": [{"roomId": "A", "topic": "Xmas Tree & Controls", "participants": ["Subsea Eng", "Completions Eng"], "aiParticipant": true}, {"roomId": "B", "topic": "Flowline & Umbilical", "participants": ["Subsea Eng", "Production Eng"], "aiParticipant": true}]},
+      {"time": "12:00-13:00", "type": "break", "title": "Lunch"},
+      {"time": "13:00-14:30", "type": "breakout", "title": "Running Operations & Contingencies", "rooms": [{"roomId": "A", "topic": "Running Procedures", "participants": ["Completions Eng", "Toolpusher"], "aiParticipant": true}, {"roomId": "B", "topic": "Contingencies", "participants": ["Completions Eng", "Well Eng"], "aiParticipant": true}]},
+      {"time": "14:30-15:00", "type": "break", "title": "Afternoon Break"},
+      {"time": "15:00-16:00", "type": "plenary", "title": "Well Handover & Barrier Review", "room": "main", "presenter": "Production Operations", "aiRole": "Verifies all barrier elements are addressed"},
+      {"time": "16:00-17:00", "type": "plenary", "title": "WOP-COMPLETIONS Close-Out", "room": "main", "deliverables": ["Action item register", "Equipment gap list", "Updated completions programme", "Well barrier diagram (approved)", "Production handover checklist", "WOP completion certificate"]}
+    ]}
+  ],
+  "aiParticipantRole": {
+    "description": "AI participant challenges completions design and handover readiness",
+    "exampleQuestions": ["SSSV is 100m below mudline but your annular safety valve is at wellhead - confirm you have two independent barriers?", "Perforating is planned 500 psi underbalance but completion fluid is only 200 psi overbalance - what's your well control strategy?", "Sand screen gauge is 150 micron but PSD shows 10% fines below that - what's your fines migration strategy?"]
+  },
+  "preWorkRequirements": {
+    "materials": ["Final completions design", "Reservoir data and inflow predictions", "Well test programme", "Subsea equipment specifications", "Production handover requirements"]
+  },
+  "documentId": "WOP-COMPLETIONS-2DAY-AGENDA",
+  "tags": ["wop", "completions", "agenda", "2-day"]
+}

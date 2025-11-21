@@ -1,0 +1,24 @@
+{
+  "lessonId": "LEAD-MC-110-05",
+  "moduleId": "LEAD-MC-110",
+  "courseId": "LEAD-MC",
+  "title": "Crisis Communication Strategy",
+  "type": "scenario",
+  "content": "Crisis communication requires speed, accuracy, and transparency under extreme pressure. Leaders must balance the need to communicate quickly with the need to be accurate, maintain calm while acknowledging severity, and control information flow without appearing to hide information. Poor crisis communication amplifies the crisis itself.",
+  "scenario": {
+    "story": "A significant incident has occurred affecting operations, customers, and potentially public perception. Information is still emerging, root cause is unclear, and multiple stakeholders are demanding updates: your team needs direction, customers need information, senior leadership needs status, and external parties are asking questions. You have partial information with significant uncertainty. The next 2-4 hours of communication will shape the narrative.",
+    "options": {
+      "A": "Wait until you have complete information before communicating to avoid spreading inaccurate details",
+      "B": "Immediately communicate what you know, what you don't know, what you're doing, and when you'll provide the next update",
+      "C": "Provide minimal information to avoid creating panic or speculation",
+      "D": "Delegate communication to a spokesperson while you focus on resolving the incident"
+    },
+    "recommendedResponse": "B",
+    "explanation": "Option B demonstrates crisis communication principles: speed, transparency, and rhythm. Acknowledge the situation, provide factual information, admit uncertainty honestly, describe response actions, and establish when more information will come. This prevents information vacuum and demonstrates control. Option A allows speculation and rumors to fill the void—silence during crisis signals loss of control. Option C creates distrust and invites speculation. Option D separates leadership from communication, which weakens both. During crisis, people need to hear from leaders. Partial information with honesty beats complete silence or vague platitudes."
+  },
+  "openQuestions": [
+    "Have you ever led communication during a crisis? What did you learn about speed versus accuracy?",
+    "What's your crisis communication template: who gets what information, through which channels, and how frequently?",
+    "How do you balance transparency with avoiding unnecessary alarm during evolving situations?"
+  ]
+}

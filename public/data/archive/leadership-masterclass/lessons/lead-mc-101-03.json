@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-101-03",
+  "moduleId": "LEAD-MC-101",
+  "courseId": "LEAD-MC",
+  "title": "Second and Third-Order Effects",
+  "type": "lesson",
+  "content": "Every leadership decision creates ripples beyond the immediate result. A decision to enforce a safety rule might improve compliance but damage trust if applied inconsistently. Choosing speed over thoroughness might deliver short-term results but teach your team that quality doesn't matter. Strong leaders think two or three steps ahead: what behavior does this decision reinforce, what does it discourage, and what will people believe about priorities based on what I just did?",
+  "mcq": {
+    "question": "A team is behind schedule on a critical project. The leader decides to cancel the weekly team meeting to 'buy back time' and keep people focused on execution. Three weeks later, coordination errors are increasing and team members seem unclear about priorities. What second-order effect did the leader miss?",
+    "options": {
+      "A": "The team needed more individual work time, not meetings",
+      "B": "Canceling the meeting signaled that communication isn't a priority under pressure",
+      "C": "Team members should have escalated confusion sooner",
+      "D": "The project timeline was unrealistic from the beginning"
+    },
+    "correctOption": "B",
+    "explanation": "Actions under pressure reveal true priorities to your team. Canceling communication to save time taught the team that coordination is optional when things get hard. The immediate gain in work hours created larger losses in alignment and clarity. Leaders must consider what their decisions teach, not just what they accomplish."
+  },
+  "openQuestions": [
+    "Describe a recent decision you made. What second-order effects did it create beyond the immediate result?",
+    "What does your team believe is most important based on how you actually spend your time?"
+  ]
+}

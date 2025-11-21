@@ -1,0 +1,70 @@
+{
+  "templateId": "LOST_CIRCULATION_SEVERE",
+  "title": "Severe Lost Circulation Management",
+  "category": "HAZARD_RESPONSE",
+  "rigTypes": ["LAND", "JACKUP", "SEMISUBMERSIBLE", "DRILLSHIP"],
+  "referenceWell": "CC-SANDSTONE-301",
+  "description": "Decision-making during severe/total lost circulation events with focus on LCM selection, volumes, and escalation to cement squeeze",
+  "applicableModules": ["ADO-109"],
+  "scenario": {
+    "context": "You're drilling at {{currentDepth}} m in the {{holeSize}}\" section. Suddenly you experience {{lossRate}} bbl/hr losses. Mud weight is {{mudWeight}} sg. You have {{lcmInventory}} tonnes of LCM on location.",
+    "variables": {
+      "currentDepth": {"type": "number", "range": [2500, 3200], "unit": "m"},
+      "holeSize": {"type": "string", "options": ["12-1/4", "8-1/2"]},
+      "mudWeight": {"type": "number", "range": [1.50, 1.70], "unit": "sg"},
+      "lossRate": {"type": "string", "options": ["50-100", "100-200", "Total (no returns)"]},
+      "lcmInventory": {"type": "number", "range": [20, 50], "unit": "tonnes"}
+    }
+  },
+  "questions": [
+    {
+      "questionId": "LC-01",
+      "question": "You've just gone to total losses while drilling at {{currentDepth}} m. Walk me through your immediate actions in the first 15 minutes.",
+      "keyPoints": [
+        "Stop drilling immediately",
+        "Assess well status (static vs flowing)",
+        "Position pipe for potential pill spotting",
+        "Calculate annular volume and pit level",
+        "Prepare LCM pill"
+      ],
+      "correctResponse": "Immediate actions: 1) Stop drilling and pick up off bottom, 2) Check well - is it static or flowing back? If flowing, shut in and assess, 3) Calculate fluid level in annulus, 4) Position bit above suspected loss zone if possible, 5) Begin mixing LCM pill while assessing - don't wait. For total losses, initial pill should be high concentration (40-60 ppb) with sized particulate + fibrous blend."
+    },
+    {
+      "questionId": "LC-02",
+      "question": "Your first LCM pill (200 bbls at 40 ppb) reduced losses from total to {{reducedLossRate}} bbl/hr. What's your next step and how do you decide whether to continue LCM treatment or escalate?",
+      "keyPoints": [
+        "Assess improvement trend",
+        "Second pill composition - adjust or increase concentration",
+        "Decision criteria for cement squeeze",
+        "Cost vs time vs risk of continued drilling"
+      ],
+      "correctResponse": "Positive response indicates LCM is working. Next steps: 1) Pump second pill with increased concentration (60-80 ppb) and adjusted particle size distribution, 2) Include fibrous LCM (cedar fiber, synthetic fiber) for better bridging, 3) Allow 30-60 min for settling. Escalation criteria: If no improvement after 3 pills or 500+ bbls LCM, consider gunk squeeze or cement squeeze. Document total LCM volume used - will affect well economics.",
+      "variables": {
+        "reducedLossRate": {"type": "number", "range": [30, 80], "unit": "bbl/hr"}
+      }
+    },
+    {
+      "questionId": "LC-03",
+      "question": "LCM treatments have been unsuccessful after {{lcmVolume}} bbls total. You're now planning a cement squeeze. What are the key planning considerations?",
+      "keyPoints": [
+        "Loss zone identification",
+        "Cement slurry design for losses",
+        "Squeeze technique selection",
+        "WOC and verification",
+        "Drill-out considerations"
+      ],
+      "correctResponse": "Cement squeeze planning: 1) Identify loss zone depth - use LWD/PWD data or pump-in test, 2) Design lightweight cement with fluid loss control (consider foamed cement for severe losses), 3) Spot cement across zone and apply squeeze pressure (typically 500-1000 psi above hydrostatic), 4) WOC minimum 8-12 hours, 5) Pressure test before drill-out, 6) Plan for potential multiple squeezes. Consider: formation type, temperature, required strength development.",
+      "variables": {
+        "lcmVolume": {"type": "number", "range": [400, 800], "unit": "bbls"}
+      }
+    }
+  ],
+  "discussionPoints": [
+    "How do you select LCM particle size distribution for different fracture sizes?",
+    "What's the difference between seepage losses, partial losses, and total losses in terms of response?",
+    "When is it more cost-effective to set casing vs cure losses?",
+    "How does lost circulation response differ between WBM and OBM?"
+  ],
+  "relatedHazards": ["Lost circulation", "Stuck pipe", "Well control during losses"],
+  "tags": ["lost-circulation", "lcm", "cement-squeeze", "daily-coaching"]
+}

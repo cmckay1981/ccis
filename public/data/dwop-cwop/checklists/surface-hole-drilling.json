@@ -1,0 +1,75 @@
+{
+  "checklistId": "DWOP-CL-004",
+  "title": "Surface Hole Drilling Checklist",
+  "section": "Surface Section Drilling",
+  "rigTypes": ["LAND", "JACKUP", "SEMISUBMERSIBLE", "DRILLSHIP"],
+  "bopType": "all",
+  "breakoutRoom": "A",
+  "participants": ["Drilling Engineer", "Driller", "Directional Driller", "MWD Engineer"],
+  "aiParticipant": true,
+  "categories": [
+    {
+      "category": "BHA Design",
+      "items": [
+        {"item": "BHA design reviewed and approved"},
+        {"item": "Bit selection confirmed"},
+        {"item": "Stabilizer placement verified"},
+        {"item": "MWD/LWD tool requirements confirmed"},
+        {"item": "Motor requirements (if directional)"},
+        {"item": "All crossovers available on rig", "critical": true},
+        {"item": "BHA weight vs rig capacity verified"}
+      ]
+    },
+    {
+      "category": "Drilling Parameters",
+      "items": [
+        {"item": "WOB range established"},
+        {"item": "RPM range established"},
+        {"item": "Flow rate requirements confirmed"},
+        {"item": "ROP expectations set based on offset"},
+        {"item": "Torque and drag predictions reviewed"},
+        {"item": "ECD limits defined", "critical": true}
+      ]
+    },
+    {
+      "category": "Formation Expectations",
+      "items": [
+        {"item": "Formation tops prognosis reviewed", "critical": true},
+        {"item": "Expected lithologies identified"},
+        {"item": "Flow check depths identified"},
+        {"item": "Potential problem zones flagged"},
+        {"item": "Hydrocarbon shows expectations"}
+      ]
+    },
+    {
+      "category": "Directional Plan",
+      "items": [
+        {"item": "Survey program reviewed"},
+        {"item": "Kick-off point confirmed (if applicable)"},
+        {"item": "Build rate requirements"},
+        {"item": "Anti-collision analysis completed"},
+        {"item": "Definitive survey requirements"}
+      ]
+    },
+    {
+      "category": "Connection Procedures",
+      "items": [
+        {"item": "Connection procedure reviewed"},
+        {"item": "Flow check protocol established", "critical": true},
+        {"item": "Survey download procedure"},
+        {"item": "Connection time targets set"}
+      ]
+    }
+  ],
+  "aiQuestions": [
+    "The BHA calls for a 17-1/2\" bit but I see 17\" stabilizers - confirm this matches your equipment inventory?",
+    "Offset wells show significant deviation tendency in the upper section - what's your correction plan?",
+    "Flow check interval is every 500m - is this sufficient given the shallow gas risk identified?",
+    "Your ROP estimate is 40 m/hr but offset wells averaged 25 m/hr - what assumptions differ?",
+    "What's your stuck pipe response if you encounter unexpected clay swelling?"
+  ],
+  "actionItemTemplate": {
+    "fields": ["item", "owner", "dueDate", "status", "notes"]
+  },
+  "tags": ["dwop", "checklist", "surface-hole", "drilling"]
+}

@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-111-02",
+  "moduleId": "LEAD-111",
+  "courseId": "LEAD",
+  "title": "Managing Leader Stress and Burnout",
+  "type": "lesson",
+  "content": "Leadership is demanding: constant decisions, emotional weight of responsibility, competing pressures, and limited control over outcomes. Leaders who don't manage their own stress eventually degrade in judgment, patience, and effectiveness. Burnout doesn't announce itself—it accumulates gradually until you're making poor decisions, losing composure, or checking out emotionally. Sustainable leadership requires recognizing early stress signals, establishing boundaries, and building recovery practices into your routine.",
+  "mcq": {
+    "question": "A leader notices they're sleeping poorly, getting irritated by small issues that normally wouldn't bother them, and having difficulty concentrating on complex decisions. Their response is to work harder and push through since 'this is what leadership requires.' What's the problem with this approach?",
+    "options": {
+      "A": "The leader needs to develop better stress tolerance",
+      "B": "These are early burnout signals that will degrade leadership effectiveness if ignored",
+      "C": "This is normal leadership stress and doesn't require action",
+      "D": "The leader should delegate more to reduce their workload"
+    },
+    "correctOption": "B",
+    "explanation": "These are classic burnout warning signs: physiological stress (sleep disruption), emotional dysregulation (irritability), and cognitive impairment (concentration difficulty). Pushing through doesn't build resilience—it accelerates decline. Burned-out leaders make worse decisions, damage relationships, and model unsustainable behavior to their teams. Option B recognizes these as signals requiring response, not weaknesses to power through. Option A misreads stress response as character flaw. Option C normalizes dysfunction. Option D might help but doesn't address the underlying need for recovery and boundary-setting. Leaders must manage their own sustainability or they become liabilities."
+  },
+  "openQuestions": [
+    "What are your early warning signs that stress is affecting your leadership effectiveness?",
+    "What recovery practices do you have built into your routine? Are they actually happening or just intended?"
+  ]
+}

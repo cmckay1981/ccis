@@ -1,0 +1,134 @@
+{
+  "cardId": "cement-formulas",
+  "title": "Cement Calculations Quick Reference",
+  "type": "reference-card",
+  "content": {
+    "capacityFormulas": {
+      "title": "CAPACITY FORMULAS",
+      "formulas": [
+        {
+          "name": "Pipe/Hole Capacity",
+          "formula": "Capacity (bbl/ft) = ID² / 1029.4",
+          "example": "9-5/8\" casing (8.835\" ID): 8.835² / 1029.4 = 0.0758 bbl/ft"
+        },
+        {
+          "name": "Annular Capacity",
+          "formula": "Capacity (bbl/ft) = (Hole ID² - Pipe OD²) / 1029.4",
+          "example": "12.25\" hole, 9-5/8\" csg: (12.25² - 9.625²) / 1029.4 = 0.0558 bbl/ft"
+        },
+        {
+          "name": "Pipe Displacement",
+          "formula": "Displacement (bbl/ft) = (OD² - ID²) / 1029.4",
+          "example": "5\" DP (4.276\" ID): (5² - 4.276²) / 1029.4 = 0.0066 bbl/ft"
+        }
+      ]
+    },
+    "volumeFormulas": {
+      "title": "VOLUME CALCULATIONS",
+      "formulas": [
+        {
+          "name": "Volume",
+          "formula": "Volume (bbl) = Capacity (bbl/ft) × Length (ft)"
+        },
+        {
+          "name": "Barrels to Cubic Feet",
+          "formula": "ft³ = bbl × 5.615"
+        },
+        {
+          "name": "Cubic Feet to Barrels",
+          "formula": "bbl = ft³ / 5.615"
+        },
+        {
+          "name": "Sacks Required",
+          "formula": "Sacks = Volume (ft³) / Yield (ft³/sk)",
+          "note": "Or: Sacks = Volume (bbl) × 5.615 / Yield (ft³/sk)"
+        }
+      ]
+    },
+    "slurryCalculations": {
+      "title": "SLURRY CALCULATIONS",
+      "formulas": [
+        {
+          "name": "Water Required",
+          "formula": "Water (gal) = Sacks × Water Req (gal/sk)"
+        },
+        {
+          "name": "Slurry Volume from Sacks",
+          "formula": "Volume (ft³) = Sacks × Yield (ft³/sk)"
+        },
+        {
+          "name": "Mix Water Volume",
+          "formula": "Mix Water (bbl) = Water (gal) / 42"
+        }
+      ]
+    },
+    "pressureFormulas": {
+      "title": "PRESSURE CALCULATIONS",
+      "formulas": [
+        {
+          "name": "Hydrostatic Pressure",
+          "formula": "HP (psi) = Density (ppg) × 0.052 × TVD (ft)"
+        },
+        {
+          "name": "ECD",
+          "formula": "ECD (ppg) = BHP (psi) / 0.052 / TVD (ft)"
+        },
+        {
+          "name": "Pressure Gradient",
+          "formula": "Gradient (psi/ft) = Density (ppg) × 0.052"
+        }
+      ]
+    },
+    "pumpFormulas": {
+      "title": "PUMP CALCULATIONS",
+      "formulas": [
+        {
+          "name": "Pump Time",
+          "formula": "Time (min) = Volume (bbl) / Rate (bpm)"
+        },
+        {
+          "name": "Strokes",
+          "formula": "Strokes = Volume (bbl) / Output (bbl/stk)"
+        },
+        {
+          "name": "Rate from Strokes",
+          "formula": "Rate (bpm) = SPM × Output (bbl/stk)"
+        }
+      ]
+    },
+    "balancedPlugFormulas": {
+      "title": "BALANCED PLUG",
+      "formulas": [
+        {
+          "name": "Pipe Depth for Balance",
+          "formula": "Pipe End = Plug Bottom + [Plug Vol × Ann Cap / (Ann Cap + Pipe Cap)]"
+        },
+        {
+          "name": "Displacement to Balance",
+          "formula": "Displacement = Pipe Vol to End - Cement in Pipe"
+        }
+      ]
+    },
+    "commonCapacities": {
+      "title": "COMMON CAPACITIES (bbl/ft)",
+      "table": [
+        {"size": "7\" Csg (6.366\" ID)", "capacity": "0.0394"},
+        {"size": "9-5/8\" Csg (8.835\" ID)", "capacity": "0.0759"},
+        {"size": "13-3/8\" Csg (12.415\" ID)", "capacity": "0.1497"},
+        {"size": "20\" Csg (19.0\" ID)", "capacity": "0.3508"},
+        {"size": "8.5\" OH", "capacity": "0.0702"},
+        {"size": "12.25\" OH", "capacity": "0.1458"},
+        {"size": "17.5\" OH", "capacity": "0.2975"}
+      ]
+    },
+    "typicalSlurryProperties": {
+      "title": "TYPICAL SLURRY PROPERTIES",
+      "table": [
+        {"type": "Neat Class G", "density": "15.8 ppg", "yield": "1.15 ft³/sk", "water": "5.0 gal/sk"},
+        {"type": "Class G + 35% Silica", "density": "16.4 ppg", "yield": "1.22 ft³/sk", "water": "5.3 gal/sk"},
+        {"type": "Lead (extended)", "density": "13.5-14.5 ppg", "yield": "1.5-2.0 ft³/sk", "water": "varies"},
+        {"type": "Tail (densified)", "density": "16.0-17.0 ppg", "yield": "1.0-1.15 ft³/sk", "water": "varies"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "documentId": "PUMP_PRESSURE_CALCULATIONS",
+  "collectionId": "questionBank",
+  "categoryKey": "PUMP_PRESSURE_CALCULATIONS",
+  "title": "Pump & Pressure Calculations",
+  "moduleAlignment": [
+    "WC-SF-101",
+    "WC-SF-107"
+  ],
+  "questionCount": 2,
+  "l3Count": 1,
+  "l4Count": 1,
+  "questions": [
+    {
+      "id": "Q1",
+      "level": "L3",
+      "question": "At 80 spm pump pressure is 4,000 psi. What's the pressure at 40 spm?",
+      "options": {
+        "A": "500 psi",
+        "B": "800 psi",
+        "C": "1,000 psi",
+        "D": "2,000 psi"
+      },
+      "correctAnswer": "C",
+      "explanation": "Pressure varies with the SQUARE of pump rate. (40/80)\u00b2 = 0.25. 4,000 \u00d7 0.25 = 1,000 psi",
+      "formula": "New P = Old P \u00d7 (New Rate / Old Rate)\u00b2"
+    },
+    {
+      "id": "Q42",
+      "level": "L4",
+      "question": "1000 psi at 80 spm with 11 ppg. Pressure at 60 spm with 12 ppg?",
+      "options": {
+        "A": "1091 psi",
+        "B": "562 psi",
+        "C": "1190 psi",
+        "D": "614 psi",
+        "E": "750 psi"
+      },
+      "correctAnswer": "D",
+      "explanation": "Two adjustments: (60/80)\u00b2 \u00d7 (12/11) \u00d7 1000 = 0.5625 \u00d7 1.09 \u00d7 1000 = 614 psi"
+    }
+  ]
+}

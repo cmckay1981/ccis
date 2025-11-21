@@ -1,0 +1,67 @@
+{
+  "templateId": "SALT_SECTION_DRILLING",
+  "title": "Mobile Salt Section Drilling",
+  "category": "OPERATIONAL_DECISIONS",
+  "rigTypes": ["LAND", "JACKUP"],
+  "referenceWell": "CC-SANDSTONE-301",
+  "description": "Decision-making when drilling through mobile salt/evaporite sections with associated stuck pipe and hole stability challenges",
+  "applicableModules": ["ADO-107", "ADO-108", "ADO-109"],
+  "scenario": {
+    "context": "You are drilling the 16\" hole section through a known evaporite/salt interval. Current depth is {{currentDepth}} m. The well plan calls for KCl polymer mud at {{mudWeight}} sg transitioning to OBM at the base of salt.",
+    "variables": {
+      "currentDepth": {"type": "number", "range": [1200, 2000], "unit": "m"},
+      "mudWeight": {"type": "number", "range": [1.08, 1.16], "unit": "sg"},
+      "saltTopDepth": {"type": "number", "fixed": 1500, "unit": "m"},
+      "saltBaseDepth": {"type": "number", "fixed": 2100, "unit": "m"},
+      "torqueTrend": {"type": "string", "options": ["stable", "increasing", "erratic"]}
+    }
+  },
+  "questions": [
+    {
+      "questionId": "SALT-01",
+      "question": "Torque has increased by 15% over the last 3 stands and you're seeing intermittent overpull on connections. What are the likely causes and what's your immediate response?",
+      "keyPoints": [
+        "Salt creep causing hole closure",
+        "Cutting beds from inadequate hole cleaning",
+        "Undergauge hole from salt dissolution",
+        "Immediate: Increase circulation, work pipe, consider wiper trip"
+      ],
+      "correctResponse": "Mobile salt is likely closing in on the drillstring. Immediate response: increase circulation rate to maximum, work pipe continuously, pump high-viscosity sweeps. If overpull exceeds {{overpullLimit}} klbs, initiate wiper trip. Consider increasing mud weight or converting to OBM earlier than planned if condition persists.",
+      "incorrectIndicators": ["Continue drilling without intervention", "Reduce circulation rate", "Pull out of hole without circulation"]
+    },
+    {
+      "questionId": "SALT-02",
+      "question": "You've been circulating for 2 hours trying to work through a tight spot at {{tightSpotDepth}} m. Overpull is now 80 klbs despite jarring. What are your options and decision criteria?",
+      "keyPoints": [
+        "Jar sequence and limits",
+        "Spotting fresh water pill to dissolve salt",
+        "Decision point for fishing vs sidetrack",
+        "Time vs cost vs risk assessment"
+      ],
+      "correctResponse": "Options: 1) Spot fresh water pill (50-100 bbls) to dissolve salt around pipe - allow 30-60 min soak time, 2) Continue jarring with defined jar count limit, 3) If fresh water ineffective, consider acid wash, 4) Set time limit (typically 8-12 hours) before declaring stuck and initiating fishing/sidetrack decision. Fresh water pill is first choice for salt-induced sticking.",
+      "variables": {
+        "tightSpotDepth": {"type": "number", "range": [1600, 1900], "unit": "m"}
+      }
+    },
+    {
+      "questionId": "SALT-03",
+      "question": "You're approaching the base of salt at {{saltBaseDepth}} m and need to convert from KCl polymer to OBM. Walk me through the conversion process and critical monitoring points.",
+      "keyPoints": [
+        "Displacement sequence",
+        "Compatibility spacers",
+        "Volume calculations",
+        "Environmental considerations",
+        "Hole stability during transition"
+      ],
+      "correctResponse": "Conversion process: 1) Condition hole - circulate clean, pump sweeps, 2) Pump spacer train (typically base oil spacer + surfactant), 3) Displace with OBM from bottom up, 4) Monitor returns for contamination, 5) Check OBM properties after full displacement. Critical points: Ensure no WBM contamination (affects OBM stability), verify rheology before continuing, confirm environmental permits for OBM discharge."
+    }
+  ],
+  "discussionPoints": [
+    "Why is salt creep worse at higher temperatures and depths?",
+    "What are the indicators that salt is mobile vs stable?",
+    "How does mud weight affect salt creep rate?",
+    "When should you pre-emptively convert to OBM vs wait for problems?"
+  ],
+  "relatedHazards": ["Mobile salt", "Stuck pipe", "Hole instability", "Lost circulation at salt base"],
+  "tags": ["salt-drilling", "stuck-pipe", "obm-conversion", "land-rig", "daily-coaching"]
+}

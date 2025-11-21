@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-111-01",
+  "moduleId": "LEAD-MC-111",
+  "courseId": "LEAD-MC",
+  "title": "Self-Awareness and Identifying Blind Spots",
+  "type": "lesson",
+  "content": "Leaders have blind spots—behaviors, patterns, or impacts they don't see in themselves. These create friction, limit effectiveness, and damage relationships without the leader realizing it. Self-awareness requires actively seeking feedback, reflecting on your impact, and being willing to see yourself as others see you. The most dangerous leaders are those who believe they have no blind spots. Growth starts with recognizing what you don't know about yourself.",
+  "mcq": {
+    "question": "A leader receives feedback from multiple sources that they interrupt people in meetings and don't let others finish their thoughts. The leader's self-perception is that they're energetically engaged and helping move conversations forward. What's happening?",
+    "options": {
+      "A": "The feedback is from people who prefer slower-paced discussions",
+      "B": "The leader has a blind spot between their intent (engagement) and their impact (shutting people down)",
+      "C": "The leader's communication style is fine and others need to be more assertive",
+      "D": "This is a personality difference that doesn't need to change"
+    },
+    "correctOption": "B",
+    "explanation": "Classic blind spot: the leader experiences their behavior as helpful while others experience it as dominating. Intent doesn't equal impact. When multiple people provide similar feedback, it's data worth examining, not defending against. Option B recognizes the gap between self-perception and others' experience. Option A dismisses the feedback. Option C blames others for the leader's behavior. Option D refuses to adapt based on impact. Self-aware leaders ask: 'What am I doing that creates this experience for others?' then decide if they want to change it. The pattern is the data; defending it prevents growth."
+  },
+  "openQuestions": [
+    "What feedback have you received multiple times that you've been dismissing or defending against?",
+    "Who gives you honest feedback about your blind spots? If no one, why do you think that is?"
+  ]
+}

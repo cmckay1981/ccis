@@ -1,0 +1,23 @@
+{
+  "lessonId": "SA-101-02",
+  "moduleId": "SA-101",
+  "courseId": "SA",
+  "title": "The Three Levels of SA",
+  "type": "lesson",
+  "content": "Level 1 is perception—detecting cues in your environment. Level 2 is comprehension—understanding what those cues mean. Level 3 is projection—predicting what will happen next. Most operational errors occur at Levels 2 and 3: people perceive correctly but misinterpret or fail to anticipate. Each level builds on the previous; you cannot project accurately without first perceiving and comprehending.",
+  "mcq": {
+    "question": "You notice a temperature reading of 185°F (Level 1). You know the normal range is 150-170°F and this indicates overheating (Level 2). What would complete Level 3?",
+    "options": {
+      "A": "Recording the reading in the log",
+      "B": "Predicting the system will trip on high temperature in approximately 10 minutes at current rate",
+      "C": "Reporting the reading to your supervisor",
+      "D": "Checking other temperature readings for comparison"
+    },
+    "correctOption": "B",
+    "explanation": "Level 3 is projection—predicting future state based on current trends. The other options are actions, but projection specifically means anticipating what will happen if current conditions continue."
+  },
+  "openQuestions": [
+    "Which of the three SA levels do you find most challenging to maintain under pressure?",
+    "Think of a recent operational situation. Can you identify what you perceived, what you understood, and what you predicted?"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "moduleId": "SA-101",
+  "courseId": "SA",
+  "title": "Foundations of Situational Awareness",
+  "description": "Establishes what situational awareness is, why it matters in operational environments, and introduces the three-level model of perception, comprehension, and projection.",
+  "order": 1,
+  "lessonIds": ["SA-101-01", "SA-101-02", "SA-101-03", "SA-101-04"]
+}

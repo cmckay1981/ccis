@@ -1,0 +1,80 @@
+{
+  "lessonId": "WC-SF-108-02",
+  "moduleId": "WC-SF-108",
+  "courseId": "WC-SF",
+  "title": "Wait and Weight Method",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "Wait and Weight (Engineer's Method) kills the well in one circulation. After shut-in, you WAIT for kill mud to be mixed, then pump it while simultaneously removing the kick. More complex than Driller's, but results in lower maximum pressures at the shoe\u2014better for wells with tight margins.",
+  "multiSensoryExplanations": {
+    "visual": "One truck does both jobs\u2014brings heavy equipment while simultaneously taking out garbage. Fewer trips, but the driver must do two things at once.",
+    "auditory": "Wait and Weight rhythm: 'Mix it UP, pump it DOWN, while it comes UP.' Everything happens together. More complex beat than Driller's.",
+    "kinesthetic": "Both hands move together. Right hand pushes (kick out) while left hand pulls (kill mud in). Feel how W&W requires coordination\u2014two actions simultaneously.",
+    "storyBased": "The same toolpusher: 'I use Wait and Weight when I've got an experienced crew and a weak shoe. The lower pressures are worth the complexity. But my crew better know the pressure schedule cold.'"
+  },
+  "procedure": [
+    "1. Record shut-in pressures (SIDPP, SICP)",
+    "2. Calculate kill mud weight",
+    "3. WAIT for kill mud to be properly mixed",
+    "4. Calculate ICP, FCP, and build pressure schedule",
+    "5. Bring pump to kill rate, holding casing pressure constant",
+    "6. Note ICP achieved",
+    "7. As kill mud goes down drillstring, follow schedule ICP\u2192FCP",
+    "8. When kill mud reaches bit, maintain FCP through annulus",
+    "9. Circulate until kill mud returns to surface",
+    "10. Shut in, verify SIDPP and SICP = 0",
+    "11. Well is dead in ONE circulation"
+  ],
+  "pressureSchedule": {
+    "explanation": "The pressure schedule guides drill pipe pressure from ICP to FCP as kill mud travels down the drillstring. It's typically calculated per 100 strokes or per stand of drill pipe.",
+    "example": {
+      "ICP": "1,000 psi",
+      "FCP": "650 psi",
+      "strokesToBit": "2,000",
+      "pressureDrop": "350 psi over 2,000 strokes = 17.5 psi per 100 strokes"
+    }
+  },
+  "advantages": [
+    "Lower maximum annular pressures than Driller's",
+    "Better for weak casing shoes",
+    "One circulation\u2014less total time (if mud is ready)",
+    "Preferred when formation margins are tight"
+  ],
+  "disadvantages": [
+    "Must WAIT for kill mud\u2014gas may migrate during wait",
+    "More complex\u2014pressure schedule must be followed precisely",
+    "Higher risk of errors with inexperienced crews",
+    "If kick is large, waiting can be dangerous"
+  ],
+  "mcq": {
+    "question": "What must you do BEFORE starting the Wait and Weight Method?",
+    "options": {
+      "A": "Circulate out the kick with original mud",
+      "B": "Wait for kill mud to be mixed to proper weight",
+      "C": "Close the choke completely",
+      "D": "Reduce mud weight by 0.5 ppg"
+    },
+    "correctOption": "B",
+    "explanation": "The 'Wait' in Wait and Weight means waiting for kill mud to be mixed before starting. This is the key procedural difference from Driller's Method."
+  },
+  "advancedQuestion": {
+    "question": "During Wait and Weight, your drill pipe pressure is running 50 psi above schedule as kill mud passes through the drillstring. What does this indicate and what should you do?",
+    "answer": "Higher-than-scheduled pressure indicates either: (1) Kill mud weight is higher than calculated, (2) Choke is too restricted, or (3) Schedule calculation error. Action: Open choke slightly to bring pressure back to schedule. If pressure continues high, verify kill mud weight is correct. Do NOT simply accept high pressure\u2014it increases shoe stress.",
+    "l4Focus": "Interpreting pressure behavior and troubleshooting during the kill is critical L4 knowledge."
+  },
+  "commonMisconception": {
+    "wrong": "Wait and Weight is always better because it uses fewer circulations.",
+    "correct": "W&W requires WAITING while the kick sits in the wellbore\u2014potentially migrating and expanding. For large gas kicks, this wait can be dangerous. Total time isn't the only measure of 'better.'"
+  },
+  "documentId": "WC-SF-108-02",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-108",
+    "WC-SF-108-02"
+  ]
+}

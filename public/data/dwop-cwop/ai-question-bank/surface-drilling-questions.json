@@ -1,0 +1,79 @@
+{
+  "categoryId": "SURFACE_DRILLING",
+  "title": "Surface Hole Drilling - AI Probing Questions",
+  "breakoutRoom": "A",
+  "targetParticipants": ["Drilling Engineer", "Driller", "Directional Driller", "MWD Engineer"],
+  "questions": [
+    {
+      "questionId": "SD-001",
+      "question": "The BHA calls for a 17-1/2\" bit but I see 17\" stabilizers - confirm this matches your equipment inventory?",
+      "type": "gap_identification",
+      "focus": "Equipment compatibility",
+      "expectedResponse": "Inventory verification or correction"
+    },
+    {
+      "questionId": "SD-002",
+      "question": "Offset wells show significant deviation tendency in the upper section - what's your correction plan?",
+      "type": "assumption_challenge",
+      "focus": "Directional control",
+      "expectedResponse": "BHA design rationale for deviation control"
+    },
+    {
+      "questionId": "SD-003",
+      "question": "Flow check interval is every 500m - is this sufficient given the shallow gas risk identified?",
+      "type": "assumption_challenge",
+      "focus": "Well control procedures",
+      "expectedResponse": "Justification or increased frequency"
+    },
+    {
+      "questionId": "SD-004",
+      "question": "Your ROP estimate is 40 m/hr but offset wells averaged 25 m/hr - what assumptions differ?",
+      "type": "calculation_check",
+      "focus": "Performance estimates",
+      "expectedResponse": "Basis for ROP estimate"
+    },
+    {
+      "questionId": "SD-005",
+      "question": "What's your stuck pipe response if you encounter unexpected clay swelling?",
+      "type": "what_if",
+      "focus": "Stuck pipe contingency",
+      "expectedResponse": "Stuck pipe procedures and materials"
+    },
+    {
+      "questionId": "SD-006",
+      "question": "MWD battery life is 100 hours - section estimate is 96 hours with no contingency. What if you need extra time?",
+      "type": "gap_identification",
+      "focus": "Tool endurance",
+      "expectedResponse": "Spare tools or battery replacement plan"
+    },
+    {
+      "questionId": "SD-007",
+      "question": "Your survey program shows MWD only - what's your backup if MWD fails?",
+      "type": "what_if",
+      "focus": "Survey contingency",
+      "expectedResponse": "Backup survey method"
+    },
+    {
+      "questionId": "SD-008",
+      "question": "The 26\" x 17-1/2\" crossover isn't on the rig inventory - has this been ordered?",
+      "type": "gap_identification",
+      "focus": "Equipment availability",
+      "expectedResponse": "Crossover status and delivery date"
+    },
+    {
+      "questionId": "SD-009",
+      "question": "Connection procedure doesn't mention survey download time - how long does this add per connection?",
+      "type": "verification",
+      "focus": "Procedure completeness",
+      "expectedResponse": "Survey download time and impact"
+    },
+    {
+      "questionId": "SD-010",
+      "question": "If you drill into an unexpected gas pocket, what's the shallowest depth you can safely shut in?",
+      "type": "calculation_check",
+      "focus": "Well control",
+      "expectedResponse": "Minimum shut-in depth based on casing/formation"
+    }
+  ],
+  "tags": ["dwop", "ai-questions", "surface-hole", "drilling"]
+}

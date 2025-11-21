@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-109-04",
+  "moduleId": "LEAD-MC-109",
+  "courseId": "LEAD-MC",
+  "title": "Building Coalitions",
+  "type": "lesson",
+  "content": "Some initiatives require support from multiple stakeholders who don't report to you. Building coalitions means identifying who needs to be involved, understanding what each stakeholder cares about, finding common ground, and creating shared commitment to an outcome. Effective coalition building focuses on organizational benefit, not personal agenda. It requires patience, genuine listening, and willingness to adjust your approach based on input. Coalitions built on manipulation fall apart under pressure.",
+  "mcq": {
+    "question": "You're proposing a cross-functional initiative that requires buy-in from four department heads, each with different priorities and concerns. Your initial proposal focused heavily on benefits to your area. The proposal failed to gain support. What should you do differently?",
+    "options": {
+      "A": "Strengthen the business case and present it again with more data",
+      "B": "Meet with each stakeholder individually to understand their priorities, then revise the proposal to address shared objectives",
+      "C": "Get senior leadership to mandate participation since the initiative is important",
+      "D": "Scale down the initiative to only involve supportive departments"
+    },
+    "correctOption": "B",
+    "explanation": "Option B demonstrates effective coalition building. You failed initially because you presented your priorities, not shared objectives. Individual conversations reveal what each person actually cares about, what concerns they have, and what would make this valuable to them. Then revise the proposal to serve multiple objectives, not just yours. Option A gives them more of what they've already rejected. Option C creates forced compliance, not genuine support—they'll passively resist. Option D reduces scope but misses the larger opportunity. Real coalition building requires understanding stakeholder perspectives and finding legitimate common ground."
+  },
+  "openQuestions": [
+    "Think of an initiative that requires cross-functional support. Have you genuinely understood what each stakeholder needs from it?",
+    "When have you successfully built a coalition? What made it work?"
+  ]
+}

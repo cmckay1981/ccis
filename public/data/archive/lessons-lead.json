@@ -1,0 +1,384 @@
+{
+  "course_id": "leadership",
+  "course_name": "Leadership",
+  "modules": [
+    {
+      "module_id": "lead-m1-fundamentals",
+      "module_name": "Leadership Fundamentals",
+      "order": 1,
+      "lessons": [
+        {
+          "lesson_id": "lead-m1-l1",
+          "title": "Leadership vs Management",
+          "order": 1,
+          "content": "Management is organizing resources and executing plans. Leadership is influencing people toward a vision. Managers maintain systems; leaders drive change. You need both skills, but they're not the same. Know when to manage and when to lead.",
+          "questions": [
+            "Do you see yourself as a manager, leader, or both?",
+            "When does your role require management vs leadership?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m1-l2",
+          "title": "Sources of Authority",
+          "order": 2,
+          "content": "Authority comes from position (formal), expertise (knowledge), or respect (earned). Positional authority gets compliance. Expertise and respect get commitment. Relying solely on positional authority is fragile—people follow because they must, not because they want to.",
+          "questions": [
+            "What's the primary source of your authority—position, expertise, or respect?",
+            "Who do you follow even when they don't have formal authority?"
+          ],
+          "mcq": {
+            "question": "A new supervisor gives an order. The team complies, but with minimal effort. What's missing?",
+            "options": {
+              "A": "Clear instructions",
+              "B": "Earned respect and trust",
+              "C": "More authority",
+              "D": "Better procedures"
+            },
+            "correct": "B",
+            "explanation": "Positional authority gets compliance, but earned respect drives genuine commitment and effort."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m1-l3",
+          "title": "Leading by Example",
+          "order": 3,
+          "content": "Your actions set the standard. If you cut corners, your team will too. If you communicate clearly, they will model it. If you admit mistakes, they'll feel safe doing the same. You can't demand behavior you don't demonstrate.",
+          "questions": [
+            "What behaviors do you model that you want your team to adopt?",
+            "Have you ever seen a leader say one thing but do another? What happened?"
+          ],
+          "mcq": null,
+          "scenario": null
+        }
+      ]
+    },
+    {
+      "module_id": "lead-m2-decision-leadership",
+      "module_name": "Decision Leadership",
+      "order": 2,
+      "lessons": [
+        {
+          "lesson_id": "lead-m2-l1",
+          "title": "When to Decide Alone",
+          "order": 1,
+          "content": "Decide alone when time is critical, information is clear, and you have authority and expertise. Solo decisions are fast but carry full accountability. Use them for emergencies and routine calls within your authority. Avoid solo decisions on complex, high-stakes issues with time to consult.",
+          "questions": [
+            "What decisions do you make unilaterally?",
+            "When have you regretted making a solo decision that should have been collaborative?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m2-l2",
+          "title": "When to Consult the Team",
+          "order": 2,
+          "content": "Consult the team when you need diverse perspectives, buy-in, or expertise you lack. Consultation improves decision quality and increases commitment. It's slower but reduces errors and builds trust. Consult on strategic, complex, or people-impacting decisions.",
+          "questions": [
+            "How do you decide when to consult vs decide alone?",
+            "Have you ever consulted when you should have decided quickly? What happened?"
+          ],
+          "mcq": {
+            "question": "You're planning a major process change. The team has expertise you lack. What do you do?",
+            "options": {
+              "A": "Decide alone—you're the leader",
+              "B": "Consult the team before deciding",
+              "C": "Let the team decide",
+              "D": "Delay until you learn more"
+            },
+            "correct": "B",
+            "explanation": "Consult when the team has relevant expertise. You still make the final call, but you leverage their knowledge."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m2-l3",
+          "title": "Explaining Unpopular Decisions",
+          "order": 3,
+          "content": "Not every decision will be popular. Explain the reasoning, constraints, and trade-offs—even if people disagree. Transparency builds trust. 'Because I said so' destroys it. People can accept unpopular decisions if they understand the why.",
+          "questions": [
+            "Describe a time you had to implement an unpopular decision. How did you communicate it?",
+            "How do you respond when your team challenges a decision?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m2-l4",
+          "title": "Reversing Decisions",
+          "order": 4,
+          "content": "Strong leaders reverse bad decisions when new information emerges. Stubbornness in the face of evidence is ego, not leadership. Admit when you were wrong, explain what changed, and adjust course. Reversing quickly is better than committing to failure.",
+          "questions": [
+            "Have you ever reversed a decision? How did your team respond?",
+            "What makes it hard to admit you were wrong and change direction?"
+          ],
+          "mcq": null,
+          "scenario": "You implemented a new procedure. Within a week, it's clear it's not working. What do you do?"
+        }
+      ]
+    },
+    {
+      "module_id": "lead-m3-influence",
+      "module_name": "Influence and Motivation",
+      "order": 3,
+      "lessons": [
+        {
+          "lesson_id": "lead-m3-l1",
+          "title": "Intrinsic vs Extrinsic Motivation",
+          "order": 1,
+          "content": "Extrinsic motivation is external rewards—pay, recognition, fear of consequences. Intrinsic motivation is internal—pride, purpose, mastery. Extrinsic motivators drive short-term compliance. Intrinsic motivators drive long-term commitment. Build both, but prioritize intrinsic.",
+          "questions": [
+            "What motivates you personally—external rewards or internal drive?",
+            "How do you tap into intrinsic motivation in your team?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m3-l2",
+          "title": "Purpose and Vision",
+          "order": 2,
+          "content": "People need to know why their work matters. Connect daily tasks to larger purpose. 'We're not just turning valves—we're keeping people safe and systems running.' Vision gives meaning and sustains effort through hardship.",
+          "questions": [
+            "Can you articulate why your team's work matters beyond the paycheck?",
+            "How do you remind your team of purpose during monotonous or difficult work?"
+          ],
+          "mcq": {
+            "question": "Your team is struggling with morale during repetitive work. What's the best leadership response?",
+            "options": {
+              "A": "Offer bonuses for performance",
+              "B": "Remind them why the work matters and how it contributes to mission",
+              "C": "Rotate tasks to reduce boredom",
+              "D": "Push harder to get it done faster"
+            },
+            "correct": "B",
+            "explanation": "Connecting work to purpose builds intrinsic motivation. Extrinsic rewards and task rotation help, but purpose is the foundation."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m3-l3",
+          "title": "Recognition and Feedback",
+          "order": 3,
+          "content": "Recognition reinforces positive behavior. Be specific—'Good job' is weak; 'You caught that error before it became a problem—excellent situational awareness' is powerful. Public recognition for team achievements, private feedback for improvement. Both are essential.",
+          "questions": [
+            "When was the last time you recognized someone's contribution?",
+            "How do you prefer to be recognized—publicly or privately?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m3-l4",
+          "title": "Empowerment and Autonomy",
+          "order": 4,
+          "content": "Empowerment is giving people authority to make decisions within defined boundaries. Autonomy drives ownership and engagement. Micromanagement destroys both. Set clear expectations, provide resources, then step back. Intervene only when boundaries are crossed.",
+          "questions": [
+            "How much autonomy do you give your team?",
+            "Where do you draw the line between empowerment and abdication?"
+          ],
+          "mcq": null,
+          "scenario": "A team member consistently delivers results but uses methods you wouldn't choose. Do you intervene?"
+        }
+      ]
+    },
+    {
+      "module_id": "lead-m4-development",
+      "module_name": "Developing People",
+      "order": 4,
+      "lessons": [
+        {
+          "lesson_id": "lead-m4-l1",
+          "title": "Coaching vs Directing",
+          "order": 1,
+          "content": "Directing is telling someone what to do. Coaching is asking questions to help them figure it out. Directing is faster but doesn't build capability. Coaching is slower but develops independent problem-solvers. Use both based on urgency and the person's skill level.",
+          "questions": [
+            "Do you tend to direct or coach?",
+            "When is directing appropriate, and when should you coach instead?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m4-l2",
+          "title": "Identifying Development Needs",
+          "order": 2,
+          "content": "Observe performance, ask about goals, and identify skill gaps. Not everyone needs the same development. Tailor training to individual needs—some need technical skills, others need leadership or communication. Development plans should align with both organizational needs and personal aspirations.",
+          "questions": [
+            "What development areas would help you most right now?",
+            "How do you identify development needs in your team members?"
+          ],
+          "mcq": {
+            "question": "A high-performer wants to develop leadership skills, but your immediate need is technical expertise. What do you prioritize?",
+            "options": {
+              "A": "Technical—operational needs first",
+              "B": "Leadership—develop the person's aspirations",
+              "C": "Both—find ways to develop leadership within technical work",
+              "D": "Neither—focus on current job only"
+            },
+            "correct": "C",
+            "explanation": "Balance organizational needs with individual development. Find opportunities to develop leadership within technical roles."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m4-l3",
+          "title": "Delegation for Growth",
+          "order": 3,
+          "content": "Delegation isn't dumping tasks—it's assigning work that stretches someone's capabilities. Delegate with clear outcomes, boundaries, and support. Let them struggle productively without abandoning them. Delegation develops future leaders and prevents your own burnout.",
+          "questions": [
+            "What tasks could you delegate that you currently do yourself?",
+            "When have you been delegated something that stretched your abilities? How did it feel?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m4-l4",
+          "title": "Managing Underperformance",
+          "order": 4,
+          "content": "Address underperformance early and directly. Describe the gap between expected and actual performance, understand root causes, and create an improvement plan with clear metrics and timeline. Don't avoid difficult conversations—they compound. Support genuinely, but hold accountability.",
+          "questions": [
+            "How comfortable are you addressing underperformance?",
+            "What makes these conversations hard, and how do you prepare for them?"
+          ],
+          "mcq": null,
+          "scenario": "A usually solid performer's work has declined noticeably. What do you do?"
+        }
+      ]
+    },
+    {
+      "module_id": "lead-m5-crisis",
+      "module_name": "Crisis Leadership",
+      "order": 5,
+      "lessons": [
+        {
+          "lesson_id": "lead-m5-l1",
+          "title": "Leading Through Uncertainty",
+          "order": 1,
+          "content": "Crisis brings ambiguity, incomplete information, and pressure. Leaders must project calm confidence while acknowledging uncertainty. 'I don't have all the answers, but here's what we know and what we're doing next.' Honesty without panic.",
+          "questions": [
+            "How do you show confidence without pretending to have certainty you don't have?",
+            "When have you seen a leader handle uncertainty well?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m5-l2",
+          "title": "Maintaining Team Focus",
+          "order": 2,
+          "content": "During crisis, attention fractures and people focus on threats instead of tasks. Leaders refocus the team on immediate priorities and actionable next steps. 'Right now, we need to do X, Y, and Z. Everything else waits.' Clear direction cuts through chaos.",
+          "questions": [
+            "How do you prioritize when everything feels urgent?",
+            "What techniques help you keep a team focused under pressure?"
+          ],
+          "mcq": {
+            "question": "During an emergency, team members are reacting to multiple alarms and losing focus. What do you say?",
+            "options": {
+              "A": "'Everyone calm down.'",
+              "B": "'Focus on [specific task]. Ignore everything else right now.'",
+              "C": "'We need to address all of this simultaneously.'",
+              "D": "'Let's take a break and regroup.'"
+            },
+            "correct": "B",
+            "explanation": "Crisis leadership requires clear prioritization and direction. Tell the team exactly what to focus on right now."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m5-l3",
+          "title": "Decision Speed in Crisis",
+          "order": 3,
+          "content": "Crisis demands fast decisions with incomplete information. Waiting for perfect data is paralysis. Make the best call you can with what you have, act, then adjust. Wrong action beats right inaction. Speed with acceptable error is better than slow perfection.",
+          "questions": [
+            "How do you balance speed and accuracy when under pressure?",
+            "Describe a time you had to decide quickly with limited information."
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m5-l4",
+          "title": "Post-Crisis Recovery",
+          "order": 4,
+          "content": "After crisis, acknowledge what happened, debrief lessons, and check on your team's well-being. Crisis is exhausting—people need recovery time and recognition. Don't rush back to normal without processing the event. Resilience requires deliberate recovery.",
+          "questions": [
+            "How does your team recover after high-stress events?",
+            "What do you personally need to recover from crisis or prolonged pressure?"
+          ],
+          "mcq": null,
+          "scenario": "Your team just managed a major incident successfully. The immediate crisis is over. What do you do next?"
+        }
+      ]
+    },
+    {
+      "module_id": "lead-m6-ethical",
+      "module_name": "Ethical Leadership",
+      "order": 6,
+      "lessons": [
+        {
+          "lesson_id": "lead-m6-l1",
+          "title": "Integrity and Trust",
+          "order": 1,
+          "content": "Integrity is alignment between values and actions. Do what you say, say what you mean. Trust is built on consistent integrity over time. One lie or betrayal destroys years of trust. Ethical shortcuts are never worth the cost.",
+          "questions": [
+            "Have you ever compromised integrity for short-term gain? What happened?",
+            "How do you respond when pressured to do something you believe is wrong?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m6-l2",
+          "title": "Ethical Dilemmas",
+          "order": 2,
+          "content": "Ethical dilemmas pit competing values against each other—safety vs production, transparency vs loyalty, individual vs collective good. There's no perfect answer. Use a framework: identify stakeholders, consider consequences, apply principles, seek counsel, decide, and own it.",
+          "questions": [
+            "Describe an ethical dilemma you faced. How did you resolve it?",
+            "What principles guide your ethical decisions?"
+          ],
+          "mcq": {
+            "question": "You discover a safety violation that will halt operations if reported. Reporting harms the team financially. What do you do?",
+            "options": {
+              "A": "Report it—safety is non-negotiable",
+              "B": "Fix it quietly without reporting",
+              "C": "Defer to your supervisor",
+              "D": "Ignore it if the risk is low"
+            },
+            "correct": "A",
+            "explanation": "Safety violations must be reported. Covering them up, even with good intentions, creates larger ethical and safety failures."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m6-l3",
+          "title": "Fairness and Bias",
+          "order": 3,
+          "content": "Fair leaders treat people equitably, not identically. Equity considers individual circumstances and needs. Be aware of unconscious bias—we favor people like us. Fair treatment builds trust; perceived favoritism destroys it. Audit your decisions for bias regularly.",
+          "questions": [
+            "How do you ensure you treat team members fairly?",
+            "Have you caught yourself showing bias? What did you do about it?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "lead-m6-l4",
+          "title": "Accountability and Transparency",
+          "order": 4,
+          "content": "Leaders hold themselves accountable first. When things go wrong, own it—don't blame the team. When things go right, credit the team. Transparency about decisions, constraints, and mistakes builds credibility. Hiding information breeds cynicism.",
+          "questions": [
+            "How do you hold yourself accountable when you make a mistake?",
+            "When have you seen a leader transparently admit error? How did it affect your respect for them?"
+          ],
+          "mcq": null,
+          "scenario": "A major failure occurs on your watch due to a decision you made. How do you address it with your team and leadership?"
+        }
+      ]
+    }
+  ]
+}

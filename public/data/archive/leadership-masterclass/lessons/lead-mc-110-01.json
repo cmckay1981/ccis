@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-110-01",
+  "moduleId": "LEAD-MC-110",
+  "courseId": "LEAD-MC",
+  "title": "Strategic Messaging: Normal, Stress, and Post-Incident",
+  "type": "lesson",
+  "content": "Communication strategy changes based on context. During normal operations, reinforce culture and priorities. During high-stress periods, provide clarity and stability. After incidents, rebuild trust and facilitate learning. Leaders who communicate the same way regardless of context miss opportunities to strengthen culture when it matters most. Each context requires different message content, frequency, and tone.",
+  "mcq": {
+    "question": "After a significant operational failure, a leader sends a brief email to the team: 'The issue has been resolved. Resume normal operations. We'll review what happened at our next scheduled meeting in two weeks.' Team anxiety remains high and rumors are spreading. What communication failure occurred?",
+    "options": {
+      "A": "The leader communicated too quickly without full investigation",
+      "B": "The leader failed to acknowledge the emotional impact, explain what happened, and outline next steps for learning",
+      "C": "Email was the wrong medium for this message",
+      "D": "Waiting two weeks for discussion was appropriate to allow emotions to settle"
+    },
+    "correctOption": "B",
+    "explanation": "Post-incident communication requires more than operational status. The team needs to understand what happened, why, what's being done to prevent recurrence, and that leadership takes it seriously. The brief email created an information vacuum that rumors filled. Option B identifies what's missing: acknowledgment of impact, explanation of events, and commitment to learning. Option A misreads the issue—you can provide interim communication before full investigation. Option C focuses on medium rather than content. Option D allows anxiety to fester for two weeks. Post-incident requires over-communication, not minimal updates."
+  },
+  "openQuestions": [
+    "Think of how you communicated after a recent significant problem. Did you address operational status only, or also emotional impact and learning?",
+    "What's your default communication pattern during high-stress situations? Is it effective?"
+  ]
+}

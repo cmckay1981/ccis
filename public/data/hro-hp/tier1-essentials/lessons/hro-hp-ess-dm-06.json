@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-DM-06",
+  "moduleId": "HRO-HP-ESS-DM",
+  "courseId": "HRO-HP-ESS",
+  "title": "Post-Decision Review",
+  "type": "lesson",
+  "content": "Every significant decision is a learning opportunity. Effective review examines not just outcomes but the decision process: what information did you have, what did you assume, what options did you consider, and what would you do differently? Good decisions can produce bad outcomes and bad decisions can produce good outcomes—evaluate the process, not just results.",
+  "mcq": {
+    "question": "A team made a decision that turned out well, but review reveals they had incomplete information and got lucky. How should this be evaluated?",
+    "options": {
+      "A": "Positive—the outcome validates the approach",
+      "B": "Neutral—luck balances out over time",
+      "C": "Concerning—a flawed process happened to work this time",
+      "D": "Irrelevant—focus on future decisions instead"
+    },
+    "correctOption": "C",
+    "explanation": "Outcome bias makes us judge decisions by results. But a flawed decision process that happened to work will eventually produce failures. The goal is reliable decision processes, not lucky outcomes."
+  },
+  "openQuestions": [
+    "How does your team currently review decisions? Do you examine the process or mainly focus on outcomes?",
+    "Describe a decision that had a good outcome but, in hindsight, was based on incomplete information or flawed reasoning."
+  ]
+}

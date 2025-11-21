@@ -1,0 +1,75 @@
+{
+  "lessonId": "WC-SF-108-01",
+  "moduleId": "WC-SF-108",
+  "courseId": "WC-SF",
+  "title": "Driller's Method",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "Driller's Method uses two circulations to kill a well. First circulation: remove the kick using original mud weight. Second circulation: pump kill weight mud to balance formation pressure. It's simpler to execute than Wait and Weight, starts immediately (no waiting for kill mud), but exposes the well to higher pressures during the first circulation.",
+  "multiSensoryExplanations": {
+    "visual": "Two trucks delivering supplies. Truck 1 takes out the garbage (kick). Truck 2 brings heavy equipment (kill mud). Separate trips, simple coordination.",
+    "auditory": "Driller's Method rhythm: 'Circulate OUT, then circulate IN.' Two phases, sequential. Say it: 'Out with the kick, in with the kill.'",
+    "kinesthetic": "Use two hands. Right hand pushes away (circulate out kick). Pause. Left hand pulls in (circulate kill mud). Two separate, sequential motions. Feel the simplicity.",
+    "storyBased": "A toolpusher said: 'I use Driller's when my crew is green or when things are chaotic. It's simple\u2014even tired people can execute it. Start pumping immediately, deal with one thing at a time.'"
+  },
+  "procedure": {
+    "circulation1": [
+      "1. Bring pump to kill rate, holding casing pressure constant",
+      "2. Note ICP when pump reaches kill rate",
+      "3. Maintain constant drill pipe pressure (= ICP) throughout",
+      "4. Circulate until kick is fully out (original mud returns)",
+      "5. Shut in, record pressures (SIDPP will still show underbalance)"
+    ],
+    "circulation2": [
+      "1. Weight up mud to kill weight",
+      "2. Resume circulation at kill rate",
+      "3. As kill mud goes down drillstring, follow pressure schedule ICP\u2192FCP",
+      "4. When kill mud at bit, maintain FCP",
+      "5. Circulate until kill mud returns to surface",
+      "6. Shut in, verify SIDPP and SICP = 0",
+      "7. Well is dead"
+    ]
+  },
+  "advantages": [
+    "Simple procedure\u2014easier to execute under stress",
+    "Starts immediately\u2014no waiting for kill mud",
+    "Removes kick first\u2014reduces gas expansion risk during wait",
+    "Good for inexperienced crews"
+  ],
+  "disadvantages": [
+    "Higher annular pressures during first circulation",
+    "Takes longer total time (two full circulations)",
+    "More pressure on casing shoe during first circulation"
+  ],
+  "mcq": {
+    "question": "How many circulations does Driller's Method require to kill a well?",
+    "options": {
+      "A": "One",
+      "B": "Two",
+      "C": "Three",
+      "D": "Depends on kick size"
+    },
+    "correctOption": "B",
+    "explanation": "Driller's Method always requires two circulations: first to remove the kick with original mud, second to circulate kill weight mud."
+  },
+  "advancedQuestion": {
+    "question": "You've taken a 40-barrel gas kick at 15,000 ft. Rig mud system will take 2 hours to weight up. Casing shoe is strong. Should you use Driller's Method or Wait and Weight?",
+    "answer": "Driller's Method. Reasons: (1) Large gas kick will expand significantly while waiting 2 hours, (2) Strong shoe can handle higher pressures of Driller's, (3) Starting immediately removes kick before expansion becomes dangerous. W&W would be better for: small kick, quick mix time, weak shoe.",
+    "l4Focus": "Method selection based on specific well conditions is a key L4 competency."
+  },
+  "commonMisconception": {
+    "wrong": "Driller's Method is inferior because it takes longer.",
+    "correct": "Total time isn't the only factor. Driller's starts immediately (no waiting), is simpler under stress, and may be safer for large gas kicks where waiting allows dangerous expansion. 'Better' depends on the situation."
+  },
+  "documentId": "WC-SF-108-01",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-108",
+    "WC-SF-108-01"
+  ]
+}

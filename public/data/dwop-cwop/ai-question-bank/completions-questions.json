@@ -1,0 +1,21 @@
+{
+  "categoryId": "COMPLETIONS",
+  "title": "Completions Operations - AI Probing Questions",
+  "breakoutRoom": "A/B",
+  "targetParticipants": ["Completions Engineer", "Well Engineer", "Subsea Engineer", "Production Engineer"],
+  "questions": [
+    {"questionId": "CP-001", "question": "Your SSSV is set at 100m but regulations require 50m below mudline - confirm this meets requirements?", "type": "verification", "focus": "Regulatory compliance", "expectedResponse": "SSSV depth justification"},
+    {"questionId": "CP-002", "question": "Perforating is planned underbalanced - what's your surface equipment configuration for well control?", "type": "verification", "focus": "Well control during perforating", "expectedResponse": "Surface equipment and procedures"},
+    {"questionId": "CP-003", "question": "Completion fluid is calcium bromide at 14.5 ppg - is this compatible with your formation and elastomers?", "type": "verification", "focus": "Fluid compatibility", "expectedResponse": "Compatibility test results"},
+    {"questionId": "CP-004", "question": "If packer fails to set at depth, what's your contingency? Can you re-run or do you need to change strategy?", "type": "what_if", "focus": "Packer contingency", "expectedResponse": "Packer failure decision tree"},
+    {"questionId": "CP-005", "question": "Well test shows 3,000 bopd but separator is rated for 2,500 - has this been addressed?", "type": "gap_identification", "focus": "Test equipment capacity", "expectedResponse": "Capacity upgrade or rate limitation"},
+    {"questionId": "CP-006", "question": "Your sand control design is standalone screen but offset wells had screen erosion - should you consider gravel pack?", "type": "assumption_challenge", "focus": "Sand control selection", "expectedResponse": "Screen vs gravel pack analysis"},
+    {"questionId": "CP-007", "question": "Tubing stress analysis shows 95% utilization - what's your safety margin for thermal cycling during production?", "type": "calculation_check", "focus": "Tubing design", "expectedResponse": "Thermal analysis and safety factor"},
+    {"questionId": "CP-008", "question": "Chemical injection rate is 5 L/hr but umbilical capacity is 3 L/hr - how do you achieve target rate?", "type": "gap_identification", "focus": "Chemical injection", "expectedResponse": "Injection rate reconciliation"},
+    {"questionId": "CP-009", "question": "Perforating depth is based on LWD - what's your depth correlation plan to ensure correct interval?", "type": "verification", "focus": "Depth control", "expectedResponse": "Correlation procedure"},
+    {"questionId": "CP-010", "question": "Your downhole gauge is rated to 150°C but reservoir temperature is 145°C - what's your margin for temperature uncertainty?", "type": "calculation_check", "focus": "Equipment ratings", "expectedResponse": "Temperature margin assessment"},
+    {"questionId": "CP-011", "question": "If TCP guns misfire, what's your contingency for re-perforating?", "type": "what_if", "focus": "Perforating contingency", "expectedResponse": "Misfire response plan"},
+    {"questionId": "CP-012", "question": "Well handover documentation shows production expected in 30 days - is the tree control system commissioned and tested?", "type": "verification", "focus": "Production readiness", "expectedResponse": "Control system commissioning status"}
+  ],
+  "tags": ["dwop", "ai-questions", "completions", "perforating", "sand-control"]
+}

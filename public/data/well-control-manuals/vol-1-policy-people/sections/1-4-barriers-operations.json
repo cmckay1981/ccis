@@ -1,0 +1,38 @@
+{
+  "sectionId": "1.4",
+  "title": "Barriers in Operations",
+  "content": {
+    "1.4.1": {
+      "title": "Barriers During Overbalanced Drilling",
+      "content": "During conventional overbalanced drilling operations:\n\n**Primary Barrier:**\nDrilling fluid providing hydrostatic overbalance to formation pressure\n\n**Secondary Barrier:**\nBOP system (including casing, cement, wellhead)\n\n**Barrier Elements:**\n| Primary | Secondary |\n|---------|----------|\n| Drilling fluid column | Casing |\n| Open hole formation | Cement |\n| | BOP rams/annular |\n| | Wellhead |\n\n**Monitoring:**\n- Continuous pit volume monitoring\n- Flow monitoring\n- Mud weight verification\n- BOP function testing per schedule"
+    },
+    "1.4.2": {
+      "title": "Barriers During MPD Operations",
+      "content": "Managed Pressure Drilling modifies the barrier configuration:\n\n**Primary Barrier:**\nHydrostatic head + Annular friction losses + Surface applied back pressure (SBP)\n\n**Secondary Barrier:**\nBOP system\n\n**Additional Considerations:**\n- RCD (Rotating Control Device) is part of the pressure containment system but NOT a barrier element\n- MPD system failure requires immediate transition to conventional well control\n- Two barriers must be maintained at all times - MPD does not change this requirement\n\n**Constant BHP MPD:**\nSBP compensates for ECD loss during connections. Primary barrier maintained through pressure management.\n\n**Pressurized Mud Cap Drilling (PMCD):**\nSpecial barrier considerations apply. Detailed procedures in Volume 2.\n\n**Dual Gradient Drilling:**\nRiser and wellbore may have different fluid systems. Barrier verification must account for both systems."
+    },
+    "1.4.3": {
+      "title": "Cemented Casing as a Barrier",
+      "content": "Cemented casing can serve as a barrier element when:\n\n**Requirements:**\n- Cement provides minimum 500 ft (150m) of coverage above the zone of interest\n- Cement provides lateral support and isolation\n- Cement integrity verified by:\n  - Positive pressure test from inside\n  - Cement evaluation log (CBL/VDL) where required\n  - Shoe test/LOT indicating formation strength\n\n**Limitations:**\n- Cement quality cannot always be verified behind pipe\n- Cement can degrade over time\n- Mechanical damage can compromise casing\n\n**When cemented casing is a barrier element:**\n- Barrier schematic must clearly identify it\n- Any work that could affect integrity requires re-verification\n- Casing pressure monitoring required"
+    },
+    "1.4.4": {
+      "title": "Cement Plug as a Barrier",
+      "content": "Cement plugs can serve as barrier elements when:\n\n**Requirements:**\n- Minimum length per regulatory requirements (typically 100-200 ft)\n- Set across competent formation or inside casing\n- Verified by:\n  - Positive pressure test from above\n  - Weight test (set down) from above\n  - Negative test where applicable\n  - Tagging with drillstring\n\n**Plug Types:**\n- Balanced plug in open hole\n- Plug inside casing\n- Plug at casing shoe\n\n**Abandonment:**\nFor permanent abandonment, cement plug barriers must meet regulatory requirements for:\n- Isolation of hydrocarbon zones\n- Protection of freshwater zones\n- Long-term integrity"
+    },
+    "1.4.5": {
+      "title": "Barriers in Producing Wells",
+      "content": "During production operations, typical barriers include:\n\n**Primary Barrier:**\n- Completion fluid\n- Tubing\n- Packer\n- SSSV (Subsurface Safety Valve)\n\n**Secondary Barrier:**\n- Completion fluid in annulus\n- Production casing\n- Cement\n- Wellhead\n- Christmas tree\n\n**Monitoring:**\n- Tubing and annulus pressure monitoring\n- SSSV function testing per schedule\n- Wellhead integrity verification"
+    },
+    "1.4.6": {
+      "title": "Barriers During Well Intervention",
+      "content": "Well intervention operations require maintained barriers throughout:\n\n**Wireline Operations:**\n- Primary: Well fluid + BOP/lubricator + wireline valve\n- Secondary: SSSV or equivalent isolation\n\n**Coiled Tubing Operations:**\n- Primary: Well fluid + CT BOP + check valves\n- Secondary: SSSV or equivalent + casing/cement\n\n**Snubbing Operations:**\n- Primary: Well fluid + snubbing BOP + IBOP/check valve\n- Secondary: Production BOP + casing/cement\n\n**Common Requirements:**\n- Verify barriers before entry to well\n- Test intervention BOP\n- Confirm SSSV or isolation status\n- Maintain kill weight fluid available"
+    },
+    "1.4.7": {
+      "title": "Barriers During P&A Operations",
+      "content": "Plug and Abandonment requires progressive barrier installation:\n\n**Phase Approach:**\n1. Verify existing barriers before starting\n2. Remove completion while maintaining barriers\n3. Install permanent cement barriers\n4. Verify each barrier before proceeding\n5. Final wellhead removal with barriers in place below\n\n**Permanent Barriers:**\n- Must isolate all hydrocarbon zones\n- Must protect all freshwater zones\n- Must meet regulatory requirements\n- Must be verified before wellhead removal\n\n**During P&A:**\nAt all times until final barriers are verified, two barriers must be maintained. This may include:\n- Existing cement + fluid column\n- Installed plug + fluid column\n- Multiple cement plugs"
+    },
+    "1.4.8": {
+      "title": "Temporary BOP Retrieval",
+      "content": "If BOP must be retrieved for maintenance while well has potential for flow:\n\n**Requirements:**\n- Well must be secured with verified barriers that do not rely on BOP\n- Typically: cement plug + mechanical plug, or equivalent\n- Risk assessment required\n- Approval from appropriate management level\n\n**Procedure:**\n1. Verify barriers independent of BOP\n2. Pressure test barriers\n3. Displace well to appropriate fluid\n4. Monitor well before, during, and after BOP retrieval\n5. Have contingency equipment available\n\n**Note:** This is a high-risk operation requiring detailed planning and approval."
+    }
+  }
+}

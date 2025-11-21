@@ -1,0 +1,70 @@
+{
+  "cardId": "kick-indicators",
+  "title": "Kick Indicators Quick Reference",
+  "type": "reference-card",
+  "content": {
+    "primary": {
+      "title": "PRIMARY INDICATORS (Confirmed Kick)",
+      "description": "Requires immediate shut-in",
+      "indicators": [
+        {
+          "indicator": "PIT GAIN",
+          "description": "Unexplained increase in mud volume",
+          "action": "SHUT IN"
+        },
+        {
+          "indicator": "FLOW RATE INCREASE",
+          "description": "Returns exceed pump rate",
+          "action": "SHUT IN"
+        },
+        {
+          "indicator": "FLOW WITH PUMPS OFF",
+          "description": "Well flowing when not circulating",
+          "action": "SHUT IN IMMEDIATELY"
+        }
+      ]
+    },
+    "secondary": {
+      "title": "SECONDARY INDICATORS (Warning Signs)",
+      "description": "Requires investigation, flow check, heightened awareness",
+      "indicators": [
+        {
+          "indicator": "Drilling Break",
+          "description": "Sudden ROP increase",
+          "action": "Flow check, monitor"
+        },
+        {
+          "indicator": "Connection Gas",
+          "description": "Gas at surface after connections (increasing trend)",
+          "action": "Monitor trend, consider MW increase"
+        },
+        {
+          "indicator": "Background Gas Increase",
+          "description": "Rising gas levels while drilling",
+          "action": "Monitor, possible MW increase"
+        },
+        {
+          "indicator": "Hole Not Taking Fill",
+          "description": "During trips, hole accepts less than calculated",
+          "action": "Stop trip, flow check"
+        },
+        {
+          "indicator": "Chlorides Increase",
+          "description": "Salt content rising in returns",
+          "action": "Investigate, may indicate water influx"
+        }
+      ]
+    },
+    "flowCheck": {
+      "title": "FLOW CHECK PROCEDURE",
+      "steps": [
+        "1. Stop pumps",
+        "2. Position kelly/top drive clear of rotary",
+        "3. Observe flow line minimum 5 minutes",
+        "4. Monitor pit volumes",
+        "5. No flow + stable pits = Well is static",
+        "6. Continuous flow + pit gain = Kick - SHUT IN"
+      ]
+    }
+  }
+}

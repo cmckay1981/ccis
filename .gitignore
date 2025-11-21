@@ -71,6 +71,24 @@ node_modules/
 # macOS system files
 .DS_Store
 **/.DS_Store
+.ds-store
+**/.ds-store
 
-# PDFs and documentation that shouldn't be in repo
+# Service Account Keys (NEVER COMMIT)
+serviceAccountKey.json
+**/serviceAccountKey.json
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Editor directories
+.vscode/
+.idea/
+
+# PDFs - Keep training manuals but exclude generated reports
+# Uncomment if you want to include PDFs:
+# !data/**/*.pdf
+# !public/data/**/*.pdf
 *.pdf

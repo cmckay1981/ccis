@@ -1,0 +1,92 @@
+{
+  "industryCode": "OG",
+  "industryName": "Oil & Gas",
+  "description": "Scenario pack for drilling contractors, offshore operators, and refineries",
+  "targetOrganizations": ["Drilling contractors", "Offshore operators", "Refineries", "Pipeline operators"],
+  "terminology": {
+    "operator": "operator / driller",
+    "control room": "driller's cabin / control room",
+    "shift handover": "crew change / tour handover",
+    "incident": "incident / near miss",
+    "crew": "crew",
+    "supervisor": "toolpusher / supervisor"
+  },
+  "sampleScenarios": {
+    "HRO-HP-ESS-SA-01": {
+      "title": "Situational Awareness on Drill Floor",
+      "mcq": {
+        "question": "A driller monitoring the control panel sees all parameters in normal range but hasn't considered the formation change expected at current depth. What level of situational awareness are they demonstrating?",
+        "options": {
+          "A": "Complete situational awareness",
+          "B": "Level 1 only—perception without comprehension or projection",
+          "C": "Adequate SA for drilling operations",
+          "D": "No situational awareness"
+        },
+        "correctOption": "B",
+        "explanation": "Seeing normal gauges is perception (Level 1). Full SA requires understanding the drilling context and anticipating how formation changes might affect parameters."
+      }
+    },
+    "HRO-HP-ESS-DM-01": {
+      "title": "Decision Types During Drilling Operations",
+      "mcq": {
+        "question": "Unexpected gas shows appear while drilling. Procedures exist for gas shows, but the magnitude and rate are unusual. What type of decision is required?",
+        "options": {
+          "A": "Routine—follow gas show procedures",
+          "B": "Tactical—requires judgment within well control principles",
+          "C": "Critical—this is potentially an emergency requiring immediate action",
+          "D": "No decision needed—wait for company man guidance"
+        },
+        "correctOption": "C",
+        "explanation": "Unusual gas behavior with unknown magnitude requires treating this as potentially critical. Well control situations can escalate rapidly; waiting for guidance may be too slow."
+      }
+    },
+    "HRO-HP-ESS-COMM-04": {
+      "title": "Closed-Loop Communication During Connection",
+      "mcq": {
+        "question": "The driller calls 'Set slips' to the floorhand. What closed-loop response demonstrates proper verification?",
+        "options": {
+          "A": "Okay.",
+          "B": "Setting slips—slips set.",
+          "C": "Roger.",
+          "D": "Done."
+        },
+        "correctOption": "B",
+        "explanation": "Proper closed-loop: acknowledge instruction, state action being taken, confirm completion. Single word acknowledgments don't verify understanding or confirm completion."
+      }
+    },
+    "HRO-HP-ESS-HF-02": {
+      "title": "Fatigue on 14-Day Hitch",
+      "mcq": {
+        "question": "A crew member on day 12 of a 14-day hitch, working 12-hour tours, reports feeling 'fine.' Research shows their cognitive state is likely:",
+        "options": {
+          "A": "Fine—they know their own limits",
+          "B": "Minor fatigue that experience compensates for",
+          "C": "Significantly impaired, possibly unaware of impairment",
+          "D": "Only affected if they report feeling tired"
+        },
+        "correctOption": "C",
+        "explanation": "Cumulative sleep debt produces significant cognitive impairment even when people report feeling fine. Self-assessment of fatigue is unreliable; impaired people often don't recognize their own degraded state."
+      }
+    }
+  },
+  "caseStudies": [
+    {
+      "id": "OG-CS-001",
+      "title": "The Missed Kick",
+      "summary": "How breakdown in situational awareness led to delayed well control response",
+      "competencies": ["SA", "DM", "COMM"]
+    },
+    {
+      "id": "OG-CS-002",
+      "title": "Crew Change Communication",
+      "summary": "Critical information lost during handover leads to equipment damage",
+      "competencies": ["COMM", "TW", "SA"]
+    },
+    {
+      "id": "OG-CS-003",
+      "title": "The Silent Alarm",
+      "summary": "Why a crew member's concern went unreported and how it could have been prevented",
+      "competencies": ["LEAD", "TW", "HF"]
+    }
+  ]
+}

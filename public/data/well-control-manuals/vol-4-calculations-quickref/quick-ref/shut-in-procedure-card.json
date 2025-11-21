@@ -1,0 +1,57 @@
+{
+  "cardId": "shut-in-procedure",
+  "title": "Shut-In Procedure Quick Reference",
+  "type": "procedure-card",
+  "content": {
+    "hardShutIn": {
+      "title": "HARD SHUT-IN (Default)",
+      "steps": [
+        "1. Stop rotation",
+        "2. Stop pumps",
+        "3. Raise kelly/top drive - position tool joint above BOP",
+        "4. CLOSE annular preventer (or pipe rams)",
+        "5. Open HCR valve",
+        "6. Notify Supervisor",
+        "7. Read and record SIDPP and SICP when stable",
+        "8. Record pit gain"
+      ],
+      "target": "From indicator to BOP closed: < 2 minutes"
+    },
+    "softShutIn": {
+      "title": "SOFT SHUT-IN (When Specified)",
+      "when": "H2S environment, weak formations",
+      "steps": [
+        "1. Stop rotation",
+        "2. Stop pumps",
+        "3. Position tool joint above BOP",
+        "4. Verify choke is OPEN",
+        "5. Close annular preventer",
+        "6. SLOWLY close choke",
+        "7. Notify Supervisor",
+        "8. Record pressures and pit gain"
+      ]
+    },
+    "tripping": {
+      "title": "SHUT-IN WHILE TRIPPING",
+      "steps": [
+        "1. Set pipe in slips if possible",
+        "2. Stab FOSV (Full Opening Safety Valve) - OPEN position",
+        "3. Close FOSV",
+        "4. Close annular preventer",
+        "5. Open HCR valve",
+        "6. Notify Supervisor",
+        "7. Record pressures when stable"
+      ]
+    },
+    "keyReminders": {
+      "title": "KEY REMINDERS",
+      "items": [
+        "✓ ANYONE can initiate shut-in without permission",
+        "✓ Speed is critical - every second matters",
+        "✓ Follow trained procedures",
+        "✓ Pipe position is secondary to stopping influx",
+        "✓ Do NOT delay to achieve perfect conditions"
+      ]
+    }
+  }
+}

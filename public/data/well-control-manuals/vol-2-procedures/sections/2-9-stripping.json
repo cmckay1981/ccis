@@ -1,0 +1,30 @@
+{
+  "sectionId": "2.9",
+  "title": "Stripping & Snubbing",
+  "content": {
+    "2.9.1": {
+      "title": "Overview",
+      "content": "Stripping and snubbing allow pipe movement into/out of a well under pressure.\n\n**Stripping:**\nMoving pipe when pipe weight exceeds wellbore pressure force trying to push it out. Pipe tends to fall.\n\n**Snubbing:**\nMoving pipe when wellbore pressure force exceeds pipe weight. Pipe tends to be pushed out. Requires mechanical force to push in.\n\n**Transition Point:**\n- When pipe weight = pressure force on pipe cross-section\n- Above this depth: snubbing (pipe light)\n- Below this depth: stripping (pipe heavy)\n\n**When Used:**\n- Kick taken with pipe off bottom\n- Need to get to bottom for circulation\n- Moving through influx\n- Well under pressure and pipe movement needed"
+    },
+    "2.9.2": {
+      "title": "Stripping Calculations",
+      "content": "**Volumetric Considerations:**\nAs pipe enters well, it displaces mud. As pipe leaves, mud fills void. Must account for this during pressure management.\n\n**Pipe Displacement:**\n- Metal volume of pipe moving through BOP\n- Adds to wellbore volume when entering\n- Removes from wellbore volume when exiting\n\n**Steel Displacement:**\nDisplacement (bbl/ft) varies by pipe size. Consult pipe tables.\n\n**Pressure Management:**\n- Pipe in → Wellbore pressure increases → Must bleed volume\n- Pipe out → Wellbore pressure decreases → Must pump volume\n\n**Bleed/Pump Volume:**\nVolume = Pipe displacement × Length of pipe stripped\n\n**Pressure Control:**\n- Allow pressure to increase as pipe enters\n- Bleed to compensate\n- Maintain constant BHP throughout"
+    },
+    "2.9.3": {
+      "title": "Stripping Procedure",
+      "content": "**Preparation:**\n1. Calculate pipe displacement\n2. Determine acceptable pressure operating range\n3. Establish bleed-off volumes per stand\n4. Verify stripping BOP capability (typically annular)\n5. Have FOSV ready for each connection\n\n**Stripping In (Running Pipe Into Well):**\n1. Open annular slightly to allow pipe movement\n2. Lower pipe slowly and steadily\n3. As pipe enters, pressure increases\n4. At upper pressure limit, stop and bleed calculated volume\n5. Pressure returns to lower limit\n6. Continue lowering\n7. At connection: stop, install FOSV, break connection, add stand\n8. Repeat until at depth\n\n**Stripping Out (Pulling Pipe From Well):**\n1. Open annular slightly\n2. Pull pipe slowly\n3. As pipe exits, pressure decreases\n4. At lower pressure limit, pump calculated volume\n5. Pressure returns to upper limit\n6. Continue pulling\n7. Manage connections with FOSV"
+    },
+    "2.9.4": {
+      "title": "Snubbing Considerations",
+      "content": "**When Pipe is Light:**\n- Wellbore pressure pushes pipe out\n- Must mechanically force pipe down\n- Requires snubbing equipment or special technique\n\n**Snubbing Without Equipment:**\n- May use rig weight (hoisting system in reverse)\n- Very limited capability\n- High risk if control lost\n\n**Snubbing With Equipment:**\n- Hydraulic snubbing unit\n- Mechanical means to push pipe down\n- Specialized operation\n\n**Avoiding Snubbing:**\n- Bullhead heavier fluid to increase hydrostatic\n- Reduces wellhead pressure\n- Makes pipe heavy earlier\n- May allow stripping instead of snubbing"
+    },
+    "2.9.5": {
+      "title": "Safety Considerations",
+      "content": "**Annular Element:**\n- Frequent stripping wears element rapidly\n- Monitor element condition\n- Have spare element available\n- Do not over-close (increases wear)\n\n**Connection Handling:**\n- Every connection is a potential leak point\n- FOSV must be reliable\n- Verify tool joint thread integrity\n- Torque connections properly\n\n**Pipe Integrity:**\n- Stripping through influx may expose pipe to corrosive fluids\n- H2S can cause embrittlement\n- Inspect pipe after exposure\n\n**Speed:**\n- Move pipe slowly and steadily\n- Avoid jerky movements\n- Allow time for pressure equalization\n- Faster is not better in stripping\n\n**Stop Criteria:**\n- Equipment problems\n- Uncontrolled pressure behavior\n- Pipe integrity concerns\n- Unable to manage connections safely"
+    },
+    "2.9.6": {
+      "title": "Combined Stripping and Volumetric",
+      "content": "When stripping through gas kick:\n\n**Gas Migration Effect:**\n- Gas rises while stripping\n- Adds to pressure increase from pipe displacement\n- Must account for both effects\n\n**Procedure:**\n1. Strip pipe in, managing displacement as normal\n2. Also allow for gas migration pressure increase\n3. Bleed to maintain BHP constant\n4. Complex calculation but principle is same:\n   - Total bleed = Displacement effect + Migration effect\n\n**Monitoring:**\n- Track strokes/volume carefully\n- Monitor pressure trends\n- If pressure behavior unexpected, stop and assess\n- Gas may be bypassing pipe (flowing up inside)\n\n**Getting to Bottom:**\nGoal is to get bit to bottom for circulation. Once there:\n- Establish circulation\n- Use standard kill method\n- Well control procedures normalize"
+    }
+  }
+}

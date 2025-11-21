@@ -1,0 +1,14 @@
+{
+  "moduleId": "LEAD-105",
+  "courseId": "LEAD",
+  "title": "Accountability and Performance",
+  "description": "Differentiates between standards enforcement and punitive culture. Covers performance conversations that improve outcomes, managing declining performers, progressive accountability frameworks, and making termination decisions.",
+  "order": 5,
+  "lessonIds": [
+    "LEAD-105-01",
+    "LEAD-105-02",
+    "LEAD-105-03",
+    "LEAD-105-04",
+    "LEAD-105-05"
+  ]
+}

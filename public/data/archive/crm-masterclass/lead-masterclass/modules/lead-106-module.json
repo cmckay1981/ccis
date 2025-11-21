@@ -1,0 +1,14 @@
+{
+  "moduleId": "LEAD-106",
+  "courseId": "LEAD",
+  "title": "Team Dynamics and Culture",
+  "description": "Teaches team formation stages, building psychological safety, managing diverse personalities and conflict styles, creating high-performance culture, and identifying and intervening in toxic team dynamics.",
+  "order": 6,
+  "lessonIds": [
+    "LEAD-106-01",
+    "LEAD-106-02",
+    "LEAD-106-03",
+    "LEAD-106-04",
+    "LEAD-106-05"
+  ]
+}

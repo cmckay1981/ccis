@@ -1,0 +1,85 @@
+{
+  "checklistId": "DWOP-CL-008",
+  "title": "Casing Running Checklist",
+  "section": "Casing Operations",
+  "rigTypes": ["LAND", "JACKUP", "SEMISUBMERSIBLE", "DRILLSHIP"],
+  "bopType": "all",
+  "breakoutRoom": "A",
+  "participants": ["Casing Specialist", "Driller", "Drilling Engineer"],
+  "aiParticipant": true,
+  "categories": [
+    {
+      "category": "Pre-Run Preparation",
+      "items": [
+        {"item": "Casing tally verified against programme", "critical": true},
+        {"item": "All casing inspected and drifted"},
+        {"item": "Float equipment on location"},
+        {"item": "Centralizers on location (correct size/quantity)"},
+        {"item": "Casing accessories inventory complete"},
+        {"item": "Running tools inspected and ready"},
+        {"item": "Casing crew briefed on procedure"}
+      ]
+    },
+    {
+      "category": "Hole Condition",
+      "items": [
+        {"item": "Hole conditioned - clean and in gauge", "critical": true},
+        {"item": "Wiper trip completed"},
+        {"item": "Tight spots identified and worked"},
+        {"item": "Mud properties optimized for running"},
+        {"item": "Hole stable - no cavings issues"}
+      ]
+    },
+    {
+      "category": "Surge/Swab Management",
+      "items": [
+        {"item": "Surge/swab calculations completed", "critical": true},
+        {"item": "Maximum running speed established"},
+        {"item": "Fill-up schedule defined"},
+        {"item": "Auto-fill equipment tested (if used)"},
+        {"item": "ECD while running vs fracture gradient"}
+      ]
+    },
+    {
+      "category": "Centralization",
+      "items": [
+        {"item": "Centralization program reviewed"},
+        {"item": "Standoff requirements met for cement", "critical": true},
+        {"item": "Centralizer placement confirmed"},
+        {"item": "Centralizer type (bow-spring/rigid) appropriate"},
+        {"item": "Running simulation completed (if tight spots)"}
+      ]
+    },
+    {
+      "category": "Running Operations",
+      "items": [
+        {"item": "Make-up torque values confirmed"},
+        {"item": "Thread compound specified"},
+        {"item": "Pickup/slackoff limits established"},
+        {"item": "Reciprocation/rotation plan (if applicable)"},
+        {"item": "Contingency for getting stuck"}
+      ]
+    },
+    {
+      "category": "Liner Operations (if applicable)",
+      "items": [
+        {"item": "Liner hanger tested", "critical": true},
+        {"item": "Setting depth confirmed"},
+        {"item": "PBR depth and orientation"},
+        {"item": "Liner running tool operation reviewed"},
+        {"item": "Liner lap length and test requirements"}
+      ]
+    }
+  ],
+  "aiQuestions": [
+    "Your centralization shows 67% standoff - cementing typically needs 75% for good displacement. Is this acceptable?",
+    "Surge calculations show 0.4 ppg ECD increase at max run speed - you have 0.3 ppg margin to frac. What's your running speed?",
+    "The programme shows auto-fill float equipment but I don't see it on the rig inventory - has this been ordered?",
+    "If casing gets stuck 500m from bottom, what's your contingency? Can you cement at that depth?",
+    "Make-up torque is 35,000 ft-lbs but rig tongs are rated to 30,000 - confirm you have correct equipment?"
+  ],
+  "actionItemTemplate": {
+    "fields": ["item", "owner", "dueDate", "status", "notes"]
+  },
+  "tags": ["dwop", "checklist", "casing", "running", "liner"]
+}

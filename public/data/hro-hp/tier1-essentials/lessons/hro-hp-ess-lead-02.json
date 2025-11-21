@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-LEAD-02",
+  "moduleId": "HRO-HP-ESS-LEAD",
+  "courseId": "HRO-HP-ESS",
+  "title": "Building Credibility",
+  "type": "lesson",
+  "content": "Credibility is the foundation of leadership influence—it determines whether people trust your judgment and follow your direction willingly. Credibility comes from competence (knowing what you're doing), character (consistent ethical behavior), and consistency (matching words with actions). It takes time to build and moments to destroy.",
+  "mcq": {
+    "question": "A new supervisor is technically excellent but privately complains about company policies while publicly enforcing them. Team members become hesitant to follow their direction. What credibility component is damaged?",
+    "options": {
+      "A": "Competence—technical skills are being questioned",
+      "B": "Character—saying one thing privately and another publicly",
+      "C": "Consistency—unpredictable behavior patterns",
+      "D": "Communication—messages aren't clear"
+    },
+    "correctOption": "B",
+    "explanation": "Saying different things in private versus public is a character issue—it makes people question the leader's authenticity and wonder what they really believe. Even if technically skilled, character inconsistency erodes trust."
+  },
+  "openQuestions": [
+    "Of the three credibility components (competence, character, consistency), which is your strongest? Which needs the most development?",
+    "Describe a leader whose credibility you trust completely. What specific behaviors created that trust?"
+  ]
+}

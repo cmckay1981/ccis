@@ -1,0 +1,69 @@
+{
+  "lessonId": "WC-SF-105-01",
+  "moduleId": "WC-SF-105",
+  "courseId": "WC-SF",
+  "title": "Hard vs Soft Shut-In",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "When you detect a kick, shut in fast. The debate is HOW: Hard shut-in closes the BOP first, then stops pumps\u2014maximum speed, potential pressure spike. Soft shut-in stops pumps, opens choke, closes BOP, closes choke\u2014more steps, gentler on the well, but larger kick volume. Most operations now default to hard shut-in unless there's specific reason to go soft.",
+  "multiSensoryExplanations": {
+    "visual": "Hard shut-in: Slamming a door on rushing wind\u2014instant stop, door takes full force. Soft shut-in: Cracking another window first (choke open), then closing the main door gradually, then closing the window. Pressure equalizes more gently.",
+    "auditory": "Hard: BOP-BOOM-PUMPS-STOP. Two beats, done. Soft: STOP-pumps, OPEN-choke, CLOSE-BOP, CLOSE-choke. Four beats, controlled. The rhythm tells you the method.",
+    "kinesthetic": "Practice with your hands. Hard: Slap table (BOP close), freeze (pumps stop). Two motions. Soft: Wave left (stop pumps), open palm (open choke), clap (close BOP), close fist (close choke). Feel the difference in urgency.",
+    "storyBased": "Old-school drillers swore by soft shut-in\u2014'You'll hammer the casing!' they said. Then studies showed the extra time letting the kick grow during soft shut-in often added MORE total pressure than the momentary spike from hard shut-in. Now most operations default to hard."
+  },
+  "procedures": {
+    "hardShutIn": [
+      "1. Observe kick indicator",
+      "2. Pick up kelly/top drive to clear BOPs (3-5 seconds if possible)",
+      "3. CLOSE BOP (annular or pipe rams)",
+      "4. STOP PUMPS",
+      "5. Open HCR valve / close choke",
+      "6. Record SIDPP and SICP after stabilization",
+      "7. Notify supervisor",
+      "TARGET: Under 60 seconds from detection to complete"
+    ],
+    "softShutIn": [
+      "1. Observe kick indicator",
+      "2. Pick up kelly/top drive",
+      "3. STOP PUMPS",
+      "4. OPEN CHOKE fully",
+      "5. Close BOP",
+      "6. CLOSE CHOKE slowly",
+      "7. Record stabilized pressures",
+      "8. Notify supervisor"
+    ]
+  },
+  "mcq": {
+    "question": "What is the FIRST action in a HARD shut-in procedure after detecting a kick?",
+    "options": {
+      "A": "Stop the pumps",
+      "B": "Open the choke",
+      "C": "Close the BOP",
+      "D": "Record SIDPP"
+    },
+    "correctOption": "C",
+    "explanation": "In hard shut-in, BOP closure comes FIRST (after picking up if time allows). This is the key difference from soft shut-in, where pumps stop first."
+  },
+  "advancedQuestion": {
+    "question": "You detect a kick while drilling. Company policy is hard shut-in. However, you're drilling with fracture gradient very close to pore pressure. Should you modify your approach?",
+    "answer": "This is judgment. With narrow margins, hard shut-in pressure spike could fracture the formation. Options: (1) Execute soft shut-in to minimize spike, accepting larger kick, (2) Execute hard but prepare to manage pressures near MAASP, (3) Follow well control contingency plan for this scenario. Key: Any deviation should be pre-planned and approved, not improvised.",
+    "l4Focus": "Supervisors must balance procedure compliance with situational judgment."
+  },
+  "commonMisconception": {
+    "wrong": "Soft shut-in is safer because it's gentler on the well.",
+    "correct": "'Gentler' isn't always safer. Soft takes longer, allowing more influx. A larger kick means higher pressures later. For most wells, momentary hard shut-in spike is less dangerous than larger kick volume from soft."
+  },
+  "examTip": "Procedure sequence questions are common: 'What comes FIRST in hard shut-in?' Know the order cold.",
+  "documentId": "WC-SF-105-01",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-105",
+    "WC-SF-105-01"
+  ]
+}

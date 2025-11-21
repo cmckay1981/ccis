@@ -1,0 +1,71 @@
+{
+  "moduleId": "ADO-103",
+  "courseId": "ADO",
+  "title": "Extended Reach & ECD Management",
+  "description": "Extended reach drilling (ERD) and deep wells create significant ECD challenges. Long horizontal sections, high MW, and friction generate substantial pressure additions that must be managed to stay within the window.",
+  "objectives": [
+    "Understand ECD components and how to minimize them",
+    "Manage hole cleaning without exceeding fracture gradient",
+    "Recognize ERD-specific stuck pipe and wellbore stability risks",
+    "Apply flow rate optimization for ECD vs hole cleaning balance"
+  ],
+  "keyTopics": [
+    {
+      "topic": "ECD Components",
+      "content": "ECD = Static MW + Annular Friction + Cuttings Load + Surge. In ERD wells, annular friction dominates due to long measured depths. A 7,000m MD well may have 0.8-1.2 ppg ECD above static MW at normal circulation rates."
+    },
+    {
+      "topic": "The ERD Dilemma",
+      "content": "Hole cleaning requires high flow rates and rotation. But high flow = high ECD = risk of losses. Low flow = poor cleaning = packoff and stuck pipe. ERD drilling is a constant balance between these competing demands."
+    },
+    {
+      "topic": "ECD Reduction Techniques",
+      "content": "Lower flow rate (within cleaning limits), lower mud rheology (but maintain cutting carrying capacity), larger annular clearance, managed pressure drilling, and continuous circulation systems all reduce ECD. Each has trade-offs."
+    },
+    {
+      "topic": "Hole Cleaning Indicators",
+      "content": "Monitor cuttings returns, torque trends, drag trends, and PWD ECD. Clean hole shows stable torque/drag. Deteriorating trends indicate cutting accumulation - increase flow/rotation before it becomes stuck pipe."
+    },
+    {
+      "topic": "Surge & Swab in ERD",
+      "content": "Long strings amplify surge and swab effects. Running casing or tripping in ERD wells requires slow, controlled speeds. Surge during casing runs is often the highest ECD event - may require staged runs or flotation."
+    }
+  ],
+  "referenceWellContext": {
+    "wellName": "Phoenix-702",
+    "md": "7,100m",
+    "tvd": "6,920m",
+    "note": "Near-vertical well but ECD principles apply. Long string with high MW (17+ ppg) creates significant annular friction."
+  },
+  "operationalPrinciples": [
+    "Know your ECD at all times - PWD is essential",
+    "Balance hole cleaning against formation limits",
+    "Trend monitoring catches problems before they become stuck pipe",
+    "Slow is smooth, smooth is fast - rushing causes problems",
+    "Plan ECD for every operation: drilling, tripping, casing runs"
+  ],
+  "lessons": [
+    {
+      "lessonId": "ADO-103-01",
+      "title": "Understanding ECD Components",
+      "file": "lessons/ado-103-01.json"
+    },
+    {
+      "lessonId": "ADO-103-02",
+      "title": "Hole Cleaning Optimization",
+      "file": "lessons/ado-103-02.json"
+    },
+    {
+      "lessonId": "ADO-103-03",
+      "title": "ECD Reduction Techniques",
+      "file": "lessons/ado-103-03.json"
+    },
+    {
+      "lessonId": "ADO-103-04",
+      "title": "Surge & Swab Management",
+      "file": "lessons/ado-103-04.json"
+    }
+  ],
+  "documentId": "ADO-103",
+  "tags": ["erd", "extended-reach", "ecd", "hole-cleaning", "advanced-drilling"]
+}

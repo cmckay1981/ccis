@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-SA-04",
+  "moduleId": "HRO-HP-ESS-SA",
+  "courseId": "HRO-HP-ESS",
+  "title": "Threats to Awareness",
+  "type": "lesson",
+  "content": "Four primary threats degrade situational awareness: distraction (attention pulled away), fatigue (reduced cognitive capacity), complacency (false sense of security from routine), and task saturation (demands exceeding capacity). Recognizing these threats in yourself and teammates is the first defense. The most dangerous threat is the one you don't recognize is affecting you.",
+  "mcq": {
+    "question": "Operations have been smooth for three weeks. Team members start skipping checklist items they consider 'unnecessary.' Yesterday's near-miss involved a step that was skipped. Which SA threat is most evident?",
+    "options": {
+      "A": "Distraction from external factors",
+      "B": "Fatigue from extended operations",
+      "C": "Complacency from routine success",
+      "D": "Task saturation from workload"
+    },
+    "correctOption": "C",
+    "explanation": "Complacency develops when consistent success breeds the belief that risks have diminished. Skipping 'unnecessary' steps is a classic complacency indicator—the steps haven't become unnecessary, the team has just stopped perceiving their value."
+  },
+  "openQuestions": [
+    "Which of the four SA threats (distraction, fatigue, complacency, task saturation) affects you most often? How do you recognize when it's happening?",
+    "What signals indicate your team is becoming complacent during extended periods of normal operations?"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-107-01",
+  "moduleId": "LEAD-MC-107",
+  "courseId": "LEAD-MC",
+  "title": "Vision Creation and Articulation",
+  "type": "lesson",
+  "content": "Strategic leaders create compelling vision of future state that mobilizes action. Effective vision answers: where are we going, why it matters, and what success looks like. It must be clear enough to guide decisions but flexible enough to adapt to changing conditions. Vision without execution plan is fantasy. Execution without vision is aimless activity. Leaders translate abstract strategy into concrete direction that frontline teams can act on.",
+  "mcq": {
+    "question": "A leader announces a new strategic vision: 'We're going to be the industry leader in operational excellence.' Six months later, teams are still working the same way with no clear change in direction. What's missing?",
+    "options": {
+      "A": "The team doesn't understand what operational excellence means",
+      "B": "The vision wasn't translated into specific objectives and actions people can execute",
+      "C": "Six months isn't enough time to see strategic change",
+      "D": "The vision wasn't ambitious enough to inspire change"
+    },
+    "correctOption": "B",
+    "explanation": "'Operational excellence' is aspirational language, not actionable direction. The leader failed to answer: what specific capabilities do we need to build, what are we changing about how we work, what does success look like in measurable terms, and what's the first 90 days of action? Vision must connect to operational reality. Effective strategic leaders cascade vision into objectives, objectives into initiatives, and initiatives into team-level action. Without that translation, vision remains abstract and teams default to existing patterns."
+  },
+  "openQuestions": [
+    "If you had to articulate your team's vision in two sentences, what would you say? Could your team articulate the same vision?",
+    "What's the clearest strategic vision you've ever heard? What made it compelling and actionable?"
+  ]
+}

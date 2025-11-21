@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-DM-01",
+  "moduleId": "HRO-HP-ESS-DM",
+  "courseId": "HRO-HP-ESS",
+  "title": "Decision Types",
+  "type": "lesson",
+  "content": "Decisions fall into three categories: routine (standard responses to familiar situations), tactical (adapting procedures to current conditions), and critical (high-stakes decisions with significant consequences). Each type requires different approaches—routine decisions use procedures, tactical decisions require judgment, and critical decisions demand deliberate analysis and often consultation.",
+  "mcq": {
+    "question": "Equipment shows an unusual reading you've never seen before. Standard procedures don't address this specific situation, but continuing could damage expensive equipment or stopping could cause significant delays. What type of decision is this?",
+    "options": {
+      "A": "Routine—follow the closest applicable procedure",
+      "B": "Tactical—adapt standard approaches to the situation",
+      "C": "Critical—high stakes requiring deliberate analysis",
+      "D": "No decision needed—wait for more information"
+    },
+    "correctOption": "C",
+    "explanation": "This is a critical decision: novel situation, significant potential consequences, and no clear procedural guidance. It requires deliberate analysis, possibly consultation, and careful consideration of alternatives rather than quick action."
+  },
+  "openQuestions": [
+    "How do you recognize when a decision has shifted from tactical to critical? What triggers that recognition?",
+    "Think of a recent tactical decision you made. What information did you use to adapt the standard approach?"
+  ]
+}

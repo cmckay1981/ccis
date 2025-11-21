@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-109-03",
+  "moduleId": "LEAD-MC-109",
+  "courseId": "LEAD-MC",
+  "title": "Navigating Organizational Politics with Integrity",
+  "type": "lesson",
+  "content": "Organizational politics exist wherever humans work together—pretending they don't makes you naive, not principled. Politics become toxic when people prioritize personal gain over organizational good, manipulate information, or undermine others. Ethical leaders navigate politics by building genuine relationships, maintaining transparency, delivering results, and refusing to participate in destructive behavior. You can be politically aware without being political. Understanding power dynamics and relationship networks isn't unethical—it's essential for getting things done.",
+  "mcq": {
+    "question": "You learn that a peer is taking credit for work your team did, presenting it to senior leadership as their department's achievement. Several people suggest you 'play the game' and do the same to them. What's the most effective response that maintains integrity?",
+    "options": {
+      "A": "Ignore it since engaging in credit disputes looks petty",
+      "B": "Retaliate by taking credit for their work in your next update",
+      "C": "Address it directly with the peer first, then escalate to leadership with facts if it continues",
+      "D": "Start documenting your team's work more publicly to prevent future credit theft"
+    },
+    "correctOption": "C",
+    "explanation": "Option C addresses the problem professionally without compromising integrity. Direct conversation might resolve it—maybe they didn't realize the work wasn't theirs, or there's a misunderstanding. If it's intentional and continues, factual escalation is appropriate: 'Here's what happened, here's the impact, here's what I've tried.' Option A allows the behavior to continue and demoralizes your team. Option B makes you part of the toxicity. Option D is defensive and doesn't address the immediate issue. Navigating politics with integrity means addressing problems directly, refusing to participate in destructive behavior, and escalating when necessary—but always with facts, not manipulation."
+  },
+  "openQuestions": [
+    "Describe a time you witnessed organizational politics. How did you respond?",
+    "Where is the line for you between political awareness and unethical political behavior?"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "lessonId": "WC-SS-105-01",
+  "moduleId": "WC-SS-105",
+  "courseId": "WC-SS",
+  "title": "Gas in Riser - Recognition and Response",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "Gas in the riser is one of the most dangerous subsea well control situations. Unlike gas below the BOP (which can be circulated out through the choke), gas in the riser is above the BOP\u2014it's already past your primary control point. Gas expands rapidly as it rises through the low-pressure riser. If a large volume reaches surface, it can unload the riser violently.",
+  "multiSensoryExplanations": {
+    "visual": "Imagine shaking a carbonated drink bottle and then slowly opening the cap. The gas rushes out as pressure drops. The riser is like that bottle\u2014gas expanding as it rises through the decreasing pressure. At surface, the 'fizz' can be violent.",
+    "auditory": "Gas in riser = 'GAS ABOVE, NO CHOKE BELOW.' Once gas passes the BOP, your normal kill method doesn't apply. Different problem, different solution.",
+    "kinesthetic": "Push air bubbles through a straw into a glass of water. Near the bottom, bubbles are small. As they rise, they grow. Now imagine that happening in a 5,000 ft riser. Feel the acceleration of expansion.",
+    "storyBased": "A rig in the Gulf had gas break through the BOP during a connection. By the time they realized, gas was already in the riser. They had 30 minutes before it reached surface. They diverted flow overboard, but the riser 'boiled out'\u2014mud and gas erupting from the diverter. No injuries, but it reminded everyone: gas in riser is a race against time."
+  },
+  "detectionMethods": [
+    "Increase in riser gas readings (mud logger)",
+    "Riser pressure fluctuations",
+    "Pit gains without corresponding gains at BOP",
+    "Background gas increasing in mud returns",
+    "PWD showing pressure anomalies above BOP"
+  ],
+  "responseOptions": {
+    "smallGas": {
+      "description": "Small amounts of background gas",
+      "action": "Continue circulating, monitor closely, route through mud gas separator"
+    },
+    "significantGas": {
+      "description": "Large gas volume detected in riser",
+      "actions": [
+        "Close BOP to prevent more gas entering riser",
+        "Increase pump rate to move gas to surface faster (before more expansion)",
+        "Prepare diverter system",
+        "Calculate time to surface and maximum expansion volume",
+        "Consider controlled circulation through choke line to slow rise rate",
+        "Alert crew, prepare for potential riser unloading"
+      ]
+    },
+    "emergency": {
+      "description": "Massive gas volume, risk of riser collapse or violent unloading",
+      "actions": [
+        "Activate diverter",
+        "Prepare for emergency disconnect (EDS) if situation worsens",
+        "Clear rig floor",
+        "Non-essential personnel muster"
+      ]
+    }
+  },
+  "mcq": {
+    "question": "Why is gas in the riser particularly dangerous compared to gas below the BOP?",
+    "options": {
+      "A": "Gas in riser is more toxic",
+      "B": "Gas in riser cannot be controlled by the choke\u2014it's already above the primary barrier",
+      "C": "Gas in riser moves slower",
+      "D": "Gas in riser does not expand"
+    },
+    "correctOption": "B",
+    "explanation": "The choke controls flow below the BOP. Gas that has already passed through the BOP is in the riser\u2014above the control point. You can't 'circulate it out through the choke.' Different problem requires different response."
+  },
+  "advancedQuestion": {
+    "question": "You detect a 20-barrel gas bubble 3,000 ft up in a 5,000 ft riser. Riser ID gives 0.01 bbl/ft capacity. Estimate the surface volume if bottomhole pressure was 5,000 psi when the bubble entered the riser.",
+    "answer": "At 3,000 ft up the riser, pressure \u2248 2,000 ft of water \u00d7 0.433 psi/ft \u2248 866 psi. Initial volume 20 bbl at ~5,000 psi, now at ~866 psi. Using Boyle's Law: V2 = (5,000 \u00d7 20) \u00f7 866 \u2248 115 barrels already. At surface (~15 psi absolute), V = (5,000 \u00d7 20) \u00f7 15 \u2248 6,667 barrels theoretical maximum. This illustrates why gas in riser is urgent\u2014expansion is massive and accelerating.",
+    "l4Focus": "Supervisors must be able to quickly estimate the severity of gas-in-riser situations."
+  },
+  "commonMisconception": {
+    "wrong": "You can kill gas in the riser like a normal kick\u2014just circulate it out.",
+    "correct": "Gas in riser is ABOVE the BOP. Your normal kill tools (choke, kill line) work below the BOP. Once gas is in the riser, you're managing an unloading event, not circulating out a kick."
+  },
+  "documentId": "WC-SS-105-01",
+  "tags": [
+    "well-control",
+    "subsea",
+    "deepwater",
+    "IWCF",
+    "WC-SS-105",
+    "WC-SS-105-01"
+  ]
+}

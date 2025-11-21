@@ -1,0 +1,74 @@
+{
+  "lessonId": "WC-SF-102-04",
+  "moduleId": "WC-SF-102",
+  "courseId": "WC-SF",
+  "title": "MAASP Calculation",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "MAASP is the Maximum Allowable Annular Surface Pressure\u2014the highest casing pressure you can safely apply without fracturing the weakest point (usually the shoe). Exceed MAASP and you create an underground blowout. MAASP changes when you change mud weight, so it must be recalculated and posted every time MW changes.",
+  "multiSensoryExplanations": {
+    "visual": "A garden hose with a weak spot. You can increase tap pressure, but at some point that weak spot bulges and bursts. MAASP is the maximum tap pressure before failure. In your well, the 'weak spot' is the casing shoe.",
+    "auditory": "M-A-A-S-P: Maximum Allowable Annular Surface Pressure. Say it: 'MAX pressure at the TOP before you BREAK the BOTTOM.' That's your hard limit.",
+    "kinesthetic": "Blow up a balloon slowly. Feel resistance increase. At some point, you know more breath will pop it. MAASP is that feeling\u2014the maximum you can apply before something gives.",
+    "storyBased": "A North Sea driller exceeded MAASP by 200 psi during a kill. He thought he was controlling the kick. But he fractured the shoe. His 50-barrel kick became a 500-barrel loss to the formation. Now he had BOTH a kick AND lost circulation. That's why MAASP isn't a suggestion."
+  },
+  "formula": {
+    "equation": "MAASP (psi) = (Max Allowable MW - Current MW) \u00d7 0.052 \u00d7 Shoe TVD",
+    "variables": {
+      "MaxAllowableMW": "From LOT or FIT result",
+      "CurrentMW": "Your current drilling fluid weight",
+      "ShoeTVD": "True vertical depth of casing shoe"
+    },
+    "example": {
+      "given": "Max MW from LOT = 15.0 ppg, Current MW = 12.0 ppg, Shoe TVD = 8,000 ft",
+      "calculation": "MAASP = (15.0 - 12.0) \u00d7 0.052 \u00d7 8,000 = 3.0 \u00d7 0.052 \u00d7 8,000 = 1,248 psi"
+    }
+  },
+  "keyPoints": [
+    "MAASP DECREASES when you increase mud weight (less margin left)",
+    "MAASP must be posted on choke panel at all times",
+    "Recalculate MAASP every time MW changes",
+    "During a kick, never exceed MAASP\u2014risk of underground blowout"
+  ],
+  "mcq": {
+    "question": "If LOT result is 14.5 ppg equivalent, current MW is 11.0 ppg, and shoe TVD is 6,000 ft, what is MAASP?",
+    "options": {
+      "A": "546 psi",
+      "B": "728 psi",
+      "C": "1,092 psi",
+      "D": "1,456 psi"
+    },
+    "correctOption": "C",
+    "explanation": "MAASP = (14.5 - 11.0) \u00d7 0.052 \u00d7 6,000 = 3.5 \u00d7 0.052 \u00d7 6,000 = 1,092 psi"
+  },
+  "advancedQuestion": {
+    "question": "During a kill operation, casing pressure is 750 psi and rising. Your MAASP is 800 psi. What actions should you consider, and in what order?",
+    "answer": "1. Verify choke operation\u2014pressure rise may be from choke closing. 2. If choke is correct, consider reducing pump rate to lower backpressure. 3. If approaching MAASP, you may need to accept some underbalance to avoid fracturing. 4. At MAASP, you face a choice: exceed and risk underground blowout, or reduce pressure and risk influx expansion. 5. This is a judgment call requiring understanding of kick size, influx type, and remaining kill time.",
+    "l4Focus": "Managing pressures near MAASP during a kick is a critical supervisor decision."
+  },
+  "commonMisconception": {
+    "wrong": "MAASP only matters during well control events.",
+    "correct": "MAASP should be calculated and posted AT ALL TIMES. It changes with MW changes. It's a standing operational limit, not just an emergency number."
+  },
+  "practiceProblems": [
+    {
+      "problem": "Max MW = 16.0 ppg, Current MW = 13.5 ppg, Shoe TVD = 10,000 ft",
+      "answer": "MAASP = 1,300 psi"
+    },
+    {
+      "problem": "Same well, MW increased to 14.5 ppg. New MAASP?",
+      "answer": "MAASP = (16.0 - 14.5) \u00d7 0.052 \u00d7 10,000 = 780 psi (DECREASED)"
+    }
+  ],
+  "documentId": "WC-SF-102-04",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-102",
+    "WC-SF-102-04"
+  ]
+}

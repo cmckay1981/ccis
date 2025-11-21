@@ -1,0 +1,183 @@
+{
+  "sheetId": "cement-job-tracker",
+  "title": "Cement Job Execution & Tracking Sheet",
+  "version": "1.0",
+  "description": "Real-time tracking sheet for cement job execution with comparison to planned parameters",
+  "sections": {
+    "jobIdentification": {
+      "title": "JOB IDENTIFICATION",
+      "fields": [
+        {"label": "Well Name", "value": ""},
+        {"label": "Date", "value": ""},
+        {"label": "Job Type", "value": "(Primary/Squeeze/Plug)"},
+        {"label": "Casing Size/String", "value": ""},
+        {"label": "Cementing Engineer", "value": ""},
+        {"label": "Drilling Supervisor", "value": ""}
+      ]
+    },
+    "preJobChecklist": {
+      "title": "PRE-JOB CHECKLIST",
+      "items": [
+        {"item": "Cement calculations reviewed and approved", "planned": "", "actual": "", "status": ""},
+        {"item": "Materials on location verified", "planned": "", "actual": "", "status": ""},
+        {"item": "Cement unit tested and calibrated", "planned": "", "actual": "", "status": ""},
+        {"item": "Densometer calibrated", "planned": "", "actual": "", "status": ""},
+        {"item": "Mix water tested (Cl⁻, temp)", "planned": "", "actual": "", "status": ""},
+        {"item": "Casing on bottom, circulated", "planned": "", "actual": "", "status": ""},
+        {"item": "Hole conditioned (mud properties)", "planned": "", "actual": "", "status": ""},
+        {"item": "Float equipment tested", "planned": "", "actual": "", "status": ""},
+        {"item": "Pre-job meeting conducted", "planned": "", "actual": "", "status": ""},
+        {"item": "All personnel briefed on job", "planned": "", "actual": "", "status": ""}
+      ]
+    },
+    "volumeTracking": {
+      "title": "VOLUME TRACKING",
+      "header": ["Stage", "Planned (bbl)", "Actual (bbl)", "Variance", "Notes"],
+      "rows": [
+        {"stage": "Spacer", "planned": "", "actual": "", "variance": "", "notes": ""},
+        {"stage": "Lead Cement", "planned": "", "actual": "", "variance": "", "notes": ""},
+        {"stage": "Tail Cement", "planned": "", "actual": "", "variance": "", "notes": ""},
+        {"stage": "Displacement", "planned": "", "actual": "", "variance": "", "notes": ""},
+        {"stage": "TOTAL", "planned": "", "actual": "", "variance": "", "notes": ""}
+      ]
+    },
+    "densityTracking": {
+      "title": "SLURRY DENSITY TRACKING",
+      "header": ["Time", "Stage", "Target (ppg)", "Actual (ppg)", "Variance", "Action"],
+      "rows": [
+        {"time": "", "stage": "", "target": "", "actual": "", "variance": "", "action": ""},
+        {"time": "", "stage": "", "target": "", "actual": "", "variance": "", "action": ""},
+        {"time": "", "stage": "", "target": "", "actual": "", "variance": "", "action": ""},
+        {"time": "", "stage": "", "target": "", "actual": "", "variance": "", "action": ""},
+        {"time": "", "stage": "", "target": "", "actual": "", "variance": "", "action": ""},
+        {"time": "", "stage": "", "target": "", "actual": "", "variance": "", "action": ""}
+      ],
+      "tolerances": {
+        "leadSlurry": "±0.2 ppg",
+        "tailSlurry": "±0.1 ppg"
+      }
+    },
+    "rateAndPressureTracking": {
+      "title": "RATE & PRESSURE TRACKING",
+      "header": ["Time", "Stage", "Rate (bpm)", "Surface Press (psi)", "Annulus Press (psi)", "Cumulative Vol (bbl)", "Notes"],
+      "rows": [
+        {"time": "", "stage": "", "rate": "", "surfPress": "", "annPress": "", "cumVol": "", "notes": ""},
+        {"time": "", "stage": "", "rate": "", "surfPress": "", "annPress": "", "cumVol": "", "notes": ""},
+        {"time": "", "stage": "", "rate": "", "surfPress": "", "annPress": "", "cumVol": "", "notes": ""},
+        {"time": "", "stage": "", "rate": "", "surfPress": "", "annPress": "", "cumVol": "", "notes": ""},
+        {"time": "", "stage": "", "rate": "", "surfPress": "", "annPress": "", "cumVol": "", "notes": ""},
+        {"time": "", "stage": "", "rate": "", "surfPress": "", "annPress": "", "cumVol": "", "notes": ""},
+        {"time": "", "stage": "", "rate": "", "surfPress": "", "annPress": "", "cumVol": "", "notes": ""},
+        {"time": "", "stage": "", "rate": "", "surfPress": "", "annPress": "", "cumVol": "", "notes": ""},
+        {"time": "", "stage": "", "rate": "", "surfPress": "", "annPress": "", "cumVol": "", "notes": ""},
+        {"time": "", "stage": "", "rate": "", "surfPress": "", "annPress": "", "cumVol": "", "notes": ""}
+      ],
+      "limits": {
+        "maxECD": "",
+        "maxSurfacePressure": "",
+        "lostCirculationIndicator": "Sudden pressure drop + volume loss"
+      }
+    },
+    "keyMilestones": {
+      "title": "KEY MILESTONES",
+      "milestones": [
+        {"milestone": "Job Start (spacer away)", "plannedTime": "", "actualTime": "", "variance": ""},
+        {"milestone": "Lead cement starts", "plannedTime": "", "actualTime": "", "variance": ""},
+        {"milestone": "Tail cement starts", "plannedTime": "", "actualTime": "", "variance": ""},
+        {"milestone": "Bottom plug released", "plannedTime": "", "actualTime": "", "variance": ""},
+        {"milestone": "Top plug released", "plannedTime": "", "actualTime": "", "variance": ""},
+        {"milestone": "Cement at shoe", "plannedTime": "", "actualTime": "", "variance": ""},
+        {"milestone": "Displacement starts", "plannedTime": "", "actualTime": "", "variance": ""},
+        {"milestone": "Slow down for plug bump", "plannedTime": "", "actualTime": "", "variance": ""},
+        {"milestone": "Plug bumped", "plannedTime": "", "actualTime": "", "variance": ""},
+        {"milestone": "Float held", "plannedTime": "", "actualTime": "", "variance": ""},
+        {"milestone": "Job complete", "plannedTime": "", "actualTime": "", "variance": ""}
+      ]
+    },
+    "plugBumpResults": {
+      "title": "PLUG BUMP & FLOAT TEST RESULTS",
+      "results": [
+        {"parameter": "Bump Pressure", "expected": "", "actual": "", "status": ""},
+        {"parameter": "Volume to Bump", "expected": "", "actual": "", "status": ""},
+        {"parameter": "Float Held (Y/N)", "expected": "Yes", "actual": "", "status": ""},
+        {"parameter": "Pressure Bleed-off", "expected": "", "actual": "", "status": ""},
+        {"parameter": "Volume Returned", "expected": "", "actual": "", "status": ""}
+      ],
+      "interpretation": {
+        "goodBump": "Pressure increase at expected volume, holds steady",
+        "lowBump": "May indicate cement channeling or plug not seated",
+        "highBump": "May indicate plug caught early or contamination",
+        "floatFailed": "Volume returns through float - implement contingency"
+      }
+    },
+    "postJobVerification": {
+      "title": "POST-JOB VERIFICATION",
+      "pressureTests": [
+        {"test": "Casing Pressure Test", "pressure": "", "duration": "", "result": "", "notes": ""},
+        {"test": "Shoe Test/LOT", "pressure": "", "emw": "", "result": "", "notes": ""}
+      ],
+      "cementEvaluation": [
+        {"item": "CBL/VDL Planned", "value": ""},
+        {"item": "WOC Time", "planned": "", "actual": ""},
+        {"item": "Compressive Strength Target", "value": ""},
+        {"item": "CBL Bond Quality", "value": ""},
+        {"item": "TOC from Logs", "planned": "", "actual": ""}
+      ]
+    },
+    "contingencyActions": {
+      "title": "CONTINGENCY ACTIONS TAKEN",
+      "description": "Document any issues and actions taken during job",
+      "categories": [
+        {
+          "category": "Lost Circulation",
+          "action": "",
+          "time": "",
+          "result": ""
+        },
+        {
+          "category": "Density Problem",
+          "action": "",
+          "time": "",
+          "result": ""
+        },
+        {
+          "category": "Equipment Failure",
+          "action": "",
+          "time": "",
+          "result": ""
+        },
+        {
+          "category": "Float Failure",
+          "action": "",
+          "time": "",
+          "result": ""
+        },
+        {
+          "category": "Other",
+          "action": "",
+          "time": "",
+          "result": ""
+        }
+      ]
+    },
+    "jobSummary": {
+      "title": "JOB SUMMARY",
+      "fields": [
+        {"label": "Job Status", "value": "(Success/Partial/Failed)"},
+        {"label": "Total Job Time", "value": ""},
+        {"label": "Total Cement Pumped", "value": "", "unit": "bbl"},
+        {"label": "Total Sacks Used", "value": "", "unit": "sacks"},
+        {"label": "TOC Achieved", "value": "", "unit": "ft"},
+        {"label": "TOC vs Planned", "value": ""},
+        {"label": "Float Status", "value": "(Held/Failed)"},
+        {"label": "Remedial Required", "value": "(Yes/No)"},
+        {"label": "Lessons Learned", "value": ""}
+      ],
+      "signatures": [
+        {"role": "Cementing Engineer", "name": "", "signature": "", "date": ""},
+        {"role": "Drilling Supervisor", "name": "", "signature": "", "date": ""},
+        {"role": "Company Rep", "name": "", "signature": "", "date": ""}
+      ]
+    }
+  }
+}

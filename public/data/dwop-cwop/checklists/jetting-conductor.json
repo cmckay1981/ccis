@@ -1,0 +1,78 @@
+{
+  "checklistId": "DWOP-CL-003",
+  "title": "Jetting & Conductor Operations Checklist",
+  "section": "Conductor Installation",
+  "rigTypes": ["JACKUP", "SEMISUBMERSIBLE", "DRILLSHIP"],
+  "bopType": "all",
+  "note": "Land rigs typically drive conductor, not jet",
+  "breakoutRoom": "A",
+  "participants": ["Drilling Engineer", "Driller", "Mud Engineer"],
+  "aiParticipant": true,
+  "categories": [
+    {
+      "category": "Pre-Jetting Planning",
+      "items": [
+        {"item": "Shallow hazards survey reviewed", "critical": true},
+        {"item": "Target jetting depth confirmed"},
+        {"item": "Jet bit and BHA design reviewed"},
+        {"item": "Pump rate requirements vs rig capacity"},
+        {"item": "Returns monitoring plan established"},
+        {"item": "Jetting fluid properties confirmed"},
+        {"item": "Conductor pipe ready and inspected"}
+      ]
+    },
+    {
+      "category": "Shallow Hazards",
+      "items": [
+        {"item": "Shallow gas risk assessment completed", "critical": true},
+        {"item": "Shallow water flow potential evaluated"},
+        {"item": "Man-made hazards (pipelines, cables) plotted"},
+        {"item": "Diverter system tested", "critical": true},
+        {"item": "Shallow hazard contingency plan reviewed"}
+      ]
+    },
+    {
+      "category": "Jetting Operations",
+      "items": [
+        {"item": "Maximum WOB limits defined"},
+        {"item": "Pump rate schedule established"},
+        {"item": "Rate of penetration limits defined"},
+        {"item": "Returns monitoring responsibilities assigned"},
+        {"item": "Deviation control plan (if applicable)"},
+        {"item": "Setting depth criteria defined"}
+      ]
+    },
+    {
+      "category": "Conductor Running",
+      "items": [
+        {"item": "Conductor running procedure reviewed"},
+        {"item": "Make-up torques confirmed"},
+        {"item": "Handling equipment inspected"},
+        {"item": "Float equipment installed and tested"},
+        {"item": "Centralization plan confirmed"}
+      ]
+    },
+    {
+      "category": "Cementing",
+      "items": [
+        {"item": "Cement design reviewed", "critical": true},
+        {"item": "Cement volumes calculated"},
+        {"item": "Wait on cement (WOC) time confirmed"},
+        {"item": "Cement unit tested"},
+        {"item": "Backup cement plan"},
+        {"item": "Cement evaluation method (if any)"}
+      ]
+    }
+  ],
+  "aiQuestions": [
+    "Shallow hazard survey shows possible gas at 200m - what's your diverter response plan?",
+    "If you encounter unexpected hard formation, what's the maximum WOB before you risk conductor damage?",
+    "The programme shows 6 hours jetting time - is this consistent with offset well experience?",
+    "What are your setting depth criteria? What if you reach target depth but resistance is insufficient?",
+    "Conductor cement returns to mudline - what's your response if you lose returns during cement?"
+  ],
+  "actionItemTemplate": {
+    "fields": ["item", "owner", "dueDate", "status", "notes"]
+  },
+  "tags": ["dwop", "checklist", "jetting", "conductor", "shallow-hazards"]
+}

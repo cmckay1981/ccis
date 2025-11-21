@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-COMM-04",
+  "moduleId": "HRO-HP-ESS-COMM",
+  "courseId": "HRO-HP-ESS",
+  "title": "Closed-Loop Protocol",
+  "type": "lesson",
+  "content": "Closed-loop (three-way) communication ensures message accuracy: sender transmits, receiver reads back, sender confirms the readback is correct. This protocol catches errors at the feedback stage before actions are taken. It feels slower but prevents costly mistakes—the time invested in verification is far less than time spent correcting misunderstandings.",
+  "mcq": {
+    "question": "Operator A instructs: 'Increase flow rate to 150.' Operator B responds: 'Increasing to 115.' Operator A says: 'Confirmed.' What error occurred?",
+    "options": {
+      "A": "Operator A gave unclear instructions",
+      "B": "Operator B read back incorrectly",
+      "C": "Operator A failed to catch the incorrect readback",
+      "D": "Both B and C—the protocol failed at two points"
+    },
+    "correctOption": "D",
+    "explanation": "The readback was wrong (115 vs 150), and the sender confirmed it without catching the error. Closed-loop communication only works if the sender actually compares the readback to the original message—mechanical 'confirmed' responses defeat the purpose."
+  },
+  "openQuestions": [
+    "When is closed-loop communication most critical in your operations? When might it be safely abbreviated?",
+    "How do you maintain the discipline to actually verify readbacks rather than automatically confirming them?"
+  ]
+}

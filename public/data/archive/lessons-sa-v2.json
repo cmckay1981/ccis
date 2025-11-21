@@ -1,0 +1,361 @@
+{
+  "course_id": "situational-awareness",
+  "course_name": "Situational Awareness",
+  "modules": [
+    {
+      "module_id": "sa-m1-fundamentals",
+      "module_name": "SA Fundamentals",
+      "order": 1,
+      "lessons": [
+        {
+          "lesson_id": "sa-m1-l1",
+          "title": "What Is Situational Awareness?",
+          "order": 1,
+          "content": "Situational awareness is knowing what's happening around you, understanding what it means, and predicting what will happen next. It's the foundation of safe decision-making in dynamic environments. Without SA, you're reacting blindly instead of acting with intent.",
+          "questions": [
+            "Can you recall a moment when you lost SA? What happened?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m1-l2",
+          "title": "The Three Levels of SA",
+          "order": 2,
+          "content": "Level 1 is perceiving what's around you. Level 2 is understanding what those cues mean. Level 3 is projecting what will happen next. Most errors occur when you perceive correctly but fail to comprehend or anticipate.",
+          "questions": [
+            "Which level do you think is hardest to maintain under pressure?"
+          ],
+          "mcq": {
+            "question": "You notice a pressure gauge rising (Level 1). You recognize it's above normal limits (Level 2). What is Level 3?",
+            "options": {
+              "A": "Reading the exact PSI value",
+              "B": "Predicting the system will fail if pressure continues rising",
+              "C": "Reporting the reading to your supervisor",
+              "D": "Checking other gauges for confirmation"
+            },
+            "correct": "B",
+            "explanation": "Level 3 is projection—anticipating future states based on current trends."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m1-l3",
+          "title": "SA Is Perishable",
+          "order": 3,
+          "content": "Situational awareness degrades the moment you stop updating it. Distractions, fatigue, and complacency erode SA faster than most operators realize. Treat SA like a muscle—it requires constant effort to maintain.",
+          "questions": [
+            "What typically causes you to lose SA during your workday?"
+          ],
+          "mcq": null,
+          "scenario": "You're monitoring a well control panel. A colleague asks you a detailed question about yesterday's operations. You turn away for 90 seconds to answer. When you look back, a pressure alarm is flashing. What went wrong with your SA?"
+        }
+      ]
+    },
+    {
+      "module_id": "sa-m2-perception",
+      "module_name": "Perception and Scanning",
+      "order": 2,
+      "lessons": [
+        {
+          "lesson_id": "sa-m2-l1",
+          "title": "Active vs Passive Scanning",
+          "order": 1,
+          "content": "Passive scanning is looking without searching. Active scanning is deliberately seeking critical cues. In high-risk operations, passive scanning misses subtle changes that matter. Build the habit of structured, purposeful scans.",
+          "questions": [
+            "Do you scan your work area actively or passively?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m2-l2",
+          "title": "The Scan Pattern",
+          "order": 2,
+          "content": "Use a consistent scan pattern to check instruments, hazards, and people. Random scanning creates gaps and missed cues. A disciplined pattern ensures nothing critical is overlooked, even under stress.",
+          "questions": [
+            "What would a good scan pattern look like for your job?"
+          ],
+          "mcq": {
+            "question": "Why is a consistent scan pattern better than checking instruments randomly?",
+            "options": {
+              "A": "It's faster",
+              "B": "It reduces the chance of missing critical information",
+              "C": "It looks more professional",
+              "D": "It's required by regulation"
+            },
+            "correct": "B",
+            "explanation": "Structured patterns prevent you from skipping over critical cues during high workload."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m2-l3",
+          "title": "Focus vs Field of View",
+          "order": 3,
+          "content": "Focused attention zooms in on one task. Field-of-view awareness keeps the broader picture in mind. You need both, but too much focus creates tunnel vision. Train yourself to zoom out periodically and check the big picture.",
+          "questions": [
+            "When was the last time tunnel vision caused you to miss something important?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m2-l4",
+          "title": "Noticing What Changed",
+          "order": 4,
+          "content": "Your brain is wired to detect change. Train yourself to notice deviations from normal—sounds, smells, vibrations, gauge movements. Change is often the first indicator that something's wrong. If it feels different, investigate.",
+          "questions": [
+            "What sensory cues do you rely on most to detect abnormal conditions?"
+          ],
+          "mcq": null,
+          "scenario": "You've been working near a compressor for 20 minutes. Suddenly, you notice the sound pitch has changed slightly. Everything else looks normal. Should you investigate or continue working?"
+        }
+      ]
+    },
+    {
+      "module_id": "sa-m3-comprehension",
+      "module_name": "Comprehension and Mental Models",
+      "order": 3,
+      "lessons": [
+        {
+          "lesson_id": "sa-m3-l1",
+          "title": "Building Mental Models",
+          "order": 1,
+          "content": "A mental model is your internal picture of how the system works. The more accurate your model, the better you understand what cues mean. Experience builds better models, but only if you actively reflect on what you observe.",
+          "questions": [
+            "How well does your mental model match reality in your operations?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m3-l2",
+          "title": "Matching Cues to Meaning",
+          "order": 2,
+          "content": "Perception gives you raw data. Comprehension turns data into meaning. A rising gauge means nothing until you know whether it's normal, abnormal, or critical. Learn to interpret cues in context, not in isolation.",
+          "questions": [
+            "Can you think of a cue that means different things in different contexts?"
+          ],
+          "mcq": {
+            "question": "You see a crew member walking quickly toward the exit. What does this cue mean?",
+            "options": {
+              "A": "Emergency evacuation in progress",
+              "B": "Shift change or break time",
+              "C": "Could be either—context is needed",
+              "D": "Nothing significant"
+            },
+            "correct": "C",
+            "explanation": "Single cues are ambiguous. You need context—alarms, radio traffic, time of day—to comprehend meaning."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m3-l3",
+          "title": "Recognizing Patterns",
+          "order": 3,
+          "content": "Expert operators recognize patterns instantly. Novices see disconnected data points. Pattern recognition comes from experience and deliberate practice. When you see a familiar pattern, you comprehend faster and act sooner.",
+          "questions": [
+            "What operational patterns have you learned to recognize quickly?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m3-l4",
+          "title": "Updating Your Mental Model",
+          "order": 4,
+          "content": "When new information contradicts your mental model, update the model—don't ignore the information. Confirmation bias makes us reject data that doesn't fit our expectations. Stay flexible. Reality always wins.",
+          "questions": [
+            "Have you ever ignored a warning sign because it didn't fit what you expected?"
+          ],
+          "mcq": null,
+          "scenario": "You expect a valve to be closed based on the procedure step. You glance at it and it looks closed. Later, you discover it was actually open. What comprehension error occurred?"
+        }
+      ]
+    },
+    {
+      "module_id": "sa-m4-projection",
+      "module_name": "Projection and Anticipation",
+      "order": 4,
+      "lessons": [
+        {
+          "lesson_id": "sa-m4-l1",
+          "title": "Thinking Ahead",
+          "order": 1,
+          "content": "Projection means asking, 'What happens next?' Good operators stay ahead of the aircraft, the well, the machine. Reactive operators are always one step behind. Develop the habit of thinking two or three steps into the future.",
+          "questions": [
+            "How far ahead do you typically think during operations?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m4-l2",
+          "title": "Trend Recognition",
+          "order": 2,
+          "content": "Trends tell you where things are headed. A stable reading is different from a reading that's been climbing for five minutes. Learn to track trends, not just snapshots. Projection depends on recognizing direction and rate of change.",
+          "questions": [
+            "Do your systems give you trend data, or only current values?"
+          ],
+          "mcq": {
+            "question": "A temperature gauge reads 150°F. Five minutes ago it was 145°F. Ten minutes ago it was 140°F. What should you project?",
+            "options": {
+              "A": "Temperature is stable and safe",
+              "B": "Temperature will likely continue rising",
+              "C": "Temperature will decrease soon",
+              "D": "No projection possible with this data"
+            },
+            "correct": "B",
+            "explanation": "The consistent upward trend suggests continued increase unless something changes."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m4-l3",
+          "title": "What-If Thinking",
+          "order": 3,
+          "content": "Ask yourself, 'What if this fails?' or 'What if conditions change?' Mental rehearsal prepares you for contingencies. If you've already thought through the scenario, your response will be faster and more controlled when it happens.",
+          "questions": [
+            "What's one 'what-if' scenario you should think through for your next shift?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m4-l4",
+          "title": "Decision Points and Triggers",
+          "order": 4,
+          "content": "Identify decision points in advance. Know your trigger points—the conditions that require immediate action. When you cross a trigger, act decisively. Projection without action is just observation.",
+          "questions": [
+            "What are your personal trigger points for stopping work or calling for help?"
+          ],
+          "mcq": null,
+          "scenario": "You're lowering a load with a crane. Wind speed is currently 18 mph, gusting to 22 mph. Your site limit is 25 mph sustained. The forecast shows winds increasing over the next hour. What should you project and decide?"
+        }
+      ]
+    },
+    {
+      "module_id": "sa-m5-threats",
+      "module_name": "Threats to SA",
+      "order": 5,
+      "lessons": [
+        {
+          "lesson_id": "sa-m5-l1",
+          "title": "Distraction",
+          "order": 1,
+          "content": "Distractions pull your attention away from critical tasks. Phones, conversations, and interruptions fragment your SA. In high-risk work, even a 10-second distraction can be catastrophic. Protect your attention like a limited resource.",
+          "questions": [
+            "What distracts you most often during critical operations?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m5-l2",
+          "title": "Fatigue",
+          "order": 2,
+          "content": "Fatigue narrows your attention, slows your processing, and degrades projection. You perceive less, comprehend slower, and anticipate poorly. Fatigue is insidious—you don't realize how impaired you are until it's too late.",
+          "questions": [
+            "How do you recognize when fatigue is affecting your SA?"
+          ],
+          "mcq": {
+            "question": "Which SA level is affected FIRST by fatigue?",
+            "options": {
+              "A": "Level 1 (Perception)",
+              "B": "Level 2 (Comprehension)",
+              "C": "Level 3 (Projection)",
+              "D": "All levels equally"
+            },
+            "correct": "C",
+            "explanation": "Projection requires the most cognitive effort and degrades first under fatigue."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m5-l3",
+          "title": "Complacency",
+          "order": 3,
+          "content": "Complacency is assuming everything is normal because it usually is. Routine breeds inattention. The moment you stop actively scanning and thinking is the moment SA collapses. Stay alert even when things seem stable.",
+          "questions": [
+            "When do you find yourself becoming complacent?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m5-l4",
+          "title": "Task Saturation",
+          "order": 4,
+          "content": "When workload exceeds capacity, SA suffers. You fixate on immediate tasks and lose track of the big picture. Recognize task saturation early. Delegate, defer, or stop non-critical work to preserve SA on what matters most.",
+          "questions": [
+            "What do you do when workload threatens to overwhelm your SA?"
+          ],
+          "mcq": null,
+          "scenario": "You're managing a complex startup procedure. Radio calls are coming in. A gauge alarm activates. Your supervisor asks for a status update. You feel your SA slipping. What should you do?"
+        }
+      ]
+    },
+    {
+      "module_id": "sa-m6-team-sa",
+      "module_name": "Team Situational Awareness",
+      "order": 6,
+      "lessons": [
+        {
+          "lesson_id": "sa-m6-l1",
+          "title": "Shared Situational Awareness",
+          "order": 1,
+          "content": "Team SA means everyone has the same understanding of what's happening. Gaps in shared SA cause coordination failures. Verbalize your SA. Ask others for theirs. Don't assume everyone sees what you see.",
+          "questions": [
+            "How does your team share SA during operations?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m6-l2",
+          "title": "Communicating SA",
+          "order": 2,
+          "content": "Use clear, concise SA updates: what you see, what it means, what you expect. Don't bury critical information in long explanations. Make it easy for others to build their own SA from your reports.",
+          "questions": [
+            "How would you verbalize your current SA in 10 seconds or less?"
+          ],
+          "mcq": {
+            "question": "Which statement best communicates SA to your team?",
+            "options": {
+              "A": "Pressure's going up a little",
+              "B": "Pressure is 320 PSI, trending up 5 PSI per minute, approaching 350 limit",
+              "C": "We might have a pressure problem soon",
+              "D": "Keep an eye on the pressure gauge"
+            },
+            "correct": "B",
+            "explanation": "This gives perception, trend, and projection—everything the team needs for shared SA."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m6-l3",
+          "title": "Cross-Monitoring",
+          "order": 3,
+          "content": "Cross-monitoring means watching what others are doing and thinking. It catches errors before they become accidents. Good teams actively monitor each other's SA and speak up when someone is losing the picture.",
+          "questions": [
+            "Do you feel comfortable challenging a teammate's SA if something seems wrong?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "sa-m6-l4",
+          "title": "Maintaining SA During Handovers",
+          "order": 4,
+          "content": "Shift changes and handovers are high-risk for SA loss. The incoming operator starts with zero SA. Use structured briefings to transfer the picture. Include current state, recent changes, expected trends, and active hazards.",
+          "questions": [
+            "What SA information do you need most when taking over a shift?"
+          ],
+          "mcq": null,
+          "scenario": "You're handing over a night shift to the day crew. Equipment is running normally, but you noticed an unusual vibration in the pump 30 minutes ago. It hasn't gotten worse. Do you mention it in the handover?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "moduleId": "WC-SF-108",
+  "courseId": "WC-SF",
+  "title": "Well Control Methods",
+  "description": "Kill methods - Driller's Method, Wait and Weight, Concurrent, and Volumetric. Method selection criteria, step-by-step procedures, pressure behavior during each method.",
+  "order": 8,
+  "lessonIds": [
+    "WC-SF-108-01",
+    "WC-SF-108-02",
+    "WC-SF-108-03",
+    "WC-SF-108-04"
+  ],
+  "examWeight": "Critical",
+  "iwcfSyllabus": "PP-09",
+  "documentId": "WC-SF-108",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-108"
+  ]
+}

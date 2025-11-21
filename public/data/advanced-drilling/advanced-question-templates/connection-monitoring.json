@@ -1,0 +1,52 @@
+{
+  "templateId": "QT-CM-001",
+  "category": "KICK_DETECTION",
+  "title": "Connection Flow Check Assessment",
+  "level": ["L3", "L4"],
+  "applicableTo": ["surface", "subsea"],
+  "question": "On {{wellProfile.wellName}}, you are drilling at {{currentSection.settingDepth.tvd}} {{currentSection.settingDepth.unit}} TVD with {{currentSection.mudWeight.current}} ppg mud. During a connection, you perform a {{wellProfile.connectionMonitoring.parameters.flowCheck.duration}}-minute flow check. Pit volume tolerance is {{wellProfile.connectionMonitoring.parameters.pitVolumeTolerance.value}} bbls. You observe {{scenario.pitGain}} bbls gain during the flow check. What action should you take?",
+  "inputs": {
+    "wellProfile": {
+      "required": ["connectionMonitoring.parameters"]
+    },
+    "currentSection": {
+      "from": "wellProfile.casingProgram[activeSection]",
+      "required": ["settingDepth.tvd", "mudWeight.current"]
+    },
+    "scenario": {
+      "generated": true,
+      "pitGain": {
+        "options": [0.3, 2, 8, 15, 25],
+        "description": "bbls gained during flow check"
+      }
+    }
+  },
+  "answerLogic": {
+    "conditions": [
+      {
+        "if": "scenario.pitGain <= wellProfile.connectionMonitoring.parameters.flowCheck.acceptableFlow",
+        "answer": "Continue drilling - flow is within acceptable limits",
+        "action": "resume_drilling"
+      },
+      {
+        "if": "scenario.pitGain > wellProfile.connectionMonitoring.parameters.flowCheck.acceptableFlow AND scenario.pitGain < wellProfile.connectionMonitoring.parameters.pitVolumeTolerance.value",
+        "answer": "Flow back and recheck - flow exceeds acceptable limits but below kick threshold",
+        "action": "flow_back_recheck"
+      },
+      {
+        "if": "scenario.pitGain >= wellProfile.connectionMonitoring.parameters.pitVolumeTolerance.value",
+        "answer": "Shut in the well - potential kick detected",
+        "action": "shut_in"
+      }
+    ]
+  },
+  "feedback": {
+    "resume_drilling": "Correct. {{scenario.pitGain}} bbls is within the {{wellProfile.connectionMonitoring.parameters.flowCheck.acceptableFlow}} bbl acceptable flow limit. This is normal thermal expansion or minor ballooning.",
+    "flow_back_recheck": "Correct. {{scenario.pitGain}} bbls exceeds the acceptable {{wellProfile.connectionMonitoring.parameters.flowCheck.acceptableFlow}} bbl limit. Flow back, monitor, and perform another flow check before continuing.",
+    "shut_in": "Correct. {{scenario.pitGain}} bbls exceeds the {{wellProfile.connectionMonitoring.parameters.pitVolumeTolerance.value}} bbl pit volume tolerance. Shut in immediately and record SIDPP and SICP.",
+    "incorrect": "Review the flow check limits: Acceptable flow = {{wellProfile.connectionMonitoring.parameters.flowCheck.acceptableFlow}} bbl, Pit tolerance = {{wellProfile.connectionMonitoring.parameters.pitVolumeTolerance.value}} bbl. Compare the observed gain to these thresholds."
+  },
+  "contextualTip": "On {{wellProfile.wellName}} with limited kick tolerance in the {{currentSection.section}} section, early kick detection is critical. Connection flow monitoring is your first line of defense.",
+  "relatedLesson": "WC-SF-104-01",
+  "tags": ["kick-detection", "connection-monitoring", "flow-check", "well-control", "dynamic"]
+}

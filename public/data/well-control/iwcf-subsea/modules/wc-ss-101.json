@@ -1,0 +1,23 @@
+{
+  "moduleId": "WC-SS-101",
+  "courseId": "WC-SS",
+  "title": "Subsea Pressure Environment",
+  "description": "Understanding deepwater pressure dynamics - water depth effects, riser considerations, hydrostatic changes when disconnecting from seafloor.",
+  "order": 1,
+  "lessonIds": [
+    "WC-SS-101-01",
+    "WC-SS-101-02",
+    "WC-SS-101-03"
+  ],
+  "examWeight": "High",
+  "iwcfSyllabus": "DR-SS-PP-02",
+  "subseaCritical": true,
+  "documentId": "WC-SS-101",
+  "tags": [
+    "well-control",
+    "subsea",
+    "deepwater",
+    "IWCF",
+    "WC-SS-101"
+  ]
+}

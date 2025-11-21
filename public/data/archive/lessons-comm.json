@@ -1,0 +1,384 @@
+{
+  "course_id": "communication",
+  "course_name": "Communication",
+  "modules": [
+    {
+      "module_id": "comm-m1-fundamentals",
+      "module_name": "Communication Fundamentals",
+      "order": 1,
+      "lessons": [
+        {
+          "lesson_id": "comm-m1-l1",
+          "title": "Closed-Loop Communication",
+          "order": 1,
+          "content": "Closed-loop communication has three parts: sender transmits, receiver acknowledges with read-back, sender confirms. This prevents misheard instructions and confirms mutual understanding. It's standard in aviation, medical, and military operations for a reason—it works.",
+          "questions": [
+            "Does your team use closed-loop communication? If not, why?",
+            "Describe a time when lack of read-back caused an error."
+          ],
+          "mcq": {
+            "question": "You tell a crew member: 'Set pressure to 500 PSI.' What should happen next?",
+            "options": {
+              "A": "They nod and do it",
+              "B": "They repeat: 'Setting pressure to 500 PSI'",
+              "C": "They confirm after it's done",
+              "D": "Nothing—clear instructions don't need confirmation"
+            },
+            "correct": "B",
+            "explanation": "Closed-loop requires immediate read-back before action. This catches misheard instructions before they become errors."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m1-l2",
+          "title": "Standardized Terminology",
+          "order": 2,
+          "content": "Use precise, standardized terms—not jargon, slang, or ambiguous words. 'Left' and 'right' are perspective-dependent; 'port' and 'starboard' are not. 'A lot' is vague; '500 gallons' is specific. Standardized language reduces misinterpretation across shifts and teams.",
+          "questions": [
+            "What standardized terms does your operation use?",
+            "Have you seen informal language cause confusion?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m1-l3",
+          "title": "Barriers to Communication",
+          "order": 3,
+          "content": "Physical barriers: noise, distance, equipment. Psychological barriers: fear, hierarchy, distraction. Both kill information flow. Identify and mitigate barriers before critical operations—test radios, reduce ambient noise, establish authority gradients that permit challenge.",
+          "questions": [
+            "What physical or psychological barriers affect communication in your work?",
+            "How do you overcome noise, hierarchy, or distraction during high-tempo operations?"
+          ],
+          "mcq": null,
+          "scenario": "You need to relay critical information, but the environment is loud and chaotic. What do you do?"
+        }
+      ]
+    },
+    {
+      "module_id": "comm-m2-briefings",
+      "module_name": "Briefings and Handovers",
+      "order": 2,
+      "lessons": [
+        {
+          "lesson_id": "comm-m2-l1",
+          "title": "Pre-Job Briefs",
+          "order": 1,
+          "content": "Pre-job briefs align the team on objectives, roles, hazards, and decision authority. Brief what, who, when, and what-if. Keep it short and interactive—lecture-style briefs don't stick. Confirm understanding by asking team members to restate key points.",
+          "questions": [
+            "What's included in your standard pre-job brief?",
+            "How do you verify the team absorbed the brief, not just attended it?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m2-l2",
+          "title": "Shift Handovers",
+          "order": 2,
+          "content": "Shift handovers transfer situational awareness from outgoing to incoming crew. Use a structured format: current status, recent changes, pending issues, recommendations. Face-to-face handovers are better than written logs alone—written misses tone, urgency, and nuance.",
+          "questions": [
+            "What handover format does your team use?",
+            "Have you ever received a poor handover? What critical information was missing?"
+          ],
+          "mcq": {
+            "question": "During handover, the outgoing operator says: 'Everything's normal, nothing to report.' What should you do?",
+            "options": {
+              "A": "Accept it and start your shift",
+              "B": "Ask specific questions about system status",
+              "C": "Review logs independently",
+              "D": "Trust their judgment—they're experienced"
+            },
+            "correct": "B",
+            "explanation": "'Everything's normal' is too vague. Ask targeted questions about equipment status, recent issues, and watch items to build real situational awareness."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m2-l3",
+          "title": "After-Action Debriefs",
+          "order": 3,
+          "content": "After-action debriefs capture lessons while memory is fresh. Focus on what happened, why, and what to change—not blame. Effective debriefs are psychologically safe: people speak freely without fear of punishment. Write down key findings and distribute them.",
+          "questions": [
+            "Does your team conduct after-action debriefs? If not, why?",
+            "What makes a debrief feel safe enough to be honest?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m2-l4",
+          "title": "SBAR Communication",
+          "order": 4,
+          "content": "SBAR stands for Situation, Background, Assessment, Recommendation. It's a structured way to escalate issues or brief leaders. State the current situation, provide context, share your assessment, and recommend action. SBAR keeps communication concise and decision-focused.",
+          "questions": [
+            "Have you used SBAR or a similar format to escalate an issue?",
+            "What happens when you escalate without structure—just 'We have a problem'?"
+          ],
+          "mcq": null,
+          "scenario": "You need to brief your supervisor on an equipment failure. Use SBAR—what do you say?"
+        }
+      ]
+    },
+    {
+      "module_id": "comm-m3-listening",
+      "module_name": "Active Listening",
+      "order": 3,
+      "lessons": [
+        {
+          "lesson_id": "comm-m3-l1",
+          "title": "Listening vs Hearing",
+          "order": 1,
+          "content": "Hearing is passive—sound reaches your ears. Listening is active—you process, interpret, and respond. Most communication failures are listening failures, not speaking failures. You can't respond appropriately if you didn't truly listen.",
+          "questions": [
+            "When do you catch yourself hearing words but not really listening?",
+            "How do you force yourself to listen actively during routine communications?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m3-l2",
+          "title": "Paraphrasing for Understanding",
+          "order": 2,
+          "content": "Paraphrasing is restating what you heard in your own words. It confirms you understood correctly and gives the speaker a chance to clarify. 'So what you're saying is...' is a powerful tool to catch miscommunication before it causes problems.",
+          "questions": [
+            "Do you paraphrase to confirm understanding, or assume you got it?",
+            "When was the last time paraphrasing revealed you misunderstood something?"
+          ],
+          "mcq": {
+            "question": "A team member explains a complex issue. What's your best response?",
+            "options": {
+              "A": "'Got it, thanks.'",
+              "B": "'So you're saying [paraphrase]. Is that right?'",
+              "C": "'I'll figure it out as I go.'",
+              "D": "'Can you send that in an email?'"
+            },
+            "correct": "B",
+            "explanation": "Paraphrasing confirms mutual understanding and gives the speaker a chance to correct misinterpretation before it becomes a problem."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m3-l3",
+          "title": "Non-Verbal Communication",
+          "order": 3,
+          "content": "Body language, tone, and facial expressions carry more meaning than words alone. Crossed arms signal defensiveness. Lack of eye contact suggests disengagement. Tone conveys urgency. Learn to read non-verbal cues and align your own body language with your message.",
+          "questions": [
+            "What non-verbal cues do you watch for in your team?",
+            "How do you ensure your body language matches your words during a brief?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m3-l4",
+          "title": "Listening Under Pressure",
+          "order": 4,
+          "content": "Stress and urgency make listening harder. You're tempted to interrupt, jump to conclusions, or multitask while someone is talking. Discipline yourself to pause, listen fully, then respond. Missing key information because you were rushing is slower than listening carefully the first time.",
+          "questions": [
+            "When do you find yourself interrupting or finishing people's sentences?",
+            "How do you stay present and attentive when under time pressure?"
+          ],
+          "mcq": null,
+          "scenario": "Someone is trying to report an issue, but you're focused on another task. How do you handle it?"
+        }
+      ]
+    },
+    {
+      "module_id": "comm-m4-assertive",
+      "module_name": "Assertive Communication",
+      "order": 4,
+      "lessons": [
+        {
+          "lesson_id": "comm-m4-l1",
+          "title": "Speaking Up and Advocacy",
+          "order": 1,
+          "content": "Advocacy is clearly stating your concerns or observations, even if it challenges authority or consensus. 'I'm concerned about...' or 'I don't think that's safe' are assertive phrases. Speaking up requires psychological safety and practice—it's a trained skill, not a personality trait.",
+          "questions": [
+            "Describe a time you spoke up about a safety concern. What happened?",
+            "What stops you from speaking up—fear of being wrong, or fear of social cost?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m4-l2",
+          "title": "Inquiry and Questioning",
+          "order": 2,
+          "content": "Inquiry is asking questions to understand or challenge a plan. 'Can you walk me through your reasoning?' or 'What if X happens?' are inquiry techniques. Good inquiry is non-confrontational but persistent. It surfaces assumptions and uncovers flaws without triggering defensiveness.",
+          "questions": [
+            "How do you ask a challenging question without sounding confrontational?",
+            "When was the last time your inquiry uncovered a missed risk?"
+          ],
+          "mcq": {
+            "question": "You disagree with a supervisor's plan. What's the most effective way to raise your concern?",
+            "options": {
+              "A": "'That's wrong.'",
+              "B": "'I'm concerned about [specific risk]. Can we discuss it?'",
+              "C": "Stay silent—they're in charge",
+              "D": "'We tried that before and it failed.'"
+            },
+            "correct": "B",
+            "explanation": "Assertive communication states concern specifically and invites dialogue. It's respectful but direct, not passive or aggressive."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m4-l3",
+          "title": "CUS Words",
+          "order": 3,
+          "content": "CUS stands for: 'I'm Concerned.' 'I'm Uncomfortable.' 'This is a Safety issue.' These are escalating assertiveness phrases. Start with Concerned. If ignored, escalate to Uncomfortable. If still ignored, invoke Safety. CUS provides a script for speaking up when words fail.",
+          "questions": [
+            "Have you heard of CUS words before? Do you use them?",
+            "What would it take for you to use the 'S' in CUS—Safety?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m4-l4",
+          "title": "Two-Challenge Rule",
+          "order": 4,
+          "content": "If you voice a concern and it's dismissed, voice it again with more emphasis. If dismissed twice, escalate to a higher authority or invoke stop-work authority. The two-challenge rule prevents single points of failure in communication and ensures critical concerns are heard.",
+          "questions": [
+            "How many times will you challenge a decision before escalating or stopping work?",
+            "Have you ever seen someone give up after their first challenge was ignored?"
+          ],
+          "mcq": null,
+          "scenario": "You raise a safety concern, and your supervisor dismisses it. What do you do next?"
+        }
+      ]
+    },
+    {
+      "module_id": "comm-m5-conflict",
+      "module_name": "Conflict and Miscommunication",
+      "order": 5,
+      "lessons": [
+        {
+          "lesson_id": "comm-m5-l1",
+          "title": "Sources of Miscommunication",
+          "order": 1,
+          "content": "Miscommunication stems from ambiguous language, assumptions, distractions, or cultural differences. Both sender and receiver share responsibility—send clearly, confirm receipt. When miscommunication happens, diagnose the root cause so you can prevent it next time.",
+          "questions": [
+            "What's the most common cause of miscommunication in your work?",
+            "How do you repair miscommunication once you realize it happened?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m5-l2",
+          "title": "Task vs Relationship Conflict",
+          "order": 2,
+          "content": "Task conflict is disagreement about work approach—it's healthy and productive if managed well. Relationship conflict is personal friction—it's toxic and spreads. Don't let task conflict become relationship conflict. Separate ideas from identity. Disagree on the plan, not the person.",
+          "questions": [
+            "Can you separate professional disagreement from personal dislike?",
+            "Describe a time task conflict escalated into relationship conflict. How did it start?"
+          ],
+          "mcq": {
+            "question": "Two crew members argue about procedure. One says: 'You never listen.' What type of conflict is this?",
+            "options": {
+              "A": "Task conflict—focused on procedure",
+              "B": "Relationship conflict—personal attack",
+              "C": "Healthy debate",
+              "D": "Normal disagreement"
+            },
+            "correct": "B",
+            "explanation": "'You never listen' is a personal attack, not task-focused. This is relationship conflict and needs immediate de-escalation."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m5-l3",
+          "title": "De-Escalation Techniques",
+          "order": 3,
+          "content": "De-escalation reduces emotional intensity in conflict. Lower your voice, use calm body language, acknowledge the other person's concern. 'I hear you. Let's work this out.' Avoid defensive responses, sarcasm, or dismissal—these escalate. Your calm demeanor sets the tone.",
+          "questions": [
+            "How do you calm yourself when someone's frustration starts to trigger yours?",
+            "What de-escalation techniques work best in your environment?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m5-l4",
+          "title": "Post-Conflict Resolution",
+          "order": 4,
+          "content": "After conflict, close the loop. Acknowledge what happened, clarify misunderstandings, and reset expectations. Don't let unresolved tension fester—it degrades team performance. If you can't resolve it yourselves, bring in a neutral third party. Avoidance makes it worse.",
+          "questions": [
+            "How does your team handle post-conflict resolution?",
+            "Have you ever avoided resolving a conflict and regretted it later?"
+          ],
+          "mcq": null,
+          "scenario": "You had a heated disagreement with a colleague. The shift is over. Do you leave it unresolved or address it?"
+        }
+      ]
+    },
+    {
+      "module_id": "comm-m6-digital",
+      "module_name": "Digital Communication",
+      "order": 6,
+      "lessons": [
+        {
+          "lesson_id": "comm-m6-l1",
+          "title": "Text and Email Limitations",
+          "order": 1,
+          "content": "Text-based communication lacks tone, urgency, and non-verbal cues. Ambiguous phrasing gets misread. Sarcasm fails. Use text for documentation and non-urgent updates—not for complex or time-sensitive issues. Pick up the phone or talk face-to-face when it matters.",
+          "questions": [
+            "Have you ever misinterpreted a text or email? What went wrong?",
+            "What types of communication do you reserve for in-person or voice?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m6-l2",
+          "title": "Radio Discipline",
+          "order": 2,
+          "content": "Radio communication is public, recorded, and often congested. Use proper call signs, brevity codes, and standard phrasing. Don't transmit personal conversations, unnecessary chatter, or sensitive information. Key the mic, speak clearly, release. Listen before transmitting—don't step on active traffic.",
+          "questions": [
+            "What radio discipline standards does your operation follow?",
+            "Have you heard poor radio discipline clog up comms during a critical event?"
+          ],
+          "mcq": {
+            "question": "You need to relay detailed technical instructions over the radio. What do you do?",
+            "options": {
+              "A": "Transmit all details over the air",
+              "B": "Summarize on radio, follow up with written details",
+              "C": "Skip the radio—just send a text",
+              "D": "Use coded language to save time"
+            },
+            "correct": "B",
+            "explanation": "Radio is for concise, time-critical information. Use it to alert and coordinate, then follow up with written detail to avoid clogging the channel."
+          },
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m6-l3",
+          "title": "Communication Technology Failures",
+          "order": 3,
+          "content": "Technology fails—batteries die, systems go down, networks overload. Have a backup plan: alternate channels, hand signals, runners. Don't become dependent on tech to the point where its failure cripples your ability to operate. Train for comms-out scenarios.",
+          "questions": [
+            "What's your backup plan if primary comms fail?",
+            "When was the last time you practiced operating without radios or phones?"
+          ],
+          "mcq": null,
+          "scenario": null
+        },
+        {
+          "lesson_id": "comm-m6-l4",
+          "title": "Information Overload",
+          "order": 4,
+          "content": "Too much information is as bad as too little. Filter what you transmit—send only what's relevant and actionable. Use channels appropriately: urgent goes on radio, routine goes in logs, detailed goes in reports. Don't spam the team with noise—preserve their attention for what matters.",
+          "questions": [
+            "How do you decide what's important enough to broadcast vs log quietly?",
+            "Have you ever experienced information overload during an incident? How did it affect you?"
+          ],
+          "mcq": null,
+          "scenario": "Multiple systems are generating alerts. How do you prioritize what to communicate to the team?"
+        }
+      ]
+    }
+  ]
+}

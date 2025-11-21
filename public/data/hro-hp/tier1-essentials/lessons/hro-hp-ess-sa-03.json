@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-SA-03",
+  "moduleId": "HRO-HP-ESS-SA",
+  "courseId": "HRO-HP-ESS",
+  "title": "Building Mental Models",
+  "type": "lesson",
+  "content": "A mental model is your internal picture of how systems work, what state they're in, and how they'll respond to changes. Accurate mental models let you predict system behavior and spot anomalies quickly. Models must be continuously updated as conditions change—an outdated model is worse than no model because it creates false confidence.",
+  "mcq": {
+    "question": "You inherited a shift where significant changes occurred. The previous team gave a brief handover. Three hours in, you're surprised by equipment behavior that seems abnormal. What most likely happened?",
+    "options": {
+      "A": "Equipment malfunctioned unexpectedly",
+      "B": "Your mental model wasn't updated with current conditions",
+      "C": "The previous team made errors you're now discovering",
+      "D": "Normal variation that couldn't be predicted"
+    },
+    "correctOption": "B",
+    "explanation": "Being surprised by 'abnormal' behavior often indicates your mental model doesn't match reality. The equipment is behaving according to its actual state—which differs from what you expected based on an incomplete or outdated model."
+  },
+  "openQuestions": [
+    "How do you verify that your mental model matches reality when taking over a task or shift?",
+    "Describe a time when your mental model of a situation was wrong. What signals did you miss that could have corrected it earlier?"
+  ]
+}

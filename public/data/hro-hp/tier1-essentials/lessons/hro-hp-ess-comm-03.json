@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-COMM-03",
+  "moduleId": "HRO-HP-ESS-COMM",
+  "courseId": "HRO-HP-ESS",
+  "title": "Active Listening",
+  "type": "lesson",
+  "content": "Active listening means fully concentrating on what's being said rather than passively hearing words. It involves focusing attention, avoiding interruption, noting key points, and confirming understanding. Most communication failures attributed to 'poor speaking' are actually listening failures—the message was clear but the receiver wasn't fully engaged.",
+  "mcq": {
+    "question": "During a briefing, you're thinking about your response while the speaker is still talking. You then ask a question that the speaker already addressed. What listening failure occurred?",
+    "options": {
+      "A": "Memory failure—you heard but forgot",
+      "B": "Attention failure—you weren't fully processing while planning your response",
+      "C": "Comprehension failure—you heard but didn't understand",
+      "D": "The speaker wasn't clear enough"
+    },
+    "correctOption": "B",
+    "explanation": "Planning your response while someone is speaking divides attention and prevents full processing of their message. Active listening requires suspending your internal dialogue and focusing entirely on understanding the speaker."
+  },
+  "openQuestions": [
+    "What situations or topics make it hardest for you to maintain active listening? What strategies could help?",
+    "How do you demonstrate to speakers that you're actively listening and engaged with their message?"
+  ]
+}

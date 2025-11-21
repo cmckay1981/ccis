@@ -1,0 +1,30 @@
+{
+  "sectionId": "2.12",
+  "title": "Well Control During Intervention",
+  "content": {
+    "2.12.1": {
+      "title": "Overview",
+      "content": "Well intervention operations include wireline, coiled tubing, and snubbing operations performed on producing or completed wells.\n\n**Key Differences from Drilling:**\n- Well may be live (under pressure)\n- Completion equipment in place\n- Different barrier systems\n- Specialized intervention equipment\n\n**Well Control Principles:**\n- Two barriers required at all times\n- SSSV (Subsurface Safety Valve) often provides one barrier\n- Intervention BOP provides second barrier\n- Well should be in known, stable condition before entry"
+    },
+    "2.12.2": {
+      "title": "Wireline Well Control",
+      "content": "**Barrier System:**\n- Primary: Well fluid + Wireline BOP + Lubricator + Grease seals\n- Secondary: SSSV or equivalent downhole barrier\n\n**Equipment:**\n- Wireline BOP (rams to cut wire, blind rams)\n- Lubricator for tool deployment\n- Grease injection system\n- Stuffing box\n\n**Kick Indicators:**\n- Unexpected cable weight changes\n- Fluid at stuffing box\n- Pressure changes\n- Flow from vent lines\n\n**Response:**\n1. Stop cable movement\n2. Close wireline BOP\n3. Cut cable if necessary to secure well\n4. Investigate cause before resuming\n\n**Prevention:**\n- Verify well conditions before entry\n- Test SSSV function\n- Use proper lubricator pressure rating\n- Have kill fluid available"
+    },
+    "2.12.3": {
+      "title": "Coiled Tubing Well Control",
+      "content": "**Barrier System:**\n- Primary: Well fluid + CT BOP + Check valves in CT\n- Secondary: SSSV or tubing plug + Production casing/cement\n\n**Equipment:**\n- CT BOP (shear rams, slip rams, blind rams)\n- Stripper/injector head\n- Check valves in CT string\n- Circulating system\n\n**Kick Indicators:**\n- Weight indicator anomalies\n- Returns composition change\n- Pressure changes\n- Flow from annulus\n\n**Response:**\n1. Stop CT movement\n2. Close appropriate BOP element\n3. Assess situation\n4. May need to circulate out through CT\n5. Pull CT if safe to do so\n\n**Special Considerations:**\n- CT has limited weight capacity\n- May be snubbing (pipe light)\n- Check valves may fail\n- Smaller ID limits circulation rate"
+    },
+    "2.12.4": {
+      "title": "Snubbing Well Control",
+      "content": "**When Used:**\n- Need to run tubing/drillpipe into live well\n- Pipe is light relative to wellhead pressure\n- Cannot strip conventionally\n\n**Barrier System:**\n- Primary: Snubbing BOP + IBOP/check valves\n- Secondary: Production BOP + casing/cement\n\n**Procedure:**\n1. Install snubbing unit on wellhead\n2. Test all barriers\n3. Run pipe in using hydraulic force\n4. Manage pressure as pipe enters/exits\n5. Volumetric considerations apply\n\n**Well Control:**\n- Multiple BOPs available\n- Can close and strip through various elements\n- Constant pressure management required\n- Specialized crew and equipment"
+    },
+    "2.12.5": {
+      "title": "General Intervention Well Control",
+      "content": "**Before Entry:**\n1. Confirm well is in safe condition\n2. Test SSSV (or install tubing plug)\n3. Install and test intervention BOP\n4. Have kill fluid available\n5. Brief crew on barriers and response\n\n**During Operations:**\n- Maintain awareness of barrier status\n- Monitor for any unusual indications\n- Stop work if barriers compromised\n- Clear communication on well status\n\n**Response to Well Control Event:**\n1. Stop operations immediately\n2. Close intervention BOP\n3. Verify SSSV/downhole barrier status\n4. Assess situation\n5. Implement kill procedure if needed\n6. Do not resume until barriers restored\n\n**Kill Methods:**\n- Bullhead through tubing or annulus\n- Circulate if path available\n- Dynamic kill with pumping\n- May need to close SSSV and kill above it"
+    },
+    "2.12.6": {
+      "title": "SSSV Considerations",
+      "content": "**Role in Intervention:**\n- Provides downhole barrier\n- Typically set 100-500 ft below surface\n- Normally held open by hydraulic pressure\n- Fails closed when pressure removed\n\n**Before Intervention:**\n- Test SSSV closure and opening\n- Verify seal integrity\n- Know depth and specifications\n\n**During Intervention:**\n- Maintain hydraulic control\n- Be prepared to close if needed\n- Tools passing through SSSV must fit\n\n**If SSSV Not Functional:**\n- Must install alternative barrier\n- Wireline set plug, or\n- Tubing plug, or\n- Other mechanical barrier\n- Two barriers required at all times\n\n**Emergency Closure:**\n- If well control event occurs, SSSV can be closed\n- Traps tools below it\n- Secures well, tools retrieved later"
+    }
+  }
+}

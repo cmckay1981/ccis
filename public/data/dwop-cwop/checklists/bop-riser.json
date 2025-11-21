@@ -1,0 +1,78 @@
+{
+  "checklistId": "DWOP-CL-002",
+  "title": "BOP & Riser Deployment Checklist",
+  "section": "Subsea Equipment Deployment",
+  "rigTypes": ["SEMISUBMERSIBLE", "DRILLSHIP"],
+  "bopType": "subsea",
+  "breakoutRoom": "B",
+  "participants": ["Subsea Engineer", "Toolpusher", "Well Control Specialist"],
+  "aiParticipant": true,
+  "categories": [
+    {
+      "category": "BOP Pre-Deployment",
+      "items": [
+        {"item": "BOP function test completed", "critical": true},
+        {"item": "BOP pressure test completed", "critical": true},
+        {"item": "All BOP functions within spec"},
+        {"item": "Accumulator capacity verified"},
+        {"item": "Control system tested"},
+        {"item": "Deadman/Autoshear tested", "critical": true},
+        {"item": "EDS tested", "critical": true},
+        {"item": "ROV intervention panel verified"}
+      ]
+    },
+    {
+      "category": "Riser System",
+      "items": [
+        {"item": "Riser joints inspected and drift checked"},
+        {"item": "Riser running plan reviewed"},
+        {"item": "Tensioner settings calculated"},
+        {"item": "Slip joint stroke requirements verified"},
+        {"item": "Riser fill/dump valve operation confirmed"},
+        {"item": "Flex joint condition verified"},
+        {"item": "Riser gas venting system checked"}
+      ]
+    },
+    {
+      "category": "Wellhead Connection",
+      "items": [
+        {"item": "Wellhead connector function tested", "critical": true},
+        {"item": "Wellhead running tool prepared"},
+        {"item": "Guidance system (acoustic/visual) ready"},
+        {"item": "ROV support plan confirmed"},
+        {"item": "Connector lockdown sequence reviewed"}
+      ]
+    },
+    {
+      "category": "Testing After Landing",
+      "items": [
+        {"item": "BOP stack-up pressure test plan reviewed", "critical": true},
+        {"item": "Test pressures for each section confirmed"},
+        {"item": "Test plug running procedures reviewed"},
+        {"item": "Acceptable test duration defined"},
+        {"item": "Remediation plan if test fails"}
+      ]
+    },
+    {
+      "category": "Documentation & Records",
+      "items": [
+        {"item": "BOP maintenance records current"},
+        {"item": "Third-party inspection certificates valid"},
+        {"item": "Test tree equipment ready (if required)"},
+        {"item": "Subsea inspection documentation prepared"}
+      ]
+    }
+  ],
+  "aiQuestions": [
+    "When was the last full BOP overhaul? Are all components within their certification period?",
+    "If the wellhead connector fails to latch, what's your contingency?",
+    "The programme shows 36 hours for BOP deployment and test - does this account for weather delays?",
+    "What's your response if initial BOP test fails? How many repair attempts before you pull the stack?",
+    "ROV availability - do you have redundancy if primary ROV fails during critical operations?",
+    "What is the maximum water depth rating of your BOP vs actual water depth?"
+  ],
+  "actionItemTemplate": {
+    "fields": ["item", "owner", "dueDate", "status", "notes"]
+  },
+  "tags": ["dwop", "checklist", "bop", "riser", "subsea"]
+}

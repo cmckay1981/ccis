@@ -1,0 +1,218 @@
+{
+  "formulaSheetVersion": "May 2024 Version 3.0",
+  "document": "EX-0035",
+  "units": "API (Imperial)",
+
+  "categories": {
+    "basic_pressure": {
+      "title": "Basic Pressure Calculations",
+      "formulas": [
+        {
+          "id": 1,
+          "name": "Hydrostatic Pressure",
+          "formula": "P (psi) = MW (ppg) × 0.052 × TVD (ft)",
+          "variables": {
+            "P": "Hydrostatic pressure in psi",
+            "MW": "Mud weight in pounds per gallon",
+            "TVD": "True vertical depth in feet",
+            "0.052": "Constant factor"
+          },
+          "example": "12.0 ppg × 0.052 × 10000 ft = 6240 psi"
+        },
+        {
+          "id": 2,
+          "name": "Pressure Gradient",
+          "formula": "Gradient (psi/ft) = MW (ppg) × 0.052",
+          "example": "12.0 ppg × 0.052 = 0.624 psi/ft"
+        },
+        {
+          "id": 3,
+          "name": "Fluid Density from Pressure",
+          "formula": "MW (ppg) = Hydrostatic P (psi) ÷ (TVD (ft) × 0.052)",
+          "example": "6240 psi ÷ (10000 ft × 0.052) = 12.0 ppg"
+        },
+        {
+          "id": 4,
+          "name": "Formation Pressure",
+          "formula": "Formation P (psi) = Hydrostatic P in drillstring (psi) + SIDPP (psi)",
+          "notes": "Use this to determine actual formation pressure after shut-in"
+        }
+      ]
+    },
+
+    "circulating": {
+      "title": "Circulating Calculations",
+      "formulas": [
+        {
+          "id": 5,
+          "name": "Pump Output",
+          "formula": "Output (bbl/min) = Pump Displacement (bbl/stroke) × SPM"
+        },
+        {
+          "id": 6,
+          "name": "Equivalent Circulating Density",
+          "formula": "ECD (ppg) = MW (ppg) + (Annular Pressure Loss (psi) ÷ (TVD (ft) × 0.052))",
+          "notes": "ECD is always higher than static MW due to friction"
+        },
+        {
+          "id": 7,
+          "name": "Fluid Density with Trip Margin",
+          "formula": "Effective MW (ppg) = MW (ppg) + (Trip Margin (psi) ÷ (TVD (ft) × 0.052))"
+        },
+        {
+          "id": 8,
+          "name": "New Pump Pressure (Rate Change)",
+          "formula": "New P (psi) = Current P (psi) × (New SPM ÷ Current SPM)²",
+          "notes": "Pressure varies with the SQUARE of pump rate"
+        },
+        {
+          "id": 9,
+          "name": "New Pump Pressure (Density Change)",
+          "formula": "New P (psi) = Current P (psi) × (New MW (ppg) ÷ Current MW (ppg))",
+          "notes": "Pressure varies linearly with density"
+        }
+      ]
+    },
+
+    "formation_strength": {
+      "title": "Formation Strength",
+      "formulas": [
+        {
+          "id": 10,
+          "name": "Maximum Allowable Fluid Density",
+          "formula": "Max MW (ppg) = LOT MW (ppg) + (Surface LOT P (psi) ÷ (Shoe TVD (ft) × 0.052))"
+        },
+        {
+          "id": 11,
+          "name": "MAASP",
+          "formula": "MAASP (psi) = (Max MW (ppg) - Current MW (ppg)) × 0.052 × Shoe TVD (ft)",
+          "notes": "Maximum pressure before fracturing the shoe"
+        }
+      ]
+    },
+
+    "well_kill": {
+      "title": "Well Kill Calculations",
+      "formulas": [
+        {
+          "id": 12,
+          "name": "Kill Fluid Density",
+          "formula": "Kill MW (ppg) = Current MW (ppg) + (SIDPP (psi) ÷ (TVD (ft) × 0.052))"
+        },
+        {
+          "id": 13,
+          "name": "Initial Circulating Pressure",
+          "formula": "ICP (psi) = SCR Pressure (psi) + SIDPP (psi)"
+        },
+        {
+          "id": 14,
+          "name": "Final Circulating Pressure",
+          "formula": "FCP (psi) = (Kill MW (ppg) ÷ Current MW (ppg)) × SCR Pressure (psi)"
+        }
+      ]
+    },
+
+    "gas_behavior": {
+      "title": "Gas Behavior",
+      "formulas": [
+        {
+          "id": 15,
+          "name": "Gas Migration Rate",
+          "formula": "Migration Rate (ft/hr) = Pressure Increase (psi/hr) ÷ (MW (ppg) × 0.052)"
+        },
+        {
+          "id": 16,
+          "name": "Boyles Law (Gas Laws)",
+          "formula": "P1 × V1 = P2 × V2",
+          "variations": [
+            "P1 = (P2 × V2) ÷ V1",
+            "V1 = (P2 × V2) ÷ P1",
+            "P2 = (P1 × V1) ÷ V2",
+            "V2 = (P1 × V1) ÷ P2"
+          ],
+          "notes": "Absolute pressures must be used (gauge + 14.7)"
+        }
+      ]
+    },
+
+    "tripping": {
+      "title": "Tripping Calculations",
+      "formulas": [
+        {
+          "id": 17,
+          "name": "Pressure Drop per Foot - Dry Pipe",
+          "formula": "(MW × 0.052 × Metal Disp) ÷ (Casing Cap - Metal Disp)"
+        },
+        {
+          "id": 18,
+          "name": "Pressure Drop per Foot - Wet Pipe",
+          "formula": "(MW × 0.052 × Closed End Disp) ÷ (Casing Cap - Closed End Disp)"
+        },
+        {
+          "id": 19,
+          "name": "Level Drop - Collars Out Dry",
+          "formula": "(Length of Collars × Metal Disp) ÷ Casing Cap"
+        },
+        {
+          "id": 20,
+          "name": "Level Drop - Collars Out Wet",
+          "formula": "(Length of Collars × Closed End Disp) ÷ Casing Cap"
+        },
+        {
+          "id": 21,
+          "name": "Length to Pull Dry Before Losing Overbalance",
+          "formula": "(Overbalance × (Casing Cap - Metal Disp)) ÷ (MW × 0.052 × Metal Disp)"
+        },
+        {
+          "id": 22,
+          "name": "Length to Pull Wet Before Losing Overbalance",
+          "formula": "(Overbalance × (Casing Cap - Closed End Disp)) ÷ (MW × 0.052 × Closed End Disp)"
+        }
+      ]
+    },
+
+    "special_calculations": {
+      "title": "Special Calculations",
+      "formulas": [
+        {
+          "id": 23,
+          "name": "Volume to Bleed - Gas Migration",
+          "formula": "Volume (bbl) = Working P (psi) × (Annular Cap (bbl/ft) ÷ Pressure Gradient (psi/ft))"
+        },
+        {
+          "id": 24,
+          "name": "Slug Volume for Dry Pipe",
+          "formula": "(Dry Pipe Length × Pipe Cap × Current MW) ÷ (Slug MW - Current MW)"
+        },
+        {
+          "id": 25,
+          "name": "Pit Gain from Slug U-Tubing",
+          "formula": "Slug Volume × ((Slug MW ÷ Current MW) - 1)"
+        },
+        {
+          "id": 26,
+          "name": "Riser Margin (Subsea)",
+          "formula": "((Air Gap + Water Depth) × MW) - (Water Depth × Sea Water MW)) ÷ (TVD - Air Gap - Water Depth)"
+        },
+        {
+          "id": 27,
+          "name": "Hydrostatic Loss if Casing Float Fails",
+          "formula": "(MW × 0.052 × Casing Cap × Unfilled Height) ÷ (Casing Cap + Annular Cap)"
+        }
+      ]
+    }
+  },
+
+  "examNotes": {
+    "gaugeProblems": [
+      "Pressures only relevant if BELOW expected values",
+      "OR if 70+ psi ABOVE expected values"
+    ],
+    "commonMistakes": [
+      "Forgetting to use absolute pressure in gas calculations",
+      "Confusing TVD with measured depth",
+      "Using wrong displacement (metal vs closed end)",
+      "Not squaring the rate ratio in pump pressure calculations"
+    ]
+  }
+}

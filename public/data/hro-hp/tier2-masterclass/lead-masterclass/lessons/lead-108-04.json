@@ -1,0 +1,24 @@
+{
+  "lessonId": "LEAD-108-04",
+  "moduleId": "LEAD-108",
+  "courseId": "LEAD",
+  "title": "When to Decide, Delegate, or Escalate",
+  "type": "scenario",
+  "content": "One of the most important leadership skills is knowing which decisions are yours to make, which to delegate, and which to escalate. Decide when you have authority, information, and accountability. Delegate when developing others or when they're closer to the problem. Escalate when the decision exceeds your authority, requires resources you don't control, or creates organizational risk beyond your level. Making decisions that aren't yours or avoiding decisions that are both create problems.",
+  "scenario": {
+    "story": "Three decisions land on your desk simultaneously: (1) A team member requests approval to attend expensive specialized training that would benefit their development but isn't critical to current work. (2) Your team has identified a process improvement that would save time but requires changing how two other departments work. (3) A safety concern has been raised that might require stopping operations, with significant production impact. You need to act on all three today.",
+    "options": {
+      "A": "Decide all three yourself since you're the leader and have the context",
+      "B": "Delegate all three to your team to develop their decision-making capability",
+      "C": "Make the safety decision immediately, escalate the cross-departmental process change, and delegate the training decision to your senior team member with budget parameters",
+      "D": "Escalate all three to your boss since they all have broader implications"
+    },
+    "recommendedResponse": "C",
+    "explanation": "Option C demonstrates decision triage. Safety decisions within your authority require immediate leadership action—this is your call. The cross-departmental process change exceeds your authority since it affects other leaders' operations—escalate to someone who can coordinate. The training request is a good development opportunity for delegation within clear constraints. Option A centralizes everything and misses delegation opportunities. Option B abdicates decisions that require your authority (safety, cross-organizational). Option D escalates decisions you should own. Effective leaders know their decision boundaries and act accordingly."
+  },
+  "openQuestions": [
+    "What's a recent decision you made that you should have delegated? What stopped you?",
+    "What's a decision you're currently avoiding that actually requires your leadership?",
+    "How do you know when a decision exceeds your authority and requires escalation?"
+  ]
+}

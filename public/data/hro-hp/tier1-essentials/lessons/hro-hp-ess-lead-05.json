@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-LEAD-05",
+  "moduleId": "HRO-HP-ESS-LEAD",
+  "courseId": "HRO-HP-ESS",
+  "title": "Accountability",
+  "type": "lesson",
+  "content": "Accountability means people answer for results in their area of responsibility. Healthy accountability focuses on performance against clear standards, addresses issues promptly, and aims for improvement rather than punishment. Toxic accountability uses blame, public humiliation, and fear—it drives problems underground rather than solving them.",
+  "mcq": {
+    "question": "After an error, a supervisor publicly criticizes the responsible team member, making them an example to others. Short-term, errors decrease. Six months later, the team has stopped reporting near-misses and small problems. What happened?",
+    "options": {
+      "A": "Success—fewer errors means better performance",
+      "B": "Public criticism created fear, suppressing reporting rather than errors",
+      "C": "The team has improved and fewer problems exist to report",
+      "D": "Accountability measures need to be increased further"
+    },
+    "correctOption": "B",
+    "explanation": "Punitive, public accountability drives problems underground. People hide mistakes rather than report them when they fear humiliation. The apparent improvement masked increased risk—unreported problems accumulate until a major failure occurs."
+  },
+  "openQuestions": [
+    "How does your organization balance accountability for standards with psychological safety to report problems?",
+    "Describe accountability that felt fair and developmental versus accountability that felt punitive. What made the difference?"
+  ]
+}

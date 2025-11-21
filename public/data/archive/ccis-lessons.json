@@ -1,0 +1,2719 @@
+{
+  "sa-m1-l1": {
+    "lessonId": "sa-m1-l1",
+    "title": "What Is Situational Awareness?",
+    "moduleId": "sa-m1-fundamentals",
+    "courseId": "situational-awareness",
+    "order": 1,
+    "content": "Situational awareness is knowing what's happening around you, understanding what it means, and predicting what will happen next. It's the foundation of safe decision-making in dynamic environments. Without SA, you're reacting blindly instead of acting with intent.",
+    "questions": [
+      "Can you recall a moment when you lost SA? What happened?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "sa-m1-l2": {
+    "lessonId": "sa-m1-l2",
+    "title": "The Three Levels of SA",
+    "moduleId": "sa-m1-fundamentals",
+    "courseId": "situational-awareness",
+    "order": 2,
+    "content": "Level 1 is perceiving what's around you. Level 2 is understanding what those cues mean. Level 3 is projecting what will happen next. Most errors occur when you perceive correctly but fail to comprehend or anticipate.",
+    "questions": [
+      "Which level do you think is hardest to maintain under pressure?"
+    ],
+    "mcq": {
+      "question": "You notice a pressure gauge rising (Level 1). You recognize it's above normal limits (Level 2). What is Level 3?",
+      "options": {
+        "A": "Reading the exact PSI value",
+        "B": "Predicting the system will fail if pressure continues rising",
+        "C": "Reporting the reading to your supervisor",
+        "D": "Checking other gauges for confirmation"
+      },
+      "correct": "B",
+      "explanation": "Level 3 is projection—anticipating future states based on current trends."
+    },
+    "scenario": null
+  },
+  "sa-m1-l3": {
+    "lessonId": "sa-m1-l3",
+    "title": "SA Is Perishable",
+    "moduleId": "sa-m1-fundamentals",
+    "courseId": "situational-awareness",
+    "order": 3,
+    "content": "Situational awareness degrades the moment you stop updating it. Distractions, fatigue, and complacency erode SA faster than most operators realize. Treat SA like a muscle—it requires constant effort to maintain.",
+    "questions": [
+      "What typically causes you to lose SA during your workday?"
+    ],
+    "mcq": null,
+    "scenario": "You're monitoring a well control panel. A colleague asks you a detailed question about yesterday's operations. You turn away for 90 seconds to answer. When you look back, a pressure alarm is flashing. What went wrong with your SA?"
+  },
+  "sa-m2-l1": {
+    "lessonId": "sa-m2-l1",
+    "title": "Active vs Passive Scanning",
+    "moduleId": "sa-m2-perception",
+    "courseId": "situational-awareness",
+    "order": 1,
+    "content": "Passive scanning is looking without searching. Active scanning is deliberately seeking critical cues. In high-risk operations, passive scanning misses subtle changes that matter. Build the habit of structured, purposeful scans.",
+    "questions": [
+      "Do you scan your work area actively or passively?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "sa-m2-l2": {
+    "lessonId": "sa-m2-l2",
+    "title": "The Scan Pattern",
+    "moduleId": "sa-m2-perception",
+    "courseId": "situational-awareness",
+    "order": 2,
+    "content": "Use a consistent scan pattern to check instruments, hazards, and people. Random scanning creates gaps and missed cues. A disciplined pattern ensures nothing critical is overlooked, even under stress.",
+    "questions": [
+      "What would a good scan pattern look like for your job?"
+    ],
+    "mcq": {
+      "question": "Why is a consistent scan pattern better than checking instruments randomly?",
+      "options": {
+        "A": "It's faster",
+        "B": "It reduces the chance of missing critical information",
+        "C": "It looks more professional",
+        "D": "It's required by regulation"
+      },
+      "correct": "B",
+      "explanation": "Structured patterns prevent you from skipping over critical cues during high workload."
+    },
+    "scenario": null
+  },
+  "sa-m2-l3": {
+    "lessonId": "sa-m2-l3",
+    "title": "Focus vs Field of View",
+    "moduleId": "sa-m2-perception",
+    "courseId": "situational-awareness",
+    "order": 3,
+    "content": "Focused attention zooms in on one task. Field-of-view awareness keeps the broader picture in mind. You need both, but too much focus creates tunnel vision. Train yourself to zoom out periodically and check the big picture.",
+    "questions": [
+      "When was the last time tunnel vision caused you to miss something important?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "sa-m2-l4": {
+    "lessonId": "sa-m2-l4",
+    "title": "Noticing What Changed",
+    "moduleId": "sa-m2-perception",
+    "courseId": "situational-awareness",
+    "order": 4,
+    "content": "Your brain is wired to detect change. Train yourself to notice deviations from normal—sounds, smells, vibrations, gauge movements. Change is often the first indicator that something's wrong. If it feels different, investigate.",
+    "questions": [
+      "What sensory cues do you rely on most to detect abnormal conditions?"
+    ],
+    "mcq": null,
+    "scenario": "You've been working near a compressor for 20 minutes. Suddenly, you notice the sound pitch has changed slightly. Everything else looks normal. Should you investigate or continue working?"
+  },
+  "sa-m3-l1": {
+    "lessonId": "sa-m3-l1",
+    "title": "Building Mental Models",
+    "moduleId": "sa-m3-comprehension",
+    "courseId": "situational-awareness",
+    "order": 1,
+    "content": "A mental model is your internal picture of how the system works. The more accurate your model, the better you understand what cues mean. Experience builds better models, but only if you actively reflect on what you observe.",
+    "questions": [
+      "How well does your mental model match reality in your operations?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "sa-m3-l2": {
+    "lessonId": "sa-m3-l2",
+    "title": "Matching Cues to Meaning",
+    "moduleId": "sa-m3-comprehension",
+    "courseId": "situational-awareness",
+    "order": 2,
+    "content": "Perception gives you raw data. Comprehension turns data into meaning. A rising gauge means nothing until you know whether it's normal, abnormal, or critical. Learn to interpret cues in context, not in isolation.",
+    "questions": [
+      "Can you think of a cue that means different things in different contexts?"
+    ],
+    "mcq": {
+      "question": "You see a crew member walking quickly toward the exit. What does this cue mean?",
+      "options": {
+        "A": "Emergency evacuation in progress",
+        "B": "Shift change or break time",
+        "C": "Could be either—context is needed",
+        "D": "Nothing significant"
+      },
+      "correct": "C",
+      "explanation": "Single cues are ambiguous. You need context—alarms, radio traffic, time of day—to comprehend meaning."
+    },
+    "scenario": null
+  },
+  "sa-m3-l3": {
+    "lessonId": "sa-m3-l3",
+    "title": "Recognizing Patterns",
+    "moduleId": "sa-m3-comprehension",
+    "courseId": "situational-awareness",
+    "order": 3,
+    "content": "Expert operators recognize patterns instantly. Novices see disconnected data points. Pattern recognition comes from experience and deliberate practice. When you see a familiar pattern, you comprehend faster and act sooner.",
+    "questions": [
+      "What operational patterns have you learned to recognize quickly?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "sa-m3-l4": {
+    "lessonId": "sa-m3-l4",
+    "title": "Updating Your Mental Model",
+    "moduleId": "sa-m3-comprehension",
+    "courseId": "situational-awareness",
+    "order": 4,
+    "content": "When new information contradicts your mental model, update the model—don't ignore the information. Confirmation bias makes us reject data that doesn't fit our expectations. Stay flexible. Reality always wins.",
+    "questions": [
+      "Have you ever ignored a warning sign because it didn't fit what you expected?"
+    ],
+    "mcq": null,
+    "scenario": "You expect a valve to be closed based on the procedure step. You glance at it and it looks closed. Later, you discover it was actually open. What comprehension error occurred?"
+  },
+  "sa-m4-l1": {
+    "lessonId": "sa-m4-l1",
+    "title": "Thinking Ahead",
+    "moduleId": "sa-m4-projection",
+    "courseId": "situational-awareness",
+    "order": 1,
+    "content": "Projection means asking, 'What happens next?' Good operators stay ahead of the aircraft, the well, the machine. Reactive operators are always one step behind. Develop the habit of thinking two or three steps into the future.",
+    "questions": [
+      "How far ahead do you typically think during operations?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "sa-m4-l2": {
+    "lessonId": "sa-m4-l2",
+    "title": "Trend Recognition",
+    "moduleId": "sa-m4-projection",
+    "courseId": "situational-awareness",
+    "order": 2,
+    "content": "Trends tell you where things are headed. A stable reading is different from a reading that's been climbing for five minutes. Learn to track trends, not just snapshots. Projection depends on recognizing direction and rate of change.",
+    "questions": [
+      "Do your systems give you trend data, or only current values?"
+    ],
+    "mcq": {
+      "question": "A temperature gauge reads 150°F. Five minutes ago it was 145°F. Ten minutes ago it was 140°F. What should you project?",
+      "options": {
+        "A": "Temperature is stable and safe",
+        "B": "Temperature will likely continue rising",
+        "C": "Temperature will decrease soon",
+        "D": "No projection possible with this data"
+      },
+      "correct": "B",
+      "explanation": "The consistent upward trend suggests continued increase unless something changes."
+    },
+    "scenario": null
+  },
+  "sa-m4-l3": {
+    "lessonId": "sa-m4-l3",
+    "title": "What-If Thinking",
+    "moduleId": "sa-m4-projection",
+    "courseId": "situational-awareness",
+    "order": 3,
+    "content": "Ask yourself, 'What if this fails?' or 'What if conditions change?' Mental rehearsal prepares you for contingencies. If you've already thought through the scenario, your response will be faster and more controlled when it happens.",
+    "questions": [
+      "What's one 'what-if' scenario you should think through for your next shift?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "sa-m4-l4": {
+    "lessonId": "sa-m4-l4",
+    "title": "Decision Points and Triggers",
+    "moduleId": "sa-m4-projection",
+    "courseId": "situational-awareness",
+    "order": 4,
+    "content": "Identify decision points in advance. Know your trigger points—the conditions that require immediate action. When you cross a trigger, act decisively. Projection without action is just observation.",
+    "questions": [
+      "What are your personal trigger points for stopping work or calling for help?"
+    ],
+    "mcq": null,
+    "scenario": "You're lowering a load with a crane. Wind speed is currently 18 mph, gusting to 22 mph. Your site limit is 25 mph sustained. The forecast shows winds increasing over the next hour. What should you project and decide?"
+  },
+  "sa-m5-l1": {
+    "lessonId": "sa-m5-l1",
+    "title": "Distraction",
+    "moduleId": "sa-m5-threats",
+    "courseId": "situational-awareness",
+    "order": 1,
+    "content": "Distractions pull your attention away from critical tasks. Phones, conversations, and interruptions fragment your SA. In high-risk work, even a 10-second distraction can be catastrophic. Protect your attention like a limited resource.",
+    "questions": [
+      "What distracts you most often during critical operations?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "sa-m5-l2": {
+    "lessonId": "sa-m5-l2",
+    "title": "Fatigue",
+    "moduleId": "sa-m5-threats",
+    "courseId": "situational-awareness",
+    "order": 2,
+    "content": "Fatigue narrows your attention, slows your processing, and degrades projection. You perceive less, comprehend slower, and anticipate poorly. Fatigue is insidious—you don't realize how impaired you are until it's too late.",
+    "questions": [
+      "How do you recognize when fatigue is affecting your SA?"
+    ],
+    "mcq": {
+      "question": "Which SA level is affected FIRST by fatigue?",
+      "options": {
+        "A": "Level 1 (Perception)",
+        "B": "Level 2 (Comprehension)",
+        "C": "Level 3 (Projection)",
+        "D": "All levels equally"
+      },
+      "correct": "C",
+      "explanation": "Projection requires the most cognitive effort and degrades first under fatigue."
+    },
+    "scenario": null
+  },
+  "sa-m5-l3": {
+    "lessonId": "sa-m5-l3",
+    "title": "Complacency",
+    "moduleId": "sa-m5-threats",
+    "courseId": "situational-awareness",
+    "order": 3,
+    "content": "Complacency is assuming everything is normal because it usually is. Routine breeds inattention. The moment you stop actively scanning and thinking is the moment SA collapses. Stay alert even when things seem stable.",
+    "questions": [
+      "When do you find yourself becoming complacent?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "sa-m5-l4": {
+    "lessonId": "sa-m5-l4",
+    "title": "Task Saturation",
+    "moduleId": "sa-m5-threats",
+    "courseId": "situational-awareness",
+    "order": 4,
+    "content": "When workload exceeds capacity, SA suffers. You fixate on immediate tasks and lose track of the big picture. Recognize task saturation early. Delegate, defer, or stop non-critical work to preserve SA on what matters most.",
+    "questions": [
+      "What do you do when workload threatens to overwhelm your SA?"
+    ],
+    "mcq": null,
+    "scenario": "You're managing a complex startup procedure. Radio calls are coming in. A gauge alarm activates. Your supervisor asks for a status update. You feel your SA slipping. What should you do?"
+  },
+  "sa-m6-l1": {
+    "lessonId": "sa-m6-l1",
+    "title": "Shared Situational Awareness",
+    "moduleId": "sa-m6-team-sa",
+    "courseId": "situational-awareness",
+    "order": 1,
+    "content": "Team SA means everyone has the same understanding of what's happening. Gaps in shared SA cause coordination failures. Verbalize your SA. Ask others for theirs. Don't assume everyone sees what you see.",
+    "questions": [
+      "How does your team share SA during operations?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "sa-m6-l2": {
+    "lessonId": "sa-m6-l2",
+    "title": "Communicating SA",
+    "moduleId": "sa-m6-team-sa",
+    "courseId": "situational-awareness",
+    "order": 2,
+    "content": "Use clear, concise SA updates: what you see, what it means, what you expect. Don't bury critical information in long explanations. Make it easy for others to build their own SA from your reports.",
+    "questions": [
+      "How would you verbalize your current SA in 10 seconds or less?"
+    ],
+    "mcq": {
+      "question": "Which statement best communicates SA to your team?",
+      "options": {
+        "A": "Pressure's going up a little",
+        "B": "Pressure is 320 PSI, trending up 5 PSI per minute, approaching 350 limit",
+        "C": "We might have a pressure problem soon",
+        "D": "Keep an eye on the pressure gauge"
+      },
+      "correct": "B",
+      "explanation": "This gives perception, trend, and projection—everything the team needs for shared SA."
+    },
+    "scenario": null
+  },
+  "sa-m6-l3": {
+    "lessonId": "sa-m6-l3",
+    "title": "Cross-Monitoring",
+    "moduleId": "sa-m6-team-sa",
+    "courseId": "situational-awareness",
+    "order": 3,
+    "content": "Cross-monitoring means watching what others are doing and thinking. It catches errors before they become accidents. Good teams actively monitor each other's SA and speak up when someone is losing the picture.",
+    "questions": [
+      "Do you feel comfortable challenging a teammate's SA if something seems wrong?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "sa-m6-l4": {
+    "lessonId": "sa-m6-l4",
+    "title": "Maintaining SA During Handovers",
+    "moduleId": "sa-m6-team-sa",
+    "courseId": "situational-awareness",
+    "order": 4,
+    "content": "Shift changes and handovers are high-risk for SA loss. The incoming operator starts with zero SA. Use structured briefings to transfer the picture. Include current state, recent changes, expected trends, and active hazards.",
+    "questions": [
+      "What SA information do you need most when taking over a shift?"
+    ],
+    "mcq": null,
+    "scenario": "You're handing over a night shift to the day crew. Equipment is running normally, but you noticed an unusual vibration in the pump 30 minutes ago. It hasn't gotten worse. Do you mention it in the handover?"
+  },
+  "dm-m1-l1": {
+    "lessonId": "dm-m1-l1",
+    "title": "Types of Decisions",
+    "moduleId": "dm-m1-fundamentals",
+    "courseId": "decision-making",
+    "order": 1,
+    "content": "Operational decisions fall into three categories: routine, tactical, and critical. Routine decisions follow procedures. Tactical decisions require judgment within known parameters. Critical decisions demand immediate action under pressure with incomplete information.",
+    "questions": [
+      "What type of decision do you make most frequently in your role?",
+      "Describe a recent critical decision you faced—what made it different from routine calls?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "dm-m1-l2": {
+    "lessonId": "dm-m1-l2",
+    "title": "Decision Speed vs Quality",
+    "moduleId": "dm-m1-fundamentals",
+    "courseId": "decision-making",
+    "order": 2,
+    "content": "Fast decisions aren't always bad decisions. The key is matching decision speed to available time and consequence severity. High-stakes decisions with time permit deeper analysis. Time-critical situations demand rapid assessment with acceptable risk tolerance.",
+    "questions": [
+      "When do you force yourself to slow down before deciding?",
+      "How do you avoid analysis paralysis when time is short?"
+    ],
+    "mcq": {
+      "question": "You have 30 seconds to decide whether to abort a procedure. What's your primary decision input?",
+      "options": {
+        "A": "Consensus from the team",
+        "B": "Current system state and safety margins",
+        "C": "What worked last time",
+        "D": "Wait for more data"
+      },
+      "correct": "B",
+      "explanation": "In time-critical situations, you assess current conditions and safety margins first. Consensus and historical data are secondary when seconds count."
+    },
+    "scenario": null
+  },
+  "dm-m1-l3": {
+    "lessonId": "dm-m1-l3",
+    "title": "Decision Authority",
+    "moduleId": "dm-m1-fundamentals",
+    "courseId": "decision-making",
+    "order": 3,
+    "content": "Know who owns the decision before the crisis. Authority should be clear, published, and trained. When authority is unclear, decision paralysis or conflict occurs at the worst moment.",
+    "questions": [
+      "In your operation, who has final authority on safety-critical calls?",
+      "Have you ever seen two people think they were the decision-maker? What happened?"
+    ],
+    "mcq": null,
+    "scenario": "Two supervisors give conflicting orders during an emergency. The crew looks to you. What do you do?"
+  },
+  "dm-m2-l1": {
+    "lessonId": "dm-m2-l1",
+    "title": "OODA Loop Basics",
+    "moduleId": "dm-m2-models",
+    "courseId": "decision-making",
+    "order": 1,
+    "content": "OODA stands for Observe, Orient, Decide, Act. First, gather current facts. Second, interpret them within context. Third, choose a course of action. Fourth, execute and return to Observe. Speed comes from practice, not skipping steps.",
+    "questions": [
+      "Walk through a recent decision using OODA—where did you spend the most time?",
+      "Which step do you tend to rush?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "dm-m2-l2": {
+    "lessonId": "dm-m2-l2",
+    "title": "Recognition-Primed Decision Making",
+    "moduleId": "dm-m2-models",
+    "courseId": "decision-making",
+    "order": 2,
+    "content": "Experts rarely list options and compare them. Instead, they recognize patterns and mentally simulate the first workable option. If simulation shows failure, they move to the next option. This is faster and more reliable than formal analysis under pressure.",
+    "questions": [
+      "Describe a time you 'just knew' what to do—what pattern did you recognize?",
+      "How do you test your mental simulation before committing to action?"
+    ],
+    "mcq": {
+      "question": "You smell something unusual near a pressure vessel. What's happening in your brain?",
+      "options": {
+        "A": "Listing all possible causes in order",
+        "B": "Pattern-matching to previous incidents",
+        "C": "Waiting for instrument confirmation",
+        "D": "Running statistical probability"
+      },
+      "correct": "B",
+      "explanation": "Experienced operators immediately pattern-match sensory cues to past incidents. This recognition-primed response is faster than analytical reasoning."
+    },
+    "scenario": null
+  },
+  "dm-m2-l3": {
+    "lessonId": "dm-m2-l3",
+    "title": "Decision Trees for Procedures",
+    "moduleId": "dm-m2-models",
+    "courseId": "decision-making",
+    "order": 3,
+    "content": "Procedural decisions follow if-then logic trees. Condition A leads to Action 1; Condition B leads to Action 2. These work best for routine and predictable scenarios where all branches can be pre-planned and trained.",
+    "questions": [
+      "What procedures in your work are structured as decision trees?",
+      "When has a procedure tree failed because the situation didn't match any branch?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "dm-m2-l4": {
+    "lessonId": "dm-m2-l4",
+    "title": "Naturalistic Decision Making",
+    "moduleId": "dm-m2-models",
+    "courseId": "decision-making",
+    "order": 4,
+    "content": "Naturalistic Decision Making describes how people actually decide in the field—not in classrooms. Real decisions involve time pressure, uncertain data, shifting goals, and organizational constraints. Training must reflect field conditions, not idealized scenarios.",
+    "questions": [
+      "How do real-world decisions differ from what you trained for?",
+      "What constraints affect your decisions that training didn't cover?"
+    ],
+    "mcq": null,
+    "scenario": "You're trained to follow a 12-step checklist, but the situation is evolving faster than you can read. How do you adapt?"
+  },
+  "dm-m3-l1": {
+    "lessonId": "dm-m3-l1",
+    "title": "Confirmation Bias",
+    "moduleId": "dm-m3-biases",
+    "courseId": "decision-making",
+    "order": 1,
+    "content": "Confirmation bias is seeing what you expect to see. Once you form a hypothesis, you unconsciously seek data that supports it and ignore contradictory signals. This kills situational awareness and causes catastrophic misdiagnosis.",
+    "questions": [
+      "Describe a time you were convinced of one problem, then discovered it was something else entirely.",
+      "How do you force yourself to consider alternative explanations?"
+    ],
+    "mcq": {
+      "question": "Three gauges say normal, one says abnormal. What's the most dangerous assumption?",
+      "options": {
+        "A": "The abnormal gauge is broken",
+        "B": "All gauges could be right",
+        "C": "The system is failing in one area",
+        "D": "Ignore the outlier and monitor"
+      },
+      "correct": "A",
+      "explanation": "Assuming the outlier is broken (confirmation bias) can mask real system failures. Always validate the abnormal reading before dismissing it."
+    },
+    "scenario": null
+  },
+  "dm-m3-l2": {
+    "lessonId": "dm-m3-l2",
+    "title": "Anchoring Effect",
+    "moduleId": "dm-m3-biases",
+    "courseId": "decision-making",
+    "order": 2,
+    "content": "The first number or idea you hear becomes your anchor. Subsequent judgments are biased toward that initial reference point, even if it's wrong. Anchoring distorts risk assessment, cost estimates, and timeline predictions.",
+    "questions": [
+      "When someone gives you an initial estimate, do you challenge it or accept it?",
+      "How can you reset your mental anchor if the first input was misleading?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "dm-m3-l3": {
+    "lessonId": "dm-m3-l3",
+    "title": "Normalcy Bias",
+    "moduleId": "dm-m3-biases",
+    "courseId": "decision-making",
+    "order": 3,
+    "content": "Normalcy bias is the belief that things will continue as normal, even when clear warning signs indicate otherwise. People underestimate threats and delay action because 'it's probably fine.' This bias is deadly in high-consequence environments.",
+    "questions": [
+      "Have you ever dismissed an early warning because it seemed unlikely?",
+      "What triggers you to override normalcy bias and take precautionary action?"
+    ],
+    "mcq": null,
+    "scenario": "Minor pressure fluctuations appear on your readout. They're within tolerance, but unusual. Do you investigate now or wait?"
+  },
+  "dm-m3-l4": {
+    "lessonId": "dm-m3-l4",
+    "title": "Outcome Bias",
+    "moduleId": "dm-m3-biases",
+    "courseId": "decision-making",
+    "order": 4,
+    "content": "Outcome bias judges decisions by results, not process. A bad decision with a lucky outcome looks good. A sound decision with unlucky results looks bad. This distorts learning—you repeat risky behavior that succeeded and abandon good practice that failed once.",
+    "questions": [
+      "Describe a time when 'it worked out' even though the decision process was flawed.",
+      "How do you separate decision quality from outcome luck in after-action reviews?"
+    ],
+    "mcq": {
+      "question": "A shortcut saved time and nothing went wrong. Should you repeat it?",
+      "options": {
+        "A": "Yes—it worked, so it's validated",
+        "B": "No—evaluate the risk, not just the outcome",
+        "C": "Yes, but only in similar conditions",
+        "D": "No—all shortcuts are inherently unsafe"
+      },
+      "correct": "B",
+      "explanation": "Outcome bias makes successful shortcuts look safe. Proper decision analysis evaluates the risk exposure, not whether you got lucky this time."
+    },
+    "scenario": null
+  },
+  "dm-m4-l1": {
+    "lessonId": "dm-m4-l1",
+    "title": "Probabilistic Thinking",
+    "moduleId": "dm-m4-uncertainty",
+    "courseId": "decision-making",
+    "order": 1,
+    "content": "Most operational decisions involve incomplete information. Probabilistic thinking means estimating likelihood and acting on probabilities, not certainties. You'll never have perfect data—the skill is deciding with 'good enough' confidence.",
+    "questions": [
+      "How confident do you need to be before taking action—60%? 80%? 95%?",
+      "Describe a decision where you acted on incomplete information and it was the right call."
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "dm-m4-l2": {
+    "lessonId": "dm-m4-l2",
+    "title": "Worst-Case Analysis",
+    "moduleId": "dm-m4-uncertainty",
+    "courseId": "decision-making",
+    "order": 2,
+    "content": "Before committing to a decision, ask: 'What's the worst that could happen if I'm wrong?' If the worst case is catastrophic and irreversible, either get more data or choose a safer option. If the worst case is manageable, proceed with monitoring.",
+    "questions": [
+      "What's an example of a decision where the worst case was unacceptable?",
+      "How do you balance worst-case thinking with operational necessity?"
+    ],
+    "mcq": {
+      "question": "You're 70% sure the equipment is safe to restart. Worst case: complete system failure. What do you do?",
+      "options": {
+        "A": "Restart—70% is good enough",
+        "B": "Get more data before restarting",
+        "C": "Restart with backup systems active",
+        "D": "Defer the decision to someone else"
+      },
+      "correct": "B",
+      "explanation": "When worst case is catastrophic failure, 70% confidence isn't sufficient. Invest time to increase certainty or implement additional safeguards."
+    },
+    "scenario": null
+  },
+  "dm-m4-l3": {
+    "lessonId": "dm-m4-l3",
+    "title": "Reversible vs Irreversible Decisions",
+    "moduleId": "dm-m4-uncertainty",
+    "courseId": "decision-making",
+    "order": 3,
+    "content": "Reversible decisions can be undone with low cost. Irreversible decisions cannot. You can afford to experiment with reversible decisions—test, learn, adjust. Irreversible decisions demand higher confidence and more thorough analysis before commitment.",
+    "questions": [
+      "What decisions in your work are irreversible once made?",
+      "How does reversibility change your decision speed and process?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "dm-m4-l4": {
+    "lessonId": "dm-m4-l4",
+    "title": "Decision Triggers",
+    "moduleId": "dm-m4-uncertainty",
+    "courseId": "decision-making",
+    "order": 4,
+    "content": "Pre-define decision triggers before the event. 'If X reaches Y threshold, we will do Z.' Triggers eliminate on-the-spot deliberation and reduce cognitive load during high-stress moments. Build triggers into your procedures and brief them to the team.",
+    "questions": [
+      "What decision triggers are already built into your procedures?",
+      "What recurring decisions could you pre-script with clear triggers?"
+    ],
+    "mcq": null,
+    "scenario": "You're monitoring a slow pressure rise. At what point do you pre-commit to shutting down?"
+  },
+  "dm-m5-l1": {
+    "lessonId": "dm-m5-l1",
+    "title": "Command vs Consensus",
+    "moduleId": "dm-m5-team-decisions",
+    "courseId": "decision-making",
+    "order": 1,
+    "content": "Command decisions are made by one person with authority. Consensus decisions require group agreement. Each has a place—command for time-critical safety decisions, consensus for planning and resource allocation. Mixing them causes confusion and delays.",
+    "questions": [
+      "When do you use command authority vs seeking input from the team?",
+      "Have you seen consensus slow down an urgent decision? What happened?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "dm-m5-l2": {
+    "lessonId": "dm-m5-l2",
+    "title": "Groupthink and Dissent",
+    "moduleId": "dm-m5-team-decisions",
+    "courseId": "decision-making",
+    "order": 2,
+    "content": "Groupthink occurs when team pressure suppresses dissent and alternative viewpoints. Everyone agrees because disagreement feels risky. This leads to poor decisions that go unchallenged. Effective teams actively solicit dissent and reward those who speak up.",
+    "questions": [
+      "When was the last time someone on your team challenged a decision? What was the result?",
+      "How do you signal that dissent is safe and expected?"
+    ],
+    "mcq": {
+      "question": "Everyone on the team nods in agreement with the plan. What should you do?",
+      "options": {
+        "A": "Proceed—consensus achieved",
+        "B": "Ask: 'Who sees a problem with this?'",
+        "C": "Assume silence means approval",
+        "D": "Move forward quickly before someone objects"
+      },
+      "correct": "B",
+      "explanation": "Silence isn't true consensus. Actively solicit dissent to surface concerns that people are hesitant to voice."
+    },
+    "scenario": null
+  },
+  "dm-m5-l3": {
+    "lessonId": "dm-m5-l3",
+    "title": "Decision Ownership and Accountability",
+    "moduleId": "dm-m5-team-decisions",
+    "courseId": "decision-making",
+    "order": 3,
+    "content": "Every decision needs a clear owner. The owner gathers input, makes the call, and owns the outcome. Input providers are not decision-makers—they advise, but the owner decides. Shared ownership creates ambiguity and diffuses accountability.",
+    "questions": [
+      "In your team, how is decision ownership assigned?",
+      "Describe a situation where unclear ownership caused a decision delay or conflict."
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "dm-m5-l4": {
+    "lessonId": "dm-m5-l4",
+    "title": "Pre-Brief Decision Protocols",
+    "moduleId": "dm-m5-team-decisions",
+    "courseId": "decision-making",
+    "order": 4,
+    "content": "Before high-stakes operations, pre-brief decision authority and protocols. Clarify who decides what, under what conditions, and with what inputs. This prevents mid-operation confusion about who has authority to abort, proceed, or escalate.",
+    "questions": [
+      "What decision protocols do you brief before critical operations?",
+      "How do you ensure everyone understands their decision rights and limits?"
+    ],
+    "mcq": null,
+    "scenario": "You're about to start a complex evolution. What decision authorities should you clarify before beginning?"
+  },
+  "dm-m6-l1": {
+    "lessonId": "dm-m6-l1",
+    "title": "How Stress Degrades Decisions",
+    "moduleId": "dm-m6-stress-fatigue",
+    "courseId": "decision-making",
+    "order": 1,
+    "content": "Acute stress narrows attention, reduces working memory, and biases toward habitual responses. You miss peripheral cues, forget steps, and default to what you've done before—even if it's wrong. Recognizing stress symptoms in yourself is the first step to compensating.",
+    "questions": [
+      "What physical signs tell you that stress is affecting your thinking?",
+      "How do you slow yourself down when you feel rushed by stress?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "dm-m6-l2": {
+    "lessonId": "dm-m6-l2",
+    "title": "Fatigue and Decision Quality",
+    "moduleId": "dm-m6-stress-fatigue",
+    "courseId": "decision-making",
+    "order": 2,
+    "content": "Fatigue impairs judgment as much as alcohol. Tired operators take riskier shortcuts, miss warning signs, and overestimate their competence. If you're fatigued, either get rest or implement additional checks and safeguards before making critical decisions.",
+    "questions": [
+      "How many hours into your shift do you notice decision quality declining?",
+      "What strategies do you use to compensate for fatigue?"
+    ],
+    "mcq": {
+      "question": "You've been on shift for 14 hours. A non-urgent decision needs to be made. What do you do?",
+      "options": {
+        "A": "Make the decision now—you're experienced",
+        "B": "Defer to the next shift if possible",
+        "C": "Get a second opinion before deciding",
+        "D": "Rush the decision to go home sooner"
+      },
+      "correct": "B",
+      "explanation": "Fatigue degrades judgment. Defer non-urgent decisions to fresh personnel if possible, or get additional verification."
+    },
+    "scenario": null
+  },
+  "dm-m6-l3": {
+    "lessonId": "dm-m6-l3",
+    "title": "Tactical Breathing and Reset",
+    "moduleId": "dm-m6-stress-fatigue",
+    "courseId": "decision-making",
+    "order": 3,
+    "content": "Tactical breathing (box breathing) reduces physiological stress response. Inhale for 4 counts, hold for 4, exhale for 4, hold for 4. Repeat three times. This activates your parasympathetic system and restores cognitive clarity before deciding.",
+    "questions": [
+      "Have you ever used a breathing technique to calm yourself mid-operation?",
+      "What other techniques help you reset your mental state under pressure?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "dm-m6-l4": {
+    "lessonId": "dm-m6-l4",
+    "title": "Recognizing Decision Fatigue",
+    "moduleId": "dm-m6-stress-fatigue",
+    "courseId": "decision-making",
+    "order": 4,
+    "content": "Decision fatigue is the deterioration of decision quality after making many consecutive decisions. Your willpower and judgment deplete like a battery. Symptoms: indecision, impulsivity, avoidance. Mitigation: reduce trivial decisions, take breaks, automate routine choices.",
+    "questions": [
+      "How many decisions do you typically make in a shift?",
+      "What trivial decisions could you eliminate or automate to preserve mental energy?"
+    ],
+    "mcq": null,
+    "scenario": "You've made 40 decisions today. Now you face a critical call. How do you ensure decision quality hasn't degraded?"
+  },
+  "comm-m1-l1": {
+    "lessonId": "comm-m1-l1",
+    "title": "Closed-Loop Communication",
+    "moduleId": "comm-m1-fundamentals",
+    "courseId": "communication",
+    "order": 1,
+    "content": "Closed-loop communication has three parts: sender transmits, receiver acknowledges with read-back, sender confirms. This prevents misheard instructions and confirms mutual understanding. It's standard in aviation, medical, and military operations for a reason—it works.",
+    "questions": [
+      "Does your team use closed-loop communication? If not, why?",
+      "Describe a time when lack of read-back caused an error."
+    ],
+    "mcq": {
+      "question": "You tell a crew member: 'Set pressure to 500 PSI.' What should happen next?",
+      "options": {
+        "A": "They nod and do it",
+        "B": "They repeat: 'Setting pressure to 500 PSI'",
+        "C": "They confirm after it's done",
+        "D": "Nothing—clear instructions don't need confirmation"
+      },
+      "correct": "B",
+      "explanation": "Closed-loop requires immediate read-back before action. This catches misheard instructions before they become errors."
+    },
+    "scenario": null
+  },
+  "comm-m1-l2": {
+    "lessonId": "comm-m1-l2",
+    "title": "Standardized Terminology",
+    "moduleId": "comm-m1-fundamentals",
+    "courseId": "communication",
+    "order": 2,
+    "content": "Use precise, standardized terms—not jargon, slang, or ambiguous words. 'Left' and 'right' are perspective-dependent; 'port' and 'starboard' are not. 'A lot' is vague; '500 gallons' is specific. Standardized language reduces misinterpretation across shifts and teams.",
+    "questions": [
+      "What standardized terms does your operation use?",
+      "Have you seen informal language cause confusion?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "comm-m1-l3": {
+    "lessonId": "comm-m1-l3",
+    "title": "Barriers to Communication",
+    "moduleId": "comm-m1-fundamentals",
+    "courseId": "communication",
+    "order": 3,
+    "content": "Physical barriers: noise, distance, equipment. Psychological barriers: fear, hierarchy, distraction. Both kill information flow. Identify and mitigate barriers before critical operations—test radios, reduce ambient noise, establish authority gradients that permit challenge.",
+    "questions": [
+      "What physical or psychological barriers affect communication in your work?",
+      "How do you overcome noise, hierarchy, or distraction during high-tempo operations?"
+    ],
+    "mcq": null,
+    "scenario": "You need to relay critical information, but the environment is loud and chaotic. What do you do?"
+  },
+  "comm-m2-l1": {
+    "lessonId": "comm-m2-l1",
+    "title": "Pre-Job Briefs",
+    "moduleId": "comm-m2-briefings",
+    "courseId": "communication",
+    "order": 1,
+    "content": "Pre-job briefs align the team on objectives, roles, hazards, and decision authority. Brief what, who, when, and what-if. Keep it short and interactive—lecture-style briefs don't stick. Confirm understanding by asking team members to restate key points.",
+    "questions": [
+      "What's included in your standard pre-job brief?",
+      "How do you verify the team absorbed the brief, not just attended it?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "comm-m2-l2": {
+    "lessonId": "comm-m2-l2",
+    "title": "Shift Handovers",
+    "moduleId": "comm-m2-briefings",
+    "courseId": "communication",
+    "order": 2,
+    "content": "Shift handovers transfer situational awareness from outgoing to incoming crew. Use a structured format: current status, recent changes, pending issues, recommendations. Face-to-face handovers are better than written logs alone—written misses tone, urgency, and nuance.",
+    "questions": [
+      "What handover format does your team use?",
+      "Have you ever received a poor handover? What critical information was missing?"
+    ],
+    "mcq": {
+      "question": "During handover, the outgoing operator says: 'Everything's normal, nothing to report.' What should you do?",
+      "options": {
+        "A": "Accept it and start your shift",
+        "B": "Ask specific questions about system status",
+        "C": "Review logs independently",
+        "D": "Trust their judgment—they're experienced"
+      },
+      "correct": "B",
+      "explanation": "'Everything's normal' is too vague. Ask targeted questions about equipment status, recent issues, and watch items to build real situational awareness."
+    },
+    "scenario": null
+  },
+  "comm-m2-l3": {
+    "lessonId": "comm-m2-l3",
+    "title": "After-Action Debriefs",
+    "moduleId": "comm-m2-briefings",
+    "courseId": "communication",
+    "order": 3,
+    "content": "After-action debriefs capture lessons while memory is fresh. Focus on what happened, why, and what to change—not blame. Effective debriefs are psychologically safe: people speak freely without fear of punishment. Write down key findings and distribute them.",
+    "questions": [
+      "Does your team conduct after-action debriefs? If not, why?",
+      "What makes a debrief feel safe enough to be honest?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "comm-m2-l4": {
+    "lessonId": "comm-m2-l4",
+    "title": "SBAR Communication",
+    "moduleId": "comm-m2-briefings",
+    "courseId": "communication",
+    "order": 4,
+    "content": "SBAR stands for Situation, Background, Assessment, Recommendation. It's a structured way to escalate issues or brief leaders. State the current situation, provide context, share your assessment, and recommend action. SBAR keeps communication concise and decision-focused.",
+    "questions": [
+      "Have you used SBAR or a similar format to escalate an issue?",
+      "What happens when you escalate without structure—just 'We have a problem'?"
+    ],
+    "mcq": null,
+    "scenario": "You need to brief your supervisor on an equipment failure. Use SBAR—what do you say?"
+  },
+  "comm-m3-l1": {
+    "lessonId": "comm-m3-l1",
+    "title": "Listening vs Hearing",
+    "moduleId": "comm-m3-listening",
+    "courseId": "communication",
+    "order": 1,
+    "content": "Hearing is passive—sound reaches your ears. Listening is active—you process, interpret, and respond. Most communication failures are listening failures, not speaking failures. You can't respond appropriately if you didn't truly listen.",
+    "questions": [
+      "When do you catch yourself hearing words but not really listening?",
+      "How do you force yourself to listen actively during routine communications?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "comm-m3-l2": {
+    "lessonId": "comm-m3-l2",
+    "title": "Paraphrasing for Understanding",
+    "moduleId": "comm-m3-listening",
+    "courseId": "communication",
+    "order": 2,
+    "content": "Paraphrasing is restating what you heard in your own words. It confirms you understood correctly and gives the speaker a chance to clarify. 'So what you're saying is...' is a powerful tool to catch miscommunication before it causes problems.",
+    "questions": [
+      "Do you paraphrase to confirm understanding, or assume you got it?",
+      "When was the last time paraphrasing revealed you misunderstood something?"
+    ],
+    "mcq": {
+      "question": "A team member explains a complex issue. What's your best response?",
+      "options": {
+        "A": "'Got it, thanks.'",
+        "B": "'So you're saying [paraphrase]. Is that right?'",
+        "C": "'I'll figure it out as I go.'",
+        "D": "'Can you send that in an email?'"
+      },
+      "correct": "B",
+      "explanation": "Paraphrasing confirms mutual understanding and gives the speaker a chance to correct misinterpretation before it becomes a problem."
+    },
+    "scenario": null
+  },
+  "comm-m3-l3": {
+    "lessonId": "comm-m3-l3",
+    "title": "Non-Verbal Communication",
+    "moduleId": "comm-m3-listening",
+    "courseId": "communication",
+    "order": 3,
+    "content": "Body language, tone, and facial expressions carry more meaning than words alone. Crossed arms signal defensiveness. Lack of eye contact suggests disengagement. Tone conveys urgency. Learn to read non-verbal cues and align your own body language with your message.",
+    "questions": [
+      "What non-verbal cues do you watch for in your team?",
+      "How do you ensure your body language matches your words during a brief?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "comm-m3-l4": {
+    "lessonId": "comm-m3-l4",
+    "title": "Listening Under Pressure",
+    "moduleId": "comm-m3-listening",
+    "courseId": "communication",
+    "order": 4,
+    "content": "Stress and urgency make listening harder. You're tempted to interrupt, jump to conclusions, or multitask while someone is talking. Discipline yourself to pause, listen fully, then respond. Missing key information because you were rushing is slower than listening carefully the first time.",
+    "questions": [
+      "When do you find yourself interrupting or finishing people's sentences?",
+      "How do you stay present and attentive when under time pressure?"
+    ],
+    "mcq": null,
+    "scenario": "Someone is trying to report an issue, but you're focused on another task. How do you handle it?"
+  },
+  "comm-m4-l1": {
+    "lessonId": "comm-m4-l1",
+    "title": "Speaking Up and Advocacy",
+    "moduleId": "comm-m4-assertive",
+    "courseId": "communication",
+    "order": 1,
+    "content": "Advocacy is clearly stating your concerns or observations, even if it challenges authority or consensus. 'I'm concerned about...' or 'I don't think that's safe' are assertive phrases. Speaking up requires psychological safety and practice—it's a trained skill, not a personality trait.",
+    "questions": [
+      "Describe a time you spoke up about a safety concern. What happened?",
+      "What stops you from speaking up—fear of being wrong, or fear of social cost?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "comm-m4-l2": {
+    "lessonId": "comm-m4-l2",
+    "title": "Inquiry and Questioning",
+    "moduleId": "comm-m4-assertive",
+    "courseId": "communication",
+    "order": 2,
+    "content": "Inquiry is asking questions to understand or challenge a plan. 'Can you walk me through your reasoning?' or 'What if X happens?' are inquiry techniques. Good inquiry is non-confrontational but persistent. It surfaces assumptions and uncovers flaws without triggering defensiveness.",
+    "questions": [
+      "How do you ask a challenging question without sounding confrontational?",
+      "When was the last time your inquiry uncovered a missed risk?"
+    ],
+    "mcq": {
+      "question": "You disagree with a supervisor's plan. What's the most effective way to raise your concern?",
+      "options": {
+        "A": "'That's wrong.'",
+        "B": "'I'm concerned about [specific risk]. Can we discuss it?'",
+        "C": "Stay silent—they're in charge",
+        "D": "'We tried that before and it failed.'"
+      },
+      "correct": "B",
+      "explanation": "Assertive communication states concern specifically and invites dialogue. It's respectful but direct, not passive or aggressive."
+    },
+    "scenario": null
+  },
+  "comm-m4-l3": {
+    "lessonId": "comm-m4-l3",
+    "title": "CUS Words",
+    "moduleId": "comm-m4-assertive",
+    "courseId": "communication",
+    "order": 3,
+    "content": "CUS stands for: 'I'm Concerned.' 'I'm Uncomfortable.' 'This is a Safety issue.' These are escalating assertiveness phrases. Start with Concerned. If ignored, escalate to Uncomfortable. If still ignored, invoke Safety. CUS provides a script for speaking up when words fail.",
+    "questions": [
+      "Have you heard of CUS words before? Do you use them?",
+      "What would it take for you to use the 'S' in CUS—Safety?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "comm-m4-l4": {
+    "lessonId": "comm-m4-l4",
+    "title": "Two-Challenge Rule",
+    "moduleId": "comm-m4-assertive",
+    "courseId": "communication",
+    "order": 4,
+    "content": "If you voice a concern and it's dismissed, voice it again with more emphasis. If dismissed twice, escalate to a higher authority or invoke stop-work authority. The two-challenge rule prevents single points of failure in communication and ensures critical concerns are heard.",
+    "questions": [
+      "How many times will you challenge a decision before escalating or stopping work?",
+      "Have you ever seen someone give up after their first challenge was ignored?"
+    ],
+    "mcq": null,
+    "scenario": "You raise a safety concern, and your supervisor dismisses it. What do you do next?"
+  },
+  "comm-m5-l1": {
+    "lessonId": "comm-m5-l1",
+    "title": "Sources of Miscommunication",
+    "moduleId": "comm-m5-conflict",
+    "courseId": "communication",
+    "order": 1,
+    "content": "Miscommunication stems from ambiguous language, assumptions, distractions, or cultural differences. Both sender and receiver share responsibility—send clearly, confirm receipt. When miscommunication happens, diagnose the root cause so you can prevent it next time.",
+    "questions": [
+      "What's the most common cause of miscommunication in your work?",
+      "How do you repair miscommunication once you realize it happened?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "comm-m5-l2": {
+    "lessonId": "comm-m5-l2",
+    "title": "Task vs Relationship Conflict",
+    "moduleId": "comm-m5-conflict",
+    "courseId": "communication",
+    "order": 2,
+    "content": "Task conflict is disagreement about work approach—it's healthy and productive if managed well. Relationship conflict is personal friction—it's toxic and spreads. Don't let task conflict become relationship conflict. Separate ideas from identity. Disagree on the plan, not the person.",
+    "questions": [
+      "Can you separate professional disagreement from personal dislike?",
+      "Describe a time task conflict escalated into relationship conflict. How did it start?"
+    ],
+    "mcq": {
+      "question": "Two crew members argue about procedure. One says: 'You never listen.' What type of conflict is this?",
+      "options": {
+        "A": "Task conflict—focused on procedure",
+        "B": "Relationship conflict—personal attack",
+        "C": "Healthy debate",
+        "D": "Normal disagreement"
+      },
+      "correct": "B",
+      "explanation": "'You never listen' is a personal attack, not task-focused. This is relationship conflict and needs immediate de-escalation."
+    },
+    "scenario": null
+  },
+  "comm-m5-l3": {
+    "lessonId": "comm-m5-l3",
+    "title": "De-Escalation Techniques",
+    "moduleId": "comm-m5-conflict",
+    "courseId": "communication",
+    "order": 3,
+    "content": "De-escalation reduces emotional intensity in conflict. Lower your voice, use calm body language, acknowledge the other person's concern. 'I hear you. Let's work this out.' Avoid defensive responses, sarcasm, or dismissal—these escalate. Your calm demeanor sets the tone.",
+    "questions": [
+      "How do you calm yourself when someone's frustration starts to trigger yours?",
+      "What de-escalation techniques work best in your environment?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "comm-m5-l4": {
+    "lessonId": "comm-m5-l4",
+    "title": "Post-Conflict Resolution",
+    "moduleId": "comm-m5-conflict",
+    "courseId": "communication",
+    "order": 4,
+    "content": "After conflict, close the loop. Acknowledge what happened, clarify misunderstandings, and reset expectations. Don't let unresolved tension fester—it degrades team performance. If you can't resolve it yourselves, bring in a neutral third party. Avoidance makes it worse.",
+    "questions": [
+      "How does your team handle post-conflict resolution?",
+      "Have you ever avoided resolving a conflict and regretted it later?"
+    ],
+    "mcq": null,
+    "scenario": "You had a heated disagreement with a colleague. The shift is over. Do you leave it unresolved or address it?"
+  },
+  "comm-m6-l1": {
+    "lessonId": "comm-m6-l1",
+    "title": "Text and Email Limitations",
+    "moduleId": "comm-m6-digital",
+    "courseId": "communication",
+    "order": 1,
+    "content": "Text-based communication lacks tone, urgency, and non-verbal cues. Ambiguous phrasing gets misread. Sarcasm fails. Use text for documentation and non-urgent updates—not for complex or time-sensitive issues. Pick up the phone or talk face-to-face when it matters.",
+    "questions": [
+      "Have you ever misinterpreted a text or email? What went wrong?",
+      "What types of communication do you reserve for in-person or voice?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "comm-m6-l2": {
+    "lessonId": "comm-m6-l2",
+    "title": "Radio Discipline",
+    "moduleId": "comm-m6-digital",
+    "courseId": "communication",
+    "order": 2,
+    "content": "Radio communication is public, recorded, and often congested. Use proper call signs, brevity codes, and standard phrasing. Don't transmit personal conversations, unnecessary chatter, or sensitive information. Key the mic, speak clearly, release. Listen before transmitting—don't step on active traffic.",
+    "questions": [
+      "What radio discipline standards does your operation follow?",
+      "Have you heard poor radio discipline clog up comms during a critical event?"
+    ],
+    "mcq": {
+      "question": "You need to relay detailed technical instructions over the radio. What do you do?",
+      "options": {
+        "A": "Transmit all details over the air",
+        "B": "Summarize on radio, follow up with written details",
+        "C": "Skip the radio—just send a text",
+        "D": "Use coded language to save time"
+      },
+      "correct": "B",
+      "explanation": "Radio is for concise, time-critical information. Use it to alert and coordinate, then follow up with written detail to avoid clogging the channel."
+    },
+    "scenario": null
+  },
+  "comm-m6-l3": {
+    "lessonId": "comm-m6-l3",
+    "title": "Communication Technology Failures",
+    "moduleId": "comm-m6-digital",
+    "courseId": "communication",
+    "order": 3,
+    "content": "Technology fails—batteries die, systems go down, networks overload. Have a backup plan: alternate channels, hand signals, runners. Don't become dependent on tech to the point where its failure cripples your ability to operate. Train for comms-out scenarios.",
+    "questions": [
+      "What's your backup plan if primary comms fail?",
+      "When was the last time you practiced operating without radios or phones?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "comm-m6-l4": {
+    "lessonId": "comm-m6-l4",
+    "title": "Information Overload",
+    "moduleId": "comm-m6-digital",
+    "courseId": "communication",
+    "order": 4,
+    "content": "Too much information is as bad as too little. Filter what you transmit—send only what's relevant and actionable. Use channels appropriately: urgent goes on radio, routine goes in logs, detailed goes in reports. Don't spam the team with noise—preserve their attention for what matters.",
+    "questions": [
+      "How do you decide what's important enough to broadcast vs log quietly?",
+      "Have you ever experienced information overload during an incident? How did it affect you?"
+    ],
+    "mcq": null,
+    "scenario": "Multiple systems are generating alerts. How do you prioritize what to communicate to the team?"
+  },
+  "tw-m1-l1": {
+    "lessonId": "tw-m1-l1",
+    "title": "What Makes a Team",
+    "moduleId": "tw-m1-fundamentals",
+    "courseId": "teamwork",
+    "order": 1,
+    "content": "A team is a group with shared goals, interdependent roles, and mutual accountability. It's not just people in the same room—it's coordinated action toward a common objective. Without shared purpose or interdependence, you have a work group, not a team.",
+    "questions": [
+      "Is your crew a true team, or just individuals working in parallel?",
+      "What shared goal unites your team?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "tw-m1-l2": {
+    "lessonId": "tw-m1-l2",
+    "title": "Roles and Responsibilities",
+    "moduleId": "tw-m1-fundamentals",
+    "courseId": "teamwork",
+    "order": 2,
+    "content": "Clear roles prevent confusion and duplication. Each team member must know: What am I responsible for? Who do I coordinate with? What authority do I have? Ambiguous roles create gaps and overlaps—both are dangerous.",
+    "questions": [
+      "Can you state your role in one sentence?",
+      "Where do roles overlap or conflict in your team?"
+    ],
+    "mcq": {
+      "question": "Two people both think they're responsible for a critical task. What happens?",
+      "options": {
+        "A": "Redundancy—extra safety",
+        "B": "Coordination failure—task falls through gaps",
+        "C": "Both do it—waste of effort",
+        "D": "One defers to the other naturally"
+      },
+      "correct": "B",
+      "explanation": "Role ambiguity often leads to both people assuming the other will handle it—resulting in task failure, not redundancy."
+    },
+    "scenario": null
+  },
+  "tw-m1-l3": {
+    "lessonId": "tw-m1-l3",
+    "title": "Team vs Individual Performance",
+    "moduleId": "tw-m1-fundamentals",
+    "courseId": "teamwork",
+    "order": 3,
+    "content": "Effective teams outperform collections of individuals because they leverage diverse skills, cross-check each other, and distribute cognitive load. Poor teams underperform because of conflict, miscommunication, and coordination overhead. Team performance isn't automatic—it's built.",
+    "questions": [
+      "When has your team performed better than the sum of its parts?",
+      "When has teamwork actually slowed you down?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "tw-m2-l1": {
+    "lessonId": "tw-m2-l1",
+    "title": "Shared Mental Models",
+    "moduleId": "tw-m2-coordination",
+    "courseId": "teamwork",
+    "order": 1,
+    "content": "A shared mental model means everyone understands the situation, plan, and priorities the same way. It enables implicit coordination—team members anticipate each other without constant communication. Build shared models through briefings, training, and experience working together.",
+    "questions": [
+      "How do you know your team shares the same understanding of the situation?",
+      "Describe a time when mental models weren't aligned. What happened?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "tw-m2-l2": {
+    "lessonId": "tw-m2-l2",
+    "title": "Explicit vs Implicit Coordination",
+    "moduleId": "tw-m2-coordination",
+    "courseId": "teamwork",
+    "order": 2,
+    "content": "Explicit coordination uses communication—'You do X, I'll do Y.' Implicit coordination relies on shared mental models and anticipation—you act without being told because you know what's needed. High-performing teams use both: explicit for novel situations, implicit for routine.",
+    "questions": [
+      "When does your team coordinate explicitly vs implicitly?",
+      "How do new team members disrupt implicit coordination?"
+    ],
+    "mcq": {
+      "question": "A well-trained team handles a routine emergency with minimal talk. What's happening?",
+      "options": {
+        "A": "Poor communication—they should be talking more",
+        "B": "Implicit coordination from shared mental models",
+        "C": "Complacency—they're not paying attention",
+        "D": "Luck—they're guessing"
+      },
+      "correct": "B",
+      "explanation": "Experienced teams with strong shared mental models can coordinate implicitly, reserving communication for exceptions and changes."
+    },
+    "scenario": null
+  },
+  "tw-m2-l3": {
+    "lessonId": "tw-m2-l3",
+    "title": "Backup Behavior",
+    "moduleId": "tw-m2-coordination",
+    "courseId": "teamwork",
+    "order": 3,
+    "content": "Backup behavior is stepping in to assist a teammate who's overloaded or struggling. It requires monitoring each other's workload and performance. Good backup behavior is seamless—you help without being asked because you saw the need. Poor teams don't monitor or assist.",
+    "questions": [
+      "When was the last time a teammate backed you up without being asked?",
+      "How do you signal to your team that you need help?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "tw-m2-l4": {
+    "lessonId": "tw-m2-l4",
+    "title": "Task Allocation Under Pressure",
+    "moduleId": "tw-m2-coordination",
+    "courseId": "teamwork",
+    "order": 4,
+    "content": "Under pressure, workload imbalances emerge—some team members are overwhelmed, others underutilized. Effective teams redistribute tasks dynamically. 'I've got this, you handle that' or 'I'm free—what do you need?' Rigid role adherence during crisis is inefficient.",
+    "questions": [
+      "Does your team redistribute tasks when someone gets overloaded?",
+      "What prevents flexible task reallocation in your environment?"
+    ],
+    "mcq": null,
+    "scenario": "One teammate is managing three critical tasks simultaneously while others are idle. What do you do?"
+  },
+  "tw-m3-l1": {
+    "lessonId": "tw-m3-l1",
+    "title": "Building Trust",
+    "moduleId": "tw-m3-trust",
+    "courseId": "teamwork",
+    "order": 1,
+    "content": "Trust is built through consistency, competence, and reliability. You trust teammates who do what they say, know their job, and deliver when it matters. Trust isn't instant—it's earned through repeated positive interactions and proven reliability.",
+    "questions": [
+      "Who on your team do you trust most? Why?",
+      "How long does it take for you to trust a new teammate?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "tw-m3-l2": {
+    "lessonId": "tw-m3-l2",
+    "title": "Psychological Safety",
+    "moduleId": "tw-m3-trust",
+    "courseId": "teamwork",
+    "order": 2,
+    "content": "Psychological safety is the belief that you can speak up, ask questions, admit mistakes, or challenge ideas without fear of humiliation or punishment. Teams with psychological safety identify and fix problems early. Teams without it hide errors until they escalate.",
+    "questions": [
+      "Can you admit mistakes openly in your team without fear?",
+      "What behaviors by leaders create or destroy psychological safety?"
+    ],
+    "mcq": {
+      "question": "A team member makes an error but doesn't report it immediately. What's the likely cause?",
+      "options": {
+        "A": "They don't care",
+        "B": "Lack of psychological safety—fear of consequences",
+        "C": "They forgot",
+        "D": "They're trying to fix it quietly first"
+      },
+      "correct": "B",
+      "explanation": "Most unreported errors stem from fear of blame or punishment. Psychological safety encourages early reporting when problems are still small."
+    },
+    "scenario": null
+  },
+  "tw-m3-l3": {
+    "lessonId": "tw-m3-l3",
+    "title": "Vulnerability and Openness",
+    "moduleId": "tw-m3-trust",
+    "courseId": "teamwork",
+    "order": 3,
+    "content": "Vulnerability is admitting you don't know, asking for help, or acknowledging uncertainty. It feels risky, but it builds trust and enables learning. Teams where everyone pretends to know everything are brittle—real vulnerability makes teams resilient.",
+    "questions": [
+      "When was the last time you said 'I don't know' at work?",
+      "How does your team respond to vulnerability—support or judgment?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "tw-m3-l4": {
+    "lessonId": "tw-m3-l4",
+    "title": "Repairing Trust After Failure",
+    "moduleId": "tw-m3-trust",
+    "courseId": "teamwork",
+    "order": 4,
+    "content": "Trust, once broken, is hard to rebuild. Acknowledge the breach, take responsibility, explain what you'll change, and demonstrate consistency over time. Actions matter more than apologies. Rebuilding trust is slow—destroying it is fast.",
+    "questions": [
+      "Have you seen trust restored after a major failure? How did it happen?",
+      "What would you need to see to trust someone again after they let you down?"
+    ],
+    "mcq": null,
+    "scenario": "A teammate made a critical error that endangered the team. They apologized. How do you rebuild trust with them?"
+  },
+  "tw-m4-l1": {
+    "lessonId": "tw-m4-l1",
+    "title": "Cognitive Diversity",
+    "moduleId": "tw-m4-diversity",
+    "courseId": "teamwork",
+    "order": 1,
+    "content": "Cognitive diversity is differences in thinking styles, backgrounds, and perspectives. Diverse teams spot more risks and generate better solutions because they don't share blind spots. Homogeneous teams think faster but miss non-obvious problems.",
+    "questions": [
+      "How does cognitive diversity show up in your team?",
+      "When has a different perspective caught something everyone else missed?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "tw-m4-l2": {
+    "lessonId": "tw-m4-l2",
+    "title": "Leveraging Strengths",
+    "moduleId": "tw-m4-diversity",
+    "courseId": "teamwork",
+    "order": 2,
+    "content": "High-performing teams assign tasks based on individual strengths. Know who's analytical, who's intuitive, who's detail-oriented, who's big-picture. Don't force everyone into the same mold—use diversity as an advantage. Match people to roles where they excel.",
+    "questions": [
+      "What are your strengths as a team member?",
+      "Does your team assign work based on strengths, or just rotate equally?"
+    ],
+    "mcq": {
+      "question": "Your team needs someone to triple-check a complex calculation and someone to brief leadership. How do you assign?",
+      "options": {
+        "A": "Assign randomly",
+        "B": "Match detail-oriented person to calculation, communicator to brief",
+        "C": "Have everyone do both",
+        "D": "Let them choose"
+      },
+      "correct": "B",
+      "explanation": "Matching tasks to individual strengths improves quality and efficiency. Use cognitive diversity strategically."
+    },
+    "scenario": null
+  },
+  "tw-m4-l3": {
+    "lessonId": "tw-m4-l3",
+    "title": "Managing Conflict from Diversity",
+    "moduleId": "tw-m4-diversity",
+    "courseId": "teamwork",
+    "order": 3,
+    "content": "Diversity creates friction—different perspectives clash. This friction is productive if managed as task conflict (ideas) rather than relationship conflict (personalities). Frame disagreements as 'different ways to solve the problem,' not 'right vs wrong people.'",
+    "questions": [
+      "How does your team handle disagreements stemming from different perspectives?",
+      "When has diversity-driven conflict improved a decision?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "tw-m4-l4": {
+    "lessonId": "tw-m4-l4",
+    "title": "Inclusion and Participation",
+    "moduleId": "tw-m4-diversity",
+    "courseId": "teamwork",
+    "order": 4,
+    "content": "Inclusion means everyone's voice is heard and valued. It's not enough to have diversity—you must actively invite input from quieter or marginalized members. Dominant personalities can drown out valuable perspectives. Effective leaders solicit input from everyone.",
+    "questions": [
+      "Who tends to dominate discussions in your team?",
+      "How do you ensure quieter members contribute?"
+    ],
+    "mcq": null,
+    "scenario": "During a planning meeting, one person dominates while two others stay silent. What do you do?"
+  },
+  "tw-m5-l1": {
+    "lessonId": "tw-m5-l1",
+    "title": "Measuring Team Effectiveness",
+    "moduleId": "tw-m5-performance",
+    "courseId": "teamwork",
+    "order": 1,
+    "content": "Team effectiveness has three dimensions: output quality, team viability, and member satisfaction. A team that delivers results but burns out isn't sustainable. A team that's happy but fails to deliver isn't effective. Balance all three.",
+    "questions": [
+      "How does your organization measure team performance?",
+      "Would you rate your team as effective? Why or why not?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "tw-m5-l2": {
+    "lessonId": "tw-m5-l2",
+    "title": "Continuous Improvement",
+    "moduleId": "tw-m5-performance",
+    "courseId": "teamwork",
+    "order": 2,
+    "content": "High-performing teams deliberately improve through after-action reviews, training, and process refinement. They don't accept 'this is how we've always done it.' Improvement requires psychological safety to critique performance and authority to implement changes.",
+    "questions": [
+      "When was the last time your team changed a process based on a lessons-learned?",
+      "What prevents your team from improving?"
+    ],
+    "mcq": {
+      "question": "After a successful operation, what should the team do?",
+      "options": {
+        "A": "Celebrate and move on",
+        "B": "Debrief to identify what could have been better",
+        "C": "Assume it's repeatable without analysis",
+        "D": "Document the win and archive it"
+      },
+      "correct": "B",
+      "explanation": "Even successful operations offer improvement opportunities. Debrief wins and losses to build continuous improvement culture."
+    },
+    "scenario": null
+  },
+  "tw-m5-l3": {
+    "lessonId": "tw-m5-l3",
+    "title": "Team Resilience",
+    "moduleId": "tw-m5-performance",
+    "courseId": "teamwork",
+    "order": 3,
+    "content": "Resilient teams recover quickly from setbacks, adapt to change, and maintain performance under stress. Resilience comes from trust, cross-training, psychological safety, and shared mental models. Brittle teams fracture under pressure.",
+    "questions": [
+      "How does your team respond to unexpected challenges?",
+      "What makes your team resilient—or what makes it fragile?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "tw-m5-l4": {
+    "lessonId": "tw-m5-l4",
+    "title": "Team Burnout and Fatigue",
+    "moduleId": "tw-m5-performance",
+    "courseId": "teamwork",
+    "order": 4,
+    "content": "Teams, like individuals, suffer from prolonged stress and overwork. Symptoms: declining performance, increased conflict, absenteeism, apathy. Prevent burnout through workload management, recovery time, and recognition. Burned-out teams make catastrophic errors.",
+    "questions": [
+      "What are the early signs of team burnout in your experience?",
+      "How does your organization prevent or address team fatigue?"
+    ],
+    "mcq": null,
+    "scenario": "Your team has been working 12-hour shifts for two weeks straight. Performance is slipping. What do you recommend?"
+  },
+  "tw-m6-l1": {
+    "lessonId": "tw-m6-l1",
+    "title": "Challenges of Remote Teamwork",
+    "moduleId": "tw-m6-virtual",
+    "courseId": "teamwork",
+    "order": 1,
+    "content": "Remote teams lose informal communication, non-verbal cues, and spontaneous coordination. Trust builds slower. Misunderstandings escalate faster. Compensate with structured communication, over-documentation, and intentional relationship-building.",
+    "questions": [
+      "If your team works remotely, what's the biggest challenge?",
+      "How do you build rapport without face-to-face interaction?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "tw-m6-l2": {
+    "lessonId": "tw-m6-l2",
+    "title": "Technology for Coordination",
+    "moduleId": "tw-m6-virtual",
+    "courseId": "teamwork",
+    "order": 2,
+    "content": "Use the right tool for the task: video for high-bandwidth discussions, chat for quick coordination, project management software for task tracking, email for formal documentation. Tool overload creates noise—consolidate where possible.",
+    "questions": [
+      "What communication tools does your team use? Are there too many or too few?",
+      "How do you decide which tool to use for a given message?"
+    ],
+    "mcq": {
+      "question": "You need to discuss a complex, sensitive issue with your remote team. What tool do you use?",
+      "options": {
+        "A": "Email—creates a record",
+        "B": "Video call—enables real-time dialogue and reading tone",
+        "C": "Chat—fastest response",
+        "D": "Project management comment thread"
+      },
+      "correct": "B",
+      "explanation": "Complex and sensitive topics require high-bandwidth communication. Video preserves tone, non-verbal cues, and enables real-time clarification."
+    },
+    "scenario": null
+  },
+  "tw-m6-l3": {
+    "lessonId": "tw-m6-l3",
+    "title": "Time Zones and Asynchronous Work",
+    "moduleId": "tw-m6-virtual",
+    "courseId": "teamwork",
+    "order": 3,
+    "content": "Distributed teams across time zones require asynchronous work—not everyone is online simultaneously. Document decisions, over-communicate context, and establish handoff protocols. Real-time sync is expensive; use it selectively for high-value discussions.",
+    "questions": [
+      "How does your team handle time zone differences?",
+      "What decisions can be made asynchronously vs requiring synchronous discussion?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "tw-m6-l4": {
+    "lessonId": "tw-m6-l4",
+    "title": "Building Remote Team Culture",
+    "moduleId": "tw-m6-virtual",
+    "courseId": "teamwork",
+    "order": 4,
+    "content": "Remote teams need deliberate culture-building: virtual coffee chats, regular check-ins, team rituals. Don't rely on organic relationship formation—it won't happen remotely. Leaders must create opportunities for connection beyond task work.",
+    "questions": [
+      "What does your remote team do to build culture and connection?",
+      "How do new remote team members get integrated into the team?"
+    ],
+    "mcq": null,
+    "scenario": "Your remote team feels disconnected and transactional. How do you rebuild team cohesion?"
+  },
+  "lead-m1-l1": {
+    "lessonId": "lead-m1-l1",
+    "title": "Leadership vs Management",
+    "moduleId": "lead-m1-fundamentals",
+    "courseId": "leadership",
+    "order": 1,
+    "content": "Management is organizing resources and executing plans. Leadership is influencing people toward a vision. Managers maintain systems; leaders drive change. You need both skills, but they're not the same. Know when to manage and when to lead.",
+    "questions": [
+      "Do you see yourself as a manager, leader, or both?",
+      "When does your role require management vs leadership?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "lead-m1-l2": {
+    "lessonId": "lead-m1-l2",
+    "title": "Sources of Authority",
+    "moduleId": "lead-m1-fundamentals",
+    "courseId": "leadership",
+    "order": 2,
+    "content": "Authority comes from position (formal), expertise (knowledge), or respect (earned). Positional authority gets compliance. Expertise and respect get commitment. Relying solely on positional authority is fragile—people follow because they must, not because they want to.",
+    "questions": [
+      "What's the primary source of your authority—position, expertise, or respect?",
+      "Who do you follow even when they don't have formal authority?"
+    ],
+    "mcq": {
+      "question": "A new supervisor gives an order. The team complies, but with minimal effort. What's missing?",
+      "options": {
+        "A": "Clear instructions",
+        "B": "Earned respect and trust",
+        "C": "More authority",
+        "D": "Better procedures"
+      },
+      "correct": "B",
+      "explanation": "Positional authority gets compliance, but earned respect drives genuine commitment and effort."
+    },
+    "scenario": null
+  },
+  "lead-m1-l3": {
+    "lessonId": "lead-m1-l3",
+    "title": "Leading by Example",
+    "moduleId": "lead-m1-fundamentals",
+    "courseId": "leadership",
+    "order": 3,
+    "content": "Your actions set the standard. If you cut corners, your team will too. If you communicate clearly, they will model it. If you admit mistakes, they'll feel safe doing the same. You can't demand behavior you don't demonstrate.",
+    "questions": [
+      "What behaviors do you model that you want your team to adopt?",
+      "Have you ever seen a leader say one thing but do another? What happened?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "lead-m2-l1": {
+    "lessonId": "lead-m2-l1",
+    "title": "When to Decide Alone",
+    "moduleId": "lead-m2-decision-leadership",
+    "courseId": "leadership",
+    "order": 1,
+    "content": "Decide alone when time is critical, information is clear, and you have authority and expertise. Solo decisions are fast but carry full accountability. Use them for emergencies and routine calls within your authority. Avoid solo decisions on complex, high-stakes issues with time to consult.",
+    "questions": [
+      "What decisions do you make unilaterally?",
+      "When have you regretted making a solo decision that should have been collaborative?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "lead-m2-l2": {
+    "lessonId": "lead-m2-l2",
+    "title": "When to Consult the Team",
+    "moduleId": "lead-m2-decision-leadership",
+    "courseId": "leadership",
+    "order": 2,
+    "content": "Consult the team when you need diverse perspectives, buy-in, or expertise you lack. Consultation improves decision quality and increases commitment. It's slower but reduces errors and builds trust. Consult on strategic, complex, or people-impacting decisions.",
+    "questions": [
+      "How do you decide when to consult vs decide alone?",
+      "Have you ever consulted when you should have decided quickly? What happened?"
+    ],
+    "mcq": {
+      "question": "You're planning a major process change. The team has expertise you lack. What do you do?",
+      "options": {
+        "A": "Decide alone—you're the leader",
+        "B": "Consult the team before deciding",
+        "C": "Let the team decide",
+        "D": "Delay until you learn more"
+      },
+      "correct": "B",
+      "explanation": "Consult when the team has relevant expertise. You still make the final call, but you leverage their knowledge."
+    },
+    "scenario": null
+  },
+  "lead-m2-l3": {
+    "lessonId": "lead-m2-l3",
+    "title": "Explaining Unpopular Decisions",
+    "moduleId": "lead-m2-decision-leadership",
+    "courseId": "leadership",
+    "order": 3,
+    "content": "Not every decision will be popular. Explain the reasoning, constraints, and trade-offs—even if people disagree. Transparency builds trust. 'Because I said so' destroys it. People can accept unpopular decisions if they understand the why.",
+    "questions": [
+      "Describe a time you had to implement an unpopular decision. How did you communicate it?",
+      "How do you respond when your team challenges a decision?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "lead-m2-l4": {
+    "lessonId": "lead-m2-l4",
+    "title": "Reversing Decisions",
+    "moduleId": "lead-m2-decision-leadership",
+    "courseId": "leadership",
+    "order": 4,
+    "content": "Strong leaders reverse bad decisions when new information emerges. Stubbornness in the face of evidence is ego, not leadership. Admit when you were wrong, explain what changed, and adjust course. Reversing quickly is better than committing to failure.",
+    "questions": [
+      "Have you ever reversed a decision? How did your team respond?",
+      "What makes it hard to admit you were wrong and change direction?"
+    ],
+    "mcq": null,
+    "scenario": "You implemented a new procedure. Within a week, it's clear it's not working. What do you do?"
+  },
+  "lead-m3-l1": {
+    "lessonId": "lead-m3-l1",
+    "title": "Intrinsic vs Extrinsic Motivation",
+    "moduleId": "lead-m3-influence",
+    "courseId": "leadership",
+    "order": 1,
+    "content": "Extrinsic motivation is external rewards—pay, recognition, fear of consequences. Intrinsic motivation is internal—pride, purpose, mastery. Extrinsic motivators drive short-term compliance. Intrinsic motivators drive long-term commitment. Build both, but prioritize intrinsic.",
+    "questions": [
+      "What motivates you personally—external rewards or internal drive?",
+      "How do you tap into intrinsic motivation in your team?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "lead-m3-l2": {
+    "lessonId": "lead-m3-l2",
+    "title": "Purpose and Vision",
+    "moduleId": "lead-m3-influence",
+    "courseId": "leadership",
+    "order": 2,
+    "content": "People need to know why their work matters. Connect daily tasks to larger purpose. 'We're not just turning valves—we're keeping people safe and systems running.' Vision gives meaning and sustains effort through hardship.",
+    "questions": [
+      "Can you articulate why your team's work matters beyond the paycheck?",
+      "How do you remind your team of purpose during monotonous or difficult work?"
+    ],
+    "mcq": {
+      "question": "Your team is struggling with morale during repetitive work. What's the best leadership response?",
+      "options": {
+        "A": "Offer bonuses for performance",
+        "B": "Remind them why the work matters and how it contributes to mission",
+        "C": "Rotate tasks to reduce boredom",
+        "D": "Push harder to get it done faster"
+      },
+      "correct": "B",
+      "explanation": "Connecting work to purpose builds intrinsic motivation. Extrinsic rewards and task rotation help, but purpose is the foundation."
+    },
+    "scenario": null
+  },
+  "lead-m3-l3": {
+    "lessonId": "lead-m3-l3",
+    "title": "Recognition and Feedback",
+    "moduleId": "lead-m3-influence",
+    "courseId": "leadership",
+    "order": 3,
+    "content": "Recognition reinforces positive behavior. Be specific—'Good job' is weak; 'You caught that error before it became a problem—excellent situational awareness' is powerful. Public recognition for team achievements, private feedback for improvement. Both are essential.",
+    "questions": [
+      "When was the last time you recognized someone's contribution?",
+      "How do you prefer to be recognized—publicly or privately?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "lead-m3-l4": {
+    "lessonId": "lead-m3-l4",
+    "title": "Empowerment and Autonomy",
+    "moduleId": "lead-m3-influence",
+    "courseId": "leadership",
+    "order": 4,
+    "content": "Empowerment is giving people authority to make decisions within defined boundaries. Autonomy drives ownership and engagement. Micromanagement destroys both. Set clear expectations, provide resources, then step back. Intervene only when boundaries are crossed.",
+    "questions": [
+      "How much autonomy do you give your team?",
+      "Where do you draw the line between empowerment and abdication?"
+    ],
+    "mcq": null,
+    "scenario": "A team member consistently delivers results but uses methods you wouldn't choose. Do you intervene?"
+  },
+  "lead-m4-l1": {
+    "lessonId": "lead-m4-l1",
+    "title": "Coaching vs Directing",
+    "moduleId": "lead-m4-development",
+    "courseId": "leadership",
+    "order": 1,
+    "content": "Directing is telling someone what to do. Coaching is asking questions to help them figure it out. Directing is faster but doesn't build capability. Coaching is slower but develops independent problem-solvers. Use both based on urgency and the person's skill level.",
+    "questions": [
+      "Do you tend to direct or coach?",
+      "When is directing appropriate, and when should you coach instead?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "lead-m4-l2": {
+    "lessonId": "lead-m4-l2",
+    "title": "Identifying Development Needs",
+    "moduleId": "lead-m4-development",
+    "courseId": "leadership",
+    "order": 2,
+    "content": "Observe performance, ask about goals, and identify skill gaps. Not everyone needs the same development. Tailor training to individual needs—some need technical skills, others need leadership or communication. Development plans should align with both organizational needs and personal aspirations.",
+    "questions": [
+      "What development areas would help you most right now?",
+      "How do you identify development needs in your team members?"
+    ],
+    "mcq": {
+      "question": "A high-performer wants to develop leadership skills, but your immediate need is technical expertise. What do you prioritize?",
+      "options": {
+        "A": "Technical—operational needs first",
+        "B": "Leadership—develop the person's aspirations",
+        "C": "Both—find ways to develop leadership within technical work",
+        "D": "Neither—focus on current job only"
+      },
+      "correct": "C",
+      "explanation": "Balance organizational needs with individual development. Find opportunities to develop leadership within technical roles."
+    },
+    "scenario": null
+  },
+  "lead-m4-l3": {
+    "lessonId": "lead-m4-l3",
+    "title": "Delegation for Growth",
+    "moduleId": "lead-m4-development",
+    "courseId": "leadership",
+    "order": 3,
+    "content": "Delegation isn't dumping tasks—it's assigning work that stretches someone's capabilities. Delegate with clear outcomes, boundaries, and support. Let them struggle productively without abandoning them. Delegation develops future leaders and prevents your own burnout.",
+    "questions": [
+      "What tasks could you delegate that you currently do yourself?",
+      "When have you been delegated something that stretched your abilities? How did it feel?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "lead-m4-l4": {
+    "lessonId": "lead-m4-l4",
+    "title": "Managing Underperformance",
+    "moduleId": "lead-m4-development",
+    "courseId": "leadership",
+    "order": 4,
+    "content": "Address underperformance early and directly. Describe the gap between expected and actual performance, understand root causes, and create an improvement plan with clear metrics and timeline. Don't avoid difficult conversations—they compound. Support genuinely, but hold accountability.",
+    "questions": [
+      "How comfortable are you addressing underperformance?",
+      "What makes these conversations hard, and how do you prepare for them?"
+    ],
+    "mcq": null,
+    "scenario": "A usually solid performer's work has declined noticeably. What do you do?"
+  },
+  "lead-m5-l1": {
+    "lessonId": "lead-m5-l1",
+    "title": "Leading Through Uncertainty",
+    "moduleId": "lead-m5-crisis",
+    "courseId": "leadership",
+    "order": 1,
+    "content": "Crisis brings ambiguity, incomplete information, and pressure. Leaders must project calm confidence while acknowledging uncertainty. 'I don't have all the answers, but here's what we know and what we're doing next.' Honesty without panic.",
+    "questions": [
+      "How do you show confidence without pretending to have certainty you don't have?",
+      "When have you seen a leader handle uncertainty well?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "lead-m5-l2": {
+    "lessonId": "lead-m5-l2",
+    "title": "Maintaining Team Focus",
+    "moduleId": "lead-m5-crisis",
+    "courseId": "leadership",
+    "order": 2,
+    "content": "During crisis, attention fractures and people focus on threats instead of tasks. Leaders refocus the team on immediate priorities and actionable next steps. 'Right now, we need to do X, Y, and Z. Everything else waits.' Clear direction cuts through chaos.",
+    "questions": [
+      "How do you prioritize when everything feels urgent?",
+      "What techniques help you keep a team focused under pressure?"
+    ],
+    "mcq": {
+      "question": "During an emergency, team members are reacting to multiple alarms and losing focus. What do you say?",
+      "options": {
+        "A": "'Everyone calm down.'",
+        "B": "'Focus on [specific task]. Ignore everything else right now.'",
+        "C": "'We need to address all of this simultaneously.'",
+        "D": "'Let's take a break and regroup.'"
+      },
+      "correct": "B",
+      "explanation": "Crisis leadership requires clear prioritization and direction. Tell the team exactly what to focus on right now."
+    },
+    "scenario": null
+  },
+  "lead-m5-l3": {
+    "lessonId": "lead-m5-l3",
+    "title": "Decision Speed in Crisis",
+    "moduleId": "lead-m5-crisis",
+    "courseId": "leadership",
+    "order": 3,
+    "content": "Crisis demands fast decisions with incomplete information. Waiting for perfect data is paralysis. Make the best call you can with what you have, act, then adjust. Wrong action beats right inaction. Speed with acceptable error is better than slow perfection.",
+    "questions": [
+      "How do you balance speed and accuracy when under pressure?",
+      "Describe a time you had to decide quickly with limited information."
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "lead-m5-l4": {
+    "lessonId": "lead-m5-l4",
+    "title": "Post-Crisis Recovery",
+    "moduleId": "lead-m5-crisis",
+    "courseId": "leadership",
+    "order": 4,
+    "content": "After crisis, acknowledge what happened, debrief lessons, and check on your team's well-being. Crisis is exhausting—people need recovery time and recognition. Don't rush back to normal without processing the event. Resilience requires deliberate recovery.",
+    "questions": [
+      "How does your team recover after high-stress events?",
+      "What do you personally need to recover from crisis or prolonged pressure?"
+    ],
+    "mcq": null,
+    "scenario": "Your team just managed a major incident successfully. The immediate crisis is over. What do you do next?"
+  },
+  "lead-m6-l1": {
+    "lessonId": "lead-m6-l1",
+    "title": "Integrity and Trust",
+    "moduleId": "lead-m6-ethical",
+    "courseId": "leadership",
+    "order": 1,
+    "content": "Integrity is alignment between values and actions. Do what you say, say what you mean. Trust is built on consistent integrity over time. One lie or betrayal destroys years of trust. Ethical shortcuts are never worth the cost.",
+    "questions": [
+      "Have you ever compromised integrity for short-term gain? What happened?",
+      "How do you respond when pressured to do something you believe is wrong?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "lead-m6-l2": {
+    "lessonId": "lead-m6-l2",
+    "title": "Ethical Dilemmas",
+    "moduleId": "lead-m6-ethical",
+    "courseId": "leadership",
+    "order": 2,
+    "content": "Ethical dilemmas pit competing values against each other—safety vs production, transparency vs loyalty, individual vs collective good. There's no perfect answer. Use a framework: identify stakeholders, consider consequences, apply principles, seek counsel, decide, and own it.",
+    "questions": [
+      "Describe an ethical dilemma you faced. How did you resolve it?",
+      "What principles guide your ethical decisions?"
+    ],
+    "mcq": {
+      "question": "You discover a safety violation that will halt operations if reported. Reporting harms the team financially. What do you do?",
+      "options": {
+        "A": "Report it—safety is non-negotiable",
+        "B": "Fix it quietly without reporting",
+        "C": "Defer to your supervisor",
+        "D": "Ignore it if the risk is low"
+      },
+      "correct": "A",
+      "explanation": "Safety violations must be reported. Covering them up, even with good intentions, creates larger ethical and safety failures."
+    },
+    "scenario": null
+  },
+  "lead-m6-l3": {
+    "lessonId": "lead-m6-l3",
+    "title": "Fairness and Bias",
+    "moduleId": "lead-m6-ethical",
+    "courseId": "leadership",
+    "order": 3,
+    "content": "Fair leaders treat people equitably, not identically. Equity considers individual circumstances and needs. Be aware of unconscious bias—we favor people like us. Fair treatment builds trust; perceived favoritism destroys it. Audit your decisions for bias regularly.",
+    "questions": [
+      "How do you ensure you treat team members fairly?",
+      "Have you caught yourself showing bias? What did you do about it?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "lead-m6-l4": {
+    "lessonId": "lead-m6-l4",
+    "title": "Accountability and Transparency",
+    "moduleId": "lead-m6-ethical",
+    "courseId": "leadership",
+    "order": 4,
+    "content": "Leaders hold themselves accountable first. When things go wrong, own it—don't blame the team. When things go right, credit the team. Transparency about decisions, constraints, and mistakes builds credibility. Hiding information breeds cynicism.",
+    "questions": [
+      "How do you hold yourself accountable when you make a mistake?",
+      "When have you seen a leader transparently admit error? How did it affect your respect for them?"
+    ],
+    "mcq": null,
+    "scenario": "A major failure occurs on your watch due to a decision you made. How do you address it with your team and leadership?"
+  },
+  "hf-m1-l1": {
+    "lessonId": "hf-m1-l1",
+    "title": "Human Error is Normal",
+    "moduleId": "hf-m1-human-performance",
+    "courseId": "human-factors",
+    "order": 1,
+    "content": "Humans make errors—it's not a character flaw, it's biology. Slips, lapses, and mistakes are predictable outcomes of how our brains work. The goal isn't perfection—it's designing systems that prevent errors or catch them before they become accidents.",
+    "questions": [
+      "What's the last error you made at work? Was it punished or treated as a learning opportunity?",
+      "How does your organization view human error—blame or system design problem?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hf-m1-l2": {
+    "lessonId": "hf-m1-l2",
+    "title": "Types of Human Error",
+    "moduleId": "hf-m1-human-performance",
+    "courseId": "human-factors",
+    "order": 2,
+    "content": "Slips are unintended actions—you meant to do X but did Y. Lapses are memory failures—you forgot a step. Mistakes are wrong decisions based on misunderstanding. Violations are intentional rule-breaking. Each type has different causes and different countermeasures.",
+    "questions": [
+      "Give an example of a slip, lapse, and mistake from your work.",
+      "How do you prevent each type of error?"
+    ],
+    "mcq": {
+      "question": "You meant to close Valve A, but closed Valve B instead. What type of error is this?",
+      "options": {
+        "A": "Slip—unintended action",
+        "B": "Lapse—memory failure",
+        "C": "Mistake—wrong decision",
+        "D": "Violation—rule-breaking"
+      },
+      "correct": "A",
+      "explanation": "Slips are correct intentions executed incorrectly. You knew what to do but performed the wrong action."
+    },
+    "scenario": null
+  },
+  "hf-m1-l3": {
+    "lessonId": "hf-m1-l3",
+    "title": "Attention and Vigilance",
+    "moduleId": "hf-m1-human-performance",
+    "courseId": "human-factors",
+    "order": 3,
+    "content": "Sustained attention degrades over time. Monitoring tasks are especially hard—humans are poor at watching for rare events. After 20-30 minutes of vigilance, detection rates drop. Countermeasures: rotate tasks, introduce variety, use automation to assist, take breaks.",
+    "questions": [
+      "How long can you maintain focus on a monitoring task before attention drifts?",
+      "What strategies help you stay alert during long, monotonous shifts?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hf-m1-l4": {
+    "lessonId": "hf-m1-l4",
+    "title": "Working Memory Limits",
+    "moduleId": "hf-m1-human-performance",
+    "courseId": "human-factors",
+    "order": 4,
+    "content": "Working memory holds 4-7 items at once. Overload it, and you forget steps, make errors, or freeze. Reduce cognitive load: write things down, use checklists, chunk information, eliminate distractions. Don't trust your memory under pressure—offload to external aids.",
+    "questions": [
+      "When have you experienced cognitive overload? How did it feel?",
+      "What tools do you use to offload working memory?"
+    ],
+    "mcq": null,
+    "scenario": "You're managing three concurrent tasks with multiple steps each. How do you avoid overloading your working memory?"
+  },
+  "hf-m2-l1": {
+    "lessonId": "hf-m2-l1",
+    "title": "Physiological Effects of Fatigue",
+    "moduleId": "hf-m2-fatigue",
+    "courseId": "human-factors",
+    "order": 1,
+    "content": "Fatigue impairs reaction time, judgment, memory, and attention—equivalent to alcohol intoxication. After 17 hours awake, performance matches 0.05% BAC. After 24 hours, it's 0.10%. You can't willpower your way through fatigue—your brain's capabilities are physically degraded.",
+    "questions": [
+      "How many hours into a shift do you notice fatigue affecting your performance?",
+      "What physical signs tell you that fatigue is setting in?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hf-m2-l2": {
+    "lessonId": "hf-m2-l2",
+    "title": "Circadian Rhythms",
+    "moduleId": "hf-m2-fatigue",
+    "courseId": "human-factors",
+    "order": 2,
+    "content": "Your body has a 24-hour internal clock that regulates alertness, body temperature, and hormone release. Performance dips between 2-6 AM and 2-4 PM. Night shifts fight biology—you're working when your body wants to sleep. Adaptation takes weeks and is never complete.",
+    "questions": [
+      "If you work nights, how well do you adapt? What helps you stay alert?",
+      "When do you feel most alert and most sluggish during your shift?"
+    ],
+    "mcq": {
+      "question": "It's 3 AM. You're monitoring systems and feel drowsy. What's the best countermeasure?",
+      "options": {
+        "A": "Drink coffee—caffeine will fix it",
+        "B": "Take a 20-minute nap if possible",
+        "C": "Push through—you can handle it",
+        "D": "Increase physical activity"
+      },
+      "correct": "B",
+      "explanation": "Short naps (10-20 minutes) are the most effective countermeasure for acute fatigue. Caffeine helps but has limits. Activity provides temporary relief."
+    },
+    "scenario": null
+  },
+  "hf-m2-l3": {
+    "lessonId": "hf-m2-l3",
+    "title": "Sleep Debt and Recovery",
+    "moduleId": "hf-m2-fatigue",
+    "courseId": "human-factors",
+    "order": 3,
+    "content": "Sleep debt accumulates—missing an hour each night adds up. You can't fully repay sleep debt on weekends. Chronic sleep deprivation causes long-term performance degradation, health issues, and increased accident risk. Recovery requires sustained adequate sleep, not binge sleeping.",
+    "questions": [
+      "How much sleep do you average per night? Is it enough?",
+      "Do you feel rested after days off, or still fatigued?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hf-m2-l4": {
+    "lessonId": "hf-m2-l4",
+    "title": "Shift Work and Health",
+    "moduleId": "hf-m2-fatigue",
+    "courseId": "human-factors",
+    "order": 4,
+    "content": "Long-term shift work, especially rotating shifts, disrupts sleep quality, increases risk of cardiovascular disease, metabolic disorders, and mental health issues. If you work shifts, prioritize sleep hygiene: dark room, consistent sleep schedule, avoid alcohol/caffeine before bed, manage light exposure.",
+    "questions": [
+      "What strategies help you sleep during the day after night shifts?",
+      "How does shift work affect your health and well-being?"
+    ],
+    "mcq": null,
+    "scenario": "You're on a rotating shift schedule. What steps can you take to minimize health impacts?"
+  },
+  "hf-m3-l1": {
+    "lessonId": "hf-m3-l1",
+    "title": "Acute vs Chronic Stress",
+    "moduleId": "hf-m3-stress",
+    "courseId": "human-factors",
+    "order": 1,
+    "content": "Acute stress is short-term—response to immediate threats. It sharpens focus temporarily but narrows attention. Chronic stress is prolonged—it degrades health, judgment, and immune function. Acute stress can be managed; chronic stress must be eliminated or reduced.",
+    "questions": [
+      "What situations trigger acute stress for you?",
+      "Are you under chronic stress right now? What's the source?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hf-m3-l2": {
+    "lessonId": "hf-m3-l2",
+    "title": "The Inverted-U Curve",
+    "moduleId": "hf-m3-stress",
+    "courseId": "human-factors",
+    "order": 2,
+    "content": "Performance follows an inverted-U with stress: too little arousal causes boredom and low performance. Moderate arousal is optimal. Too much arousal causes panic and performance collapse. Your optimal zone varies by task complexity—simple tasks tolerate more arousal than complex ones.",
+    "questions": [
+      "When do you perform best—under pressure or when calm?",
+      "How do you recognize when stress has crossed from helpful to harmful?"
+    ],
+    "mcq": {
+      "question": "During a high-stress event, you're making more errors than usual. What does this indicate?",
+      "options": {
+        "A": "You need more pressure to focus",
+        "B": "You've exceeded optimal arousal—need to reduce stress",
+        "C": "Stress is irrelevant to performance",
+        "D": "You're not trying hard enough"
+      },
+      "correct": "B",
+      "explanation": "Increasing errors under stress means you've passed the peak of the inverted-U curve. You need stress reduction, not more pressure."
+    },
+    "scenario": null
+  },
+  "hf-m3-l3": {
+    "lessonId": "hf-m3-l3",
+    "title": "Stress Inoculation",
+    "moduleId": "hf-m3-stress",
+    "courseId": "human-factors",
+    "order": 3,
+    "content": "Stress inoculation is training under realistic stress to build resilience. Simulations, drills, and scenario training prepare your brain for real events. Exposure reduces panic response and builds confidence. Train hard so operations are easier. Without stress training, first real exposure is overwhelming.",
+    "questions": [
+      "What training have you done under realistic stress conditions?",
+      "How did stress training prepare you for actual high-pressure situations?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hf-m3-l4": {
+    "lessonId": "hf-m3-l4",
+    "title": "Stress Management Techniques",
+    "moduleId": "hf-m3-stress",
+    "courseId": "human-factors",
+    "order": 4,
+    "content": "Manage stress with: controlled breathing (box breathing), progressive muscle relaxation, positive self-talk, time management, physical exercise, social support. Different techniques work for different people. Experiment and build a personal toolkit. Proactive stress management prevents breakdown.",
+    "questions": [
+      "What stress management techniques work for you?",
+      "How do you decompress after a high-stress day?"
+    ],
+    "mcq": null,
+    "scenario": "You're feeling overwhelmed by workload and starting to make mistakes. What do you do?"
+  },
+  "hf-m4-l1": {
+    "lessonId": "hf-m4-l1",
+    "title": "Noise and Distraction",
+    "moduleId": "hf-m4-environment",
+    "courseId": "human-factors",
+    "order": 1,
+    "content": "Noise degrades communication, increases cognitive load, and raises stress. Sustained noise above 85 dB damages hearing and impairs performance. Use hearing protection, reduce ambient noise, and establish quiet zones for critical tasks. Distraction fragments attention and increases error rates.",
+    "questions": [
+      "What's the noise level in your work environment? Does it affect you?",
+      "How do you minimize distraction during critical tasks?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hf-m4-l2": {
+    "lessonId": "hf-m4-l2",
+    "title": "Lighting and Visual Acuity",
+    "moduleId": "hf-m4-environment",
+    "courseId": "human-factors",
+    "order": 2,
+    "content": "Poor lighting causes eye strain, fatigue, and errors. Too little light makes details invisible. Too much light causes glare. Optimal lighting depends on task—reading requires more light than monitoring. Night vision requires red light to preserve adaptation. Control lighting to match task demands.",
+    "questions": [
+      "Is your work environment well-lit for the tasks you perform?",
+      "Have you experienced eye strain or fatigue from poor lighting?"
+    ],
+    "mcq": {
+      "question": "You're transitioning from a bright control room to a dark field area. What should you do?",
+      "options": {
+        "A": "Go immediately—your eyes will adjust",
+        "B": "Allow 5-10 minutes for dark adaptation",
+        "C": "Use a bright flashlight to see",
+        "D": "Wear sunglasses to reduce glare"
+      },
+      "correct": "B",
+      "explanation": "Dark adaptation takes 5-30 minutes depending on prior light exposure. Allow time for adaptation or use red light to preserve night vision."
+    },
+    "scenario": null
+  },
+  "hf-m4-l3": {
+    "lessonId": "hf-m4-l3",
+    "title": "Temperature and Comfort",
+    "moduleId": "hf-m4-environment",
+    "courseId": "human-factors",
+    "order": 3,
+    "content": "Extreme heat or cold degrades performance. Heat above 85°F impairs fine motor skills and cognitive function. Cold below 50°F reduces dexterity and increases injury risk. Maintain comfortable temperatures (68-75°F) or provide PPE and breaks for extreme environments.",
+    "questions": [
+      "Do you work in temperature extremes? How does it affect you?",
+      "What PPE or breaks are provided for thermal stress?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hf-m4-l4": {
+    "lessonId": "hf-m4-l4",
+    "title": "Workplace Design and Ergonomics",
+    "moduleId": "hf-m4-environment",
+    "courseId": "human-factors",
+    "order": 4,
+    "content": "Poor ergonomics causes musculoskeletal injuries, fatigue, and inefficiency. Design workspaces to minimize reach, awkward postures, and repetitive strain. Controls should be within easy reach, displays at eye level, frequently used items closest. Small ergonomic improvements have large cumulative effects.",
+    "questions": [
+      "What ergonomic issues exist in your workspace?",
+      "Have you experienced injury or discomfort from poor workspace design?"
+    ],
+    "mcq": null,
+    "scenario": "You notice team members frequently complaining of back and shoulder pain. What do you investigate?"
+  },
+  "hf-m5-l1": {
+    "lessonId": "hf-m5-l1",
+    "title": "Display Design Principles",
+    "moduleId": "hf-m5-interface",
+    "courseId": "human-factors",
+    "order": 1,
+    "content": "Good displays present information clearly, prioritize critical data, and minimize clutter. Use color coding consistently, group related information, highlight alarms distinctly. Poor displays overwhelm with data, bury critical info, or use inconsistent conventions. Design for human perception, not machine logic.",
+    "questions": [
+      "What displays do you use most often? Are they well-designed or frustrating?",
+      "What display improvement would make your job easier?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hf-m5-l2": {
+    "lessonId": "hf-m5-l2",
+    "title": "Control Design and Feedback",
+    "moduleId": "hf-m5-interface",
+    "courseId": "human-factors",
+    "order": 2,
+    "content": "Controls should map intuitively to their effects—turn clockwise to increase, push up to raise. Provide immediate feedback when a control is activated—visual, auditory, or tactile. Ambiguous or delayed feedback causes errors. Standardize controls across systems to prevent negative transfer.",
+    "questions": [
+      "Have you ever operated a control that behaved opposite to your expectation?",
+      "What feedback do you get when you activate a control? Is it sufficient?"
+    ],
+    "mcq": {
+      "question": "A critical valve has no position indicator. You're unsure if it's open or closed. What's the problem?",
+      "options": {
+        "A": "User error—should have checked before",
+        "B": "Poor interface design—lack of feedback",
+        "C": "Maintenance issue—broken indicator",
+        "D": "Normal—not all valves have indicators"
+      },
+      "correct": "B",
+      "explanation": "Critical controls must provide clear state feedback. Lack of feedback is a design flaw, not acceptable."
+    },
+    "scenario": null
+  },
+  "hf-m5-l3": {
+    "lessonId": "hf-m5-l3",
+    "title": "Automation and Human Role",
+    "moduleId": "hf-m5-interface",
+    "courseId": "human-factors",
+    "order": 3,
+    "content": "Automation changes human role from active controller to monitor. Monitoring is harder than doing—vigilance degrades, skill atrophies, situational awareness erodes. Good automation assists humans and maintains their engagement. Bad automation creates complacency and out-of-the-loop syndrome.",
+    "questions": [
+      "What tasks are automated in your work? Does it help or hurt your performance?",
+      "Have you experienced loss of manual skills due to automation?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hf-m5-l4": {
+    "lessonId": "hf-m5-l4",
+    "title": "Alarm Management",
+    "moduleId": "hf-m5-interface",
+    "courseId": "human-factors",
+    "order": 4,
+    "content": "Too many alarms cause alarm fatigue—operators ignore or silence them. Alarms should be rare, distinct, and actionable. Nuisance alarms train you to dismiss real threats. Prioritize alarms: critical (immediate action), warning (monitor), advisory (information). Suppress non-essential alarms during abnormal situations.",
+    "questions": [
+      "How many alarms do you see in a typical shift? Are most meaningful or noise?",
+      "Have you ever missed a critical alarm because of alarm overload?"
+    ],
+    "mcq": null,
+    "scenario": "Your system generates 50 alarms per hour, most false or low-priority. How do you address this?"
+  },
+  "hf-m6-l1": {
+    "lessonId": "hf-m6-l1",
+    "title": "Safety Culture",
+    "moduleId": "hf-m6-organizational",
+    "courseId": "human-factors",
+    "order": 1,
+    "content": "Safety culture is the shared values, beliefs, and practices around safety. Strong safety culture treats errors as learning opportunities, encourages reporting, and prioritizes safety over production. Weak safety culture blames individuals, hides problems, and pressures for shortcuts.",
+    "questions": [
+      "How would you describe your organization's safety culture?",
+      "What behaviors are rewarded—safety or speed?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hf-m6-l2": {
+    "lessonId": "hf-m6-l2",
+    "title": "Normalization of Deviance",
+    "moduleId": "hf-m6-organizational",
+    "courseId": "human-factors",
+    "order": 2,
+    "content": "Normalization of deviance is gradual acceptance of rule-breaking or risky behavior because 'nothing bad happened yet.' Small violations accumulate until catastrophe. Every successful shortcut reinforces the behavior. Reset the norm by enforcing standards consistently and understanding why rules exist.",
+    "questions": [
+      "What 'workarounds' or shortcuts exist in your operation that used to be violations?",
+      "How do you push back against normalization of deviance?"
+    ],
+    "mcq": {
+      "question": "A safety procedure is routinely skipped because 'we've never had a problem.' What is this?",
+      "options": {
+        "A": "Efficient optimization",
+        "B": "Normalization of deviance—gradual acceptance of risk",
+        "C": "Acceptable risk management",
+        "D": "Proof the procedure is unnecessary"
+      },
+      "correct": "B",
+      "explanation": "Skipping procedures because nothing bad has happened yet is normalization of deviance. Absence of accidents doesn't prove the procedure is unnecessary."
+    },
+    "scenario": null
+  },
+  "hf-m6-l3": {
+    "lessonId": "hf-m6-l3",
+    "title": "Production Pressure",
+    "moduleId": "hf-m6-organizational",
+    "courseId": "human-factors",
+    "order": 3,
+    "content": "Production pressure tempts shortcuts, corner-cutting, and fatigue accumulation. When schedule and safety conflict, which wins? Organizations say safety first, but actions reveal true priorities. Leaders must protect teams from unsafe production pressure and resource safety adequately.",
+    "questions": [
+      "Have you felt pressure to compromise safety for schedule or cost?",
+      "How does your organization balance production demands with safety?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hf-m6-l4": {
+    "lessonId": "hf-m6-l4",
+    "title": "Learning from Failure",
+    "moduleId": "hf-m6-organizational",
+    "courseId": "human-factors",
+    "order": 4,
+    "content": "High-reliability organizations learn from near-misses and small failures before they become disasters. They investigate incidents to understand system weaknesses, not just punish individuals. Blameless post-mortems, trend analysis, and proactive risk identification prevent future accidents.",
+    "questions": [
+      "Does your organization investigate near-misses or only actual accidents?",
+      "When incidents are investigated, is the focus on blame or system improvement?"
+    ],
+    "mcq": null,
+    "scenario": "A near-miss occurs—no one was hurt, no damage. Do you report and investigate it, or move on since nothing happened?"
+  },
+  "hfo-m1-l1": {
+    "lessonId": "hfo-m1-l1",
+    "title": "Human Factors Integration Plans",
+    "moduleId": "hfo-m1-integration",
+    "courseId": "hf-offshore",
+    "order": 1,
+    "content": "A Human Factors Integration Plan (HFIP) ensures HF considerations are built into every phase of a drilling rig project—from design through commissioning. The earlier HF is integrated, the more cost-effective and safer the final system. Without an HFIP, human performance issues surface late when fixes are expensive or impractical.",
+    "questions": [
+      "Does your organization have a formal HFIP for new builds or major modifications?",
+      "What HF issues could have been prevented if addressed during design rather than operations?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hfo-m1-l2": {
+    "lessonId": "hfo-m1-l2",
+    "title": "User Requirements and Context of Use",
+    "moduleId": "hfo-m1-integration",
+    "courseId": "hf-offshore",
+    "order": 2,
+    "content": "Design starts with understanding who will use the system and how. Specify end users, their tasks, workload, and operating environment. Involve drilling crews, marine operators, and maintenance personnel early. User-centered design reduces errors and improves efficiency.",
+    "questions": [
+      "Were end users consulted during the design of your rig's critical systems?",
+      "What design feature causes frustration because it doesn't match how operators actually work?"
+    ],
+    "mcq": {
+      "question": "A new BOP control system is being designed. Who should be involved in defining requirements?",
+      "options": {
+        "A": "Engineers only—they understand the technical specs",
+        "B": "Drillers, assistant drillers, and tool pushers—the end users",
+        "C": "Project managers—they control the budget",
+        "D": "Vendor representatives—they know the equipment"
+      },
+      "correct": "B",
+      "explanation": "End users understand operational reality. Their input ensures the system design matches actual task requirements and constraints."
+    },
+    "scenario": null
+  },
+  "hfo-m1-l3": {
+    "lessonId": "hfo-m1-l3",
+    "title": "Installation Design and Layout",
+    "moduleId": "hfo-m1-integration",
+    "courseId": "hf-offshore",
+    "order": 3,
+    "content": "Equipment layout affects accessibility for operation, inspection, and maintenance. Valves, gauges, and controls must be reachable, visible, and logically arranged. Poor layout increases error rates, slows emergency response, and creates hazards. Apply ergonomic standards during design—retrofits are costly.",
+    "questions": [
+      "What equipment on your rig is difficult to access or operate safely?",
+      "How do layout issues affect maintenance or emergency procedures?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hfo-m1-l4": {
+    "lessonId": "hfo-m1-l4",
+    "title": "Design Verification and Commissioning",
+    "moduleId": "hfo-m1-integration",
+    "courseId": "hf-offshore",
+    "order": 4,
+    "content": "HF objectives specified during design must be verified during construction and commissioning. Walk-throughs, mock-ups, and usability testing catch design compromises before operations begin. Verify that valves, panels, and escape routes meet HF specifications. Don't assume design intent survived construction.",
+    "questions": [
+      "How does your organization verify HF requirements during commissioning?",
+      "What design intent has been compromised during construction on projects you've seen?"
+    ],
+    "mcq": null,
+    "scenario": "During commissioning, you discover critical valves are blocked by newly installed piping. The design drawings show clear access. What went wrong with the HF integration process?"
+  },
+  "hfo-m2-l1": {
+    "lessonId": "hfo-m2-l1",
+    "title": "Drilling Control Room (Doghouse) Design",
+    "moduleId": "hfo-m2-control-environments",
+    "courseId": "hf-offshore",
+    "order": 1,
+    "content": "The driller's cabin contains well control instrumentation critical for safe intervention. Displays must be visible, controls accessible, and information layout logical. High cognitive load during well control events demands optimal HMI design. Apply ISO 11064 standards and involve drillers in layout decisions.",
+    "questions": [
+      "Can the driller see all critical parameters without head movement or obstruction?",
+      "How well does the doghouse layout support high-stress decision-making?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hfo-m2-l2": {
+    "lessonId": "hfo-m2-l2",
+    "title": "Marine Control Room Design",
+    "moduleId": "hfo-m2-control-environments",
+    "courseId": "hf-offshore",
+    "order": 2,
+    "content": "Marine control rooms manage DP systems, ballast, fire and gas detection, and communications. Watch-keeping demands sustained vigilance. Control room design must support situational awareness, minimize fatigue, and enable rapid emergency response. Lighting, noise, and workspace ergonomics all affect performance.",
+    "questions": [
+      "Does your marine control room design support 12-hour watch-keeping without excessive fatigue?",
+      "What environmental factors (noise, lighting, temperature) affect marine crew performance?"
+    ],
+    "mcq": {
+      "question": "A DP operator monitors six screens during a critical operation. Two alarms activate simultaneously on different screens. What HMI issue is this?",
+      "options": {
+        "A": "Operator error—should have been more attentive",
+        "B": "Poor information integration—critical alarms should be centralized",
+        "C": "Normal workload—operators should handle it",
+        "D": "Alarm system working correctly"
+      },
+      "correct": "B",
+      "explanation": "Spreading critical information across multiple displays increases cognitive load and slows response. Alarm integration principles require prioritization and centralization."
+    },
+    "scenario": null
+  },
+  "hfo-m2-l3": {
+    "lessonId": "hfo-m2-l3",
+    "title": "Human-Machine Interface Standards",
+    "moduleId": "hfo-m2-control-environments",
+    "courseId": "hf-offshore",
+    "order": 3,
+    "content": "HMI design affects error rates and response times. Controls should map intuitively to system function. Displays should prioritize critical information and minimize clutter. Follow EEMUA 201 and ASM Consortium guidelines. Inconsistent HMI design across systems creates negative transfer and increases errors.",
+    "questions": [
+      "Are HMI designs standardized across your rig's control systems?",
+      "When have you operated a control where the interface behaved opposite to your expectation?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hfo-m2-l4": {
+    "lessonId": "hfo-m2-l4",
+    "title": "Alarm Management in Drilling Operations",
+    "moduleId": "hfo-m2-control-environments",
+    "courseId": "hf-offshore",
+    "order": 4,
+    "content": "Effective alarm systems alert operators to abnormal conditions requiring action. Too many alarms cause alarm fatigue—operators ignore or silence them. Follow EEMUA 191 and IADC drilling alarm guidelines: prioritize alarms, eliminate nuisance alarms, and ensure each alarm is actionable. Poor alarm management has contributed to major incidents.",
+    "questions": [
+      "How many alarms does your drilling or marine control room receive per hour?",
+      "What percentage of those alarms are false, nuisance, or informational rather than actionable?"
+    ],
+    "mcq": null,
+    "scenario": "During a well control event, 47 alarms activate within 90 seconds. The driller acknowledges and silences most of them to focus on well parameters. What alarm management failure occurred?"
+  },
+  "hfo-m3-l1": {
+    "lessonId": "hfo-m3-l1",
+    "title": "Human Reliability Analysis for Drilling",
+    "moduleId": "hfo-m3-risk-barriers",
+    "courseId": "hf-offshore",
+    "order": 1,
+    "content": "Human Reliability Analysis (HRA) identifies where human actions are critical to preventing or mitigating Major Accident Hazards (MAH). It quantifies the likelihood of human failure and identifies Performance Influencing Factors (PIFs). HRA should be integrated into safety case risk assessments for safety-critical tasks.",
+    "questions": [
+      "Has HRA been performed for your rig's safety-critical tasks?",
+      "What tasks on your rig have the highest consequence if performed incorrectly?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hfo-m3-l2": {
+    "lessonId": "hfo-m3-l2",
+    "title": "Performance Influencing Factors",
+    "moduleId": "hfo-m3-risk-barriers",
+    "courseId": "hf-offshore",
+    "order": 2,
+    "content": "PIFs are conditions that affect human reliability: competence, time pressure, fatigue, procedure quality, equipment design, and organizational culture. Identifying and optimizing PIFs reduces error likelihood. Poor PIFs make even skilled operators unreliable. Good PIFs enable consistent performance.",
+    "questions": [
+      "What PIFs most frequently degrade performance on your rig?",
+      "How does your organization assess and improve PIFs for safety-critical tasks?"
+    ],
+    "mcq": {
+      "question": "A well control procedure is rarely used. The driller is fatigued after 11 hours on shift. The BOP panel has inconsistent labeling. How many negative PIFs exist?",
+      "options": {
+        "A": "One—fatigue is the only real issue",
+        "B": "Two—fatigue and procedure familiarity",
+        "C": "Three—infrequent task, fatigue, and poor HMI design",
+        "D": "None—these are normal offshore conditions"
+      },
+      "correct": "C",
+      "explanation": "All three are PIFs: task infrequency (lack of practice), fatigue (reduced cognitive performance), and poor labeling (increased error likelihood). They compound risk."
+    },
+    "scenario": null
+  },
+  "hfo-m3-l3": {
+    "lessonId": "hfo-m3-l3",
+    "title": "Bowtie Analysis and Barrier Management",
+    "moduleId": "hfo-m3-risk-barriers",
+    "courseId": "hf-offshore",
+    "order": 3,
+    "content": "Bowtie diagrams map threats, top events, and consequences with barriers that prevent or mitigate. Human actions can be threats (initiating events) or escalation factors (barrier failures). Effective barrier management ensures barriers are in place, functional, and regularly tested. Human reliability is critical to barrier effectiveness.",
+    "questions": [
+      "Does your safety case use bowtie analysis to illustrate MAH control?",
+      "Where do human actions appear as critical barriers in your MAH scenarios?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hfo-m3-l4": {
+    "lessonId": "hfo-m3-l4",
+    "title": "Human Factors in MAH Scenarios",
+    "moduleId": "hfo-m3-risk-barriers",
+    "courseId": "hf-offshore",
+    "order": 4,
+    "content": "Human actions can prevent, initiate, detect, or mitigate major accidents. Safety cases must demonstrate how human performance variability is managed. This includes task analysis, error identification, and control measures proportionate to risk. Work-as-done often differs from work-as-imagined—understand actual practice, not just procedures.",
+    "questions": [
+      "What workarounds or informal practices exist for safety-critical tasks on your rig?",
+      "How does your organization reconcile procedures with operational reality?"
+    ],
+    "mcq": null,
+    "scenario": "A safety case assumes a two-person verification for BOP function tests. In practice, one person performs the test while the second signs off remotely. What HF issue exists in the safety case?"
+  },
+  "hfo-m4-l1": {
+    "lessonId": "hfo-m4-l1",
+    "title": "21-Day Rotations and Tour Extensions",
+    "moduleId": "hfo-m4-work-organization",
+    "courseId": "hf-offshore",
+    "order": 1,
+    "content": "Standard UK offshore tours are 21 consecutive days, 12-hour shifts. This pattern exists due to transport and accommodation constraints. Tour extensions beyond 21 days require OIM authorization and fitness assessment. Extended tours increase fatigue and error risk—balance operational need against human performance limits.",
+    "questions": [
+      "How often are tours extended beyond 21 days on your rig?",
+      "What criteria does your OIM use to authorize tour extensions?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hfo-m4-l2": {
+    "lessonId": "hfo-m4-l2",
+    "title": "12-Hour Shift Patterns Offshore",
+    "moduleId": "hfo-m4-work-organization",
+    "courseId": "hf-offshore",
+    "order": 2,
+    "content": "Two 12-hour shifts provide better coverage than three 8-hour shifts with fewer personnel offshore. However, 12-hour shifts for 21 consecutive days create significant fatigue. Shift design must account for circadian rhythms, task complexity, and workload peaks. Night shifts are physiologically harder and never fully adapt.",
+    "questions": [
+      "Do you work days or nights? How well do you adapt?",
+      "What time of your shift is performance most degraded?"
+    ],
+    "mcq": {
+      "question": "It's day 18 of a 21-day trip, 10 hours into a night shift. A complex non-routine task is required. What should the supervisor consider?",
+      "options": {
+        "A": "Assign it—experienced crews can handle it",
+        "B": "Assess if fatigue makes it safer to defer to day shift",
+        "C": "Assign it but with minimal supervision—they know what to do",
+        "D": "It's routine offshore—proceed normally"
+      },
+      "correct": "B",
+      "explanation": "Cumulative fatigue at day 18, compounded by night shift and late in shift, creates high error risk. Deferring non-urgent complex tasks is prudent fatigue management."
+    },
+    "scenario": null
+  },
+  "hfo-m4-l3": {
+    "lessonId": "hfo-m4-l3",
+    "title": "Fatigue Risk Management Offshore",
+    "moduleId": "hfo-m4-work-organization",
+    "courseId": "hf-offshore",
+    "order": 3,
+    "content": "Fatigue Risk Management Plans (FRMP) identify fatigue hazards and implement controls. Offshore FRMPs should address tour length, shift patterns, workload, overtime, and rest quality. Monitor fatigue indicators: near-misses, errors, and self-reporting. Offshore fatigue is chronic and cumulative—rest days ashore are essential for recovery.",
+    "questions": [
+      "Does your company have a formal FRMP? What does it include?",
+      "How does your organization monitor and respond to fatigue indicators?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hfo-m4-l4": {
+    "lessonId": "hfo-m4-l4",
+    "title": "Staffing Levels and Multi-Skilling",
+    "moduleId": "hfo-m4-work-organization",
+    "courseId": "hf-offshore",
+    "order": 4,
+    "content": "Adequate staffing ensures safety-critical tasks are reliably performed under normal and abnormal conditions. De-manning without workload reduction increases error risk. Multi-skilling provides flexibility but requires competence verification. Use staffing assessment methods like CRIOP to evaluate whether manning supports MAH control during emergencies.",
+    "questions": [
+      "Have staffing levels changed on your rig? How was safety impact assessed?",
+      "What safety-critical tasks rely on multi-skilled personnel? Are they competent in all roles?"
+    ],
+    "mcq": null,
+    "scenario": "Staffing is reduced from 3 to 2 personnel per shift in the engine room. Workload remains the same. During an emergency, can two people manage the response that previously required three?"
+  },
+  "hfo-m5-l1": {
+    "lessonId": "hfo-m5-l1",
+    "title": "Procedural Integrity for Safety-Critical Tasks",
+    "moduleId": "hfo-m5-operational-integrity",
+    "courseId": "hf-offshore",
+    "order": 1,
+    "content": "Procedures for safety-critical tasks must be accurate, usable, and followed. Link procedures to MAH scenarios and ensure they reflect operational reality. Involve end users in procedure development and review. Detailed procedures suit infrequent, complex tasks; simple checklists suit routine tasks. Non-compliance often signals poor procedure design.",
+    "questions": [
+      "Are procedures for your safety-critical tasks accurate and usable?",
+      "What procedures are routinely bypassed or modified? Why?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hfo-m5-l2": {
+    "lessonId": "hfo-m5-l2",
+    "title": "Permit-to-Work and Shift Handovers",
+    "moduleId": "hfo-m5-operational-integrity",
+    "courseId": "hf-offshore",
+    "order": 2,
+    "content": "PTW systems control hazardous work. Major accidents have occurred when permits weren't communicated across shifts or between contractors and operators. Shift handovers transfer situational awareness—face-to-face handovers are better than logs alone. Use structured formats like SBAR. Verify the incoming shift understands active permits and system status.",
+    "questions": [
+      "How are active PTW permits communicated during shift handover?",
+      "What information is most often missing or unclear during handovers?"
+    ],
+    "mcq": {
+      "question": "During shift handover, the outgoing supervisor mentions 'a few permits active, nothing major.' What's the problem?",
+      "options": {
+        "A": "No problem—permits are logged in the system",
+        "B": "Too vague—incoming supervisor needs specific permit details and hazards",
+        "C": "Normal—permits are operational routine",
+        "D": "Incoming supervisor should check the log independently"
+      },
+      "correct": "B",
+      "explanation": "Vague handovers fail to transfer critical situational awareness. Specific permit details, hazards, and work status must be communicated face-to-face."
+    },
+    "scenario": null
+  },
+  "hfo-m5-l3": {
+    "lessonId": "hfo-m5-l3",
+    "title": "Safety-Critical Communications",
+    "moduleId": "hfo-m5-operational-integrity",
+    "courseId": "hf-offshore",
+    "order": 3,
+    "content": "Effective communication is critical during drilling operations, emergencies, and PTW management. Use closed-loop communication for safety-critical instructions. Standard terminology reduces misunderstanding. Communication barriers include noise, language, hierarchy, and remote coordination (rig floor to doghouse). Design communication systems for worst-case conditions.",
+    "questions": [
+      "Does your crew use closed-loop communication for safety-critical tasks?",
+      "What communication failures have you witnessed or experienced?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hfo-m5-l4": {
+    "lessonId": "hfo-m5-l4",
+    "title": "Competence Management for Offshore Roles",
+    "moduleId": "hfo-m5-operational-integrity",
+    "courseId": "hf-offshore",
+    "order": 4,
+    "content": "Competence Assurance Systems verify individuals can reliably perform safety-critical tasks. Competence standards should link to MAH scenarios and key procedures. Training alone is insufficient—assess practical performance. Manage contractor competence through verification and oversight. Competence degrades without practice—maintain currency for infrequent safety-critical tasks.",
+    "questions": [
+      "How does your organization assess and maintain competence for safety-critical roles?",
+      "How is contractor competence verified before permitting safety-critical work?"
+    ],
+    "mcq": null,
+    "scenario": "A contractor arrives to perform well control equipment maintenance—a safety-critical task. What evidence of competence should be verified before issuing a permit?"
+  },
+  "hfo-m5-l5": {
+    "lessonId": "hfo-m5-l5",
+    "title": "Supervision in Drilling Operations",
+    "moduleId": "hfo-m5-operational-integrity",
+    "courseId": "hf-offshore",
+    "order": 5,
+    "content": "Front-line supervisors (tool pushers, drillers, barge engineers) are the link between planning and execution. Supervisors allocate work, monitor compliance, manage contractors, and provide leadership. Supervisor competence includes technical skills and non-technical skills: leadership, communication, and performance management. Effective supervision is a critical control for MAH.",
+    "questions": [
+      "What competency standards exist for supervisors on your rig?",
+      "How do supervisors balance production pressure against safety-critical compliance?"
+    ],
+    "mcq": null,
+    "scenario": "A supervisor observes a crew member skipping a step in a safety-critical procedure to save time. The task completes successfully. What should the supervisor do?"
+  },
+  "hfo-m6-l1": {
+    "lessonId": "hfo-m6-l1",
+    "title": "UK Safety Case Regulations Overview",
+    "moduleId": "hfo-m6-regulatory-compliance",
+    "courseId": "hf-offshore",
+    "order": 1,
+    "content": "The Offshore Installations (Safety Case) Regulations 2015 require duty holders to demonstrate MAH are managed to a level that is As Low As Reasonably Practicable (ALARP). Safety cases must address human and organizational factors. Inspectors assess HF integration across design, risk assessment, and management systems. Compliance isn't optional—it's regulatory.",
+    "questions": [
+      "Has your organization submitted a safety case under SCR 2015?",
+      "How well does your safety case address human factors?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hfo-m6-l2": {
+    "lessonId": "hfo-m6-l2",
+    "title": "Human Factors in Safety Case Submissions",
+    "moduleId": "hfo-m6-regulatory-compliance",
+    "courseId": "hf-offshore",
+    "order": 2,
+    "content": "Safety cases must demonstrate systematic HF consideration across 14 topic areas: HF in design, managing human performance, organizational integrity, and HF in SEMS. Each topic requires evidence proportionate to MAH risk. For heritage rigs, demonstrate what's been done and justify where full compliance is impractical. New builds must meet current standards.",
+    "questions": [
+      "Which of the 14 HF topics are strongest in your safety case? Which are weakest?",
+      "For older rigs, how do you justify deviations from current HF standards?"
+    ],
+    "mcq": {
+      "question": "A 20-year-old rig operates in the UKCS. Control room layout doesn't meet ISO 11064. What should the safety case demonstrate?",
+      "options": {
+        "A": "Nothing—it's a heritage asset, standards don't apply",
+        "B": "Why full compliance is impractical and what alternative measures are in place",
+        "C": "Plan to retrofit to full compliance immediately",
+        "D": "That the rig operates safely despite non-compliance"
+      },
+      "correct": "B",
+      "explanation": "Safety cases for heritage assets should explain why full compliance is impractical (cost, lifecycle) and demonstrate alternative risk controls that achieve ALARP."
+    },
+    "scenario": null
+  },
+  "hfo-m6-l3": {
+    "lessonId": "hfo-m6-l3",
+    "title": "Management of Organizational Change",
+    "moduleId": "hfo-m6-regulatory-compliance",
+    "courseId": "hf-offshore",
+    "order": 3,
+    "content": "Organizational changes—staffing, structure, outsourcing, role changes—can degrade MAH control if poorly managed. MOC procedures must assess safety impacts of organizational changes, including transitional risks. Key competencies must be transferred, workload managed, and procedures updated before changes are implemented. Organizational MOC is as critical as technical MOC.",
+    "questions": [
+      "Does your MOC procedure explicitly address organizational changes?",
+      "What organizational changes have occurred without adequate HF impact assessment?"
+    ],
+    "mcq": null,
+    "scenario": null
+  },
+  "hfo-m6-l4": {
+    "lessonId": "hfo-m6-l4",
+    "title": "Accident Investigation and HF Analysis",
+    "moduleId": "hfo-m6-regulatory-compliance",
+    "courseId": "hf-offshore",
+    "order": 4,
+    "content": "Investigations should identify active failures (front-line errors) and latent failures (organizational/system weaknesses). Stopping at 'operator error' is inadequate. Ask why the operator made that error—training, procedures, fatigue, design, supervision? Learning from incidents requires HF analysis. Communicate lessons across the organization and implement systemic improvements.",
+    "questions": [
+      "Do your incident investigations routinely identify latent organizational factors?",
+      "How are HF learnings from incidents communicated and implemented?"
+    ],
+    "mcq": null,
+    "scenario": "An incident investigation concludes 'driller error caused the event.' The driller was on day 20 of 21, working nights, and the procedure was last revised 8 years ago. What latent factors were missed?"
+  },
+  "hfo-m6-l5": {
+    "lessonId": "hfo-m6-l5",
+    "title": "Continuous Improvement and HF Performance",
+    "moduleId": "hfo-m6-regulatory-compliance",
+    "courseId": "hf-offshore",
+    "order": 5,
+    "content": "HF performance should be monitored through leading indicators (audits, observations, near-misses) and lagging indicators (incidents, non-conformances). Use performance data to drive continuous improvement. Audit HF elements of SEMS regularly. Engage workforce in identifying HF issues and solutions. Mature HF programs evolve based on operational experience.",
+    "questions": [
+      "What HF performance indicators does your organization track?",
+      "How is workforce feedback on HF issues collected and acted upon?"
+    ],
+    "mcq": null,
+    "scenario": "Near-miss trends show increasing procedural non-compliance on night shifts. What HF performance indicators should be investigated: fatigue, procedure usability, supervision, or workload?"
+  }
+}

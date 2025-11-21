@@ -1,0 +1,51 @@
+{
+  "templateId": "QT-MPD-001",
+  "category": "MANAGED_PRESSURE_DRILLING",
+  "title": "MPD Surface Back Pressure Adjustment",
+  "level": ["L4"],
+  "applicableTo": ["surface", "subsea"],
+  "question": "On {{wellProfile.wellName}}, you are using MPD at {{currentSection.settingDepth.tvd}} {{currentSection.settingDepth.unit}} TVD. Current mud weight is {{currentSection.mudWeight.current}} ppg with pore pressure at {{scenario.porePressure}} ppg EMW. The driller reports ECD drops {{scenario.ecdDrop}} ppg when pumps are shut off for a connection. What surface back pressure (SBP) should be applied during the connection to maintain constant BHP?",
+  "inputs": {
+    "wellProfile": {
+      "required": ["mpdData", "wellName"]
+    },
+    "currentSection": {
+      "from": "wellProfile.casingProgram[activeSection]",
+      "required": ["settingDepth.tvd", "mudWeight.current"]
+    },
+    "scenario": {
+      "generated": true,
+      "porePressure": {
+        "from": "wellProfile.ppfg nearest to TVD"
+      },
+      "ecdDrop": {
+        "range": [0.3, 0.8],
+        "step": 0.1,
+        "description": "ppg equivalent ECD reduction when pumps off"
+      }
+    }
+  },
+  "calculation": {
+    "formula": "SBP = ECD Drop (ppg) × 0.052 × TVD (ft)",
+    "formulaMetric": "SBP = ECD Drop (ppg) × 0.0981 × TVD (m)",
+    "steps": [
+      "Identify the ECD drop when pumps stop",
+      "Convert this drop to pressure at TD",
+      "Apply this pressure at surface to maintain constant BHP"
+    ]
+  },
+  "answerValidation": {
+    "tolerance": 50,
+    "unit": "psi",
+    "roundTo": 0
+  },
+  "feedback": {
+    "correct": "Correct. SBP = {{answer}} psi. This compensates for the {{scenario.ecdDrop}} ppg ECD loss when circulation stops, maintaining constant bottom hole pressure.",
+    "incorrect": "SBP = ECD Drop × 0.052 × TVD. With {{scenario.ecdDrop}} ppg drop at {{currentSection.settingDepth.tvd}} ft, SBP = {{answer}} psi.",
+    "hint": "Think of it this way: when you stop pumping, you lose ECD. Surface back pressure replaces what ECD was providing."
+  },
+  "contextualTip": "On {{wellProfile.wellName}}, MPD is required below the intermediate casing due to tight mud weight windows. Proper SBP management prevents swab kicks during connections.",
+  "advancedNote": "L4 supervisors must understand that SBP has limits - check that the total equivalent pressure (MW + SBP equivalent) doesn't exceed formation fracture gradient.",
+  "relatedLesson": "WC-SF-109-01",
+  "tags": ["mpd", "back-pressure", "ecd", "well-control", "L4", "dynamic"]
+}

@@ -1,0 +1,79 @@
+{
+  "moduleId": "ADO-111",
+  "courseId": "ADO",
+  "title": "Casing & Cementing Operations",
+  "description": "Running casing and cementing in tight-window HPHT wells presents unique challenges. Surge during running, ECD during cementing, and narrow margins for error require careful planning and execution.",
+  "objectives": [
+    "Plan casing runs for surge management",
+    "Execute cementing operations within pressure constraints",
+    "Manage ECD during cement displacement",
+    "Respond to well control events during casing/cementing"
+  ],
+  "keyTopics": [
+    {
+      "topic": "Surge During Casing Runs",
+      "content": "Running casing creates surge pressure. A 7\" casing string run at 60 sec/stand may generate 0.3-0.5 ppg surge. In tight windows, this can exceed fracture gradient. Slow running speeds, staged runs, and flotation equipment reduce surge."
+    },
+    {
+      "topic": "Flotation Equipment",
+      "content": "Float equipment (auto-fill float collars, differential fill equipment) allows casing to fill gradually, reducing surge. Trade-off: longer running times and more complex procedures. In tight windows, the complexity is worth it."
+    },
+    {
+      "topic": "Cement Density Selection",
+      "content": "Cement density must be high enough for zonal isolation but low enough not to fracture the formation. In narrow windows, lightweight cement systems or foamed cement may be required. Understand the trade-off with compressive strength."
+    },
+    {
+      "topic": "ECD During Displacement",
+      "content": "Cement displacement creates ECD from friction and density differential. The highest ECD often occurs when heavy cement is in the annulus being displaced by lighter mud. This is frequently the maximum pressure the well sees."
+    },
+    {
+      "topic": "Staged Cementing",
+      "content": "When ECD constraints prevent full displacement in one stage, staged cementing uses intermediate ports. Complexity increases, but allows cementing in otherwise impossible situations."
+    },
+    {
+      "topic": "Well Control During Operations",
+      "content": "If a kick is detected while running casing, options are limited. Casing cannot be rotated or reciprocated easily. Pump through casing if possible. If well flows, close annular on casing and proceed with conventional well control."
+    }
+  ],
+  "referenceWellContext": {
+    "wellName": "Phoenix-702",
+    "casingStrings": "7 strings from 30\" conductor to 4.5\" liner",
+    "concerns": [
+      "Surge during 7\" and 5\" liner runs in tight HPHT section",
+      "Cement ECD approaching fracture gradient",
+      "Long cement columns in deepwater",
+      "No room for error in 1.3 ppg window at TD"
+    ]
+  },
+  "operationalPrinciples": [
+    "Model surge before running - know your limits",
+    "Slow is safe - resist pressure to speed up",
+    "Plan for cement ECD - it's often the maximum",
+    "Staged cementing is better than fracturing",
+    "Have a well control plan specific to casing operations"
+  ],
+  "lessons": [
+    {
+      "lessonId": "ADO-111-01",
+      "title": "Surge Management During Casing Runs",
+      "file": "lessons/ado-111-01.json"
+    },
+    {
+      "lessonId": "ADO-111-02",
+      "title": "Cement Design for Tight Windows",
+      "file": "lessons/ado-111-02.json"
+    },
+    {
+      "lessonId": "ADO-111-03",
+      "title": "ECD Control During Displacement",
+      "file": "lessons/ado-111-03.json"
+    },
+    {
+      "lessonId": "ADO-111-04",
+      "title": "Well Control During Casing Operations",
+      "file": "lessons/ado-111-04.json"
+    }
+  ],
+  "documentId": "ADO-111",
+  "tags": ["casing", "cementing", "surge", "ecd", "advanced-drilling"]
+}

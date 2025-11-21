@@ -1,0 +1,14 @@
+{
+  "moduleId": "LEAD-109",
+  "courseId": "LEAD",
+  "title": "Influence Without Authority",
+  "description": "Teaches leading upward effectively, lateral leadership and peer influence, navigating organizational politics with integrity, building coalitions, and managing organizational resistance.",
+  "order": 9,
+  "lessonIds": [
+    "LEAD-109-01",
+    "LEAD-109-02",
+    "LEAD-109-03",
+    "LEAD-109-04",
+    "LEAD-109-05"
+  ]
+}

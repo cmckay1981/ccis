@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-112-02",
+  "moduleId": "LEAD-MC-112",
+  "courseId": "LEAD-MC",
+  "title": "Building Performance Measurement Systems",
+  "type": "lesson",
+  "content": "What gets measured gets attention. Performance measurement systems shape behavior by defining what success looks like. Poor measurement drives wrong behaviors: measuring only activity creates busywork, measuring only outcomes ignores process quality, and measuring too many things dilutes focus. Effective performance systems balance leading indicators (predictive) with lagging indicators (results), measure what matters not just what's easy to count, and align individual metrics with organizational objectives.",
+  "mcq": {
+    "question": "A team's performance metrics focus entirely on output volume: units produced, tickets closed, projects completed. Quality has declined, customer complaints have increased, and team burnout is rising, but all measured metrics show green. What's wrong with the measurement system?",
+    "options": {
+      "A": "The team is gaming the metrics instead of focusing on real performance",
+      "B": "The measurement system optimizes for quantity while ignoring quality, sustainability, and customer impact",
+      "C": "The metrics are fine but need stronger accountability for hitting targets",
+      "D": "More metrics need to be added to capture all aspects of performance"
+    },
+    "correctOption": "B",
+    "explanation": "The measurement system is driving exactly the behavior it incentivizes: maximize output regardless of quality or consequence. This is a design problem, not a compliance problem. Option B recognizes that incomplete metrics create perverse incentives. When you measure only volume, people optimize for volume—even if it destroys quality and burns out teams. Option A blames people for responding rationally to the system's incentives. Option C doubles down on broken metrics. Option D risks measurement overload. Fix the system by measuring what actually matters: customer satisfaction, defect rates, team sustainability, not just output volume."
+  },
+  "openQuestions": [
+    "What do your current performance metrics incentivize? Is that what you actually want?",
+    "What important outcome isn't currently measured because it's difficult to quantify?"
+  ]
+}

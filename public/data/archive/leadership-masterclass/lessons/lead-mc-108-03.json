@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-108-03",
+  "moduleId": "LEAD-MC-108",
+  "courseId": "LEAD-MC",
+  "title": "Balancing Competing Priorities",
+  "type": "lesson",
+  "content": "Leaders constantly face competing demands: quality versus speed, short-term results versus long-term capability, individual needs versus team needs, customer demands versus resource constraints. The error is pretending these aren't trade-offs or trying to optimize everything simultaneously. Effective leaders make trade-offs explicit, explain the reasoning, and accept the consequences of their choices. Trying to please everyone usually means disappointing everyone.",
+  "mcq": {
+    "question": "Your team is managing three priorities: a critical deadline, a major quality issue, and developing a promising but junior team member. All three matter, but you don't have capacity for all of them. How do you decide?",
+    "options": {
+      "A": "Split focus evenly to make progress on all three",
+      "B": "Choose the critical deadline since it has immediate business impact",
+      "C": "Assess which priority has the highest consequence if you get it wrong, prioritize that, and explicitly defer the others",
+      "D": "Work longer hours to avoid having to choose"
+    },
+    "correctOption": "C",
+    "explanation": "Option C demonstrates strategic prioritization: assess downside risk of each choice, make an explicit decision, and own the trade-offs. Maybe the quality issue affects safety or customer trust—that becomes priority one. Maybe missing the deadline costs critical opportunity—that might win. The point is making the trade-off consciously based on consequence, not trying to do everything poorly. Option A dilutes effort across all three, likely failing at all of them. Option B defaults to urgency without analyzing actual importance. Option D is unsustainable and teaches your team that leadership means burnout. Leaders get paid to make hard choices and explain them, not to avoid choosing."
+  },
+  "openQuestions": [
+    "What competing priorities are you currently trying to balance? Have you made the trade-offs explicit or are you pretending you can do it all?",
+    "Think of a time you tried to optimize everything simultaneously. What was the result?"
+  ]
+}

@@ -1,0 +1,553 @@
+{
+  "description": "Standard pipe internal capacities and displacements",
+  "drillPipe": [
+    {
+      "size": "2-3/8\"",
+      "od": 2.375,
+      "id": 2.0,
+      "weight_lbft": 4.85,
+      "capacity_bbl_ft": 0.00387,
+      "displacement_bbl_ft": 0.00658,
+      "capacity_L_m": 2.03
+    },
+    {
+      "size": "2-7/8\"",
+      "od": 2.875,
+      "id": 2.441,
+      "weight_lbft": 6.85,
+      "capacity_bbl_ft": 0.00578,
+      "displacement_bbl_ft": 0.00928,
+      "capacity_L_m": 3.03
+    },
+    {
+      "size": "3-1/2\"",
+      "od": 3.5,
+      "id": 2.764,
+      "weight_lbft": 9.5,
+      "capacity_bbl_ft": 0.00741,
+      "displacement_bbl_ft": 0.01288,
+      "capacity_L_m": 3.88
+    },
+    {
+      "size": "3-1/2\"",
+      "od": 3.5,
+      "id": 3.0,
+      "weight_lbft": 13.3,
+      "capacity_bbl_ft": 0.00875,
+      "displacement_bbl_ft": 0.01806,
+      "capacity_L_m": 4.58
+    },
+    {
+      "size": "4\"",
+      "od": 4.0,
+      "id": 3.34,
+      "weight_lbft": 11.85,
+      "capacity_bbl_ft": 0.01083,
+      "displacement_bbl_ft": 0.01606,
+      "capacity_L_m": 5.67
+    },
+    {
+      "size": "4-1/2\"",
+      "od": 4.5,
+      "id": 3.826,
+      "weight_lbft": 13.75,
+      "capacity_bbl_ft": 0.01422,
+      "displacement_bbl_ft": 0.01863,
+      "capacity_L_m": 7.44
+    },
+    {
+      "size": "5\"",
+      "od": 5.0,
+      "id": 4.276,
+      "weight_lbft": 19.5,
+      "capacity_bbl_ft": 0.01776,
+      "displacement_bbl_ft": 0.02644,
+      "capacity_L_m": 9.30
+    },
+    {
+      "size": "5-1/2\"",
+      "od": 5.5,
+      "id": 4.778,
+      "weight_lbft": 21.9,
+      "capacity_bbl_ft": 0.02217,
+      "displacement_bbl_ft": 0.02968,
+      "capacity_L_m": 11.6
+    },
+    {
+      "size": "6-5/8\"",
+      "od": 6.625,
+      "id": 5.965,
+      "weight_lbft": 27.7,
+      "capacity_bbl_ft": 0.03453,
+      "displacement_bbl_ft": 0.03756,
+      "capacity_L_m": 18.1
+    }
+  ],
+  "drillCollars": [
+    {
+      "size": "4-3/4\" OD",
+      "od": 4.75,
+      "id": 2.0,
+      "weight_lbft": 63.5,
+      "capacity_bbl_ft": 0.00387,
+      "displacement_bbl_ft": 0.08608,
+      "capacity_L_m": 2.03
+    },
+    {
+      "size": "4-3/4\" OD",
+      "od": 4.75,
+      "id": 2.25,
+      "weight_lbft": 58.5,
+      "capacity_bbl_ft": 0.00491,
+      "displacement_bbl_ft": 0.07928,
+      "capacity_L_m": 2.57
+    },
+    {
+      "size": "6\" OD",
+      "od": 6.0,
+      "id": 2.5,
+      "weight_lbft": 91.5,
+      "capacity_bbl_ft": 0.00607,
+      "displacement_bbl_ft": 0.12404,
+      "capacity_L_m": 3.18
+    },
+    {
+      "size": "6-1/2\" OD",
+      "od": 6.5,
+      "id": 2.25,
+      "weight_lbft": 113.5,
+      "capacity_bbl_ft": 0.00491,
+      "displacement_bbl_ft": 0.15385,
+      "capacity_L_m": 2.57
+    },
+    {
+      "size": "6-1/2\" OD",
+      "od": 6.5,
+      "id": 2.5,
+      "weight_lbft": 107.5,
+      "capacity_bbl_ft": 0.00607,
+      "displacement_bbl_ft": 0.14573,
+      "capacity_L_m": 3.18
+    },
+    {
+      "size": "6-3/4\" OD",
+      "od": 6.75,
+      "id": 2.5,
+      "weight_lbft": 116.0,
+      "capacity_bbl_ft": 0.00607,
+      "displacement_bbl_ft": 0.15718,
+      "capacity_L_m": 3.18
+    },
+    {
+      "size": "8\" OD",
+      "od": 8.0,
+      "id": 3.0,
+      "weight_lbft": 147.0,
+      "capacity_bbl_ft": 0.00875,
+      "displacement_bbl_ft": 0.19927,
+      "capacity_L_m": 4.58
+    },
+    {
+      "size": "9-1/2\" OD",
+      "od": 9.5,
+      "id": 3.0,
+      "weight_lbft": 219.0,
+      "capacity_bbl_ft": 0.00875,
+      "displacement_bbl_ft": 0.29695,
+      "capacity_L_m": 4.58
+    }
+  ],
+  "hwdp": [
+    {
+      "size": "3-1/2\"",
+      "od": 3.5,
+      "id": 2.25,
+      "weight_lbft": 25.3,
+      "capacity_bbl_ft": 0.00491,
+      "displacement_bbl_ft": 0.03427,
+      "capacity_L_m": 2.57
+    },
+    {
+      "size": "4\"",
+      "od": 4.0,
+      "id": 2.75,
+      "weight_lbft": 30.0,
+      "capacity_bbl_ft": 0.00734,
+      "displacement_bbl_ft": 0.04066,
+      "capacity_L_m": 3.84
+    },
+    {
+      "size": "5\"",
+      "od": 5.0,
+      "id": 3.0,
+      "weight_lbft": 49.3,
+      "capacity_bbl_ft": 0.00875,
+      "displacement_bbl_ft": 0.06682,
+      "capacity_L_m": 4.58
+    },
+    {
+      "size": "5-1/2\"",
+      "od": 5.5,
+      "id": 3.0,
+      "weight_lbft": 62.0,
+      "capacity_bbl_ft": 0.00875,
+      "displacement_bbl_ft": 0.08403,
+      "capacity_L_m": 4.58
+    }
+  ],
+  "casing": [
+    {
+      "size": "4-1/2\"",
+      "weight_lbft": 9.5,
+      "od": 4.5,
+      "id": 4.09,
+      "grade": "J-55",
+      "capacity_bbl_ft": 0.01623,
+      "displacement_bbl_ft": 0.01288
+    },
+    {
+      "size": "5\"",
+      "weight_lbft": 11.5,
+      "od": 5.0,
+      "id": 4.56,
+      "grade": "J-55",
+      "capacity_bbl_ft": 0.02019,
+      "displacement_bbl_ft": 0.01558
+    },
+    {
+      "size": "5-1/2\"",
+      "weight_lbft": 14.0,
+      "od": 5.5,
+      "id": 5.012,
+      "grade": "J-55",
+      "capacity_bbl_ft": 0.02439,
+      "displacement_bbl_ft": 0.01897
+    },
+    {
+      "size": "5-1/2\"",
+      "weight_lbft": 17.0,
+      "od": 5.5,
+      "id": 4.892,
+      "grade": "P-110",
+      "capacity_bbl_ft": 0.02324,
+      "displacement_bbl_ft": 0.02304
+    },
+    {
+      "size": "7\"",
+      "weight_lbft": 20.0,
+      "od": 7.0,
+      "id": 6.456,
+      "grade": "J-55",
+      "capacity_bbl_ft": 0.04048,
+      "displacement_bbl_ft": 0.02711
+    },
+    {
+      "size": "7\"",
+      "weight_lbft": 23.0,
+      "od": 7.0,
+      "id": 6.366,
+      "grade": "K-55",
+      "capacity_bbl_ft": 0.03935,
+      "displacement_bbl_ft": 0.03117
+    },
+    {
+      "size": "7\"",
+      "weight_lbft": 26.0,
+      "od": 7.0,
+      "id": 6.276,
+      "grade": "N-80",
+      "capacity_bbl_ft": 0.03826,
+      "displacement_bbl_ft": 0.03523
+    },
+    {
+      "size": "7\"",
+      "weight_lbft": 29.0,
+      "od": 7.0,
+      "id": 6.184,
+      "grade": "P-110",
+      "capacity_bbl_ft": 0.03713,
+      "displacement_bbl_ft": 0.03930
+    },
+    {
+      "size": "9-5/8\"",
+      "weight_lbft": 32.3,
+      "od": 9.625,
+      "id": 9.001,
+      "grade": "J-55",
+      "capacity_bbl_ft": 0.07868,
+      "displacement_bbl_ft": 0.04377
+    },
+    {
+      "size": "9-5/8\"",
+      "weight_lbft": 36.0,
+      "od": 9.625,
+      "id": 8.921,
+      "grade": "K-55",
+      "capacity_bbl_ft": 0.07728,
+      "displacement_bbl_ft": 0.04880
+    },
+    {
+      "size": "9-5/8\"",
+      "weight_lbft": 40.0,
+      "od": 9.625,
+      "id": 8.835,
+      "grade": "N-80",
+      "capacity_bbl_ft": 0.07579,
+      "displacement_bbl_ft": 0.05421
+    },
+    {
+      "size": "9-5/8\"",
+      "weight_lbft": 47.0,
+      "od": 9.625,
+      "id": 8.681,
+      "grade": "P-110",
+      "capacity_bbl_ft": 0.07318,
+      "displacement_bbl_ft": 0.06371
+    },
+    {
+      "size": "10-3/4\"",
+      "weight_lbft": 40.5,
+      "od": 10.75,
+      "id": 10.05,
+      "grade": "K-55",
+      "capacity_bbl_ft": 0.09812,
+      "displacement_bbl_ft": 0.05489
+    },
+    {
+      "size": "10-3/4\"",
+      "weight_lbft": 45.5,
+      "od": 10.75,
+      "id": 9.95,
+      "grade": "N-80",
+      "capacity_bbl_ft": 0.09616,
+      "displacement_bbl_ft": 0.06168
+    },
+    {
+      "size": "10-3/4\"",
+      "weight_lbft": 51.0,
+      "od": 10.75,
+      "id": 9.85,
+      "grade": "P-110",
+      "capacity_bbl_ft": 0.09423,
+      "displacement_bbl_ft": 0.06913
+    },
+    {
+      "size": "13-3/8\"",
+      "weight_lbft": 48.0,
+      "od": 13.375,
+      "id": 12.615,
+      "grade": "J-55",
+      "capacity_bbl_ft": 0.15455,
+      "displacement_bbl_ft": 0.06507
+    },
+    {
+      "size": "13-3/8\"",
+      "weight_lbft": 54.5,
+      "od": 13.375,
+      "id": 12.515,
+      "grade": "K-55",
+      "capacity_bbl_ft": 0.15211,
+      "displacement_bbl_ft": 0.07387
+    },
+    {
+      "size": "13-3/8\"",
+      "weight_lbft": 61.0,
+      "od": 13.375,
+      "id": 12.415,
+      "grade": "N-80",
+      "capacity_bbl_ft": 0.14968,
+      "displacement_bbl_ft": 0.08267
+    },
+    {
+      "size": "13-3/8\"",
+      "weight_lbft": 68.0,
+      "od": 13.375,
+      "id": 12.347,
+      "grade": "P-110",
+      "capacity_bbl_ft": 0.14803,
+      "displacement_bbl_ft": 0.09215
+    },
+    {
+      "size": "16\"",
+      "weight_lbft": 65.0,
+      "od": 16.0,
+      "id": 15.25,
+      "grade": "K-55",
+      "capacity_bbl_ft": 0.22594,
+      "displacement_bbl_ft": 0.08808
+    },
+    {
+      "size": "16\"",
+      "weight_lbft": 75.0,
+      "od": 16.0,
+      "id": 15.124,
+      "grade": "N-80",
+      "capacity_bbl_ft": 0.22216,
+      "displacement_bbl_ft": 0.10165
+    },
+    {
+      "size": "18-5/8\"",
+      "weight_lbft": 87.5,
+      "od": 18.625,
+      "id": 17.755,
+      "grade": "K-55",
+      "capacity_bbl_ft": 0.30605,
+      "displacement_bbl_ft": 0.11858
+    },
+    {
+      "size": "20\"",
+      "weight_lbft": 94.0,
+      "od": 20.0,
+      "id": 19.124,
+      "grade": "K-55",
+      "capacity_bbl_ft": 0.35514,
+      "displacement_bbl_ft": 0.12738
+    }
+  ],
+  "openHole": [
+    {
+      "size": "5-7/8\"",
+      "diameter": 5.875,
+      "capacity_bbl_ft": 0.03354,
+      "capacity_L_m": 17.56
+    },
+    {
+      "size": "6\"",
+      "diameter": 6.0,
+      "capacity_bbl_ft": 0.03496,
+      "capacity_L_m": 18.30
+    },
+    {
+      "size": "6-1/8\"",
+      "diameter": 6.125,
+      "capacity_bbl_ft": 0.03641,
+      "capacity_L_m": 19.06
+    },
+    {
+      "size": "6-1/4\"",
+      "diameter": 6.25,
+      "capacity_bbl_ft": 0.03795,
+      "capacity_L_m": 19.86
+    },
+    {
+      "size": "7-7/8\"",
+      "diameter": 7.875,
+      "capacity_bbl_ft": 0.06025,
+      "capacity_L_m": 31.53
+    },
+    {
+      "size": "8-1/2\"",
+      "diameter": 8.5,
+      "capacity_bbl_ft": 0.07019,
+      "capacity_L_m": 36.73
+    },
+    {
+      "size": "8-3/4\"",
+      "diameter": 8.75,
+      "capacity_bbl_ft": 0.07439,
+      "capacity_L_m": 38.93
+    },
+    {
+      "size": "9-7/8\"",
+      "diameter": 9.875,
+      "capacity_bbl_ft": 0.09475,
+      "capacity_L_m": 49.59
+    },
+    {
+      "size": "12-1/4\"",
+      "diameter": 12.25,
+      "capacity_bbl_ft": 0.14579,
+      "capacity_L_m": 76.30
+    },
+    {
+      "size": "14-3/4\"",
+      "diameter": 14.75,
+      "capacity_bbl_ft": 0.21136,
+      "capacity_L_m": 110.63
+    },
+    {
+      "size": "17-1/2\"",
+      "diameter": 17.5,
+      "capacity_bbl_ft": 0.29748,
+      "capacity_L_m": 155.69
+    },
+    {
+      "size": "26\"",
+      "diameter": 26.0,
+      "capacity_bbl_ft": 0.65651,
+      "capacity_L_m": 343.56
+    },
+    {
+      "size": "36\"",
+      "diameter": 36.0,
+      "capacity_bbl_ft": 1.25943,
+      "capacity_L_m": 659.05
+    }
+  ],
+  "annularCapacities": [
+    {
+      "holeSize": "17-1/2\"",
+      "pipeSize": "5\" DP",
+      "pipeOD": 5.0,
+      "holeID": 17.5,
+      "capacity_bbl_ft": 0.2733,
+      "capacity_L_m": 143.1
+    },
+    {
+      "holeSize": "12-1/4\"",
+      "pipeSize": "5\" DP",
+      "pipeOD": 5.0,
+      "holeID": 12.25,
+      "capacity_bbl_ft": 0.1215,
+      "capacity_L_m": 63.6
+    },
+    {
+      "holeSize": "12-1/4\"",
+      "pipeSize": "6-1/2\" DC",
+      "pipeOD": 6.5,
+      "holeID": 12.25,
+      "capacity_bbl_ft": 0.1049,
+      "capacity_L_m": 54.9
+    },
+    {
+      "holeSize": "8-1/2\"",
+      "pipeSize": "5\" DP",
+      "pipeOD": 5.0,
+      "holeID": 8.5,
+      "capacity_bbl_ft": 0.0459,
+      "capacity_L_m": 24.0
+    },
+    {
+      "holeSize": "8-1/2\"",
+      "pipeSize": "4-3/4\" DC",
+      "pipeOD": 4.75,
+      "holeID": 8.5,
+      "capacity_bbl_ft": 0.0482,
+      "capacity_L_m": 25.2
+    },
+    {
+      "holeSize": "13-3/8\" Csg",
+      "pipeSize": "5\" DP",
+      "pipeOD": 5.0,
+      "holeID": 12.415,
+      "capacity_bbl_ft": 0.1256,
+      "capacity_L_m": 65.7
+    },
+    {
+      "holeSize": "9-5/8\" Csg",
+      "pipeSize": "5\" DP",
+      "pipeOD": 5.0,
+      "holeID": 8.921,
+      "capacity_bbl_ft": 0.0515,
+      "capacity_L_m": 27.0
+    },
+    {
+      "holeSize": "7\" Csg",
+      "pipeSize": "3-1/2\" DP",
+      "pipeOD": 3.5,
+      "holeID": 6.366,
+      "capacity_bbl_ft": 0.0289,
+      "capacity_L_m": 15.1
+    }
+  ]
+}

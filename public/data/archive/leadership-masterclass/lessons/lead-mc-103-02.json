@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-103-02",
+  "moduleId": "LEAD-MC-103",
+  "courseId": "LEAD-MC",
+  "title": "Maintaining Composure When Systems Fail",
+  "type": "lesson",
+  "content": "Composure doesn't mean emotionless—it means your decision-making process remains intact even when conditions deteriorate. Panic spreads faster than information during system failures. Your team takes behavioral cues from you: if you're visibly overwhelmed, they assume the situation is unmanageable. Effective leaders acknowledge the severity of the situation while projecting confidence in the team's ability to respond. This requires deliberate self-management: slowing your breathing, verbalizing your thought process, and focusing on controllable actions rather than cascading consequences.",
+  "mcq": {
+    "question": "A critical system failure occurs during peak operations. The leader's initial internal reaction is near-panic, but they pause for ten seconds, take two deep breaths, and then say to the team: 'Alright, here's what we know, here's what we don't know yet, and here's what we're doing first.' The team begins executing immediately. What principle did the leader apply?",
+    "options": {
+      "A": "The leader faked confidence to manipulate the team's response",
+      "B": "The leader used a brief reset to shift from emotional reaction to deliberate response",
+      "C": "The leader wasted valuable time with unnecessary breathing exercises",
+      "D": "The leader should have acted immediately without pausing"
+    },
+    "correctOption": "B",
+    "explanation": "Ten seconds of self-regulation prevented a panic response from becoming team-wide chaos. Acknowledging what's known and unknown reduces uncertainty, and immediate action creates focus. This isn't faking composure—it's managing your physiological stress response so you can think clearly. Teams need leaders who can process stress without letting it degrade decision quality."
+  },
+  "openQuestions": [
+    "What physical or mental technique do you use to reset yourself when you feel stress escalating?",
+    "How does your team know the difference between when you're concerned versus when you're losing control?"
+  ]
+}

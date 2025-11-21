@@ -1,0 +1,24 @@
+{
+  "lessonId": "LEAD-MC-101-04",
+  "moduleId": "LEAD-MC-101",
+  "courseId": "LEAD-MC",
+  "title": "Self-Diagnostic: Leading vs Managing",
+  "type": "reflection",
+  "content": "Most people promoted into leadership spend their first year managing tasks instead of leading people. This self-assessment helps you identify where you actually spend your energy. Leadership focuses on direction, development, culture, and removing obstacles. Management focuses on process execution, resource allocation, and variance control. Both matter—but if you're only managing, you're not leading.",
+  "scenario": {
+    "story": "You arrive Monday morning to find three issues waiting: a key piece of equipment failed over the weekend, one of your strongest performers requested a meeting to discuss 'career development,' and another department is asking for your input on a process change that affects your team. You have two hours before back-to-back operational meetings consume the rest of your day.",
+    "options": {
+      "A": "Handle the equipment failure first, delegate the process input to a senior team member, and reschedule the career conversation for later in the week",
+      "B": "Delegate the equipment failure to your maintenance lead, take the career conversation immediately, and provide input on the process change",
+      "C": "Handle the equipment failure yourself to ensure it's done right, then address whichever other issue has time left",
+      "D": "Postpone all three until you have proper time to address them thoroughly"
+    },
+    "recommendedResponse": "B",
+    "explanation": "Option B demonstrates leadership prioritization. The equipment failure is a management task best handled by a capable subordinate—delegating it builds their capability and frees you for leadership work. The career conversation is a leadership priority: strong performers who are thinking about development need immediate attention or they start looking elsewhere. Process input affects your team's future operating environment, making it worth your strategic involvement. Option A delays a critical leadership moment. Option C is pure management—you're doing technical work instead of leading. Option D avoids decisions entirely."
+  },
+  "openQuestions": [
+    "Review your last week. What percentage of your time went to leadership activities versus management tasks?",
+    "What is one management task you could delegate this week to create space for actual leadership?",
+    "If a strong performer is questioning their future on your team, how quickly do you typically respond? What does your response time signal about priorities?"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "documentId": "advanced-drilling",
+  "collectionId": "advanced-drilling",
+  "title": "Advanced Drilling Operations",
+  "provider": "Claymore & Colt",
+  "description": "Operational excellence training beyond basic certification. Uses real well data for scenario-based learning. Covers HPHT, MPD, ERD, deepwater, H2S, and complex drilling operations. Includes daily coaching system for continuous competency development.",
+  "courses": [
+    {
+      "courseId": "ADO",
+      "title": "Advanced Drilling Operations",
+      "folder": "ado-course",
+      "modules": 12,
+      "lessons": 54,
+      "topics": [
+        "HPHT Operations",
+        "Managed Pressure Drilling (MPD)",
+        "Extended Reach & ECD Management",
+        "Continuous Circulation Systems",
+        "H2S Operations",
+        "Deepwater & Subsea Operations",
+        "Stuck Pipe Prevention & Recovery",
+        "Wellbore Stability",
+        "Lost Circulation Management",
+        "Tripping Operations",
+        "Casing & Cementing",
+        "Real-Time PPFG Interpretation"
+      ]
+    }
+  ],
+  "dailyCoachingSystem": {
+    "folder": "advanced-question-templates",
+    "description": "Dynamic questions using real well data for daily crew briefings",
+    "concept": "Every morning, crew receives explanation about current drilling section plus 1-2 questions",
+    "templateCount": 20,
+    "categories": [
+      "OPERATIONAL_DECISIONS",
+      "HAZARD_RESPONSE",
+      "MPD_OPERATIONS",
+      "SUBSEA_ADVANCED",
+      "EMERGENCY_SCENARIOS",
+      "LAND_RIG_OPERATIONS"
+    ]
+  },
+  "wellProfiles": {
+    "folder": "well-profiles",
+    "description": "Real well data for training scenarios covering different rig types and environments",
+    "trainingWells": [
+      {
+        "wellId": "CC-PHOENIX-702",
+        "wellName": "Phoenix-702",
+        "description": "HPHT deepwater exploration well - training reference",
+        "rigType": "DRILLSHIP",
+        "bopType": "subsea",
+        "environment": "Deepwater",
+        "keyScenarios": ["HPHT operations", "MPD", "Subsea well control", "EDS decisions", "Riser margin"]
+      },
+      {
+        "wellId": "CC-SANDSTONE-301",
+        "wellName": "Sandstone-301",
+        "description": "Directional land well through salt section - training reference",
+        "rigType": "LAND",
+        "bopType": "surface",
+        "environment": "Middle East Land",
+        "keyScenarios": ["Salt section drilling", "Surface BOP well control", "OBM conversion", "Lost circulation", "Remote logistics"]
+      }
+    ]
+  },
+  "prerequisite": "IWCF Level 4 or equivalent well control certification",
+  "targetAudience": [
+    "Drillers",
+    "Toolpushers",
+    "OIMs",
+    "Drilling Engineers",
+    "Well Control Specialists",
+    "MPD Operators"
+  ],
+  "relatedProducts": {
+    "certification": "well-control",
+    "documentation": "digital-manuals"
+  },
+  "tags": ["advanced-drilling", "hpht", "mpd", "erd", "deepwater", "operational-training", "daily-coaching"]
+}

@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-112-05",
+  "moduleId": "LEAD-MC-112",
+  "courseId": "LEAD-MC",
+  "title": "Post-Failure Organizational Recovery",
+  "type": "lesson",
+  "content": "How organizations respond after major failures determines whether they become stronger or permanently damaged. Recovery requires: honest analysis of what happened without scapegoating, visible leadership accountability, systematic addressing of root causes, rebuilding trust through demonstrated change, and treating failure as learning opportunity. Organizations that punish failure become risk-averse and defensive. Organizations that learn from failure build resilience.",
+  "mcq": {
+    "question": "After a significant organizational failure, leadership conducts investigation, identifies individuals who made errors, terminates or demotes them, announces the issue is resolved, and moves forward. Six months later, similar problems emerge. People are more cautious but less likely to surface concerns early. What pattern is occurring?",
+    "options": {
+      "A": "The wrong people were held accountable and the real problems remain",
+      "B": "The organization treated failure as individual problem rather than system problem, missing root causes and creating defensive culture",
+      "C": "More aggressive accountability is needed to prevent future failures",
+      "D": "The individuals who were terminated should have been replaced with more capable people"
+    },
+    "correctOption": "B",
+    "explanation": "Blaming individuals for system failures misses the opportunity to improve and creates fear that prevents future problem-reporting. The pattern will repeat because root causes weren't addressed—just people were removed. Option B recognizes this as learning failure disguised as accountability. Effective post-failure response asks: what systemic issues allowed this to happen? How do we prevent it structurally? What did we learn? Individual accountability may be appropriate, but it's rarely the complete answer. Organizations that only punish become places where people hide problems until they explode. Organizations that learn systematically become more resilient. The hesitance to surface concerns is evidence that the response created fear, not learning."
+  },
+  "openQuestions": [
+    "Think of a major failure in your organization. Did the response focus more on blaming individuals or fixing systems?",
+    "How does your organization treat people who report problems early versus those who hide them until they become crises?"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "checklistId": "DWOP-CL-007",
+  "title": "Production Hole Drilling Checklist",
+  "section": "Production Section Drilling (HPHT/Tight Window)",
+  "rigTypes": ["LAND", "JACKUP", "SEMISUBMERSIBLE", "DRILLSHIP"],
+  "bopType": "all",
+  "breakoutRoom": "A",
+  "participants": ["Drilling Engineer", "Well Control Specialist", "MPD Specialist", "Driller"],
+  "aiParticipant": true,
+  "categories": [
+    {
+      "category": "HPHT/Narrow Window Management",
+      "items": [
+        {"item": "Drilling margin analysis completed", "critical": true},
+        {"item": "MW window at TD confirmed (pore vs fracture)", "critical": true},
+        {"item": "MPD requirements assessed", "critical": true},
+        {"item": "Connection practices for narrow margin"},
+        {"item": "Trip margin management plan"},
+        {"item": "ECD management strategy confirmed"}
+      ]
+    },
+    {
+      "category": "MPD Operations (if applicable)",
+      "items": [
+        {"item": "MPD equipment tested and ready", "critical": true},
+        {"item": "Surface back pressure schedule established"},
+        {"item": "Control mode (SBP/SPP/Flow) confirmed"},
+        {"item": "MPD to conventional transition procedure"},
+        {"item": "MPD influx response procedure", "critical": true},
+        {"item": "Choke manifold testing complete"}
+      ]
+    },
+    {
+      "category": "Well Control - Production Section",
+      "items": [
+        {"item": "Kick tolerance at reservoir confirmed", "critical": true},
+        {"item": "Gas migration rates calculated"},
+        {"item": "Kill mud density and volume confirmed"},
+        {"item": "Dynamic kill parameters calculated"},
+        {"item": "Bullheading contingency reviewed"},
+        {"item": "Relief well plan in place (if required)"}
+      ]
+    },
+    {
+      "category": "Formation Evaluation",
+      "items": [
+        {"item": "Coring points identified"},
+        {"item": "Wireline logging program confirmed"},
+        {"item": "Formation testing requirements"},
+        {"item": "FPWD interpretation plan"},
+        {"item": "Hydrocarbon sampling requirements"}
+      ]
+    },
+    {
+      "category": "H2S Contingency (if applicable)",
+      "items": [
+        {"item": "H2S concentrations prognosed", "critical": true},
+        {"item": "SCBA equipment on board and tested"},
+        {"item": "H2S detection equipment calibrated"},
+        {"item": "H2S drill conducted"},
+        {"item": "Muster procedures reviewed"},
+        {"item": "Wind direction monitoring plan"}
+      ]
+    },
+    {
+      "category": "Connection Procedures",
+      "items": [
+        {"item": "Flow check every connection", "critical": true},
+        {"item": "Connection gas monitoring"},
+        {"item": "Pump-off procedure for narrow margin"},
+        {"item": "Survey/downlink timing minimized"},
+        {"item": "Back-reaming connection procedure"}
+      ]
+    }
+  ],
+  "aiQuestions": [
+    "Your drilling window is 0.5 ppg (15.8 to 16.3 ppg) - have you modeled worst-case ECD surge during connections?",
+    "MPD is planned for this section - what's your influx response if you detect 0.5 bbl gain?",
+    "H2S is prognosed at 500 ppm at reservoir - confirm all crew have completed H2S training and drills?",
+    "If you lose MPD capability mid-section, can you continue conventionally or must you set casing?",
+    "Kick tolerance at TD is 15 bbls - with gas expansion, what's the surface volume at shoe?",
+    "Your connection procedure shows 5-minute flow checks - is this adequate for detecting connection gas in HPHT?"
+  ],
+  "actionItemTemplate": {
+    "fields": ["item", "owner", "dueDate", "status", "notes"]
+  },
+  "tags": ["dwop", "checklist", "production-hole", "hpht", "mpd", "well-control"]
+}

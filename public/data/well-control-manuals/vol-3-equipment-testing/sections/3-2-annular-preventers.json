@@ -1,0 +1,26 @@
+{
+  "sectionId": "3.2",
+  "title": "Annular Preventers",
+  "content": {
+    "3.2.1": {
+      "title": "Design and Function",
+      "content": "**How It Works:**\nAnnular preventers use a donut-shaped rubber element that, when squeezed by hydraulic pressure, closes around any shape or size of pipe in the bore.\n\n**Element:**\n- Reinforced rubber compound\n- Deforms to seal around pipe, kelly, casing, or open hole\n- Different element types for different applications\n\n**Operating Principle:**\n1. Hydraulic pressure applied to close side\n2. Piston pushes down on element\n3. Element is squeezed inward\n4. Element seals around pipe or closes on open hole\n5. Wellbore pressure helps maintain seal"
+    },
+    "3.2.2": {
+      "title": "Capabilities",
+      "content": "**Sealing Around:**\n- Drillpipe (various sizes)\n- Tool joints\n- Kelly (if used)\n- Casing\n- Wireline\n- Open hole (complete closure)\n\n**Stripping:**\n- Can strip pipe through with element partially closed\n- Reduces operating pressure for stripping\n- Wear on element - monitor condition\n\n**Limitations:**\n- Cannot shear pipe\n- Element wears with use\n- Temperature and chemical exposure degrade element\n- Limited cycles before replacement needed"
+    },
+    "3.2.3": {
+      "title": "Operating Pressure",
+      "content": "**Closing Pressure:**\n- Higher pressure = tighter seal\n- Pressure needed depends on wellbore pressure and pipe size\n- Manufacturer provides closing pressure charts\n\n**Typical:**\n- Full close (no pipe): 1500 psi operating\n- Around drillpipe: 1200-1500 psi\n- Stripping: 600-1000 psi (reduced)\n\n**Regulating:**\n- Use regulator on control system\n- Avoid over-pressuring (damages element)\n- Adjust for operation (sealing vs stripping)\n\n**Wellbore Assist:**\nWellbore pressure helps keep element closed. Higher well pressure requires less closing pressure."
+    },
+    "3.2.4": {
+      "title": "Testing",
+      "content": "**Pressure Test:**\n- Test to working pressure on pipe\n- Test to lower pressure on open hole (element-only seal)\n- Per API RP 53 or applicable standard\n\n**Function Test:**\n- Verify opens and closes fully\n- Check closing time\n- Observe for leaks\n- Typically at initial installation and periodically\n\n**Element Inspection:**\n- Visual inspection when practical\n- Check for cuts, tears, swelling\n- Replace if damaged or excessively worn\n\n**Documentation:**\n- Record all tests\n- Note any anomalies\n- Track element usage (cycles, stripping distance)"
+    },
+    "3.2.5": {
+      "title": "Maintenance",
+      "content": "**Element Life:**\n- Depends on usage, temperature, fluid exposure\n- Stripping wears element significantly\n- Track cycles and operating conditions\n\n**Replacement:**\n- Replace per manufacturer recommendation\n- Replace if damaged\n- Replace after significant stripping operations\n- Have spare elements on location\n\n**Seals:**\n- Piston seals require periodic replacement\n- Check for leaks during function tests\n- Follow manufacturer service intervals"
+    }
+  }
+}

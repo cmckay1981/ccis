@@ -1,0 +1,241 @@
+{
+  "industryCode": "HCR",
+  "industryName": "Healthcare",
+  "description": "Comprehensive scenario pack for all healthcare operations",
+  "targetOrganizations": ["Hospitals", "Clinics", "Emergency services", "Long-term care", "Ambulatory surgery", "Home health"],
+
+  "departments": {
+    "NURSING_INPATIENT": {
+      "name": "Nursing - Inpatient",
+      "roles": ["Registered Nurse", "Charge Nurse", "Nurse Manager", "Clinical Nurse Specialist", "Patient Care Technician"],
+      "scenarios": {
+        "SA": "Nurse notices vital sign trend but doesn't connect to early sepsis indicators.",
+        "DM": "Deciding whether to call rapid response vs. continue monitoring borderline patient.",
+        "COMM": "Communicating patient status change to physician using SBAR format.",
+        "TW": "Coordinating patient care during shift change with multiple acuity levels.",
+        "LEAD": "Charge nurse managing unit staffing when census unexpectedly increases.",
+        "HF": "Medication administration accuracy during high-interruption environment."
+      }
+    },
+
+    "NURSING_ED": {
+      "name": "Emergency Department",
+      "roles": ["ED Nurse", "Triage Nurse", "ED Charge Nurse", "Trauma Nurse", "ED Nurse Manager"],
+      "scenarios": {
+        "SA": "Triage nurse assesses current patient but doesn't anticipate waiting room deterioration.",
+        "DM": "Deciding triage level for patient with atypical presentation.",
+        "COMM": "Communicating critical information during trauma team activation.",
+        "TW": "Coordinating multiple trauma activations with limited resources.",
+        "LEAD": "Charge nurse managing department during mass casualty incident.",
+        "HF": "Decision quality after 10 hours of high-acuity patient care."
+      }
+    },
+
+    "PHYSICIANS": {
+      "name": "Physicians / Providers",
+      "roles": ["Attending Physician", "Resident", "Hospitalist", "Specialist", "Department Chief", "Medical Director"],
+      "scenarios": {
+        "SA": "Physician reviews current labs but doesn't connect to medication interaction risk.",
+        "DM": "Deciding treatment approach when evidence supports multiple options.",
+        "COMM": "Communicating diagnosis and prognosis to patient and family clearly.",
+        "TW": "Coordinating care plan with multiple consulting specialists.",
+        "LEAD": "Attending managing resident education while maintaining patient safety.",
+        "HF": "Diagnostic accuracy during overnight call after multiple admissions."
+      }
+    },
+
+    "SURGICAL_SERVICES": {
+      "name": "Surgical Services / OR",
+      "roles": ["Surgeon", "Anesthesiologist", "CRNA", "Scrub Tech", "Circulator", "OR Manager"],
+      "scenarios": {
+        "SA": "Anesthesiologist monitors vitals but doesn't project airway complication risk.",
+        "DM": "Deciding whether to proceed with surgery when patient presents new symptom.",
+        "COMM": "Communicating count discrepancy during surgical closing.",
+        "TW": "Coordinating room turnover between cases with limited staff.",
+        "LEAD": "Surgeon managing team dynamics when conflict arises during procedure.",
+        "HF": "Attention to detail during long complex surgical case."
+      }
+    },
+
+    "PHARMACY": {
+      "name": "Pharmacy",
+      "roles": ["Clinical Pharmacist", "Staff Pharmacist", "Pharmacy Technician", "Pharmacy Manager", "Director of Pharmacy"],
+      "scenarios": {
+        "SA": "Pharmacist reviews order but doesn't connect to patient's other medications.",
+        "DM": "Deciding whether to approve therapeutic substitution during shortage.",
+        "COMM": "Communicating drug interaction concern to prescribing physician.",
+        "TW": "Coordinating medication preparation during code blue.",
+        "LEAD": "Pharmacy manager prioritizing during multiple stat medication requests.",
+        "HF": "Verification accuracy during high-volume dispensing periods."
+      }
+    },
+
+    "LABORATORY": {
+      "name": "Laboratory / Pathology",
+      "roles": ["Medical Technologist", "Lab Technician", "Phlebotomist", "Pathologist", "Lab Manager"],
+      "scenarios": {
+        "SA": "Tech notices sample quality issue but doesn't connect to potential collection problem.",
+        "DM": "Deciding whether to report critical value via exception or standard protocol.",
+        "COMM": "Communicating critical lab result to appropriate provider immediately.",
+        "TW": "Coordinating STAT specimen processing during ED surge.",
+        "LEAD": "Lab manager addressing specimen labeling error pattern.",
+        "HF": "Analysis accuracy during overnight shift with limited staffing."
+      }
+    },
+
+    "IMAGING_RADIOLOGY": {
+      "name": "Imaging / Radiology",
+      "roles": ["Radiologic Technologist", "CT Tech", "MRI Tech", "Sonographer", "Radiologist", "Imaging Manager"],
+      "scenarios": {
+        "SA": "Tech positions patient but doesn't anticipate contrast reaction risk factors.",
+        "DM": "Deciding imaging protocol when order doesn't match clinical presentation.",
+        "COMM": "Communicating urgent finding to ordering provider for immediate action.",
+        "TW": "Coordinating portable imaging with nursing care activities.",
+        "LEAD": "Supervisor managing equipment failure during high-volume period.",
+        "HF": "Image quality consistency during back-to-back examinations."
+      }
+    },
+
+    "RESPIRATORY_THERAPY": {
+      "name": "Respiratory Therapy",
+      "roles": ["Respiratory Therapist", "RT Supervisor", "RT Manager", "ECMO Specialist"],
+      "scenarios": {
+        "SA": "RT notices ventilator parameter but doesn't project weaning readiness.",
+        "DM": "Deciding whether to call for intubation vs. continue BiPAP trial.",
+        "COMM": "Communicating patient respiratory status change to care team.",
+        "TW": "Coordinating care during rapid response or code blue.",
+        "LEAD": "Supervisor managing RT coverage across multiple critical patients.",
+        "HF": "Assessment accuracy when managing multiple ventilator patients."
+      }
+    },
+
+    "PATIENT_TRANSPORT": {
+      "name": "Patient Transport / Logistics",
+      "roles": ["Patient Transporter", "Transport Supervisor", "Logistics Coordinator", "Dispatch"],
+      "scenarios": {
+        "SA": "Transporter moving patient doesn't notice oxygen tank level.",
+        "DM": "Deciding transport route when elevator is out of service for critical patient.",
+        "COMM": "Communicating patient handoff information to receiving department.",
+        "TW": "Coordinating multiple transport requests during discharge surge.",
+        "LEAD": "Supervisor prioritizing competing urgent transport requests.",
+        "HF": "Attention to safety details during high-volume transport periods."
+      }
+    },
+
+    "ENVIRONMENTAL_SERVICES": {
+      "name": "Environmental Services / Housekeeping",
+      "roles": ["EVS Technician", "EVS Supervisor", "Infection Prevention Liaison", "EVS Manager"],
+      "scenarios": {
+        "SA": "EVS tech cleaning room doesn't notice isolation signage change.",
+        "DM": "Deciding cleaning protocol when isolation status is unclear.",
+        "COMM": "Communicating room readiness status to nursing and admissions.",
+        "TW": "Coordinating terminal clean with nursing for urgent admission.",
+        "LEAD": "Supervisor managing team during outbreak requiring enhanced cleaning.",
+        "HF": "Cleaning protocol compliance during extended shift."
+      }
+    },
+
+    "REGISTRATION_ACCESS": {
+      "name": "Registration / Patient Access",
+      "roles": ["Registrar", "Insurance Verifier", "Financial Counselor", "Access Supervisor", "Revenue Cycle Manager"],
+      "scenarios": {
+        "SA": "Registrar enters information but doesn't notice discrepancy with previous records.",
+        "DM": "Deciding how to handle patient without identification in emergency situation.",
+        "COMM": "Communicating financial options to patient sensitively and clearly.",
+        "TW": "Coordinating registration during mass casualty influx.",
+        "LEAD": "Supervisor managing queue during ED surge with limited staff.",
+        "HF": "Data entry accuracy during high-volume registration periods."
+      }
+    },
+
+    "CASE_MANAGEMENT": {
+      "name": "Case Management / Social Work",
+      "roles": ["Case Manager", "Social Worker", "Discharge Planner", "Utilization Review", "Care Coordination Manager"],
+      "scenarios": {
+        "SA": "Case manager focuses on current discharge but doesn't anticipate readmission risk factors.",
+        "DM": "Deciding discharge disposition when patient and family disagree on plan.",
+        "COMM": "Communicating complex discharge needs across multiple providers and family.",
+        "TW": "Coordinating care conference with physician, nursing, family, and receiving facility.",
+        "LEAD": "Manager addressing discharge delays affecting hospital throughput.",
+        "HF": "Decision quality when managing excessive caseload."
+      }
+    },
+
+    "BIOMEDICAL_ENGINEERING": {
+      "name": "Biomedical Engineering / Clinical Engineering",
+      "roles": ["Biomedical Technician", "Clinical Engineer", "Biomed Supervisor", "Director of Clinical Engineering"],
+      "scenarios": {
+        "SA": "Tech services equipment but doesn't connect wear pattern to pending failure.",
+        "DM": "Deciding whether to repair critical equipment vs. take offline for safety.",
+        "COMM": "Communicating equipment safety concern to clinical staff.",
+        "TW": "Coordinating equipment maintenance with clinical operations.",
+        "LEAD": "Manager prioritizing repairs during multiple critical equipment failures.",
+        "HF": "Technical accuracy during emergency equipment repairs."
+      }
+    },
+
+    "INFECTION_PREVENTION": {
+      "name": "Infection Prevention / Quality",
+      "roles": ["Infection Preventionist", "Quality Specialist", "Patient Safety Officer", "Quality Director"],
+      "scenarios": {
+        "SA": "IP specialist reviews data but doesn't connect cases to emerging cluster.",
+        "DM": "Deciding whether to escalate potential outbreak vs. continue surveillance.",
+        "COMM": "Communicating infection control requirements to clinical staff.",
+        "TW": "Coordinating outbreak response across multiple departments.",
+        "LEAD": "Director managing hospital-wide response to identified outbreak.",
+        "HF": "Surveillance accuracy when monitoring multiple infection types."
+      }
+    },
+
+    "EMS_PREHOSPITAL": {
+      "name": "EMS / Prehospital",
+      "roles": ["EMT", "Paramedic", "EMS Supervisor", "Flight Medic", "EMS Medical Director"],
+      "scenarios": {
+        "SA": "Paramedic assesses scene but doesn't anticipate secondary hazards.",
+        "DM": "Deciding transport destination when multiple hospitals could be appropriate.",
+        "COMM": "Communicating patient status to receiving hospital during transport.",
+        "TW": "Coordinating with fire, police, and hospital during multi-vehicle accident.",
+        "LEAD": "Supervisor managing multiple units during mass casualty incident.",
+        "HF": "Assessment accuracy after multiple consecutive calls."
+      }
+    }
+  },
+
+  "crossDepartmentScenarios": [
+    {
+      "title": "The Rapid Response",
+      "departments": ["NURSING_INPATIENT", "PHYSICIANS", "RESPIRATORY_THERAPY", "PHARMACY"],
+      "scenario": "Patient deterioration requiring rapid response team. Multiple disciplines must coordinate assessment, intervention, and potential ICU transfer.",
+      "competencies": ["SA", "DM", "COMM", "TW"]
+    },
+    {
+      "title": "The Surgical Emergency",
+      "departments": ["SURGICAL_SERVICES", "LABORATORY", "NURSING_ED", "PATIENT_TRANSPORT"],
+      "scenario": "Emergency surgery required for unstable patient. OR must prepare while patient stabilized, blood products obtained, and safe transport coordinated.",
+      "competencies": ["DM", "COMM", "TW", "LEAD"]
+    },
+    {
+      "title": "The Outbreak Response",
+      "departments": ["INFECTION_PREVENTION", "NURSING_INPATIENT", "ENVIRONMENTAL_SERVICES", "LABORATORY"],
+      "scenario": "Suspected infectious outbreak identified. Requires isolation protocols, enhanced cleaning, surveillance, and communication across hospital.",
+      "competencies": ["SA", "DM", "COMM", "LEAD"]
+    },
+    {
+      "title": "The Discharge Crunch",
+      "departments": ["CASE_MANAGEMENT", "NURSING_INPATIENT", "PATIENT_TRANSPORT", "REGISTRATION_ACCESS"],
+      "scenario": "Hospital at capacity with multiple admissions pending. Requires coordinated discharge process to create bed availability.",
+      "competencies": ["SA", "TW", "LEAD", "HF"]
+    }
+  ],
+
+  "terminology": {
+    "operator": "staff member / clinician",
+    "control room": "nursing station / command center",
+    "shift handover": "shift change / handoff",
+    "incident": "event / occurrence",
+    "crew": "care team / staff",
+    "supervisor": "charge / supervisor / manager",
+    "procedure": "protocol / policy",
+    "equipment failure": "equipment issue / downtime"
+  }
+}

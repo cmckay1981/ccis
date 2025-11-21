@@ -1,0 +1,23 @@
+{
+  "moduleId": "WC-SF-107",
+  "courseId": "WC-SF",
+  "title": "Well Kill Calculations",
+  "description": "Master the essential calculations for killing a well: Kill MW, ICP, FCP, and pressure schedules. This module is heavily tested on the IWCF exam.",
+  "order": 7,
+  "lessonIds": [
+    "WC-SF-107-01",
+    "WC-SF-107-02",
+    "WC-SF-107-03",
+    "WC-SF-107-04",
+    "WC-SF-107-05"
+  ],
+  "examWeight": "Critical",
+  "iwcfSyllabus": "PP-08",
+  "documentId": "WC-SF-107",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-107"
+  ]
+}

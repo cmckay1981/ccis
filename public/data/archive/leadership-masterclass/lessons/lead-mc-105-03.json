@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-105-03",
+  "moduleId": "LEAD-MC-105",
+  "courseId": "LEAD-MC",
+  "title": "Managing Declining Performers",
+  "type": "lesson",
+  "content": "Performance decline in previously capable team members signals something has changed—personal circumstances, job fit, motivation, or organizational factors. Leaders must diagnose the cause before deciding on a response. Is this temporary struggle requiring support, skill gap requiring training, or disengagement requiring accountability? The approach differs dramatically based on root cause. Treating all decline as a performance problem misses opportunities to recover valuable people and may accelerate their departure.",
+  "mcq": {
+    "question": "A previously strong performer has been declining for three months. Direct conversation reveals they feel burned out from repeatedly covering for underperforming teammates while receiving no additional recognition. They're now doing minimum acceptable work. What's the appropriate response?",
+    "options": {
+      "A": "Document the performance decline and establish a performance improvement plan",
+      "B": "Recognize this as a workload and equity issue, address the underperformance problem, and re-engage the person",
+      "C": "Accept that some people plateau and redistribute their critical work to others",
+      "D": "Offer the person a less demanding role if they can't handle the pressure"
+    },
+    "correctOption": "B",
+    "explanation": "This isn't a performance problem—it's a leadership problem. The person is responding rationally to an inequitable situation. They carried extra load without recognition while watching others coast, so they've recalibrated to minimum effort. Option A treats the symptom and will likely drive them to leave. Option C writes off a previously valuable contributor. Option D misreads the situation entirely. Option B addresses the actual problem: fix the equity issue by dealing with underperformers, acknowledge the person's contribution, and give them reason to re-engage. This is recoverable if leadership acts."
+  },
+  "openQuestions": [
+    "Think of someone on your team whose performance has declined. Have you diagnosed the root cause or just addressed the symptoms?",
+    "How do you differentiate between someone who needs support versus someone who needs accountability?"
+  ]
+}

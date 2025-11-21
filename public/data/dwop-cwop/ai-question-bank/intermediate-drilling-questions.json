@@ -1,0 +1,21 @@
+{
+  "categoryId": "INTERMEDIATE_DRILLING",
+  "title": "Intermediate Hole Drilling - AI Probing Questions",
+  "breakoutRoom": "A",
+  "targetParticipants": ["Drilling Engineer", "Driller", "Directional Driller", "MWD Engineer", "Well Control Specialist"],
+  "questions": [
+    {"questionId": "ID-001", "question": "Pore pressure increases from 10.5 to 13.2 ppg through this section - what are your kick detection protocols during weight-up?", "type": "verification", "focus": "Kick detection", "expectedResponse": "Enhanced monitoring during transition zones"},
+    {"questionId": "ID-002", "question": "Kick tolerance at TD is 25 bbls - is this acceptable given your influx detection capability?", "type": "assumption_challenge", "focus": "Well control margins", "expectedResponse": "Detection capability vs tolerance assessment"},
+    {"questionId": "ID-003", "question": "The programme shows 15 ppg MW at 4,000m but fracture gradient is 15.8 ppg - what's your response if LOT comes in low?", "type": "what_if", "focus": "LOT contingency", "expectedResponse": "Low LOT response plan"},
+    {"questionId": "ID-004", "question": "Shale stability model shows 72-hour limit - your section time estimate is 96 hours. What's your mitigation?", "type": "gap_identification", "focus": "Wellbore stability", "expectedResponse": "Extended exposure mitigation strategy"},
+    {"questionId": "ID-005", "question": "If you encounter unexpected overpressure, what's your maximum safe weight-up rate without inducing losses?", "type": "calculation_check", "focus": "Weight-up procedures", "expectedResponse": "Weight-up rate limits and ECD impact"},
+    {"questionId": "ID-006", "question": "SCR data shows 1,800 psi at 60 spm - when was this last verified and at what mud weight?", "type": "verification", "focus": "Well control data", "expectedResponse": "SCR test date and conditions"},
+    {"questionId": "ID-007", "question": "Your trip margin is 0.2 ppg but swab model shows 0.25 ppg at maximum trip speed - what's your trip speed limit?", "type": "calculation_check", "focus": "Tripping operations", "expectedResponse": "Trip speed controls"},
+    {"questionId": "ID-008", "question": "If you have to set an unplanned liner at 3,500m due to losses, do you have the equipment on board?", "type": "what_if", "focus": "Contingency equipment", "expectedResponse": "Contingency casing inventory"},
+    {"questionId": "ID-009", "question": "PWD shows ECD spikes of 0.4 ppg during connections - your fracture margin is 0.5 ppg. What's your safety factor?", "type": "assumption_challenge", "focus": "ECD management", "expectedResponse": "Assessment of actual vs predicted ECD"},
+    {"questionId": "ID-010", "question": "Formation tops are based on seismic - what's your depth uncertainty and how does this affect your mud weight program?", "type": "verification", "focus": "Depth uncertainty", "expectedResponse": "Depth correlation plan and MW contingency"},
+    {"questionId": "ID-011", "question": "You're planning LOT at shoe but offset wells did FIT only - what's driving the decision for LOT?", "type": "assumption_challenge", "focus": "Integrity testing", "expectedResponse": "LOT vs FIT rationale"},
+    {"questionId": "ID-012", "question": "If differential sticking occurs in this section, what's your spotting fluid plan and is it on board?", "type": "what_if", "focus": "Stuck pipe response", "expectedResponse": "Spotting fluid type, volume, and availability"}
+  ],
+  "tags": ["dwop", "ai-questions", "intermediate-hole", "drilling", "well-control"]
+}

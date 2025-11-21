@@ -1,0 +1,108 @@
+{
+  "checklistId": "DWOP-CL-101",
+  "title": "Land Rig Move & Setup Checklist",
+  "section": "Rig Move to Location",
+  "rigTypes": ["LAND"],
+  "bopType": "surface",
+  "breakoutRoom": "A",
+  "participants": ["Rig Superintendent", "Toolpusher", "HSE Representative", "Logistics Coordinator"],
+  "aiParticipant": true,
+  "categories": [
+    {
+      "category": "Location Preparation",
+      "items": [
+        {"item": "Location survey completed", "critical": true},
+        {"item": "Cellar and rat hole excavated"},
+        {"item": "Conductor hole drilled/driven"},
+        {"item": "Location graded and compacted"},
+        {"item": "Access road adequate for heavy loads"},
+        {"item": "Drainage and containment berms in place"},
+        {"item": "Flare pit location confirmed"},
+        {"item": "Reserve pit constructed (if required)"}
+      ]
+    },
+    {
+      "category": "Permits & Regulatory",
+      "items": [
+        {"item": "Drilling permit obtained", "critical": true},
+        {"item": "Environmental permits in place"},
+        {"item": "Road permits for oversize loads"},
+        {"item": "Local authority notifications complete"},
+        {"item": "Land access agreements signed"},
+        {"item": "Archaeological/cultural clearance (if required)"}
+      ]
+    },
+    {
+      "category": "Rig Move Logistics",
+      "items": [
+        {"item": "Rig down sequence planned"},
+        {"item": "Load out schedule confirmed"},
+        {"item": "Transport vehicles arranged"},
+        {"item": "Route survey completed for oversize loads"},
+        {"item": "Escort vehicles arranged (if required)"},
+        {"item": "Crane availability for rig up"},
+        {"item": "Move duration estimated"}
+      ]
+    },
+    {
+      "category": "Rig Up Sequence",
+      "items": [
+        {"item": "Rig up procedure reviewed", "critical": true},
+        {"item": "Substructure placement confirmed"},
+        {"item": "Derrick/mast raising procedure"},
+        {"item": "Draw works positioning"},
+        {"item": "Mud system layout planned"},
+        {"item": "Power generation setup"},
+        {"item": "BOP stack positioning"}
+      ]
+    },
+    {
+      "category": "Utilities & Services",
+      "items": [
+        {"item": "Water supply confirmed", "critical": true},
+        {"item": "Fuel delivery schedule arranged"},
+        {"item": "Electrical power requirements met"},
+        {"item": "Communications established"},
+        {"item": "Waste disposal arrangements"},
+        {"item": "Accommodation/camp facilities ready"}
+      ]
+    },
+    {
+      "category": "HSE & Emergency Response",
+      "items": [
+        {"item": "Emergency response plan for location", "critical": true},
+        {"item": "Hospital/medical facility identified"},
+        {"item": "Medevac route confirmed"},
+        {"item": "Fire fighting equipment on location"},
+        {"item": "H2S contingency (if applicable)"},
+        {"item": "Security arrangements (if required)"},
+        {"item": "Muster points identified"}
+      ]
+    },
+    {
+      "category": "Equipment Inspection",
+      "items": [
+        {"item": "Third-party rig inspection completed"},
+        {"item": "BOP function test scheduled", "critical": true},
+        {"item": "Drilling line inspection"},
+        {"item": "Lifting equipment certification current"},
+        {"item": "Pressure testing equipment ready"},
+        {"item": "Well control equipment inventory verified"}
+      ]
+    }
+  ],
+  "aiQuestions": [
+    "Location is 15 km from nearest paved road - have you assessed road conditions for 60-tonne loads?",
+    "Water supply is from local well - what's your contingency if yield is insufficient for drilling operations?",
+    "Rig move is scheduled for rainy season - what's your plan if roads become impassable?",
+    "Nearest hospital is 2 hours away - what's your serious injury response plan?",
+    "The programme shows 5 days for rig move but similar moves took 8 days - what's driving the difference?",
+    "Conductor will be driven - confirm pile driver is scheduled and soil conditions are suitable?",
+    "Power is generator-based - do you have redundancy for critical operations?",
+    "Local community relations - have all stakeholder engagements been completed?"
+  ],
+  "actionItemTemplate": {
+    "fields": ["item", "owner", "dueDate", "status", "notes"]
+  },
+  "tags": ["dwop", "checklist", "land-rig", "rig-move", "setup"]
+}

@@ -1,0 +1,199 @@
+{
+  "appendixId": "B",
+  "title": "Forms & Templates",
+  "content": {
+    "B.1": {
+      "title": "Well Barrier Diagram Template",
+      "description": "Standard template for documenting primary and secondary barriers",
+      "fields": [
+        "Well Name/Number",
+        "Date/Revision",
+        "Operation Phase",
+        "Hole Section/Depth",
+        "Primary Barrier Elements (list)",
+        "Primary Barrier Verification Status",
+        "Secondary Barrier Elements (list)",
+        "Secondary Barrier Verification Status",
+        "Diagram (schematic showing well with barriers)",
+        "Prepared By",
+        "Approved By"
+      ],
+      "notes": "Update whenever barriers change. Review at shift handover."
+    },
+    "B.2": {
+      "title": "Management of Change Form",
+      "description": "Form for documenting and approving changes to plans, equipment, or procedures",
+      "fields": [
+        "MOC Number",
+        "Date Initiated",
+        "Well/Rig Name",
+        "Originator",
+        "Change Type (Operational/Equipment/Personnel/Procedural)",
+        "Description of Original Plan/Equipment/Procedure",
+        "Description of Proposed Change",
+        "Reason for Change",
+        "Risk Assessment:",
+        "  - Well control implications",
+        "  - Barriers affected",
+        "  - New risks introduced",
+        "  - Mitigations required",
+        "Approval Required (Supervisor/OIM/Senior Mgmt)",
+        "Approval Signature and Date",
+        "Communication Plan:",
+        "  - Personnel to be informed",
+        "  - Method of communication",
+        "  - Verification of understanding",
+        "Implementation Date",
+        "Temporary/Permanent",
+        "If Temporary: End Date/Reversal Plan",
+        "Post-Implementation Review Date",
+        "Review Notes"
+      ]
+    },
+    "B.3": {
+      "title": "Well Control Drill Record",
+      "description": "Form for documenting well control drill execution and results",
+      "fields": [
+        "Drill Number/Date",
+        "Well/Rig Name",
+        "Drill Type (Pit Drill/BOP Drill/Full Scenario)",
+        "Scenario Description",
+        "Participants (names and roles)",
+        "Start Time",
+        "Kick Detection Time",
+        "Shut-In Complete Time",
+        "Total Response Time",
+        "Shut-In Pressures Recorded (SIDPP/SICP)",
+        "Actions Performed Correctly (list)",
+        "Actions Requiring Improvement (list)",
+        "Equipment Issues Noted",
+        "Communication Assessment",
+        "Overall Assessment (Pass/Needs Improvement)",
+        "Follow-up Actions Required",
+        "Conducted By",
+        "Reviewed By"
+      ]
+    },
+    "B.4": {
+      "title": "Training Record Form",
+      "description": "Individual training record for well control personnel",
+      "fields": [
+        "Employee Name",
+        "Employee ID",
+        "Position",
+        "Certification Type (IWCF/WellSharp)",
+        "Certification Level",
+        "Certification Number",
+        "Issue Date",
+        "Expiry Date",
+        "Stack Type (Surface/Combined)",
+        "Additional Training Completed:",
+        "  - Course Name",
+        "  - Date",
+        "  - Provider",
+        "  - Certificate Number",
+        "Drill Participation:",
+        "  - Date",
+        "  - Type",
+        "  - Role",
+        "  - Assessment",
+        "Competency Assessment Results:",
+        "  - Date",
+        "  - Assessor",
+        "  - Areas Assessed",
+        "  - Result",
+        "Development Needs Identified",
+        "Development Plan"
+      ]
+    },
+    "B.5": {
+      "title": "Shift Handover Checklist",
+      "description": "Checklist ensuring complete handover between shifts",
+      "fields": [
+        "Date/Time",
+        "Outgoing Driller/Supervisor",
+        "Incoming Driller/Supervisor",
+        "Current Operation",
+        "Current Depth (MD/TVD)",
+        "Current Mud Weight",
+        "Last Flow Check Result",
+        "BOP Status",
+        "Any Abnormal Observations",
+        "Outstanding Issues",
+        "Planned Operations Next 12 Hours",
+        "Specific Watch Points",
+        "Equipment Issues/Limitations",
+        "Personnel Issues",
+        "Recent Communications with Shore",
+        "Kill Sheet Current (Y/N)",
+        "Questions Answered",
+        "Handover Accepted",
+        "Signatures"
+      ]
+    },
+    "B.6": {
+      "title": "Well Control Event Report",
+      "description": "Initial report form for well control events",
+      "fields": [
+        "Event Date/Time",
+        "Well/Rig Name",
+        "Event Classification (Level 1/2/3)",
+        "Event Type (Kick/Loss/Equipment Failure/Other)",
+        "Operation at Time of Event",
+        "Depth at Time of Event",
+        "Mud Weight",
+        "Initial Indications",
+        "Detection Method",
+        "Time to Detection",
+        "Time to Shut-In",
+        "SIDPP",
+        "SICP",
+        "Estimated Influx Volume",
+        "Estimated Influx Type",
+        "Actions Taken",
+        "Current Status",
+        "Personnel Status",
+        "Environmental Impact",
+        "Equipment Damage",
+        "Notifications Made",
+        "Immediate Lessons Identified",
+        "Reported By",
+        "Time of Report"
+      ]
+    },
+    "B.7": {
+      "title": "Pre-Spud Meeting Checklist",
+      "description": "Checklist ensuring all topics covered in pre-spud meeting",
+      "sections": [
+        {
+          "section": "Well Overview",
+          "items": ["Objectives", "Target depth", "Expected hydrocarbons", "H2S potential"]
+        },
+        {
+          "section": "Geological Hazards",
+          "items": ["Shallow gas", "High pressure zones", "Lost circulation zones", "Unstable formations"]
+        },
+        {
+          "section": "Pressure Regime",
+          "items": ["Pore pressure prognosis", "Fracture gradient prognosis", "Mud weight window", "Kick tolerance by section"]
+        },
+        {
+          "section": "Equipment",
+          "items": ["BOP configuration", "Test requirements", "Choke/manifold setup", "Gas handling"]
+        },
+        {
+          "section": "Procedures",
+          "items": ["Shut-in method", "Kill method", "Bridging document status", "Emergency procedures"]
+        },
+        {
+          "section": "Personnel",
+          "items": ["Key positions filled", "Certifications verified", "Roles understood", "Drill schedule"]
+        },
+        {
+          "section": "Communications",
+          "items": ["Contact lists", "Reporting requirements", "Emergency contacts", "Shore base support"]
+        }
+      ]
+    }
+  }
+}

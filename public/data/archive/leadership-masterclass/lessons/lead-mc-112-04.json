@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-112-04",
+  "moduleId": "LEAD-MC-112",
+  "courseId": "LEAD-MC",
+  "title": "Leading Through Growth vs Decline",
+  "type": "lesson",
+  "content": "Leadership challenges differ dramatically between growth and decline phases. Growth creates opportunity but strains systems, tests culture, and risks losing what made the organization successful. Decline requires difficult decisions, maintaining morale despite constraints, and selective investment with limited resources. Leaders must diagnose which phase they're in and adapt their approach accordingly. Strategies that work during growth often fail during decline, and vice versa.",
+  "mcq": {
+    "question": "An organization experiencing rapid growth is struggling with quality issues, cultural dilution as new people join faster than they can be integrated, and breaking processes that worked at smaller scale. The leadership team's response is to maintain the same collaborative consensus-driven decision-making that served them well previously. What's the issue?",
+    "options": {
+      "A": "The collaborative approach is being undermined by new employees who don't understand the culture",
+      "B": "Growth requires more structure, faster decisions, and formalized processes that consensus-building can't provide at scale",
+      "C": "The quality and culture issues are temporary growing pains that will self-correct",
+      "D": "The organization is growing too fast and should slow down"
+    },
+    "correctOption": "B",
+    "explanation": "What works at small scale breaks at large scale. Informal consensus, relationship-based coordination, and everyone-involved decision-making worked when the team was small and cohesive. Growth demands structure: clearer roles, delegated authority, formalized processes, and faster decision-making. Option B recognizes that leadership approach must evolve with organizational phase. Option A blames new people instead of examining what needs to change systemically. Option C assumes problems will fix themselves without leadership intervention. Option D avoids the real challenge of leading through growth. Successful growth leadership means deliberately choosing which startup characteristics to preserve and which to evolve."
+  },
+  "openQuestions": [
+    "Is your organization currently in growth, stability, or decline? How does your leadership approach match that phase?",
+    "What worked in a previous organizational phase that's not working now? What needs to change?"
+  ]
+}

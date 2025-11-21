@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-LEAD-01",
+  "moduleId": "HRO-HP-ESS-LEAD",
+  "courseId": "HRO-HP-ESS",
+  "title": "What Leaders Control",
+  "type": "lesson",
+  "content": "Leaders have direct control over their own behavior and decisions, but only influence over others. Authority can compel compliance; influence generates commitment. Effective leaders focus on what they control (setting example, providing clarity, creating conditions for success) rather than demanding outcomes they cannot directly produce.",
+  "mcq": {
+    "question": "A supervisor is frustrated that team members aren't showing initiative. They respond by creating more detailed rules and monitoring compliance more closely. What is likely to happen?",
+    "options": {
+      "A": "Initiative will increase as expectations become clearer",
+      "B": "Initiative will decrease further as autonomy is reduced",
+      "C": "No change—initiative depends on individual personality",
+      "D": "Mixed results—some will respond positively, others negatively"
+    },
+    "correctOption": "B",
+    "explanation": "More rules and monitoring addresses compliance (which authority controls) but typically reduces initiative (which requires autonomy and trust). The leader is using authority when influence was needed—creating conditions where initiative is valued and safe."
+  },
+  "openQuestions": [
+    "What aspects of team performance are you trying to control that would be better addressed through influence?",
+    "How do you create conditions for others to succeed rather than trying to direct their every action?"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "moduleId": "WC-SS-104",
+  "courseId": "WC-SS",
+  "title": "Subsea BOP Equipment",
+  "description": "Subsea BOP stack configuration, LMRP, control systems (MUX, pilot, acoustic), ROV intervention, and emergency systems (autoshear, deadman).",
+  "order": 4,
+  "lessonIds": [
+    "WC-SS-104-01",
+    "WC-SS-104-02",
+    "WC-SS-104-03"
+  ],
+  "examWeight": "High",
+  "iwcfSyllabus": "DR-SS-EQ-01 to EQ-04",
+  "documentId": "WC-SS-104",
+  "tags": [
+    "well-control",
+    "subsea",
+    "deepwater",
+    "IWCF",
+    "WC-SS-104"
+  ]
+}

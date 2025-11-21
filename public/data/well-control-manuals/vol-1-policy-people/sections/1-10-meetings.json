@@ -1,0 +1,34 @@
+{
+  "sectionId": "1.10",
+  "title": "Meetings & Documentation",
+  "content": {
+    "1.10.1": {
+      "title": "Pre-Spud Meeting",
+      "content": "A Pre-Spud Meeting shall be held before commencing drilling operations:\n\n**Purpose:**\n- Ensure all parties understand the well plan\n- Identify well control hazards and mitigations\n- Confirm equipment and personnel readiness\n- Establish communication protocols\n\n**Attendees:**\n- Operator Representative\n- Drilling Supervisor\n- Toolpusher\n- Drillers\n- Mud Engineer\n- Key service company personnel\n- Shore-based support as needed\n\n**Agenda Items:**\n- Well objectives and program overview\n- Geological prognosis and hazards\n- Pore pressure and fracture gradient predictions\n- Casing program and setting criteria\n- BOP configuration and testing requirements\n- Kick tolerance by hole section\n- Kill procedures to be used\n- Emergency response procedures\n- Communication requirements\n- Roles and responsibilities\n\n**Documentation:**\n- Meeting minutes distributed to all parties\n- Action items tracked to completion\n- Attendance recorded"
+    },
+    "1.10.2": {
+      "title": "Bridging Documents",
+      "content": "Bridging documents align Operator and Contractor procedures:\n\n**Purpose:**\n- Identify differences between Operator and Contractor procedures\n- Specify which procedures take precedence\n- Fill gaps where procedures are silent\n- Ensure clear understanding by all parties\n\n**Topics to Address:**\n- Shut-in procedures (hard vs soft shut-in, timing)\n- Kill method selection\n- Notification requirements\n- Authority levels\n- Equipment testing frequencies\n- Training requirements\n- Reporting requirements\n\n**Process:**\n1. Compare Operator and Contractor procedures\n2. Identify differences and gaps\n3. Agree on approach for each item\n4. Document agreements\n5. Communicate to all relevant personnel\n6. Review when procedures change\n\n**Documentation:**\n- Signed bridging document\n- Distributed to all supervisory personnel\n- Available at point of use"
+    },
+    "1.10.3": {
+      "title": "Daily Meetings",
+      "content": "Daily meetings maintain awareness and coordination:\n\n**Morning Meeting:**\n- Review of previous 24 hours\n- Current well status and barriers\n- Plan for next 24 hours\n- Well control considerations for planned operations\n- Equipment status\n- Personnel issues\n- Weather/environmental factors\n- Safety moment\n\n**Attendees:**\n- OIM or delegate\n- Drilling Supervisor\n- Toolpushers (both crews)\n- Operator Representative\n- Key department heads\n\n**Documentation:**\n- Meeting minutes or daily report\n- Key decisions recorded\n- Actions assigned and tracked"
+    },
+    "1.10.4": {
+      "title": "Shift Handovers",
+      "content": "Effective handovers are critical for well control safety:\n\n**Driller Handover:**\n- Current operation and status\n- Well control parameters (MW, TVD, pressures)\n- Any abnormal observations\n- Equipment status or issues\n- Planned operations\n- Specific watch points\n\n**Supervisor Handover:**\n- Detailed well status\n- Operations in progress\n- Outstanding issues\n- Planned activities and timing\n- Personnel matters\n- Communications with shore\n\n**Handover Requirements:**\n- Face-to-face communication (not just written)\n- Time for questions and clarification\n- Walk-through of key equipment if needed\n- Written record maintained\n\n**Never handover during:**\n- Active well control operations\n- Critical operations requiring continuity\n- Uncertain well conditions"
+    },
+    "1.10.5": {
+      "title": "Pre-Job Meetings (Toolbox Talks)",
+      "content": "Pre-job meetings shall be held before critical operations:\n\n**When Required:**\n- Before each hole section\n- Before tripping operations\n- Before cementing operations\n- Before any operation with well control implications\n- After significant changes to plan\n- Following any well control event\n\n**Content:**\n- Planned operation step-by-step\n- Well control hazards and mitigations\n- Kick indicators to watch for\n- Actions if kick indicators observed\n- Roles during the operation\n- Communication protocol\n- Stop work criteria\n\n**Participation:**\n- All personnel involved in the operation\n- Questions encouraged\n- Understanding verified"
+    },
+    "1.10.6": {
+      "title": "Post-Event Debriefs",
+      "content": "Following any well control event, a debrief shall be conducted:\n\n**Hot Debrief (Immediately after event):**\n- Conduct while events are fresh\n- Focus on what happened and what worked/didn't work\n- Capture initial lessons\n- Identify immediate improvements\n- No blame - learning focus\n\n**Formal Investigation (Level 2 and 3 events):**\n- Root cause analysis\n- Contributing factors identified\n- Timeline reconstruction\n- Data review and analysis\n- Corrective actions identified\n- Lessons learned documented\n\n**Sharing:**\n- Lessons shared across organization\n- Industry sharing where appropriate\n- Procedures updated if needed\n- Training updated to reflect lessons"
+    },
+    "1.10.7": {
+      "title": "Documentation Requirements",
+      "content": "Comprehensive documentation supports well control management:\n\n**Required Documentation:**\n- Drilling program and well control contingencies\n- Kill sheets (current for well conditions)\n- BOP test records\n- Drill records and results\n- Training records\n- Meeting minutes\n- Handover logs\n- Daily drilling reports\n- Mud reports\n- BOP function test records\n\n**Event Documentation:**\n- Incident reports\n- Investigation reports\n- Corrective action tracking\n- Lessons learned database\n\n**Retention:**\n- As required by regulation (typically well life plus 5-10 years)\n- Accessible for audit and review\n- Backed up and secure"
+    }
+  }
+}

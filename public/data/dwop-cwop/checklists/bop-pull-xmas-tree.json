@@ -1,0 +1,100 @@
+{
+  "checklistId": "DWOP-CL-011",
+  "title": "BOP Pull & Xmas Tree Installation Checklist",
+  "section": "BOP Recovery & Tree Installation",
+  "rigTypes": ["SEMISUBMERSIBLE", "DRILLSHIP"],
+  "bopType": "subsea",
+  "note": "Subsea tree specific - surface BOP rigs have different tree installation",
+  "breakoutRoom": "A/B",
+  "participants": ["Subsea Engineer", "Toolpusher", "Well Control Specialist", "Completions Engineer"],
+  "aiParticipant": true,
+  "categories": [
+    {
+      "category": "Well Suspension",
+      "items": [
+        {"item": "Well suspension procedure reviewed", "critical": true},
+        {"item": "Barrier verification complete", "critical": true},
+        {"item": "Suspension plug depths confirmed"},
+        {"item": "Pressure test of barriers"},
+        {"item": "Well monitoring plan during suspension"},
+        {"item": "Emergency response plan updated"}
+      ]
+    },
+    {
+      "category": "BOP Disconnect",
+      "items": [
+        {"item": "Disconnect sequence reviewed", "critical": true},
+        {"item": "Wellhead pressure bled to zero"},
+        {"item": "Connector unlock procedure"},
+        {"item": "ROV support plan confirmed"},
+        {"item": "Riser displacement procedure"},
+        {"item": "Slip joint at correct position"}
+      ]
+    },
+    {
+      "category": "Riser Recovery",
+      "items": [
+        {"item": "Riser pull procedure reviewed"},
+        {"item": "Tensioner settings for pull"},
+        {"item": "Riser handling equipment ready"},
+        {"item": "Riser storage plan"},
+        {"item": "Riser inspection during pull"},
+        {"item": "Weather window requirements"}
+      ]
+    },
+    {
+      "category": "BOP Recovery",
+      "items": [
+        {"item": "BOP pull procedure reviewed"},
+        {"item": "Guide wires/cursors management"},
+        {"item": "BOP deck storage/cradle ready"},
+        {"item": "Post-pull inspection plan"},
+        {"item": "BOP maintenance requirements"}
+      ]
+    },
+    {
+      "category": "Xmas Tree Preparation",
+      "items": [
+        {"item": "Tree function tested", "critical": true},
+        {"item": "Tree pressure tested", "critical": true},
+        {"item": "Running tool tested"},
+        {"item": "Tree orientation confirmed"},
+        {"item": "Connector compatibility verified"},
+        {"item": "ROV interfaces tested"}
+      ]
+    },
+    {
+      "category": "Tree Installation",
+      "items": [
+        {"item": "Tree running procedure reviewed", "critical": true},
+        {"item": "Landing/latching sequence"},
+        {"item": "Connection testing requirements"},
+        {"item": "Flowline connection plan"},
+        {"item": "Control system hookup"},
+        {"item": "Tree protection frame (if applicable)"}
+      ]
+    },
+    {
+      "category": "Production Handover",
+      "items": [
+        {"item": "Well handover documentation complete"},
+        {"item": "Production operations briefed"},
+        {"item": "Emergency shutdown system tested", "critical": true},
+        {"item": "Tree monitoring confirmed"},
+        {"item": "Final well barrier diagram approved", "critical": true}
+      ]
+    }
+  ],
+  "aiQuestions": [
+    "Your well suspension shows single mechanical plug - does this meet two-barrier policy?",
+    "Weather forecast shows potential storm in 72 hours - can you complete tree installation in that window?",
+    "BOP has been on well for 90 days - does it require inspection before stacking?",
+    "Tree control system is electric - confirm umbilical routing and tie-in to production controls?",
+    "If tree fails to latch on wellhead, what's your contingency? Can you reinstall BOP?",
+    "Final well barrier schematic shows tubing hanger as primary barrier - has leak path been tested?"
+  ],
+  "actionItemTemplate": {
+    "fields": ["item", "owner", "dueDate", "status", "notes"]
+  },
+  "tags": ["dwop", "checklist", "bop-pull", "xmas-tree", "subsea", "handover"]
+}

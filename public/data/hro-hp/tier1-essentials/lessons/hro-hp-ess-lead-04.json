@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-LEAD-04",
+  "moduleId": "HRO-HP-ESS-LEAD",
+  "courseId": "HRO-HP-ESS",
+  "title": "Delegation",
+  "type": "lesson",
+  "content": "Delegation is assigning tasks with the authority and resources to complete them. It develops capability, distributes workload, and frees leaders for higher-priority work. Effective delegation matches task difficulty to individual capability, provides clarity on expectations and constraints, and allows autonomy in execution while maintaining accountability.",
+  "mcq": {
+    "question": "A supervisor assigns a task to a team member but closely monitors every step, corrects minor deviations from how the supervisor would do it, and takes over when progress seems slow. What is wrong with this delegation?",
+    "options": {
+      "A": "Nothing—close monitoring ensures quality",
+      "B": "The task wasn't appropriate for delegation",
+      "C": "Micromanagement undermines the development purpose of delegation",
+      "D": "The supervisor should have provided better initial training"
+    },
+    "correctOption": "C",
+    "explanation": "Delegation means transferring both task and autonomy. Micromanaging removes autonomy, prevents learning from experience, and signals distrust—defeating the developmental purpose while consuming more of the supervisor's time than doing it themselves."
+  },
+  "openQuestions": [
+    "What tasks do you currently hold onto that could be delegated to develop others?",
+    "How do you balance providing support for delegated tasks without micromanaging? What signals tell you to step in or back off?"
+  ]
+}

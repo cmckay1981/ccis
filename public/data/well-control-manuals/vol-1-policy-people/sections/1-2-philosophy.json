@@ -1,0 +1,26 @@
+{
+  "sectionId": "1.2",
+  "title": "Well Control Philosophy",
+  "content": {
+    "1.2.1": {
+      "title": "Core Philosophy",
+      "content": "Well control is a fundamental responsibility in all well operations. Our philosophy is based on three principles in order of priority:\n\n**1. SAFETY OF PERSONNEL**\nThe safety of all personnel is the absolute priority. No well, no asset, no schedule is worth risking human life. Personnel shall be evacuated or protected before any action that could endanger them.\n\n**2. PROTECTION OF THE ENVIRONMENT**\nPreventing uncontrolled releases to the environment is a core obligation. All operations shall be planned and executed to minimize environmental risk.\n\n**3. PROTECTION OF ASSETS**\nThe well, rig, and associated equipment represent significant investment. While protecting assets is important, it is always subordinate to personnel safety and environmental protection."
+    },
+    "1.2.2": {
+      "title": "Prevention Over Intervention",
+      "content": "The best well control event is one that never happens. Our approach emphasizes:\n\n**Primary Well Control**\nMaintaining the hydrostatic pressure of the drilling/completion fluid as the primary barrier against formation pressure. This requires:\n- Accurate pore pressure prediction and monitoring\n- Proper mud weight management\n- Vigilant kick detection\n- Disciplined operational practices\n\n**Early Detection**\nRecognizing the early signs of a potential well control situation before it escalates. Small kicks are easier to handle than large kicks. Early detection requires:\n- Continuous monitoring of all well parameters\n- Trained, alert personnel\n- Properly calibrated and functioning detection equipment\n- Clear communication protocols\n\n**Rapid Response**\nWhen a kick is detected, the speed and quality of initial response largely determines the outcome. This requires:\n- Pre-planned procedures practiced through drills\n- Equipment ready for immediate use\n- Clear authority to act\n- Trained personnel at all times"
+    },
+    "1.2.3": {
+      "title": "Barrier Thinking",
+      "content": "All well operations shall be conducted with a barrier mindset:\n\n**At least two independent and tested barriers shall be in place at all times** after surface casing is set and there is a potential for flow.\n\n- Each barrier shall be capable of independently preventing uncontrolled flow\n- Barriers shall be independent (failure of one does not cause failure of the other)\n- Barrier status shall be continuously monitored\n- Barrier integrity shall be verified through testing\n- Loss of a barrier requires immediate action to restore or replace it\n\nThis two-barrier principle applies throughout all phases of well construction, completion, intervention, and abandonment."
+    },
+    "1.2.4": {
+      "title": "Authority to Act",
+      "content": "**The Driller has absolute authority to shut in the well without seeking approval from any supervisor if a well control situation is suspected or for any other reason deemed necessary.**\n\nThis authority:\n- Cannot be overridden by anyone\n- Shall never be questioned during an event\n- Applies regardless of operational pressures or concerns\n- Is supported at all levels of the organization\n\nNo person shall be penalized for shutting in the well in good faith, even if subsequent investigation shows it was unnecessary. It is always better to shut in and verify than to delay and escalate."
+    },
+    "1.2.5": {
+      "title": "Continuous Improvement",
+      "content": "Well control capability improves through:\n\n**Learning from Events**\nAll well control events, including kicks that are successfully controlled, shall be investigated and lessons shared. Near-misses are valuable learning opportunities.\n\n**Regular Drills**\nSkills are perishable. Regular drills maintain readiness and identify areas for improvement.\n\n**Training**\nInitial and ongoing training ensures personnel maintain competency as procedures and equipment evolve.\n\n**Industry Engagement**\nParticipation in industry forums and review of industry incidents ensures we learn from the broader community's experience."
+    }
+  }
+}

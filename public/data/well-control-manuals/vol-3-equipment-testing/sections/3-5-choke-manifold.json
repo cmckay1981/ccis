@@ -1,0 +1,30 @@
+{
+  "sectionId": "3.5",
+  "title": "Choke Manifold",
+  "content": {
+    "3.5.1": {
+      "title": "Purpose and Function",
+      "content": "**Purpose:**\nControl flow from the well during well control operations:\n- Allow controlled circulation during kill\n- Maintain back pressure on annulus\n- Direct flow to appropriate destination\n- Provide pressure control point\n\n**Location:**\nDownstream of BOP, connected via choke line\n\n**Key Function:**\nThe choke is the PRIMARY PRESSURE CONTROL DEVICE during kill operations. Proper choke operation maintains constant bottomhole pressure."
+    },
+    "3.5.2": {
+      "title": "Components",
+      "content": "**Chokes:**\n- Adjustable choke (manual or remote operated)\n- Fixed chokes (backup, various sizes)\n- May have multiple choke options\n\n**Valves:**\n- Isolation valves (gate valves)\n- HCR valve (hydraulic control)\n- Buffer chamber valves\n- Routing valves\n\n**Instrumentation:**\n- Upstream pressure gauge (casing pressure)\n- Downstream pressure gauge\n- Pressure recorders\n\n**Flow Path:**\n- Multiple routing options\n- To mud gas separator (MGS)\n- To flare\n- To reserve pit"
+    },
+    "3.5.3": {
+      "title": "Adjustable Chokes",
+      "content": "**Types:**\n\n**Positive Choke:**\n- Fixed orifice size\n- Change bean to change size\n- Simple but requires shutdown to change\n\n**Adjustable Choke:**\n- Variable orifice size\n- Adjusted during operation\n- Manual wheel or hydraulic remote\n- Essential for well control\n\n**Operation:**\n- Turning handle opens/closes orifice\n- Opening = less restriction = lower back pressure\n- Closing = more restriction = higher back pressure\n- Small adjustments have significant effect"
+    },
+    "3.5.4": {
+      "title": "Operating the Choke",
+      "content": "**During Well Kill:**\n- Choke operator maintains constant drillpipe pressure\n- As conditions change, adjust choke\n- Pump speed increase → Open choke slightly\n- Pump speed decrease → Close choke slightly\n- Gas at choke → May need continuous adjustment\n\n**Key Principles:**\n- Make small adjustments\n- Wait to see effect before adjusting more\n- Watch drillpipe pressure as primary indicator\n- Casing pressure changes - don't chase it\n\n**Coordination:**\n- Driller controls pump\n- Choke operator controls back pressure\n- Must communicate continuously\n- Closed-loop communication essential"
+    },
+    "3.5.5": {
+      "title": "Testing",
+      "content": "**Pressure Test:**\n- Test manifold to working pressure\n- Include all valves and fittings\n- Test upstream (BOP side) always\n- Test downstream where possible\n\n**Function Test:**\n- Verify all valves operate\n- Check choke adjustment through full range\n- Test remote operation if equipped\n- Verify instrumentation accurate\n\n**Frequency:**\n- Initial installation\n- After maintenance\n- Per regulatory requirements\n- When BOP tested (often combined)"
+    },
+    "3.5.6": {
+      "title": "Maintenance",
+      "content": "**Erosion:**\n- Chokes and fittings erode with flow\n- Inspect regularly\n- Replace choke trim as needed\n- Monitor for thinning\n\n**Valves:**\n- Gate valves should be full open or full closed\n- Operate valves periodically to prevent seizing\n- Pack valves as needed\n\n**Cleanliness:**\n- Keep manifold area clean\n- Clear access for operation\n- Protect instruments\n\n**Spares:**\n- Keep spare choke trim on location\n- Spare valve parts\n- Gaskets and seals"
+    }
+  }
+}

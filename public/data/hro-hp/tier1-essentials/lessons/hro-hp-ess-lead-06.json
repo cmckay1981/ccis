@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-LEAD-06",
+  "moduleId": "HRO-HP-ESS-LEAD",
+  "courseId": "HRO-HP-ESS",
+  "title": "Team Culture",
+  "type": "lesson",
+  "content": "Leaders create culture through what they reward, what they tolerate, and what they model. Culture is 'how things really work here' versus stated values. Building healthy culture requires consistently reinforcing desired behaviors, addressing violations promptly, and modeling the standards you expect—what leaders do matters far more than what they say.",
+  "mcq": {
+    "question": "An organization has stated values emphasizing safety first, but supervisors are praised primarily for meeting production targets. When safety conflicts with production, teams consistently prioritize production. What is creating this culture?",
+    "options": {
+      "A": "Individual team members don't value safety",
+      "B": "The reward system reinforces production over stated safety values",
+      "C": "Safety training has been inadequate",
+      "D": "The stated values are wrong and should change"
+    },
+    "correctOption": "B",
+    "explanation": "Culture follows rewards. When leaders say one thing (safety first) but reward another (production targets), the actual culture reflects what's rewarded. Teams learn quickly what really matters based on what gets recognized, promoted, and praised."
+  },
+  "openQuestions": [
+    "What does your organization's reward system (formal and informal) actually reinforce? Does it match stated values?",
+    "What three behaviors, if consistently modeled by leaders, would most improve your team's culture?"
+  ]
+}

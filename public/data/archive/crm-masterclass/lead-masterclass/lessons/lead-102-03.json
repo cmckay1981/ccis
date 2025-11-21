@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-102-03",
+  "moduleId": "LEAD-102",
+  "courseId": "LEAD",
+  "title": "Visible Leadership Without Micromanagement",
+  "type": "lesson",
+  "content": "Effective leaders are present and engaged without controlling every detail. Visibility means your team knows you're aware of their work, available when needed, and invested in their success. Micromanagement means you're inserting yourself into decisions that don't require your involvement, second-guessing competent judgment, or requiring approval for routine actions. The difference is whether your presence creates confidence or anxiety.",
+  "mcq": {
+    "question": "A manager reviews every outgoing communication from the team, edits minor wording choices, and requires pre-approval for scheduling decisions that used to be handled independently. Team members have stopped proposing new ideas. The manager believes this is 'staying engaged.' What is actually happening?",
+    "options": {
+      "A": "The team needs this level of oversight to maintain quality",
+      "B": "The manager's behavior has signaled that independent judgment isn't trusted",
+      "C": "Team members are deliberately withholding ideas to avoid work",
+      "D": "The manager is appropriately maintaining standards during a quality issue"
+    },
+    "correctOption": "B",
+    "explanation": "Micromanagement trains people to stop thinking independently. When leaders control low-stakes decisions, teams learn that initiative isn't valued and that it's safer to wait for direction. The loss of new ideas is a direct result of the manager's behavior. Visible leadership would involve knowing what the team is working on and being available for genuine challenges, not controlling routine execution."
+  },
+  "openQuestions": [
+    "What decisions are you currently involved in that your team could handle without you?",
+    "How would your team describe the difference between when you're being helpful versus when you're micromanaging?"
+  ]
+}

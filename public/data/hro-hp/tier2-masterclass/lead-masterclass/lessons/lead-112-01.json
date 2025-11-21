@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-112-01",
+  "moduleId": "LEAD-112",
+  "courseId": "LEAD",
+  "title": "Talent Assessment and Succession Planning",
+  "type": "lesson",
+  "content": "Organizations fail when leadership talent runs dry. Succession planning means identifying future leaders early, developing them intentionally, and ensuring continuity when transitions occur. This requires honest assessment of capability versus potential, creating development opportunities that build leadership skills, and having ready talent for critical roles. Leaders who don't develop successors create organizational fragility and limit their own advancement.",
+  "mcq": {
+    "question": "A senior leader is asked to identify potential successors for their role. They respond: 'No one on my current team is ready to step into this position.' What's the most likely issue?",
+    "options": {
+      "A": "The team lacks high-potential talent",
+      "B": "The leader hasn't been developing people for advancement",
+      "C": "The role requires external hiring to bring fresh perspective",
+      "D": "Succession planning is premature until the leader plans to leave"
+    },
+    "correctOption": "B",
+    "explanation": "If no one is ready after years of leadership, the leader hasn't been developing successors—either through lack of delegation, failure to identify potential, or viewing team development as low priority. Succession readiness doesn't happen accidentally. Option B identifies the development failure. Option A might be true but is less likely than development failure. Option C avoids accountability for internal development. Option D misunderstands succession planning as retirement planning rather than ongoing organizational capability building. Leaders should always be developing people who could eventually replace them. That's how organizations build bench strength."
+  },
+  "openQuestions": [
+    "If you left your role tomorrow, who would be ready to step in? If no one, what does that say about your development focus?",
+    "Who on your team has leadership potential that you're not currently developing? What's stopping you?"
+  ]
+}

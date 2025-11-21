@@ -1,0 +1,163 @@
+{
+  "collectionId": "advanced-question-templates",
+  "title": "Advanced Well Control Question Templates",
+  "description": "Advanced scenario-based questions for daily well control coaching. These templates generate well-specific questions using real well data. Used alongside basic QUESTION_BANK questions for daily coaching.",
+  "accessControl": "organization",
+  "dailyCoachingSystem": {
+    "concept": "Every morning, crew receives a brief explanation about their current drilling section plus 1-2 well control questions",
+    "questionMix": {
+      "basic": "Pulled from QUESTION_BANK - standard IWCF/IADC exam-style questions relevant to current operation",
+      "advanced": "Generated from these templates using actual well data - decision-focused scenarios",
+      "delivery": "1-2 questions per day - can be basic, advanced, or mix depending on section/hazards"
+    },
+    "sectionBriefing": "Short explanation of key well control considerations for the current drilling section",
+    "purpose": "Continuous real-world training tied to the actual well being drilled - keeps skills sharp daily"
+  },
+  "targetAudience": {
+    "role": "All drilling crew - Floorhand to OIM",
+    "context": "Active drilling operations on company wells",
+    "frequency": "Daily coaching tied to current drilling section"
+  },
+  "usage": {
+    "1": "Company uploads well profile (DOP/Well Programme data)",
+    "2": "System identifies current drilling section and active hazards",
+    "3": "Daily briefing generated: section context + 1-2 relevant questions",
+    "4": "Basic questions selected from QUESTION_BANK based on section topics",
+    "5": "Advanced questions generated from these templates with real well values",
+    "6": "Crew answers on mobile/tablet - results tracked for competency"
+  },
+  "placeholderFormat": "{{field.path}}",
+  "questionSources": {
+    "QUESTION_BANK": {
+      "path": "../question-bank",
+      "type": "static",
+      "count": 235,
+      "use": "Basic theory, calculations, exam-style questions"
+    },
+    "ADVANCED_QUESTION_TEMPLATES": {
+      "path": "./",
+      "type": "dynamic",
+      "count": 20,
+      "use": "Well-specific scenarios, decision-making, hazard response"
+    }
+  },
+  "categories": {
+    "OPERATIONAL_DECISIONS": "Real-time decision making based on well conditions",
+    "HAZARD_RESPONSE": "Hazard-specific scenarios triggered by well profile hazards",
+    "MPD_OPERATIONS": "Managed Pressure Drilling scenarios for HPHT/tight window wells",
+    "SUBSEA_ADVANCED": "Advanced subsea scenarios beyond basic CLFL/riser margin",
+    "EMERGENCY_SCENARIOS": "High-stakes emergency response (EDS, loss of barriers, equipment failure)"
+  },
+  "templates": [
+    {
+      "file": "connection-monitoring.json",
+      "category": "OPERATIONAL_DECISIONS",
+      "focus": "Real-time flow check interpretation with well-specific tolerances"
+    },
+    {
+      "file": "early-kick-detection.json",
+      "category": "OPERATIONAL_DECISIONS",
+      "focus": "Multi-indicator interpretation in limited KT environment"
+    },
+    {
+      "file": "tripping-decision.json",
+      "category": "OPERATIONAL_DECISIONS",
+      "focus": "Trip margin and swab pressure management in tight-window wells"
+    },
+    {
+      "file": "gas-migration-response.json",
+      "category": "OPERATIONAL_DECISIONS",
+      "focus": "Volumetric method during static conditions - gas migration management"
+    },
+    {
+      "file": "salt-section-drilling.json",
+      "category": "OPERATIONAL_DECISIONS",
+      "focus": "Mobile salt drilling decisions for land rigs"
+    },
+    {
+      "file": "land-rig-logistics.json",
+      "category": "OPERATIONAL_DECISIONS",
+      "focus": "Logistics and contingency planning for remote land operations"
+    },
+    {
+      "file": "mpd-backpressure.json",
+      "category": "MPD_OPERATIONS",
+      "focus": "Surface back pressure management during connections"
+    },
+    {
+      "file": "mpd-kick-response.json",
+      "category": "MPD_OPERATIONS",
+      "focus": "MPD vs conventional response decision-making"
+    },
+    {
+      "file": "hpht-narrow-window.json",
+      "category": "HAZARD_RESPONSE",
+      "triggeredBy": "narrow_window",
+      "focus": "ECD management in tight PP/FG window"
+    },
+    {
+      "file": "hpht-kick-tolerance.json",
+      "category": "HAZARD_RESPONSE",
+      "triggeredBy": "limitedKT",
+      "focus": "Decision-making when kick exceeds tolerance limits"
+    },
+    {
+      "file": "h2s-response.json",
+      "category": "HAZARD_RESPONSE",
+      "triggeredBy": "h2s",
+      "focus": "Dual emergency management - well control + personnel safety"
+    },
+    {
+      "file": "shallow-gas-response.json",
+      "category": "HAZARD_RESPONSE",
+      "triggeredBy": "shallow_gas",
+      "focus": "Pre-BOP diverter operations"
+    },
+    {
+      "file": "surface-bop-well-control.json",
+      "category": "HAZARD_RESPONSE",
+      "applicableTo": "surface",
+      "focus": "Surface BOP well control for land/jackup rigs"
+    },
+    {
+      "file": "lost-circulation-severe.json",
+      "category": "HAZARD_RESPONSE",
+      "focus": "Severe lost circulation management and escalation"
+    },
+    {
+      "file": "hpht-mawp-exceed.json",
+      "category": "EMERGENCY_SCENARIOS",
+      "triggeredBy": "mawpExceeds15k",
+      "focus": "Operations at equipment limits - prevention-focused drilling"
+    },
+    {
+      "file": "barrier-loss-response.json",
+      "category": "EMERGENCY_SCENARIOS",
+      "focus": "Response to lost circulation and barrier compromise"
+    },
+    {
+      "file": "equipment-failure-kill.json",
+      "category": "EMERGENCY_SCENARIOS",
+      "focus": "Maintaining well control during equipment failure mid-kill"
+    },
+    {
+      "file": "riser-margin.json",
+      "category": "SUBSEA_ADVANCED",
+      "applicableTo": "subsea",
+      "focus": "Operational riser margin decisions with real water depth/PP"
+    },
+    {
+      "file": "clfl-correction.json",
+      "category": "SUBSEA_ADVANCED",
+      "applicableTo": "subsea",
+      "focus": "Subsea kill operations with actual choke line data"
+    },
+    {
+      "file": "subsea-eds-decision.json",
+      "category": "EMERGENCY_SCENARIOS",
+      "applicableTo": "subsea",
+      "focus": "EDS decision-making under time pressure"
+    }
+  ],
+  "templateCount": 20
+}

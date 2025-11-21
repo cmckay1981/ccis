@@ -1,0 +1,206 @@
+{
+  "moduleId": "ADO-102",
+  "courseId": "ADO",
+  "title": "Managed Pressure Drilling (MPD)",
+  "description": "MPD uses surface back pressure to precisely control bottomhole pressure, enabling drilling in narrow windows where conventional methods fail. This module covers MPD principles, equipment, control modes, operations matrix decision-making, and well control protocols based on real operational procedures.",
+  "objectives": [
+    "Understand MPD principles, equipment, and control modes",
+    "Apply the MPD Operations Matrix (Green/Yellow/Orange/Red zones)",
+    "Execute MPD connections maintaining constant BHP",
+    "Recognize and respond to influxes using MPD techniques",
+    "Understand Driller authority and transition protocols",
+    "Interpret flow-in vs flow-out for kick/loss detection (0.1 bbl sensitivity)"
+  ],
+  "keyTopics": [
+    {
+      "topic": "MPD Pressure Fundamentals",
+      "content": "Conventional static: BHP = Hydrostatic Head (HH). Conventional dynamic: ECD = HH + Annular Friction Loss (AFL). MPD dynamic: ECD = HH + AFL + Surface Back Pressure (SBP). MPD static (connections): BHP = HH + Increased SBP. SBP adjustment is significantly quicker, has more range, and is more accurate than pump-speed adjustments."
+    },
+    {
+      "topic": "MPD Control Modes",
+      "content": "Five control modes govern pressure management: 1) SBP Mode - maintains user-defined surface backpressure setpoint; 2) Standpipe Pressure Mode - maintains SPP at selected setpoint; 3) Flow Control Mode - equalizes flow-in to flow-out, closes choke during influx, opens during losses; 4) Manual Mode - user-defined choke position; 5) P@D (Pressure at Depth) Mode - model-based control calculating pressure at anchor point, automatically compensates for rotation, pipe movement, pump rate changes."
+    },
+    {
+      "topic": "MPD Operations Matrix",
+      "content": "Four-zone decision framework: GREEN ZONE - Normal drilling within optimum envelope. YELLOW ZONE - Parameters approaching limits, safe reaction time to adjust and circulate influx via MPD. ORANGE ZONE - One operating limit met, stop drilling, reduce rotation, continue circulating via MPD until stabilized. RED ZONE - Maximum parameters exceeded, immediately secure well, isolate MPD, conventional well control takes over."
+    },
+    {
+      "topic": "Influx Detection Capability",
+      "content": "MPD with automatic choke control and Coriolis mass-flow meters can detect influxes as low as 0.1 bbl via delta flow (flow-out vs flow-in). Conventional drilling typically detects 5-10 bbl gains. This early detection is a key MPD advantage. Positive kick indicators: pit volume gain (unattributable to surface), increased return flow rate, well flowing with pumps off."
+    },
+    {
+      "topic": "Influx Threshold & Transition",
+      "content": "Well-specific influx threshold determines MPD vs conventional response. Example: 2 bbl threshold means influxes <2 bbl can be circulated via MPD without BOP activation; volumes ≥2 bbl trigger BOP shut-in. Threshold considers: wellhead pressure limits, influx fluid type, MGS capacity, piping geometry, kick detection accuracy, wellbore geometry."
+    },
+    {
+      "topic": "Driller Authority",
+      "content": "The Driller maintains primary well control responsibility during MPD operations. Critical policy: The Driller has unilateral authority to shut in the well without recourse to any supervisor if a suspected well control event is occurring or for any other reason deemed necessary. This authority is absolute and must never be questioned."
+    },
+    {
+      "topic": "Two-Barrier Requirement",
+      "content": "At least two tested and independent safety barriers must be present. In MPD, the primary barrier is hydrostatic pressure + annular friction + applied SBP. The secondary barrier is the BOP system. Policy: In the event of an unplanned influx or well control incident, the MPD system shall be isolated and the rig's well control system shall take over."
+    },
+    {
+      "topic": "Core MPD Equipment",
+      "content": "RCD (Rotating Control Device) - maintains annular closure with dynamic and static pressure ratings. DSIT (Drill String Isolation Tool) - isolates wellbore during RCD element changes. Flow Spool - routes closed-loop returns through MPD system. Coriolis Flowmeters - measures mass flow in/out for delta flow detection. MPD Chokes - electrically actuated 6\" and 3\" with remote PRVs. MGS (Mud Gas Separator) - sized for allowable influx volumes."
+    },
+    {
+      "topic": "MPD Connection Procedure",
+      "content": "Pre-connection: capture pick-up/slack-off weights, pit volumes before pump rate reduction and after stabilization. During connection: P@D mode (preferred) automatically closes chokes to compensate for ECD loss when rotation stops. Standpipe bleed-back to zero via mini trip tank verifies float integrity. Ramp-up: pick up, remove slips, rotate at 30 rpm, bring pumps online at 20-30 spm, stage pumps gradually as SPP recovers."
+    },
+    {
+      "topic": "MPD Assisted Shut-In",
+      "content": "Auto Kick Detection generates warning on HMI. Confirm via primary indicators. Switch to Flow Control mode to equalize. If Flow Control reaches high limit, system automatically reverts to Manual mode with BOP closure prompt. Once stable, switch to P@D mode with Well Depth anchor point. Stop rotation, pick up, space out. Ramp down drill string pumps (P@D automatically adjusts choke). When pumps off, follow BOP shut-in procedures."
+    },
+    {
+      "topic": "Gas in Riser Removal",
+      "content": "Riser de-gassing takes precedence over downhole well kill operations. Use SBP mode with boost pump at 450 gpm, typical SBP <200 psi. Route returns through MPD system to MGS. Monitor indicators: flow-out exceeding flow-in (gas expansion), density reduction at surface, flow meter signal loss at high gas percentages. Continue until mud density stabilizes at full active mud density."
+    }
+  ],
+  "referenceWellContext": {
+    "wellName": "Phoenix-702",
+    "mpdRequired": "Below intermediate casing (3,800m)",
+    "maxSBP": "500 psi",
+    "reason": "1.3 ppg window at TD insufficient for conventional drilling",
+    "preferredMode": "P@D (Pressure at Depth) for automated ECD compensation",
+    "flowCheckDuration": "15 minutes minimum",
+    "influxThreshold": "Well-specific, typically 2 bbl for MPD vs BOP transition"
+  },
+  "mpdOperationsMatrix": {
+    "greenZone": {
+      "status": "Normal Operations",
+      "condition": "All parameters within optimum envelope",
+      "action": "Continue drilling operations"
+    },
+    "yellowZone": {
+      "status": "Caution",
+      "condition": "Parameters approaching limits",
+      "action": "Safe reaction time available - adjust parameters and circulate influx via MPD system"
+    },
+    "orangeZone": {
+      "status": "Alert",
+      "condition": "One operating limit met",
+      "action": "Stop drilling, reduce rotation, continue circulating via MPD until stabilized"
+    },
+    "redZone": {
+      "status": "Emergency",
+      "condition": "Maximum planned parameters exceeded",
+      "action": "Immediately secure well, isolate MPD system, conventional well control procedures take over"
+    }
+  },
+  "mpdControlModes": {
+    "sbp": {
+      "name": "Surface Back Pressure",
+      "description": "Maintains user-defined surface backpressure setpoint independent of downhole changes",
+      "use": "Alternative mode during connections when P@D unavailable"
+    },
+    "standpipePressure": {
+      "name": "Standpipe Pressure",
+      "description": "Automatically maintains standpipe pressure at selected setpoint",
+      "use": "Influx circulation - increase setpoint 50 psi above normal"
+    },
+    "flowControl": {
+      "name": "Flow Control",
+      "description": "Equalizes flow-in to flow-out; closes choke during influx, opens during losses",
+      "use": "Initial influx response - confirms kick and stabilizes well"
+    },
+    "manual": {
+      "name": "Manual",
+      "description": "User-defined choke position via operator input",
+      "use": "Fallback when automated modes fail or system reverts"
+    },
+    "pressureAtDepth": {
+      "name": "Pressure at Depth (P@D)",
+      "description": "Model-based control at anchor point; compensates for rotation, pipe movement, pump rate, density, cuttings",
+      "use": "Preferred mode for drilling and connections"
+    }
+  },
+  "bhpEquations": {
+    "conventionalStatic": "BHP = HH (Hydrostatic Head)",
+    "conventionalDynamic": "ECD = HH + AFL (Annular Friction Loss)",
+    "mpdDynamic": "ECD = HH + AFL + SBP (Surface Back Pressure)",
+    "mpdStatic": "BHP = HH + Increased SBP (compensates for lost AFL)"
+  },
+  "wellControlDrills": {
+    "perWell": [
+      "RCD pressure rating exceeded response",
+      "Leaking NRV/influx on connection response",
+      "RCD leak including element change",
+      "Equipment leak downstream of RCD",
+      "BOP lower connector leak",
+      "Choke operation drill (remote operation practice)",
+      "H2S procedures (respiratory equipment use)",
+      "MPD well control drills (RCD/equipment leak, float failure)"
+    ],
+    "perCrew": [
+      "Simulated influx detection - detect and control practice",
+      "MPD-assisted shut-in with BOP - shut-in with SBP application",
+      "Influx re-route to MGS on-the-fly"
+    ]
+  },
+  "trainingRequirements": {
+    "prerequisite": "IWCF Level 3 or 4 well control certification",
+    "level1": "Rig and campaign-specific induction (MPD basics, campaign specifics, rig equipment)",
+    "level2": "MPD advanced training (control system focus)",
+    "level3": "Well-specific simulator training (well challenges, communication, non-routine situations)"
+  },
+  "operationalPrinciples": [
+    "P@D mode is preferred - it automatically compensates for ECD changes",
+    "Flow Control mode is your first response to suspected influx",
+    "MPD detects influxes as low as 0.1 bbl - 50x better than conventional",
+    "Know your influx threshold - above it means BOP, below it means MPD circulation",
+    "The Driller has absolute authority to shut in without supervisor approval",
+    "Riser de-gassing takes precedence over downhole well kill",
+    "Two barriers must always be maintained - MPD is primary, BOP is secondary",
+    "RED zone = immediate MPD isolation and conventional well control"
+  ],
+  "lessons": [
+    {
+      "lessonId": "ADO-102-01",
+      "title": "MPD Principles & Pressure Equations",
+      "file": "lessons/ado-102-01.json"
+    },
+    {
+      "lessonId": "ADO-102-02",
+      "title": "MPD Control Modes",
+      "file": "lessons/ado-102-02.json"
+    },
+    {
+      "lessonId": "ADO-102-03",
+      "title": "MPD Operations Matrix",
+      "file": "lessons/ado-102-03.json"
+    },
+    {
+      "lessonId": "ADO-102-04",
+      "title": "MPD Connection Procedures",
+      "file": "lessons/ado-102-04.json"
+    },
+    {
+      "lessonId": "ADO-102-05",
+      "title": "Influx Detection & Response with MPD",
+      "file": "lessons/ado-102-05.json"
+    },
+    {
+      "lessonId": "ADO-102-06",
+      "title": "MPD Assisted Shut-In Protocol",
+      "file": "lessons/ado-102-06.json"
+    },
+    {
+      "lessonId": "ADO-102-07",
+      "title": "Gas in Riser Removal",
+      "file": "lessons/ado-102-07.json"
+    },
+    {
+      "lessonId": "ADO-102-08",
+      "title": "Transitioning Between MPD and Conventional",
+      "file": "lessons/ado-102-08.json"
+    },
+    {
+      "lessonId": "ADO-102-09",
+      "title": "MPD Well Control Drills",
+      "file": "lessons/ado-102-09.json"
+    }
+  ],
+  "documentId": "ADO-102",
+  "tags": ["mpd", "managed-pressure-drilling", "surface-back-pressure", "cbhp", "p@d", "flow-control", "operations-matrix", "well-control", "advanced-drilling"]
+}

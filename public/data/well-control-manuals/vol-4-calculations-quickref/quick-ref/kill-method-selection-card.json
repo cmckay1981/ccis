@@ -1,0 +1,77 @@
+{
+  "cardId": "kill-method-selection",
+  "title": "Kill Method Selection Guide",
+  "type": "decision-card",
+  "content": {
+    "drillers": {
+      "title": "DRILLER'S METHOD",
+      "description": "Two circulations: first to circulate kick out, second for kill mud",
+      "when": [
+        "Kill mud NOT immediately available",
+        "Time to prepare kill mud would allow excessive gas migration",
+        "Shoe integrity adequate for first circulation at original MW",
+        "Simpler approach preferred"
+      ],
+      "pros": [
+        "Start immediately",
+        "Simpler during first circulation",
+        "Lower risk of errors"
+      ],
+      "cons": [
+        "Two full circulations required",
+        "Higher casing pressure during first circulation",
+        "More time overall"
+      ]
+    },
+    "waitAndWeight": {
+      "title": "WAIT & WEIGHT METHOD",
+      "description": "Single circulation with kill mud from start",
+      "when": [
+        "Kill mud CAN be prepared in reasonable time",
+        "Shoe pressure is a concern (tight margins)",
+        "Lower maximum casing pressure desired",
+        "More efficient approach needed"
+      ],
+      "pros": [
+        "Single circulation",
+        "Lower maximum casing pressure",
+        "Less time under pressure"
+      ],
+      "cons": [
+        "Must wait for kill mud preparation",
+        "More complex pressure schedule",
+        "Gas migration risk while waiting"
+      ]
+    },
+    "bullheading": {
+      "title": "BULLHEADING",
+      "description": "Force fluids into formation",
+      "when": [
+        "Cannot circulate (stuck pipe, plugged bit)",
+        "Emergency requiring rapid control",
+        "Formation can accept fluid"
+      ],
+      "caution": "May damage formation. Does not remove kick."
+    },
+    "volumetric": {
+      "title": "VOLUMETRIC METHOD",
+      "description": "Control gas migration without circulation",
+      "when": [
+        "Cannot circulate",
+        "Need to buy time",
+        "Preparing to strip to bottom"
+      ],
+      "note": "Does not kill well - controls situation only"
+    },
+    "decisionTree": {
+      "title": "QUICK DECISION GUIDE",
+      "steps": [
+        "1. Can you circulate? → If NO, consider Bullhead or Volumetric",
+        "2. Is kill mud ready now? → If YES, use Wait & Weight",
+        "3. Will delay cause gas migration concern? → If YES, use Driller's",
+        "4. Is shoe margin tight? → If YES, prefer Wait & Weight",
+        "5. Default: Driller's Method (simpler, can start immediately)"
+      ]
+    }
+  }
+}

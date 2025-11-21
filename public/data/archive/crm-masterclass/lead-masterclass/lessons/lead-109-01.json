@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-109-01",
+  "moduleId": "LEAD-109",
+  "courseId": "LEAD",
+  "title": "Leading Upward Effectively",
+  "type": "lesson",
+  "content": "You don't stop leading when you're talking to your boss. Leading upward means providing your senior leaders with information they need, perspective they might lack, and honest assessment of conditions at the operational level. Many leaders default to 'yes' reflexively or filter bad news to avoid conflict. This deprives senior leadership of reality and prevents organizational learning. Effective upward leadership requires courage to speak truth, tact to deliver it constructively, and judgment about when to push back versus execute.",
+  "mcq": {
+    "question": "Your boss announces a new policy that you immediately recognize will create significant operational problems based on ground-level realities they may not be aware of. In the meeting, everyone nods along without comment. What should you do?",
+    "options": {
+      "A": "Stay silent in the meeting and raise concerns privately afterward",
+      "B": "Voice your concerns directly in the meeting with specific examples of the operational impact",
+      "C": "Implement the policy as directed since your boss has more information and context than you do",
+      "D": "Discuss concerns with peers first to build a coalition before approaching your boss"
+    },
+    "correctOption": "B",
+    "explanation": "Leaders need ground truth, and they need it early. If you wait until after the meeting, the decision gains momentum and becomes harder to adjust. If you stay silent entirely, you've failed your responsibility to provide operational reality. If you build coalitions first, you're creating political pressure instead of offering professional input. Option B demonstrates professional courage: 'I see a potential implementation challenge—here's what I'm concerned about based on how this works at ground level.' Give your boss the chance to adjust course with real information. This is leadership upward."
+  },
+  "openQuestions": [
+    "Describe a time you disagreed with a decision from above. How did you handle it?",
+    "What makes it difficult for you to speak up to senior leadership? What would make it easier?"
+  ]
+}

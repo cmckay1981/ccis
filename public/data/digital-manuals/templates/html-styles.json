@@ -1,0 +1,127 @@
+{
+  "templateId": "HTML-STYLES-V1",
+  "title": "HTML Manual Styling Configuration",
+  "description": "CSS and styling configuration for generated HTML manuals",
+  "defaultTheme": {
+    "colors": {
+      "primary": "#1a365d",
+      "secondary": "#2c5282",
+      "accent": "#ed8936",
+      "background": "#ffffff",
+      "text": "#2d3748",
+      "textLight": "#718096",
+      "success": "#38a169",
+      "warning": "#dd6b20",
+      "danger": "#e53e3e",
+      "info": "#3182ce"
+    },
+    "fonts": {
+      "heading": "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+      "body": "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+      "mono": "JetBrains Mono, Consolas, monospace"
+    },
+    "spacing": {
+      "sectionGap": "3rem",
+      "subsectionGap": "1.5rem",
+      "paragraphGap": "1rem"
+    }
+  },
+  "operationsMatrixColors": {
+    "greenZone": {
+      "background": "#c6f6d5",
+      "border": "#38a169",
+      "text": "#22543d",
+      "label": "NORMAL"
+    },
+    "yellowZone": {
+      "background": "#fefcbf",
+      "border": "#d69e2e",
+      "text": "#744210",
+      "label": "CAUTION"
+    },
+    "orangeZone": {
+      "background": "#feebc8",
+      "border": "#dd6b20",
+      "text": "#7b341e",
+      "label": "ALERT"
+    },
+    "redZone": {
+      "background": "#fed7d7",
+      "border": "#e53e3e",
+      "text": "#742a2a",
+      "label": "EMERGENCY"
+    }
+  },
+  "components": {
+    "header": {
+      "layout": "logo-left-title-center",
+      "showRevision": true,
+      "showDate": true,
+      "showDocumentNumber": true
+    },
+    "footer": {
+      "layout": "page-number-center",
+      "showConfidentiality": true,
+      "confidentialityText": "CONFIDENTIAL - {{clientName}}",
+      "showUncontrolledWarning": true
+    },
+    "tableOfContents": {
+      "depth": 3,
+      "numbered": true,
+      "clickable": true
+    },
+    "warningBoxes": {
+      "warning": {
+        "icon": "exclamation-triangle",
+        "background": "#fefcbf",
+        "border": "#d69e2e"
+      },
+      "danger": {
+        "icon": "exclamation-circle",
+        "background": "#fed7d7",
+        "border": "#e53e3e"
+      },
+      "info": {
+        "icon": "info-circle",
+        "background": "#bee3f8",
+        "border": "#3182ce"
+      },
+      "tip": {
+        "icon": "lightbulb",
+        "background": "#c6f6d5",
+        "border": "#38a169"
+      }
+    },
+    "tables": {
+      "headerBackground": "#edf2f7",
+      "stripedRows": true,
+      "hoverEffect": true,
+      "borderColor": "#e2e8f0"
+    },
+    "procedures": {
+      "numberedSteps": true,
+      "checkboxStyle": false,
+      "indentSubsteps": true
+    }
+  },
+  "printStyles": {
+    "pageSize": "A4",
+    "margins": {
+      "top": "25mm",
+      "bottom": "25mm",
+      "left": "20mm",
+      "right": "20mm"
+    },
+    "headerHeight": "15mm",
+    "footerHeight": "10mm",
+    "avoidBreakInside": ["table", "procedure-step", "warning-box"]
+  },
+  "responsiveBreakpoints": {
+    "mobile": "480px",
+    "tablet": "768px",
+    "desktop": "1024px",
+    "wide": "1280px"
+  },
+  "documentId": "HTML-STYLES",
+  "tags": ["template", "styles", "html", "css"]
+}

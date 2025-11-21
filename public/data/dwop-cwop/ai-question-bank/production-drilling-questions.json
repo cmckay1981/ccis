@@ -1,0 +1,24 @@
+{
+  "categoryId": "PRODUCTION_DRILLING",
+  "title": "Production Hole Drilling (HPHT/MPD) - AI Probing Questions",
+  "breakoutRoom": "A",
+  "targetParticipants": ["Drilling Engineer", "Well Control Specialist", "MPD Specialist", "Driller"],
+  "questions": [
+    {"questionId": "PD-001", "question": "Your drilling window is 0.5 ppg (15.8 to 16.3 ppg) - have you modeled worst-case ECD surge during connections?", "type": "calculation_check", "focus": "Narrow margin management", "expectedResponse": "Surge modeling results and mitigation"},
+    {"questionId": "PD-002", "question": "MPD is planned for this section - what's your influx response if you detect 0.5 bbl gain?", "type": "verification", "focus": "MPD procedures", "expectedResponse": "Defined influx response procedure"},
+    {"questionId": "PD-003", "question": "H2S is prognosed at 500 ppm at reservoir - confirm all crew have completed H2S training and drills?", "type": "verification", "focus": "H2S readiness", "expectedResponse": "Training records and drill completion"},
+    {"questionId": "PD-004", "question": "If you lose MPD capability mid-section, can you continue conventionally or must you set casing?", "type": "what_if", "focus": "MPD failure contingency", "expectedResponse": "Clear decision criteria for MPD failure"},
+    {"questionId": "PD-005", "question": "Kick tolerance at TD is 15 bbls - with gas expansion, what's the surface volume at shoe?", "type": "calculation_check", "focus": "Well control calculations", "expectedResponse": "Gas expansion calculation"},
+    {"questionId": "PD-006", "question": "Your connection procedure shows 5-minute flow checks - is this adequate for detecting connection gas in HPHT?", "type": "assumption_challenge", "focus": "Connection procedures", "expectedResponse": "Justification for flow check duration"},
+    {"questionId": "PD-007", "question": "MPD choke is automated but what's your manual backup if control system fails?", "type": "what_if", "focus": "Equipment redundancy", "expectedResponse": "Manual choke operation procedure"},
+    {"questionId": "PD-008", "question": "BHP is maintained at 6,500 psi via SBP - what's your response time to detect and respond to a 50 psi deviation?", "type": "verification", "focus": "Pressure control", "expectedResponse": "Detection and response times"},
+    {"questionId": "PD-009", "question": "SCBA bottles on rig floor - when were they last tested and how many are immediately available?", "type": "verification", "focus": "H2S equipment", "expectedResponse": "Test dates and quantity"},
+    {"questionId": "PD-010", "question": "Dynamic kill requires 16.8 ppg at 120 spm - can your pumps achieve this at TD depth?", "type": "calculation_check", "focus": "Kill capability", "expectedResponse": "Pump pressure vs depth calculation"},
+    {"questionId": "PD-011", "question": "What's the transition procedure from MPD to conventional well control if you need to shut in on the BOP?", "type": "verification", "focus": "Procedure integration", "expectedResponse": "Detailed transition procedure"},
+    {"questionId": "PD-012", "question": "Temperature at TD is 175°C - have all downhole tools been rated for this temperature?", "type": "verification", "focus": "Equipment ratings", "expectedResponse": "Temperature ratings of all BHA components"},
+    {"questionId": "PD-013", "question": "Coriolis meter shows 0.1 bbl sensitivity - at what flow rate does accuracy degrade?", "type": "verification", "focus": "Detection equipment", "expectedResponse": "Flow rate range for accurate detection"},
+    {"questionId": "PD-014", "question": "If reservoir pressure is higher than predicted, what's your maximum safe mud weight before exceeding casing burst?", "type": "calculation_check", "focus": "Casing design limits", "expectedResponse": "Maximum MW vs casing rating"},
+    {"questionId": "PD-015", "question": "Your MPD operator works 12-hour shifts - what's the handover procedure to ensure no pressure excursions during crew change?", "type": "verification", "focus": "Operational continuity", "expectedResponse": "Handover checklist and verification"}
+  ],
+  "tags": ["dwop", "ai-questions", "production-hole", "hpht", "mpd", "well-control"]
+}

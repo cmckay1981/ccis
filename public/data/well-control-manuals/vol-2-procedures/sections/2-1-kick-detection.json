@@ -1,0 +1,34 @@
+{
+  "sectionId": "2.1",
+  "title": "Kick Detection",
+  "content": {
+    "2.1.1": {
+      "title": "Primary Kick Indicators",
+      "content": "Primary indicators are direct evidence of formation fluid entry:\n\n**Flow Rate Increase**\nReturn flow rate exceeds pump rate:\n- Monitor flow line paddle or meter continuously\n- Compare to baseline flow for current conditions\n- Account for lag time changes\n\n**Pit Volume Increase**\nUnexplained increase in active mud volume:\n- Monitor total pit volume continuously\n- Account for all additions/transfers\n- Typical detection threshold: 5-10 bbls\n- High-risk operations: tighter thresholds\n\n**Flow with Pumps Off**\nWell continues flowing after pump shutdown:\n- Most definitive indicator\n- Always perform flow check when suspicious\n- Account for U-tube effect after connections\n\n**Response:**\nAny confirmed primary indicator requires immediate shut-in. Do not wait for multiple confirmations."
+    },
+    "2.1.2": {
+      "title": "Secondary Kick Indicators",
+      "content": "Secondary indicators suggest possible influx and warrant investigation:\n\n**Drilling Break**\nSudden increase in ROP may indicate:\n- Drilling into higher porosity/permeability zone\n- Drilling into higher pressure zone\n- Formation change\n\n**Connection Gas**\nGas at surface after connections:\n- Some connection gas is normal\n- Increasing trend is concerning\n- Monitor for pattern changes\n\n**Background Gas Increase**\nRising gas levels while drilling:\n- May indicate approaching pressure transition\n- Consider increasing mud weight\n- Increase monitoring frequency\n\n**Chlorides Increase**\nSalt water influx indicator:\n- Monitor mud properties regularly\n- Can indicate formation water entry\n\n**Response:**\nSecondary indicators require heightened awareness, flow checks, and possible mud weight increase. Investigate before continuing."
+    },
+    "2.1.3": {
+      "title": "Kick Indicators While Tripping",
+      "content": "Tripping creates swab risk - heightened monitoring required:\n\n**Hole Not Taking Proper Fill**\nWhen pulling pipe, hole should accept calculated fill volume:\n- Track fill on trip sheet\n- Compare actual to theoretical\n- Shortfall indicates possible influx\n\n**Fill Volume Calculation:**\nExpected fill = Pipe displacement × Stands pulled\n\n**Improper Fill Response:**\n1. Stop pulling immediately\n2. Fill hole to confirm level\n3. If still not accepting: flow check\n4. If flowing: shut in\n\n**Flow at Surface**\nMud flowing from well with no pipe movement:\n- Stop all operations\n- Shut in immediately\n\n**Monitoring During Trips:**\n- Continuous pit monitoring\n- Trip sheet maintained\n- Flow check before and after trip\n- Flow check at any suspicion"
+    },
+    "2.1.4": {
+      "title": "Kick Indicators During Connections",
+      "content": "Connections create ECD loss and potential swab:\n\n**Monitoring:**\n- Watch flow line during and after connection\n- Monitor pit volumes across connection\n- Note any unusual flow behavior\n\n**Connection Flow Check:**\n- Standard practice: brief flow check after each connection\n- Observe flow line for 3-5 minutes\n- Note: some residual flow is normal (U-tube)\n\n**Warning Signs:**\n- Flow continues longer than normal\n- Flow rate increases over time\n- Pit gain across connection\n- Connection gas increasing trend\n\n**Response:**\nIf flow continues or pit gain observed:\n1. Do not break connection\n2. Observe and document\n3. If confirmed: shut in\n4. If uncertain: extended flow check"
+    },
+    "2.1.5": {
+      "title": "Flow Checks",
+      "content": "Flow checks are essential for confirming well status:\n\n**When to Flow Check:**\n- Before tripping (with bit on bottom)\n- After tripping (before resuming operations)\n- Whenever secondary indicators observed\n- During connections if suspicious\n- After suspected swab\n- When returning to bottom after any delay\n\n**Flow Check Procedure:**\n1. Stop pumps\n2. Position kelly/top drive clear of rotary\n3. Observe flow line for minimum 5 minutes\n4. Longer observation for deep wells or high-risk situations\n5. Monitor pit volumes\n\n**Interpreting Results:**\n- No flow, stable pits: Well is static\n- Minor flow, stabilizing: Possible U-tube or thermal effects\n- Continuous flow, pit gain: Well is kicking - shut in\n\n**Documentation:**\nRecord all flow checks with:\n- Time and depth\n- Duration of observation\n- Result (static/flowing)\n- Pit volumes before/after"
+    },
+    "2.1.6": {
+      "title": "Gas Detection",
+      "content": "Gas at surface provides information about downhole conditions:\n\n**Types of Gas:**\n\n**Background Gas (DGAS)**\n- Gas liberated from cuttings while drilling\n- Baseline level varies with formation\n- Monitor for trends and changes\n\n**Connection Gas**\n- Gas entering during connection due to ECD loss\n- Arrives at surface after lag time\n- Some is normal; increasing trend is warning\n\n**Trip Gas**\n- Gas entering during trip due to swab\n- Observed after trip, when circulating bottoms up\n- Increasing trend indicates swabbing\n\n**Kick Gas**\n- High gas associated with influx\n- Much higher than background\n- Often associated with pit gain\n\n**H2S Detection:**\n- Monitor continuously in known/suspected H2S areas\n- Alarm thresholds per safety requirements\n- Personnel protection measures required\n\n**Response to Gas:**\n- Increasing trends: Investigate, consider mud weight increase\n- High gas peaks: Flow check, be prepared to shut in\n- H2S alarm: Initiate H2S response procedures"
+    },
+    "2.1.7": {
+      "title": "PWD/MWD Kick Detection",
+      "content": "Downhole pressure tools provide early kick indication:\n\n**PWD Capabilities:**\n- Real-time annular pressure monitoring\n- ECD verification\n- Early detection of pressure changes\n\n**Kick Indicators from PWD:**\n- Decrease in annular pressure below expected ECD\n- Increase in annular pressure indicating influx compression\n- Abnormal pressure behavior during connections\n\n**Advantages:**\n- Detects changes at depth before surface indicators\n- Earlier warning, especially in deep wells\n- Quantitative pressure data\n\n**Limitations:**\n- Requires circulation for real-time data (most tools)\n- Tool may not function in all conditions\n- Data transmission delay\n- Not a substitute for surface monitoring\n\n**Integration:**\n- PWD data should complement, not replace, surface monitoring\n- Establish baseline ECD for comparison\n- Alert driller to PWD anomalies immediately"
+    }
+  }
+}

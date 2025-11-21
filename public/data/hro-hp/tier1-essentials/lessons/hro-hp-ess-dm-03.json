@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-DM-03",
+  "moduleId": "HRO-HP-ESS-DM",
+  "courseId": "HRO-HP-ESS",
+  "title": "Recognition-Primed Decisions",
+  "type": "lesson",
+  "content": "Experienced operators often make rapid, effective decisions by recognizing situations as similar to ones they've encountered before. This recognition-primed decision making works by pattern matching—the brain identifies the situation type and retrieves proven responses. It's fast and often accurate, but can fail when situations look familiar but are actually different.",
+  "mcq": {
+    "question": "A senior operator quickly diagnoses a problem and implements a solution that has worked many times before. This time, the solution doesn't work and the situation worsens. What most likely happened?",
+    "options": {
+      "A": "The operator's experience was insufficient",
+      "B": "The situation appeared similar but had critical differences",
+      "C": "Pattern recognition doesn't work in operational settings",
+      "D": "The previous successes were coincidental"
+    },
+    "correctOption": "B",
+    "explanation": "Recognition-primed decisions fail when situations look similar to past experiences but have important differences. The experienced operator correctly recognized a pattern, but the pattern didn't actually apply because of hidden differences in the current situation."
+  },
+  "openQuestions": [
+    "How do you verify that a situation truly matches the pattern you've recognized, rather than just appearing similar?",
+    "When has your experience-based intuition been wrong? What made that situation different from what you expected?"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "documentId": "PRIMARY_SECONDARY_CONTROL",
+  "collectionId": "questionBank",
+  "categoryKey": "PRIMARY_SECONDARY_CONTROL",
+  "title": "Primary & Secondary Control Methods",
+  "moduleAlignment": [
+    "WC-SF-101",
+    "WC-SS-101"
+  ],
+  "questionCount": 4,
+  "l3Count": 4,
+  "l4Count": 0,
+  "questions": [
+    {
+      "id": "EX1-Q1",
+      "level": "L3",
+      "question": "What is the primary means of formation pressure control?",
+      "options": {
+        "A": "The Blow Out Preventers",
+        "B": "Hard shut-in",
+        "C": "Mud hydrostatic pressure",
+        "D": "Soft shut-in",
+        "E": "Mud hydrostatic pressure plus annular pressure loss"
+      },
+      "correctAnswer": "C",
+      "explanation": "Mud hydrostatic pressure is ALWAYS the primary control. BOPs are secondary\u2014you don't want to use them unless primary fails."
+    },
+    {
+      "id": "EX1-Q2",
+      "level": "L3",
+      "question": "What is the secondary means of formation pressure control?",
+      "options": {
+        "A": "The Blow Out Preventers",
+        "B": "Mud viscosity",
+        "C": "Mud hydrostatic pressure",
+        "D": "Cement plugs"
+      },
+      "correctAnswer": "A",
+      "explanation": "BOPs are secondary control\u2014the backup when mud column can't contain formation pressure."
+    },
+    {
+      "id": "EX1-Q3",
+      "level": "L3",
+      "question": "What is the primary prevention method for kicks?",
+      "options": {
+        "A": "Monitoring trips",
+        "B": "Closing well with Blow Out Preventers",
+        "C": "Monitoring pit volume and flow rate",
+        "D": "Using mud hydrostatic to balance formation pressure"
+      },
+      "correctAnswer": "D",
+      "explanation": "PREVENTION comes from maintaining proper mud weight. Monitoring detects kicks; BOPs respond to kicks. Prevention stops kicks from happening."
+    },
+    {
+      "id": "Q48",
+      "level": "L3",
+      "question": "Minimum barriers normally required during drilling operations?",
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "Four"
+      },
+      "correctAnswer": "B",
+      "explanation": "Two barrier philosophy: Primary (mud hydrostatic) + Secondary (BOP/casing/cement). Never operate with single barrier."
+    }
+  ]
+}

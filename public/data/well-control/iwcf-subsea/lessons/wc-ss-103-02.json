@@ -1,0 +1,57 @@
+{
+  "lessonId": "WC-SS-103-02",
+  "moduleId": "WC-SS-103",
+  "courseId": "WC-SS",
+  "title": "CLFL Corrections for ICP and FCP",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "In subsea operations, CLFL must be added to both ICP and FCP calculations. The formulas become: ICP (Subsea) = SCR Pressure + SIDPP + CLFL. FCP (Subsea) = (Kill MW \u00f7 Current MW) \u00d7 (SCR Pressure + CLFL). Note that for FCP, the CLFL is included inside the bracket with SCR pressure before multiplying by the mud weight ratio. This accounts for the fact that CLFL changes with mud density.",
+  "formula": {
+    "icpSubsea": {
+      "equation": "ICP = SCR + SIDPP + CLFL",
+      "example": "SCR = 600 psi, SIDPP = 400 psi, CLFL = 200 psi \u2192 ICP = 600 + 400 + 200 = 1,200 psi"
+    },
+    "fcpSubsea": {
+      "equation": "FCP = (Kill MW \u00f7 Current MW) \u00d7 (SCR + CLFL)",
+      "example": "Kill MW = 12.0 ppg, Current MW = 11.0 ppg, SCR = 600 psi, CLFL = 200 psi \u2192 FCP = (12.0 \u00f7 11.0) \u00d7 (600 + 200) = 1.09 \u00d7 800 = 872 psi"
+    }
+  },
+  "mcq": {
+    "question": "Given: SCR = 550 psi, SIDPP = 350 psi, CLFL = 180 psi. What is the subsea ICP?",
+    "options": {
+      "A": "900 psi",
+      "B": "1,080 psi",
+      "C": "730 psi",
+      "D": "1,260 psi"
+    },
+    "correctOption": "B",
+    "explanation": "ICP (Subsea) = SCR + SIDPP + CLFL = 550 + 350 + 180 = 1,080 psi. Simply add all three values together."
+  },
+  "openQuestions": [
+    "Why is CLFL inside the bracket when calculating FCP but added separately for ICP?",
+    "If your CLFL measurement was taken at a different pump rate than your kill rate, what would you need to do?"
+  ],
+  "practiceProblems": [
+    {
+      "problem": "SCR = 700 psi, SIDPP = 520 psi, CLFL = 250 psi. Calculate ICP.",
+      "answer": "1,470 psi"
+    },
+    {
+      "problem": "Kill MW = 13.5 ppg, Current MW = 12.5 ppg, SCR = 650 psi, CLFL = 220 psi. Calculate FCP.",
+      "answer": "940 psi"
+    }
+  ],
+  "examTip": "Subsea calculations are heavily tested. Know when to add CLFL directly (ICP) vs when to include it in the ratio calculation (FCP).",
+  "documentId": "WC-SS-103-02",
+  "tags": [
+    "well-control",
+    "subsea",
+    "deepwater",
+    "IWCF",
+    "WC-SS-103",
+    "WC-SS-103-02"
+  ]
+}

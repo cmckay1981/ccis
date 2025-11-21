@@ -1,0 +1,75 @@
+{
+  "documentId": "well-control-manuals",
+  "collectionId": "well-control-manuals",
+  "title": "Well Control Manuals",
+  "provider": "Claymore & Colt",
+  "description": "Comprehensive well control manual system built from industry best practices. Four volumes covering policy, procedures, equipment, and quick reference. Designed for easy customization per client and rig.",
+  "version": "1.0",
+  "structure": {
+    "volumes": [
+      {
+        "volumeId": "vol-1",
+        "title": "Policy & People",
+        "folder": "vol-1-policy-people",
+        "description": "Barrier philosophy, safety targets, roles, certifications, training, human factors, bridging documents",
+        "audience": ["Management", "New Crew", "Auditors", "HSE"],
+        "usage": "Pre-spud meetings, inductions, compliance audits"
+      },
+      {
+        "volumeId": "vol-2",
+        "title": "Procedures",
+        "folder": "vol-2-procedures",
+        "description": "Shut-in, kill methods, stripping, tripping, HPHT, deepwater, MPD, well intervention, H2S, drills",
+        "audience": ["Drillers", "Toolpushers", "Well Control Specialists"],
+        "usage": "Daily operations, well control events"
+      },
+      {
+        "volumeId": "vol-3",
+        "title": "Equipment & Testing",
+        "folder": "vol-3-equipment-testing",
+        "description": "BOP systems, choke/kill manifolds, accumulators, MGS, diverter, rig-specific test procedures",
+        "audience": ["Subsea Engineers", "Maintenance", "Drillers"],
+        "usage": "Equipment testing, setup, maintenance"
+      },
+      {
+        "volumeId": "vol-4",
+        "title": "Calculations & Quick Reference",
+        "folder": "vol-4-calculations-quickref",
+        "description": "Formulas, kill sheets, worksheets, decision trees, quick reference cards",
+        "audience": ["All Personnel"],
+        "usage": "Quick lookup, rig floor reference, calculations"
+      }
+    ]
+  },
+  "customization": {
+    "clientConfigFolder": "client-configs",
+    "customizableElements": [
+      "Company name and logo",
+      "Document numbering scheme",
+      "Volume 1: Company-specific policies and certifications",
+      "Volume 3: Rig-specific equipment and test procedures",
+      "Volume 4: Well-specific calculations from well profile data"
+    ],
+    "howToCustomize": "Create a client config JSON in client-configs/ folder. System merges C&C master content with client overrides."
+  },
+  "sources": {
+    "note": "Content synthesized from operator and drilling contractor best practices",
+    "contentBlocks": "Modular content in content-blocks/ folder for reuse and customization"
+  },
+  "outputFormats": [
+    {
+      "format": "HTML",
+      "description": "Interactive web-based with navigation, search, offline capability"
+    },
+    {
+      "format": "PDF",
+      "description": "Print-ready controlled documents with revision tracking"
+    }
+  ],
+  "relatedProducts": {
+    "certification": "well-control",
+    "advancedTraining": "advanced-drilling",
+    "dailyCoaching": "advanced-drilling/advanced-question-templates"
+  },
+  "tags": ["well-control", "manual", "procedures", "equipment", "drilling-contractor", "operator"]
+}

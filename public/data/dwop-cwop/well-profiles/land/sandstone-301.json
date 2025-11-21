@@ -1,0 +1,223 @@
+{
+  "wellId": "CC-SANDSTONE-301",
+  "wellName": "Sandstone-301",
+  "description": "Land rig directional appraisal well targeting deep sandstone reservoir through salt section - Middle East desert environment",
+  "rigType": "LAND",
+  "bopType": "surface",
+  "source": "Claymore & Colt training reference",
+  "location": {
+    "field": "Desert Development Block",
+    "region": "Middle East Land",
+    "terrain": "Desert / Onshore",
+    "coordinates": {
+      "surface": {"x": "XXXXXX.XX", "y": "XXXXXX.XX", "unit": "m"},
+      "target": {"x": "XXXXXX.XX", "y": "XXXXXX.XX", "unit": "m"}
+    }
+  },
+  "wellClassification": "Appraisal / Directional",
+  "operator": "Training Operator",
+  "rig": "CC-LAND-150",
+  "depths": {
+    "totalDepth": {"md": 3683, "tvdss": 3300, "unit": "m"},
+    "target": {"formation": "Target Sandstone", "tvdss": 3080, "unit": "m"},
+    "lateralDisplacement": {"value": 1200, "unit": "m"}
+  },
+  "directionalProfile": {
+    "type": "Directional",
+    "maxInclination": 38,
+    "azimuth": 259,
+    "kickoffPoint": "TBD"
+  },
+  "temperature": {
+    "bhst": {"value": 250, "unit": "F"},
+    "note": "Corrosion inhibitors required for brine-mud suspension"
+  },
+  "casingDesign": [
+    {
+      "string": "Surface",
+      "size": "18-5/8\"",
+      "holeSize": "23\"",
+      "settingDepth": {"md": 800, "unit": "m"},
+      "formation": "Surface Formation",
+      "pressureTest": {"value": 500, "unit": "psi"}
+    },
+    {
+      "string": "Intermediate",
+      "size": "13-3/8\" x 13-5/8\"",
+      "holeSize": "16\"",
+      "settingDepth": {"md": 2300, "unit": "m"},
+      "formation": "Evaporite/Salt Formation",
+      "pressureTest": {"value": 1750, "unit": "psi"}
+    },
+    {
+      "string": "Production Liner",
+      "size": "9-5/8\" x 10-3/4\"",
+      "holeSize": "12-1/4\"",
+      "settingDepth": {"md": 3350, "unit": "m"},
+      "formation": "Target Sandstone Formation",
+      "hangerDepth": {"md": 2200, "unit": "m"},
+      "pressureTest": {"value": 2400, "unit": "psi"}
+    },
+    {
+      "string": "Tieback",
+      "size": "9-5/8\"",
+      "settingDepth": "Surface",
+      "note": "Tieback to surface"
+    },
+    {
+      "string": "Production Liner",
+      "size": "7\"",
+      "holeSize": "8-1/2\"",
+      "settingDepth": {"md": 3683, "unit": "m"},
+      "formation": "Target Sandstone (Reservoir)",
+      "packer": "Expandable Packer System",
+      "pressureTest": {"value": 2400, "unit": "psi"}
+    }
+  ],
+  "holeSections": [
+    {
+      "section": "23\" Hole",
+      "interval": {"from": 0, "to": 800, "unit": "m"},
+      "mudType": "Spud Mud / KCl Polymer",
+      "mudWeight": {"min": 1.06, "max": 1.08, "unit": "sg"},
+      "bit": "Tri-Cone",
+      "bha": "Slick assembly with motor + MWD",
+      "hazards": ["Seepage losses"],
+      "mitigation": ["Manage flowrate", "LCM pills available"]
+    },
+    {
+      "section": "16\" Hole",
+      "interval": {"from": 800, "to": 2300, "unit": "m"},
+      "mudType": "KCl Polymer",
+      "mudWeight": {"min": 1.08, "max": 1.16, "unit": "sg"},
+      "mudAdditives": ["KCl 3-5%", "Lubricant 1%", "DD 1.5%"],
+      "bits": ["Tri-Cone (MTR)", "Kymera (MTR)", "PDC (RSS)"],
+      "bha": "Progressive: Motor + MWD to RSS + MWD",
+      "operations": ["Multiple bit runs", "High-viscosity sweeps"],
+      "hazards": ["Mobile salt", "Seepage losses"],
+      "mitigation": ["Fresh water pills", "Jarring readiness", "OBM deployment from 12-1/4\""]
+    },
+    {
+      "section": "12-1/4\" Hole",
+      "interval": {"from": 2300, "to": 3350, "unit": "m"},
+      "mudType": "Oil-Based Mud (OBM)",
+      "mudWeight": {"value": 1.65, "unit": "sg"},
+      "mudAdditives": ["45 PPB sized CaCO3"],
+      "bit": "PDC",
+      "bha": "Motorized RSS + MWD + LWD (GR-RES-ECD) + PBL",
+      "operations": ["Midway wiper trip"],
+      "hazards": ["Lost circulation", "Hole instability"],
+      "mitigation": ["200-320 BBL LCM pills with fibrous materials on standby"]
+    },
+    {
+      "section": "8-1/2\" Hole",
+      "interval": {"from": 3350, "to": 3683, "unit": "m"},
+      "mudType": "Oil-Based Mud (OBM)",
+      "mudWeight": {"min": 1.15, "max": 1.17, "unit": "sg"},
+      "mudAdditives": ["45 PPB sized CaCO3"],
+      "bit": "PDC",
+      "bha": "RSS + MWD + LWD (GR-RES-ECD) + PBL",
+      "parameters": {
+        "flowRate": {"min": 280, "max": 300, "unit": "GPM"},
+        "rop": "Controlled"
+      },
+      "hazards": ["Hole instability in reactive shale", "Poor hole cleaning", "Stuck pipe"],
+      "mitigation": ["OBM 1.15-1.17 sg", "Strict hole-cleaning discipline", "Back-reaming protocols"]
+    }
+  ],
+  "formationTops": [
+    {"formation": "Evaporite/Salt", "tvdss": 1900, "expectedPressure": {"value": 2800, "unit": "psia"}},
+    {"formation": "Upper Transition", "tvdss": 2150},
+    {"formation": "Middle Shale", "tvdss": 2460},
+    {"formation": "Lower Transition", "tvdss": 2760},
+    {"formation": "Pre-Salt Clastics", "tvdss": 2930},
+    {"formation": "Target Sandstone (Reservoir)", "tvdss": 3080, "expectedPressure": {"value": 2900, "unit": "psia"}}
+  ],
+  "cementingProgram": [
+    {
+      "casing": "18-5/8\" Surface",
+      "slurry": "Class G with additives",
+      "volume": {"value": 685, "unit": "bbls"},
+      "pressureTest": {"value": 500, "unit": "psi"}
+    },
+    {
+      "casing": "13-3/8\" Intermediate",
+      "slurry": "Class G with retarders and dispersants",
+      "volume": {"value": 1400, "unit": "bbls"},
+      "pressureTest": {"value": 1750, "unit": "psi"}
+    },
+    {
+      "casing": "9-5/8\" Liner",
+      "slurry": "Class G with additives",
+      "volume": {"value": 950, "unit": "bbls"},
+      "pressureTest": {"value": 2400, "unit": "psi"}
+    },
+    {
+      "casing": "7\" Production Liner",
+      "slurry": "Class G cement",
+      "volume": {"value": 600, "unit": "bbls"},
+      "packer": "Expandable Packer System",
+      "pressureTest": {"value": 2400, "unit": "psi"}
+    }
+  ],
+  "loggingProgram": {
+    "lwd": ["GR", "Resistivity", "ECD"],
+    "wireline": ["GR", "Resistivity", "Density/Neutron", "RFT", "Resistivity Image"],
+    "casedHole": ["CBL-VDL-CCL-GR"]
+  },
+  "keyHazards": [
+    {
+      "hazard": "Seepage Losses",
+      "sections": ["23\"", "16\""],
+      "mitigation": "Manage flowrate; LCM pills available"
+    },
+    {
+      "hazard": "Mobile Salt",
+      "sections": ["16\""],
+      "mitigation": "Fresh water pills; jarring readiness; OBM from 12-1/4\""
+    },
+    {
+      "hazard": "Hole Instability",
+      "sections": ["12-1/4\"", "8-1/2\""],
+      "mitigation": "OBM 1.15-1.17 sg in reactive shale; strict hole-cleaning"
+    },
+    {
+      "hazard": "Poor Hole Cleaning",
+      "sections": ["All"],
+      "mitigation": "Circulation/rotation protocols; back-reaming"
+    },
+    {
+      "hazard": "Stuck Pipe",
+      "sections": ["All"],
+      "mitigation": "Regular tripping practices; tight spots = cutting beds initially"
+    },
+    {
+      "hazard": "High Temperature",
+      "sections": ["8-1/2\""],
+      "mitigation": "BHST 250°F; corrosion inhibitors"
+    }
+  ],
+  "contractors": {
+    "rig": "CC-LAND-150",
+    "drillingFluid": "Fluids Contractor",
+    "cementing": "Cementing Contractor",
+    "directional": "Directional Contractor",
+    "wellhead": "Wellhead Supplier",
+    "bits": "Multiple Bit Suppliers"
+  },
+  "safetyProtocols": {
+    "bopTesting": "Every 21 days; before DST; as regulatory required",
+    "casingTests": "Per operator standards; 80% burst resistance maximum",
+    "wellControl": "Per operator well control policy",
+    "tripPractices": "Circulation at max rate/RPM (120-130 min) before POOH",
+    "mudRheology": {
+      "wbm": "6 RPM = 1.0-1.2x hole size (inches)",
+      "obm": "6 RPM = ~1.0x hole size (inches)"
+    }
+  },
+  "trainingUse": {
+    "dwopScenarios": ["Land rig operations", "Directional drilling", "Salt section drilling", "OBM operations", "Lost circulation management"],
+    "questionTemplates": "Can be used for land-rig specific DWOP training scenarios"
+  },
+  "tags": ["land-rig", "middle-east", "directional", "obm", "salt", "lost-circulation", "training-well"]
+}

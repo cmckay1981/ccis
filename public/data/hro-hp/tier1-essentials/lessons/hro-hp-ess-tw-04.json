@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-TW-04",
+  "moduleId": "HRO-HP-ESS-TW",
+  "courseId": "HRO-HP-ESS",
+  "title": "Trust and Psychological Safety",
+  "type": "lesson",
+  "content": "Trust enables team members to rely on each other without constant verification. Psychological safety means believing you can speak up, admit mistakes, and ask questions without punishment or embarrassment. Both are foundations for high performance—without them, teams spend energy on self-protection rather than the mission.",
+  "mcq": {
+    "question": "A team completes tasks efficiently but members rarely admit mistakes, ask for help, or challenge each other's ideas. What is likely missing?",
+    "options": {
+      "A": "Technical competence—they don't know enough to contribute",
+      "B": "Motivation—they don't care about improvement",
+      "C": "Psychological safety—they don't feel safe being vulnerable",
+      "D": "Leadership—no one is encouraging participation"
+    },
+    "correctOption": "C",
+    "explanation": "Efficient task completion with reluctance to admit mistakes or challenge ideas indicates psychological safety is lacking. People are protecting themselves from perceived risks of vulnerability, even if they're technically capable and motivated."
+  },
+  "openQuestions": [
+    "On a scale of 1-10, how psychologically safe do you feel in your current team? What influences that rating?",
+    "What behaviors from leaders and teammates increase or decrease psychological safety in your environment?"
+  ]
+}

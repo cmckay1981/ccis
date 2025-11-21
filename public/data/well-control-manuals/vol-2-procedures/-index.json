@@ -1,0 +1,267 @@
+{
+  "volumeId": "vol-2",
+  "title": "Volume 2: Procedures",
+  "description": "Operational procedures for well control prevention, detection, response, and kill operations. Covers all well types and special operations.",
+  "sections": [
+    {
+      "sectionId": "2.1",
+      "title": "Primary Well Control",
+      "file": "sections/2-1-primary-control.json",
+      "topics": [
+        "Maintaining hydrostatic overbalance",
+        "Flow checks",
+        "Kick prevention",
+        "Kick detection",
+        "Warning signs",
+        "Kick indicators",
+        "Trip monitoring",
+        "Fingerprinting & trending"
+      ]
+    },
+    {
+      "sectionId": "2.2",
+      "title": "Kick Detection",
+      "file": "sections/2-2-kick-detection.json",
+      "topics": [
+        "Primary indicators",
+        "Secondary indicators",
+        "Kick alertness levels",
+        "Flow check procedures",
+        "Deviated/horizontal well considerations",
+        "Slim hole considerations",
+        "Kick tolerance",
+        "Kick intensity",
+        "Wellbore effects"
+      ]
+    },
+    {
+      "sectionId": "2.3",
+      "title": "Shut-In Procedures",
+      "file": "sections/2-3-shut-in.json",
+      "topics": [
+        "Hard vs soft shut-in",
+        "Surface BOP shut-in (drilling)",
+        "Surface BOP shut-in (tripping)",
+        "Surface BOP shut-in (casing/liner)",
+        "Subsea BOP shut-in (drilling)",
+        "Subsea BOP shut-in (tripping)",
+        "Subsea BOP shut-in (casing/liner)",
+        "Deepwater shut-in considerations",
+        "Post shut-in operations",
+        "Pressure data recording"
+      ]
+    },
+    {
+      "sectionId": "2.4",
+      "title": "Kill Methods",
+      "file": "sections/2-4-kill-methods.json",
+      "topics": [
+        "Kill method selection",
+        "Driller's Method (preferred)",
+        "Wait and Weight Method",
+        "Volumetric Method (static)",
+        "Volumetric Method (dynamic)",
+        "Bullheading",
+        "Off-bottom kill",
+        "Slim hole kill considerations",
+        "Opening well after kill"
+      ]
+    },
+    {
+      "sectionId": "2.5",
+      "title": "Stripping Operations",
+      "file": "sections/2-5-stripping.json",
+      "topics": [
+        "When to strip",
+        "Preparation for stripping",
+        "Annulus pressure control",
+        "Stripping with drillpipe",
+        "Stripping with drill collars/tubing",
+        "Stripping out of hole",
+        "Volumetric stripping"
+      ]
+    },
+    {
+      "sectionId": "2.6",
+      "title": "Tripping Operations",
+      "file": "sections/2-6-tripping.json",
+      "topics": [
+        "Pre-trip preparation",
+        "Trip sheet requirements",
+        "Hole fill verification",
+        "Swab/surge management",
+        "Flow checks during trips",
+        "Tripping through problem zones"
+      ]
+    },
+    {
+      "sectionId": "2.7",
+      "title": "HPHT Well Control",
+      "file": "sections/2-7-hpht.json",
+      "topics": [
+        "HPHT classification",
+        "Personnel requirements",
+        "Primary control (HPHT)",
+        "Drain down test/pump-off fingerprinting",
+        "Monitoring techniques",
+        "Tripping guidelines",
+        "Secondary control (HPHT)",
+        "Narrow window management",
+        "Equipment requirements"
+      ]
+    },
+    {
+      "sectionId": "2.8",
+      "title": "Horizontal & Deviated Wells",
+      "file": "sections/2-8-horizontal.json",
+      "topics": [
+        "Kick behavior in horizontal wells",
+        "Detection challenges",
+        "Kick while drilling",
+        "Kick while tripping",
+        "Kill method selection",
+        "Kill procedure modifications"
+      ]
+    },
+    {
+      "sectionId": "2.9",
+      "title": "Deepwater & Subsea Operations",
+      "file": "sections/2-9-deepwater.json",
+      "topics": [
+        "Narrow pressure margins",
+        "Choke line friction loss",
+        "Riser margin",
+        "Gas in riser handling",
+        "Trapped gas in subsea BOP",
+        "Unplanned disconnects",
+        "LMRP reconnection",
+        "ROV intervention",
+        "Hydrate prevention",
+        "Autoshear/deadman systems"
+      ]
+    },
+    {
+      "sectionId": "2.10",
+      "title": "MPD Operations",
+      "file": "sections/2-10-mpd.json",
+      "topics": [
+        "MPD barrier requirements",
+        "Surface applied back pressure",
+        "Constant BHP operations",
+        "Dual gradient drilling",
+        "Pressurized mud cap drilling",
+        "MPD kick response",
+        "Transition to conventional well control"
+      ]
+    },
+    {
+      "sectionId": "2.11",
+      "title": "Shallow Gas & Hazards",
+      "file": "sections/2-11-shallow-gas.json",
+      "topics": [
+        "Shallow hazard types",
+        "Pilot hole requirements",
+        "Diverter operations",
+        "Surface hole drilling procedures",
+        "Shallow gas kick handling",
+        "Safety recommendations"
+      ]
+    },
+    {
+      "sectionId": "2.12",
+      "title": "Well Intervention",
+      "file": "sections/2-12-intervention.json",
+      "topics": [
+        "Intervention well control principles",
+        "Coiled tubing operations",
+        "Slickline operations",
+        "Electric wireline operations",
+        "Snubbing operations",
+        "Dry tree scenarios",
+        "Wet tree scenarios",
+        "Intervention shut-in procedures",
+        "Intervention kill procedures"
+      ]
+    },
+    {
+      "sectionId": "2.13",
+      "title": "H2S & Toxic Gas Operations",
+      "file": "sections/2-13-h2s.json",
+      "topics": [
+        "H2S properties and hazards",
+        "Detection systems",
+        "Alarm levels (H2S, SO2)",
+        "Pre-alarm procedures",
+        "Alarm procedures",
+        "Site evacuation",
+        "Well control with H2S",
+        "Personnel protection"
+      ]
+    },
+    {
+      "sectionId": "2.14",
+      "title": "Complications & Troubleshooting",
+      "file": "sections/2-14-complications.json",
+      "topics": [
+        "Lost circulation during kill",
+        "Plugged choke/lines",
+        "Pump failure",
+        "Equipment failure",
+        "Underground blowout",
+        "Stuck pipe during well control",
+        "Gas migration",
+        "Hydrate formation"
+      ]
+    },
+    {
+      "sectionId": "2.15",
+      "title": "Drills & Exercises",
+      "file": "sections/2-15-drills.json",
+      "topics": [
+        "Drill types",
+        "Familiarity drills",
+        "Shut-in drills (drilling)",
+        "Shut-in drills (tripping)",
+        "Hang-off drill",
+        "Choke drill",
+        "Diverter drill",
+        "P&A drills",
+        "Drill frequency",
+        "Reaction time requirements",
+        "Documentation"
+      ]
+    },
+    {
+      "sectionId": "2.16",
+      "title": "Emergency Securing Procedures",
+      "file": "sections/2-16-emergency.json",
+      "topics": [
+        "Emergency disconnect sequence (EDS)",
+        "Tertiary well control",
+        "Securing well in emergency",
+        "Casing/liner running emergencies"
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "appendixId": "A",
+      "title": "Kill Method Selection Guide",
+      "file": "appendices/a-kill-selection.json"
+    },
+    {
+      "appendixId": "B",
+      "title": "Kick Alertness Levels",
+      "file": "appendices/b-alertness-levels.json"
+    },
+    {
+      "appendixId": "C",
+      "title": "Losses While Drilling Decision Tree",
+      "file": "appendices/c-losses-decision-tree.json"
+    }
+  ],
+  "clientCustomization": {
+    "replaceable": ["Specific procedures", "Response times", "Approval authorities"],
+    "addable": ["Regional procedures", "Client-specific requirements"]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cardId": "shallow-gas-response",
+  "title": "Shallow Gas Response",
+  "type": "emergency-card",
+  "content": {
+    "warning": {
+      "title": "⚠️ SHALLOW GAS - DO NOT SHUT IN",
+      "note": "Before surface casing is set, DIVERT - do not attempt to shut in the well"
+    },
+    "procedure": {
+      "title": "DIVERTER ACTIVATION",
+      "steps": [
+        "1. SOUND ALARM",
+        "2. Stop drilling",
+        "3. INCREASE PUMP RATE to maximum safe rate",
+        "4. Open diverter line valve (downwind)",
+        "5. Close diverter packer",
+        "6. KEEP CIRCULATING at maximum rate",
+        "7. Evacuate non-essential personnel from area",
+        "8. Control ignition sources"
+      ]
+    },
+    "critical": {
+      "title": "CRITICAL POINTS",
+      "items": [
+        "✗ NEVER close diverter with lines closed",
+        "✗ NEVER stop pumping during shallow gas",
+        "✓ Maintain maximum circulation - dilutes and displaces gas",
+        "✓ Stopping allows bridging - keeps gas in well",
+        "✓ Keep personnel away from diverter line exit"
+      ]
+    },
+    "success": {
+      "title": "SUCCESS INDICATORS",
+      "items": [
+        "• Gas rate decreasing",
+        "• Returns becoming normal",
+        "• Stable circulation re-established"
+      ]
+    },
+    "ifNotSuccessful": {
+      "title": "IF NOT SUCCESSFUL",
+      "items": [
+        "• Continue diverting - do NOT attempt to shut in",
+        "• Consider increasing mud weight if practical",
+        "• May need to abandon location",
+        "• Full evacuation may be required"
+      ]
+    }
+  }
+}

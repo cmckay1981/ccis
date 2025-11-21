@@ -1,0 +1,34 @@
+{
+  "sectionId": "2.3",
+  "title": "Driller's Method",
+  "content": {
+    "2.3.1": {
+      "title": "Overview",
+      "content": "The Driller's Method is a two-circulation kill procedure:\n\n**First Circulation:**\nCirculate kick out using original mud weight, maintaining constant bottomhole pressure.\n\n**Second Circulation:**\nCirculate kill weight mud through the well.\n\n**Advantages:**\n- Can begin immediately (no wait for kill mud)\n- Simpler - constant mud weight during first circulation\n- Lower risk of lost circulation during first circulation\n\n**Disadvantages:**\n- Two full circulations required\n- Higher casing shoe pressure during first circulation\n- More time overall\n\n**When to Use:**\n- When kill mud not immediately available\n- When time to prepare kill mud would allow excessive gas migration\n- When shoe integrity is adequate\n- When preferred by operator procedures"
+    },
+    "2.3.2": {
+      "title": "Pre-Circulation Checks",
+      "content": "Before beginning circulation:\n\n**Verify:**\n- SIDPP and SICP stable and recorded\n- Pit gain recorded\n- Kill sheet completed with:\n  - Kill Weight Mud (KWM)\n  - Initial Circulating Pressure (ICP)\n  - Final Circulating Pressure (FCP)\n  - Strokes to bit and total strokes\n- Choke manifold lined up\n- Degasser/separator ready\n- Crew briefed on procedure\n- Shore base notified\n\n**Calculate:**\n- KWM = Current MW + (SIDPP ÷ 0.052 ÷ TVD)\n- ICP = SCR + SIDPP\n- FCP = SCR × (KWM ÷ Current MW)\n\n**Check MAASP:**\nVerify anticipated pressures will not exceed shoe fracture limit.\n\n**Equipment:**\n- Pump in good condition\n- Stroke counter zeroed or noted\n- Choke operator ready\n- Recording system active"
+    },
+    "2.3.3": {
+      "title": "First Circulation - Circulating Kick Out",
+      "content": "**Starting:**\n1. Ensure choke operator ready\n2. Open choke slightly\n3. Start pump slowly, bringing up to kill rate\n4. As pump speed increases, close choke to maintain SIDPP constant\n5. Once at kill rate with correct ICP: pump and choke in balance\n\n**During Circulation:**\n- Maintain constant drillpipe pressure (ICP)\n- Choke operator adjusts as needed to maintain pressure\n- Monitor casing pressure - will increase as gas rises\n- Watch for MAASP approach\n- Monitor pit volume - will decrease as kick displaced\n- Record pressures and strokes regularly\n\n**Gas at Surface:**\n- Gas will arrive at surface during first circulation\n- Degasser/separator handles gas\n- Casing pressure may fluctuate\n- Maintain drillpipe pressure constant regardless of casing changes\n\n**Completion of First Circulation:**\n- When original mud returns (strokes complete)\n- Pit volume should be back to original\n- Casing and drillpipe pressures should be equal\n- Both equal to SIDPP (approximately)"
+    },
+    "2.3.4": {
+      "title": "Between Circulations",
+      "content": "After kick is out, before starting kill mud:\n\n**Verification:**\n- Confirm kick completely out:\n  - Full bottoms-up circulated\n  - Pit volume back to normal\n  - SICP = SIDPP (no gas in annulus)\n- Gas samples taken if required\n\n**Preparation:**\n- Kill mud preparation complete\n- Kill mud weight verified\n- Sufficient volume for complete displacement\n\n**If Delay Expected:**\n- May stop pumps and shut in\n- Monitor for migration\n- May need to apply volumetric method if significant delay\n\n**Decision Point:**\nIf kill mud is ready, proceed directly to second circulation. If not ready, either:\n- Wait shut-in (managing migration)\n- Circulate another bottoms-up at original weight"
+    },
+    "2.3.5": {
+      "title": "Second Circulation - Kill Mud",
+      "content": "**Starting:**\n1. With original mud in well, pressures should be equal\n2. Start pump, bring to kill rate\n3. Maintain constant drillpipe pressure (still ICP initially)\n4. Begin pumping kill mud\n5. As kill mud enters drillstring, begin reducing drillpipe pressure per schedule\n\n**Pressure Schedule:**\n- As kill mud fills drillstring, DP pressure reduces\n- Follow the kill sheet schedule (pressure vs strokes)\n- Linear reduction from ICP to FCP over strokes to bit\n\n**During Second Circulation:**\n- Follow pressure schedule to bit\n- Once at FCP (kill mud at bit): maintain FCP constant\n- Kill mud now filling annulus - provides increasing overbalance\n- Casing pressure should decrease steadily\n- Continue until kill mud at surface\n\n**Completion:**\n- Kill mud at surface (full circulation complete)\n- Casing pressure should be zero (or minimal)\n- Drillpipe pressure at FCP (pump pressure for kill mud)\n- Stop pumps and flow check"
+    },
+    "2.3.6": {
+      "title": "Final Flow Check",
+      "content": "After second circulation complete:\n\n**Procedure:**\n1. Stop pumps\n2. Close choke\n3. Observe pressures for 5-10 minutes\n4. Both SIDPP and SICP should be zero\n\n**If Pressures Are Zero:**\n- Well is killed\n- Open choke, observe for flow\n- If no flow: well secure\n- Resume operations after verification\n\n**If Pressures Are Not Zero:**\n- Residual kick may remain\n- Kill mud weight may be insufficient\n- Options:\n  - Circulate another bottoms-up\n  - Increase mud weight and recirculate\n  - Investigate cause\n\n**Post-Kill:**\n- Continue monitoring well closely\n- Maintain kill weight mud\n- Document event fully\n- Conduct debrief"
+    },
+    "2.3.7": {
+      "title": "Monitoring and Recording",
+      "content": "Throughout the kill operation:\n\n**Record Every 5 Minutes Minimum:**\n- Time\n- Stroke count\n- Drillpipe pressure\n- Casing pressure\n- Pump speed/rate\n- Pit volume\n\n**Key Points to Record:**\n- Start time\n- Kill mud entering drillstring\n- Kill mud at bit\n- Kill mud at shoe\n- Gas at surface\n- Kill mud at surface\n- Final flow check result\n\n**Plot:**\n- Actual DP pressure vs scheduled\n- Casing pressure trend\n- Compare to expected behavior\n\n**Watch For:**\n- Deviations from plan\n- Pressure spikes (plugging)\n- Lost circulation\n- Equipment problems"
+    }
+  }
+}

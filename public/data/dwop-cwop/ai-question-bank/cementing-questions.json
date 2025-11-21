@@ -1,0 +1,21 @@
+{
+  "categoryId": "CEMENTING",
+  "title": "Cementing Operations - AI Probing Questions",
+  "breakoutRoom": "B",
+  "targetParticipants": ["Cementing Engineer", "Well Engineer", "Drilling Engineer"],
+  "questions": [
+    {"questionId": "CM-001", "question": "Thickening time is 4 hours but job estimate is 3.5 hours - what's your contingency for delays?", "type": "calculation_check", "focus": "Timing margins", "expectedResponse": "Buffer assessment and delay contingency"},
+    {"questionId": "CM-002", "question": "ECD during cement is 16.8 ppg, fracture gradient is 17.0 ppg - 0.2 ppg margin seems tight. What's your response to losses?", "type": "assumption_challenge", "focus": "ECD management", "expectedResponse": "Loss response during cement job"},
+    {"questionId": "CM-003", "question": "Temperature at shoe is 165°C - has the slurry been lab-tested at this temperature?", "type": "verification", "focus": "Slurry design", "expectedResponse": "Lab test results at well conditions"},
+    {"questionId": "CM-004", "question": "Your cement excess is 30% but caliper shows washouts - should you increase volume?", "type": "assumption_challenge", "focus": "Volume calculations", "expectedResponse": "Excess justification with caliper data"},
+    {"questionId": "CM-005", "question": "If float doesn't hold, how long before cement enters casing? What's your WOC procedure?", "type": "what_if", "focus": "Float failure", "expectedResponse": "Float failure response and WOC protocol"},
+    {"questionId": "CM-006", "question": "CBL is planned but acceptance criteria shows 80% bond - what's your remedial plan if it fails?", "type": "what_if", "focus": "Cement evaluation", "expectedResponse": "Remedial cementing plan"},
+    {"questionId": "CM-007", "question": "Spacer is 50 bbls but annular volume is 200 bbls - is this sufficient contact time for mud removal?", "type": "calculation_check", "focus": "Spacer design", "expectedResponse": "Contact time calculation"},
+    {"questionId": "CM-008", "question": "Pump rate is 8 bpm but cement unit has two pumps rated 5 bpm each - what's your redundancy if one fails?", "type": "what_if", "focus": "Equipment redundancy", "expectedResponse": "Single pump contingency"},
+    {"questionId": "CM-009", "question": "Gas migration additive is specified but not on material inventory - has this been ordered?", "type": "gap_identification", "focus": "Materials", "expectedResponse": "Additive availability status"},
+    {"questionId": "CM-010", "question": "Plug bump pressure is 2,500 psi but casing test pressure is 3,000 psi - how do you differentiate between good bump and failed test?", "type": "verification", "focus": "Pressure testing", "expectedResponse": "Clear pressure test procedure"},
+    {"questionId": "CM-011", "question": "Slurry density is 16.0 ppg but free water is 2% - what's the density of the cement column after settling?", "type": "calculation_check", "focus": "Slurry properties", "expectedResponse": "Settled density calculation"},
+    {"questionId": "CM-012", "question": "WOC is 12 hours but compressive strength test shows 500 psi at 12 hours - is this sufficient for pressure testing?", "type": "verification", "focus": "WOC time", "expectedResponse": "Strength requirement justification"}
+  ],
+  "tags": ["dwop", "ai-questions", "cementing", "cement-design"]
+}

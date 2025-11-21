@@ -1,0 +1,339 @@
+{
+  "documentId": "WELL_KILL_OPERATIONS",
+  "collectionId": "questionBank",
+  "categoryKey": "WELL_KILL_OPERATIONS",
+  "title": "Well Kill Operations - Methods",
+  "moduleAlignment": [
+    "WC-SF-108"
+  ],
+  "questionCount": 26,
+  "l3Count": 7,
+  "l4Count": 19,
+  "questions": [
+    {
+      "id": "EX8-Q1",
+      "level": "L3",
+      "question": "Match method characteristics: ICP maintained first circulation; Usually lower annulus pressures; Kill mud pumped with influx; Influx circulated before kill mud",
+      "answer": {
+        "ICP_first_circ": "Driller's Method",
+        "lower_annulus_P": "Wait and Weight",
+        "kill_mud_with_influx": "Wait and Weight",
+        "influx_before_kill": "Driller's Method"
+      },
+      "explanation": "Driller's: circulate out kick first (ICP maintained), then pump kill mud (influx already out). W&W: kill mud follows kick up annulus (together), reducing annular pressures."
+    },
+    {
+      "id": "EX8-Q2",
+      "level": "L4",
+      "question": "Kill startup statements? (SELECT TWO)",
+      "options": {
+        "A": "Maintain constant DP pressure when bringing pump to kill speed",
+        "B": "Surface line volume affects when kill mud increases hydrostatic",
+        "C": "Bring pump to speed holding casing pressure constant",
+        "D": "Surface line volume not needed consideration"
+      },
+      "correctAnswers": [
+        "B",
+        "C"
+      ],
+      "explanation": "Hold CASING constant during startup (C)\u2014this maintains BHP. Surface line volume delays kill mud reaching DS (B). DP pressure changes during startup; don't try to hold it.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX8-Q3",
+      "level": "L3",
+      "question": "Gas influx circulation - pit volume trend?",
+      "options": {
+        "A": "Stays same",
+        "B": "Decreases",
+        "C": "Increases"
+      },
+      "correctAnswer": "C",
+      "explanation": "Gas expands as it rises. Expansion pushes mud out. Pit volume increases, sometimes dramatically as gas reaches surface."
+    },
+    {
+      "id": "EX8-Q4",
+      "level": "L4",
+      "question": "Kill mud reaches rig floor 100 strokes after pumps. W&W adjustment?",
+      "options": {
+        "A": "Re-zero counter after 100 strokes",
+        "B": "Add 100 strokes to bit-to-surface strokes",
+        "C": "Ignore 100 strokes"
+      },
+      "correctAnswer": "A",
+      "explanation": "The 100 strokes in surface lines don't add hydrostatic to the well. Re-zero when kill mud enters DS so stepdown chart matches actual DS fill."
+    },
+    {
+      "id": "EX8-Q5",
+      "level": "L4",
+      "question": "Best kill technique for long open section?",
+      "options": {
+        "A": "Bullheading",
+        "B": "Driller's Method",
+        "C": "Wait and Weight",
+        "D": "Volumetric"
+      },
+      "correctAnswer": "C",
+      "explanation": "Long open hole = more exposure to shoe pressure during gas passage. W&W gets kill mud behind gas, reducing maximum shoe pressure. Driller's has peak pressure later in circulation."
+    },
+    {
+      "id": "EX8-Q6",
+      "level": "L4",
+      "question": "Driller's Method: Original SIDPP 750, SICP 1000. After first circ: SIDPP 750, SICP 850. Action?",
+      "options": {
+        "A": "Continue second circulation using Wait and Weight stepdown",
+        "B": "Bullhead to reduce SICP to 0",
+        "C": "Continue second circulation; hold casing constant until kill mud at bit",
+        "D": "Reverse circulate"
+      },
+      "correctAnswer": "A",
+      "explanation": "SIDPP unchanged (750) confirms formation pressure balanced. SICP dropped (some influx out or compressed). Proceed with W&W stepdown for second circulation\u2014most controlled approach."
+    },
+    {
+      "id": "EX8-Q8",
+      "level": "L3",
+      "question": "Driller's Method: Casing pressure while pumping kill mud down drillstring?",
+      "options": {
+        "A": "Stay same",
+        "B": "Decrease",
+        "C": "Increase"
+      },
+      "correctAnswer": "A",
+      "explanation": "Kill mud in DS only\u2014annulus unchanged. Casing pressure maintains BHP against same annular column. Pressure stays constant until kill mud enters annulus."
+    },
+    {
+      "id": "EX8-Q9",
+      "level": "L4",
+      "question": "Choke adjustment - how long for DP response?",
+      "options": {
+        "A": "1 second per 1,000 feet",
+        "B": "5-10 seconds",
+        "C": "5-10 minutes",
+        "D": "750 feet per minute"
+      },
+      "correctAnswer": "A",
+      "explanation": "Pressure wave travels ~1000 ft/sec in mud. 10,000 ft well = ~10 second delay. Don't over-adjust waiting for response."
+    },
+    {
+      "id": "EX8-Q10",
+      "level": "L3",
+      "question": "When is FCP maintained?",
+      "options": {
+        "A": "Once influx out",
+        "B": "Once kill mud passed bit",
+        "C": "Once kill mud reaches shoe",
+        "D": "While pumping kill mud down"
+      },
+      "correctAnswer": "B",
+      "explanation": "FCP = Final Circulating Pressure, maintained after kill mud passes bit. DP pressure constant at FCP for rest of circulation. Before bit: follow stepdown schedule."
+    },
+    {
+      "id": "EX8-Q11",
+      "level": "L4",
+      "question": "Kick taken 30 stands off bottom. Both pressures 150 psi. Action to restore control?",
+      "options": {
+        "A": "Strip to bottom; circulate using Driller's Method",
+        "B": "Circulate while 30 stands off using Driller's Method",
+        "C": "Raise MW 150 psi; circulate using Wait and Weight"
+      },
+      "correctAnswer": "A",
+      "explanation": "Can't kill effectively off-bottom\u2014kick below bit. Strip pipe to bottom (monitoring pressures), then circulate with proper method. Kill mud needs full circulation path."
+    },
+    {
+      "id": "EX8-Q12",
+      "level": "L4",
+      "question": "Correct stripping action?",
+      "options": {
+        "A": "Strip until casing = MAASP; bleed each stand",
+        "B": "Bleed DP capacity each stand",
+        "C": "Bleed DP closed-end displacement each stand",
+        "D": "Bleed DP metal displacement each stand"
+      },
+      "correctAnswer": "C",
+      "explanation": "Closed-end displacement = volume of steel entering well. Bleed this volume to maintain constant BHP. Open-end (capacity) would over-bleed; metal displacement is a component, not total."
+    },
+    {
+      "id": "EX8-Q13",
+      "level": "L3",
+      "question": "Swab kick - is original mud weight sufficient?",
+      "correctAnswer": "True",
+      "explanation": "Swab kick occurred because BHP temporarily dropped during trip, not because MW was insufficient. Original MW was maintaining balance\u2014just circulate out the influx."
+    },
+    {
+      "id": "EX8-Q14",
+      "level": "L4",
+      "question": "When does Wait & Weight give lower shoe pressure than Driller's?",
+      "options": {
+        "A": "When DP capacity less than open hole (minus kick)",
+        "B": "When DP capacity greater than open hole (minus kick)",
+        "C": "Always lower with Wait and Weight"
+      },
+      "correctAnswer": "A",
+      "explanation": "W&W advantage: kill mud behind gas. If DS capacity < open hole below shoe, kill mud reaches shoe BEFORE gas does. This gives W&W its advantage. Otherwise, benefit diminishes."
+    },
+    {
+      "id": "EX8-Q15",
+      "level": "L4",
+      "question": "If gas expansion prevented, effect on BHP?",
+      "options": {
+        "A": "Stays same",
+        "B": "Increases",
+        "C": "Decreases"
+      },
+      "correctAnswer": "B",
+      "explanation": "Preventing expansion maintains gas at high pressure (small volume). As gas rises, that high pressure adds to surface\u2014BHP would increase. That's why we allow controlled expansion."
+    },
+    {
+      "id": "EX8-Q16",
+      "level": "L4",
+      "question": "Horizontal well - why little difference between SIDPP and SICP?",
+      "options": {
+        "A": "Influx can't migrate",
+        "B": "Same fluid density in horizontal drilling",
+        "C": "Same volume inside/outside string",
+        "D": "Influx vertical height minimal effect on annular hydrostatic"
+      },
+      "correctAnswer": "D",
+      "explanation": "Horizontal influx has minimal vertical height. Hydrostatic difference between mud and influx depends on VERTICAL height. Horizontal = little height = little SICP difference from SIDPP."
+    },
+    {
+      "id": "EX8-Q17",
+      "level": "L4",
+      "question": "Kill mud pump-down in high-angle well. Standpipe pressure compared to vertical?",
+      "options": {
+        "A": "Lower than vertical",
+        "B": "Higher than vertical",
+        "C": "Same as vertical"
+      },
+      "correctAnswer": "A",
+      "explanation": "High-angle well: kill mud in DS increases DS hydrostatic, but this is offset by less TVD. Net effect: less pressure required than vertical well of same MD."
+    },
+    {
+      "id": "EX8-Q18",
+      "level": "L4",
+      "question": "Stripping with float. 93 ft stand, 0.0346 bbl/ft capacity, 0.0438 bbl/ft CE displacement, 0.0092 bbl/ft metal. Bleed volume per stand? Pipe fill volume?",
+      "answer": {
+        "bleed_volume": "4.0-4.1 bbl",
+        "fill_volume": "3.2-3.3 bbl"
+      },
+      "explanation": "Bleed = CE displacement \u00d7 length = 0.0438 \u00d7 93 = 4.07 bbl. Fill (with float) = capacity \u00d7 length = 0.0346 \u00d7 93 = 3.22 bbl",
+      "type": "calculation"
+    },
+    {
+      "id": "EX8-Q19",
+      "level": "L4",
+      "question": "Volumetric method - when is casing shoe pressure maximum? (SELECT TWO)",
+      "options": {
+        "A": "When influx reaches BOP",
+        "B": "When influx reaches shoe",
+        "C": "When first shut in"
+      },
+      "correctAnswers": [
+        "B",
+        "C"
+      ],
+      "explanation": "Shoe pressure highest when: gas at shoe (B) - maximum gas height above shoe, and at initial shut-in (C) before any expansion relief. BOP arrival has no shoe significance.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX8-Q20",
+      "level": "L4",
+      "question": "Gas migrating, can't start pumps. Which pressure to hold?",
+      "options": {
+        "A": "SICP",
+        "B": "Casing shoe pressure",
+        "C": "Influx pressure",
+        "D": "SIDPP"
+      },
+      "correctAnswer": "D",
+      "explanation": "SIDPP directly reflects BHP through clean mud column. Maintain SIDPP constant by bleeding casing (volumetric). SICP affected by influx position; shoe pressure not directly monitored."
+    },
+    {
+      "id": "EX8-Q21",
+      "level": "L4",
+      "question": "Stripping to bottom - what volume to bleed?",
+      "options": {
+        "A": "Volume = 100 psi hydrostatic head equivalent",
+        "B": "Volume = DP closed-end displacement of pipe stripped",
+        "C": "Volume = DP metal displacement of pipe stripped"
+      },
+      "correctAnswer": "B",
+      "explanation": "Closed-end displacement = steel volume entering hole. Bleed this to maintain constant BHP. Metal displacement is subset; hydrostatic method is volumetric, not stripping."
+    },
+    {
+      "id": "EX8-Q22",
+      "level": "L4",
+      "question": "Strip back 6000 ft to 9000 ft, shoe at 6000 ft, 11.4 ppg. Bleed volume? BHP effect if too much/little bled? Casing pressure trend?",
+      "answer": {
+        "bleed_volume": "120-121 bbl",
+        "too_much_bled": "BHP decreases",
+        "too_little_bled": "BHP increases",
+        "casing_trend": "Increases"
+      },
+      "explanation": "Calculate displacement for 3000 ft. Over-bleed = lose hydrostatic. Under-bleed = trap pressure. Casing increases as pipe withdrawn compresses influx.",
+      "type": "calculation"
+    },
+    {
+      "id": "EX8-Q23",
+      "level": "L4",
+      "question": "1 bbl gas swabbed at 2000 ft. 10 ppg mud. Volume at surface?",
+      "options": {
+        "A": "71-72 bbl"
+      },
+      "correctAnswer": "71-72 bbl",
+      "explanation": "Boyle's Law: P1V1 = P2V2. BHP = 10 \u00d7 0.052 \u00d7 2000 = 1040 psi. V2 = (1040 \u00d7 1) / 14.7 = 70.7 \u2248 71 bbl",
+      "type": "calculation"
+    },
+    {
+      "id": "Q13",
+      "level": "L4",
+      "question": "Pump to kill rate, DP reads 200 psi above calculated ICP. Action?",
+      "options": {
+        "A": "Open choke to reduce DP pressure",
+        "B": "Shut down, change choke",
+        "C": "Continue, OK",
+        "D": "Recalculate circulating schedule"
+      },
+      "correctAnswer": "D",
+      "explanation": "200 psi above ICP indicates either: wrong SCR value, calculation error, or changed conditions. Recalculate before proceeding."
+    },
+    {
+      "id": "Q14",
+      "level": "L4",
+      "question": "Driller's vs. Wait & Weight comparison?",
+      "options": {
+        "A": "No difference in shoe pressure",
+        "B": "Wait & Weight reduces formation breakdown risk",
+        "C": "Always use Wait & Weight"
+      },
+      "correctAnswer": "B",
+      "explanation": "W&W puts kill mud in drillstring first, reducing maximum annular pressure during kill. This protects weak formations."
+    },
+    {
+      "id": "Q15",
+      "level": "L3",
+      "question": "Vertical well, second circulation of Driller's Method. When does casing pressure decrease?",
+      "options": {
+        "A": "Kill mud halfway down drill string",
+        "B": "As kill mud enters annulus",
+        "C": "Before kill mud reaches bit",
+        "D": "When company man looks"
+      },
+      "correctAnswer": "B",
+      "explanation": "Casing pressure decreases when HEAVIER fluid enters the annulus. Kill mud enters annulus at the bit."
+    },
+    {
+      "id": "Q16",
+      "level": "L3",
+      "question": "Driller's Method first circulation. Casing pressure while pumping kill mud to bit?",
+      "options": {
+        "A": "Decrease",
+        "B": "Increase",
+        "C": "Impossible to say",
+        "D": "Remain constant"
+      },
+      "correctAnswer": "D",
+      "explanation": "First circulation uses ORIGINAL mud weight. Annular content unchanged. Casing pressure stays constant."
+    }
+  ]
+}

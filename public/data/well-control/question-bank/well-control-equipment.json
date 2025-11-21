@@ -1,0 +1,237 @@
+{
+  "documentId": "WELL_CONTROL_EQUIPMENT",
+  "collectionId": "questionBank",
+  "categoryKey": "WELL_CONTROL_EQUIPMENT",
+  "title": "Well Control Equipment",
+  "moduleAlignment": [
+    "WC-SF-110"
+  ],
+  "questionCount": 18,
+  "l3Count": 7,
+  "l4Count": 11,
+  "questions": [
+    {
+      "id": "EQ-Q1",
+      "level": "L3",
+      "question": "Accumulator stored fluid pressure purpose? (SELECT TWO)",
+      "options": {
+        "A": "Reduce BOP closing time",
+        "B": "Enable BOP closure on power failure",
+        "C": "Store hydraulic fluid",
+        "D": "Operate remote choke"
+      },
+      "correctAnswers": [
+        "A",
+        "B"
+      ],
+      "explanation": "Pre-charged accumulators: Fast closure (A) without waiting for pumps, and backup power (B) for emergency. Storage (C) is function, not purpose. Choke is separate system.",
+      "multiSelect": true
+    },
+    {
+      "id": "EQ-Q2",
+      "level": "L3",
+      "question": "Accumulator bottles pre-charged with nitrogen?",
+      "correctAnswer": "True",
+      "explanation": "Nitrogen provides the stored energy. Hydraulic fluid compresses the N2; when released, N2 expands and pushes fluid to BOPs."
+    },
+    {
+      "id": "EQ-Q4",
+      "level": "L4",
+      "question": "High-low bypass valve - when does full accumulator pressure apply?",
+      "options": {
+        "A": "Rams only",
+        "B": "Annular only",
+        "C": "All functions",
+        "D": "Rams and HCR only"
+      },
+      "correctAnswer": "D",
+      "explanation": "High-low bypass sends full 3000 psi to rams and HCR (hydraulic connector release). Annular always gets regulated pressure to prevent element damage."
+    },
+    {
+      "id": "EQ-Q5",
+      "level": "L4",
+      "question": "API STD 53 requirement for fluid reservoir?",
+      "options": {
+        "A": "Equal to stored fluid volume",
+        "B": "Twice stored fluid volume",
+        "C": "Three times stored fluid volume",
+        "D": "Equal to usable fluid"
+      },
+      "correctAnswer": "B",
+      "explanation": "Reservoir must hold twice the stored volume to account for fluid returning from BOP functions plus reserve."
+    },
+    {
+      "id": "EQ-Q6",
+      "level": "L4",
+      "question": "API STD 53 charging system requirement?",
+      "options": {
+        "A": "At least one pump",
+        "B": "Two electric pumps",
+        "C": "Two air pumps",
+        "D": "Two independent systems"
+      },
+      "correctAnswer": "D",
+      "explanation": "Two INDEPENDENT charging systems required\u2014typically one electric, one air-powered. Redundancy ensures recharge capability if one fails."
+    },
+    {
+      "id": "EQ-Q7",
+      "level": "L3",
+      "question": "API STD 53 - recharge pump start pressure?",
+      "options": {
+        "A": "50% operating pressure",
+        "B": "75% operating pressure",
+        "C": "90% operating pressure"
+      },
+      "correctAnswer": "C",
+      "explanation": "Pumps auto-start at 90% to maintain near-full pressure. Don't wait until pressure drops significantly."
+    },
+    {
+      "id": "EQ-Q24",
+      "level": "L4",
+      "question": "Calculate BOP function volumes: 1 annular, 3 rams, HCR both lines.",
+      "correctAnswer": "323.7 gallons (approximately)",
+      "explanation": "Sum all close volumes: annular + rams + HCR. Each has specified gallons in manufacturer data.",
+      "type": "calculation"
+    },
+    {
+      "id": "EQ-Q25",
+      "level": "L3",
+      "question": "Diverter totally shuts in well?",
+      "correctAnswer": "False",
+      "explanation": "Diverter DIVERTS flow away from rig floor\u2014doesn't shut in. Used for shallow gas when shutting in would fracture formation."
+    },
+    {
+      "id": "EQ-Q29",
+      "level": "L4",
+      "question": "Diverter activation sequence (wind starboard to port)?",
+      "options": {
+        "A": "Open starboard vent; close shaker; close diverter",
+        "B": "Close diverter; close shaker; open starboard vent",
+        "C": "Close diverter; open port vent; close shaker",
+        "D": "Open port vent; close shaker; close diverter"
+      },
+      "correctAnswer": "D",
+      "explanation": "Vent DOWNWIND first (port, since wind is starboard-to-port), then isolate shakers, then close diverter. Sequence: safe vent path \u2192 isolate equipment \u2192 seal."
+    },
+    {
+      "id": "EQ-Q30",
+      "level": "L4",
+      "question": "Annular preventer statements: Seal on open hole? Seal on any item? Reciprocate while closed? Range of operating pressures? Same rubber type always?",
+      "answer": {
+        "open_hole": "True",
+        "any_item": "False (some limitations)",
+        "reciprocate": "True",
+        "pressure_range": "True",
+        "same_rubber": "False (different elements for conditions)"
+      },
+      "explanation": "Annulars: seal open hole (yes), most items but not all (kelly, etc.), allow stripping (yes), variable pressure (yes), different elements for H2S, temp (no single type)."
+    },
+    {
+      "id": "EQ-Q31",
+      "level": "L4",
+      "question": "Weep hole function? (SELECT TWO)",
+      "options": {
+        "A": "Show seal leaking",
+        "B": "Show primary mud seal leaking",
+        "C": "Release overpressure during testing",
+        "D": "Prevent opening chamber damage"
+      },
+      "correctAnswers": [
+        "B",
+        "D"
+      ],
+      "explanation": "Weep hole warns of primary seal failure (B) and protects opening chamber from overpressure damage (D). Not for pressure release or general leak indication.",
+      "multiSelect": true
+    },
+    {
+      "id": "EQ-Q33",
+      "level": "L4",
+      "question": "Weep hole leaks during weekly test. Action?",
+      "options": {
+        "A": "Leave until maintenance schedule",
+        "B": "Energise emergency packing; leave if stops",
+        "C": "Primary seal leaking; repair immediately",
+        "D": "Packing worn; replace immediately",
+        "E": "Normal; lubrication needed"
+      },
+      "correctAnswer": "C",
+      "explanation": "Weep hole leak = primary seal failure. This is serious\u2014repair immediately. Not normal, not something to leave or work around."
+    },
+    {
+      "id": "EQ-Q35",
+      "level": "L3",
+      "question": "Closing ratio definition?",
+      "options": {
+        "A": "Rubber seal vs metal area",
+        "B": "Hydraulic pressure ratio to specific wellbore pressure",
+        "C": "Operating pressure to open against wellbore",
+        "D": "Packer area vs piston rod area"
+      },
+      "correctAnswer": "B",
+      "explanation": "Closing ratio = hydraulic pressure needed to close against given wellbore pressure. e.g., 7:1 means 100 psi hydraulic holds 700 psi wellbore."
+    },
+    {
+      "id": "EQ-Q36",
+      "level": "L4",
+      "question": "API STD 53 recommended closing times: 13 5/8\" 15K Ram? 21 1/4\" 5K Annular? 16 3/8\" 5K Annular? 11\" 5K Ram?",
+      "answer": {
+        "13_5_8_15K_ram": "30 seconds",
+        "21_1_4_5K_annular": "45 seconds",
+        "16_3_8_5K_annular": "30 seconds",
+        "11_5K_ram": "30 seconds"
+      },
+      "explanation": "API specifies maximum closing times. Larger annulars (21 1/4\") allowed more time. Most rams and smaller annulars = 30 seconds."
+    },
+    {
+      "id": "EQ-Q49",
+      "level": "L3",
+      "question": "Choke main function?",
+      "options": {
+        "A": "Divert fluid to tank",
+        "B": "Divert contaminant to pit",
+        "C": "Close well softly",
+        "D": "Hold back pressure circulating kick"
+      },
+      "correctAnswer": "D",
+      "explanation": "Choke maintains backpressure during kill operations to keep BHP constant while circulating out influx."
+    },
+    {
+      "id": "EQ-Q50",
+      "level": "L3",
+      "question": "Why two chokes in manifold?",
+      "options": {
+        "A": "Reduce back pressure",
+        "B": "Allow fluid/gas separation",
+        "C": "Reduce MGS load",
+        "D": "Provide backup for washout/plugging"
+      },
+      "correctAnswer": "D",
+      "explanation": "Redundancy. If one choke washes out or plugs during kill, switch to the other without stopping operations."
+    },
+    {
+      "id": "EQ-Q55",
+      "level": "L4",
+      "question": "RAM BOP: RWP 15000, Ratio 6.8:1 close / 3:1 open, 3000 psi accumulator. Min close pressure at max wellbore? Max opening pressure?",
+      "answer": {
+        "min_close": "2206 psi",
+        "max_open": "10000 psi"
+      },
+      "explanation": "Close: 15000/6.8 = 2206 psi minimum to hold against rated wellbore. Open: 3000 \u00d7 3 = 9000 psi (limited by system, not physics).",
+      "type": "calculation"
+    },
+    {
+      "id": "EQ-Q56",
+      "level": "L4",
+      "question": "Cameron 13 5/8\" 10K RWP, Ratio 7:1, 200 psi friction. Minimum close pressure at 10K wellbore?",
+      "options": {
+        "A": "1,628 psi",
+        "B": "1,228 psi",
+        "C": "1,428 psi",
+        "D": "1,000 psi"
+      },
+      "correctAnswer": "C",
+      "explanation": "10000/7 = 1428 psi to overcome wellbore + 200 psi friction = 1628 psi. Or: 10000/7 + friction consideration.",
+      "type": "calculation"
+    }
+  ]
+}

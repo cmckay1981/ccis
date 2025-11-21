@@ -1,0 +1,332 @@
+{
+  "sheetId": "cement-calc-primary",
+  "title": "Primary Cementing Calculations Worksheet",
+  "version": "1.0",
+  "description": "Complete calculation sheet for casing cement jobs",
+  "sections": {
+    "wellData": {
+      "title": "1. WELL DATA",
+      "fields": [
+        {"id": "wellName", "label": "Well Name", "value": "", "unit": ""},
+        {"id": "casingSize", "label": "Casing Size", "value": "", "unit": "inch"},
+        {"id": "casingWeight", "label": "Casing Weight", "value": "", "unit": "lb/ft"},
+        {"id": "casingID", "label": "Casing ID", "value": "", "unit": "inch"},
+        {"id": "casingOD", "label": "Casing OD", "value": "", "unit": "inch"},
+        {"id": "shoeDepthMD", "label": "Casing Shoe Depth (MD)", "value": "", "unit": "ft"},
+        {"id": "shoeDepthTVD", "label": "Casing Shoe Depth (TVD)", "value": "", "unit": "ft"},
+        {"id": "topOfCementTVD", "label": "Top of Cement (TVD)", "value": "", "unit": "ft"},
+        {"id": "previousCasingShoe", "label": "Previous Casing Shoe", "value": "", "unit": "ft"},
+        {"id": "previousCasingID", "label": "Previous Casing ID", "value": "", "unit": "inch"},
+        {"id": "openHoleSize", "label": "Open Hole Size", "value": "", "unit": "inch"},
+        {"id": "openHoleTop", "label": "Open Hole Top", "value": "", "unit": "ft"},
+        {"id": "floatCollarDepth", "label": "Float Collar Depth", "value": "", "unit": "ft"},
+        {"id": "bhct", "label": "BHCT", "value": "", "unit": "°F"},
+        {"id": "bhst", "label": "BHST", "value": "", "unit": "°F"}
+      ]
+    },
+    "holeConditions": {
+      "title": "2. HOLE CONDITIONS",
+      "fields": [
+        {"id": "caliperAvg", "label": "Average Caliper (from logs)", "value": "", "unit": "inch"},
+        {"id": "washoutFactor", "label": "Washout Factor", "value": "", "unit": "%"},
+        {"id": "excessFactor", "label": "Total Excess Factor", "value": "", "unit": "%"},
+        {"id": "mudWeight", "label": "Current Mud Weight", "value": "", "unit": "ppg"},
+        {"id": "mudPV", "label": "Mud PV", "value": "", "unit": "cP"},
+        {"id": "mudYP", "label": "Mud YP", "value": "", "unit": "lb/100ft²"},
+        {"id": "fracGradient", "label": "Fracture Gradient at Shoe", "value": "", "unit": "ppg EMW"},
+        {"id": "porePresGrad", "label": "Pore Pressure Gradient", "value": "", "unit": "ppg EMW"}
+      ]
+    },
+    "slurryDesign": {
+      "title": "3. SLURRY DESIGN",
+      "leadSlurry": {
+        "subtitle": "Lead Slurry",
+        "fields": [
+          {"id": "leadDensity", "label": "Density", "value": "", "unit": "ppg"},
+          {"id": "leadYield", "label": "Yield", "value": "", "unit": "ft³/sk"},
+          {"id": "leadWaterReq", "label": "Water Requirement", "value": "", "unit": "gal/sk"},
+          {"id": "leadThickTime", "label": "Thickening Time", "value": "", "unit": "hr:min"},
+          {"id": "leadFreeWater", "label": "Free Water", "value": "", "unit": "%"},
+          {"id": "leadFluidLoss", "label": "Fluid Loss", "value": "", "unit": "ml/30min"}
+        ]
+      },
+      "tailSlurry": {
+        "subtitle": "Tail Slurry",
+        "fields": [
+          {"id": "tailDensity", "label": "Density", "value": "", "unit": "ppg"},
+          {"id": "tailYield", "label": "Yield", "value": "", "unit": "ft³/sk"},
+          {"id": "tailWaterReq", "label": "Water Requirement", "value": "", "unit": "gal/sk"},
+          {"id": "tailThickTime", "label": "Thickening Time", "value": "", "unit": "hr:min"},
+          {"id": "tailFreeWater", "label": "Free Water", "value": "", "unit": "%"},
+          {"id": "tailFluidLoss", "label": "Fluid Loss", "value": "", "unit": "ml/30min"},
+          {"id": "tailCompStr12hr", "label": "Compressive Strength @ 12hr", "value": "", "unit": "psi"},
+          {"id": "tailCompStr24hr", "label": "Compressive Strength @ 24hr", "value": "", "unit": "psi"}
+        ]
+      }
+    },
+    "volumeCalculations": {
+      "title": "4. VOLUME CALCULATIONS",
+      "annularVolumes": {
+        "subtitle": "Annular Volumes",
+        "calculations": [
+          {
+            "id": "openHoleAnnVol",
+            "label": "Open Hole Annular Volume",
+            "formula": "[(OH² - CsgOD²) / 1029.4] × OH Length",
+            "calculation": "[(___)² - (___)²] / 1029.4 × ___ = ___",
+            "unit": "bbl",
+            "notes": "Gauge hole volume"
+          },
+          {
+            "id": "openHoleAnnVolExcess",
+            "label": "Open Hole Volume with Excess",
+            "formula": "OH Ann Vol × (1 + Excess%)",
+            "calculation": "___ × (1 + ___%) = ___",
+            "unit": "bbl"
+          },
+          {
+            "id": "casingAnnVol",
+            "label": "Cased Hole Annular Volume",
+            "formula": "[(PrevCsgID² - CsgOD²) / 1029.4] × Length",
+            "calculation": "[(___)² - (___)²] / 1029.4 × ___ = ___",
+            "unit": "bbl"
+          },
+          {
+            "id": "totalAnnVol",
+            "label": "TOTAL Annular Volume",
+            "formula": "OH Vol (excess) + Cased Hole Vol",
+            "calculation": "___ + ___ = ___",
+            "unit": "bbl"
+          }
+        ]
+      },
+      "cementVolumes": {
+        "subtitle": "Cement Volumes Required",
+        "calculations": [
+          {
+            "id": "leadVolAnn",
+            "label": "Lead Cement Volume (Annular)",
+            "formula": "Based on TOC and cement column design",
+            "value": "",
+            "unit": "bbl"
+          },
+          {
+            "id": "tailVolAnn",
+            "label": "Tail Cement Volume (Annular)",
+            "formula": "Typically shoe to float collar × excess",
+            "value": "",
+            "unit": "bbl"
+          },
+          {
+            "id": "shoeTrack",
+            "label": "Shoe Track Volume (Inside Casing)",
+            "formula": "(CsgID² / 1029.4) × (Shoe - Float Collar depth)",
+            "calculation": "(___)² / 1029.4 × ___ = ___",
+            "unit": "bbl"
+          },
+          {
+            "id": "totalCementVol",
+            "label": "TOTAL Cement Volume",
+            "formula": "Lead + Tail + Shoe Track",
+            "calculation": "___ + ___ + ___ = ___",
+            "unit": "bbl"
+          }
+        ]
+      },
+      "sacksRequired": {
+        "subtitle": "Cement Sacks Required",
+        "calculations": [
+          {
+            "id": "leadSacks",
+            "label": "Lead Slurry Sacks",
+            "formula": "Lead Vol (bbl) × 5.615 / Yield (ft³/sk)",
+            "calculation": "___ × 5.615 / ___ = ___",
+            "unit": "sacks"
+          },
+          {
+            "id": "tailSacks",
+            "label": "Tail Slurry Sacks",
+            "formula": "Tail Vol (bbl) × 5.615 / Yield (ft³/sk)",
+            "calculation": "___ × 5.615 / ___ = ___",
+            "unit": "sacks"
+          },
+          {
+            "id": "totalSacks",
+            "label": "TOTAL Cement Sacks",
+            "calculation": "___ + ___ = ___",
+            "unit": "sacks"
+          }
+        ]
+      }
+    },
+    "displacementCalculations": {
+      "title": "5. DISPLACEMENT CALCULATIONS",
+      "calculations": [
+        {
+          "id": "casingCapacity",
+          "label": "Casing Capacity",
+          "formula": "CsgID² / 1029.4",
+          "calculation": "(___)² / 1029.4 = ___",
+          "unit": "bbl/ft"
+        },
+        {
+          "id": "casingVolume",
+          "label": "Casing Volume to Float Collar",
+          "formula": "Casing Capacity × Float Collar Depth",
+          "calculation": "___ × ___ = ___",
+          "unit": "bbl"
+        },
+        {
+          "id": "drillpipeCapacity",
+          "label": "Drill Pipe Capacity (if used)",
+          "formula": "DPID² / 1029.4 × DP Length",
+          "value": "",
+          "unit": "bbl"
+        },
+        {
+          "id": "displacementVol",
+          "label": "TOTAL Displacement Volume",
+          "formula": "To bump plug at float collar",
+          "calculation": "___",
+          "unit": "bbl"
+        }
+      ]
+    },
+    "spacerDesign": {
+      "title": "6. SPACER/WASH DESIGN",
+      "calculations": [
+        {
+          "id": "spacerVolume",
+          "label": "Spacer Volume",
+          "value": "",
+          "unit": "bbl"
+        },
+        {
+          "id": "spacerDensity",
+          "label": "Spacer Density",
+          "value": "",
+          "unit": "ppg"
+        },
+        {
+          "id": "contactTime",
+          "label": "Contact Time in Annulus",
+          "formula": "Spacer Vol / Annular Vol × Pump Time",
+          "value": "",
+          "unit": "minutes",
+          "target": "Minimum 10 minutes"
+        },
+        {
+          "id": "spacerLength",
+          "label": "Spacer Column Length",
+          "formula": "Spacer Vol / Annular Capacity",
+          "value": "",
+          "unit": "ft"
+        }
+      ]
+    },
+    "ecdCalculations": {
+      "title": "7. ECD CALCULATIONS",
+      "calculations": [
+        {
+          "id": "staticMudHP",
+          "label": "Static Mud Hydrostatic",
+          "formula": "MW × 0.052 × TVD",
+          "calculation": "___ × 0.052 × ___ = ___",
+          "unit": "psi"
+        },
+        {
+          "id": "cementHP",
+          "label": "Cement Column Hydrostatic (at max)",
+          "formula": "Slurry density × 0.052 × cement column",
+          "calculation": "___ × 0.052 × ___ = ___",
+          "unit": "psi"
+        },
+        {
+          "id": "ecdDuringJob",
+          "label": "Maximum ECD During Job",
+          "formula": "BHP / 0.052 / TVD",
+          "calculation": "___ / 0.052 / ___ = ___",
+          "unit": "ppg"
+        },
+        {
+          "id": "ecdMargin",
+          "label": "Margin to Fracture",
+          "formula": "Frac Gradient - Max ECD",
+          "calculation": "___ - ___ = ___",
+          "unit": "ppg",
+          "warning": "If < 0.5 ppg, review job design"
+        }
+      ]
+    },
+    "pumpSchedule": {
+      "title": "8. PUMP SCHEDULE",
+      "table": [
+        {"stage": "Spacer", "volume": "", "rate": "", "time": "", "cumTime": "", "strokes": ""},
+        {"stage": "Lead Cement", "volume": "", "rate": "", "time": "", "cumTime": "", "strokes": ""},
+        {"stage": "Tail Cement", "volume": "", "rate": "", "time": "", "cumTime": "", "strokes": ""},
+        {"stage": "Displacement to Plug", "volume": "", "rate": "", "time": "", "cumTime": "", "strokes": ""},
+        {"stage": "Slow to Bump", "volume": "", "rate": "", "time": "", "cumTime": "", "strokes": ""},
+        {"stage": "TOTAL", "volume": "", "rate": "-", "time": "", "cumTime": "", "strokes": ""}
+      ],
+      "notes": [
+        "Pump output: ___ bbl/stk at ___ spm",
+        "Total job time: ___ hr:min",
+        "Thickening time available: ___ hr:min",
+        "Safety margin: ___ hr:min"
+      ]
+    },
+    "pressureCalculations": {
+      "title": "9. PRESSURE CALCULATIONS",
+      "calculations": [
+        {
+          "id": "expectedBumpPressure",
+          "label": "Expected Plug Bump Pressure",
+          "value": "",
+          "unit": "psi",
+          "notes": "Based on differential and friction"
+        },
+        {
+          "id": "minBumpPressure",
+          "label": "Minimum Acceptable Bump",
+          "value": "",
+          "unit": "psi"
+        },
+        {
+          "id": "maxBumpPressure",
+          "label": "Maximum Bump Pressure (before concern)",
+          "value": "",
+          "unit": "psi"
+        },
+        {
+          "id": "floatTestPressure",
+          "label": "Float Test Pressure (if float holds)",
+          "value": "",
+          "unit": "psi"
+        },
+        {
+          "id": "casingTestPressure",
+          "label": "Casing Test Pressure",
+          "value": "",
+          "unit": "psi"
+        }
+      ]
+    },
+    "verification": {
+      "title": "10. VERIFICATION CHECKLIST",
+      "items": [
+        {"item": "Slurry lab tested at BHCT/BHST conditions", "checked": false},
+        {"item": "Volumes verified against caliper log", "checked": false},
+        {"item": "Excess % appropriate for hole conditions", "checked": false},
+        {"item": "ECD margin adequate (> 0.5 ppg)", "checked": false},
+        {"item": "Job time < Thickening time - 30 min buffer", "checked": false},
+        {"item": "Contact time adequate (> 10 min)", "checked": false},
+        {"item": "All materials on location and verified", "checked": false},
+        {"item": "Cement unit tested and calibrated", "checked": false},
+        {"item": "Backup equipment identified", "checked": false},
+        {"item": "Float failure contingency documented", "checked": false},
+        {"item": "Lost circulation contingency documented", "checked": false},
+        {"item": "WOC time and criteria defined", "checked": false}
+      ]
+    }
+  }
+}

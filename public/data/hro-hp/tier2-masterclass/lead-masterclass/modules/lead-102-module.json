@@ -1,0 +1,14 @@
+{
+  "moduleId": "LEAD-102",
+  "courseId": "LEAD",
+  "title": "Earning Credibility",
+  "description": "Explains why competence alone doesn't create followership. Covers trust as an operational performance multiplier, visible leadership without micromanagement, integrity under pressure, and how leaders lose credibility. Includes trust breakdown case analysis.",
+  "order": 2,
+  "lessonIds": [
+    "LEAD-102-01",
+    "LEAD-102-02",
+    "LEAD-102-03",
+    "LEAD-102-04",
+    "LEAD-102-05"
+  ]
+}

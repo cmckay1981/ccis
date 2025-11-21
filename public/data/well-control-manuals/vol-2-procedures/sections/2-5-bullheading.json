@@ -1,0 +1,26 @@
+{
+  "sectionId": "2.5",
+  "title": "Bullheading",
+  "content": {
+    "2.5.1": {
+      "title": "Overview",
+      "content": "Bullheading forces well fluids back into the formation without circulation.\n\n**Concept:**\n- Pump into wellbore at pressure exceeding formation fracture pressure\n- Fluids (including kick) forced into formation\n- Does not require circulation path\n\n**When Used:**\n- Cannot circulate (stuck pipe, plugged bit, no returns)\n- Well producing and cannot establish circulation\n- Emergency situation requiring rapid control\n- When circulation methods impractical\n\n**Limitations:**\n- Requires formation to accept fluid (permeability)\n- May damage formation\n- Does not remove kick - pushes it into formation\n- May cause underground flow if formation has lateral permeability\n- Pressures can be high\n\n**Risks:**\n- Formation damage\n- Underground blowout\n- Casing failure\n- Surface equipment limits exceeded"
+    },
+    "2.5.2": {
+      "title": "Planning",
+      "content": "Bullheading requires careful planning:\n\n**Assess:**\n- Formation characteristics (porosity, permeability)\n- Previous LOT/FIT results at shoe\n- Open hole length and formations exposed\n- Casing and wellhead ratings\n- Pump capabilities\n- Expected pressure requirements\n\n**Calculate:**\n- Expected surface pressure = Fracture pressure - Hydrostatic head of fluid\n- Compare to casing/wellhead ratings\n- Account for friction pressure at planned rate\n\n**Fluid Selection:**\n- Kill weight mud preferred (adds hydrostatic)\n- Heavyweight brine options\n- Volume required (well volume + formation acceptance)\n\n**Equipment:**\n- High-pressure pump (cementing unit or rig pumps)\n- Adequate surface pressure ratings\n- Pressure monitoring equipment\n- Relief systems"
+    },
+    "2.5.3": {
+      "title": "Procedure",
+      "content": "**Preparation:**\n1. Review well data and calculate expected pressures\n2. Verify equipment ratings exceed expected pressure\n3. Prepare kill fluid - sufficient volume\n4. Line up pump to drillpipe or annulus (as appropriate)\n5. Establish communication with all personnel\n6. Brief crew on procedure and abort criteria\n\n**Execution:**\n1. Start pumping slowly\n2. Increase rate until formation takes fluid\n3. Monitor pressure - should stabilize when formation accepting\n4. Continue pumping at rate that maintains acceptance\n5. Monitor volume pumped vs well volume\n6. Watch for pressure changes indicating breakthrough to other zones\n\n**Completion:**\n- Pump sufficient volume to displace wellbore and fill formation\n- Reduce rate and monitor for flow back\n- If successful: pressure bleeds off, well stable\n- Flow check to confirm kill"
+    },
+    "2.5.4": {
+      "title": "Monitoring and Abort Criteria",
+      "content": "**Monitor Throughout:**\n- Surface pressure\n- Pump rate and volume\n- Returns (should be none during bullhead)\n- Any signs of abnormal behavior\n\n**Warning Signs:**\n- Pressure increasing above expected (plugging)\n- Pressure decreasing unexpectedly (lost to another zone)\n- Surface leaks or equipment problems\n- Returns when none expected\n\n**Abort Criteria:**\n- Pressure approaching equipment limits\n- Evidence of flow to surface (losing battle)\n- Equipment failure\n- Formation not accepting (pressure rises without acceptance)\n\n**If Aborted:**\n- Shut in and reassess\n- Consider alternative methods\n- Evaluate formation response\n- Consult with experts if needed"
+    },
+    "2.5.5": {
+      "title": "Post-Bullhead Actions",
+      "content": "**After Successful Bullhead:**\n1. Monitor well for flow back\n2. Maintain pressure monitoring\n3. Plan next steps:\n   - Resume operations if appropriate\n   - Evaluate formation damage\n   - Consider clean-up circulation\n\n**Considerations:**\n- Formation may be damaged - affects future production\n- Fluids forced into formation may migrate\n- Monitor adjacent wells if in developed field\n- Document volumes and pressures for future reference\n\n**If Bullhead Unsuccessful:**\n- Well may still be flowing\n- Evaluate other options:\n  - Relief well\n  - Additional bullhead attempts\n  - Well capping\n- Consult with well control specialists"
+    }
+  }
+}

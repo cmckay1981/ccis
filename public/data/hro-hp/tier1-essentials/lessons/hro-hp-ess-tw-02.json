@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-TW-02",
+  "moduleId": "HRO-HP-ESS-TW",
+  "courseId": "HRO-HP-ESS",
+  "title": "Roles and Responsibilities",
+  "type": "lesson",
+  "content": "Clear roles define who does what; clear responsibilities define who is accountable for outcomes. Ambiguity creates gaps (no one does it) and overlaps (multiple people interfere). Effective teams have explicit role clarity—every task has an owner, and everyone knows their boundaries and interfaces with others.",
+  "mcq": {
+    "question": "During an incident response, two team members both move to handle the same critical task while another critical task goes unaddressed. What does this indicate?",
+    "options": {
+      "A": "Team members are highly motivated",
+      "B": "Roles and responsibilities aren't clearly defined or assigned",
+      "C": "The team needs more members",
+      "D": "Training was inadequate for the incident type"
+    },
+    "correctOption": "B",
+    "explanation": "Overlap (two people on one task) and gaps (unaddressed task) are classic signs of role ambiguity. With clear role assignment, each person knows exactly what they own and can trust others to cover their areas."
+  },
+  "openQuestions": [
+    "Where do role overlaps or gaps exist in your current team structure? How do they create problems?",
+    "How does your team assign roles during non-routine situations when standard assignments may not apply?"
+  ]
+}

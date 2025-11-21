@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-111-03",
+  "moduleId": "LEAD-111",
+  "courseId": "LEAD",
+  "title": "Continuous Learning and Adaptation",
+  "type": "lesson",
+  "content": "Leadership capability isn't fixed—it grows through deliberate learning, reflection on experience, and willingness to adapt based on results. Leaders who stop learning become obsolete as contexts change. Continuous learning means seeking challenging assignments, learning from failures, studying how other leaders approach problems, and regularly examining your own effectiveness. The mindset matters more than the method: viewing yourself as always developing rather than already developed.",
+  "mcq": {
+    "question": "A experienced leader is promoted into a new context with different challenges. Their initial approach—which worked well previously—isn't producing the same results. They continue applying the same methods with increasing frustration. What's the issue?",
+    "options": {
+      "A": "The new team needs more time to adjust to the leader's proven approach",
+      "B": "The leader is failing to recognize that different contexts require different approaches",
+      "C": "The methods are sound but need stronger execution",
+      "D": "The new organization has a performance culture problem"
+    },
+    "correctOption": "B",
+    "explanation": "Past success doesn't guarantee future effectiveness in new contexts. What worked with one team, culture, or challenge may not work elsewhere. The leader is applying old patterns without diagnosing new reality. Option B recognizes the need to adapt approach based on context. Effective leaders ask: 'What's different here? What needs to change in my approach?' Option A assumes the leader is right and others need to conform. Option C doubles down on methods that aren't working. Option D blames the environment. Leaders who can't adapt based on feedback and results become less effective over time, regardless of past success."
+  },
+  "openQuestions": [
+    "What's a leadership approach that worked well for you in the past but isn't working now? What might need to change?",
+    "How do you know when to persist with your approach versus when to adapt?"
+  ]
+}

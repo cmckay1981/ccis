@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-DM-05",
+  "moduleId": "HRO-HP-ESS-DM",
+  "courseId": "HRO-HP-ESS",
+  "title": "Time-Critical Decisions",
+  "type": "lesson",
+  "content": "When time pressure is real, two strategies help: buying time (any action that slows situation deterioration without committing to a solution) and satisficing (choosing the first option that meets minimum requirements rather than searching for the optimal choice). Perfect decisions made too late are worse than good decisions made in time.",
+  "mcq": {
+    "question": "Alarms indicate a rapidly developing problem. You have two possible responses: one you're confident will work but takes 10 minutes, another might work and takes 2 minutes. The situation will become critical in 5 minutes. What's the best approach?",
+    "options": {
+      "A": "Implement the 10-minute solution—it's more reliable",
+      "B": "Try the 2-minute option first, then the 10-minute if needed",
+      "C": "Gather more information before committing to either",
+      "D": "Implement both simultaneously"
+    },
+    "correctOption": "B",
+    "explanation": "With 5 minutes until critical, the 10-minute solution won't complete in time. Satisficing means choosing the first adequate option—try the faster solution, and if it fails, you still have time to attempt the slower one."
+  },
+  "openQuestions": [
+    "What techniques do you use to buy time when facing a developing problem? How do you know if they're working?",
+    "When is it hardest for you to accept a 'good enough' solution instead of searching for the best one?"
+  ]
+}

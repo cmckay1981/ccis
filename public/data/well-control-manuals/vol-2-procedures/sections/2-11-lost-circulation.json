@@ -1,0 +1,34 @@
+{
+  "sectionId": "2.11",
+  "title": "Lost Circulation During Well Control",
+  "content": {
+    "2.11.1": {
+      "title": "Overview",
+      "content": "Lost circulation during well control is one of the most dangerous complications:\n\n**Why It's Dangerous:**\n- Losing fluid reduces hydrostatic pressure\n- May allow additional influx\n- Creates competing requirements (need mud weight for kick vs losing mud)\n- Can lead to underground blowout\n\n**Types:**\n- Induced (fracturing formation from kill pressures)\n- Natural (drilling into vugular, fractured, or unconsolidated zones)\n- Combination (natural zone stressed by kick pressures)"
+    },
+    "2.11.2": {
+      "title": "Recognition",
+      "content": "**Signs During Kill:**\n- Pit volume decreasing faster than expected\n- Returns less than pump rate\n- Sudden drop in casing pressure\n- Drillpipe pressure may increase (annulus pressure decrease)\n\n**Severity Assessment:**\n- Seepage: Minor, may be able to continue\n- Partial: Moderate, significant but some returns\n- Severe: Major, total or near-total loss\n- Total: No returns at all\n\n**Critical Question:**\nIs the loss rate increasing, stable, or decreasing?"
+    },
+    "2.11.3": {
+      "title": "Immediate Response",
+      "content": "**Step 1: Reduce Pump Rate**\n- Lower circulating pressure may reduce losses\n- Slower rate reduces ECD\n- May stabilize losses\n\n**Step 2: Assess Situation**\n- Can continue kill with reduced rate?\n- Are losses stable or worsening?\n- Is annulus still providing fluid?\n\n**Step 3: Decision Point**\nIf losses manageable:\n- Continue kill at reduced rate\n- Monitor carefully\n- Accept some loss volume\n\nIf losses severe:\n- May need to stop pumping\n- Shut in and assess\n- Consider alternative approach"
+    },
+    "2.11.4": {
+      "title": "Managing Kill with Losses",
+      "content": "**Reduced Rate Kill:**\n- Recalculate ICP/FCP for new rate\n- Continue with modified parameters\n- Accept that some mud is lost\n- Ensure adequate mud volume available\n\n**Staged Approach:**\n- Kill in stages with pauses\n- Allow formation to stabilize\n- Watch for loss rate changes\n\n**Weight-Up Carefully:**\n- Higher mud weight increases fracturing tendency\n- May need to accept lower kill mud weight\n- Trade-off: slightly underbalanced vs more losses\n\n**LCM (Lost Circulation Material):**\n- May help seal losses during kill\n- Add to kill mud if losses occur\n- Be aware LCM may plug choke\n- Use appropriately sized material"
+    },
+    "2.11.5": {
+      "title": "Underground Blowout Risk",
+      "content": "**What Is It:**\n- Formation fluids flowing from kick zone to loss zone\n- Flow occurs through wellbore (not at surface)\n- Very dangerous - difficult to detect and stop\n\n**Warning Signs:**\n- Persistent casing pressure with continued losses\n- Cannot establish balance\n- Total losses with no surface evidence of kick\n- Unexplained pressure changes\n\n**If Suspected:**\n- Stop circulation\n- Assess pressures carefully\n- May need to fill well with heavier fluid\n- Consult specialists immediately\n- Consider bullhead options"
+    },
+    "2.11.6": {
+      "title": "Alternative Approaches",
+      "content": "**Bullhead:**\n- If cannot circulate due to losses\n- Force fluid into loss zone and kick zone\n- May control both with heavy fluid\n\n**Cement Squeeze:**\n- Pump cement to seal loss zone\n- Then resume kill\n- Complex in well control situation\n\n**Barite Plug:**\n- Settle barite to seal off loss zone\n- Then continue kill above plug\n- May require redrill\n\n**Dynamic Kill:**\n- Circulate at high rate with lighter fluid\n- Friction provides well control\n- Rarely applicable but sometimes useful\n\n**Drilling Ahead:**\n- If loss zone is above, may be able to drill to stronger formation\n- Set casing to isolate loss zone\n- Kill from safer position"
+    },
+    "2.11.7": {
+      "title": "Prevention",
+      "content": "**Before Well Control:**\n- Know loss zone locations from offset data\n- Have LCM available and ready\n- Understand kick tolerance considering loss zones\n- Consider mud weight window carefully\n\n**During Kill Operations:**\n- Use minimum pressures necessary\n- Don't over-weight kill mud\n- Monitor losses throughout\n- Be prepared to adjust plan\n\n**Shoe Considerations:**\n- Know shoe strength (LOT/FIT results)\n- Calculate maximum allowable pressure\n- If kill pressures exceed shoe strength, losses likely\n- May need to accept controlled losses vs risking shoe"
+    }
+  }
+}

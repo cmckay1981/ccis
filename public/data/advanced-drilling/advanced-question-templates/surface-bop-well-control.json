@@ -1,0 +1,62 @@
+{
+  "templateId": "SURFACE_BOP_WELL_CONTROL",
+  "title": "Surface BOP Well Control Decisions",
+  "category": "HAZARD_RESPONSE",
+  "rigTypes": ["LAND", "JACKUP"],
+  "referenceWell": "CC-SANDSTONE-301",
+  "description": "Well control decision-making specific to surface BOP operations - different considerations from subsea",
+  "applicableModules": ["ADO-101", "ADO-110"],
+  "scenario": {
+    "context": "You are drilling at {{currentDepth}} m on a land rig with surface BOP. Mud weight is {{mudWeight}} sg. You've just completed a connection and noticed a {{pitGain}} bbl pit gain during flow check.",
+    "variables": {
+      "currentDepth": {"type": "number", "range": [2500, 3500], "unit": "m"},
+      "mudWeight": {"type": "number", "range": [1.40, 1.65], "unit": "sg"},
+      "pitGain": {"type": "number", "range": [3, 15], "unit": "bbl"},
+      "shutInDrillPipePressure": {"type": "number", "range": [200, 800], "unit": "psi"},
+      "shutInCasingPressure": {"type": "number", "range": [250, 900], "unit": "psi"}
+    }
+  },
+  "questions": [
+    {
+      "questionId": "SBOP-01",
+      "question": "You've confirmed a {{pitGain}} bbl kick and shut in on the surface BOP. SIDPP is {{shutInDrillPipePressure}} psi and SICP is {{shutInCasingPressure}} psi. Calculate your kill mud weight and explain your kill method selection.",
+      "keyPoints": [
+        "Kill weight calculation",
+        "Wait and Weight vs Driller's Method selection",
+        "Surface BOP advantage - direct choke access",
+        "MAASP verification"
+      ],
+      "correctResponse": "Kill MW = Current MW + (SIDPP / (0.052 × TVD)). For surface BOP, Wait and Weight is typically preferred as we have direct choke access without riser complications. Verify MAASP at shoe before circulating. Key advantage over subsea: faster response time, no choke line friction losses, direct visual monitoring at BOP."
+    },
+    {
+      "questionId": "SBOP-02",
+      "question": "During the kill operation, casing pressure is approaching MAASP. What are your options and how does surface BOP give you more flexibility than subsea?",
+      "keyPoints": [
+        "Reduce pump rate",
+        "Bullheading option",
+        "Volumetric method",
+        "No choke line friction to account for"
+      ],
+      "correctResponse": "Options: 1) Reduce pump rate (reduces AFP, lowers casing pressure), 2) Apply volumetric method if gas migration is issue, 3) Bullheading - easier on surface BOP with direct pump access. Surface BOP advantages: No choke line friction losses (can be 500+ psi on subsea), faster choke response, ability to visually monitor BOP, easier access for repairs if needed."
+    },
+    {
+      "questionId": "SBOP-03",
+      "question": "You're on a land rig in remote location. During well control, your hydraulic choke fails. What's your contingency and how do you maintain well control?",
+      "keyPoints": [
+        "Manual choke backup",
+        "Pump and bleed procedure",
+        "Equipment redundancy on land rigs",
+        "Communication and support logistics"
+      ],
+      "correctResponse": "Immediate switch to manual choke operation. Ensure driller maintains constant bottomhole pressure using pump strokes and manual choke adjustment. If manual choke also problematic: 1) Consider pump and bleed method, 2) Maintain well shut in while organizing repair, 3) Contact base for emergency equipment. Land rig consideration: spare parts may be hours away - always verify backup equipment before operations."
+    }
+  ],
+  "discussionPoints": [
+    "What are the key differences in well control between surface and subsea BOPs?",
+    "Why is choke line friction a bigger issue on subsea wells?",
+    "How does BOP test frequency differ between land and offshore?",
+    "What additional well control challenges exist on land rigs (remote location, limited crew)?"
+  ],
+  "relatedHazards": ["Kick", "Equipment failure", "Remote location response"],
+  "tags": ["well-control", "surface-bop", "land-rig", "kill-methods", "daily-coaching"]
+}

@@ -1,0 +1,22 @@
+{
+  "moduleId": "HRO-HP-ESS-LEAD",
+  "courseId": "HRO-HP-ESS",
+  "title": "Leadership Essentials",
+  "description": "Core principles of operational leadership. Covers leadership fundamentals, credibility, leading under pressure, developing people, and accountability.",
+  "order": 5,
+  "lessonIds": [
+    "HRO-HP-ESS-LEAD-01",
+    "HRO-HP-ESS-LEAD-02",
+    "HRO-HP-ESS-LEAD-03",
+    "HRO-HP-ESS-LEAD-04",
+    "HRO-HP-ESS-LEAD-05",
+    "HRO-HP-ESS-LEAD-06"
+  ],
+  "learningObjectives": [
+    "Understand what leaders actually control",
+    "Build and maintain credibility",
+    "Lead effectively under pressure",
+    "Delegate and develop people",
+    "Enforce accountability constructively"
+  ]
+}

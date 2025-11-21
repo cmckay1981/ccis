@@ -1,0 +1,68 @@
+{
+  "templateId": "rig-test-schedule",
+  "title": "BOP Test Schedule Template",
+  "description": "Rig-specific testing schedule and requirements",
+  "instructions": "Customize this template based on regulatory requirements and company standards for the specific operation location.",
+  "content": {
+    "rigInfo": {
+      "rigName": "[RIG NAME]",
+      "operatingArea": "[REGULATORY JURISDICTION]",
+      "applicableRegulations": "[e.g., 30 CFR 250, NORSOK D-010, etc.]",
+      "documentDate": "[DATE]",
+      "revision": "[REV NUMBER]"
+    },
+    "pressureTestSchedule": {
+      "initialTest": {
+        "when": "After initial installation",
+        "pressure": "Full working pressure",
+        "components": "All rams, annular, choke/kill lines",
+        "duration": "5 minutes minimum"
+      },
+      "lowPressureTest": {
+        "frequency": "[e.g., WEEKLY]",
+        "pressure": "[200-300 psi]",
+        "components": "All rams and annular",
+        "duration": "[5 minutes]"
+      },
+      "highPressureTest": {
+        "frequency": "[e.g., EVERY 14/21 DAYS]",
+        "pressure": "[PERCENTAGE OF WP OR FULL WP]",
+        "components": "All rams and annular",
+        "duration": "[5 minutes]"
+      },
+      "casingPointTest": {
+        "when": "After setting each casing string",
+        "pressure": "[TO BE DETERMINED BASED ON CONDITIONS]",
+        "components": "Full stack"
+      }
+    },
+    "functionTestSchedule": {
+      "frequency": "[e.g., WEEKLY]",
+      "components": [
+        "All pipe rams - open and close",
+        "Blind/shear rams - close and open",
+        "Annular preventer - open and close",
+        "HCR valve",
+        "Remote panels",
+        "Choke operation"
+      ]
+    },
+    "accumulatorTestSchedule": {
+      "preChargeCheck": "[FREQUENCY]",
+      "capacityTest": "[FREQUENCY]",
+      "pumpTest": "[FREQUENCY]"
+    },
+    "drillSchedule": {
+      "pitDrill": "[FREQUENCY]",
+      "shutInDrill": "[FREQUENCY]",
+      "tripDrill": "[FREQUENCY]",
+      "scenarioDrill": "[FREQUENCY]",
+      "diverterDrill": "[WHEN APPLICABLE]"
+    },
+    "additionalRequirements": {
+      "acousticSystem": "[TEST FREQUENCY IF EQUIPPED]",
+      "rovIntervention": "[TEST FREQUENCY IF SUBSEA]",
+      "emergencyDisconnect": "[TEST FREQUENCY IF SUBSEA]"
+    }
+  }
+}

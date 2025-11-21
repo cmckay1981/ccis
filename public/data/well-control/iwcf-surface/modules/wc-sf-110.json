@@ -1,0 +1,23 @@
+{
+  "moduleId": "WC-SF-110",
+  "courseId": "WC-SF",
+  "title": "BOP Equipment",
+  "description": "BOP system components and operation - annular preventers, ram preventers, choke manifold, accumulators, BOP testing requirements. Equipment operation and verification.",
+  "order": 10,
+  "lessonIds": [
+    "WC-SF-110-01",
+    "WC-SF-110-02",
+    "WC-SF-110-03",
+    "WC-SF-110-04",
+    "WC-SF-110-05"
+  ],
+  "examWeight": "High",
+  "iwcfSyllabus": "EQ-01 to EQ-06",
+  "documentId": "WC-SF-110",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-110"
+  ]
+}

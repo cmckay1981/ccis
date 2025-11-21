@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-104-03",
+  "moduleId": "LEAD-104",
+  "courseId": "LEAD",
+  "title": "Why High Performers Leave",
+  "type": "lesson",
+  "content": "High performers leave when they stop growing, stop feeling challenged, or stop believing leadership values their contribution. Exit interviews often surface generic reasons like 'better opportunity elsewhere,' but the real causes are usually leadership failures: lack of development opportunities, inconsistent recognition, tolerance of low performers, or being overlooked for advancement. Retaining top talent requires understanding what drives each individual and deliberately creating conditions for their continued growth. Losing your best people isn't inevitable—it's a leadership choice.",
+  "mcq": {
+    "question": "A high-performing team member who consistently exceeds expectations submits a resignation. The leader is surprised and asks why. The person says, 'I've been doing the same work for two years, I've asked about advancement opportunities three times, and I watched someone with less capability get promoted last month because they were more visible to senior leadership.' What pattern does this reveal?",
+    "options": {
+      "A": "The person has unrealistic expectations about promotion timelines",
+      "B": "The leader failed to advocate for the person and didn't create developmental growth",
+      "C": "High performers are naturally more prone to job-hopping",
+      "D": "The organization's promotion process is broken and the leader couldn't control it"
+    },
+    "correctOption": "B",
+    "explanation": "This departure was preventable and entirely predictable. The person signaled their needs multiple times and was ignored. High performers need progression—if they're not advancing in responsibility or capability, they'll find it elsewhere. The leader had multiple opportunities to create development, advocate for promotion, or at minimum have an honest conversation about timing and path. 'Surprise' resignations from top performers are almost always leadership failures in disguise."
+  },
+  "openQuestions": [
+    "When did you last have a development conversation with your strongest performer? What did you learn about their goals?",
+    "If your best team member resigned tomorrow, would you be surprised? What does that tell you?"
+  ]
+}

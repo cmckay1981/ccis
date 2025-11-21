@@ -1,0 +1,8 @@
+{
+  "moduleId": "SA-102",
+  "courseId": "SA",
+  "title": "Perception and Scanning",
+  "description": "Teaches active scanning techniques, pattern recognition at the perception level, and how to detect changes in dynamic environments before they become critical.",
+  "order": 2,
+  "lessonIds": ["SA-102-01", "SA-102-02", "SA-102-03", "SA-102-04"]
+}

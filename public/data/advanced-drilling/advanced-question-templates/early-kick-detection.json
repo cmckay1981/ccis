@@ -1,0 +1,37 @@
+{
+  "templateId": "QT-EKD-001",
+  "category": "KICK_DETECTION",
+  "title": "Early Kick Detection Indicators",
+  "level": ["L3", "L4"],
+  "applicableTo": ["surface", "subsea"],
+  "question": "On {{wellProfile.wellName}}, you are drilling the {{currentSection.section}} section at {{currentSection.settingDepth.tvd}} {{currentSection.settingDepth.unit}} TVD. Early kick detection is set to HIGH sensitivity. Which of the following combinations of indicators would MOST LIKELY indicate an influx?",
+  "inputs": {
+    "wellProfile": {
+      "required": ["connectionMonitoring.earlyKickDetection", "wellName"]
+    },
+    "currentSection": {
+      "from": "wellProfile.casingProgram[activeSection]",
+      "required": ["settingDepth.tvd", "section"]
+    }
+  },
+  "answerOptions": {
+    "A": "Pit volume +3 bbl, flow rate unchanged, ROP unchanged, SPP unchanged",
+    "B": "Pit volume +8 bbl, flow rate +15 gpm, ROP increase, SPP decrease",
+    "C": "Pit volume unchanged, flow rate unchanged, ROP decrease, SPP increase",
+    "D": "Pit volume -5 bbl, flow rate -10 gpm, ROP unchanged, SPP increase"
+  },
+  "correctOption": "B",
+  "explanation": {
+    "B": "Classic kick signature: pit gain (influx entering), increased flow rate (influx displacing mud), increased ROP (formation pressure lifting string/reducing WOB), decreased SPP (lighter influx reducing hydrostatic in annulus, or gas cut mud).",
+    "A": "Small pit gain alone could be thermal expansion, connection gas, or measurement error. Without corroborating indicators, this isn't conclusive.",
+    "C": "This pattern suggests increased formation strength or bit balling - the opposite of a kick scenario.",
+    "D": "Volume loss and reduced flow suggests lost circulation, not an influx."
+  },
+  "feedback": {
+    "correct": "Correct. Multiple concurrent indicators - pit gain, flow increase, ROP increase, SPP drop - are the hallmarks of an influx. On HPHT wells like {{wellProfile.wellName}}, don't wait for a large pit gain. React early to small indicators.",
+    "incorrect": "Review the kick indicators: Pit gain, flow increase, drilling break (ROP increase), and SPP decrease. A kick shows MULTIPLE indicators simultaneously."
+  },
+  "contextualTip": "On {{wellProfile.wellName}} with limited kick tolerance of {{kickTolerance.ktValue}} bbls, early detection is critical. By the time you see a 20 bbl pit gain, you may have already exceeded safe limits.",
+  "relatedLesson": "WC-SF-104-01",
+  "tags": ["kick-detection", "early-kick-detection", "indicators", "well-control", "dynamic"]
+}

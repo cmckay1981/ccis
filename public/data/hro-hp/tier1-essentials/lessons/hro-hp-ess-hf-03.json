@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-HF-03",
+  "moduleId": "HRO-HP-ESS-HF",
+  "courseId": "HRO-HP-ESS",
+  "title": "Stress Response",
+  "type": "lesson",
+  "content": "Stress triggers physiological responses (elevated heart rate, adrenaline) that helped our ancestors survive physical threats but can impair modern cognitive work. Under stress, attention narrows, complex thinking degrades, and we revert to well-practiced responses. Moderate stress enhances performance; high stress degrades it. Managing stress is a skill that can be developed.",
+  "mcq": {
+    "question": "During an emergency, an experienced operator freezes and cannot recall the procedure they've performed correctly many times before. After the situation resolves, they remember it perfectly. What most likely happened?",
+    "options": {
+      "A": "Training was inadequate—they didn't truly know the procedure",
+      "B": "High stress impaired memory retrieval and complex thinking",
+      "C": "They panicked due to lack of experience",
+      "D": "The emergency was different enough that the procedure didn't apply"
+    },
+    "correctOption": "B",
+    "explanation": "Extreme stress can impair access to memory and complex thinking, even for well-known procedures. The knowledge was there (they remembered afterward) but stress blocked retrieval. This is why stress inoculation training and simplified emergency procedures matter."
+  },
+  "openQuestions": [
+    "What level of stress helps you perform at your best? What happens when stress exceeds that level?",
+    "What techniques do you use to manage your stress response during high-pressure situations?"
+  ]
+}

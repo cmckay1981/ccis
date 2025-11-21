@@ -1,0 +1,60 @@
+{
+  "templateId": "QT-TRIP-001",
+  "category": "OPERATIONAL_DECISIONS",
+  "title": "Trip Margin and Swab Pressure Management",
+  "level": ["L4"],
+  "operationalFocus": "Operational decisions during tripping in tight-window wells",
+  "question": "On {{wellProfile.wellName}}, you are POOH from {{currentSection.settingDepth.tvd}} {{currentSection.settingDepth.unit}} TVD. Pore pressure is {{scenario.porePressure}} ppg and current MW is {{currentSection.mudWeight.current}} ppg (trip margin of {{wellProfile.connectionMonitoring.parameters.tripMargin.value}} ppg included). Your PWD shows swab pressure of {{scenario.swabPressure}} ppg EMW while pulling at {{scenario.pullSpeed}} stands/hour. At what point should you slow down or take corrective action?",
+  "inputs": {
+    "wellProfile": {
+      "required": ["wellName", "connectionMonitoring.parameters.tripMargin"]
+    },
+    "currentSection": {
+      "from": "wellProfile.casingProgram[activeSection]",
+      "required": ["settingDepth.tvd", "mudWeight.current"]
+    },
+    "scenario": {
+      "generated": true,
+      "porePressure": {
+        "from": "wellProfile.ppfg nearest to TVD"
+      },
+      "swabPressure": {
+        "calculated": "varies based on pull speed and MW",
+        "range": [0.2, 0.8],
+        "step": 0.1
+      },
+      "pullSpeed": {
+        "options": [8, 12, 18],
+        "description": "stands per hour"
+      }
+    }
+  },
+  "answerLogic": {
+    "safeMargin": "MW - Swab > PP + 0.1 ppg buffer",
+    "conditions": [
+      {
+        "if": "(MW - swabPressure) > (PP + 0.2)",
+        "status": "safe",
+        "action": "Continue at current speed"
+      },
+      {
+        "if": "(MW - swabPressure) <= (PP + 0.2) AND (MW - swabPressure) > PP",
+        "status": "marginal",
+        "action": "Slow trip speed, monitor closely, consider pumping out of hole"
+      },
+      {
+        "if": "(MW - swabPressure) <= PP",
+        "status": "underbalanced",
+        "action": "Stop immediately, pump slug, flow check before continuing"
+      }
+    ]
+  },
+  "feedback": {
+    "safe": "With {{scenario.swabPressure}} ppg swab reducing your effective MW to {{effectiveMW}} ppg, you still have {{margin}} ppg margin above PP. Continue monitoring.",
+    "marginal": "Your effective MW of {{effectiveMW}} ppg is approaching pore pressure ({{scenario.porePressure}} ppg). Slow down to reduce swab effect or pump out of hole.",
+    "underbalanced": "STOP. Your effective MW has dropped below pore pressure. You are swabbing the well. Stop pulling, pump a slug, flow check. If flowing, shut in."
+  },
+  "contextualTip": "On {{wellProfile.wellName}}, the {{wellProfile.connectionMonitoring.parameters.tripMargin.value}} ppg trip margin was designed for normal operations. But actual swab varies with BHA design, hole condition, and pull speed. Trust your PWD, not your assumptions.",
+  "advancedNote": "In HPHT wells with limited margins, 'pumping out of hole' - maintaining slow circulation while tripping - reduces swab effect. It takes longer but prevents swab kicks that can exceed your kick tolerance.",
+  "tags": ["tripping", "swab", "trip-margin", "operational", "L4", "dynamic"]
+}

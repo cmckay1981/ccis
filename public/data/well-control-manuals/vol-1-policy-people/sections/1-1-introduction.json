@@ -1,0 +1,34 @@
+{
+  "sectionId": "1.1",
+  "title": "Introduction",
+  "content": {
+    "1.1.1": {
+      "title": "Purpose",
+      "content": "This Well Control Manual establishes the minimum requirements, procedures, and standards for well control operations. It provides a comprehensive framework to:\n\n- Prevent well control incidents through proper planning, training, and execution\n- Ensure rapid and effective response when well control events occur\n- Protect personnel safety as the primary priority\n- Minimize environmental impact\n- Protect company and client assets\n\nThis manual applies to all drilling, completion, workover, and well intervention operations."
+    },
+    "1.1.2": {
+      "title": "Scope",
+      "content": "This manual covers:\n\n- Well control philosophy and barrier requirements\n- Organizational roles and responsibilities\n- Personnel competency and certification requirements\n- Well control procedures for all operational phases\n- Equipment specifications and testing requirements\n- Special operations (HPHT, MPD, deepwater, well intervention)\n- Emergency response procedures\n- Calculations, worksheets, and quick reference materials\n\nThis manual is structured in four volumes for ease of use and maintenance."
+    },
+    "1.1.3": {
+      "title": "Document Structure",
+      "content": "The Well Control Manual comprises four volumes:\n\n**Volume 1: Policy & People**\nWell control philosophy, barrier requirements, organizational structure, roles and responsibilities, certifications, training, and human factors.\n\n**Volume 2: Procedures**\nOperational procedures for kick prevention, detection, shut-in, kill operations, and special operations including HPHT, deepwater, MPD, and well intervention.\n\n**Volume 3: Equipment & Testing**\nEquipment specifications, testing requirements, and rig-specific procedures. Includes customizable templates for different rigs/vessels.\n\n**Volume 4: Calculations & Quick Reference**\nFormulas, kill sheets, worksheets, decision trees, and quick reference cards for rig floor use."
+    },
+    "1.1.4": {
+      "title": "Document Control",
+      "content": "This is a controlled document. The current revision is maintained in the document management system.\n\n**Revision Process:**\n- Revisions may be initiated by any personnel through the Management of Change process\n- All revisions require review by qualified Well Control personnel\n- Approved revisions are distributed through controlled channels\n- Superseded versions shall be removed from use\n\n**Uncontrolled Copies:**\nPrinted copies and local downloads are uncontrolled. Users must verify they have the current revision before use.\n\n**Review Frequency:**\nThis manual shall be reviewed at minimum annually, or when:\n- Regulatory requirements change\n- Significant incidents occur\n- Equipment or procedures are modified\n- Industry best practices evolve"
+    },
+    "1.1.5": {
+      "title": "Language Conventions",
+      "content": "The following terms have specific meanings throughout this manual:\n\n**SHALL / MUST**\nMandatory requirement. Non-compliance requires formal deviation approval.\n\n**SHOULD**\nRecommended practice. Deviation permitted with documented justification.\n\n**MAY**\nOptional guidance. Use is at the discretion of responsible personnel.\n\n**WILL**\nStatement of intent or expectation."
+    },
+    "1.1.6": {
+      "title": "Deviation from Procedures",
+      "content": "Deviations from mandatory requirements (SHALL/MUST) require:\n\n1. Written deviation request documenting:\n   - Specific requirement to be deviated from\n   - Reason for deviation\n   - Proposed alternative measures\n   - Risk assessment\n   - Duration of deviation\n\n2. Approval from appropriate authority level:\n   - Minor deviations: Operations Manager\n   - Significant deviations: Asset Manager or equivalent\n   - Safety-critical deviations: Corporate Well Control authority\n\n3. Documentation retained for audit purposes\n\n**Note:** In emergency situations where immediate action is required to protect life or prevent escalation, personnel may deviate as necessary. All emergency deviations shall be documented and reviewed as soon as practicable."
+    },
+    "1.1.7": {
+      "title": "References",
+      "content": "This manual incorporates requirements from:\n\n**International Standards:**\n- API RP 53 - Blowout Prevention Equipment Systems\n- API RP 59 - Well Control Operations\n- API Standard 53 - BOP Equipment Systems for Drilling Wells\n- API 16D - Control Systems for Drilling Well Control Equipment\n- ISO 10417 - Subsurface Safety Valve Systems\n- NORSOK D-010 - Well Integrity in Drilling and Well Operations\n\n**Industry Bodies:**\n- IWCF (International Well Control Forum)\n- IADC (International Association of Drilling Contractors)\n\n**Regulatory Requirements:**\nApplicable local regulations as identified in the Well Control Response Plan (Bridging Document) for each operation."
+    }
+  }
+}

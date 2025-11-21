@@ -1,0 +1,26 @@
+{
+  "sectionId": "3.4",
+  "title": "BOP Control Systems",
+  "content": {
+    "3.4.1": {
+      "title": "Surface Control Systems",
+      "content": "**Components:**\n- Accumulator unit (bottles, pumps, manifold)\n- Control panels (driller's panel, remote panels)\n- Hydraulic control lines to BOP\n- Regulators and valves\n\n**Accumulator Unit:**\n- Pre-charged bottles store hydraulic fluid under pressure\n- Pumps maintain charge\n- Provides rapid response independent of pumps\n- Sized for required operations\n\n**Control Panels:**\n- Driller's panel at drill floor\n- Remote panel away from wellbore\n- Must be accessible in emergency\n- Clear labeling of all controls"
+    },
+    "3.4.2": {
+      "title": "Subsea Control Systems",
+      "content": "**Multiplex (MUX) Systems:**\n- Electrical signals control hydraulic valves at BOP\n- Much faster than direct hydraulic\n- Complex but reliable\n\n**Dual Pod System:**\n- Two identical control pods on LMRP\n- Blue pod and Yellow pod\n- Full redundancy - either can control all functions\n- Switch between pods if one fails\n\n**Control Lines:**\n- MUX cables carry electrical signals\n- Hydraulic supply lines\n- Hot lines for critical functions\n- Acoustic backup system"
+    },
+    "3.4.3": {
+      "title": "Accumulator Requirements",
+      "content": "**Capacity:**\nMust have sufficient volume to:\n- Close all BOPs\n- Open one pipe ram\n- Have reserve remaining\n- All without pump assistance\n\n**Calculation:**\nTotal required = Closing volumes + Opening volume + Reserve\nPer API RP 53 requirements\n\n**Pre-Charge:**\n- Nitrogen pre-charge typically 1000-1200 psi\n- Check pre-charge regularly\n- Low pre-charge reduces effective volume\n\n**Pressure:**\n- System pressure typically 3000 psi\n- Must overcome wellbore pressure plus friction\n- Higher pressure systems for HPHT"
+    },
+    "3.4.4": {
+      "title": "Testing Control Systems",
+      "content": "**Response Time Test:**\n- Measure time from activation to BOP function complete\n- Surface: Annular < 30 seconds, Rams < 30 seconds typical\n- Subsea: Longer due to distance\n\n**Accumulator Test:**\n- Operate all preventers on accumulator only (pumps off)\n- Verify capacity meets requirements\n- Check remaining pressure after operations\n\n**Panel Function Test:**\n- Verify all controls operate correct functions\n- Test both panels (driller's and remote)\n- Check indicators and alarms\n\n**Documentation:**\n- Record all test results\n- Note times and pressures\n- Track trends over time"
+    },
+    "3.4.5": {
+      "title": "Backup Systems",
+      "content": "**Surface Backup:**\n- Remote panel provides backup location\n- Manual locks on rams\n- Dedicated accumulator bank may be available\n\n**Subsea Backup:**\n- Dual pods (switch if one fails)\n- Acoustic control system\n- ROV intervention capability\n- Autoshear and deadman automatic activation\n\n**Acoustic System:**\n- Independent backup for critical functions\n- Activated from surface by acoustic signal\n- Can close shear rams and disconnect\n- Test periodically\n\n**ROV Intervention:**\n- ROV can operate BOP functions via intervention panels\n- Slower but provides ultimate backup\n- Critical for lost communication scenarios"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-DM-04",
+  "moduleId": "HRO-HP-ESS-DM",
+  "courseId": "HRO-HP-ESS",
+  "title": "Key Cognitive Biases",
+  "type": "lesson",
+  "content": "Three biases commonly distort operational decisions: confirmation bias (seeking information that supports existing beliefs), anchoring (over-weighting initial information), and sunk cost (continuing failed approaches because of prior investment). These biases are universal—awareness is the first defense, but structured decision processes provide better protection.",
+  "mcq": {
+    "question": "A team has spent four hours troubleshooting with one approach. New information suggests a completely different cause, but the team leader says 'We've invested too much time to change direction now.' Which bias is influencing this decision?",
+    "options": {
+      "A": "Confirmation bias—only seeing supporting evidence",
+      "B": "Anchoring—stuck on initial information",
+      "C": "Sunk cost—continuing due to prior investment",
+      "D": "Overconfidence—excessive faith in current approach"
+    },
+    "correctOption": "C",
+    "explanation": "Sunk cost bias leads to continuing with failing approaches because of time, money, or effort already invested. The rational response to new contradicting information is to reassess, regardless of prior investment."
+  },
+  "openQuestions": [
+    "Think of a decision you made where you later recognized a cognitive bias was influencing you. Which bias was it and how did it affect the outcome?",
+    "What practices does your team use to challenge assumptions and avoid confirmation bias during troubleshooting?"
+  ]
+}

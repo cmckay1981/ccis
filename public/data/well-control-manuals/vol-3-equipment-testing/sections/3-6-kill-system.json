@@ -1,0 +1,22 @@
+{
+  "sectionId": "3.6",
+  "title": "Kill Line & Pump System",
+  "content": {
+    "3.6.1": {
+      "title": "Kill Line Purpose",
+      "content": "**Function:**\nProvides pathway to pump into the well below closed BOP:\n- Bullheading operations\n- Pumping kill mud into annulus\n- Alternative circulation path\n- Lubricate and bleed operations\n\n**Location:**\n- Connection on BOP stack, below rams\n- Routes to kill manifold/pump\n- Must be accessible and functional"
+    },
+    "3.6.2": {
+      "title": "Kill Line Components",
+      "content": "**From BOP to Surface:**\n- BOP kill outlet\n- Kill line (high pressure rated)\n- Isolation valves\n- Check valve (prevents backflow to pump)\n- Connection to kill manifold or pump\n\n**Pressure Rating:**\n- Match BOP working pressure\n- All components rated accordingly\n- Verify during testing"
+    },
+    "3.6.3": {
+      "title": "Kill Pump Options",
+      "content": "**Rig Pumps:**\n- Can pump through standpipe to drillstring\n- Or route to kill line for annulus injection\n- Standard for most kill operations\n\n**Cementing Unit:**\n- High pressure capability\n- Can be used for bullheading\n- Alternative if rig pumps insufficient\n\n**Dedicated Kill Pump:**\n- Some operations have dedicated high-pressure pump\n- Provides redundancy\n- May be required for high-pressure operations\n\n**Capacity:**\n- Must be able to pump at required rate\n- Must achieve required pressure\n- Consider pump horsepower and rating"
+    },
+    "3.6.4": {
+      "title": "Testing Kill System",
+      "content": "**Pressure Test:**\n- Kill line to working pressure\n- Include all valves and connections\n- Test from BOP to manifold\n\n**Function Test:**\n- Verify valves operate\n- Check valve function (holds one direction)\n- Pump connectivity verified\n\n**Circulation Test:**\n- May include circulation through kill line\n- Verify no obstructions\n- Confirm routing correct\n\n**Documentation:**\n- Record all tests\n- Note any issues\n- Include in BOP test documentation"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "categoryId": "JETTING",
+  "title": "Jetting & Conductor Operations - AI Probing Questions",
+  "breakoutRoom": "A",
+  "targetParticipants": ["Drilling Engineer", "Driller", "Mud Engineer"],
+  "questions": [
+    {
+      "questionId": "JT-001",
+      "question": "Shallow hazard survey shows possible gas at 200m - what's your diverter response plan?",
+      "type": "what_if",
+      "focus": "Shallow gas response",
+      "expectedResponse": "Clear diverter procedures and crew roles"
+    },
+    {
+      "questionId": "JT-002",
+      "question": "If you encounter unexpected hard formation, what's the maximum WOB before you risk conductor damage?",
+      "type": "calculation_check",
+      "focus": "Operating limits",
+      "expectedResponse": "WOB limit with engineering basis"
+    },
+    {
+      "questionId": "JT-003",
+      "question": "The programme shows 6 hours jetting time - is this consistent with offset well experience?",
+      "type": "assumption_challenge",
+      "focus": "Timeline realism",
+      "expectedResponse": "Comparison with offset data"
+    },
+    {
+      "questionId": "JT-004",
+      "question": "What are your setting depth criteria? What if you reach target depth but resistance is insufficient?",
+      "type": "what_if",
+      "focus": "Setting depth decision",
+      "expectedResponse": "Criteria for acceptable vs insufficient set"
+    },
+    {
+      "questionId": "JT-005",
+      "question": "Conductor cement returns to mudline - what's your response if you lose returns during cement?",
+      "type": "what_if",
+      "focus": "Cement contingency",
+      "expectedResponse": "Lost returns procedure during conductor cement"
+    },
+    {
+      "questionId": "JT-006",
+      "question": "Has the diverter system been function tested within the last 14 days?",
+      "type": "verification",
+      "focus": "Equipment readiness",
+      "expectedResponse": "Test date and results"
+    },
+    {
+      "questionId": "JT-007",
+      "question": "Your jet bit is 36\" but I see a 30\" bit on the BHA drawing - which is correct?",
+      "type": "gap_identification",
+      "focus": "Documentation accuracy",
+      "expectedResponse": "Clarification and document update"
+    },
+    {
+      "questionId": "JT-008",
+      "question": "Pump rate for jetting is 1200 gpm - what's your maximum pump capacity and is there redundancy?",
+      "type": "verification",
+      "focus": "Equipment capacity",
+      "expectedResponse": "Pump capacity and backup plan"
+    },
+    {
+      "questionId": "JT-009",
+      "question": "If shallow water flow is encountered, what's your shut-in procedure before BOP is installed?",
+      "type": "what_if",
+      "focus": "Shallow hazard response",
+      "expectedResponse": "SWF response procedures"
+    },
+    {
+      "questionId": "JT-010",
+      "question": "The offset well had 15° deviation at conductor shoe - what's your plan if you see similar deviation?",
+      "type": "what_if",
+      "focus": "Deviation control",
+      "expectedResponse": "Deviation limits and corrective actions"
+    }
+  ],
+  "tags": ["dwop", "ai-questions", "jetting", "conductor", "shallow-hazards"]
+}

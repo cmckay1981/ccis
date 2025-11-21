@@ -1,0 +1,21 @@
+{
+  "moduleId": "HRO-HP-ESS-SA",
+  "courseId": "HRO-HP-ESS",
+  "title": "Situational Awareness Essentials",
+  "description": "Core principles of maintaining awareness in operational environments. Covers the three-level SA model, active scanning, mental models, and recognizing threats to awareness.",
+  "order": 1,
+  "lessonIds": [
+    "HRO-HP-ESS-SA-01",
+    "HRO-HP-ESS-SA-02",
+    "HRO-HP-ESS-SA-03",
+    "HRO-HP-ESS-SA-04",
+    "HRO-HP-ESS-SA-05",
+    "HRO-HP-ESS-SA-06"
+  ],
+  "learningObjectives": [
+    "Understand the three levels of situational awareness",
+    "Apply active scanning techniques",
+    "Build and update mental models",
+    "Recognize and counter threats to awareness"
+  ]
+}

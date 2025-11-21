@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-112-03",
+  "moduleId": "LEAD-112",
+  "courseId": "LEAD",
+  "title": "Building Mentoring Culture",
+  "type": "lesson",
+  "content": "Mentoring culture multiplies leadership impact across the organization. When senior leaders mentor emerging leaders, and those leaders mentor others, leadership capability compounds. This requires making mentoring expected not optional, providing structure and time for mentoring relationships, and recognizing mentoring as valuable leadership contribution. Organizations without mentoring culture lose institutional knowledge and force every generation to relearn the same lessons.",
+  "mcq": {
+    "question": "An organization claims to value mentoring, but senior leaders are evaluated and rewarded entirely on their team's operational results. Mentoring relationships exist informally but are frequently cancelled due to 'more urgent priorities.' What's the actual message about mentoring?",
+    "options": {
+      "A": "Mentoring is valued but operational demands are higher priority",
+      "B": "The organization says it values mentoring but doesn't actually prioritize or reward it",
+      "C": "Senior leaders need better time management to balance mentoring with operations",
+      "D": "Informal mentoring is sufficient and doesn't need organizational support"
+    },
+    "correctOption": "B",
+    "explanation": "Culture is what you reward and make time for, not what you say you value. If mentoring isn't evaluated, rewarded, or protected with time, the organization doesn't actually value it—regardless of stated values. Option B recognizes the gap between rhetoric and reality. Actions reveal priorities: if operational metrics are the only evaluation criteria and mentoring gets cancelled when things get busy, mentoring is optional. To build mentoring culture, include it in leadership evaluation, provide dedicated time, and demonstrate that developing others is as important as delivering results. Option A accepts the status quo. Option C blames individuals for systemic priorities. Option D accepts informal approach that depends on individual initiative rather than organizational commitment."
+  },
+  "openQuestions": [
+    "Does your organization actually reward and protect time for mentoring, or just encourage it rhetorically?",
+    "Who are you currently mentoring? How much of your time goes to their development versus your operational work?"
+  ]
+}

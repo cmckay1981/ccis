@@ -1,0 +1,140 @@
+{
+  "documentId": "WARNING_SIGNS",
+  "collectionId": "questionBank",
+  "categoryKey": "WARNING_SIGNS",
+  "title": "Warning Signs of Abnormal Pressure",
+  "moduleAlignment": [
+    "WC-SF-103",
+    "WC-SF-104"
+  ],
+  "questionCount": 8,
+  "l3Count": 6,
+  "l4Count": 2,
+  "questions": [
+    {
+      "id": "EX3-Q1",
+      "level": "L3",
+      "question": "Which kick cause is totally avoidable?",
+      "options": {
+        "A": "Gas cut mud",
+        "B": "Not keeping hole full during trip",
+        "C": "Abnormal formation pressure",
+        "D": "Reduction in hydrostatic due to losses"
+      },
+      "correctAnswer": "B",
+      "explanation": "Not filling hole = human error, 100% preventable. Abnormal pressure and losses are formation conditions. Gas-cut mud is a warning, not a kick cause."
+    },
+    {
+      "id": "EX3-Q2",
+      "level": "L3",
+      "question": "Indicators of underbalance while drilling? (SELECT TWO)",
+      "options": {
+        "A": "Increase in cuttings size/amount",
+        "B": "Increase in mud density at shakers",
+        "C": "Increase in background gas",
+        "D": "Gradual reduction in drilling rate",
+        "E": "Increase in pump pressure"
+      },
+      "correctAnswers": [
+        "A",
+        "C"
+      ],
+      "explanation": "Underbalance allows formation to break more easily (larger cuttings) and gas to enter (background gas). Mud density increase and pump pressure increase suggest opposite conditions.",
+      "multiSelect": true
+    },
+    {
+      "id": "EX3-Q3",
+      "level": "L3",
+      "question": "Which is NOT a formation pressure warning sign?",
+      "options": {
+        "A": "Increase in pump pressure",
+        "B": "Gas cut mud",
+        "C": "Decrease in shale density",
+        "D": "Connection gas",
+        "E": "Increase in mud temperature"
+      },
+      "correctAnswer": "A",
+      "explanation": "Pump pressure increase usually indicates restriction (packed hole, plugged nozzle), not formation pressure. All others are classic overpressure indicators."
+    },
+    {
+      "id": "EX3-Q4",
+      "level": "L3",
+      "question": "What risk does overpull create during tripping?",
+      "options": {
+        "A": "Surging",
+        "B": "Swabbing",
+        "C": "On-bottom kick",
+        "D": "Increase in BHP"
+      },
+      "correctAnswer": "B",
+      "explanation": "Overpull while stuck then breaking free creates swab effect. The stuck point acts as temporary barrier; releasing it suddenly reduces BHP."
+    },
+    {
+      "id": "EX3-Q5",
+      "level": "L4",
+      "question": "Tripping, mud required less than calculated. Action?",
+      "options": {
+        "A": "Flow check; continue if negative",
+        "B": "Flow check; pump heavy slug if negative",
+        "C": "Shut in; circulate through choke",
+        "D": "Flow check; run back if negative; monitor returns",
+        "E": "Pump remaining pipe out"
+      },
+      "correctAnswer": "D",
+      "explanation": "Less mud than calculated could indicate partial losses (formation taking mud). Flow check, then run back to restore column and monitor. Don't assume it's OK."
+    },
+    {
+      "id": "EX3-Q6",
+      "level": "L4",
+      "question": "Underbalance warning signs while drilling? (SELECT THREE)",
+      "options": {
+        "A": "Decrease in rate of penetration",
+        "B": "Increasing background gas",
+        "C": "Change in cuttings shape/size/volume",
+        "D": "Increase in flowline mud weight",
+        "E": "Increase in drag values",
+        "F": "Increase in trip tank volume"
+      },
+      "correctAnswers": [
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Underbalance lets gas in (B), causes formation spalling (C), and changes hole geometry affecting drag (E). ROP decrease and MW increase suggest overbalance. Trip tank increase is kick indicator, not warning.",
+      "multiSelect": true
+    },
+    {
+      "id": "Q4",
+      "level": "L3",
+      "question": "Warning signs of abnormal pressure (SELECT THREE):",
+      "options": {
+        "A": "Change of cuttings shape",
+        "B": "Variation of penetration rate",
+        "C": "Increased trip tank level",
+        "D": "Increased connection gas",
+        "E": "Reduced trip tank level",
+        "F": "Increase in pump pressure"
+      },
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "Cuttings shape (spalling), ROP changes, and connection gas indicate overpressure. Trip tank changes indicate kick, not warning.",
+      "multiSelect": true
+    },
+    {
+      "id": "Q47",
+      "level": "L3",
+      "question": "Driller informed mud is gas cut. Correct statement?",
+      "options": {
+        "A": "Positive indicator, flow check",
+        "B": "Warning sign, shut in",
+        "C": "Warning sign, flow check",
+        "D": "Warning sign, continue drilling"
+      },
+      "correctAnswer": "C",
+      "explanation": "Gas cut mud is a WARNING sign, not a positive kick indicator. Perform flow check to confirm whether it's just gas-cut returns or an actual kick."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "lessonId": "HRO-HP-ESS-COMM-02",
+  "moduleId": "HRO-HP-ESS-COMM",
+  "courseId": "HRO-HP-ESS",
+  "title": "Clarity and Brevity",
+  "type": "lesson",
+  "content": "Operational communication must be clear (unambiguous meaning) and brief (no unnecessary words). Vague terms like 'soon,' 'a lot,' or 'over there' create confusion—use specific numbers, locations, and actions instead. The goal is zero interpretation required: the receiver should understand exactly what you mean without having to guess.",
+  "mcq": {
+    "question": "During a handover, the outgoing operator says 'Keep an eye on the temperature—it's been acting up.' What makes this communication problematic?",
+    "options": {
+      "A": "It's too brief to be useful",
+      "B": "It lacks specific parameters, thresholds, and expected actions",
+      "C": "It should have been written rather than verbal",
+      "D": "Temperature monitoring isn't operationally important"
+    },
+    "correctOption": "B",
+    "explanation": "The message is vague: which temperature, what does 'acting up' mean, what values are concerning, and what action should be taken if it continues? Operational communication requires specific details that eliminate interpretation."
+  },
+  "openQuestions": [
+    "What vague terms are commonly used in your workplace that could cause confusion? What specific language could replace them?",
+    "Think of a miscommunication you experienced. How could clearer, more specific language have prevented it?"
+  ]
+}

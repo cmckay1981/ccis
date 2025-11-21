@@ -1,0 +1,30 @@
+{
+  "sectionId": "3.3",
+  "title": "Ram Preventers",
+  "content": {
+    "3.3.1": {
+      "title": "Types of Rams",
+      "content": "**Pipe Rams:**\n- Close around specific pipe size\n- Rubber element seals around pipe body\n- Must match pipe size in use\n- Variable bore rams (VBRs) can seal range of sizes\n\n**Blind Rams:**\n- Close on open hole (no pipe)\n- Two solid blocks meet\n- Cannot close if pipe is in bore\n\n**Blind Shear Rams (BSR):**\n- Shear through drillpipe AND seal wellbore\n- Can cut pipe and then seal\n- Critical for emergency disconnect\n- May not cut all tubulars (tool joints, heavy pipe)\n\n**Casing Shear Rams:**\n- Cut through casing\n- Used in some subsea configurations\n- Heavier duty than BSR"
+    },
+    "3.3.2": {
+      "title": "Design and Function",
+      "content": "**Operating Principle:**\n1. Hydraulic pressure applied to close\n2. Rams extend from both sides\n3. Rams meet in center\n4. Sealing elements provide pressure seal\n5. Mechanical locks may engage for additional security\n\n**Key Components:**\n- Ram blocks (steel body of ram)\n- Top seal (seals on top of ram)\n- Front packer (seals around pipe)\n- Side packers (seal between ram and body)\n- Operating piston\n- Hydraulic connections\n\n**Locks:**\n- Manual locks (operated by hand)\n- Hydraulic locks (operated remotely)\n- Secondary lock - provides backup to hydraulic closure"
+    },
+    "3.3.3": {
+      "title": "Pipe Rams",
+      "content": "**Sizing:**\n- Must match pipe OD exactly\n- Different rams for different pipe sizes\n- VBRs accommodate range (e.g., 3-1/2\" to 5-1/2\")\n\n**Sealing:**\n- Front packer seals around pipe\n- Top seal seals between rams\n- Will NOT seal on tool joint\n\n**Operation:**\n- Cannot close on tool joint - position pipe correctly\n- Space out to put pipe body across rams before closing\n- Opening requires relieving wellbore pressure (or use HCR)\n\n**Changing Rams:**\n- May need to change ram blocks for different pipe sizes\n- Time-consuming operation\n- Plan pipe sizes and ram configuration"
+    },
+    "3.3.4": {
+      "title": "Blind Shear Rams",
+      "content": "**Purpose:**\n- Emergency closure when pipe must be cut\n- Last resort - cuts pipe in well\n- Essential for EDS in subsea operations\n\n**Cutting Capability:**\n- Designed to cut specific pipe range\n- May NOT cut tool joints, heavy wall, or casing\n- Know the specifications and limitations\n\n**Position:**\n- Typically one BSR per stack\n- Position allows cutting at any point except connections\n\n**After Shearing:**\n- Upper pipe free (falls or is held by slips)\n- Lower pipe drops into well with tubing hanger or sits on rams\n- Wellbore sealed by BSR\n\n**Testing:**\n- Function test closure\n- Shear test may be done (actual or simulated)\n- Pressure test after closure"
+    },
+    "3.3.5": {
+      "title": "Testing Ram Preventers",
+      "content": "**Pressure Tests:**\n- Low pressure test: 200-300 psi (seal verification)\n- High pressure test: To working pressure rating\n- Test on pipe (pipe rams)\n- Test on open hole (blind rams)\n\n**Frequency:**\n- Initial installation\n- After each BOP pull/reinstallation\n- At casing points\n- Per regulatory requirements (often weekly low pressure, longer interval for high pressure)\n\n**Procedure:**\n1. Close ram\n2. Apply pressure below ram\n3. Observe for leaks\n4. Hold for required time (typically 5 minutes)\n5. Record results\n6. Open ram, verify opens fully"
+    },
+    "3.3.6": {
+      "title": "Maintenance",
+      "content": "**Seals:**\n- Inspect packers and seals regularly\n- Replace if damaged or worn\n- Keep spare seal kits on location\n\n**Ram Blocks:**\n- Inspect for damage\n- Check blade condition (shear rams)\n- Replace per manufacturer recommendation\n\n**Body:**\n- Inspect bore for wear\n- Check hydraulic connections\n- Verify bonnet operation\n\n**Locks:**\n- Test lock function\n- Ensure manual locks accessible\n- Lubricate as required"
+    }
+  }
+}

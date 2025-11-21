@@ -1,0 +1,22 @@
+{
+  "moduleId": "WC-SF-105",
+  "courseId": "WC-SF",
+  "title": "Shut-In Procedures",
+  "description": "Executing proper well shut-in - hard vs soft shut-in, procedures while drilling and tripping, recording accurate pressures. Step-by-step procedures with timing expectations.",
+  "order": 5,
+  "lessonIds": [
+    "WC-SF-105-01",
+    "WC-SF-105-02",
+    "WC-SF-105-03",
+    "WC-SF-105-04"
+  ],
+  "examWeight": "Critical",
+  "iwcfSyllabus": "PP-06",
+  "documentId": "WC-SF-105",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-105"
+  ]
+}

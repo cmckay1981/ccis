@@ -1,0 +1,30 @@
+{
+  "sectionId": "3.9",
+  "title": "Pit Volume Monitoring",
+  "content": {
+    "3.9.1": {
+      "title": "Purpose",
+      "content": "**Critical Function:**\nPit volume monitoring is the PRIMARY method for detecting kicks:\n- Gain = possible influx (kick)\n- Loss = possible lost circulation\n- Changes require investigation\n\n**All drilling operations require continuous pit monitoring.**"
+    },
+    "3.9.2": {
+      "title": "Types of Sensors",
+      "content": "**Float/Mechanical:**\n- Float rises and falls with level\n- Simple and reliable\n- Can stick or fail\n\n**Ultrasonic:**\n- Measures distance to mud surface\n- Non-contact\n- Can be affected by foam or vapors\n\n**Radar:**\n- Similar to ultrasonic\n- Less affected by surface conditions\n- More expensive\n\n**Pressure:**\n- Measures hydrostatic at tank bottom\n- Calculates level from pressure\n- Affected by mud weight changes"
+    },
+    "3.9.3": {
+      "title": "System Configuration",
+      "content": "**Individual Tank Monitoring:**\n- Sensor in each active tank\n- Shows level in each pit\n- Can identify which pit changing\n\n**Total Volume:**\n- Sum of all active pits\n- Primary kick detection indicator\n- Must account for all pit configurations\n\n**Display:**\n- Driller's console (primary)\n- Mud logger station\n- Remote displays as needed\n\n**Alarms:**\n- High gain alarm\n- Low level alarm\n- Configurable thresholds\n- Audio and visual alerts"
+    },
+    "3.9.4": {
+      "title": "Accuracy and Calibration",
+      "content": "**Detection Threshold:**\n- System should detect 5-10 bbl change (typical)\n- Higher sensitivity for tight margins\n- Balance sensitivity vs false alarms\n\n**Calibration:**\n- Regular calibration required\n- Compare to manual measurements\n- Account for mud weight\n- Document calibration results\n\n**Factors Affecting Accuracy:**\n- Foam on mud surface\n- Tank geometry\n- Sensor condition\n- Mud weight changes\n- Active vs inactive pits"
+    },
+    "3.9.5": {
+      "title": "Monitoring During Operations",
+      "content": "**While Drilling:**\n- Continuous monitoring\n- Note baseline level\n- Watch for trends and sudden changes\n- Account for mud additions\n\n**While Tripping:**\n- Calculate expected fill\n- Track actual vs theoretical\n- Trip tank provides precision monitoring\n- Any shortfall requires investigation\n\n**Connections:**\n- Monitor across connections\n- Small changes may be normal\n- Increasing trend is warning\n\n**Recording:**\n- Data logged automatically\n- Review trends regularly\n- Keep records for analysis"
+    },
+    "3.9.6": {
+      "title": "Trip Tank",
+      "content": "**Purpose:**\nSmall tank providing precise volume measurement during trips:\n- Known volume per increment\n- Easy to read small changes\n- Dedicated for trip monitoring\n\n**Operation:**\n- Fill trip tank before trip\n- Route flow from well to trip tank\n- Monitor fill as pipe pulled\n- Calculate expected vs actual\n\n**Advantages:**\n- More precise than pit monitoring\n- Clear indication of gains or losses\n- Standard practice for trips"
+    }
+  }
+}

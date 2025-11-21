@@ -1,0 +1,47 @@
+{
+  "templateId": "WOP-CASING-2DAY-STANDARD",
+  "title": "2-Day Casing Well on Paper (WOP) Agenda",
+  "description": "Focused WOP session for casing running and cementing operations. Used when casing programme requires detailed review separate from full DWOP.",
+  "rigTypes": ["LAND", "JACKUP", "SEMISUBMERSIBLE", "DRILLSHIP"],
+  "bopType": "all",
+  "sessionType": "WOP-CASING",
+  "totalDays": 2,
+  "dailySchedule": {"startTime": "08:00", "endTime": "17:00", "timezone": "Adjusted to majority participant location"},
+  "participants": {
+    "required": ["Operator Well Engineer", "Operator Drilling Engineer", "Casing/Tubing Specialist", "Cementing Engineer", "Drilling Contractor Driller Representative", "Toolpusher"],
+    "asNeeded": ["Well Control Specialist", "Subsea Engineer (for liner hangers)", "Mud Engineer"]
+  },
+  "days": [
+    {"day": 1, "title": "Casing Design & Running Operations", "sessions": [
+      {"time": "08:00-08:30", "type": "plenary", "title": "Welcome & Session Objectives", "room": "main"},
+      {"time": "08:30-10:00", "type": "plenary", "title": "Casing Design Review", "description": "Design basis, load cases, safety factors, material selection, connection selection", "room": "main", "presenter": "Well Engineer"},
+      {"time": "10:00-10:30", "type": "break", "title": "Morning Break"},
+      {"time": "10:30-12:00", "type": "breakout", "title": "Casing String Review by Section", "rooms": [{"roomId": "A", "topic": "Surface & Intermediate Casing", "participants": ["Casing Specialist", "Driller", "Drilling Eng"], "aiParticipant": true}, {"roomId": "B", "topic": "Production Casing/Liner", "participants": ["Casing Specialist", "Well Eng", "Well Control"], "aiParticipant": true}]},
+      {"time": "12:00-13:00", "type": "break", "title": "Lunch"},
+      {"time": "13:00-14:30", "type": "plenary", "title": "Casing Running Equipment Review", "room": "main", "presenter": "Drilling Contractor", "aiRole": "Compares rig inventory against programme requirements"},
+      {"time": "14:30-15:00", "type": "break", "title": "Afternoon Break"},
+      {"time": "15:00-16:00", "type": "breakout", "title": "Casing Accessories & Contingencies", "rooms": [{"roomId": "A", "topic": "Accessories Review", "participants": ["Casing Specialist", "Well Eng"], "aiParticipant": true}, {"roomId": "B", "topic": "Running Contingencies", "participants": ["Drilling Eng", "Toolpusher"], "aiParticipant": true}]},
+      {"time": "16:00-17:00", "type": "plenary", "title": "Day 1 Consolidation", "room": "main", "aiRole": "Presents consolidated findings from all breakout rooms"}
+    ]},
+    {"day": 2, "title": "Cementing Operations & Close-Out", "sessions": [
+      {"time": "08:00-08:30", "type": "plenary", "title": "Day 1 Action Item Review", "room": "main"},
+      {"time": "08:30-10:00", "type": "breakout", "title": "Cement Design Review", "rooms": [{"roomId": "A", "topic": "Surface & Intermediate Cement", "participants": ["Cementing Eng", "Drilling Eng"], "aiParticipant": true}, {"roomId": "B", "topic": "Production/Liner Cement", "participants": ["Cementing Eng", "Well Eng"], "aiParticipant": true}]},
+      {"time": "10:00-10:30", "type": "break", "title": "Morning Break"},
+      {"time": "10:30-12:00", "type": "plenary", "title": "Cementing Equipment & Materials Review", "room": "main", "presenter": "Cementing Engineer", "aiRole": "Verifies materials inventory matches cement programme"},
+      {"time": "12:00-13:00", "type": "break", "title": "Lunch"},
+      {"time": "13:00-14:30", "type": "breakout", "title": "Cement Verification & Contingencies", "rooms": [{"roomId": "A", "topic": "Cement Evaluation", "participants": ["Cementing Eng", "Well Eng"], "aiParticipant": true}, {"roomId": "B", "topic": "Cementing Contingencies", "participants": ["Cementing Eng", "Drilling Eng"], "aiParticipant": true}]},
+      {"time": "14:30-15:00", "type": "break", "title": "Afternoon Break"},
+      {"time": "15:00-16:00", "type": "plenary", "title": "Action Item Review & Gap Closure", "room": "main", "aiRole": "Presents complete action register"},
+      {"time": "16:00-17:00", "type": "plenary", "title": "WOP-CASING Close-Out", "room": "main", "deliverables": ["Action item register", "Equipment gap list", "Materials requisition list", "Updated casing/cementing programme", "WOP completion certificate"]}
+    ]}
+  ],
+  "aiParticipantRole": {
+    "description": "AI participant challenges casing and cement design assumptions",
+    "exampleQuestions": ["Casing connection rating is 15,000 psi but production test will be at 14,500 psi - what's your margin?", "Cement thickening time is 4 hours but you're pumping 2,000 bbls - confirm pump rate?", "Centralizer placement shows 1 per joint but model shows 65% standoff - is this acceptable?"]
+  },
+  "preWorkRequirements": {
+    "materials": ["Final casing design with load cases", "Cementing programme with slurry designs", "Lab test reports for cement", "Casing inventory list", "Rig equipment specifications"]
+  },
+  "documentId": "WOP-CASING-2DAY-AGENDA",
+  "tags": ["wop", "casing", "cementing", "agenda", "2-day"]
+}

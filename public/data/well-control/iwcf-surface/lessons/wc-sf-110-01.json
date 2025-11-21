@@ -1,0 +1,79 @@
+{
+  "lessonId": "WC-SF-110-01",
+  "moduleId": "WC-SF-110",
+  "courseId": "WC-SF",
+  "title": "Annular Preventers",
+  "type": "lesson",
+  "level": [
+    "L3",
+    "L4"
+  ],
+  "content": "Annular preventers use a donut-shaped rubber element that squeezes inward to seal around anything in the wellbore\u2014pipe, tools, wireline, or nothing at all (complete shut-off). They're versatile but not designed for extended high-pressure holds. They're your first line of mechanical defense.",
+  "multiSensoryExplanations": {
+    "visual": "Picture a squeeze toy with a hole through the middle. When you squeeze it, the hole shrinks and grips whatever is inside. The annular preventer works the same way\u2014hydraulic pressure squeezes the rubber element inward.",
+    "auditory": "Annular = 'A'-shaped seal that goes Around. It hugs Around whatever's in the hole. 'A for Around, A for Annular.'",
+    "kinesthetic": "Make a fist with a small hole in the middle. Now squeeze tighter\u2014the hole gets smaller and grips anything inside. That's annular function. Open your fist\u2014element retracts, hole opens.",
+    "storyBased": "A company man told me: 'I love the annular because it's forgiving. Pipe not centered? It seals anyway. Odd-sized tool? It seals anyway. But for a long kill operation, I want ram-to-ram\u2014the annular element degrades under sustained pressure.'"
+  },
+  "keyFeatures": {
+    "sealing": "Seals on pipe, tools, casing, or open hole",
+    "operation": "Hydraulic pressure forces packing element inward",
+    "pressureRating": "Typically 5,000-10,000 psi (varies by model)",
+    "limitations": [
+      "Element wears during stripping operations",
+      "Not for extended high-pressure holds",
+      "Cannot shear pipe"
+    ]
+  },
+  "commonTypes": [
+    {
+      "name": "Hydril GK",
+      "feature": "Conical piston design, excellent sealing"
+    },
+    {
+      "name": "Shaffer Spherical",
+      "feature": "Spherical element, good for stripping"
+    },
+    {
+      "name": "Cameron DL",
+      "feature": "Double-locking head, high pressure rated"
+    }
+  ],
+  "operatingPressure": {
+    "concept": "Closing pressure required depends on well pressure",
+    "rule": "Higher wellbore pressure = higher closing pressure needed",
+    "caution": "Too much closing pressure can damage the element or crush pipe"
+  },
+  "mcq": {
+    "question": "What is the PRIMARY advantage of an annular preventer over ram preventers?",
+    "options": {
+      "A": "Higher pressure rating",
+      "B": "Ability to seal around any size tubular or open hole",
+      "C": "Better for long-term pressure holds",
+      "D": "Can cut drill pipe in emergency"
+    },
+    "correctOption": "B",
+    "explanation": "Annular preventers seal around anything\u2014various pipe sizes, tools, wireline, or completely closed. Rams require specific pipe size or open hole. This versatility is the annular's main advantage."
+  },
+  "advancedQuestion": {
+    "question": "You need to strip drill pipe back into a well under pressure. Why is the annular preventer typically used for this operation, and what precaution must you take?",
+    "answer": "Annular is used because it can maintain a seal while pipe moves through it (rams cannot do this without opening/closing). Precaution: Stripping wears the element. Monitor element condition, don't over-tighten closing pressure, and be prepared to replace the element after extended stripping operations. Also, apply correct closing pressure\u2014too high damages element and pipe, too low allows leakage.",
+    "l4Focus": "Understanding equipment limitations and operational precautions is essential for supervisors."
+  },
+  "commonMisconception": {
+    "wrong": "The annular can handle any well control situation.",
+    "correct": "Annulars are versatile but have limitations. For sustained high-pressure holds, rams are more reliable. For pipe shearing, blind/shear rams are required. The annular is part of a system, not a complete solution."
+  },
+  "testingRequirements": {
+    "functionTest": "Close and open to verify operation",
+    "pressureTest": "Per API RP 53\u2014typically to rated working pressure"
+  },
+  "documentId": "WC-SF-110-01",
+  "tags": [
+    "well-control",
+    "surface",
+    "IWCF",
+    "WC-SF-110",
+    "WC-SF-110-01"
+  ]
+}

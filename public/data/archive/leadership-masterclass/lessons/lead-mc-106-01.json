@@ -1,0 +1,23 @@
+{
+  "lessonId": "LEAD-MC-106-01",
+  "moduleId": "LEAD-MC-106",
+  "courseId": "LEAD-MC",
+  "title": "Team Formation and Lifecycle Stages",
+  "type": "lesson",
+  "content": "Teams move through predictable stages: forming (polite, uncertain, looking for direction), storming (conflict emerges, roles are challenged, frustration appears), norming (patterns stabilize, expectations clarify, cooperation increases), and performing (high output, self-correction, minimal supervision needed). Leaders who don't recognize these stages often panic during storming or hover during performing. Each stage requires different leadership. New teams need structure and clarity. Storming teams need conflict facilitation. Performing teams need autonomy and challenge.",
+  "mcq": {
+    "question": "A newly formed project team has been working together for three weeks. Initially collaborative, the team is now experiencing frequent disagreements about approach, roles, and decision authority. The leader is concerned the team isn't working out and considers reassigning people. What's actually happening?",
+    "options": {
+      "A": "The team has incompatible personalities and should be restructured",
+      "B": "The team is in the storming stage, which is normal and necessary for development",
+      "C": "The leader failed to establish clear enough expectations at the start",
+      "D": "The project scope is unclear and creating confusion"
+    },
+    "correctOption": "B",
+    "explanation": "This is predictable team development. The polite forming stage is ending and real work is forcing people to negotiate roles, challenge assumptions, and establish patterns. This feels uncomfortable but it's healthy. Teams that skip storming by avoiding conflict often underperform because they never establish genuine norms. The leader's job during storming is facilitating productive conflict, clarifying roles and decision rights, and helping the team work through disagreement. Reassigning people at first sign of conflict prevents team development. Let them storm, guide the process, and they'll likely emerge stronger."
+  },
+  "openQuestions": [
+    "Think of a current or recent team. What stage is it in, and how does that affect your leadership approach?",
+    "Describe a team that got stuck in the storming stage. What prevented it from moving to norming?"
+  ]
+}
